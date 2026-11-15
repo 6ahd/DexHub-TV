@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Κωδικός QR για σύνδεση του WeTrakr</string>
     <string name="wetrakr_missing_client">Το WeTrakr δεν έχει ρυθμιστεί σε αυτή την έκδοση.</string>
     <string name="wetrakr_status_syncing">Συγχρονισμός με το WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Αναμονή για να επιτρέψετε το Nuvio Arc στο WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Αναμονή για να επιτρέψετε το Dex Hub στο WeTrakr</string>
     <string name="wetrakr_status_paused">Σε παύση</string>
     <string name="wetrakr_daily_limit_row">Το σημερινό όριο του WeTrakr εξαντλήθηκε. Ο συγχρονισμός συνεχίζεται στις %1$s.</string>
     <string name="wetrakr_limit_message">Το σημερινό όριο του WeTrakr εξαντλήθηκε. Η αναπαραγωγή δεν επηρεάζεται, αλλά οι προβολές δεν στέλνονται στο WeTrakr μέχρι τις %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Ολοκληρώθηκε. Προστέθηκαν στο WeTrakr: %1$s, υπήρχαν ήδη ή δεν βρέθηκαν: %2$s.</string>
     <string name="wetrakr_upload_send">Αποστολή</string>
     <string name="wetrakr_upload_close">Κλείσιμο</string>
-    <string name="licenses_attributions_wetrakr_body">Το Nuvio Arc χρησιμοποιεί το WeTrakr για ιστορικό παρακολούθησης, λίστες, καταγραφή αναπαραγωγής και παρόμοιους τίτλους. Δεδομένα από το WeTrakr. Το Nuvio Arc δεν συνδέεται ούτε υποστηρίζεται από το WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Αποσυνδεθήκατε εδώ, αλλά δεν ήταν δυνατή η ειδοποίηση του WeTrakr. Μπορείτε να αφαιρέσετε το Nuvio Arc από τις συνδεδεμένες εφαρμογές στο wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Το Dex Hub χρησιμοποιεί το WeTrakr για ιστορικό παρακολούθησης, λίστες, καταγραφή αναπαραγωγής και παρόμοιους τίτλους. Δεδομένα από το WeTrakr. Το Dex Hub δεν συνδέεται ούτε υποστηρίζεται από το WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Αποσυνδεθήκατε εδώ, αλλά δεν ήταν δυνατή η ειδοποίηση του WeTrakr. Μπορείτε να αφαιρέσετε το Dex Hub από τις συνδεδεμένες εφαρμογές στο wetrakr.com.</string>
 </resources>

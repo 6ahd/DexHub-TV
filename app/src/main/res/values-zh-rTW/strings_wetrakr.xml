@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">用於連線 WeTrakr 的 QR 碼</string>
     <string name="wetrakr_missing_client">此版本未設定 WeTrakr。</string>
     <string name="wetrakr_status_syncing">正在與 WeTrakr 同步…</string>
-    <string name="wetrakr_status_enter_code">等待您在 WeTrakr 上授權 Nuvio Arc</string>
+    <string name="wetrakr_status_enter_code">等待您在 WeTrakr 上授權 Dex Hub</string>
     <string name="wetrakr_status_paused">已暫停</string>
     <string name="wetrakr_daily_limit_row">今日 WeTrakr 上限已用完。同步將於 %1$s 恢復。</string>
     <string name="wetrakr_limit_message">今日 WeTrakr 上限已用完。播放不受影響，但在 %1$s 之前，觀看記錄不會傳送到 WeTrakr。</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">完成：已在 WeTrakr 新增 %1$s 部，%2$s 部已存在或找不到。</string>
     <string name="wetrakr_upload_send">傳送</string>
     <string name="wetrakr_upload_close">關閉</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc 使用 WeTrakr 取得觀看歷史、清單、播放追蹤和相似內容。資料來自 WeTrakr。Nuvio Arc 與 WeTrakr 無關聯或未經其認可。</string>
-    <string name="wetrakr_revoke_failed">已在此裝置登出，但無法通知 WeTrakr。您可以在 wetrakr.com 的已連線應用程式中移除 Nuvio Arc。</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub 使用 WeTrakr 取得觀看歷史、清單、播放追蹤和相似內容。資料來自 WeTrakr。Dex Hub 與 WeTrakr 無關聯或未經其認可。</string>
+    <string name="wetrakr_revoke_failed">已在此裝置登出，但無法通知 WeTrakr。您可以在 wetrakr.com 的已連線應用程式中移除 Dex Hub。</string>
 </resources>

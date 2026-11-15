@@ -57,7 +57,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Tipos de letra das legendas</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed e Noto Sans (com Noto Sans Arabic, Hebrew, Devanagari, Bengali e Tamil) de The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors e The Noto Project Authors. Licenciados sob a SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo e Plex</string>
-    <string name="licenses_attributions_media_servers_body">O Nuvio Arc liga-se ao teu próprio servidor Jellyfin, Emby, Silo ou Plex. Os nomes e logótipos pertencem aos respetivos proprietários. O Nuvio Arc não é afiliado nem endossado pelo Jellyfin, Emby ou Silo.</string>
+    <string name="licenses_attributions_media_servers_body">O Dex Hub liga-se ao teu próprio servidor Jellyfin, Emby, Silo ou Plex. Os nomes e logótipos pertencem aos respetivos proprietários. O Dex Hub não é afiliado nem endossado pelo Jellyfin, Emby ou Silo.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Listas de release groups. Licença MIT.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -105,7 +105,7 @@
     <string name="playback_afr_closed">Fechado</string>
     <string name="audio_tunneled_sub_prefer_app">Indisponível enquanto Prioridade do descodificador estiver em Preferir descodificadores da app</string>
     <string name="audio_use_system_passthrough">Passthrough do sistema</string>
-    <string name="audio_use_system_passthrough_sub">Envia TrueHD e DTS-HD para o recetor através do Android (via do sistema) em vez do Nuvio Arc (via IEC). Dependendo do dispositivo e da configuração de áudio, isto pode limitar DTS-HD e DTS:X a DTS padrão ou deixá-los sem som. Utiliza apenas se os formatos sem perdas produzirem ruído, desvio ou nenhum áudio.</string>
+    <string name="audio_use_system_passthrough_sub">Envia TrueHD e DTS-HD para o recetor através do Android (via do sistema) em vez do Dex Hub (via IEC). Dependendo do dispositivo e da configuração de áudio, isto pode limitar DTS-HD e DTS:X a DTS padrão ou deixá-los sem som. Utiliza apenas se os formatos sem perdas produzirem ruído, desvio ou nenhum áudio.</string>
     <string name="audio_dtshd_tv_passthrough">Passthrough de DTS-HD e DTS:X</string>
     <string name="audio_dtshd_tv_passthrough_sub">Escolha Passthrough pela TV se a sua soundbar mostrar DTS simples ou não reproduzir nada em filmes DTS-HD ou DTS:X.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Padrão</string>
@@ -223,7 +223,7 @@
     <string name="floppy_tracking_description">Envie o que vê para o seu próprio servidor Floppy</string>
     <string name="floppy_connected_to">Ligado a %1$s</string>
     <string name="floppy_connected_description">O que vê neste perfil vai para o Floppy: “Now Playing” enquanto vê, títulos terminados no seu histórico e os interrompidos com ponto de retoma. “Marcar como visto” também é enviado. Desmarcar um filme aqui repõe todas as reproduções dele no Floppy; desmarcar um episódio retira apenas a última reprodução. Num servidor Floppy mais antigo, só são removidas as reproduções que o Arc adicionou a um filme.</string>
-    <string name="floppy_qr_description">Código QR para autorizar o Nuvio Arc no Floppy</string>
+    <string name="floppy_qr_description">Código QR para autorizar o Dex Hub no Floppy</string>
     <string name="floppy_address_instruction">Introduza o endereço em que abre o Floppy no navegador.</string>
     <string name="floppy_token_instruction">No Floppy, abra Settings, Integrations, App tokens e crie um token para esta TV.</string>
     <string name="floppy_address_placeholder">Endereço do servidor, por exemplo 192.168.1.20:8000</string>
@@ -570,7 +570,7 @@
     <string name="subtitle_bitmap_mpv_note">O MPV não suporta redimensionar legendas em imagem. Utiliza o ExoPlayer para ajustar o tamanho das legendas em imagem de forma independente do texto.</string>
     <string name="subtitle_style_image_size">Tamanho das legendas em imagem</string>
     <string name="v2_accent_fixed_hint">Utiliza o Tema de cor, exceto se estiver selecionado o destaque adaptado à ilustração.</string>
-    <string name="about_fork_updates_subtitle">Atualizações das versões do Nuvio Arc no GitHub.</string>
+    <string name="about_fork_updates_subtitle">Atualizações das versões do Dex Hub no GitHub.</string>
     <string name="playback_speculative_stream_search">Procurar fontes antes de Reproduzir</string>
     <string name="playback_speculative_stream_search_sub">Pesquisa nos addons enquanto navegas para acelerar a seleção de fontes. Alguns addons podem adicionar ou obter conteúdo durante as pesquisas. Desligado espera pelo Reproduzir. As ligações multimédia e a resolução pelo fornecedor esperam pela escolha da fonte, exceto perto do fim de um episódio, quando as miniaturas da barra de progresso preparam o seguinte.</string>
     <string name="playback_source_line_badges">Emblemas da fonte na página de detalhes</string>
@@ -762,7 +762,7 @@
     <string name="party_match_same">O mesmo ficheiro do anfitrião</string>
     <string name="party_match_likely">Provavelmente a cópia do anfitrião</string>
     <string name="party_match_different">Cópia diferente da do anfitrião</string>
-    <string name="party_invite_text">Junta-te à minha sessão em grupo no Nuvio Arc. Abre Definições, depois Sessão em grupo, e introduz o código %1$s</string>
+    <string name="party_invite_text">Junta-te à minha sessão em grupo no Dex Hub. Abre Definições, depois Sessão em grupo, e introduz o código %1$s</string>
     <string name="party_invite_qr">Lê com a câmara do telemóvel para enviar o convite por mensagem</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -980,11 +980,11 @@
     <string name="format_check_note_dv5">As suas definições convertem Profile 5 em 8.1.</string>
     <string name="format_check_note_hdr10_plus">As suas definições removem os dados HDR10+.</string>
     <string name="playback_release_decoder_on_background">Libertar descodificador em segundo plano</string>
-    <string name="playback_release_decoder_on_background_sub">Liberta o descodificador de vídeo quando o Nuvio Arc passa para segundo plano. Ative se a reprodução falhar com um erro do descodificador ao voltar à aplicação. O leitor volta a carregar ao regressar, também após a proteção de ecrã</string>
+    <string name="playback_release_decoder_on_background_sub">Liberta o descodificador de vídeo quando o Dex Hub passa para segundo plano. Ative se a reprodução falhar com um erro do descodificador ao voltar à aplicação. O leitor volta a carregar ao regressar, também após a proteção de ecrã</string>
     <string name="autosync_toast_no_fit">Falha na sincronização: estas legendas não correspondem a esta versão do vídeo.</string>
     <string name="layout_hero_description_auto_scroll">Deslocar descrições automaticamente</string>
     <string name="layout_hero_description_auto_scroll_sub">Desloca lentamente as descrições longas no ecrã inicial em vez de as cortar.</string>
-    <string name="player_dts_hd_decoding_notice">A saída DTS-HD sem perdas deixou de funcionar, por isso o Nuvio Arc está a descodificar ele próprio o áudio deste título.</string>
+    <string name="player_dts_hd_decoding_notice">A saída DTS-HD sem perdas deixou de funcionar, por isso o Dex Hub está a descodificar ele próprio o áudio deste título.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadados</string>
     <string name="addon_health_ok">OK</string>
@@ -992,13 +992,13 @@
     <string name="addon_health_down">Em baixo</string>
     <string name="addon_health_setup">Configurar</string>
     <string name="appearance_launcher_artwork">Aspeto no launcher</string>
-    <string name="appearance_launcher_artwork_subtitle">Escolhe como o Nuvio Arc aparece no ecrã inicial da TV</string>
+    <string name="appearance_launcher_artwork_subtitle">Escolhe como o Dex Hub aparece no ecrã inicial da TV</string>
     <string name="appearance_app_icon_and_banner">Ícone e banner da app</string>
     <string name="appearance_app_icon_and_banner_subtitle">Mudar o ícone e o banner da app</string>
     <string name="appearance_app_icon_picker_title">Escolher ícone e banner</string>
     <string name="appearance_app_icon_picker_subtitle">Cada estilo inclui um ícone quadrado e um banner de TV a condizer</string>
     <string name="appearance_app_icon_confirmation_title">Mudar o ícone da app?</string>
-    <string name="appearance_app_icon_confirmation_message">Mudar para %1$s reinicia o Nuvio Arc com o novo ícone. O ecrã inicial pode demorar alguns segundos a mostrá-lo e o banner da TV pode exigir um reinício do dispositivo. Seleciona OK para continuar.</string>
+    <string name="appearance_app_icon_confirmation_message">Mudar para %1$s reinicia o Dex Hub com o novo ícone. O ecrã inicial pode demorar alguns segundos a mostrá-lo e o banner da TV pode exigir um reinício do dispositivo. Seleciona OK para continuar.</string>
     <string name="appearance_app_icon_change_failed">Não foi possível mudar o ícone e o banner. Tenta novamente.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Azul ártico</string>

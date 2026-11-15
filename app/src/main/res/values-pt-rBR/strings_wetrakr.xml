@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Código QR para conectar o WeTrakr</string>
     <string name="wetrakr_missing_client">O WeTrakr não está configurado nesta versão.</string>
     <string name="wetrakr_status_syncing">Sincronizando com o WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Aguardando você autorizar o Nuvio Arc no WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Aguardando você autorizar o Dex Hub no WeTrakr</string>
     <string name="wetrakr_status_paused">Pausado</string>
     <string name="wetrakr_daily_limit_row">O limite de hoje do WeTrakr acabou. A sincronização volta às %1$s.</string>
     <string name="wetrakr_limit_message">O limite de hoje do WeTrakr acabou. A reprodução não é afetada, mas nada é enviado ao WeTrakr até às %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Concluído: %1$s adicionados no WeTrakr, %2$s já existiam ou não foram encontrados.</string>
     <string name="wetrakr_upload_send">Enviar</string>
     <string name="wetrakr_upload_close">Fechar</string>
-    <string name="licenses_attributions_wetrakr_body">O Nuvio Arc utiliza o WeTrakr para histórico de assistidos, listas, acompanhamento de reprodução e títulos semelhantes. Dados do WeTrakr. O Nuvio Arc não é afiliado nem endossado pelo WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Você saiu aqui, mas não foi possível avisar o WeTrakr. Você pode remover o Nuvio Arc em apps conectados no wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">O Dex Hub utiliza o WeTrakr para histórico de assistidos, listas, acompanhamento de reprodução e títulos semelhantes. Dados do WeTrakr. O Dex Hub não é afiliado nem endossado pelo WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Você saiu aqui, mas não foi possível avisar o WeTrakr. Você pode remover o Dex Hub em apps conectados no wetrakr.com.</string>
 </resources>

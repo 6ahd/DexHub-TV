@@ -75,9 +75,9 @@
     <string name="servers_quick_connect_expired">Αυτός ο κωδικός έχει λήξει.</string>
     <string name="servers_libraries_home_description">Οι επιλεγμένες βιβλιοθήκες παίρνουν σειρά στην Αρχική. Η αναζήτηση και τα αποτελέσματα ροών χρησιμοποιούν πάντα όλες τις βιβλιοθήκες.</string>
     <string name="servers_display_name">Εμφανιζόμενο όνομα</string>
-    <string name="servers_display_name_description">Το όνομα που δείχνει το Nuvio Arc για αυτόν τον διακομιστή στην Αρχική, στις Ρυθμίσεις και στις πηγές.</string>
+    <string name="servers_display_name_description">Το όνομα που δείχνει το Dex Hub για αυτόν τον διακομιστή στην Αρχική, στις Ρυθμίσεις και στις πηγές.</string>
     <string name="servers_display_name_server_name">Όνομα του διακομιστή: %1$s</string>
-    <string name="servers_display_name_dialog_description">Επιλέξτε το όνομα που δείχνει το Nuvio Arc για αυτόν τον διακομιστή. Αφήστε το κενό για να χρησιμοποιηθεί το όνομα του διακομιστή.</string>
+    <string name="servers_display_name_dialog_description">Επιλέξτε το όνομα που δείχνει το Dex Hub για αυτόν τον διακομιστή. Αφήστε το κενό για να χρησιμοποιηθεί το όνομα του διακομιστή.</string>
     <string name="servers_display_name_reset">Επαναφορά στο όνομα του διακομιστή</string>
     <string name="servers_import_continue_watching">Εισαγωγή Συνέχειας παρακολούθησης</string>
     <string name="servers_import_continue_watching_description">Οι τίτλοι που έχετε ξεκινήσει στο %1$s εμφανίζονται στη Συνέχεια παρακολούθησης της Αρχικής. Οι σημάνσεις προβολής συγχρονίζονται και προς τις δύο κατευθύνσεις.</string>
@@ -95,7 +95,7 @@
     <string name="servers_second_address_unreachable">Δεν βρέθηκε διακομιστής σε αυτή τη διεύθυνση.</string>
     <string name="servers_error_unsupported_server">Αυτή η έκδοση διακομιστή δεν υποστηρίζεται.</string>
     <string name="servers_error_website">Αυτή η διεύθυνση ανοίγει έναν ιστότοπο, όχι διακομιστή πολυμέσων. Εισάγετε τη διεύθυνση του ίδιου του διακομιστή.</string>
-    <string name="servers_error_silo_website">Το Nuvio Arc δεν βρήκε τη διεύθυνση Jellyfin αυτού του διακομιστή Silo. Στο Silo, ανοίξτε «Settings &gt; Connect Apps &gt; Jellyfin-compatible app» και εισάγετε τη διεύθυνση που εμφανίζεται κάτω από «Server».</string>
+    <string name="servers_error_silo_website">Το Dex Hub δεν βρήκε τη διεύθυνση Jellyfin αυτού του διακομιστή Silo. Στο Silo, ανοίξτε «Settings &gt; Connect Apps &gt; Jellyfin-compatible app» και εισάγετε τη διεύθυνση που εμφανίζεται κάτω από «Server».</string>
     <string name="servers_error_silo_jellyfin_off">Οι εφαρμογές Jellyfin είναι απενεργοποιημένες σε αυτόν τον διακομιστή Silo. Ζητήστε από τον κάτοχο του διακομιστή να τις ενεργοποιήσει.</string>
     <string name="servers_error_profile_needed">Προσθέστε # και το όνομα του προφίλ σας στο Silo στο τέλος του ονόματος χρήστη, π.χ. name#Profile ή name#1234#Profile.</string>
     <string name="servers_error_profile_not_found">Το Silo διαβάζει το τμήμα μετά το τελευταίο # ως όνομα προφίλ και δεν έχει προφίλ με αυτό το όνομα. Αν το όνομα χρήστη σας περιέχει #, προσθέστε # και το όνομα του προφίλ σας στο τέλος, π.χ. name#1234#Profile.</string>
@@ -108,11 +108,11 @@
     <string name="servers_silo_hint">Η διεύθυνση με την οποία ανοίγετε το Silo λειτουργεί εδώ. Το όνομα χρήστη και το προφίλ σας βρίσκονται στο Silo, στο «Settings &gt; Connect Apps &gt; Jellyfin-compatible app».</string>
     <string name="servers_failure_certificate">Το πιστοποιητικό αυτού του διακομιστή δεν αναγνωρίζεται.</string>
     <string name="servers_certificate_title">Το πιστοποιητικό αυτού του διακομιστή δεν αναγνωρίζεται</string>
-    <string name="servers_certificate_intro">Το Nuvio Arc δεν μπόρεσε να επιβεβαιώσει την ταυτότητα του %1$s.</string>
+    <string name="servers_certificate_intro">Το Dex Hub δεν μπόρεσε να επιβεβαιώσει την ταυτότητα του %1$s.</string>
     <string name="servers_certificate_untrusted">Το πιστοποιητικό είναι αυτοϋπογεγραμμένο ή έχει εκδοθεί από ιδιωτική αρχή.</string>
     <string name="servers_certificate_name_mismatch">Το πιστοποιητικό έχει εκδοθεί για άλλο όνομα.</string>
     <string name="servers_certificate_expired">Το πιστοποιητικό είναι εκτός των ημερομηνιών ισχύος του.</string>
-    <string name="servers_certificate_advice">Αν είναι ο δικός σας διακομιστής και το περιμένατε, μπορείτε να εμπιστευτείτε αυτό το πιστοποιητικό. Το Nuvio Arc θα δέχεται τότε μόνο αυτό ακριβώς το πιστοποιητικό για αυτόν τον διακομιστή και θα σας προειδοποιήσει αν αλλάξει ποτέ. Αν δεν είστε στο οικιακό σας δίκτυο, ελέγξτε πρώτα το αποτύπωμα με τον κάτοχο του διακομιστή.</string>
+    <string name="servers_certificate_advice">Αν είναι ο δικός σας διακομιστής και το περιμένατε, μπορείτε να εμπιστευτείτε αυτό το πιστοποιητικό. Το Dex Hub θα δέχεται τότε μόνο αυτό ακριβώς το πιστοποιητικό για αυτόν τον διακομιστή και θα σας προειδοποιήσει αν αλλάξει ποτέ. Αν δεν είστε στο οικιακό σας δίκτυο, ελέγξτε πρώτα το αποτύπωμα με τον κάτοχο του διακομιστή.</string>
     <string name="servers_certificate_details">Εκδόθηκε για: %1$s\nΕκδόθηκε από: %2$s\nΙσχύς: %3$s έως %4$s\nΑποτύπωμα (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Εμπιστοσύνη σε αυτό το πιστοποιητικό</string>
     <string name="servers_certificate_unavailable">Η ασφαλής σύνδεση απέτυχε και το πιστοποιητικό του διακομιστή δεν μπόρεσε να διαβαστεί.</string>
@@ -138,7 +138,7 @@
     <string name="silo_method_native_recommended">Σύνδεση Silo (προτείνεται)</string>
     <string name="silo_method_native_description">Συνδεθείτε με κωδικό στο τηλέφωνό σας ή με τον κωδικό πρόσβασης Silo. Λειτουργεί με κάθε τρόπο σύνδεσης του διακομιστή σας (κωδικός πρόσβασης, OpenID Connect, LDAP, Tailscale). Φέρνει εδώ τα προφίλ σας από το Silo και τις σειρές της Αρχικής του Silo.</string>
     <string name="silo_method_jellyfin">Συμβατό με Jellyfin</string>
-    <string name="silo_method_jellyfin_description">Χρησιμοποιεί τη διεύθυνση του Silo για εφαρμογές Jellyfin, με όνομα χρήστη και κωδικό πρόσβασης (name#Profile για προφίλ). Ο τρόπος που συνδεόταν μέχρι τώρα το Nuvio Arc στο Silo.</string>
+    <string name="silo_method_jellyfin_description">Χρησιμοποιεί τη διεύθυνση του Silo για εφαρμογές Jellyfin, με όνομα χρήστη και κωδικό πρόσβασης (name#Profile για προφίλ). Ο τρόπος που συνδεόταν μέχρι τώρα το Dex Hub στο Silo.</string>
     <string name="silo_setup_next">Επόμενο</string>
     <string name="silo_code_step_open">Στο τηλέφωνό σας, σαρώστε τον κωδικό ή ανοίξτε το %1$s</string>
     <string name="silo_code_step_sign_in">Συνδεθείτε εκεί όπως συνήθως</string>
@@ -154,7 +154,7 @@
     <string name="silo_network_or_code">Ή συνδεθείτε με κωδικό: %1$s στο %2$s</string>
     <string name="silo_signing_in">Σύνδεση…</string>
     <string name="silo_profiles_title">Ποιος παρακολουθεί;</string>
-    <string name="silo_profiles_subtitle">Ο λογαριασμός %1$s έχει περισσότερα από ένα προφίλ. Το Nuvio Arc χρησιμοποιεί αυτό που θα επιλέξετε για την πρόοδο, τις σημάνσεις προβολής και τις σειρές της Αρχικής. Μπορείτε να το αλλάξετε αργότερα στη σελίδα του διακομιστή.</string>
+    <string name="silo_profiles_subtitle">Ο λογαριασμός %1$s έχει περισσότερα από ένα προφίλ. Το Dex Hub χρησιμοποιεί αυτό που θα επιλέξετε για την πρόοδο, τις σημάνσεις προβολής και τις σειρές της Αρχικής. Μπορείτε να το αλλάξετε αργότερα στη σελίδα του διακομιστή.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Παιδικό</string>
     <string name="silo_pin_title">PIN για %1$s</string>
@@ -166,11 +166,11 @@
     <string name="servers_silo_profile">Προφίλ</string>
     <string name="servers_silo_profile_description">Η πρόοδος, οι σημάνσεις προβολής και οι σειρές της Αρχικής ακολουθούν αυτό το προφίλ.</string>
     <string name="servers_silo_home_rows">Σειρές Αρχικής Silo</string>
-    <string name="servers_silo_home_rows_description">Εμφάνιση των σειρών της Αρχικής σας στο Silo (οι λίστες σας, Δημοφιλή, Επόμενο…) στην Αρχική του Nuvio Arc.</string>
+    <string name="servers_silo_home_rows_description">Εμφάνιση των σειρών της Αρχικής σας στο Silo (οι λίστες σας, Δημοφιλή, Επόμενο…) στην Αρχική του Dex Hub.</string>
     <string name="servers_silo_switch">Μετάβαση σε σύνδεση Silo</string>
     <string name="servers_silo_switch_description">Συνδέεται μέσω της σύνδεσης του ίδιου του Silo και αντικαθιστά αυτή τη σύνδεση. Το όνομα και οι επιλεγμένες βιβλιοθήκες παραμένουν.</string>
     <string name="servers_add_plex_description">Σύνδεση με κωδικό στο plex.tv/link. Οι διακομιστές σας βρίσκονται αυτόματα.</string>
-    <string name="plex_sign_in_subtitle">Δεν χρειάζεται διεύθυνση διακομιστή: το Nuvio Arc βρίσκει τους διακομιστές Plex σας μετά τη σύνδεση.</string>
+    <string name="plex_sign_in_subtitle">Δεν χρειάζεται διεύθυνση διακομιστή: το Dex Hub βρίσκει τους διακομιστές Plex σας μετά τη σύνδεση.</string>
     <string name="plex_code_step_open">Στο τηλέφωνο ή στον υπολογιστή σας, ανοίξτε το %1$s (ή σαρώστε τον κωδικό)</string>
     <string name="plex_code_step_sign_in">Συνδεθείτε στο Plex αν ζητηθεί</string>
     <string name="plex_code_step_link">Πληκτρολογήστε τον παραπάνω κωδικό και πατήστε Link</string>
@@ -193,7 +193,7 @@
     <string name="plex_reach_remote_detail">προσβάσιμος μέσω διαδικτύου</string>
     <string name="plex_reach_relay_detail">προσβάσιμος μόνο μέσω Plex Relay (αργό, περίπου 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">εκτός σύνδεσης αυτή τη στιγμή</string>
-    <string name="plex_users_subtitle">Ο λογαριασμός Plex σας έχει χρήστες Plex Home. Το Nuvio Arc χρησιμοποιεί αυτόν που θα επιλέξετε για την πρόοδο, τις σημάνσεις προβολής και τη Συνέχεια παρακολούθησης στο %1$s. Μπορείτε να τον αλλάξετε αργότερα στη σελίδα του διακομιστή.</string>
+    <string name="plex_users_subtitle">Ο λογαριασμός Plex σας έχει χρήστες Plex Home. Το Dex Hub χρησιμοποιεί αυτόν που θα επιλέξετε για την πρόοδο, τις σημάνσεις προβολής και τη Συνέχεια παρακολούθησης στο %1$s. Μπορείτε να τον αλλάξετε αργότερα στη σελίδα του διακομιστή.</string>
     <string name="plex_user_owner">Κάτοχος</string>
     <string name="plex_user_managed">Διαχειριζόμενος</string>
     <string name="plex_other_user">Άλλος χρήστης</string>
@@ -201,8 +201,8 @@
     <string name="plex_home_user">Χρήστης Plex Home</string>
     <string name="plex_home_user_description">Η πρόοδος, οι σημάνσεις προβολής και η Συνέχεια παρακολούθησης ακολουθούν αυτόν τον χρήστη.</string>
     <string name="plex_home_rows">Σειρές Αρχικής Plex</string>
-    <string name="plex_home_rows_description">Εμφάνιση των σειρών του ίδιου του Plex από αυτόν τον διακομιστή (Προστέθηκαν πρόσφατα κ.ά.) στην Αρχική του Nuvio Arc.</string>
-    <string name="plex_remote_pass_needed">Το Plex δεν το αναπαράγει εκτός σπιτιού. Σε εφαρμογές όπως το Nuvio Arc χρειάζεται Plex Pass στον διακομιστή ή Remote Watch Pass για εσάς. Στο σπίτι παίζει δωρεάν.</string>
+    <string name="plex_home_rows_description">Εμφάνιση των σειρών του ίδιου του Plex από αυτόν τον διακομιστή (Προστέθηκαν πρόσφατα κ.ά.) στην Αρχική του Dex Hub.</string>
+    <string name="plex_remote_pass_needed">Το Plex δεν το αναπαράγει εκτός σπιτιού. Σε εφαρμογές όπως το Dex Hub χρειάζεται Plex Pass στον διακομιστή ή Remote Watch Pass για εσάς. Στο σπίτι παίζει δωρεάν.</string>
     <string name="server_library_sort_title">Α έως Ω</string>
     <string name="server_library_sort_released">Νεότερες κυκλοφορίες</string>
     <string name="server_library_sort_added">Προστέθηκαν πρόσφατα</string>

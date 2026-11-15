@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Kode QR untuk menghubungkan WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr belum diatur di build ini.</string>
     <string name="wetrakr_status_syncing">Menyinkronkan dengan WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Menunggu Anda mengizinkan Nuvio Arc di WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Menunggu Anda mengizinkan Dex Hub di WeTrakr</string>
     <string name="wetrakr_status_paused">Dijeda</string>
     <string name="wetrakr_daily_limit_row">Batas WeTrakr hari ini sudah habis. Sinkronisasi berlanjut pada %1$s.</string>
     <string name="wetrakr_limit_message">Batas WeTrakr hari ini sudah habis. Pemutaran tidak terpengaruh, tetapi tontonan tidak dikirim ke WeTrakr hingga %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Selesai: %1$s ditambahkan di WeTrakr, %2$s sudah ada atau tidak ditemukan.</string>
     <string name="wetrakr_upload_send">Kirim</string>
     <string name="wetrakr_upload_close">Tutup</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc menggunakan WeTrakr untuk riwayat tontonan, daftar, pelacakan pemutaran, dan judul serupa. Data dari WeTrakr. Nuvio Arc tidak berafiliasi dengan atau didukung oleh WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Sudah keluar di sini, tetapi WeTrakr tidak dapat diberi tahu. Anda dapat menghapus Nuvio Arc di bagian aplikasi terhubung di wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub menggunakan WeTrakr untuk riwayat tontonan, daftar, pelacakan pemutaran, dan judul serupa. Data dari WeTrakr. Dex Hub tidak berafiliasi dengan atau didukung oleh WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Sudah keluar di sini, tetapi WeTrakr tidak dapat diberi tahu. Anda dapat menghapus Dex Hub di bagian aplikasi terhubung di wetrakr.com.</string>
 </resources>

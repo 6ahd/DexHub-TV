@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">אין ספריות סרטים או סדרות זמינות למשתמש הזה.</string>
     <string name="servers_refresh_libraries">ריענון ספריות</string>
     <string name="servers_display_name">שם תצוגה</string>
-    <string name="servers_display_name_description">השם ש-Nuvio Arc מציג לשרת הזה במסך הבית, בהגדרות ובמקורות.</string>
+    <string name="servers_display_name_description">השם ש-Dex Hub מציג לשרת הזה במסך הבית, בהגדרות ובמקורות.</string>
     <string name="servers_display_name_server_name">השם המקורי של השרת: %1$s</string>
-    <string name="servers_display_name_dialog_description">יש לבחור את השם ש-Nuvio Arc מציג לשרת הזה. אפשר להשאיר ריק כדי להשתמש בשם המקורי של השרת.</string>
+    <string name="servers_display_name_dialog_description">יש לבחור את השם ש-Dex Hub מציג לשרת הזה. אפשר להשאיר ריק כדי להשתמש בשם המקורי של השרת.</string>
     <string name="servers_display_name_reset">איפוס לשם השרת</string>
     <string name="servers_enabled">מופעל</string>
     <string name="servers_enabled_description">הצגת השרת הזה במסך הבית, בחיפוש ובתוצאות הסטרימים.</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">הפריט הזה כבר אינו זמין בשרת.</string>
     <string name="servers_failure_certificate">האישור של השרת הזה אינו מזוהה.</string>
     <string name="servers_certificate_title">האישור של השרת הזה אינו מזוהה</string>
-    <string name="servers_certificate_intro">Nuvio Arc לא הצליחה לאמת את הזהות של %1$s.</string>
+    <string name="servers_certificate_intro">Dex Hub לא הצליחה לאמת את הזהות של %1$s.</string>
     <string name="servers_certificate_untrusted">האישור בחתימה עצמית או הונפק על ידי רשות פרטית.</string>
     <string name="servers_certificate_name_mismatch">האישור הונפק לשם אחר.</string>
     <string name="servers_certificate_expired">האישור מחוץ לתאריכי התוקף שלו.</string>
-    <string name="servers_certificate_advice">אם זה השרת שלך והמצב צפוי, אפשר לתת אמון באישור הזה. Nuvio Arc תקבל אז רק את האישור המדויק הזה עבור השרת ותתריע אם הוא ישתנה. מחוץ לרשת הביתית, כדאי לבדוק קודם את טביעת האצבע מול בעל השרת.</string>
+    <string name="servers_certificate_advice">אם זה השרת שלך והמצב צפוי, אפשר לתת אמון באישור הזה. Dex Hub תקבל אז רק את האישור המדויק הזה עבור השרת ותתריע אם הוא ישתנה. מחוץ לרשת הביתית, כדאי לבדוק קודם את טביעת האצבע מול בעל השרת.</string>
     <string name="servers_certificate_details">הונפק עבור: %1$s\nהונפק על ידי: %2$s\nתוקף: %3$s עד %4$s\nטביעת אצבע (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">לתת אמון באישור הזה</string>
     <string name="servers_certificate_unavailable">החיבור המאובטח נכשל ולא ניתן היה לקרוא את האישור של השרת.</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">התחברות Silo (מומלץ)</string>
     <string name="silo_method_native_description">התחברות עם קוד בטלפון או עם סיסמת Silo. עובד עם כל דרכי ההתחברות של השרת (סיסמה, OpenID Connect, LDAP, Tailscale). מביא את פרופילי ה-Silo ואת שורות מסך הבית של Silo.</string>
     <string name="silo_method_jellyfin">תואם Jellyfin</string>
-    <string name="silo_method_jellyfin_description">משתמש בכתובת של Silo לאפליקציות Jellyfin, עם שם משתמש וסיסמה (name#Profile לפרופיל). הדרך שבה Nuvio Arc התחבר ל-Silo עד עכשיו.</string>
+    <string name="silo_method_jellyfin_description">משתמש בכתובת של Silo לאפליקציות Jellyfin, עם שם משתמש וסיסמה (name#Profile לפרופיל). הדרך שבה Dex Hub התחבר ל-Silo עד עכשיו.</string>
     <string name="silo_setup_next">הבא</string>
     <string name="silo_code_step_open">בטלפון, יש לסרוק את הקוד או לפתוח את %1$s</string>
     <string name="silo_code_step_sign_in">יש להתחבר שם כרגיל</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">או התחברות עם קוד: %1$s בכתובת %2$s</string>
     <string name="silo_signing_in">מתחבר…</string>
     <string name="silo_profiles_title">מי צופה?</string>
-    <string name="silo_profiles_subtitle">ל-%1$s יש יותר מפרופיל אחד. Nuvio Arc משתמש בפרופיל שנבחר להתקדמות הצפייה, לסימוני הצפייה ולשורות מסך הבית. אפשר לשנות אותו מאוחר יותר בדף השרת.</string>
+    <string name="silo_profiles_subtitle">ל-%1$s יש יותר מפרופיל אחד. Dex Hub משתמש בפרופיל שנבחר להתקדמות הצפייה, לסימוני הצפייה ולשורות מסך הבית. אפשר לשנות אותו מאוחר יותר בדף השרת.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">ילדים</string>
     <string name="silo_pin_title">קוד PIN עבור %1$s</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">פרופיל</string>
     <string name="servers_silo_profile_description">התקדמות הצפייה, סימוני הצפייה ושורות מסך הבית עוקבים אחרי הפרופיל הזה.</string>
     <string name="servers_silo_home_rows">שורות מסך הבית של Silo</string>
-    <string name="servers_silo_home_rows_description">הצגת השורות ממסך הבית של Silo (הרשימות שלך, חם עכשיו, הפרק הבא…) במסך הבית של Nuvio Arc.</string>
+    <string name="servers_silo_home_rows_description">הצגת השורות ממסך הבית של Silo (הרשימות שלך, חם עכשיו, הפרק הבא…) במסך הבית של Dex Hub.</string>
     <string name="servers_silo_switch">מעבר להתחברות Silo</string>
     <string name="servers_silo_switch_description">מתחבר דרך ההתחברות של Silo עצמו, ואז מחליף את החיבור הזה. השם ובחירת הספריות נשארים.</string>
     <string name="servers_add_plex_description">התחברות עם קוד ב-plex.tv/link. השרתים נמצאים אוטומטית.</string>
-    <string name="plex_sign_in_subtitle">אין צורך בכתובת שרת: Nuvio Arc מוצא את שרתי ה-Plex אחרי ההתחברות.</string>
+    <string name="plex_sign_in_subtitle">אין צורך בכתובת שרת: Dex Hub מוצא את שרתי ה-Plex אחרי ההתחברות.</string>
     <string name="plex_code_step_open">בטלפון או במחשב, יש לפתוח את %1$s (או לסרוק את הקוד)</string>
     <string name="plex_code_step_sign_in">יש להתחבר ל-Plex אם מתבקשים</string>
     <string name="plex_code_step_link">יש להקליד את הקוד שלמעלה וללחוץ על Link</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">מחובר דרך האינטרנט</string>
     <string name="plex_reach_relay_detail">זמין רק דרך Plex Relay (איטי, כ-2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">לא מקוון כרגע</string>
-    <string name="plex_users_subtitle">בחשבון ה-Plex יש משתמשי Plex Home. Nuvio Arc משתמש במשתמש שנבחר להתקדמות הצפייה, לסימוני הצפייה ולשורת המשך צפייה ב-%1$s. אפשר לשנות אותו מאוחר יותר בדף השרת.</string>
+    <string name="plex_users_subtitle">בחשבון ה-Plex יש משתמשי Plex Home. Dex Hub משתמש במשתמש שנבחר להתקדמות הצפייה, לסימוני הצפייה ולשורת המשך צפייה ב-%1$s. אפשר לשנות אותו מאוחר יותר בדף השרת.</string>
     <string name="plex_user_owner">בעלים</string>
     <string name="plex_user_managed">מנוהל</string>
     <string name="plex_other_user">משתמש אחר</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">משתמש Plex Home</string>
     <string name="plex_home_user_description">התקדמות הצפייה, סימוני הצפייה ושורת המשך צפייה עוקבים אחרי המשתמש הזה.</string>
     <string name="plex_home_rows">שורות Plex במסך הבית</string>
-    <string name="plex_home_rows_description">הצגת השורות של Plex מהשרת הזה (נוספו לאחרונה ועוד) במסך הבית של Nuvio Arc.</string>
-    <string name="plex_remote_pass_needed">Plex לא מנגן את זה מחוץ לבית. באפליקציות כמו Nuvio Arc נדרש Plex Pass בשרת, או Remote Watch Pass עבורך. בבית זה מתנגן בחינם.</string>
+    <string name="plex_home_rows_description">הצגת השורות של Plex מהשרת הזה (נוספו לאחרונה ועוד) במסך הבית של Dex Hub.</string>
+    <string name="plex_remote_pass_needed">Plex לא מנגן את זה מחוץ לבית. באפליקציות כמו Dex Hub נדרש Plex Pass בשרת, או Remote Watch Pass עבורך. בבית זה מתנגן בחינם.</string>
     <string name="server_library_sort_title">מא\' עד ת\'</string>
     <string name="server_library_sort_released">יציאות אחרונות</string>
     <string name="server_library_sort_added">נוספו לאחרונה</string>

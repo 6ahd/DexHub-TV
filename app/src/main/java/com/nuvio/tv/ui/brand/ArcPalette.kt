@@ -71,7 +71,7 @@ class ArcPalette private constructor(val key: String, private val stops: IntArra
 
         val Crimson = of("crimson", 0xFF9B91, 0xE53935, 0xA51929)
         val Ocean = of("ocean", 0x8BDEFF, 0x1E88E5, 0x1565C0)
-        val Violet = of("violet", 0xDFB3FF, 0x8E24AA, 0x6A1B9A)
+        val Violet = of("violet", 0xC9B3FF, 0x9B6BFF, 0x4F8BFF)
         val Emerald = of("emerald", 0xB5EF9E, 0x43A047, 0x2E7D32)
         val Amber = of("amber", 0xFFE5A3, 0xFB8C00, 0xEF6C00)
         val Copper = of("copper", 0xFFD4AD, 0xCD7D4B, 0x853E2D)

@@ -22,13 +22,13 @@ class ThemeProfileDefaultsTest {
         every { factory.get(1, "theme_settings") } returns store1
         every { factory.get(2, "theme_settings") } returns store2
         val themes = ThemeDataStore(factory, manager)
-        assertEquals(AppTheme.GLASS, resolveAppTheme(themes.themeSelection.first().theme, CosmeticEntitlements.None))
-        assertEquals(AppTheme.GLASS, resolveAppTheme(themes.getThemeForProfile(1), CosmeticEntitlements.SupporterPreview))
+        assertEquals(AppTheme.VIOLET, resolveAppTheme(themes.themeSelection.first().theme, CosmeticEntitlements.None))
+        assertEquals(AppTheme.VIOLET, resolveAppTheme(themes.getThemeForProfile(1), CosmeticEntitlements.SupporterPreview))
         active.value = 2
         assertEquals(AppTheme.OCEAN, themes.themeSelection.first().theme)
         assertEquals(AppTheme.OCEAN, themes.observeThemeForProfile(2).first())
         active.value = 1
-        assertEquals(AppTheme.GLASS, resolveAppTheme(themes.themeSelection.first().theme, CosmeticEntitlements.None))
+        assertEquals(AppTheme.VIOLET, resolveAppTheme(themes.themeSelection.first().theme, CosmeticEntitlements.None))
         assertEquals("OCEAN", second.value[stringPreferencesKey("selected_theme")])
         assertTrue(first.value.asMap().isEmpty())
     }

@@ -44,9 +44,9 @@
     <string name="servers_libraries_home_description">Pasirinktos bibliotekos gauna eilutę pradiniame ekrane. Paieška ir srautų rezultatai visada naudoja visas bibliotekas.</string>
     <string name="servers_refresh_libraries">Atnaujinti bibliotekas</string>
     <string name="servers_display_name">Rodomas pavadinimas</string>
-    <string name="servers_display_name_description">Pavadinimas, kurį Nuvio Arc rodo šiam serveriui pradiniame ekrane, nustatymuose ir šaltiniuose.</string>
+    <string name="servers_display_name_description">Pavadinimas, kurį Dex Hub rodo šiam serveriui pradiniame ekrane, nustatymuose ir šaltiniuose.</string>
     <string name="servers_display_name_server_name">Paties serverio pavadinimas: %1$s</string>
-    <string name="servers_display_name_dialog_description">Pasirinkite pavadinimą, kurį Nuvio Arc rodo šiam serveriui. Palikite tuščią, kad būtų naudojamas paties serverio pavadinimas.</string>
+    <string name="servers_display_name_dialog_description">Pasirinkite pavadinimą, kurį Dex Hub rodo šiam serveriui. Palikite tuščią, kad būtų naudojamas paties serverio pavadinimas.</string>
     <string name="servers_display_name_reset">Atkurti serverio pavadinimą</string>
     <string name="servers_enabled">Įjungta</string>
     <string name="servers_catalog_metadata">Naudoti priedų metaduomenis</string>
@@ -81,7 +81,7 @@
     <string name="servers_error_forbidden">Šis naudotojas neturi prieigos.</string>
     <string name="servers_error_failed">Nepavyko prisijungti prie serverio.</string>
     <string name="servers_error_website">Šis adresas atveria svetainę, o ne medijos serverį. Įveskite paties serverio adresą.</string>
-    <string name="servers_error_silo_website">„Nuvio Arc“ nepavyko rasti šio Silo serverio Jellyfin adreso. Silo sąsajoje atidarykite „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ ir įveskite adresą, rodomą po „Server“.</string>
+    <string name="servers_error_silo_website">„Dex Hub“ nepavyko rasti šio Silo serverio Jellyfin adreso. Silo sąsajoje atidarykite „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ ir įveskite adresą, rodomą po „Server“.</string>
     <string name="servers_error_silo_jellyfin_off">Šiame Silo serveryje Jellyfin programos išjungtos. Paprašykite serverio savininko jas įjungti.</string>
     <string name="servers_error_profile_needed">Naudotojo vardo pabaigoje pridėkite # ir savo Silo profilio pavadinimą, pvz., vardas#Profilis arba vardas#1234#Profilis.</string>
     <string name="servers_error_profile_not_found">Silo dalį po paskutinio # laiko profilio pavadinimu, o tokio profilio nėra. Jei jūsų naudotojo varde yra #, pabaigoje pridėkite # ir profilio pavadinimą, pvz., vardas#1234#Profilis.</string>
@@ -95,11 +95,11 @@
     <string name="servers_failure_unreachable">Serveris nepasiekiamas.</string>
     <string name="servers_failure_certificate">Šio serverio sertifikatas neatpažintas.</string>
     <string name="servers_certificate_title">Šio serverio sertifikatas neatpažintas</string>
-    <string name="servers_certificate_intro">„Nuvio Arc“ nepavyko patvirtinti %1$s tapatybės.</string>
+    <string name="servers_certificate_intro">„Dex Hub“ nepavyko patvirtinti %1$s tapatybės.</string>
     <string name="servers_certificate_untrusted">Sertifikatas pasirašytas paties savininko arba išduotas privačios sertifikavimo įstaigos.</string>
     <string name="servers_certificate_name_mismatch">Sertifikatas išduotas kitam vardui.</string>
     <string name="servers_certificate_expired">Sertifikatas nebegalioja arba dar negalioja.</string>
-    <string name="servers_certificate_advice">Jei tai jūsų serveris ir to tikėjotės, galite pasitikėti šiuo sertifikatu. Tada „Nuvio Arc“ šiam serveriui priims tik būtent šį sertifikatą ir įspės, jei jis kada nors pasikeis. Jei esate ne namų tinkle, pirmiausia patikrinkite kontrolinį kodą su serverio savininku.</string>
+    <string name="servers_certificate_advice">Jei tai jūsų serveris ir to tikėjotės, galite pasitikėti šiuo sertifikatu. Tada „Dex Hub“ šiam serveriui priims tik būtent šį sertifikatą ir įspės, jei jis kada nors pasikeis. Jei esate ne namų tinkle, pirmiausia patikrinkite kontrolinį kodą su serverio savininku.</string>
     <string name="servers_certificate_details">Kam išduotas: %1$s\nIšdavė: %2$s\nGalioja: nuo %3$s iki %4$s\nKontrolinis kodas (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Pasitikėti šiuo sertifikatu</string>
     <string name="servers_certificate_unavailable">Saugus ryšys nepavyko, o serverio sertifikato nepavyko nuskaityti.</string>
@@ -136,7 +136,7 @@
     <string name="silo_method_native_recommended">Silo prisijungimas (rekomenduojama)</string>
     <string name="silo_method_native_description">Prisijunkite su kodu telefone arba Silo slaptažodžiu. Veikia su visais jūsų serverio prisijungimo būdais (slaptažodis, OpenID Connect, LDAP, Tailscale). Perkelia jūsų Silo profilius ir Silo pradinio ekrano eilutes.</string>
     <string name="silo_method_jellyfin">Suderinamas su Jellyfin</string>
-    <string name="silo_method_jellyfin_description">Naudoja Silo adresą Jellyfin programoms, su naudotojo vardu ir slaptažodžiu (vardas#Profilis profiliui). Taip Nuvio Arc iki šiol jungėsi prie Silo.</string>
+    <string name="silo_method_jellyfin_description">Naudoja Silo adresą Jellyfin programoms, su naudotojo vardu ir slaptažodžiu (vardas#Profilis profiliui). Taip Dex Hub iki šiol jungėsi prie Silo.</string>
     <string name="silo_setup_next">Toliau</string>
     <string name="silo_code_step_open">Telefone nuskaitykite kodą arba atidarykite %1$s</string>
     <string name="silo_code_step_sign_in">Ten prisijunkite kaip įprastai</string>
@@ -152,7 +152,7 @@
     <string name="silo_network_or_code">Arba prisijunkite su kodu: %1$s adresu %2$s</string>
     <string name="silo_signing_in">Prisijungiama…</string>
     <string name="silo_profiles_title">Kas žiūri?</string>
-    <string name="silo_profiles_subtitle">%1$s turi daugiau nei vieną profilį. Nuvio Arc naudoja pasirinktą profilį eigai, peržiūros žymėms ir pradinio ekrano eilutėms. Vėliau jį galite pakeisti serverio puslapyje.</string>
+    <string name="silo_profiles_subtitle">%1$s turi daugiau nei vieną profilį. Dex Hub naudoja pasirinktą profilį eigai, peržiūros žymėms ir pradinio ekrano eilutėms. Vėliau jį galite pakeisti serverio puslapyje.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Vaikų</string>
     <string name="silo_pin_title">PIN kodas profiliui %1$s</string>
@@ -164,11 +164,11 @@
     <string name="servers_silo_profile">Profilis</string>
     <string name="servers_silo_profile_description">Eiga, peržiūros žymės ir pradinio ekrano eilutės susietos su šiuo profiliu.</string>
     <string name="servers_silo_home_rows">Silo pradinio ekrano eilutės</string>
-    <string name="servers_silo_home_rows_description">Rodyti jūsų Silo pradinio ekrano eilutes (jūsų sąrašai, Populiaru, Kitas…) Nuvio Arc pradiniame ekrane.</string>
+    <string name="servers_silo_home_rows_description">Rodyti jūsų Silo pradinio ekrano eilutes (jūsų sąrašai, Populiaru, Kitas…) Dex Hub pradiniame ekrane.</string>
     <string name="servers_silo_switch">Pereiti prie Silo prisijungimo</string>
     <string name="servers_silo_switch_description">Prisijungia paties Silo prisijungimu ir pakeičia šį ryšį. Pavadinimas ir pasirinktos bibliotekos išlieka.</string>
     <string name="servers_add_plex_description">Prisijunkite su kodu adresu plex.tv/link. Serveriai surandami automatiškai.</string>
-    <string name="plex_sign_in_subtitle">Serverio adreso nereikia: prisijungus Nuvio Arc suras jūsų Plex serverius.</string>
+    <string name="plex_sign_in_subtitle">Serverio adreso nereikia: prisijungus Dex Hub suras jūsų Plex serverius.</string>
     <string name="plex_code_step_open">Telefone ar kompiuteryje atidarykite %1$s (arba nuskaitykite kodą)</string>
     <string name="plex_code_step_sign_in">Jei paprašys, prisijunkite prie Plex</string>
     <string name="plex_code_step_link">Įveskite aukščiau esantį kodą ir paspauskite Link</string>
@@ -191,7 +191,7 @@
     <string name="plex_reach_remote_detail">pasiekiamas per internetą</string>
     <string name="plex_reach_relay_detail">pasiekiamas tik per Plex Relay (lėta, apie 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">šiuo metu neprisijungęs</string>
-    <string name="plex_users_subtitle">Jūsų Plex paskyroje yra Plex Home naudotojų. Nuvio Arc naudoja pasirinktą naudotoją eigai, peržiūros žymėms ir „Tęsti žiūrėjimą“ serveryje %1$s. Vėliau jį galite pakeisti serverio puslapyje.</string>
+    <string name="plex_users_subtitle">Jūsų Plex paskyroje yra Plex Home naudotojų. Dex Hub naudoja pasirinktą naudotoją eigai, peržiūros žymėms ir „Tęsti žiūrėjimą“ serveryje %1$s. Vėliau jį galite pakeisti serverio puslapyje.</string>
     <string name="plex_user_owner">Savininkas</string>
     <string name="plex_user_managed">Valdomas</string>
     <string name="plex_other_user">Kitas naudotojas</string>
@@ -199,8 +199,8 @@
     <string name="plex_home_user">Plex Home naudotojas</string>
     <string name="plex_home_user_description">Eiga, peržiūros žymės ir „Tęsti žiūrėjimą“ susietos su šiuo naudotoju.</string>
     <string name="plex_home_rows">Plex pradinio ekrano eilutės</string>
-    <string name="plex_home_rows_description">Rodyti paties Plex eilutes iš šio serverio (Neseniai pridėta ir kt.) Nuvio Arc pradiniame ekrane.</string>
-    <string name="plex_remote_pass_needed">Plex neleidžia to žiūrėti ne namuose. Programėlėse kaip Nuvio Arc tam reikia Plex Pass serveryje arba Remote Watch Pass jums. Namuose žiūrėti nemokama.</string>
+    <string name="plex_home_rows_description">Rodyti paties Plex eilutes iš šio serverio (Neseniai pridėta ir kt.) Dex Hub pradiniame ekrane.</string>
+    <string name="plex_remote_pass_needed">Plex neleidžia to žiūrėti ne namuose. Programėlėse kaip Dex Hub tam reikia Plex Pass serveryje arba Remote Watch Pass jums. Namuose žiūrėti nemokama.</string>
     <string name="server_library_sort_title">Nuo A iki Ž</string>
     <string name="server_library_sort_released">Naujausi leidimai</string>
     <string name="server_library_sort_added">Neseniai pridėti</string>

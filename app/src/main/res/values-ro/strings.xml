@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="type_movie">Film</string>
     <string name="type_series">Serial</string>
 
@@ -114,7 +114,7 @@
     <!-- AboutScreen -->
     <string name="about_title">Despre</string>
     <string name="about_subtitle">Informații despre aplicație, actualizări și legături legale</string>
-    <string name="about_made_with_love">Construit pe munca extraordinară a Tapframe și a prietenilor ❤️ · Nuvio Arc de ysosrs123</string>
+    <string name="about_made_with_love">Construit pe munca extraordinară a Tapframe și a prietenilor ❤️ · Dex Hub de ysosrs123</string>
     <string name="about_version">Versiunea %1$s</string>
     <string name="about_check_updates">Verifică actualizările</string>
     <string name="about_check_updates_subtitle">Descarcă cea mai recentă versiune</string>
@@ -440,7 +440,7 @@
     <string name="trakt_stat_watched_hours">Ore vizionate</string>
     <string name="trakt_disconnect">Deconectare</string>
     <string name="trakt_disconnect_title">Deconectare Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Aceasta va deconecta contul tău Trakt de Nuvio Arc.</string>
+    <string name="trakt_disconnect_subtitle">Aceasta va deconecta contul tău Trakt de Dex Hub.</string>
     <string name="trakt_login">Autentificare</string>
     <string name="trakt_retry">Reîncercare</string>
     <string name="trakt_back">Înapoi</string>
@@ -766,7 +766,7 @@
     <string name="catalog_see_all_empty_subtitle">Încearcă un catalog diferit sau revino mai târziu</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Bine ai venit la Nuvio Arc</string>
+    <string name="layout_selection_welcome">Bine ai venit la Dex Hub</string>
     <string name="layout_selection_subtitle">Alege aspectul ecranului de pornire</string>
     <string name="layout_selection_continue">Continuă</string>
 
@@ -892,7 +892,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Fonturi subtitrări</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed și Noto Sans (cu Noto Sans Arabic, Hebrew, Devanagari, Bengali și Tamil) de The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors și The Noto Project Authors. Sub licența SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo și Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc se conectează la propriul tău server Jellyfin, Emby, Silo sau Plex. Numele și siglele aparțin proprietarilor lor. Nuvio Arc nu este afiliat cu Jellyfin, Emby sau Silo și nu este susținut de acestea.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub se conectează la propriul tău server Jellyfin, Emby, Silo sau Plex. Numele și siglele aparțin proprietarilor lor. Dex Hub nu este afiliat cu Jellyfin, Emby sau Silo și nu este susținut de acestea.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Liste de grupuri de release. Licență MIT.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -940,7 +940,7 @@
     <string name="playback_afr_closed">Închis</string>
     <string name="audio_tunneled_sub_prefer_app">Indisponibil cât timp Prioritate decodor este setată la Preferă decoderele aplicației</string>
     <string name="audio_use_system_passthrough">Passthrough de sistem</string>
-    <string name="audio_use_system_passthrough_sub">Trimite TrueHD și DTS-HD către receptor prin Android (calea de sistem) în loc de Nuvio Arc (calea IEC). În funcție de dispozitiv și de configurația audio, aceasta poate limita DTS-HD și DTS:X la DTS standard sau le poate lăsa fără sunet. Folosește opțiunea doar dacă formatele lossless produc zgomot, desincronizare sau nu au sunet.</string>
+    <string name="audio_use_system_passthrough_sub">Trimite TrueHD și DTS-HD către receptor prin Android (calea de sistem) în loc de Dex Hub (calea IEC). În funcție de dispozitiv și de configurația audio, aceasta poate limita DTS-HD și DTS:X la DTS standard sau le poate lăsa fără sunet. Folosește opțiunea doar dacă formatele lossless produc zgomot, desincronizare sau nu au sunet.</string>
     <string name="audio_dtshd_tv_passthrough">Passthrough DTS-HD și DTS:X</string>
     <string name="audio_dtshd_tv_passthrough_sub">Alege Passthrough prin TV dacă soundbarul arată DTS simplu sau nu redă nimic la filmele DTS-HD sau DTS:X.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standard</string>
@@ -1064,7 +1064,7 @@
     <string name="floppy_tracking_description">Trimite ce vizionezi către propriul server Floppy</string>
     <string name="floppy_connected_to">Conectat la %1$s</string>
     <string name="floppy_connected_description">Ce vizionezi pe acest profil ajunge în Floppy: „Now Playing” cât timp vizionezi, titlurile terminate în istoric, cele oprite cu punct de reluare. Se transmite și „Marchează ca vizionat”. Anularea marcajului unui film aici resetează toate vizionările lui din Floppy; la un episod se retrage doar ultima vizionare. Pe un server Floppy mai vechi se elimină doar vizionările adăugate de Arc la un film.</string>
-    <string name="floppy_qr_description">Cod QR pentru aprobarea Nuvio Arc în Floppy</string>
+    <string name="floppy_qr_description">Cod QR pentru aprobarea Dex Hub în Floppy</string>
     <string name="floppy_address_instruction">Introdu adresa la care deschizi Floppy în browser.</string>
     <string name="floppy_token_instruction">În Floppy, deschide Settings, Integrations, App tokens și creează un token pentru acest televizor.</string>
     <string name="floppy_address_placeholder">Adresa serverului, de exemplu 192.168.1.20:8000</string>
@@ -1411,7 +1411,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV nu acceptă redimensionarea subtitrărilor imagine. Folosește ExoPlayer pentru a le regla dimensiunea independent de text.</string>
     <string name="subtitle_style_image_size">Dimensiune subtitrări imagine</string>
     <string name="v2_accent_fixed_hint">Folosește Tema de culoare, dacă nu este selectat accentul din ilustrație.</string>
-    <string name="about_fork_updates_subtitle">Actualizări din versiunile Nuvio Arc de pe GitHub.</string>
+    <string name="about_fork_updates_subtitle">Actualizări din versiunile Dex Hub de pe GitHub.</string>
     <string name="playback_speculative_stream_search">Caută surse înainte de Redă</string>
     <string name="playback_speculative_stream_search_sub">Caută în suplimente în timp ce navighezi, pentru o selecție mai rapidă a sursei. Unele suplimente pot adăuga sau prelua conținut în timpul căutărilor. Când e dezactivat, așteaptă până la Redă. Linkurile media și rezolvarea furnizorului așteaptă selecția de redare, cu excepția finalului unui episod, când miniaturile de derulare îl pregătesc pe următorul.</string>
     <string name="playback_source_line_badges">Insignele sursei pe pagina de detalii</string>
@@ -1603,7 +1603,7 @@
     <string name="party_match_same">Același fișier ca al gazdei</string>
     <string name="party_match_likely">Probabil copia gazdei</string>
     <string name="party_match_different">Altă copie decât a gazdei</string>
-    <string name="party_invite_text">Vino la petrecerea mea de vizionare în Nuvio Arc. Deschide Setări, apoi Petrecere de vizionare, și introdu codul %1$s</string>
+    <string name="party_invite_text">Vino la petrecerea mea de vizionare în Dex Hub. Deschide Setări, apoi Petrecere de vizionare, și introdu codul %1$s</string>
     <string name="party_invite_qr">Scanează cu camera telefonului ca să trimiți invitația prin mesaj</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -1821,7 +1821,7 @@
     <string name="format_check_note_dv5">Setările dvs. convertesc Profile 5 în 8.1.</string>
     <string name="format_check_note_hdr10_plus">Setările dvs. elimină datele HDR10+.</string>
     <string name="playback_release_decoder_on_background">Eliberează decodorul în fundal</string>
-    <string name="playback_release_decoder_on_background_sub">Eliberează decodorul video când Nuvio Arc trece în fundal. Activează dacă redarea eșuează cu o eroare de decodor după revenirea în aplicație. Playerul se reîncarcă la revenire, inclusiv după screensaver</string>
+    <string name="playback_release_decoder_on_background_sub">Eliberează decodorul video când Dex Hub trece în fundal. Activează dacă redarea eșuează cu o eroare de decodor după revenirea în aplicație. Playerul se reîncarcă la revenire, inclusiv după screensaver</string>
     <string name="autosync_toast_no_fit">Sincronizare eșuată: aceste subtitrări nu se potrivesc cu această versiune a videoclipului.</string>
     <string name="layout_hero_description_auto_scroll">Derulare automată a descrierilor</string>
     <string name="layout_hero_description_auto_scroll_sub">Derulează încet descrierile lungi pe ecranul de pornire în loc să le taie.</string>
@@ -1832,7 +1832,7 @@
     <string name="web_subtitle_font_added">Adăugat pe televizor</string>
     <string name="web_subtitle_font_error">Fontul nu a putut fi importat. Alege un fișier .ttf sau .otf valid, sub 10 MB.</string>
     <string name="web_subtitle_font_connection_error">Eroare de conexiune</string>
-    <string name="player_dts_hd_decoding_notice">Ieșirea DTS-HD lossless a încetat să funcționeze, așa că Nuvio Arc decodează singur sunetul acestui titlu.</string>
+    <string name="player_dts_hd_decoding_notice">Ieșirea DTS-HD lossless a încetat să funcționeze, așa că Dex Hub decodează singur sunetul acestui titlu.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadate</string>
     <string name="addon_health_ok">OK</string>
@@ -1840,13 +1840,13 @@
     <string name="addon_health_down">Nefuncțional</string>
     <string name="addon_health_setup">Configurare</string>
     <string name="appearance_launcher_artwork">Aspect în launcher</string>
-    <string name="appearance_launcher_artwork_subtitle">Alege cum apare Nuvio Arc pe ecranul de pornire al televizorului</string>
+    <string name="appearance_launcher_artwork_subtitle">Alege cum apare Dex Hub pe ecranul de pornire al televizorului</string>
     <string name="appearance_app_icon_and_banner">Pictogramă și banner</string>
     <string name="appearance_app_icon_and_banner_subtitle">Schimbă pictograma aplicației și bannerul</string>
     <string name="appearance_app_icon_picker_title">Alege pictograma și bannerul</string>
     <string name="appearance_app_icon_picker_subtitle">Fiecare stil include o pictogramă pătrată și un banner TV asortate</string>
     <string name="appearance_app_icon_confirmation_title">Schimbi pictograma aplicației?</string>
-    <string name="appearance_app_icon_confirmation_message">Trecerea la %1$s repornește Nuvio Arc cu noua pictogramă. Ecranul de pornire o poate afișa după câteva secunde, iar bannerul TV poate necesita repornirea dispozitivului. Selectează OK pentru a continua.</string>
+    <string name="appearance_app_icon_confirmation_message">Trecerea la %1$s repornește Dex Hub cu noua pictogramă. Ecranul de pornire o poate afișa după câteva secunde, iar bannerul TV poate necesita repornirea dispozitivului. Selectează OK pentru a continua.</string>
     <string name="appearance_app_icon_change_failed">Pictograma și bannerul nu au putut fi schimbate. Încearcă din nou.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Albastru arctic</string>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">Lanjutkan Menonton</string>
     <string name="type_movie">Film</string>
     <string name="type_movies">Film</string>
@@ -350,7 +350,7 @@
     <!-- AboutScreen -->
     <string name="about_title">Tentang</string>
     <string name="about_subtitle">Informasi aplikasi, pembaruan, dan tautan hukum</string>
-    <string name="about_made_with_love">Dibangun di atas karya hebat Tapframe dan teman-teman ❤️ · Nuvio Arc oleh ysosrs123</string>
+    <string name="about_made_with_love">Dibangun di atas karya hebat Tapframe dan teman-teman ❤️ · Dex Hub oleh ysosrs123</string>
     <string name="about_version">Versi %1$s</string>
     <string name="about_check_updates">Periksa pembaruan</string>
     <string name="about_check_updates_subtitle">Unduh rilis terbaru</string>
@@ -361,22 +361,22 @@
     <string name="about_licenses_attributions">Lisensi &amp; Atribusi</string>
     <string name="about_licenses_attributions_subtitle">Sumber data, pengakuan, dan lisensi Android</string>
     <string name="licenses_attributions_title">Lisensi &amp; Atribusi</string>
-    <string name="licenses_attributions_subtitle">Penyedia data, kredit layanan, dan lisensi pemutaran Android yang digunakan oleh Nuvio Arc.</string>
+    <string name="licenses_attributions_subtitle">Penyedia data, kredit layanan, dan lisensi pemutaran Android yang digunakan oleh Dex Hub.</string>
     <string name="licenses_attributions_section_app">LISENSI APLIKASI</string>
     <string name="licenses_attributions_section_data">DATA &amp; LAYANAN</string>
     <string name="licenses_attributions_section_playback">LISENSI PEMUTARAN ANDROID</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio Arc (fork dari Nuvio TV)</string>
+    <string name="licenses_attributions_nuvio_title">Dex Hub (fork dari Nuvio TV)</string>
     <string name="licenses_attributions_nuvio_body">Versi modifikasi dari Nuvio TV. Kode sumber dan ketentuan lisensi untuk build ini tersedia di repositori fork. Nuvio TV ada di github.com/NuvioMedia/NuvioTV. Dilisensikan di bawah GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
-    <string name="licenses_attributions_tmdb_body">Nuvio Arc menggunakan API TMDB untuk metadata film dan TV, poster dan latar belakang, trailer, pemeran, detail produksi, koleksi, dan rekomendasi. Produk ini menggunakan API TMDB namun tidak didukung atau disertifikasi oleh TMDB.</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub menggunakan API TMDB untuk metadata film dan TV, poster dan latar belakang, trailer, pemeran, detail produksi, koleksi, dan rekomendasi. Produk ini menggunakan API TMDB namun tidak didukung atau disertifikasi oleh TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="licenses_attributions_trakt_body">Nuvio Arc terhubung ke Trakt untuk autentikasi akun, riwayat tonton, sinkronisasi progres, data pustaka, rating, daftar, dan komentar. Nuvio Arc tidak berafiliasi dengan atau didukung oleh Trakt.</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub terhubung ke Trakt untuk autentikasi akun, riwayat tonton, sinkronisasi progres, data pustaka, rating, daftar, dan komentar. Dex Hub tidak berafiliasi dengan atau didukung oleh Trakt.</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
-    <string name="licenses_attributions_mdblist_body">Nuvio Arc menggunakan MDBList untuk rating dan data penyedia skor eksternal. Nuvio Arc tidak berafiliasi dengan atau didukung oleh MDBList.</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub menggunakan MDBList untuk rating dan data penyedia skor eksternal. Dex Hub tidak berafiliasi dengan atau didukung oleh MDBList.</string>
     <string name="licenses_attributions_introdb_title">IntroDB</string>
-    <string name="licenses_attributions_introdb_body">Nuvio Arc menggunakan API IntroDB untuk cap waktu intro, rekap, kredit, dan pratinjau dari komunitas yang digunakan oleh kontrol lewati. Nuvio Arc tidak berafiliasi dengan atau didukung oleh IntroDB.</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub menggunakan API IntroDB untuk cap waktu intro, rekap, kredit, dan pratinjau dari komunitas yang digunakan oleh kontrol lewati. Dex Hub tidak berafiliasi dengan atau didukung oleh IntroDB.</string>
     <string name="licenses_attributions_imdb_title">Dataset Non-Komersial IMDb</string>
-    <string name="licenses_attributions_imdb_body">Nuvio Arc menggunakan Dataset Non-Komersial IMDb, termasuk title.ratings.tsv.gz, untuk rating dan jumlah suara IMDb. Informasi atas izin IMDb (https://www.imdb.com). Digunakan dengan izin. Data IMDb untuk penggunaan pribadi dan non-komersial sesuai ketentuan IMDb.</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub menggunakan Dataset Non-Komersial IMDb, termasuk title.ratings.tsv.gz, untuk rating dan jumlah suara IMDb. Informasi atas izin IMDb (https://www.imdb.com). Digunakan dengan izin. Data IMDb untuk penggunaan pribadi dan non-komersial sesuai ketentuan IMDb.</string>
     <string name="licenses_attributions_exoplayer_title">AndroidX Media3 ExoPlayer 1.8.0</string>
     <string name="licenses_attributions_exoplayer_body">Digunakan sebagai mesin pemutaran Android. Dilisensikan di bawah Apache License, Versi 2.0.</string>
     <string name="licenses_attributions_libmpv_title">libmpv / libmpv-android</string>
@@ -398,7 +398,7 @@
     <string name="settings_advanced_subtitle">Performa, navigasi, cache, dan diagnostik</string>
     <string name="experience_mode_essential">Esensial</string>
     <string name="experience_mode_advanced">Lanjutan</string>
-    <string name="experience_mode_choose_title">Pilih pengalaman Nuvio Arc Anda</string>
+    <string name="experience_mode_choose_title">Pilih pengalaman Dex Hub Anda</string>
     <string name="experience_mode_choose_subtitle">Mulai sederhana atau buka semua kustomisasi. Anda bisa beralih kapan saja.</string>
     <string name="experience_mode_essential_card_subtitle">Pengaturan terfokus, add-on, dasar pemutaran, Trakt, dan pengaturan akun.</string>
     <string name="experience_mode_advanced_card_subtitle">Pengaturan lengkap, kontrol tata letak, urutan katalog, koleksi, plug-in, dan diagnostik.</string>
@@ -598,8 +598,8 @@
     <string name="playback_player_ask_desc">Pilih pemutar setiap kali</string>
     <string name="playback_player_auto">Otomatis (Terbaik untuk Konten)</string>
     <string name="playback_player_auto_desc">ExoPlayer untuk Film &amp; Serial TV · MPV untuk Anime</string>
-    <string name="playback_engine_exoplayer_desc">Kompatibilitas terbaik dengan fitur Nuvio Arc saat ini.</string>
-    <string name="playback_engine_mvplayer_desc">Menggunakan libmpv dengan kontrol OSD Nuvio Arc. Eksperimental.</string>
+    <string name="playback_engine_exoplayer_desc">Kompatibilitas terbaik dengan fitur Dex Hub saat ini.</string>
+    <string name="playback_engine_mvplayer_desc">Menggunakan libmpv dengan kontrol OSD Dex Hub. Eksperimental.</string>
 
     <!-- PlaybackAudioSettings -->
     <string name="audio_trailer_section">Trailer</string>
@@ -1108,7 +1108,7 @@
     <string name="trakt_stat_watched_hours">Jam Ditonton</string>
     <string name="trakt_disconnect">Putuskan</string>
     <string name="trakt_disconnect_title">Putuskan Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Ini akan memutuskan akun Trakt Anda dari Nuvio Arc.</string>
+    <string name="trakt_disconnect_subtitle">Ini akan memutuskan akun Trakt Anda dari Dex Hub.</string>
     <string name="trakt_login">Masuk</string>
     <string name="trakt_retry">Coba Lagi</string>
     <string name="trakt_back">Kembali</string>
@@ -1293,7 +1293,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">Streaming P2P</string>
-    <string name="p2p_consent_body">Stream ini menggunakan teknologi peer-to-peer (P2P). Dengan mengaktifkan P2P, Anda mengakui dan menyetujui bahwa:\n\n\u2022 Alamat IP Anda akan terlihat oleh peer lain di jaringan\n\u2022 Anda sepenuhnya bertanggung jawab atas konten yang Anda akses\n\u2022 Anda mengonfirmasi bahwa Anda memiliki hak hukum untuk streaming konten ini di yurisdiksi Anda\n\u2022 Nuvio Arc tidak menyelenggarakan, mendistribusikan, atau mengontrol konten P2P apa pun\n\u2022 Nuvio Arc tidak bertanggung jawab atas konsekuensi hukum apa pun yang timbul dari penggunaan streaming P2P Anda\n\nAnda menggunakan fitur ini sepenuhnya atas risiko Anda sendiri. P2P dapat dinonaktifkan kapan saja di Pengaturan.</string>
+    <string name="p2p_consent_body">Stream ini menggunakan teknologi peer-to-peer (P2P). Dengan mengaktifkan P2P, Anda mengakui dan menyetujui bahwa:\n\n\u2022 Alamat IP Anda akan terlihat oleh peer lain di jaringan\n\u2022 Anda sepenuhnya bertanggung jawab atas konten yang Anda akses\n\u2022 Anda mengonfirmasi bahwa Anda memiliki hak hukum untuk streaming konten ini di yurisdiksi Anda\n\u2022 Dex Hub tidak menyelenggarakan, mendistribusikan, atau mengontrol konten P2P apa pun\n\u2022 Dex Hub tidak bertanggung jawab atas konsekuensi hukum apa pun yang timbul dari penggunaan streaming P2P Anda\n\nAnda menggunakan fitur ini sepenuhnya atas risiko Anda sendiri. P2P dapat dinonaktifkan kapan saja di Pengaturan.</string>
     <string name="p2p_consent_enable">Aktifkan P2P</string>
     <string name="p2p_consent_cancel">Batal</string>
     <string name="settings_p2p_title">Streaming P2P</string>
@@ -1726,7 +1726,7 @@
     <string name="catalog_see_all_empty_subtitle">Coba katalog lain atau periksa kembali nanti</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Selamat datang di Nuvio Arc</string>
+    <string name="layout_selection_welcome">Selamat datang di Dex Hub</string>
     <string name="layout_selection_subtitle">Pilih tata letak layar beranda Anda</string>
     <string name="layout_selection_continue">Lanjutkan</string>
 
@@ -1941,7 +1941,7 @@
     <string name="cd_preview">Pratinjau</string>
     <string name="cd_test">Tes</string>
     <string name="cd_unlink">Putuskan Tautan</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">QR aktivasi Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2095,7 +2095,7 @@
     <string name="collections_editor_tmdb_list_helper">Contoh: https://www.themoviedb.org/list/8504994 atau 8504994.</string>
     <string name="collections_editor_tmdb_person_id">ID Orang</string>
     <string name="collections_editor_tmdb_person_helper">Contoh: https://www.themoviedb.org/person/31-tom-hanks atau 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Ditampilkan sebagai nama baris/tab. Jika kosong, Nuvio Arc akan membuatnya dari sumber.</string>
+    <string name="collections_editor_tmdb_title_helper">Ditampilkan sebagai nama baris/tab. Jika kosong, Dex Hub akan membuatnya dari sumber.</string>
     <string name="collections_editor_tmdb_quick_genres">Pintasan Genre</string>
     <string name="collections_editor_tmdb_quick_languages">Pintasan Bahasa</string>
     <string name="collections_editor_tmdb_quick_countries">Pintasan Negara</string>
@@ -2268,7 +2268,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Tanpa REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Gunakan pemutar bawaan Nuvio Arc</string>
+    <string name="playback_player_internal_desc">Gunakan pemutar bawaan Dex Hub</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>
@@ -2532,7 +2532,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Font subtitle</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed, dan Noto Sans (dengan Noto Sans Arabic, Hebrew, Devanagari, Bengali, dan Tamil) oleh The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors, dan The Noto Project Authors. Berlisensi SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo, dan Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc terhubung ke server Jellyfin, Emby, Silo, atau Plex milik Anda sendiri. Nama dan logonya adalah milik pemiliknya masing-masing. Nuvio Arc tidak berafiliasi dengan atau didukung oleh Jellyfin, Emby, atau Silo.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub terhubung ke server Jellyfin, Emby, Silo, atau Plex milik Anda sendiri. Nama dan logonya adalah milik pemiliknya masing-masing. Dex Hub tidak berafiliasi dengan atau didukung oleh Jellyfin, Emby, atau Silo.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Daftar grup rilis. Lisensi MIT.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -2580,7 +2580,7 @@
     <string name="playback_afr_closed">Tertutup</string>
     <string name="audio_tunneled_sub_prefer_app">Tidak tersedia saat Prioritas Dekoder disetel ke Utamakan dekoder aplikasi</string>
     <string name="audio_use_system_passthrough">Passthrough Sistem</string>
-    <string name="audio_use_system_passthrough_sub">Mengirim TrueHD dan DTS-HD ke penerima AV Anda melalui Android (jalur Sistem), bukan Nuvio Arc (jalur IEC). Tergantung perangkat dan pengaturan audio Anda, ini dapat membatasi DTS-HD dan DTS:X ke DTS standar atau membuatnya tanpa suara. Gunakan hanya jika format lossless menghasilkan derau, pergeseran, atau tanpa suara.</string>
+    <string name="audio_use_system_passthrough_sub">Mengirim TrueHD dan DTS-HD ke penerima AV Anda melalui Android (jalur Sistem), bukan Dex Hub (jalur IEC). Tergantung perangkat dan pengaturan audio Anda, ini dapat membatasi DTS-HD dan DTS:X ke DTS standar atau membuatnya tanpa suara. Gunakan hanya jika format lossless menghasilkan derau, pergeseran, atau tanpa suara.</string>
     <string name="audio_dtshd_tv_passthrough">Passthrough DTS-HD dan DTS:X</string>
     <string name="audio_dtshd_tv_passthrough_sub">Pilih Passthrough TV jika soundbar menampilkan DTS biasa atau tidak memutar apa pun pada film DTS-HD atau DTS:X.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standar</string>
@@ -2687,7 +2687,7 @@
     <string name="floppy_tracking_description">Kirim tontonan Anda ke server Floppy milik Anda sendiri</string>
     <string name="floppy_connected_to">Terhubung ke %1$s</string>
     <string name="floppy_connected_description">Yang Anda tonton di profil ini dikirim ke Floppy: “Now Playing” saat menonton, judul yang selesai ke riwayat, yang dihentikan dengan titik lanjut. “Tandai sudah ditonton” juga ikut terkirim. Membatalkan tanda film di sini mengatur ulang semua tontonannya di Floppy; untuk episode, hanya tontonan terakhir yang ditarik kembali. Di server Floppy yang lebih lama, hanya tontonan yang ditambahkan Arc ke film yang dihapus.</string>
-    <string name="floppy_qr_description">Kode QR untuk menyetujui Nuvio Arc di Floppy</string>
+    <string name="floppy_qr_description">Kode QR untuk menyetujui Dex Hub di Floppy</string>
     <string name="floppy_address_instruction">Masukkan alamat yang Anda pakai untuk membuka Floppy di browser.</string>
     <string name="floppy_token_instruction">Di Floppy, buka Settings, Integrations, App tokens lalu buat token untuk TV ini.</string>
     <string name="floppy_address_placeholder">Alamat server, misalnya 192.168.1.20:8000</string>
@@ -2808,11 +2808,11 @@
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Digunakan untuk efek buram latar belakang. Dibuat oleh Chris Banes. Dilindungi Apache License, Version 2.0.</string>
     <string name="licenses_attributions_simkl_title">Simkl</string>
-    <string name="licenses_attributions_simkl_body">Nuvio Arc terhubung ke Simkl untuk autentikasi akun, daftar tontonan, riwayat tontonan, progres pemutaran, dan scrobbling. Data pelacakan film, TV, dan anime disediakan oleh Simkl. Nuvio Arc tidak berafiliasi dengan atau didukung oleh Simkl.</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub terhubung ke Simkl untuk autentikasi akun, daftar tontonan, riwayat tontonan, progres pemutaran, dan scrobbling. Data pelacakan film, TV, dan anime disediakan oleh Simkl. Dex Hub tidak berafiliasi dengan atau didukung oleh Simkl.</string>
     <string name="licenses_attributions_premiumize_title">Premiumize</string>
-    <string name="licenses_attributions_premiumize_body">Nuvio Arc terhubung ke Premiumize untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Nuvio Arc tidak berafiliasi dengan atau didukung oleh Premiumize.</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub terhubung ke Premiumize untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Dex Hub tidak berafiliasi dengan atau didukung oleh Premiumize.</string>
     <string name="licenses_attributions_torbox_title">TorBox</string>
-    <string name="licenses_attributions_torbox_body">Nuvio Arc terhubung ke TorBox untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Nuvio Arc tidak berafiliasi dengan atau didukung oleh TorBox.</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub terhubung ke TorBox untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Dex Hub tidak berafiliasi dengan atau didukung oleh TorBox.</string>
     <string name="settings_content_discovery">Konten &amp; Penemuan</string>
     <string name="settings_content_discovery_subtitle">Add-on, plugin, katalog, dan sumber penemuan</string>
     <string name="settings_content_discovery_addons_subtitle">Kelola add-on, urutan katalog, dan koleksi</string>
@@ -2822,7 +2822,7 @@
     <string name="tracking_accounts_title">Akun</string>
     <string name="tracking_accounts_subtitle">Hubungkan dan kelola layanan pelacakan</string>
     <string name="tracking_sources_title">Sumber</string>
-    <string name="tracking_sources_subtitle">Pilih tempat Nuvio Arc membaca pustaka dan progres tontonan Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
+    <string name="tracking_sources_subtitle">Pilih tempat Dex Hub membaca pustaka dan progres tontonan Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
     <string name="tracking_trakt_features_title">Fitur Trakt</string>
     <string name="tracking_trakt_features_subtitle">Riwayat, ulasan, dan rekomendasi khusus Trakt</string>
     <string name="tracking_simkl_features_title">Fitur Simkl</string>
@@ -2839,8 +2839,8 @@
     <string name="tracking_status_connecting">Menghubungkan</string>
     <string name="tracking_finish_connection">Selesaikan persetujuan koneksi</string>
     <string name="tracking_connecting_provider">Memulai koneksi %1$s…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Pilih layanan yang dibaca Nuvio Arc untuk melanjutkan dan Lanjutkan Menonton. Scrobbling tetap aktif untuk setiap layanan yang terhubung.</string>
-    <string name="tracking_library_source_dialog_subtitle">Pilih layanan yang dibaca Nuvio Arc untuk Pustaka Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Pilih layanan yang dibaca Dex Hub untuk melanjutkan dan Lanjutkan Menonton. Scrobbling tetap aktif untuk setiap layanan yang terhubung.</string>
+    <string name="tracking_library_source_dialog_subtitle">Pilih layanan yang dibaca Dex Hub untuk Pustaka Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
     <string name="tracking_trakt_progress_required">Tersedia saat Trakt menjadi sumber Progres Tontonan</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -3645,7 +3645,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV tidak mendukung pengubahan ukuran subtitle gambar. Gunakan ExoPlayer untuk mengatur ukuran subtitle gambar terpisah dari teks.</string>
     <string name="subtitle_style_image_size">Ukuran subtitle gambar</string>
     <string name="v2_accent_fixed_hint">Memakai Tema Warna kecuali aksen gambar dipilih.</string>
-    <string name="about_fork_updates_subtitle">Pembaruan dari rilis Nuvio Arc di GitHub.</string>
+    <string name="about_fork_updates_subtitle">Pembaruan dari rilis Dex Hub di GitHub.</string>
     <string name="playback_speculative_stream_search">Cari sumber sebelum Putar</string>
     <string name="playback_speculative_stream_search_sub">Cari di addon saat menjelajah untuk mempercepat pemilihan sumber. Beberapa addon mungkin menambah atau mengambil konten selama pencarian. Nonaktif menunggu hingga Putar. Tautan media dan penguraian oleh penyedia menunggu pemilihan pemutaran, kecuali menjelang akhir episode saat thumbnail seek menyiapkan episode berikutnya.</string>
     <string name="playback_source_line_badges">Lencana sumber di halaman detail</string>
@@ -3837,7 +3837,7 @@
     <string name="party_match_same">File yang sama dengan host</string>
     <string name="party_match_likely">Kemungkinan salinan milik host</string>
     <string name="party_match_different">Salinan berbeda dari host</string>
-    <string name="party_invite_text">Gabung nonton bareng saya di Nuvio Arc. Buka Pengaturan, lalu Nonton bareng, dan masukkan kode %1$s</string>
+    <string name="party_invite_text">Gabung nonton bareng saya di Dex Hub. Buka Pengaturan, lalu Nonton bareng, dan masukkan kode %1$s</string>
     <string name="party_invite_qr">Pindai dengan kamera ponsel untuk mengirim undangan lewat pesan</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -4054,9 +4054,9 @@
     <string name="format_check_note_dv_mode">Pengaturan Dolby Vision Anda bukan Auto.</string>
     <string name="format_check_note_dv5">Pengaturan Anda mengonversi Profile 5 ke 8.1.</string>
     <string name="format_check_note_hdr10_plus">Pengaturan Anda menghapus data HDR10+.</string>
-    <string name="playback_release_decoder_on_background_sub">Melepaskan dekoder video saat Nuvio Arc masuk ke latar belakang. Aktifkan jika pemutaran gagal dengan kesalahan dekoder setelah kembali ke aplikasi. Pemutar dimuat ulang saat kembali, juga setelah screensaver</string>
+    <string name="playback_release_decoder_on_background_sub">Melepaskan dekoder video saat Dex Hub masuk ke latar belakang. Aktifkan jika pemutaran gagal dengan kesalahan dekoder setelah kembali ke aplikasi. Pemutar dimuat ulang saat kembali, juga setelah screensaver</string>
     <string name="layout_hero_description_auto_scroll">Gulir deskripsi otomatis</string>
-    <string name="player_dts_hd_decoding_notice">Output DTS-HD lossless berhenti berfungsi, jadi Nuvio Arc mendekode sendiri suara judul ini.</string>
+    <string name="player_dts_hd_decoding_notice">Output DTS-HD lossless berhenti berfungsi, jadi Dex Hub mendekode sendiri suara judul ini.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadata</string>
     <string name="addon_health_ok">OK</string>
@@ -4064,11 +4064,11 @@
     <string name="addon_health_down">Mati</string>
     <string name="addon_health_setup">Penyiapan</string>
     <string name="appearance_launcher_artwork">Gambar launcher</string>
-    <string name="appearance_launcher_artwork_subtitle">Pilih tampilan Nuvio Arc di layar utama TV Anda</string>
+    <string name="appearance_launcher_artwork_subtitle">Pilih tampilan Dex Hub di layar utama TV Anda</string>
     <string name="appearance_app_icon_and_banner">Ikon aplikasi &amp; banner</string>
     <string name="appearance_app_icon_picker_title">Pilih ikon aplikasi &amp; banner</string>
     <string name="appearance_app_icon_confirmation_title">Ubah ikon aplikasi?</string>
-    <string name="appearance_app_icon_confirmation_message">Mengubah ke %1$s akan memulai ulang Nuvio Arc dengan ikon baru. Layar utama mungkin perlu beberapa detik untuk menampilkannya, dan banner TV mungkin memerlukan mulai ulang perangkat. Pilih OK untuk melanjutkan.</string>
+    <string name="appearance_app_icon_confirmation_message">Mengubah ke %1$s akan memulai ulang Dex Hub dengan ikon baru. Layar utama mungkin perlu beberapa detik untuk menampilkannya, dan banner TV mungkin memerlukan mulai ulang perangkat. Pilih OK untuk melanjutkan.</string>
     <string name="profile_copy_settings_label">Salin pengaturan</string>
     <string name="profile_copy_settings_setup_title">Pengaturan profil</string>
     <string name="profile_copy_settings_start_fresh">Mulai dari awal</string>
@@ -4318,9 +4318,9 @@
     <string name="simkl_visit">Kunjungi Simkl</string>
     <string name="simkl_sync_info_action">Cara kerja sinkronisasi</string>
     <string name="simkl_sync_info_title">Cara kerja sinkronisasi Simkl</string>
-    <string name="simkl_sync_info_description">Nuvio Arc otomatis memeriksa Simkl paling banyak sekali setiap %1$d menit. Perubahan yang dibuat melalui aplikasi lain atau situs Simkl mungkin memerlukan waktu selama itu untuk muncul.</string>
+    <string name="simkl_sync_info_description">Dex Hub otomatis memeriksa Simkl paling banyak sekali setiap %1$d menit. Perubahan yang dibuat melalui aplikasi lain atau situs Simkl mungkin memerlukan waktu selama itu untuk muncul.</string>
     <string name="simkl_sync_info_activity">Setiap penyegaran terlebih dahulu memeriksa apakah Simkl melaporkan perubahan dan hanya mengunduh pembaruannya. Ini mengikuti aturan API Simkl, mengurangi penggunaan data yang tidak perlu, dan membantu menjaga stabilitas layanan.</string>
-    <string name="simkl_sync_info_manual">Perubahan yang dibuat di Nuvio Arc langsung dikirim ke Simkl. Gunakan Sinkronkan sekarang kapan pun Anda ingin Nuvio Arc memeriksa perubahan jarak jauh lebih cepat.</string>
+    <string name="simkl_sync_info_manual">Perubahan yang dibuat di Dex Hub langsung dikirim ke Simkl. Gunakan Sinkronkan sekarang kapan pun Anda ingin Dex Hub memeriksa perubahan jarak jauh lebih cepat.</string>
     <string name="simkl_sync_info_library_statuses">Acara yang ditempatkan di daftar Ditunda atau Dihentikan Simkl disembunyikan dari Lanjutkan Menonton. Acara tersebut tetap tersembunyi selama berada di salah satu daftar itu.</string>
     <string name="simkl_sync_info_docs">Baca panduan sinkronisasi Simkl</string>
     <string name="error_open_browser_failed">Gagal membuka browser</string>

@@ -185,7 +185,7 @@ fun ThemeSettingsContent(
     val themeScrollState = rememberScrollState()
     val themeRowState = rememberLazyListState()
     val displayedThemes = remember(uiState.availableThemes) {
-        uiState.availableThemes.sortedBy { if (it == AppTheme.GLASS) 0 else 1 }
+        uiState.availableThemes.sortedBy { when (it) { AppTheme.VIOLET -> 0; AppTheme.GLASS -> 1; else -> 2 } }
     }
     var initialTheme by remember { mutableStateOf<AppTheme?>(null) }
     val settingsJump = LocalSettingsJump.current

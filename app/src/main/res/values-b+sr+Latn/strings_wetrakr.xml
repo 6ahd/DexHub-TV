@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR kod za povezivanje WeTrakr-a</string>
     <string name="wetrakr_missing_client">WeTrakr nije podešen u ovoj verziji.</string>
     <string name="wetrakr_status_syncing">Sinhronizacija sa WeTrakr-om…</string>
-    <string name="wetrakr_status_enter_code">Čeka se da dozvolite Nuvio Arc na WeTrakr-u</string>
+    <string name="wetrakr_status_enter_code">Čeka se da dozvolite Dex Hub na WeTrakr-u</string>
     <string name="wetrakr_status_paused">Pauzirano</string>
     <string name="wetrakr_daily_limit_row">Današnje WeTrakr ograničenje je potrošeno. Sinhronizacija se nastavlja u %1$s.</string>
     <string name="wetrakr_limit_message">Današnje WeTrakr ograničenje je potrošeno. Reprodukcija radi normalno, ali gledanja se ne šalju na WeTrakr do %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Gotovo. Dodato na WeTrakr: %1$s, već postoji ili nije pronađeno: %2$s.</string>
     <string name="wetrakr_upload_send">Pošalji</string>
     <string name="wetrakr_upload_close">Zatvori</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc koristi WeTrakr za istoriju gledanja, liste, praćenje reprodukcije i slične naslove. Podaci sa WeTrakr-a. Nuvio Arc nije povezan niti podržan od strane WeTrakr-a.</string>
-    <string name="wetrakr_revoke_failed">Odjavljeni ste ovde, ali WeTrakr nije mogao da bude obavešten. Nuvio Arc možete ukloniti u povezanim aplikacijama na wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub koristi WeTrakr za istoriju gledanja, liste, praćenje reprodukcije i slične naslove. Podaci sa WeTrakr-a. Dex Hub nije povezan niti podržan od strane WeTrakr-a.</string>
+    <string name="wetrakr_revoke_failed">Odjavljeni ste ovde, ali WeTrakr nije mogao da bude obavešten. Dex Hub možete ukloniti u povezanim aplikacijama na wetrakr.com.</string>
 </resources>

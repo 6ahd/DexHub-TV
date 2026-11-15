@@ -46,14 +46,23 @@ object ThemeColors {
         backgroundCard = Color(0xFF1A1F24)
     )
 
+    // Dex Hub's own palette (skin_theme.py BRAND_*): infinity violet, electric blue, navy surfaces.
     val Violet = ThemeColorPalette(
-        secondary = NuvioPrimitives.violet500,
-        secondaryVariant = NuvioPrimitives.violet700,
-        focusRing = NuvioPrimitives.violet300,
-        focusBackground = Color(0xFF2D1A3D),
-        background = Color(0xFF0D0D0F),
-        backgroundElevated = Color(0xFF1A1A1E),
-        backgroundCard = Color(0xFF1F1A24)
+        secondary = Color(0xFF9B6BFF),
+        secondaryVariant = Color(0xFF7A4FE0),
+        accentGradient = listOf(Color(0xFF9B6BFF), Color(0xFF4F8BFF)),
+        focusRing = Color(0xFFB99BFF),
+        focusRingGradient = listOf(Color(0xFFB99BFF), Color(0xFF4F8BFF)),
+        focusBackground = Color(0xFF2A2350),
+        background = Color(0xFF0B0E1C),
+        backgroundElevated = Color(0xFF111528),
+        backgroundCard = Color(0xFF161B30),
+        surface = Color(0xFF141930),
+        surfaceVariant = Color(0xFF1C2240),
+        panel = Color(0xFF101326),
+        field = Color(0xFF1A1F38),
+        menu = Color(0xFF141930),
+        modal = Color(0xFF101326)
     )
 
     val Emerald = ThemeColorPalette(

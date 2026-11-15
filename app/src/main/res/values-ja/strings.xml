@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">視聴を続ける</string>
     <string name="type_movie">映画</string>
     <string name="type_movies">映画</string>
@@ -337,7 +337,7 @@
 
     <string name="about_title">このアプリについて</string>
     <string name="about_subtitle">アプリ情報、アップデート、法的リンク</string>
-    <string name="about_made_with_love">Tapframe と仲間たちの素晴らしい成果をもとに ❤️ · Nuvio Arc 制作: ysosrs123</string>
+    <string name="about_made_with_love">Tapframe と仲間たちの素晴らしい成果をもとに ❤️ · Dex Hub 制作: ysosrs123</string>
     <string name="about_version">バージョン %1$s</string>
     <string name="about_check_updates">アップデートを確認</string>
     <string name="about_check_updates_subtitle">最新リリースをダウンロード</string>
@@ -348,26 +348,26 @@
     <string name="about_licenses_attributions">ライセンス &amp; 帰属</string>
     <string name="about_licenses_attributions_subtitle">データソース、謝辞、Androidライセンス</string>
     <string name="licenses_attributions_title">ライセンス &amp; 帰属</string>
-    <string name="licenses_attributions_subtitle">Nuvio Arcが使用するデータプロバイダー、サービス、Android再生ライセンス</string>
+    <string name="licenses_attributions_subtitle">Dex Hubが使用するデータプロバイダー、サービス、Android再生ライセンス</string>
     <string name="licenses_attributions_section_app">アプリライセンス</string>
     <string name="licenses_attributions_section_data">データ &amp; サービス</string>
     <string name="licenses_attributions_section_playback">Android再生ライセンス</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio Arc（Nuvio TVのフォーク）</string>
+    <string name="licenses_attributions_nuvio_title">Dex Hub（Nuvio TVのフォーク）</string>
     <string name="licenses_attributions_nuvio_body">Nuvio TVの改変版です。このビルドのソースコードとライセンス条項はフォークのリポジトリで入手可能です。Nuvio TVは github.com/NuvioMedia/NuvioTV にあります。GNU General Public License v3.0 の下でライセンスされています。</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
-    <string name="licenses_attributions_tmdb_body">Nuvio Arcは映画・TVのメタデータ、アートワーク、予告編、キャスト、制作詳細、コレクション、レコメンドにTMDB APIを使用しています。この製品はTMDB APIを使用していますが、TMDBによって承認または認定されていません。</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hubは映画・TVのメタデータ、アートワーク、予告編、キャスト、制作詳細、コレクション、レコメンドにTMDB APIを使用しています。この製品はTMDB APIを使用していますが、TMDBによって承認または認定されていません。</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="licenses_attributions_trakt_body">Nuvio ArcはTraktと接続し、アカウント認証、視聴履歴、進行状況同期、ライブラリデータ、評価、リスト、コメントを利用します。Nuvio ArcはTraktと提携または承認されていません。</string>
+    <string name="licenses_attributions_trakt_body">Dex HubはTraktと接続し、アカウント認証、視聴履歴、進行状況同期、ライブラリデータ、評価、リスト、コメントを利用します。Dex HubはTraktと提携または承認されていません。</string>
     <string name="licenses_attributions_premiumize_title">Premiumize</string>
-    <string name="licenses_attributions_premiumize_body">Nuvio ArcはPremiumizeと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Nuvio ArcはPremiumizeと提携または承認されていません。</string>
+    <string name="licenses_attributions_premiumize_body">Dex HubはPremiumizeと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Dex HubはPremiumizeと提携または承認されていません。</string>
     <string name="licenses_attributions_torbox_title">TorBox</string>
-    <string name="licenses_attributions_torbox_body">Nuvio ArcはTorBoxと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Nuvio ArcはTorBoxと提携または承認されていません。</string>
+    <string name="licenses_attributions_torbox_body">Dex HubはTorBoxと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Dex HubはTorBoxと提携または承認されていません。</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
-    <string name="licenses_attributions_mdblist_body">Nuvio Arcは評価、視聴履歴、再生トラッキングにMDBListを使用します。Nuvio ArcはMDBListと提携または承認されていません。</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hubは評価、視聴履歴、再生トラッキングにMDBListを使用します。Dex HubはMDBListと提携または承認されていません。</string>
     <string name="licenses_attributions_introdb_title">IntroDB</string>
-    <string name="licenses_attributions_introdb_body">Nuvio Arcはコミュニティ提供のイントロ、リキャップ、クレジット、プレビューのタイムスタンプにIntroDB APIを使用します(スキップコントロール用)。Nuvio ArcはIntroDBと提携または承認されていません。</string>
+    <string name="licenses_attributions_introdb_body">Dex Hubはコミュニティ提供のイントロ、リキャップ、クレジット、プレビューのタイムスタンプにIntroDB APIを使用します(スキップコントロール用)。Dex HubはIntroDBと提携または承認されていません。</string>
     <string name="licenses_attributions_imdb_title">IMDb非商用データセット</string>
-    <string name="licenses_attributions_imdb_body">Nuvio ArcはIMDb非商用データセット(title.ratings.tsv.gzを含む)を使用し、IMDb評価と投票数を取得します。情報提供: IMDb (https://www.imdb.com)。許可を得て使用。IMDbデータは個人・非商用利用に限ります。</string>
+    <string name="licenses_attributions_imdb_body">Dex HubはIMDb非商用データセット(title.ratings.tsv.gzを含む)を使用し、IMDb評価と投票数を取得します。情報提供: IMDb (https://www.imdb.com)。許可を得て使用。IMDbデータは個人・非商用利用に限ります。</string>
     <string name="licenses_attributions_exoplayer_title">AndroidX Media3 ExoPlayer 1.8.0</string>
     <string name="licenses_attributions_exoplayer_body">Android再生エンジンとして使用。Apache License, Version 2.0 の下でライセンスされています。</string>
     <string name="licenses_attributions_libmpv_title">libmpv / libmpv-android</string>
@@ -393,7 +393,7 @@
     <string name="settings_advanced_subtitle">パフォーマンス、ナビゲーション、キャッシュ、診断</string>
     <string name="experience_mode_essential">基本</string>
     <string name="experience_mode_advanced">詳細</string>
-    <string name="experience_mode_choose_title">Nuvio Arcのエクスペリエンスを選択</string>
+    <string name="experience_mode_choose_title">Dex Hubのエクスペリエンスを選択</string>
     <string name="experience_mode_choose_subtitle">シンプルに始めるか、すべてのカスタマイズを解除。いつでも切り替え可能です。</string>
     <string name="experience_mode_essential_card_subtitle">基本設定、アドオン、再生の基本、Trakt、アカウント設定に焦点。</string>
     <string name="experience_mode_advanced_card_subtitle">すべての設定、レイアウト制御、カタログ順序、コレクション、プラグイン、診断。</string>
@@ -598,8 +598,8 @@
     <string name="playback_player_ask_desc">毎回プレーヤーを選択する</string>
     <string name="playback_player_auto">自動(コンテンツに最適化)</string>
     <string name="playback_player_auto_desc">映画やドラマにはExoPlayer・アニメにはMPV</string>
-    <string name="playback_engine_exoplayer_desc">現在のNuvio Arc機能との互換性が最も高い。</string>
-    <string name="playback_engine_mvplayer_desc">Nuvio Arc OSDコントロール付きのlibmpvを使用。実験的。</string>
+    <string name="playback_engine_exoplayer_desc">現在のDex Hub機能との互換性が最も高い。</string>
+    <string name="playback_engine_mvplayer_desc">Dex Hub OSDコントロール付きのlibmpvを使用。実験的。</string>
 
     <string name="video_section">映像</string>
     <string name="playback_true_black_letterbox">完全な黒いバー</string>
@@ -1187,7 +1187,7 @@
     <string name="trakt_stat_watched_hours">視聴時間</string>
     <string name="trakt_disconnect">切断</string>
     <string name="trakt_disconnect_title">Traktを切断しますか？</string>
-    <string name="trakt_disconnect_subtitle">Nuvio ArcからTraktアカウントが切断されます</string>
+    <string name="trakt_disconnect_subtitle">Dex HubからTraktアカウントが切断されます</string>
     <string name="trakt_login">ログイン</string>
     <string name="trakt_retry">再試行</string>
     <string name="trakt_back">戻る</string>
@@ -1373,7 +1373,7 @@
     <string name="stream_type_torrent">トレント</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">P2Pストリーミング</string>
-    <string name="p2p_consent_body">このストリームはピアツーピア(P2P)技術を使用します。P2Pを有効にすると、以下を了承したものとみなされます:\n\n\u2022 あなたのIPアドレスはネットワーク上の他のピアに公開されます\n\u2022 アクセスするコンテンツに対する責任はすべてあなた自身にあります\n\u2022 あなたの管轄区域でこのコンテンツをストリーミングする法的権利を有することを確認します\n\u2022 Nuvio ArcはP2Pコンテンツをホスト、配布、または制御しません\n\u2022 Nuvio ArcはP2Pストリーミングの使用に起因する法的結果に対して一切の責任を負いません\n\nこの機能は完全に自己責任で使用してください。P2Pはいつでも設定で無効にできます。</string>
+    <string name="p2p_consent_body">このストリームはピアツーピア(P2P)技術を使用します。P2Pを有効にすると、以下を了承したものとみなされます:\n\n\u2022 あなたのIPアドレスはネットワーク上の他のピアに公開されます\n\u2022 アクセスするコンテンツに対する責任はすべてあなた自身にあります\n\u2022 あなたの管轄区域でこのコンテンツをストリーミングする法的権利を有することを確認します\n\u2022 Dex HubはP2Pコンテンツをホスト、配布、または制御しません\n\u2022 Dex HubはP2Pストリーミングの使用に起因する法的結果に対して一切の責任を負いません\n\nこの機能は完全に自己責任で使用してください。P2Pはいつでも設定で無効にできます。</string>
     <string name="p2p_consent_enable">P2Pを有効にする</string>
     <string name="p2p_consent_cancel">キャンセル</string>
     <string name="settings_p2p_title">P2Pストリーミング</string>
@@ -1824,7 +1824,7 @@
     <string name="catalog_see_all_empty_title">利用可能なアイテムがありません</string>
     <string name="catalog_see_all_empty_subtitle">別のカタログを試すか、後でもう一度ご確認ください</string>
 
-    <string name="layout_selection_welcome">Nuvio Arcへようこそ</string>
+    <string name="layout_selection_welcome">Dex Hubへようこそ</string>
     <string name="layout_selection_subtitle">ホーム画面のレイアウトを選択</string>
     <string name="layout_selection_continue">続ける</string>
 
@@ -1999,7 +1999,7 @@
     <string name="cd_preview">プレビュー</string>
     <string name="cd_test">テスト</string>
     <string name="cd_unlink">リンク解除</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Traktロゴ</string>
     <string name="cd_trakt_qr">Trakt認証QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2152,7 +2152,7 @@
     <string name="collections_editor_tmdb_list_helper">例: https://www.themoviedb.org/list/8504994 または 8504994。</string>
     <string name="collections_editor_tmdb_person_id">人物ID</string>
     <string name="collections_editor_tmdb_person_helper">例: https://www.themoviedb.org/person/31-tom-hanks または 31。</string>
-    <string name="collections_editor_tmdb_title_helper">行/タブ名として表示されます。空の場合はNuvio Arcがソースから生成します。</string>
+    <string name="collections_editor_tmdb_title_helper">行/タブ名として表示されます。空の場合はDex Hubがソースから生成します。</string>
     <string name="collections_editor_tmdb_quick_genres">クイックジャンル</string>
     <string name="collections_editor_tmdb_quick_languages">クイック言語</string>
     <string name="collections_editor_tmdb_quick_countries">クイック国</string>
@@ -2325,7 +2325,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDRなし</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Nuvio Arcの内蔵プレーヤーを使用</string>
+    <string name="playback_player_internal_desc">Dex Hubの内蔵プレーヤーを使用</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$dシード · %2$dピア</string>
@@ -2753,7 +2753,7 @@
     <string name="appearance_settings_style">設定スタイル</string>
     <string name="appearance_settings_style_subtitle">設定画面の表示方法を選択</string>
     <string name="appearance_launcher_artwork">ランチャーアートワーク</string>
-    <string name="appearance_launcher_artwork_subtitle">TVのホーム画面にNuvio Arcを表示する方法を選択</string>
+    <string name="appearance_launcher_artwork_subtitle">TVのホーム画面にDex Hubを表示する方法を選択</string>
     <string name="appearance_app_icon_and_banner">アプリアイコンとバナー</string>
     <string name="appearance_app_icon_and_banner_subtitle">アプリアイコンとバナーを変更</string>
     <string name="appearance_app_icon_picker_title">アプリアイコンとバナーを選択</string>
@@ -2786,13 +2786,13 @@
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">背景ぼかしエフェクトに使用。Chris Banes作。Apache License, Version 2.0 の下でライセンスされています。</string>
     <string name="licenses_attributions_simkl_title">Simkl</string>
-    <string name="licenses_attributions_simkl_body">Nuvio Arcはアカウント認証、ウォッチリスト、視聴履歴、再生進行状況、スクロブルのためにSimklと接続します。映画、TV、アニメのトラッキングデータはSimklから提供されます。Nuvio ArcはSimklと提携または承認されていません。</string>
+    <string name="licenses_attributions_simkl_body">Dex Hubはアカウント認証、ウォッチリスト、視聴履歴、再生進行状況、スクロブルのためにSimklと接続します。映画、TV、アニメのトラッキングデータはSimklから提供されます。Dex HubはSimklと提携または承認されていません。</string>
     <string name="settings_tracking_title">トラッキング</string>
     <string name="settings_tracking_description">トラッキングプロバイダーを接続し、ライブラリと視聴を続けるに使用するプロバイダーを選択します。</string>
     <string name="tracking_accounts_title">アカウント</string>
     <string name="tracking_accounts_subtitle">トラッキングサービスを接続・管理</string>
     <string name="tracking_sources_title">ソース</string>
-    <string name="tracking_sources_subtitle">Nuvio Arcがライブラリと視聴進行状況を読み取る場所を選択。再生スクロブルはすべての接続サービスに送信されます。</string>
+    <string name="tracking_sources_subtitle">Dex Hubがライブラリと視聴進行状況を読み取る場所を選択。再生スクロブルはすべての接続サービスに送信されます。</string>
     <string name="tracking_trakt_features_title">Trakt機能</string>
     <string name="tracking_trakt_features_subtitle">Trakt固有の履歴、レビュー、レコメンド</string>
     <string name="tracking_simkl_features_title">Simkl機能</string>
@@ -2809,8 +2809,8 @@
     <string name="tracking_status_connecting">接続中</string>
     <string name="tracking_finish_connection">接続承認を完了</string>
     <string name="tracking_connecting_provider">%1$s接続を開始中…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Nuvio Arcが再開と視聴を続けるに読み取るサービスを選択。スクロブルは接続されているすべてのサービスでアクティブなままです。</string>
-    <string name="tracking_library_source_dialog_subtitle">Nuvio Arcがライブラリに読み取るサービスを選択。再生スクロブルはすべての接続サービスに送信されます。</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Dex Hubが再開と視聴を続けるに読み取るサービスを選択。スクロブルは接続されているすべてのサービスでアクティブなままです。</string>
+    <string name="tracking_library_source_dialog_subtitle">Dex Hubがライブラリに読み取るサービスを選択。再生スクロブルはすべての接続サービスに送信されます。</string>
     <string name="tracking_trakt_progress_required">Traktが視聴進行状況ソースの場合に利用可能</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -2897,7 +2897,7 @@
     <string name="skip_movie_credits">クレジットをスキップ</string>
     <string name="skip_to_post_credits">ポストクレジットへスキップ</string>
     <string name="playback_release_decoder_on_background">バックグラウンドでデコーダーを解放</string>
-    <string name="playback_release_decoder_on_background_sub">Nuvio Arcがバックグラウンドに行ったときにビデオデコーダーを解放します。アプリに戻った後にデコーダーエラーで再生が失敗する場合にオンにしてください。プレーヤーは戻ったとき、スクリーンセーバー後にもリロードされます</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hubがバックグラウンドに行ったときにビデオデコーダーを解放します。アプリに戻った後にデコーダーエラーで再生が失敗する場合にオンにしてください。プレーヤーは戻ったとき、スクリーンセーバー後にもリロードされます</string>
     <string name="playback_external_send_skip_segments">イントロとアウトロのタイムスタンプを送信</string>
     <string name="playback_external_send_skip_segments_sub">解決されたイントロ/アウトロのスキップタイムスタンプを外部プレーヤーに渡して自動スキップさせます。対応しているプレーヤーでのみ機能し、他のプレーヤーは無視します。</string>
     <string name="audio_mpv_hi10p_gnext_sw_title">Hi10P G-NEXT SWフォールバック(MPVのみ)</string>
@@ -3272,9 +3272,9 @@
     <string name="simkl_visit">Simklにアクセス</string>
     <string name="simkl_sync_info_action">同期の仕組み</string>
     <string name="simkl_sync_info_title">Simkl同期の仕組み</string>
-    <string name="simkl_sync_info_description">Nuvio Arcは最大でも%1$d分に1回、Simklを確認します。他のアプリやSimklウェブサイト経由の変更は反映にその時間がかかる場合があります。</string>
+    <string name="simkl_sync_info_description">Dex Hubは最大でも%1$d分に1回、Simklを確認します。他のアプリやSimklウェブサイト経由の変更は反映にその時間がかかる場合があります。</string>
     <string name="simkl_sync_info_activity">各更新ではまずSimklに変更があるかを確認し、更新のみをダウンロードします。これはSimklのAPIルールに従い、不要なデータ使用を減らし、サービスの安定性維持に役立ちます。</string>
-    <string name="simkl_sync_info_manual">Nuvio Arcでの変更はすぐにSimklに送信されます。リモートの変更をより早く確認したい場合は「今すぐ同期」を使用してください。</string>
+    <string name="simkl_sync_info_manual">Dex Hubでの変更はすぐにSimklに送信されます。リモートの変更をより早く確認したい場合は「今すぐ同期」を使用してください。</string>
     <string name="simkl_sync_info_library_statuses">Simklの「保留」または「中断」リストにある作品は「視聴を続ける」から非表示になります。いずれかのリストにある間は非表示が続きます。</string>
     <string name="simkl_sync_info_docs">Simkl同期ガイドを読む</string>
     <string name="error_open_browser_failed">ブラウザを開けませんでした</string>
@@ -3416,7 +3416,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">字幕フォント</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto、Montserrat、Asap Condensed、Noto Sans（Noto Sans Arabic、Hebrew、Devanagari、Bengali、Tamilを含む）。作成: The Roboto Project Authors、The Montserrat Project Authors、The Asap Project Authors、The Noto Project Authors。SIL Open Font License, Version 1.1でライセンスされています。</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin、Emby、Silo、Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arcはお使いのJellyfin、Emby、Silo、Plexサーバーに接続します。各名称とロゴはそれぞれの所有者に帰属します。Nuvio ArcはJellyfin、Emby、Siloと提携または承認されていません。</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hubはお使いのJellyfin、Emby、Silo、Plexサーバーに接続します。各名称とロゴはそれぞれの所有者に帰属します。Dex HubはJellyfin、Emby、Siloと提携または承認されていません。</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">リリースグループの一覧。MITライセンス。</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -3464,7 +3464,7 @@
     <string name="playback_afr_closed">閉じている</string>
     <string name="audio_tunneled_sub_prefer_app">「デコーダー優先度」が「アプリデコーダーを優先」に設定されている間は利用できません</string>
     <string name="audio_use_system_passthrough">システムパススルー</string>
-    <string name="audio_use_system_passthrough_sub">TrueHDとDTS-HDをNuvio Arc（IEC経路）ではなくAndroid（システム経路）経由でレシーバーに送ります。デバイスやオーディオ環境によっては、DTS-HDとDTS:Xが標準DTSに制限されたり、音が出なくなったりすることがあります。ロスレス形式でノイズ、ずれ、無音が起きる場合にのみ使用してください。</string>
+    <string name="audio_use_system_passthrough_sub">TrueHDとDTS-HDをDex Hub（IEC経路）ではなくAndroid（システム経路）経由でレシーバーに送ります。デバイスやオーディオ環境によっては、DTS-HDとDTS:Xが標準DTSに制限されたり、音が出なくなったりすることがあります。ロスレス形式でノイズ、ずれ、無音が起きる場合にのみ使用してください。</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD と DTS:X のパススルー</string>
     <string name="audio_dtshd_tv_passthrough_sub">サウンドバーに通常の DTS と表示される、または DTS-HD や DTS:X の映画で音が出ない場合は「テレビ経由のパススルー」を選択してください。</string>
     <string name="audio_dtshd_tv_passthrough_standard">標準</string>
@@ -3578,7 +3578,7 @@
     <string name="floppy_tracking_description">視聴内容を自分の Floppy サーバーに送信</string>
     <string name="floppy_connected_to">%1$s に接続済み</string>
     <string name="floppy_connected_description">このプロフィールで視聴した内容は Floppy に送られます。視聴中は「Now Playing」に、見終えた作品は履歴に、停止した作品は再開位置付きで。「視聴済みにする」も反映されます。ここで映画のマークを外すと、Floppy でその映画のすべての視聴がリセットされます。エピソードの場合は、最新の再生だけが取り消されます。古い Floppy サーバーでは、Arc が映画に追加した再生だけが削除されます。</string>
-    <string name="floppy_qr_description">Floppy で Nuvio Arc を承認するための QR コード</string>
+    <string name="floppy_qr_description">Floppy で Dex Hub を承認するための QR コード</string>
     <string name="floppy_address_instruction">ブラウザで Floppy を開くときのアドレスを入力してください。</string>
     <string name="floppy_token_instruction">Floppy で Settings、Integrations、App tokens を開き、このテレビ用のトークンを作成してください。</string>
     <string name="floppy_address_placeholder">サーバーアドレス (例: 192.168.1.20:8000)</string>
@@ -3925,7 +3925,7 @@
     <string name="subtitle_bitmap_mpv_note">MPVは画像字幕のサイズ変更に対応していません。テキストとは別に画像字幕のサイズを調整するにはExoPlayerを使用してください。</string>
     <string name="subtitle_style_image_size">画像字幕のサイズ</string>
     <string name="v2_accent_fixed_hint">アートワークのアクセントを選択しない限り、カラーテーマを使用します。</string>
-    <string name="about_fork_updates_subtitle">GitHub の Nuvio Arc リリースからのアップデート。</string>
+    <string name="about_fork_updates_subtitle">GitHub の Dex Hub リリースからのアップデート。</string>
     <string name="playback_speculative_stream_search">再生前にソースを検索</string>
     <string name="playback_speculative_stream_search_sub">閲覧中にアドオンを検索し、ソース選択を速くします。アドオンによっては検索時にコンテンツを追加または取得する場合があります。オフでは再生を押すまで待ちます。メディアリンクとプロバイダーの解決は再生の選択まで行いません。ただしエピソードの終わり近くでは、シーク用サムネイルが次のエピソードを準備します。</string>
     <string name="playback_source_line_badges">詳細ページのソースバッジ</string>
@@ -4117,7 +4117,7 @@
     <string name="party_match_same">ホストと同じファイル</string>
     <string name="party_match_likely">おそらくホストと同じファイル</string>
     <string name="party_match_different">ホストとは別のファイル</string>
-    <string name="party_invite_text">Nuvio Arcのウォッチパーティーに参加しませんか。設定からウォッチパーティーを開き、コード %1$s を入力してください</string>
+    <string name="party_invite_text">Dex Hubのウォッチパーティーに参加しませんか。設定からウォッチパーティーを開き、コード %1$s を入力してください</string>
     <string name="party_invite_qr">スマホのカメラで読み取ると招待をメッセージで送れます</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -4336,14 +4336,14 @@
     <string name="format_check_note_hdr10_plus">設定によりHDR10+データを削除します。</string>
     <string name="layout_hero_description_auto_scroll">説明文を自動スクロール</string>
     <string name="layout_hero_description_auto_scroll_sub">ホーム画面の長い説明文を途中で切らずにゆっくりスクロールします。</string>
-    <string name="player_dts_hd_decoding_notice">ロスレスDTS-HD出力が機能しなくなったため、このタイトルの音声はNuvio Arc自身がデコードしています。</string>
+    <string name="player_dts_hd_decoding_notice">ロスレスDTS-HD出力が機能しなくなったため、このタイトルの音声はDex Hub自身がデコードしています。</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">メタデータ</string>
     <string name="addon_health_ok">正常</string>
     <string name="addon_health_slow">低速</string>
     <string name="addon_health_down">停止中</string>
     <string name="addon_health_setup">要設定</string>
-    <string name="appearance_app_icon_confirmation_message">%1$sに変更すると、Nuvio Arcが新しいアイコンで再起動します。ホーム画面に反映されるまで数秒かかることがあり、TVバナーはデバイスの再起動が必要な場合があります。OKを選択して続行してください。</string>
+    <string name="appearance_app_icon_confirmation_message">%1$sに変更すると、Dex Hubが新しいアイコンで再起動します。ホーム画面に反映されるまで数秒かかることがあり、TVバナーはデバイスの再起動が必要な場合があります。OKを選択して続行してください。</string>
     <string name="plugin_trust_title">信頼できるリポジトリのみ追加してください</string>
     <string name="plugin_trust_message">リポジトリのプラグインは Arc内で動作します。一部はアプリ本体と同じ権限を持ち、debrid、Trakt などのアカウントキーを読み取れる可能性があります。</string>
     <string name="plugin_trust_confirm">リポジトリを追加</string>

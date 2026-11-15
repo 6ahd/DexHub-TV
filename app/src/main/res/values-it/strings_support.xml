@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Sostieni il team di Nuvio</string>
     <string name="support_nuvio_title">Sostieni il team di Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc si basa sull\'app ufficiale Nuvio. L\'iscrizione va al team di Nuvio, aiuta a pagare server e sviluppo e mantiene l\'app di base gratuita per tutti.</string>
+    <string name="support_nuvio_subtitle">Dex Hub si basa sull\'app ufficiale Nuvio. L\'iscrizione va al team di Nuvio, aiuta a pagare server e sviluppo e mantiene l\'app di base gratuita per tutti.</string>
     <string name="support_nuvio_perk_themes">Temi sfumati</string>
     <string name="support_nuvio_perk_themes_desc">Temi sfumati extra, oppure crea il tuo.</string>
     <string name="support_nuvio_perk_backgrounds">Sfondi del profilo</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Chiudi</string>
     <string name="support_nuvio_checking">Verifica dell\'iscrizione…</string>
     <string name="support_nuvio_thanks_title">Grazie per il sostegno al team di Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">I tuoi vantaggi seguono il tuo account Nuvio, quindi funzionano qui in Nuvio Arc e nell\'app ufficiale.</string>
+    <string name="support_nuvio_thanks_subtitle">I tuoi vantaggi seguono il tuo account Nuvio, quindi funzionano qui in Dex Hub e nell\'app ufficiale.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio Supporter</string>
-    <string name="support_nuvio_gentle_title">Tutto in Nuvio Arc funziona senza iscrizione</string>
+    <string name="support_nuvio_gentle_title">Tutto in Dex Hub funziona senza iscrizione</string>
     <string name="support_nuvio_gentle_body">Questo account non ha un\'iscrizione Nuvio Supporter. Se un giorno vuoi aiutare il team di Nuvio, l\'iscrizione aggiunge qualche extra:</string>
-    <string name="support_nuvio_gentle_unavailable">Non è stato possibile verificare la tua iscrizione ora. Tutto in Nuvio Arc funziona anche senza. Se vuoi aiutare il team di Nuvio, l\'iscrizione aggiunge qualche extra:</string>
+    <string name="support_nuvio_gentle_unavailable">Non è stato possibile verificare la tua iscrizione ora. Tutto in Dex Hub funziona anche senza. Se vuoi aiutare il team di Nuvio, l\'iscrizione aggiunge qualche extra:</string>
     <string name="support_nuvio_gentle_scan">Vedi le opzioni sul telefono</string>
     <string name="support_nuvio_paid_check_again">Hai appena pagato? Verifica di nuovo</string>
     <string name="support_nuvio_no_thanks">No, grazie</string>

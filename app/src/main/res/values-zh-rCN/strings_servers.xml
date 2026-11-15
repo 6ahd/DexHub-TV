@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">此用户没有可用的电影或剧集媒体库。</string>
     <string name="servers_refresh_libraries">刷新媒体库</string>
     <string name="servers_display_name">显示名称</string>
-    <string name="servers_display_name_description">Nuvio Arc 在首页、设置和来源中为此服务器显示的名称。</string>
+    <string name="servers_display_name_description">Dex Hub 在首页、设置和来源中为此服务器显示的名称。</string>
     <string name="servers_display_name_server_name">服务器自身名称：%1$s</string>
-    <string name="servers_display_name_dialog_description">选择 Nuvio Arc 为此服务器显示的名称。留空则使用服务器自身名称。</string>
+    <string name="servers_display_name_dialog_description">选择 Dex Hub 为此服务器显示的名称。留空则使用服务器自身名称。</string>
     <string name="servers_display_name_reset">重置为服务器名称</string>
     <string name="servers_enabled">已启用</string>
     <string name="servers_enabled_description">在首页、搜索和流结果中显示此服务器。</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">此用户没有访问权限。</string>
     <string name="servers_error_failed">无法连接到服务器。</string>
     <string name="servers_error_website">此地址打开的是网站，不是媒体服务器。请输入服务器本身的地址。</string>
-    <string name="servers_error_silo_website">Nuvio Arc 找不到此 Silo 服务器的 Jellyfin 地址。请在 Silo 中打开「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」，然后输入「Server」下显示的地址。</string>
+    <string name="servers_error_silo_website">Dex Hub 找不到此 Silo 服务器的 Jellyfin 地址。请在 Silo 中打开「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」，然后输入「Server」下显示的地址。</string>
     <string name="servers_error_silo_jellyfin_off">此 Silo 服务器已关闭 Jellyfin 应用。请让服务器所有者将其开启。</string>
     <string name="servers_error_profile_needed">请在用户名末尾加上 # 和您的 Silo 个人资料名称，例如 name#Profile 或 name#1234#Profile。</string>
     <string name="servers_error_profile_not_found">Silo 会把最后一个 # 之后的部分当作个人资料名称，但没有这个名称的个人资料。如果您的用户名中含有 #，请在末尾加上 # 和个人资料名称，例如 name#1234#Profile。</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">此项目在服务器上已不可用。</string>
     <string name="servers_failure_certificate">此服务器的证书无法识别。</string>
     <string name="servers_certificate_title">此服务器的证书无法识别</string>
-    <string name="servers_certificate_intro">Nuvio Arc 无法确认 %1$s 的身份。</string>
+    <string name="servers_certificate_intro">Dex Hub 无法确认 %1$s 的身份。</string>
     <string name="servers_certificate_untrusted">证书为自签名或由私有证书颁发机构颁发。</string>
     <string name="servers_certificate_name_mismatch">证书是为其他名称颁发的。</string>
     <string name="servers_certificate_expired">证书不在有效期内。</string>
-    <string name="servers_certificate_advice">如果这是您自己的服务器，且此情况在预期之内，您可以信任此证书。此后 Nuvio Arc 对此服务器只接受这一张证书，如有变更会向您发出警告。如果您不在家庭网络中，请先与服务器所有者核对指纹。</string>
+    <string name="servers_certificate_advice">如果这是您自己的服务器，且此情况在预期之内，您可以信任此证书。此后 Dex Hub 对此服务器只接受这一张证书，如有变更会向您发出警告。如果您不在家庭网络中，请先与服务器所有者核对指纹。</string>
     <string name="servers_certificate_details">颁发给：%1$s\n颁发者：%2$s\n有效期：%3$s 至 %4$s\n指纹 (SHA-256)：%5$s</string>
     <string name="servers_certificate_trust">信任此证书</string>
     <string name="servers_certificate_unavailable">安全连接失败，无法读取服务器的证书。</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo 登录 (推荐)</string>
     <string name="silo_method_native_description">用手机上的代码或 Silo 密码登录。支持服务器的所有登录方式（密码、OpenID Connect、LDAP、Tailscale）。会带入您的 Silo 个人资料和 Silo 首页行。</string>
     <string name="silo_method_jellyfin">Jellyfin 兼容</string>
-    <string name="silo_method_jellyfin_description">使用 Silo 供 Jellyfin 应用使用的地址，以及用户名和密码（个人资料用 name#Profile）。这是 Nuvio Arc 以往连接 Silo 的方式。</string>
+    <string name="silo_method_jellyfin_description">使用 Silo 供 Jellyfin 应用使用的地址，以及用户名和密码（个人资料用 name#Profile）。这是 Dex Hub 以往连接 Silo 的方式。</string>
     <string name="silo_setup_next">下一步</string>
     <string name="silo_code_step_open">在手机上扫描 QR 码或打开 %1$s</string>
     <string name="silo_code_step_sign_in">按平常的方式在那里登录</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">或用代码登录：在 %2$s 输入 %1$s</string>
     <string name="silo_signing_in">正在登录…</string>
     <string name="silo_profiles_title">谁在观看？</string>
-    <string name="silo_profiles_subtitle">%1$s 有多个个人资料。Nuvio Arc 会将您选择的个人资料用于观看进度、已观看标记和首页行。之后可在服务器页面中更改。</string>
+    <string name="silo_profiles_subtitle">%1$s 有多个个人资料。Dex Hub 会将您选择的个人资料用于观看进度、已观看标记和首页行。之后可在服务器页面中更改。</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">儿童</string>
     <string name="silo_pin_title">%1$s 的 PIN</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">个人资料</string>
     <string name="servers_silo_profile_description">观看进度、已观看标记和首页行会跟随此个人资料。</string>
     <string name="servers_silo_home_rows">Silo 首页行</string>
-    <string name="servers_silo_home_rows_description">在 Nuvio Arc 的首页显示 Silo 首页中的行（您的列表、热门、下一集…）。</string>
+    <string name="servers_silo_home_rows_description">在 Dex Hub 的首页显示 Silo 首页中的行（您的列表、热门、下一集…）。</string>
     <string name="servers_silo_switch">切换到 Silo 登录</string>
     <string name="servers_silo_switch_description">使用 Silo 自己的登录方式登录，然后替换此连接。名称和媒体库选择会保留。</string>
     <string name="servers_add_plex_description">在 plex.tv/link 用代码登录。会自动为您找到服务器。</string>
-    <string name="plex_sign_in_subtitle">无需服务器地址：登录后 Nuvio Arc 会找到您的 Plex 服务器。</string>
+    <string name="plex_sign_in_subtitle">无需服务器地址：登录后 Dex Hub 会找到您的 Plex 服务器。</string>
     <string name="plex_code_step_open">在手机或电脑上打开 %1$s（或扫描 QR 码）</string>
     <string name="plex_code_step_sign_in">如有提示，请登录 Plex</string>
     <string name="plex_code_step_link">输入上方代码并按 Link</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">通过互联网连接</string>
     <string name="plex_reach_relay_detail">只能通过 Plex Relay 连接（较慢，约 2 Mbit/s）</string>
     <string name="plex_reach_offline_detail">当前离线</string>
-    <string name="plex_users_subtitle">您的 Plex 账户有 Plex Home 用户。Nuvio Arc 会将您选择的用户用于 %1$s 上的观看进度、已观看标记和继续观看。之后可在服务器页面中更改。</string>
+    <string name="plex_users_subtitle">您的 Plex 账户有 Plex Home 用户。Dex Hub 会将您选择的用户用于 %1$s 上的观看进度、已观看标记和继续观看。之后可在服务器页面中更改。</string>
     <string name="plex_user_owner">所有者</string>
     <string name="plex_user_managed">受管理</string>
     <string name="plex_other_user">其他用户</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home 用户</string>
     <string name="plex_home_user_description">观看进度、已观看标记和继续观看跟随此用户。</string>
     <string name="plex_home_rows">Plex 首页行</string>
-    <string name="plex_home_rows_description">在 Nuvio Arc 首页显示此服务器上 Plex 自己的行（最近添加等）。</string>
-    <string name="plex_remote_pass_needed">Plex 不允许在家以外播放此内容。在 Nuvio Arc 这类应用中，需要服务器有 Plex Pass，或您有 Remote Watch Pass。在家播放免费。</string>
+    <string name="plex_home_rows_description">在 Dex Hub 首页显示此服务器上 Plex 自己的行（最近添加等）。</string>
+    <string name="plex_remote_pass_needed">Plex 不允许在家以外播放此内容。在 Dex Hub 这类应用中，需要服务器有 Plex Pass，或您有 Remote Watch Pass。在家播放免费。</string>
     <string name="server_library_sort_title">按名称 A-Z</string>
     <string name="server_library_sort_released">最新上映</string>
     <string name="server_library_sort_added">最近添加</string>

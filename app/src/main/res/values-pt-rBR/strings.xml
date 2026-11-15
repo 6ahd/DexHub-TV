@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">Continuar Assistindo</string>
     <string name="type_movie">Filme</string>
     <string name="type_movies">Filmes</string>
@@ -370,7 +370,7 @@
     <string name="appearance_settings_style">Estilo das Configurações</string>
     <string name="appearance_settings_style_subtitle">Escolha como deseja visualizar as telas de configuração</string>
     <string name="appearance_launcher_artwork">Arte do App</string>
-    <string name="appearance_launcher_artwork_subtitle">Escolha como o Nuvio Arc aparece na tela inicial da sua TV</string>
+    <string name="appearance_launcher_artwork_subtitle">Escolha como o Dex Hub aparece na tela inicial da sua TV</string>
     <string name="ambient_mode_title">Modo Ambiente</string>
     <string name="ambient_mode_enabled_subtitle">Preencha a tela com planos de fundo após um período sem usar o controle remoto</string>
     <string name="ambient_mode_timeout">Iniciar após</string>
@@ -389,7 +389,7 @@
     <string name="appearance_app_icon_picker_title">Escolher Ícone e Banner</string>
     <string name="appearance_app_icon_picker_subtitle">Cada estilo vem com um ícone quadrado e um banner para TV combinando</string>
     <string name="appearance_app_icon_confirmation_title">Trocar Ícone do App?</string>
-    <string name="appearance_app_icon_confirmation_message">Ao mudar para %1$s o Nuvio Arc será reiniciado com o novo ícone. A tela inicial pode levar alguns segundos para mostrá-lo, e o banner da TV pode precisar que você reinicie o aparelho. Toque em OK para continuar.</string>
+    <string name="appearance_app_icon_confirmation_message">Ao mudar para %1$s o Dex Hub será reiniciado com o novo ícone. A tela inicial pode levar alguns segundos para mostrá-lo, e o banner da TV pode precisar que você reinicie o aparelho. Toque em OK para continuar.</string>
     <string name="appearance_app_icon_change_failed">Não foi possível trocar o ícone e o banner. Tente novamente.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Azul Ártico</string>
@@ -409,7 +409,7 @@
 
     <string name="about_title">Sobre</string>
     <string name="about_subtitle">Informações, atualizações e termos legais</string>
-    <string name="about_made_with_love">Feito a partir do ótimo trabalho de Tapframe e amigos ❤️ · Nuvio Arc por ysosrs123</string>
+    <string name="about_made_with_love">Feito a partir do ótimo trabalho de Tapframe e amigos ❤️ · Dex Hub por ysosrs123</string>
     <string name="about_version">Versão %1$s</string>
     <string name="about_update_banner_title">Banner de atualização automática</string>
     <string name="about_update_banner_subtitle">Exibir um banner quando uma nova versão estiver disponível</string>
@@ -432,31 +432,31 @@
     <string name="about_licenses_attributions">Licenças e Atribuições</string>
     <string name="about_licenses_attributions_subtitle">Fontes de dados, agradecimentos e licenças Android</string>
     <string name="licenses_attributions_title">Licenças e Atribuições</string>
-    <string name="licenses_attributions_subtitle">Provedores de dados, créditos de serviços e licenças de reprodução Android usadas pelo Nuvio Arc.</string>
+    <string name="licenses_attributions_subtitle">Provedores de dados, créditos de serviços e licenças de reprodução Android usadas pelo Dex Hub.</string>
     <string name="licenses_attributions_section_app">LICENÇA DO APP</string>
     <string name="licenses_attributions_section_data">DADOS e SERVIÇOS</string>
     <string name="licenses_attributions_section_playback">LICENÇAS DE REPRODUÇÃO ANDROID</string>
     <string name="licenses_attributions_section_ui">BIBLIOTECAS DE INTERFACE</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Usado para efeitos de desfoque no fundo. Criado por Chris Banes. Licenciado sob a Licença Apache, Versão 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio Arc (fork do Nuvio TV)</string>
+    <string name="licenses_attributions_nuvio_title">Dex Hub (fork do Nuvio TV)</string>
     <string name="licenses_attributions_nuvio_body">Uma versão modificada do Nuvio TV. O código-fonte e os termos de licença desta versão estão no repositório do fork. O Nuvio TV está em github.com/NuvioMedia/NuvioTV. Licenciado sob a GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
-    <string name="licenses_attributions_tmdb_body">O Nuvio Arc utiliza a API do TMDB para metadados de filmes e séries, artes, trailers, elenco, detalhes de produção, coleções e recomendações. Este produto usa a API do TMDB, mas não é endossado ou certificado pelo TMDB.</string>
+    <string name="licenses_attributions_tmdb_body">O Dex Hub utiliza a API do TMDB para metadados de filmes e séries, artes, trailers, elenco, detalhes de produção, coleções e recomendações. Este produto usa a API do TMDB, mas não é endossado ou certificado pelo TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="licenses_attributions_trakt_body">O Nuvio Arc conecta-se ao Trakt para autenticação de contas, histórico de assistidos, sincronização de progresso, dados de biblioteca, avaliações, listas e comentários. O Nuvio Arc não é afiliado nem endossado pelo Trakt.</string>
+    <string name="licenses_attributions_trakt_body">O Dex Hub conecta-se ao Trakt para autenticação de contas, histórico de assistidos, sincronização de progresso, dados de biblioteca, avaliações, listas e comentários. O Dex Hub não é afiliado nem endossado pelo Trakt.</string>
     <string name="licenses_attributions_simkl_title">Simkl</string>
-    <string name="licenses_attributions_simkl_body">O Nuvio Arc conecta-se ao Simkl para autenticação de contas, listas de interesse, histórico de assistidos, progresso de reprodução e scrobbling. Os dados de acompanhamento de filmes, séries e animes são fornecidos pelo Simkl. O Nuvio Arc não é afiliado nem endossado pelo Simkl.</string>
+    <string name="licenses_attributions_simkl_body">O Dex Hub conecta-se ao Simkl para autenticação de contas, listas de interesse, histórico de assistidos, progresso de reprodução e scrobbling. Os dados de acompanhamento de filmes, séries e animes são fornecidos pelo Simkl. O Dex Hub não é afiliado nem endossado pelo Simkl.</string>
     <string name="licenses_attributions_premiumize_title">Premiumize</string>
-    <string name="licenses_attributions_premiumize_body">O Nuvio Arc se conecta ao Premiumize para autenticação de conta, acesso à biblioteca na nuvem, verificação de cache e recursos de reprodução na nuvem. O Nuvio Arc não é afiliado ou endossado pelo Premiumize.</string>
+    <string name="licenses_attributions_premiumize_body">O Dex Hub se conecta ao Premiumize para autenticação de conta, acesso à biblioteca na nuvem, verificação de cache e recursos de reprodução na nuvem. O Dex Hub não é afiliado ou endossado pelo Premiumize.</string>
     <string name="licenses_attributions_torbox_title">TorBox</string>
-    <string name="licenses_attributions_torbox_body">O Nuvio Arc se conecta ao TorBox para autenticação de conta, acesso à biblioteca na nuvem, verificação de cache e recursos de reprodução na nuvem. O Nuvio Arc não é afiliado ou endossado pelo TorBox.</string>
+    <string name="licenses_attributions_torbox_body">O Dex Hub se conecta ao TorBox para autenticação de conta, acesso à biblioteca na nuvem, verificação de cache e recursos de reprodução na nuvem. O Dex Hub não é afiliado ou endossado pelo TorBox.</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
-    <string name="licenses_attributions_mdblist_body">O Nuvio Arc utiliza o MDBList para avaliações e dados de provedores de pontuação externa. O Nuvio Arc não é afiliado nem endossado pelo MDBList.</string>
+    <string name="licenses_attributions_mdblist_body">O Dex Hub utiliza o MDBList para avaliações e dados de provedores de pontuação externa. O Dex Hub não é afiliado nem endossado pelo MDBList.</string>
     <string name="licenses_attributions_introdb_title">IntroDB</string>
-    <string name="licenses_attributions_introdb_body">O Nuvio Arc utiliza a API do IntroDB para introduções, recaps, créditos e marcações de prévias fornecidas pela comunidade, usadas nos controles de pular. O Nuvio Arc não é afiliado nem endossado pelo IntroDB.</string>
+    <string name="licenses_attributions_introdb_body">O Dex Hub utiliza a API do IntroDB para introduções, recaps, créditos e marcações de prévias fornecidas pela comunidade, usadas nos controles de pular. O Dex Hub não é afiliado nem endossado pelo IntroDB.</string>
     <string name="licenses_attributions_imdb_title">IMDb Non-Commercial Datasets</string>
-    <string name="licenses_attributions_imdb_body">O Nuvio Arc utiliza conjuntos de dados não-comerciais do IMDb, incluindo title.ratings.tsv.gz, para avaliações e contagem de votos do IMDb. Informações cortesia do IMDb (https://www.imdb.com). Usado com permissão. Os dados do IMDb são para uso pessoal e não-comercial sob os termos do IMDb.</string>
+    <string name="licenses_attributions_imdb_body">O Dex Hub utiliza conjuntos de dados não-comerciais do IMDb, incluindo title.ratings.tsv.gz, para avaliações e contagem de votos do IMDb. Informações cortesia do IMDb (https://www.imdb.com). Usado com permissão. Os dados do IMDb são para uso pessoal e não-comercial sob os termos do IMDb.</string>
     <string name="licenses_attributions_exoplayer_title">AndroidX Media3 ExoPlayer 1.8.0</string>
     <string name="licenses_attributions_exoplayer_body">Usado como motor de reprodução Android. Licenciado sob a Apache License, Versão 2.0.</string>
     <string name="licenses_attributions_libmpv_title">libmpv / libmpv-android</string>
@@ -481,7 +481,7 @@
     <string name="tracking_accounts_title">Contas</string>
     <string name="tracking_accounts_subtitle">Conectar e gerenciar serviços de rastreamento</string>
     <string name="tracking_sources_title">Fontes</string>
-    <string name="tracking_sources_subtitle">Escolha de onde o Nuvio Arc lê sua biblioteca e progresso de reprodução. O scrobbling é enviado para todos os serviços conectados.</string>
+    <string name="tracking_sources_subtitle">Escolha de onde o Dex Hub lê sua biblioteca e progresso de reprodução. O scrobbling é enviado para todos os serviços conectados.</string>
     <string name="tracking_trakt_features_title">Recursos do Trakt</string>
     <string name="tracking_trakt_features_subtitle">Histórico, avaliações e recomendações específicas do Trakt</string>
     <string name="tracking_simkl_features_title">Recursos do Simkl</string>
@@ -498,8 +498,8 @@
     <string name="tracking_status_connecting">Conectando</string>
     <string name="tracking_finish_connection">Finalizar aprovação da conexão</string>
     <string name="tracking_connecting_provider">Iniciando conexão com %1$s…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Escolha o serviço que o Nuvio Arc usa para retomar e Continuar Assistindo. O scrobbling permanece ativo para todos os serviços conectados.</string>
-    <string name="tracking_library_source_dialog_subtitle">Escolha o serviço que o Nuvio Arc usa para sua Biblioteca. O scrobbling de reprodução é enviado para todos os serviços conectados.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Escolha o serviço que o Dex Hub usa para retomar e Continuar Assistindo. O scrobbling permanece ativo para todos os serviços conectados.</string>
+    <string name="tracking_library_source_dialog_subtitle">Escolha o serviço que o Dex Hub usa para sua Biblioteca. O scrobbling de reprodução é enviado para todos os serviços conectados.</string>
     <string name="tracking_trakt_progress_required">Disponível quando o Trakt é a fonte de Progresso de Assistidos</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -509,7 +509,7 @@
     <string name="settings_advanced_subtitle">Desempenho, navegação, cache e diagnósticos</string>
     <string name="experience_mode_essential">Essencial</string>
     <string name="experience_mode_advanced">Avançado</string>
-    <string name="experience_mode_choose_title">Escolha sua experiência Nuvio Arc</string>
+    <string name="experience_mode_choose_title">Escolha sua experiência Dex Hub</string>
     <string name="experience_mode_choose_subtitle">Simples ou completo, mude a qualquer hora</string>
     <string name="experience_mode_essential_card_subtitle">Configurações básicas, addons e Trakt</string>
     <string name="experience_mode_advanced_card_subtitle">Configurações, layout, catálogo e diagnósticos</string>
@@ -799,8 +799,8 @@
     <string name="playback_player_external_desc">Abrir vídeos em app externo</string>
     <string name="playback_player_ask_desc">Escolher player sempre</string>
     <string name="playback_player_auto">Automático (Melhor para conteúdo)</string>
-    <string name="playback_engine_exoplayer_desc">Compatível com recursos atuais do Nuvio Arc</string>
-    <string name="playback_engine_mvplayer_desc">Usa libmpv com OSD do Nuvio Arc (Experimental)</string>
+    <string name="playback_engine_exoplayer_desc">Compatível com recursos atuais do Dex Hub</string>
+    <string name="playback_engine_mvplayer_desc">Usa libmpv com OSD do Dex Hub (Experimental)</string>
     <string name="playback_player_auto_desc">Usa ExoPlayer para filmes e séries e MPV para animes</string>
 
     <string name="video_section">Vídeo</string>
@@ -1528,7 +1528,7 @@
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
     <string name="trakt_watch_progress_source_nuvio">Nuvio Sync</string>
     <string name="trakt_library_source_title">Fonte para Biblioteca</string>
-    <string name="trakt_library_source_subtitle">Escolha qual fonte o Nuvio Arc usa para sua Biblioteca</string>
+    <string name="trakt_library_source_subtitle">Escolha qual fonte o Dex Hub usa para sua Biblioteca</string>
     <string name="trakt_library_source_dialog_title">Fonte para Biblioteca</string>
     <string name="trakt_library_source_dialog_subtitle">Escolha onde salvar e gerenciar os itens da sua biblioteca</string>
     <string name="trakt_library_source_trakt">Trakt</string>
@@ -1567,7 +1567,7 @@
     <string name="trakt_stat_watched_hours">Horas assistidas</string>
     <string name="trakt_disconnect">Desconectar</string>
     <string name="trakt_disconnect_title">Desconectar Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Isso removerá sua conta Trakt do Nuvio Arc.</string>
+    <string name="trakt_disconnect_subtitle">Isso removerá sua conta Trakt do Dex Hub.</string>
     <string name="trakt_login">Login</string>
     <string name="trakt_retry">Tentar novamente</string>
     <string name="trakt_back">Voltar</string>
@@ -1799,7 +1799,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">Fontes P2P</string>
-    <string name="p2p_consent_body">Esta fonte usa tecnologia peer-to-peer (P2P). Ao habilitar o P2P, você reconhece e concorda que:\n\n\u2022 Seu endereço IP ficará visível para outros peers na rede\n\u2022 Você é o único responsável pelo conteúdo que acessa\n\u2022 Você confirma que possui o direito legal de transmitir este conteúdo em sua jurisdição\n\u2022 O Nuvio Arc não hospeda, distribui ou controla nenhum conteúdo P2P\n\u2022 O Nuvio Arc não se responsabiliza por quaisquer consequências legais decorrentes do uso de streaming P2P\n\nVocê usa este recurso inteiramente por sua conta e risco. O P2P pode ser desativado a qualquer momento nas Configurações.</string>
+    <string name="p2p_consent_body">Esta fonte usa tecnologia peer-to-peer (P2P). Ao habilitar o P2P, você reconhece e concorda que:\n\n\u2022 Seu endereço IP ficará visível para outros peers na rede\n\u2022 Você é o único responsável pelo conteúdo que acessa\n\u2022 Você confirma que possui o direito legal de transmitir este conteúdo em sua jurisdição\n\u2022 O Dex Hub não hospeda, distribui ou controla nenhum conteúdo P2P\n\u2022 O Dex Hub não se responsabiliza por quaisquer consequências legais decorrentes do uso de streaming P2P\n\nVocê usa este recurso inteiramente por sua conta e risco. O P2P pode ser desativado a qualquer momento nas Configurações.</string>
     <string name="p2p_consent_enable">Ativar P2P</string>
     <string name="p2p_consent_cancel">Cancelar</string>
     <string name="settings_p2p_title">Fonte P2P</string>
@@ -2386,7 +2386,7 @@
     <string name="catalog_see_all_empty_title">Nada por aqui</string>
     <string name="catalog_see_all_empty_subtitle">Tente outro catálogo ou volte mais tarde</string>
 
-    <string name="layout_selection_welcome">Bem-vindo ao Nuvio Arc</string>
+    <string name="layout_selection_welcome">Bem-vindo ao Dex Hub</string>
     <string name="layout_selection_subtitle">Escolha o layout da sua tela inicial</string>
     <string name="layout_selection_continue">Continuar</string>
 
@@ -2572,7 +2572,7 @@
     <string name="cd_test">Testar</string>
     <string name="cd_seek_bar">Barra de reprodução</string>
     <string name="cd_unlink">Desvincular</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">QR de ativação Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2727,7 +2727,7 @@
     <string name="collections_editor_tmdb_list_helper">Exemplo: https://www.themoviedb.org/list/8504994 ou 8504994.</string>
     <string name="collections_editor_tmdb_person_id">ID da pessoa</string>
     <string name="collections_editor_tmdb_person_helper">Exemplo: https://www.themoviedb.org/person/31-tom-hanks ou 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Exibido como o nome da fileira/aba. Se estiver em branco, o Nuvio Arc criará um baseado na fonte.</string>
+    <string name="collections_editor_tmdb_title_helper">Exibido como o nome da fileira/aba. Se estiver em branco, o Dex Hub criará um baseado na fonte.</string>
     <string name="collections_editor_tmdb_quick_genres">Gêneros rápidos</string>
     <string name="collections_editor_tmdb_quick_languages">Idiomas rápidos</string>
     <string name="collections_editor_tmdb_quick_countries">Países rápidos</string>
@@ -2909,7 +2909,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Sem REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Usar player interno do Nuvio Arc</string>
+    <string name="playback_player_internal_desc">Usar player interno do Dex Hub</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeds · %2$d peers</string>
@@ -3014,9 +3014,9 @@
     <string name="simkl_visit">Visitar Simkl</string>
     <string name="simkl_sync_info_action">Como funciona a sincronização</string>
     <string name="simkl_sync_info_title">Como funciona a sincronização do Simkl</string>
-    <string name="simkl_sync_info_description">O Nuvio Arc verifica automaticamente o Simkl no máximo uma vez a cada %1$d minutos. Alterações feitas em outro app ou no site do Simkl podem levar esse tempo para aparecer.</string>
+    <string name="simkl_sync_info_description">O Dex Hub verifica automaticamente o Simkl no máximo uma vez a cada %1$d minutos. Alterações feitas em outro app ou no site do Simkl podem levar esse tempo para aparecer.</string>
     <string name="simkl_sync_info_activity">Cada atualização verifica primeiro se o Simkl reporta alguma mudança e baixa apenas as atualizações. Isso segue as regras da API do Simkl, reduz o uso desnecessário de dados e ajuda a manter o serviço estável.</string>
-    <string name="simkl_sync_info_manual">Alterações feitas no Nuvio Arc são enviadas ao Simkl imediatamente. Use “Sincronizar agora” sempre que quiser que o Nuvio Arc verifique mudanças remotas mais cedo.</string>
+    <string name="simkl_sync_info_manual">Alterações feitas no Dex Hub são enviadas ao Simkl imediatamente. Use “Sincronizar agora” sempre que quiser que o Dex Hub verifique mudanças remotas mais cedo.</string>
     <string name="simkl_sync_info_library_statuses">Séries colocadas nas listas “Em espera” ou “Abandonadas” do Simkl ficam ocultas em Continuar assistindo. Elas permanecem ocultas enquanto estiverem em uma dessas listas.</string>
     <string name="simkl_sync_info_docs">Leia o guia de sincronização do Simkl</string>
     <string name="error_open_browser_failed">Falha ao abrir o navegador</string>
@@ -3438,7 +3438,7 @@
     <string name="licenses_attributions_avatars_title">Avatares da sessão em grupo</string>
     <string name="licenses_attributions_avatars_body">Feitos com DiceBear, remixando estes designs: \"Fun Emoji\" de Davis Uche e \"Adventurer\" de Lisa Wischofsky, licenciados sob CC BY 4.0 (creativecommons.org/licenses/by/4.0). \"Lorelei\" de Lisa Wischofsky, \"Notionists\" de Zoish, \"Pixel Art\" e \"Thumbs\" de DiceBear, CC0 1.0. \"Bottts\" de Pablo Stanley, livre para uso pessoal e comercial. Rostos de animais do Twemoji, do Twitter, Inc. e outros colaboradores, licenciados sob CC BY 4.0.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo e Plex</string>
-    <string name="licenses_attributions_media_servers_body">O Nuvio Arc se conecta ao seu próprio servidor Jellyfin, Emby, Silo ou Plex. Os nomes e logotipos pertencem aos respectivos proprietários. O Nuvio Arc não é afiliado nem endossado pelo Jellyfin, Emby ou Silo.</string>
+    <string name="licenses_attributions_media_servers_body">O Dex Hub se conecta ao seu próprio servidor Jellyfin, Emby, Silo ou Plex. Os nomes e logotipos pertencem aos respectivos proprietários. O Dex Hub não é afiliado nem endossado pelo Jellyfin, Emby ou Silo.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Listas de grupos de release. Licença MIT.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -3486,7 +3486,7 @@
     <string name="playback_afr_closed">Fechado</string>
     <string name="audio_tunneled_sub_prefer_app">Indisponível enquanto Prioridade do decodificador estiver em Preferir decodificadores do app</string>
     <string name="audio_use_system_passthrough">Passthrough do sistema</string>
-    <string name="audio_use_system_passthrough_sub">Envia TrueHD e DTS-HD ao receptor pelo Android (caminho do sistema) em vez do Nuvio Arc (caminho IEC). Dependendo do dispositivo e da configuração de áudio, isso pode limitar DTS-HD e DTS:X a DTS padrão ou deixá-los sem som. Use apenas se os formatos sem perdas produzirem ruído, dessincronia ou nenhum áudio.</string>
+    <string name="audio_use_system_passthrough_sub">Envia TrueHD e DTS-HD ao receptor pelo Android (caminho do sistema) em vez do Dex Hub (caminho IEC). Dependendo do dispositivo e da configuração de áudio, isso pode limitar DTS-HD e DTS:X a DTS padrão ou deixá-los sem som. Use apenas se os formatos sem perdas produzirem ruído, dessincronia ou nenhum áudio.</string>
     <string name="audio_surround_header">Som surround</string>
     <string name="audio_surround_reset_iec_probe">Limpar decisão do teste IEC</string>
     <string name="audio_surround_reset_iec_probe_sub">Testa de novo a saída IEC 61937. Use se os formatos sem perdas caírem para PCM depois de trocar de receptor ou de entrada.</string>
@@ -3876,7 +3876,7 @@
     <string name="subtitle_bitmap_mpv_note">O MPV não permite redimensionar legendas em imagem. Use o ExoPlayer para ajustar o tamanho das legendas em imagem independentemente do texto.</string>
     <string name="subtitle_style_image_size">Tamanho das legendas em imagem</string>
     <string name="v2_accent_fixed_hint">Usa o Tema de Cores, exceto se o destaque adaptado à arte estiver selecionado.</string>
-    <string name="about_fork_updates_subtitle">Atualizações das versões do Nuvio Arc no GitHub.</string>
+    <string name="about_fork_updates_subtitle">Atualizações das versões do Dex Hub no GitHub.</string>
     <string name="playback_speculative_stream_search">Buscar fontes antes de Reproduzir</string>
     <string name="playback_speculative_stream_search_sub">Busca nos addons enquanto você navega para agilizar a seleção de fontes. Alguns addons podem adicionar ou obter conteúdo durante as buscas. Desativado espera até o Reproduzir. Os links de mídia e a resolução pelo provedor esperam pela escolha da fonte, exceto perto do fim de um episódio, quando as miniaturas da barra de progresso preparam o próximo.</string>
     <string name="playback_source_line_badges">Selos da fonte na tela de detalhes</string>
@@ -4051,7 +4051,7 @@
     <string name="party_match_same">Mesmo arquivo do anfitrião</string>
     <string name="party_match_likely">Provavelmente a cópia do anfitrião</string>
     <string name="party_match_different">Cópia diferente da do anfitrião</string>
-    <string name="party_invite_text">Participe da minha sessão em grupo no Nuvio Arc. Abra Ajustes, depois Sessão em grupo, e digite o código %1$s</string>
+    <string name="party_invite_text">Participe da minha sessão em grupo no Dex Hub. Abra Ajustes, depois Sessão em grupo, e digite o código %1$s</string>
     <string name="party_invite_qr">Escaneie com a câmera do celular para enviar o convite por mensagem</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -4164,7 +4164,7 @@
     <string name="floppy_tracking_description">Envie o que você assiste para o seu próprio servidor Floppy</string>
     <string name="floppy_connected_to">Conectado a %1$s</string>
     <string name="floppy_connected_description">O que você assiste neste perfil vai para o Floppy: “Now Playing” enquanto assiste, títulos concluídos no seu histórico e os interrompidos com ponto de retomada. “Marcar como assistido” também é enviado. Desmarcar um filme aqui redefine todas as reproduções dele no Floppy; desmarcar um episódio retira apenas a última reprodução. Em um servidor Floppy mais antigo, só são removidas as reproduções que o Arc adicionou a um filme.</string>
-    <string name="floppy_qr_description">QR Code para aprovar o Nuvio Arc no Floppy</string>
+    <string name="floppy_qr_description">QR Code para aprovar o Dex Hub no Floppy</string>
     <string name="floppy_address_instruction">Digite o endereço em que você abre o Floppy no navegador.</string>
     <string name="floppy_token_instruction">No Floppy, abra Settings, Integrations, App tokens e crie um token para esta TV.</string>
     <string name="floppy_address_placeholder">Endereço do servidor, por exemplo 192.168.1.20:8000</string>
@@ -4357,11 +4357,11 @@
     <string name="format_check_note_dv5">Suas configurações convertem Profile 5 em 8.1.</string>
     <string name="format_check_note_hdr10_plus">Suas configurações removem os dados HDR10+.</string>
     <string name="playback_release_decoder_on_background">Liberar decodificador em segundo plano</string>
-    <string name="playback_release_decoder_on_background_sub">Libera o decodificador de vídeo quando o Nuvio Arc vai para segundo plano. Ative se a reprodução falhar com um erro do decodificador ao voltar ao app. O player recarrega ao voltar, também depois do protetor de tela</string>
+    <string name="playback_release_decoder_on_background_sub">Libera o decodificador de vídeo quando o Dex Hub vai para segundo plano. Ative se a reprodução falhar com um erro do decodificador ao voltar ao app. O player recarrega ao voltar, também depois do protetor de tela</string>
     <string name="autosync_toast_no_fit">Falha na sincronização: estas legendas não correspondem a esta versão do vídeo.</string>
     <string name="layout_hero_description_auto_scroll">Rolar descrições automaticamente</string>
     <string name="layout_hero_description_auto_scroll_sub">Rola lentamente as descrições longas na tela inicial em vez de cortá-las.</string>
-    <string name="player_dts_hd_decoding_notice">A saída DTS-HD sem perdas parou de funcionar, então o próprio Nuvio Arc está decodificando o áudio deste título.</string>
+    <string name="player_dts_hd_decoding_notice">A saída DTS-HD sem perdas parou de funcionar, então o próprio Dex Hub está decodificando o áudio deste título.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadados</string>
     <string name="addon_health_ok">OK</string>

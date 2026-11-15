@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">इस यूज़र के लिए कोई मूवी या सीरीज़ लाइब्रेरी उपलब्ध नहीं है।</string>
     <string name="servers_refresh_libraries">लाइब्रेरी रिफ्रेश करें</string>
     <string name="servers_display_name">डिस्प्ले नाम</string>
-    <string name="servers_display_name_description">वह नाम जो Nuvio Arc इस सर्वर के लिए होम, सेटिंग्स और सोर्स पर दिखाता है।</string>
+    <string name="servers_display_name_description">वह नाम जो Dex Hub इस सर्वर के लिए होम, सेटिंग्स और सोर्स पर दिखाता है।</string>
     <string name="servers_display_name_server_name">सर्वर का अपना नाम: %1$s</string>
-    <string name="servers_display_name_dialog_description">वह नाम चुनें जो Nuvio Arc इस सर्वर के लिए दिखाए। सर्वर का अपना नाम इस्तेमाल करने के लिए इसे खाली छोड़ें।</string>
+    <string name="servers_display_name_dialog_description">वह नाम चुनें जो Dex Hub इस सर्वर के लिए दिखाए। सर्वर का अपना नाम इस्तेमाल करने के लिए इसे खाली छोड़ें।</string>
     <string name="servers_display_name_reset">सर्वर नाम पर रीसेट करें</string>
     <string name="servers_enabled">सक्षम</string>
     <string name="servers_enabled_description">इस सर्वर को होम, खोज और स्ट्रीम नतीजों में दिखाएँ।</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">इस यूज़र के पास एक्सेस नहीं है।</string>
     <string name="servers_error_failed">सर्वर से कनेक्ट नहीं हो सका।</string>
     <string name="servers_error_website">यह एड्रेस एक वेबसाइट खोलता है, मीडिया सर्वर नहीं। सर्वर का अपना एड्रेस डालें।</string>
-    <string name="servers_error_silo_website">Nuvio Arc को इस Silo सर्वर का Jellyfin एड्रेस नहीं मिला। Silo में “Settings &gt; Connect Apps &gt; Jellyfin-compatible app” खोलें और “Server” के नीचे दिखा एड्रेस डालें।</string>
+    <string name="servers_error_silo_website">Dex Hub को इस Silo सर्वर का Jellyfin एड्रेस नहीं मिला। Silo में “Settings &gt; Connect Apps &gt; Jellyfin-compatible app” खोलें और “Server” के नीचे दिखा एड्रेस डालें।</string>
     <string name="servers_error_silo_jellyfin_off">इस Silo सर्वर पर Jellyfin ऐप्स बंद हैं। सर्वर के मालिक से इन्हें चालू करने को कहें।</string>
     <string name="servers_error_profile_needed">यूज़रनेम के अंत में # और अपनी Silo प्रोफ़ाइल का नाम जोड़ें, जैसे name#Profile या name#1234#Profile।</string>
     <string name="servers_error_profile_not_found">Silo आख़िरी # के बाद वाले हिस्से को प्रोफ़ाइल का नाम मानता है, और उस नाम की कोई प्रोफ़ाइल नहीं है। अगर आपके यूज़रनेम में # है, तो अंत में # और अपनी प्रोफ़ाइल का नाम जोड़ें, जैसे name#1234#Profile।</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">यह आइटम अब सर्वर पर उपलब्ध नहीं है।</string>
     <string name="servers_failure_certificate">इस सर्वर का सर्टिफ़िकेट पहचाना नहीं गया।</string>
     <string name="servers_certificate_title">इस सर्वर का सर्टिफ़िकेट पहचाना नहीं गया</string>
-    <string name="servers_certificate_intro">Nuvio Arc %1$s की पहचान की पुष्टि नहीं कर सका।</string>
+    <string name="servers_certificate_intro">Dex Hub %1$s की पहचान की पुष्टि नहीं कर सका।</string>
     <string name="servers_certificate_untrusted">सर्टिफ़िकेट सेल्फ़-साइन्ड है या किसी प्राइवेट अथॉरिटी ने जारी किया है।</string>
     <string name="servers_certificate_name_mismatch">सर्टिफ़िकेट किसी दूसरे नाम के लिए जारी हुआ था।</string>
     <string name="servers_certificate_expired">सर्टिफ़िकेट अपनी मान्य तारीखों से बाहर है।</string>
-    <string name="servers_certificate_advice">अगर यह आपका अपना सर्वर है और आपको इसकी उम्मीद थी, तो आप इस सर्टिफ़िकेट पर भरोसा कर सकते हैं। फिर Nuvio Arc इस सर्वर के लिए सिर्फ़ यही सर्टिफ़िकेट मानेगा और इसके बदलने पर आपको चेतावनी देगा। अगर आप अपने घर के नेटवर्क पर नहीं हैं, तो पहले सर्वर के मालिक से फ़िंगरप्रिंट मिला लें।</string>
+    <string name="servers_certificate_advice">अगर यह आपका अपना सर्वर है और आपको इसकी उम्मीद थी, तो आप इस सर्टिफ़िकेट पर भरोसा कर सकते हैं। फिर Dex Hub इस सर्वर के लिए सिर्फ़ यही सर्टिफ़िकेट मानेगा और इसके बदलने पर आपको चेतावनी देगा। अगर आप अपने घर के नेटवर्क पर नहीं हैं, तो पहले सर्वर के मालिक से फ़िंगरप्रिंट मिला लें।</string>
     <string name="servers_certificate_details">इनके लिए जारी: %1$s\nजारीकर्ता: %2$s\nमान्य: %3$s से %4$s\nफ़िंगरप्रिंट (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">इस सर्टिफ़िकेट पर भरोसा करें</string>
     <string name="servers_certificate_unavailable">सुरक्षित कनेक्शन विफल रहा और सर्वर का सर्टिफ़िकेट पढ़ा नहीं जा सका।</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo साइन-इन (अनुशंसित)</string>
     <string name="silo_method_native_description">अपने फ़ोन पर कोड से या अपने Silo पासवर्ड से साइन इन करें। आपका सर्वर जिस भी तरीके से साइन इन कराता है, उसके साथ काम करता है (पासवर्ड, OpenID Connect, LDAP, Tailscale)। आपकी Silo प्रोफ़ाइलें और Silo होम रो साथ लाता है।</string>
     <string name="silo_method_jellyfin">Jellyfin-संगत</string>
-    <string name="silo_method_jellyfin_description">Jellyfin ऐप्स के लिए Silo का एड्रेस, यूज़रनेम और पासवर्ड के साथ इस्तेमाल करता है (प्रोफ़ाइल के लिए name#Profile)। अब तक Nuvio Arc इसी तरीके से Silo से जुड़ता था।</string>
+    <string name="silo_method_jellyfin_description">Jellyfin ऐप्स के लिए Silo का एड्रेस, यूज़रनेम और पासवर्ड के साथ इस्तेमाल करता है (प्रोफ़ाइल के लिए name#Profile)। अब तक Dex Hub इसी तरीके से Silo से जुड़ता था।</string>
     <string name="silo_setup_next">आगे</string>
     <string name="silo_code_step_open">अपने फ़ोन पर कोड स्कैन करें या %1$s खोलें</string>
     <string name="silo_code_step_sign_in">वहाँ हमेशा की तरह साइन इन करें</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">या %2$s पर कोड %1$s से साइन इन करें</string>
     <string name="silo_signing_in">साइन इन हो रहा है…</string>
     <string name="silo_profiles_title">कौन देख रहा है?</string>
-    <string name="silo_profiles_subtitle">%1$s की एक से ज़्यादा प्रोफ़ाइलें हैं। Nuvio Arc आपकी चुनी हुई प्रोफ़ाइल को प्रगति, देखे गए के निशान और होम रो के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
+    <string name="silo_profiles_subtitle">%1$s की एक से ज़्यादा प्रोफ़ाइलें हैं। Dex Hub आपकी चुनी हुई प्रोफ़ाइल को प्रगति, देखे गए के निशान और होम रो के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">बच्चे</string>
     <string name="silo_pin_title">%1$s का PIN</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">प्रोफ़ाइल</string>
     <string name="servers_silo_profile_description">प्रगति, देखे गए के निशान और होम रो इसी प्रोफ़ाइल के हिसाब से चलते हैं।</string>
     <string name="servers_silo_home_rows">Silo होम रो</string>
-    <string name="servers_silo_home_rows_description">अपने Silo होम की रो (आपकी लिस्ट, ट्रेंडिंग, अगला…) Nuvio Arc के होम पर दिखाएँ।</string>
+    <string name="servers_silo_home_rows_description">अपने Silo होम की रो (आपकी लिस्ट, ट्रेंडिंग, अगला…) Dex Hub के होम पर दिखाएँ।</string>
     <string name="servers_silo_switch">Silo साइन-इन पर स्विच करें</string>
     <string name="servers_silo_switch_description">Silo के अपने साइन-इन से साइन इन करता है, फिर इस कनेक्शन की जगह लेता है। इसका नाम और लाइब्रेरी की पसंद वैसी ही रहती हैं।</string>
     <string name="servers_add_plex_description">plex.tv/link पर कोड से साइन इन करें। आपके सर्वर अपने-आप मिल जाते हैं।</string>
-    <string name="plex_sign_in_subtitle">सर्वर एड्रेस की ज़रूरत नहीं: साइन इन के बाद Nuvio Arc आपके Plex सर्वर ढूँढ लेता है।</string>
+    <string name="plex_sign_in_subtitle">सर्वर एड्रेस की ज़रूरत नहीं: साइन इन के बाद Dex Hub आपके Plex सर्वर ढूँढ लेता है।</string>
     <string name="plex_code_step_open">अपने फ़ोन या कंप्यूटर पर %1$s खोलें (या कोड स्कैन करें)</string>
     <string name="plex_code_step_sign_in">पूछे जाने पर Plex में साइन इन करें</string>
     <string name="plex_code_step_link">ऊपर दिया कोड लिखें और Link दबाएँ</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">इंटरनेट के ज़रिए जुड़ा</string>
     <string name="plex_reach_relay_detail">सिर्फ़ Plex Relay से पहुँचा जा सकता है (धीमा, लगभग 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">अभी ऑफ़लाइन</string>
-    <string name="plex_users_subtitle">आपके Plex खाते में Plex Home यूज़र हैं। Nuvio Arc आपके चुने यूज़र को %1$s पर प्रगति, देखे गए के निशान और देखना जारी रखें के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
+    <string name="plex_users_subtitle">आपके Plex खाते में Plex Home यूज़र हैं। Dex Hub आपके चुने यूज़र को %1$s पर प्रगति, देखे गए के निशान और देखना जारी रखें के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
     <string name="plex_user_owner">मालिक</string>
     <string name="plex_user_managed">मैनेज्ड</string>
     <string name="plex_other_user">दूसरा यूज़र</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home यूज़र</string>
     <string name="plex_home_user_description">प्रगति, देखे गए के निशान और देखना जारी रखें इस यूज़र के हिसाब से चलते हैं।</string>
     <string name="plex_home_rows">Plex होम रो</string>
-    <string name="plex_home_rows_description">इस सर्वर से Plex की अपनी रो (हाल ही में जोड़े गए वगैरह) Nuvio Arc के होम पर दिखाएँ।</string>
-    <string name="plex_remote_pass_needed">Plex इसे घर से बाहर नहीं चलाता। Nuvio Arc जैसे ऐप्स में इसके लिए सर्वर पर Plex Pass, या आपके लिए Remote Watch Pass चाहिए। घर पर यह मुफ़्त चलता है।</string>
+    <string name="plex_home_rows_description">इस सर्वर से Plex की अपनी रो (हाल ही में जोड़े गए वगैरह) Dex Hub के होम पर दिखाएँ।</string>
+    <string name="plex_remote_pass_needed">Plex इसे घर से बाहर नहीं चलाता। Dex Hub जैसे ऐप्स में इसके लिए सर्वर पर Plex Pass, या आपके लिए Remote Watch Pass चाहिए। घर पर यह मुफ़्त चलता है।</string>
     <string name="server_library_sort_title">A से Z</string>
     <string name="server_library_sort_released">नवीनतम रिलीज़</string>
     <string name="server_library_sort_added">हाल ही में जोड़े गए</string>

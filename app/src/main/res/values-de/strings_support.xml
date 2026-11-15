@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Das Nuvio-Team unterstützen</string>
     <string name="support_nuvio_title">Das Nuvio-Team unterstützen</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc basiert auf der offiziellen Nuvio-App. Eine Mitgliedschaft geht an das Nuvio-Team, hilft bei Servern und Entwicklung und hält die Kern-App für alle kostenlos.</string>
+    <string name="support_nuvio_subtitle">Dex Hub basiert auf der offiziellen Nuvio-App. Eine Mitgliedschaft geht an das Nuvio-Team, hilft bei Servern und Entwicklung und hält die Kern-App für alle kostenlos.</string>
     <string name="support_nuvio_perk_themes">Farbverlauf-Themen</string>
     <string name="support_nuvio_perk_themes_desc">Zusätzliche Farbverlauf-Themen oder ein eigenes erstellen.</string>
     <string name="support_nuvio_perk_backgrounds">Profilhintergründe</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Schließen</string>
     <string name="support_nuvio_checking">Mitgliedschaft wird geprüft…</string>
     <string name="support_nuvio_thanks_title">Danke, dass Sie das Nuvio-Team unterstützen</string>
-    <string name="support_nuvio_thanks_subtitle">Ihre Vorteile hängen an Ihrem Nuvio-Konto und gelten daher hier in Nuvio Arc und in der offiziellen App.</string>
+    <string name="support_nuvio_thanks_subtitle">Ihre Vorteile hängen an Ihrem Nuvio-Konto und gelten daher hier in Dex Hub und in der offiziellen App.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio Supporter</string>
-    <string name="support_nuvio_gentle_title">In Nuvio Arc funktioniert alles auch ohne Mitgliedschaft</string>
+    <string name="support_nuvio_gentle_title">In Dex Hub funktioniert alles auch ohne Mitgliedschaft</string>
     <string name="support_nuvio_gentle_body">Dieses Konto hat keine Mitgliedschaft als Nuvio Supporter. Wenn Sie das Nuvio-Team einmal unterstützen möchten, bringt eine Mitgliedschaft ein paar Extras:</string>
-    <string name="support_nuvio_gentle_unavailable">Ihre Mitgliedschaft konnte gerade nicht geprüft werden. In Nuvio Arc funktioniert alles auch ohne. Wenn Sie das Nuvio-Team unterstützen möchten, bietet eine Mitgliedschaft ein paar Extras:</string>
+    <string name="support_nuvio_gentle_unavailable">Ihre Mitgliedschaft konnte gerade nicht geprüft werden. In Dex Hub funktioniert alles auch ohne. Wenn Sie das Nuvio-Team unterstützen möchten, bietet eine Mitgliedschaft ein paar Extras:</string>
     <string name="support_nuvio_gentle_scan">Möglichkeiten auf dem Smartphone ansehen</string>
     <string name="support_nuvio_paid_check_again">Gerade bezahlt? Erneut prüfen</string>
     <string name="support_nuvio_no_thanks">Nein, danke</string>

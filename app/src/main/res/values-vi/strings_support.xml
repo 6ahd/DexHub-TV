@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Ủng hộ đội ngũ Nuvio</string>
     <string name="support_nuvio_title">Ủng hộ đội ngũ Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc được xây dựng trên ứng dụng Nuvio chính thức. Gói thành viên được chuyển cho đội ngũ Nuvio, giúp trả chi phí máy chủ và phát triển, và giữ ứng dụng cốt lõi miễn phí cho mọi người.</string>
+    <string name="support_nuvio_subtitle">Dex Hub được xây dựng trên ứng dụng Nuvio chính thức. Gói thành viên được chuyển cho đội ngũ Nuvio, giúp trả chi phí máy chủ và phát triển, và giữ ứng dụng cốt lõi miễn phí cho mọi người.</string>
     <string name="support_nuvio_perk_themes">Chủ đề chuyển màu</string>
     <string name="support_nuvio_perk_themes_desc">Thêm chủ đề chuyển màu, hoặc tự tạo chủ đề riêng.</string>
     <string name="support_nuvio_perk_backgrounds">Hình nền hồ sơ</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Đóng</string>
     <string name="support_nuvio_checking">Đang kiểm tra gói thành viên của bạn…</string>
     <string name="support_nuvio_thanks_title">Cảm ơn bạn đã ủng hộ đội ngũ Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">Đặc quyền đi theo tài khoản Nuvio của bạn, nên hoạt động cả trong Nuvio Arc và ứng dụng chính thức.</string>
+    <string name="support_nuvio_thanks_subtitle">Đặc quyền đi theo tài khoản Nuvio của bạn, nên hoạt động cả trong Dex Hub và ứng dụng chính thức.</string>
     <string name="support_nuvio_gentle_eyebrow">Người tài trợ Nuvio</string>
-    <string name="support_nuvio_gentle_title">Mọi thứ trong Nuvio Arc đều dùng được mà không cần gói thành viên</string>
+    <string name="support_nuvio_gentle_title">Mọi thứ trong Dex Hub đều dùng được mà không cần gói thành viên</string>
     <string name="support_nuvio_gentle_body">Tài khoản này chưa có gói thành viên Nuvio Supporter. Nếu một ngày bạn muốn giúp đội ngũ Nuvio, gói thành viên sẽ thêm vài đặc quyền:</string>
-    <string name="support_nuvio_gentle_unavailable">Hiện không thể kiểm tra gói thành viên của bạn. Mọi thứ trong Nuvio Arc đều dùng được mà không cần gói này. Nếu bạn muốn giúp đội ngũ Nuvio, gói thành viên sẽ thêm vài đặc quyền:</string>
+    <string name="support_nuvio_gentle_unavailable">Hiện không thể kiểm tra gói thành viên của bạn. Mọi thứ trong Dex Hub đều dùng được mà không cần gói này. Nếu bạn muốn giúp đội ngũ Nuvio, gói thành viên sẽ thêm vài đặc quyền:</string>
     <string name="support_nuvio_gentle_scan">Xem các lựa chọn trên điện thoại</string>
     <string name="support_nuvio_paid_check_again">Vừa thanh toán? Kiểm tra lại</string>
     <string name="support_nuvio_no_thanks">Không, cảm ơn</string>

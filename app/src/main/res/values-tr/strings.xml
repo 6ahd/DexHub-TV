@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">İzlemeye Devam Et</string>
     <string name="type_movie">Film</string>
     <string name="type_movies">Filmler</string>
@@ -372,7 +372,7 @@
     <string name="appearance_settings_style">Ayarlar Stili</string>
     <string name="appearance_settings_style_subtitle">Ayar ekranlarının nasıl görüneceğini seç</string>
     <string name="appearance_launcher_artwork">Başlatıcı Görseli</string>
-    <string name="appearance_launcher_artwork_subtitle">Nuvio Arc\'nun TV ana ekranında nasıl görüneceğini seçin</string>
+    <string name="appearance_launcher_artwork_subtitle">Dex Hub\'nun TV ana ekranında nasıl görüneceğini seçin</string>
     <string name="ambient_mode_title">Ortam Modu</string>
     <string name="ambient_mode_enabled_subtitle">Kumanda girişi olmadan geçen bir sürenin ardından ekranı arka plan görselleriyle doldurun</string>
     <string name="ambient_mode_timeout">Şu Süreden Sonra Başlat</string>
@@ -391,7 +391,7 @@
     <string name="appearance_app_icon_picker_title">Uygulama Simgesi ve Afiş Seçin</string>
     <string name="appearance_app_icon_picker_subtitle">Her stil, uyumlu bir kare simge ve TV afişi içerir</string>
     <string name="appearance_app_icon_confirmation_title">Uygulama Simgesi Değiştirilsin mi?</string>
-    <string name="appearance_app_icon_confirmation_message">%1$s stiline geçmek Nuvio Arc\'ı yeni simgeyle yeniden başlatır. Ana ekranın bunu göstermesi birkaç saniye sürebilir ve TV afişinin güncellenmesi için cihazın yeniden başlatılması gerekebilir. Devam etmek için Tamam\'ı seçin.</string>
+    <string name="appearance_app_icon_confirmation_message">%1$s stiline geçmek Dex Hub\'ı yeni simgeyle yeniden başlatır. Ana ekranın bunu göstermesi birkaç saniye sürebilir ve TV afişinin güncellenmesi için cihazın yeniden başlatılması gerekebilir. Devam etmek için Tamam\'ı seçin.</string>
     <string name="appearance_app_icon_change_failed">Simge ve afiş değiştirilemedi. Lütfen tekrar deneyin.</string>
     <string name="appearance_app_icon_original">Orijinal</string>
     <string name="appearance_app_icon_arctic_blue">Kutup Mavisi</string>
@@ -412,7 +412,7 @@
     <!-- AboutScreen -->
     <string name="about_title">Hakkında</string>
     <string name="about_subtitle">Uygulama bilgileri, güncellemeler ve yasal bağlantılar</string>
-    <string name="about_made_with_love">Tapframe ve arkadaşlarının harika çalışması üzerine kuruldu ❤️ · Nuvio Arc: ysosrs123</string>
+    <string name="about_made_with_love">Tapframe ve arkadaşlarının harika çalışması üzerine kuruldu ❤️ · Dex Hub: ysosrs123</string>
     <string name="about_version">Sürüm %1$s</string>
     <string name="about_update_banner_title">Otomatik güncelleme bildirimi</string>
     <string name="about_update_banner_subtitle">Yeni sürüm çıktığında bildirim göster</string>
@@ -433,31 +433,31 @@
     <string name="about_licenses_attributions">Lisanslar ve Atıflar</string>
     <string name="about_licenses_attributions_subtitle">Veri kaynakları, teşekkürler ve Android lisansları</string>
     <string name="licenses_attributions_title">Lisanslar ve Atıflar</string>
-    <string name="licenses_attributions_subtitle">Nuvio Arc tarafından kullanılan veri sağlayıcıları, hizmet kredileri ve Android oynatma lisansları.</string>
+    <string name="licenses_attributions_subtitle">Dex Hub tarafından kullanılan veri sağlayıcıları, hizmet kredileri ve Android oynatma lisansları.</string>
     <string name="licenses_attributions_section_app">UYGULAMA LİSANSI</string>
     <string name="licenses_attributions_section_data">VERİ VE HİZMETLER</string>
     <string name="licenses_attributions_section_playback">ANDROID OYNATMA LİSANSLARI</string>
     <string name="licenses_attributions_section_ui">ARAYÜZ KÜTÜPHANELERİ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Arka plan bulanıklık efektleri için kullanılır. Chris Banes tarafından oluşturulmuştur. Apache License, Version 2.0 altında lisanslanmıştır.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio Arc (Nuvio TV fork\'u)</string>
+    <string name="licenses_attributions_nuvio_title">Dex Hub (Nuvio TV fork\'u)</string>
     <string name="licenses_attributions_nuvio_body">Nuvio TV\'nin değiştirilmiş bir sürümüdür. Bu derlemenin kaynak kodu ve lisans koşulları fork\'un deposunda mevcuttur. Nuvio TV\'nin adresi: github.com/NuvioMedia/NuvioTV. GNU General Public License v3.0 altında lisanslanmıştır.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
-    <string name="licenses_attributions_tmdb_body">Nuvio Arc, film ve dizi meta verileri, görseller, fragmanlar, oyuncular, yapım detayları, koleksiyonlar ve öneriler için TMDB API\'sini kullanır. Bu ürün TMDB API\'sini kullanır ancak TMDB tarafından onaylanmamıştır veya sertifikalandırılmamıştır.</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub, film ve dizi meta verileri, görseller, fragmanlar, oyuncular, yapım detayları, koleksiyonlar ve öneriler için TMDB API\'sini kullanır. Bu ürün TMDB API\'sini kullanır ancak TMDB tarafından onaylanmamıştır veya sertifikalandırılmamıştır.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="licenses_attributions_trakt_body">Nuvio Arc, hesap doğrulama, izleme geçmişi, ilerleme senkronizasyonu, kütüphane verileri, puanlar, listeler ve yorumlar için Trakt\'a bağlanır. Nuvio Arc Trakt ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub, hesap doğrulama, izleme geçmişi, ilerleme senkronizasyonu, kütüphane verileri, puanlar, listeler ve yorumlar için Trakt\'a bağlanır. Dex Hub Trakt ile bağlantılı veya onaylanmış değildir.</string>
     <string name="licenses_attributions_simkl_title">Simkl</string>
-    <string name="licenses_attributions_simkl_body">Nuvio Arc; hesap doğrulama, izleme listeleri, izleme geçmişi, oynatma ilerlemesi ve scrobbling için Simkl\'a bağlanır. Film, dizi ve anime takip verileri Simkl tarafından sağlanır. Nuvio Arc, Simkl ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub; hesap doğrulama, izleme listeleri, izleme geçmişi, oynatma ilerlemesi ve scrobbling için Simkl\'a bağlanır. Film, dizi ve anime takip verileri Simkl tarafından sağlanır. Dex Hub, Simkl ile bağlantılı veya onaylanmış değildir.</string>
     <string name="licenses_attributions_premiumize_title">Premiumize</string>
-    <string name="licenses_attributions_premiumize_body">Nuvio Arc; hesap doğrulama, bulut kütüphanesine erişim, önbellek kontrolü ve bulut oynatma özellikleri için Premiumize\'a bağlanır. Nuvio Arc\'nun Premiumize ile herhangi bir ortaklığı veya resmi bağı yoktur.</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub; hesap doğrulama, bulut kütüphanesine erişim, önbellek kontrolü ve bulut oynatma özellikleri için Premiumize\'a bağlanır. Dex Hub\'nun Premiumize ile herhangi bir ortaklığı veya resmi bağı yoktur.</string>
     <string name="licenses_attributions_torbox_title">TorBox</string>
-    <string name="licenses_attributions_torbox_body">Nuvio Arc; hesap doğrulama, bulut kütüphanesine erişim, önbellek kontrolü ve bulut oynatma özellikleri için TorBox\'a bağlanır. Nuvio Arc\'nun TorBox ile herhangi bir ortaklığı veya resmi bağı yoktur.</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub; hesap doğrulama, bulut kütüphanesine erişim, önbellek kontrolü ve bulut oynatma özellikleri için TorBox\'a bağlanır. Dex Hub\'nun TorBox ile herhangi bir ortaklığı veya resmi bağı yoktur.</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
-    <string name="licenses_attributions_mdblist_body">Nuvio Arc, puanlar, izleme geçmişi ve oynatma takibi için MDBList\'i kullanır. Nuvio Arc MDBList ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub, puanlar, izleme geçmişi ve oynatma takibi için MDBList\'i kullanır. Dex Hub MDBList ile bağlantılı veya onaylanmış değildir.</string>
     <string name="licenses_attributions_introdb_title">IntroDB</string>
-    <string name="licenses_attributions_introdb_body">Nuvio Arc, atlatma kontrolleri için topluluk tarafından sağlanan intro, özet, jenerik ve önizleme zaman damgaları için IntroDB API\'sini kullanır. Nuvio Arc IntroDB ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub, atlatma kontrolleri için topluluk tarafından sağlanan intro, özet, jenerik ve önizleme zaman damgaları için IntroDB API\'sini kullanır. Dex Hub IntroDB ile bağlantılı veya onaylanmış değildir.</string>
     <string name="licenses_attributions_imdb_title">IMDb Non-Commercial Datasets</string>
-    <string name="licenses_attributions_imdb_body">Nuvio Arc, IMDb Non-Commercial Datasets (title.ratings.tsv.gz dahil) kullanarak IMDb puanları ve oy sayılarını gösterir. Bilgiler IMDb\'nin izniyle sunulmaktadır (https://www.imdb.com). IMDb verileri yalnızca kişisel ve ticari olmayan kullanım içindir.</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub, IMDb Non-Commercial Datasets (title.ratings.tsv.gz dahil) kullanarak IMDb puanları ve oy sayılarını gösterir. Bilgiler IMDb\'nin izniyle sunulmaktadır (https://www.imdb.com). IMDb verileri yalnızca kişisel ve ticari olmayan kullanım içindir.</string>
     <string name="licenses_attributions_exoplayer_title">AndroidX Media3 ExoPlayer 1.8.0</string>
     <string name="licenses_attributions_exoplayer_body">Android oynatma motoru olarak kullanılır. Apache License, Version 2.0 altında lisanslanmıştır.</string>
     <string name="licenses_attributions_libmpv_title">libmpv / libmpv-android</string>
@@ -482,7 +482,7 @@
     <string name="tracking_accounts_title">Hesaplar</string>
     <string name="tracking_accounts_subtitle">Takip servislerini bağla ve yönet</string>
     <string name="tracking_sources_title">Kaynaklar</string>
-    <string name="tracking_sources_subtitle">Nuvio Arc\'nun kütüphane ve izleme ilerlemesini nereden okuyacağını seç. Oynatma, bağlı tüm servislere scrobble edilir.</string>
+    <string name="tracking_sources_subtitle">Dex Hub\'nun kütüphane ve izleme ilerlemesini nereden okuyacağını seç. Oynatma, bağlı tüm servislere scrobble edilir.</string>
     <string name="tracking_trakt_features_title">Trakt özellikleri</string>
     <string name="tracking_trakt_features_subtitle">Trakt\'a özel geçmiş, incelemeler ve öneriler</string>
     <string name="tracking_simkl_features_title">Simkl özellikleri</string>
@@ -499,8 +499,8 @@
     <string name="tracking_status_connecting">Bağlanıyor</string>
     <string name="tracking_finish_connection">Bağlantı onayını tamamla</string>
     <string name="tracking_connecting_provider">%1$s bağlantısı başlatılıyor…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Nuvio Arc\'nun devam etme ve İzlemeye Devam Et için okuyacağı servisi seç. Scrobbling bağlı tüm servislerde açık kalır.</string>
-    <string name="tracking_library_source_dialog_subtitle">Nuvio Arc\'nun Kütüphane için okuyacağı servisi seç. Oynatma, bağlı tüm servislere scrobble edilir.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Dex Hub\'nun devam etme ve İzlemeye Devam Et için okuyacağı servisi seç. Scrobbling bağlı tüm servislerde açık kalır.</string>
+    <string name="tracking_library_source_dialog_subtitle">Dex Hub\'nun Kütüphane için okuyacağı servisi seç. Oynatma, bağlı tüm servislere scrobble edilir.</string>
     <string name="tracking_trakt_progress_required">İzleme İlerlemesi kaynağı Trakt olduğunda kullanılabilir</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -512,7 +512,7 @@
     <!-- ExperienceMode -->
     <string name="experience_mode_essential">Basit</string>
     <string name="experience_mode_advanced">Gelişmiş</string>
-    <string name="experience_mode_choose_title">Nuvio Arc deneyimini seç</string>
+    <string name="experience_mode_choose_title">Dex Hub deneyimini seç</string>
     <string name="experience_mode_choose_subtitle">Basit başla veya tüm özelleştirmeleri aç. İstediğin zaman değiştirebilirsin.</string>
     <string name="experience_mode_essential_card_subtitle">Odaklı kurulum, eklentiler, oynatma temelleri, Trakt ve hesap ayarları.</string>
     <string name="experience_mode_advanced_card_subtitle">Tam ayarlar, düzen kontrolleri, katalog sırası, koleksiyonlar, uzantılar ve teşhis.</string>
@@ -806,8 +806,8 @@
     <string name="playback_player_ask_desc">Her seferinde hangi oynatıcının kullanılacağını seçin</string>
     <string name="playback_player_auto">Otomatik (İçerik için en iyisi)</string>
     <string name="playback_player_auto_desc">Filmler ve Diziler için ExoPlayer · Anime için MPV</string>
-    <string name="playback_engine_exoplayer_desc">Nuvio Arc\'nun mevcut özellikleriyle en uyumlu seçenek.</string>
-    <string name="playback_engine_mvplayer_desc">Nuvio Arc ekran kontrolleriyle libmpv kullanır. Deneysel.</string>
+    <string name="playback_engine_exoplayer_desc">Dex Hub\'nun mevcut özellikleriyle en uyumlu seçenek.</string>
+    <string name="playback_engine_mvplayer_desc">Dex Hub ekran kontrolleriyle libmpv kullanır. Deneysel.</string>
 
     <string name="video_section">Video</string>
     <string name="playback_true_black_letterbox">Gerçek siyah bantlar</string>
@@ -1553,7 +1553,7 @@
     <string name="trakt_stat_watched_hours">İzlenen Saat</string>
     <string name="trakt_disconnect">Bağlantıyı Kes</string>
     <string name="trakt_disconnect_title">Trakt bağlantısı kesilsin mi?</string>
-    <string name="trakt_disconnect_subtitle">Bu işlem Trakt hesabınızın Nuvio Arc ile bağlantısını kesecektir.</string>
+    <string name="trakt_disconnect_subtitle">Bu işlem Trakt hesabınızın Dex Hub ile bağlantısını kesecektir.</string>
     <string name="trakt_login">Giriş Yap</string>
     <string name="trakt_retry">Tekrar Dene</string>
     <string name="trakt_back">Geri</string>
@@ -1786,7 +1786,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">P2P Yayın</string>
-    <string name="p2p_consent_body">Bu yayın eşler arası (P2P) teknolojisini kullanmaktadır. P2P\'yi etkinleştirerek şunları kabul etmiş olursunuz:\n\n\u2022 IP adresiniz ağdaki diğer kullanıcılara görünür hale gelecektir\n\u2022 Eriştiğiniz içerikten yalnızca siz sorumlusunuz\n\u2022 Bulunduğunuz yerde bu içeriği yasal olarak izleme hakkınız olduğunu onaylayıyorsunuz\n\u2022 Nuvio Arc hiçbir P2P içeriği barındırmaz, dağıtmaz veya kontrol etmez\n\u2022 Nuvio Arc, P2P yayını kullanımınızdan doğabilecek hukuki sonuçlardan sorumlu değildir\n\nBu özelliği tamamen kendi riskinizle kullanırsınız. P2P, istediğiniz zaman Ayarlar\'dan kapatılabilir.</string>
+    <string name="p2p_consent_body">Bu yayın eşler arası (P2P) teknolojisini kullanmaktadır. P2P\'yi etkinleştirerek şunları kabul etmiş olursunuz:\n\n\u2022 IP adresiniz ağdaki diğer kullanıcılara görünür hale gelecektir\n\u2022 Eriştiğiniz içerikten yalnızca siz sorumlusunuz\n\u2022 Bulunduğunuz yerde bu içeriği yasal olarak izleme hakkınız olduğunu onaylayıyorsunuz\n\u2022 Dex Hub hiçbir P2P içeriği barındırmaz, dağıtmaz veya kontrol etmez\n\u2022 Dex Hub, P2P yayını kullanımınızdan doğabilecek hukuki sonuçlardan sorumlu değildir\n\nBu özelliği tamamen kendi riskinizle kullanırsınız. P2P, istediğiniz zaman Ayarlar\'dan kapatılabilir.</string>
     <string name="p2p_consent_enable">P2P\'yi Etkinleştir</string>
     <string name="p2p_consent_cancel">İptal</string>
     <string name="settings_p2p_title">P2P Yayın</string>
@@ -2358,7 +2358,7 @@
     <string name="catalog_see_all_empty_subtitle">Daha sonra başka bir alt alan türünü denemek de faydalı olacaktır</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Nuvio Arc\'ya Hoş Geldiniz</string>
+    <string name="layout_selection_welcome">Dex Hub\'ya Hoş Geldiniz</string>
     <string name="layout_selection_subtitle">Ana sayfa düzeninizi seçin</string>
     <string name="layout_selection_continue">Devam Et</string>
 
@@ -2815,7 +2815,7 @@
     <string name="cd_trailer_controls">Fragman kontrolleri</string>
     <string name="cd_seek_bar">İlerleme çubuğu</string>
     <string name="cd_unlink">Bağlantıyı kes</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Trakt logosu</string>
     <string name="cd_trakt_qr">Trakt etkinleştirme QR kodu</string>
     <string name="cd_simkl_qr">Simkl etkinleştirme QR kodu</string>
@@ -2975,7 +2975,7 @@
     <string name="collections_editor_tmdb_list_helper">Örnek: https://www.themoviedb.org/list/8504994 veya 8504994.</string>
     <string name="collections_editor_tmdb_person_id">Kişi ID</string>
     <string name="collections_editor_tmdb_person_helper">Örnek: https://www.themoviedb.org/person/31-tom-hanks veya 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Satır/sekme adı olarak gösterilir. Boş bırakırsanız, Nuvio Arc kaynaktan otomatik olarak oluşturur.</string>
+    <string name="collections_editor_tmdb_title_helper">Satır/sekme adı olarak gösterilir. Boş bırakırsanız, Dex Hub kaynaktan otomatik olarak oluşturur.</string>
     <string name="collections_editor_tmdb_quick_genres">Hızlı Türler</string>
     <string name="collections_editor_tmdb_quick_languages">Hızlı Diller</string>
     <string name="collections_editor_tmdb_quick_countries">Hızlı Ülkeler</string>
@@ -3165,7 +3165,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDR olmasın</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Nuvio Arc\'nin dahili oynatıcısını kullan</string>
+    <string name="playback_player_internal_desc">Dex Hub\'nin dahili oynatıcısını kullan</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>
@@ -3272,9 +3272,9 @@
     <string name="simkl_visit">Simkl\'ı ziyaret et</string>
     <string name="simkl_sync_info_action">Eşitleme nasıl çalışır</string>
     <string name="simkl_sync_info_title">Simkl eşitlemesi nasıl çalışır</string>
-    <string name="simkl_sync_info_description">Nuvio Arc, Simkl\'ı en fazla her %1$d dakikada bir otomatik kontrol eder. Başka bir uygulama veya Simkl sitesinden yapılan değişikliklerin görünmesi bu kadar sürebilir.</string>
+    <string name="simkl_sync_info_description">Dex Hub, Simkl\'ı en fazla her %1$d dakikada bir otomatik kontrol eder. Başka bir uygulama veya Simkl sitesinden yapılan değişikliklerin görünmesi bu kadar sürebilir.</string>
     <string name="simkl_sync_info_activity">Her yenilemede önce Simkl\'da değişiklik olup olmadığı kontrol edilir ve yalnızca güncellemeler indirilir. Bu, Simkl\'ın API kurallarına uyar, gereksiz veri kullanımını azaltır ve servisin stabil kalmasına yardımcı olur.</string>
-    <string name="simkl_sync_info_manual">Nuvio Arc\'da yaptığın değişiklikler hemen Simkl\'a gönderilir. Uzak değişiklikleri daha erken kontrol ettirmek istediğinde Şimdi eşitle\'ye bas.</string>
+    <string name="simkl_sync_info_manual">Dex Hub\'da yaptığın değişiklikler hemen Simkl\'a gönderilir. Uzak değişiklikleri daha erken kontrol ettirmek istediğinde Şimdi eşitle\'ye bas.</string>
     <string name="simkl_sync_info_library_statuses">Simkl\'daki Beklemede veya Bırakıldı listelerine koyulan diziler İzlemeye Devam Et\'te gizlenir. Bu listelerde kaldıkları sürece gizli kalırlar.</string>
     <string name="simkl_sync_info_docs">Simkl eşitleme rehberini oku</string>
     <string name="error_open_browser_failed">Tarayıcı açılamadı</string>
@@ -3417,7 +3417,7 @@
     <string name="autosync_label_synced">Otomatik eşitlendi</string>
 
     <string name="playback_release_decoder_on_background">Dekoderi arka planda serbest bırak</string>
-    <string name="playback_release_decoder_on_background_sub">Nuvio Arc arka plana geçtiğinde video dekoderini serbest bırakır. Uygulamaya geri döndükten sonra oynatma dekoder hatası veriyorsa açın. Oynatıcı geri dönüldüğünde ve ekran koruyucudan sonra yeniden yüklenir</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hub arka plana geçtiğinde video dekoderini serbest bırakır. Uygulamaya geri döndükten sonra oynatma dekoder hatası veriyorsa açın. Oynatıcı geri dönüldüğünde ve ekran koruyucudan sonra yeniden yüklenir</string>
     <string name="autosync_toast_no_fit">Eşitleme başarısız: Bu altyazı videonun bu sürümüyle uyuşmuyor.</string>
 
     <!-- Nuvio-test additions -->
@@ -3460,7 +3460,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Altyazı yazı tipleri</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed ve Noto Sans (Noto Sans Arabic, Hebrew, Devanagari, Bengali ve Tamil ile birlikte), The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors ve The Noto Project Authors tarafından. SIL Open Font License, Version 1.1 altında lisanslanmıştır.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo ve Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc, kendi Jellyfin, Emby, Silo veya Plex sunucunuza bağlanır. Adları ve logoları sahiplerine aittir. Nuvio Arc; Jellyfin, Emby veya Silo ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub, kendi Jellyfin, Emby, Silo veya Plex sunucunuza bağlanır. Adları ve logoları sahiplerine aittir. Dex Hub; Jellyfin, Emby veya Silo ile bağlantılı veya onaylanmış değildir.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Paylaşım grubu listeleri. MIT lisansı.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -3508,7 +3508,7 @@
     <string name="playback_afr_closed">Kapalı</string>
     <string name="audio_tunneled_sub_prefer_app">Decoder Önceliği, Uygulama kod çözücülerini tercih et olarak ayarlıyken kullanılamaz</string>
     <string name="audio_use_system_passthrough">Sistem Ses Geçidi</string>
-    <string name="audio_use_system_passthrough_sub">TrueHD ve DTS-HD\'yi alıcınıza Nuvio Arc (IEC yolu) yerine Android üzerinden (Sistem yolu) gönderir. Cihazınıza ve ses kurulumunuza bağlı olarak bu, DTS-HD ve DTS:X\'i standart DTS ile sınırlayabilir veya sessiz bırakabilir. Yalnızca kayıpsız formatlarda gürültü, kayma veya sessizlik oluyorsa kullanın.</string>
+    <string name="audio_use_system_passthrough_sub">TrueHD ve DTS-HD\'yi alıcınıza Dex Hub (IEC yolu) yerine Android üzerinden (Sistem yolu) gönderir. Cihazınıza ve ses kurulumunuza bağlı olarak bu, DTS-HD ve DTS:X\'i standart DTS ile sınırlayabilir veya sessiz bırakabilir. Yalnızca kayıpsız formatlarda gürültü, kayma veya sessizlik oluyorsa kullanın.</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD ve DTS:X Ses Geçidi</string>
     <string name="audio_dtshd_tv_passthrough_sub">Ses çubuğunuz düz DTS gösteriyorsa veya DTS-HD ya da DTS:X filmlerde hiç ses vermiyorsa TV Ses Geçidi seçeneğini seçin.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standart</string>
@@ -3622,7 +3622,7 @@
     <string name="floppy_tracking_description">İzlediklerinizi kendi Floppy sunucunuza gönderin</string>
     <string name="floppy_connected_to">%1$s adresine bağlı</string>
     <string name="floppy_connected_description">Bu profilde izledikleriniz Floppy\'ye gider: izlerken “Now Playing” kartına, bitenler geçmişinize, durdurulanlar devam noktasıyla. “İzlendi olarak işaretle” de aktarılır. Burada bir filmin işaretini kaldırmak Floppy\'deki tüm izlemelerini sıfırlar; bir bölümde ise yalnızca son izleme geri alınır. Daha eski bir Floppy sunucusunda yalnızca Arc\'ın bir filme eklediği izlemeler silinir.</string>
-    <string name="floppy_qr_description">Nuvio Arc\'ı Floppy\'de onaylamak için QR kodu</string>
+    <string name="floppy_qr_description">Dex Hub\'ı Floppy\'de onaylamak için QR kodu</string>
     <string name="floppy_address_instruction">Floppy\'yi tarayıcınızda açtığınız adresi girin.</string>
     <string name="floppy_token_instruction">Floppy\'de Settings, Integrations, App tokens bölümünü açın ve bu TV için bir token oluşturun.</string>
     <string name="floppy_address_placeholder">Sunucu adresi, örneğin 192.168.1.20:8000</string>
@@ -3961,7 +3961,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV görüntü altyazıların yeniden boyutlandırılmasını desteklemez. Görüntü altyazı boyutunu metinden bağımsız ayarlamak için ExoPlayer kullanın.</string>
     <string name="subtitle_style_image_size">Görüntü altyazı boyutu</string>
     <string name="v2_accent_fixed_hint">Görsel vurgusu seçilmedikçe Renk Teması kullanılır.</string>
-    <string name="about_fork_updates_subtitle">GitHub\'daki Nuvio Arc sürümlerinden güncellemeler.</string>
+    <string name="about_fork_updates_subtitle">GitHub\'daki Dex Hub sürümlerinden güncellemeler.</string>
     <string name="playback_speculative_stream_search">Oynat\'tan önce kaynak ara</string>
     <string name="playback_speculative_stream_search_sub">Kaynak seçimini hızlandırmak için gezinirken eklentilerde arama yapar. Bazı eklentiler arama sırasında içerik ekleyebilir veya çekebilir. Kapalıyken Oynat\'a kadar bekler. Medya bağlantıları ve sağlayıcı çözümlemesi oynatma seçimini bekler; yalnızca bölüm sonuna yakın, sarma küçük resimleri sonrakini hazırlarken beklemez.</string>
     <string name="playback_source_line_badges">Detay sayfasında kaynak etiketleri</string>
@@ -4153,7 +4153,7 @@
     <string name="party_match_same">Ev sahibiyle aynı dosya</string>
     <string name="party_match_likely">Muhtemelen ev sahibinin kopyası</string>
     <string name="party_match_different">Ev sahibininkinden farklı kopya</string>
-    <string name="party_invite_text">Nuvio Arc\'daki izleme partime katıl. Ayarlar\'ı, sonra İzleme partisi\'ni aç ve şu kodu gir: %1$s</string>
+    <string name="party_invite_text">Dex Hub\'daki izleme partime katıl. Ayarlar\'ı, sonra İzleme partisi\'ni aç ve şu kodu gir: %1$s</string>
     <string name="party_invite_qr">Daveti mesajla göndermek için telefonun kamerasıyla tarayın</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -4372,7 +4372,7 @@
     <string name="format_check_note_hdr10_plus">Ayarlarınız HDR10+ verilerini kaldırıyor.</string>
     <string name="layout_hero_description_auto_scroll">Açıklamaları otomatik kaydır</string>
     <string name="layout_hero_description_auto_scroll_sub">Uzun açıklamaları kesmek yerine ana ekranda yavaşça kaydırır.</string>
-    <string name="player_dts_hd_decoding_notice">Kayıpsız DTS-HD çıkışı çalışmayı durdurdu, bu nedenle bu içeriğin sesinin kodunu Nuvio Arc kendisi çözüyor.</string>
+    <string name="player_dts_hd_decoding_notice">Kayıpsız DTS-HD çıkışı çalışmayı durdurdu, bu nedenle bu içeriğin sesinin kodunu Dex Hub kendisi çözüyor.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Meta veriler</string>
     <string name="addon_health_ok">Tamam</string>

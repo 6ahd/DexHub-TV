@@ -53,7 +53,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">字幕字体</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto、Montserrat、Asap Condensed 和 Noto Sans（含 Noto Sans Arabic、Hebrew、Devanagari、Bengali 和 Tamil），由 The Roboto Project Authors、The Montserrat Project Authors、The Asap Project Authors 和 The Noto Project Authors 创作。基于 SIL Open Font License, Version 1.1 许可。</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin、Emby、Silo 和 Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc 连接至您自己的 Jellyfin、Emby、Silo 或 Plex 服务器。其名称和标志归各自所有者所有。Nuvio Arc 与 Jellyfin、Emby 或 Silo 无关联或未经其认可。</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub 连接至您自己的 Jellyfin、Emby、Silo 或 Plex 服务器。其名称和标志归各自所有者所有。Dex Hub 与 Jellyfin、Emby 或 Silo 无关联或未经其认可。</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">发行组列表。基于 MIT 许可。</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -101,7 +101,7 @@
     <string name="playback_afr_closed">收起</string>
     <string name="audio_tunneled_sub_prefer_app">「解码器优先级」设为「偏好应用解码器」时不可用</string>
     <string name="audio_use_system_passthrough">系统穿透</string>
-    <string name="audio_use_system_passthrough_sub">通过 Android (系统路径) 而非 Nuvio Arc (IEC 路径) 将 TrueHD 和 DTS-HD 发送至接收器。根据设备和音频设置，这可能会将 DTS-HD 和 DTS:X 限制为标准 DTS，或导致其无声。仅在无损格式出现噪音、漂移或无声时使用此选项。</string>
+    <string name="audio_use_system_passthrough_sub">通过 Android (系统路径) 而非 Dex Hub (IEC 路径) 将 TrueHD 和 DTS-HD 发送至接收器。根据设备和音频设置，这可能会将 DTS-HD 和 DTS:X 限制为标准 DTS，或导致其无声。仅在无损格式出现噪音、漂移或无声时使用此选项。</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD 和 DTS:X 穿透</string>
     <string name="audio_dtshd_tv_passthrough_sub">如果回音壁只显示普通 DTS，或播放 DTS-HD、DTS:X 影片时没有声音，请选择“电视穿透”。</string>
     <string name="audio_dtshd_tv_passthrough_standard">标准</string>
@@ -219,7 +219,7 @@
     <string name="floppy_tracking_description">将观看内容发送到您自己的 Floppy 服务器</string>
     <string name="floppy_connected_to">已连接到 %1$s</string>
     <string name="floppy_connected_description">此个人资料中观看的内容会发送到 Floppy：观看时显示在“Now Playing”，看完的进入历史记录，中途停止的保留续播位置。“标记为已观看”也会同步。在此处取消标记电影会重置它在 Floppy 中的所有观看记录；取消标记某一集只会撤回其最近一次播放。在较旧的 Floppy 服务器上，只会移除 Arc 为电影添加的播放记录。</string>
-    <string name="floppy_qr_description">用于在 Floppy 中批准 Nuvio Arc 的 QR 码</string>
+    <string name="floppy_qr_description">用于在 Floppy 中批准 Dex Hub 的 QR 码</string>
     <string name="floppy_address_instruction">输入您在浏览器中打开 Floppy 时使用的地址。</string>
     <string name="floppy_token_instruction">在 Floppy 中打开 Settings、Integrations、App tokens，为这台电视创建令牌。</string>
     <string name="floppy_address_placeholder">服务器地址，例如 192.168.1.20:8000</string>
@@ -566,7 +566,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV 不支持调整图像字幕大小。请使用 ExoPlayer 独立于文字调整图像字幕大小。</string>
     <string name="subtitle_style_image_size">图像字幕大小</string>
     <string name="v2_accent_fixed_hint">除非选择了跟随封面的强调色，否则使用主题色。</string>
-    <string name="about_fork_updates_subtitle">来自 GitHub 上 Nuvio Arc 发布版本的更新。</string>
+    <string name="about_fork_updates_subtitle">来自 GitHub 上 Dex Hub 发布版本的更新。</string>
     <string name="playback_speculative_stream_search">播放前搜索来源</string>
     <string name="playback_speculative_stream_search_sub">浏览时搜索扩展，以加快来源选择。部分扩展可能会在搜索时添加或抓取内容。关闭后会等到按下播放。媒体链接和提供者解析会等到选择播放时才进行，但在一集接近结束、跳转缩略图准备下一集时除外。</string>
     <string name="playback_source_line_badges">详情页面的来源徽章</string>
@@ -758,7 +758,7 @@
     <string name="party_match_same">与房主相同的文件</string>
     <string name="party_match_likely">很可能与房主的文件相同</string>
     <string name="party_match_different">与房主的文件不同</string>
-    <string name="party_invite_text">来 Nuvio Arc 加入我的观影派对。打开设置，进入观影派对，然后输入代码 %1$s</string>
+    <string name="party_invite_text">来 Dex Hub 加入我的观影派对。打开设置，进入观影派对，然后输入代码 %1$s</string>
     <string name="party_invite_qr">用手机相机扫描，即可用短信发送邀请</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -976,11 +976,11 @@
     <string name="format_check_note_dv5">你的设置会把 Profile 5 转换为 8.1。</string>
     <string name="format_check_note_hdr10_plus">你的设置会移除 HDR10+ 数据。</string>
     <string name="playback_release_decoder_on_background">在后台释放解码器</string>
-    <string name="playback_release_decoder_on_background_sub">Nuvio Arc 转入后台时释放视频解码器。如果返回应用后播放因解码器错误而失败，请开启。返回时播放器会重新加载，屏保之后也一样</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hub 转入后台时释放视频解码器。如果返回应用后播放因解码器错误而失败，请开启。返回时播放器会重新加载，屏保之后也一样</string>
     <string name="autosync_toast_no_fit">同步失败：这些字幕与此视频版本不匹配。</string>
     <string name="layout_hero_description_auto_scroll">自动滚动简介</string>
     <string name="layout_hero_description_auto_scroll_sub">在首页缓慢滚动较长的简介，而不是将其截断。</string>
-    <string name="player_dts_hd_decoding_notice">无损 DTS-HD 输出已停止工作，因此 Nuvio Arc 正在自行解码此内容的音频。</string>
+    <string name="player_dts_hd_decoding_notice">无损 DTS-HD 输出已停止工作，因此 Dex Hub 正在自行解码此内容的音频。</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">元数据</string>
     <string name="addon_health_ok">正常</string>
@@ -988,13 +988,13 @@
     <string name="addon_health_down">不可用</string>
     <string name="addon_health_setup">需设置</string>
     <string name="appearance_launcher_artwork">启动器图标</string>
-    <string name="appearance_launcher_artwork_subtitle">选择 Nuvio Arc 在电视主屏幕上的外观</string>
+    <string name="appearance_launcher_artwork_subtitle">选择 Dex Hub 在电视主屏幕上的外观</string>
     <string name="appearance_app_icon_and_banner">应用图标与横幅</string>
     <string name="appearance_app_icon_and_banner_subtitle">更改应用图标和横幅</string>
     <string name="appearance_app_icon_picker_title">选择应用图标与横幅</string>
     <string name="appearance_app_icon_picker_subtitle">每种样式都包含配套的方形图标和电视横幅</string>
     <string name="appearance_app_icon_confirmation_title">更改应用图标？</string>
-    <string name="appearance_app_icon_confirmation_message">切换到%1$s后，Nuvio Arc 将以新图标重新启动。主屏幕可能需要几秒钟才会显示，电视横幅可能需要重启设备后才会更新。选择“确定”继续。</string>
+    <string name="appearance_app_icon_confirmation_message">切换到%1$s后，Dex Hub 将以新图标重新启动。主屏幕可能需要几秒钟才会显示，电视横幅可能需要重启设备后才会更新。选择“确定”继续。</string>
     <string name="appearance_app_icon_change_failed">无法更改图标和横幅，请重试。</string>
     <string name="appearance_app_icon_original">原始</string>
     <string name="appearance_app_icon_arctic_blue">极地蓝</string>

@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">Ingen film- eller seriebiblioteker er tilgængelige for denne bruger.</string>
     <string name="servers_refresh_libraries">Opdater biblioteker</string>
     <string name="servers_display_name">Visningsnavn</string>
-    <string name="servers_display_name_description">Det navn, Nuvio Arc viser for denne server på Hjem, i Indstillinger og ved kilder.</string>
+    <string name="servers_display_name_description">Det navn, Dex Hub viser for denne server på Hjem, i Indstillinger og ved kilder.</string>
     <string name="servers_display_name_server_name">Serverens eget navn: %1$s</string>
-    <string name="servers_display_name_dialog_description">Vælg det navn, Nuvio Arc viser for denne server. Lad feltet stå tomt for at bruge serverens eget navn.</string>
+    <string name="servers_display_name_dialog_description">Vælg det navn, Dex Hub viser for denne server. Lad feltet stå tomt for at bruge serverens eget navn.</string>
     <string name="servers_display_name_reset">Nulstil til servernavn</string>
     <string name="servers_enabled">Aktiveret</string>
     <string name="servers_enabled_description">Vis denne server i Hjem, søgning og stream-resultater.</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">Denne bruger har ikke adgang.</string>
     <string name="servers_error_failed">Kunne ikke oprette forbindelse til serveren.</string>
     <string name="servers_error_website">Denne adresse åbner et websted, ikke en medieserver. Indtast serverens egen adresse.</string>
-    <string name="servers_error_silo_website">Nuvio Arc kunne ikke finde denne Silo-servers Jellyfin-adresse. Åbn »Settings &gt; Connect Apps &gt; Jellyfin-compatible app« i Silo, og indtast adressen under »Server«.</string>
+    <string name="servers_error_silo_website">Dex Hub kunne ikke finde denne Silo-servers Jellyfin-adresse. Åbn »Settings &gt; Connect Apps &gt; Jellyfin-compatible app« i Silo, og indtast adressen under »Server«.</string>
     <string name="servers_error_silo_jellyfin_off">Jellyfin-apps er slået fra på denne Silo-server. Bed serverens ejer om at slå dem til.</string>
     <string name="servers_error_profile_needed">Tilføj # og dit Silo-profilnavn til sidst i brugernavnet, f.eks. navn#Profil eller navn#1234#Profil.</string>
     <string name="servers_error_profile_not_found">Silo læser delen efter det sidste # som et profilnavn og har ingen profil med det navn. Hvis dit brugernavn indeholder et #, så tilføj # og dit profilnavn til sidst, f.eks. navn#1234#Profil.</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">Dette element findes ikke længere på serveren.</string>
     <string name="servers_failure_certificate">Serverens certifikat genkendes ikke.</string>
     <string name="servers_certificate_title">Serverens certifikat genkendes ikke</string>
-    <string name="servers_certificate_intro">Nuvio Arc kunne ikke bekræfte identiteten af %1$s.</string>
+    <string name="servers_certificate_intro">Dex Hub kunne ikke bekræfte identiteten af %1$s.</string>
     <string name="servers_certificate_untrusted">Certifikatet er selvsigneret eller udstedt af en privat udsteder.</string>
     <string name="servers_certificate_name_mismatch">Certifikatet er udstedt til et andet navn.</string>
     <string name="servers_certificate_expired">Certifikatet er uden for sin gyldighedsperiode.</string>
-    <string name="servers_certificate_advice">Hvis dette er din egen server, og du forventer det, kan du stole på certifikatet. Nuvio Arc accepterer så kun præcis dette certifikat for serveren og advarer dig, hvis det nogensinde ændres. Hvis du ikke er på dit hjemmenetværk, så tjek først fingeraftrykket med serverens ejer.</string>
+    <string name="servers_certificate_advice">Hvis dette er din egen server, og du forventer det, kan du stole på certifikatet. Dex Hub accepterer så kun præcis dette certifikat for serveren og advarer dig, hvis det nogensinde ændres. Hvis du ikke er på dit hjemmenetværk, så tjek først fingeraftrykket med serverens ejer.</string>
     <string name="servers_certificate_details">Udstedt til: %1$s\nUdstedt af: %2$s\nGyldigt: %3$s til %4$s\nFingeraftryk (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Stol på dette certifikat</string>
     <string name="servers_certificate_unavailable">Den sikre forbindelse mislykkedes, og serverens certifikat kunne ikke læses.</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo-login (anbefales)</string>
     <string name="silo_method_native_description">Log ind med en kode på din telefon eller med din Silo-adgangskode. Virker med alle de måder, din server logger folk ind på (adgangskode, OpenID Connect, LDAP, Tailscale). Henter dine Silo-profiler og rækkerne fra dit Silo-Hjem.</string>
     <string name="silo_method_jellyfin">Jellyfin-kompatibel</string>
-    <string name="silo_method_jellyfin_description">Bruger Silos adresse til Jellyfin-apps med brugernavn og adgangskode (navn#Profil for en profil). Sådan har Nuvio Arc hidtil forbundet til Silo.</string>
+    <string name="silo_method_jellyfin_description">Bruger Silos adresse til Jellyfin-apps med brugernavn og adgangskode (navn#Profil for en profil). Sådan har Dex Hub hidtil forbundet til Silo.</string>
     <string name="silo_setup_next">Næste</string>
     <string name="silo_code_step_open">Scan koden på din telefon, eller åbn %1$s</string>
     <string name="silo_code_step_sign_in">Log ind der, som du plejer</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">Eller log ind med en kode: %1$s på %2$s</string>
     <string name="silo_signing_in">Logger ind…</string>
     <string name="silo_profiles_title">Hvem ser med?</string>
-    <string name="silo_profiles_subtitle">%1$s har mere end én profil. Nuvio Arc bruger den, du vælger, til fremskridt, set-markeringer og hjemmerækker. Du kan ændre den senere på serverens side.</string>
+    <string name="silo_profiles_subtitle">%1$s har mere end én profil. Dex Hub bruger den, du vælger, til fremskridt, set-markeringer og hjemmerækker. Du kan ændre den senere på serverens side.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Barn</string>
     <string name="silo_pin_title">PIN-kode til %1$s</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">Profil</string>
     <string name="servers_silo_profile_description">Fremskridt, set-markeringer og hjemmerækker følger denne profil.</string>
     <string name="servers_silo_home_rows">Rækker fra Silo-Hjem</string>
-    <string name="servers_silo_home_rows_description">Vis rækkerne fra dit Silo-Hjem (dine lister, Populært nu, Næste…) på Nuvio Arcs Hjem.</string>
+    <string name="servers_silo_home_rows_description">Vis rækkerne fra dit Silo-Hjem (dine lister, Populært nu, Næste…) på Dex Hubs Hjem.</string>
     <string name="servers_silo_switch">Skift til Silo-login</string>
     <string name="servers_silo_switch_description">Logger ind med Silo-login og erstatter derefter denne forbindelse. Navn og valg af biblioteker bevares.</string>
     <string name="servers_add_plex_description">Log ind med en kode på plex.tv/link. Dine servere findes automatisk.</string>
-    <string name="plex_sign_in_subtitle">Ingen serveradresse nødvendig: Nuvio Arc finder dine Plex-servere, når du har logget ind.</string>
+    <string name="plex_sign_in_subtitle">Ingen serveradresse nødvendig: Dex Hub finder dine Plex-servere, når du har logget ind.</string>
     <string name="plex_code_step_open">Åbn %1$s på din telefon eller computer (eller scan koden)</string>
     <string name="plex_code_step_sign_in">Log ind på Plex, hvis du bliver bedt om det</string>
     <string name="plex_code_step_link">Skriv koden ovenfor, og tryk på Link</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">nået via internettet</string>
     <string name="plex_reach_relay_detail">kun tilgængelig via Plex Relay (langsom, ca. 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">offline lige nu</string>
-    <string name="plex_users_subtitle">Din Plex-konto har Plex Home-brugere. Nuvio Arc bruger den, du vælger, til fremskridt, set-markeringer og Fortsæt med at se på %1$s. Du kan ændre den senere på serverens side.</string>
+    <string name="plex_users_subtitle">Din Plex-konto har Plex Home-brugere. Dex Hub bruger den, du vælger, til fremskridt, set-markeringer og Fortsæt med at se på %1$s. Du kan ændre den senere på serverens side.</string>
     <string name="plex_user_owner">Ejer</string>
     <string name="plex_user_managed">Administreret</string>
     <string name="plex_other_user">Anden bruger</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home-bruger</string>
     <string name="plex_home_user_description">Fremskridt, set-markeringer og Fortsæt med at se følger denne bruger.</string>
     <string name="plex_home_rows">Plex-rækker på Hjem</string>
-    <string name="plex_home_rows_description">Vis Plex\' egne rækker fra denne server (Senest tilføjet med mere) på Nuvio Arcs Hjem.</string>
-    <string name="plex_remote_pass_needed">Plex afspiller ikke dette uden for hjemmet. I apps som Nuvio Arc kræver det Plex Pass på serveren eller et Remote Watch Pass til dig. Derhjemme afspilles det gratis.</string>
+    <string name="plex_home_rows_description">Vis Plex\' egne rækker fra denne server (Senest tilføjet med mere) på Dex Hubs Hjem.</string>
+    <string name="plex_remote_pass_needed">Plex afspiller ikke dette uden for hjemmet. I apps som Dex Hub kræver det Plex Pass på serveren eller et Remote Watch Pass til dig. Derhjemme afspilles det gratis.</string>
     <string name="server_library_sort_title">A til Å</string>
     <string name="server_library_sort_released">Nyeste udgivelser</string>
     <string name="server_library_sort_added">Senest tilføjet</string>

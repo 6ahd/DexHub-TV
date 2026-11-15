@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR-Code zum Verbinden von WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr ist in diesem Build nicht eingerichtet.</string>
     <string name="wetrakr_status_syncing">Synchronisierung mit WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Warten, bis Sie Nuvio Arc auf WeTrakr zulassen</string>
+    <string name="wetrakr_status_enter_code">Warten, bis Sie Dex Hub auf WeTrakr zulassen</string>
     <string name="wetrakr_status_paused">Pausiert</string>
     <string name="wetrakr_daily_limit_row">Das heutige WeTrakr-Limit ist aufgebraucht. Die Synchronisierung wird um %1$s fortgesetzt.</string>
     <string name="wetrakr_limit_message">Das heutige WeTrakr-Limit ist aufgebraucht. Die Wiedergabe ist nicht betroffen, aber bis %1$s wird nichts an WeTrakr gesendet.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Fertig: %1$s auf WeTrakr hinzugefügt, %2$s bereits vorhanden oder nicht gefunden.</string>
     <string name="wetrakr_upload_send">Senden</string>
     <string name="wetrakr_upload_close">Schließen</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc nutzt WeTrakr für Verlauf, Listen, Wiedergabe-Tracking und ähnliche Titel. Daten von WeTrakr. Nuvio Arc steht in keiner Verbindung zu WeTrakr und wird nicht von WeTrakr unterstützt.</string>
-    <string name="wetrakr_revoke_failed">Hier abgemeldet, aber WeTrakr konnte nicht benachrichtigt werden. Sie können Nuvio Arc auf wetrakr.com unter verbundenen Apps entfernen.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub nutzt WeTrakr für Verlauf, Listen, Wiedergabe-Tracking und ähnliche Titel. Daten von WeTrakr. Dex Hub steht in keiner Verbindung zu WeTrakr und wird nicht von WeTrakr unterstützt.</string>
+    <string name="wetrakr_revoke_failed">Hier abgemeldet, aber WeTrakr konnte nicht benachrichtigt werden. Sie können Dex Hub auf wetrakr.com unter verbundenen Apps entfernen.</string>
 </resources>

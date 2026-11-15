@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR-kode til at forbinde WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr er ikke sat op i denne build.</string>
     <string name="wetrakr_status_syncing">Synkroniserer med WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Venter på, at du tillader Nuvio Arc på WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Venter på, at du tillader Dex Hub på WeTrakr</string>
     <string name="wetrakr_status_paused">Sat på pause</string>
     <string name="wetrakr_daily_limit_row">Dagens WeTrakr-grænse er brugt op. Synkroniseringen fortsætter kl. %1$s.</string>
     <string name="wetrakr_limit_message">Dagens WeTrakr-grænse er brugt op. Afspilning påvirkes ikke, men intet sendes til WeTrakr før kl. %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Færdig: %1$s tilføjet på WeTrakr, %2$s fandtes allerede eller blev ikke fundet.</string>
     <string name="wetrakr_upload_send">Send</string>
     <string name="wetrakr_upload_close">Luk</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc bruger WeTrakr til sethistorik, lister, sporing af afspilning og lignende titler. Data fra WeTrakr. Nuvio Arc er ikke tilknyttet eller godkendt af WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Logget ud her, men WeTrakr kunne ikke få besked. Du kan fjerne Nuvio Arc under forbundne apps på wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub bruger WeTrakr til sethistorik, lister, sporing af afspilning og lignende titler. Data fra WeTrakr. Dex Hub er ikke tilknyttet eller godkendt af WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Logget ud her, men WeTrakr kunne ikke få besked. Du kan fjerne Dex Hub under forbundne apps på wetrakr.com.</string>
 </resources>

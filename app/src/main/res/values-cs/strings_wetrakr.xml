@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR kód pro připojení WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr není v této verzi nastaven.</string>
     <string name="wetrakr_status_syncing">Synchronizace s WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Čeká se, až na WeTrakr povolíte Nuvio Arc</string>
+    <string name="wetrakr_status_enter_code">Čeká se, až na WeTrakr povolíte Dex Hub</string>
     <string name="wetrakr_status_paused">Pozastaveno</string>
     <string name="wetrakr_daily_limit_row">Dnešní limit WeTrakr je vyčerpán. Synchronizace bude pokračovat v %1$s.</string>
     <string name="wetrakr_limit_message">Dnešní limit WeTrakr je vyčerpán. Přehrávání to neovlivní, ale do %1$s se přehrání do WeTrakr neodesílají.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Hotovo. Přidáno na WeTrakr: %1$s, už tam bylo nebo nenalezeno: %2$s.</string>
     <string name="wetrakr_upload_send">Odeslat</string>
     <string name="wetrakr_upload_close">Zavřít</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc používá WeTrakr pro historii sledování, seznamy, záznam přehrávání a podobné tituly. Data z WeTrakr. Nuvio Arc není spojen ani schválen WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Zde jste odhlášeni, ale WeTrakr se to nepodařilo oznámit. Nuvio Arc můžete odebrat v připojených aplikacích na wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub používá WeTrakr pro historii sledování, seznamy, záznam přehrávání a podobné tituly. Data z WeTrakr. Dex Hub není spojen ani schválen WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Zde jste odhlášeni, ale WeTrakr se to nepodařilo oznámit. Dex Hub můžete odebrat v připojených aplikacích na wetrakr.com.</string>
 </resources>

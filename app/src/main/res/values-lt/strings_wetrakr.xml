@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR kodas „WeTrakr“ prijungimui</string>
     <string name="wetrakr_missing_client">„WeTrakr“ šioje versijoje nesukonfigūruotas.</string>
     <string name="wetrakr_status_syncing">Sinchronizuojama su „WeTrakr“…</string>
-    <string name="wetrakr_status_enter_code">Laukiama, kol „WeTrakr“ paskyroje leisite „Nuvio Arc“ prieigą</string>
+    <string name="wetrakr_status_enter_code">Laukiama, kol „WeTrakr“ paskyroje leisite „Dex Hub“ prieigą</string>
     <string name="wetrakr_status_paused">Pristabdyta</string>
     <string name="wetrakr_daily_limit_row">Šiandienos „WeTrakr“ limitas išnaudotas. Sinchronizavimas atsinaujins %1$s.</string>
     <string name="wetrakr_limit_message">Šiandienos „WeTrakr“ limitas išnaudotas. Atkūrimas veikia įprastai, bet peržiūros į „WeTrakr“ nesiunčiamos iki %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Atlikta. Pridėta į „WeTrakr“: %1$s, jau buvo arba nerasta: %2$s.</string>
     <string name="wetrakr_upload_send">Siųsti</string>
     <string name="wetrakr_upload_close">Uždaryti</string>
-    <string name="licenses_attributions_wetrakr_body">„Nuvio Arc“ naudoja „WeTrakr“ žiūrėjimo istorijai, sąrašams, atkūrimo stebėjimui ir panašiems pavadinimams. Duomenys iš „WeTrakr“. „Nuvio Arc“ nėra susijusi su „WeTrakr“ ir nėra „WeTrakr“ remiama.</string>
-    <string name="wetrakr_revoke_failed">Čia atsijungta, bet „WeTrakr“ nepavyko apie tai pranešti. „Nuvio Arc“ galite pašalinti prijungtų programų skiltyje svetainėje wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">„Dex Hub“ naudoja „WeTrakr“ žiūrėjimo istorijai, sąrašams, atkūrimo stebėjimui ir panašiems pavadinimams. Duomenys iš „WeTrakr“. „Dex Hub“ nėra susijusi su „WeTrakr“ ir nėra „WeTrakr“ remiama.</string>
+    <string name="wetrakr_revoke_failed">Čia atsijungta, bet „WeTrakr“ nepavyko apie tai pranešti. „Dex Hub“ galite pašalinti prijungtų programų skiltyje svetainėje wetrakr.com.</string>
 </resources>

@@ -9,7 +9,7 @@ enum class AppTheme(val displayName: String) {
     GRAPHITE("Graphite"),
     CRIMSON("Crimson"),
     OCEAN("Ocean"),
-    VIOLET("Violet"),
+    VIOLET("Dex Hub"),
     EMERALD("Emerald"),
     AMBER("Amber"),
     COPPER("Copper"),

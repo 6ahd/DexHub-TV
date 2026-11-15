@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">תמיכה בצוות Nuvio</string>
     <string name="support_nuvio_title">תמיכה בצוות Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc מבוססת על אפליקציית Nuvio הרשמית. המנוי עובר לצוות Nuvio, עוזר לממן שרתים ופיתוח ושומר על האפליקציה הבסיסית חינמית לכולם.</string>
+    <string name="support_nuvio_subtitle">Dex Hub מבוססת על אפליקציית Nuvio הרשמית. המנוי עובר לצוות Nuvio, עוזר לממן שרתים ופיתוח ושומר על האפליקציה הבסיסית חינמית לכולם.</string>
     <string name="support_nuvio_perk_themes">ערכות נושא במעבר צבעים</string>
     <string name="support_nuvio_perk_themes_desc">ערכות נושא נוספות במעבר צבעים, או ערכה משלך.</string>
     <string name="support_nuvio_perk_backgrounds">רקעי פרופיל</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">סגירה</string>
     <string name="support_nuvio_checking">בדיקת המנוי…</string>
     <string name="support_nuvio_thanks_title">תודה על התמיכה בצוות Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">ההטבות צמודות לחשבון ה-Nuvio שלך, כך שהן פועלות כאן ב-Nuvio Arc וגם באפליקציה הרשמית.</string>
+    <string name="support_nuvio_thanks_subtitle">ההטבות צמודות לחשבון ה-Nuvio שלך, כך שהן פועלות כאן ב-Dex Hub וגם באפליקציה הרשמית.</string>
     <string name="support_nuvio_gentle_eyebrow">תומכי Nuvio</string>
-    <string name="support_nuvio_gentle_title">הכול ב-Nuvio Arc עובד גם בלי מנוי</string>
+    <string name="support_nuvio_gentle_title">הכול ב-Dex Hub עובד גם בלי מנוי</string>
     <string name="support_nuvio_gentle_body">לחשבון הזה אין מנוי Nuvio Supporter. אם תרצו יום אחד לעזור לצוות Nuvio, מנוי מוסיף כמה הטבות:</string>
-    <string name="support_nuvio_gentle_unavailable">לא ניתן לבדוק את המנוי כרגע. הכול ב-Nuvio Arc עובד גם בלי מנוי. למי שרוצה לעזור לצוות Nuvio, מנוי מוסיף כמה הטבות:</string>
+    <string name="support_nuvio_gentle_unavailable">לא ניתן לבדוק את המנוי כרגע. הכול ב-Dex Hub עובד גם בלי מנוי. למי שרוצה לעזור לצוות Nuvio, מנוי מוסיף כמה הטבות:</string>
     <string name="support_nuvio_gentle_scan">הצגת האפשרויות בטלפון</string>
     <string name="support_nuvio_paid_check_again">שילמת הרגע? בדיקה חוזרת</string>
     <string name="support_nuvio_no_thanks">לא תודה</string>

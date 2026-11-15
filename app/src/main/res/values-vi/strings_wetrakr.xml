@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Mã QR để kết nối WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr chưa được thiết lập trong bản dựng này.</string>
     <string name="wetrakr_status_syncing">Đang đồng bộ với WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Đang chờ bạn cho phép Nuvio Arc trên WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Đang chờ bạn cho phép Dex Hub trên WeTrakr</string>
     <string name="wetrakr_status_paused">Đã tạm dừng</string>
     <string name="wetrakr_daily_limit_row">Đã dùng hết giới hạn WeTrakr hôm nay. Đồng bộ sẽ tiếp tục lúc %1$s.</string>
     <string name="wetrakr_limit_message">Đã dùng hết giới hạn WeTrakr hôm nay. Việc phát không bị ảnh hưởng, nhưng lượt xem sẽ không được gửi đến WeTrakr cho đến %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Xong: đã thêm %1$s trên WeTrakr, %2$s đã có sẵn hoặc không tìm thấy.</string>
     <string name="wetrakr_upload_send">Gửi</string>
     <string name="wetrakr_upload_close">Đóng</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc sử dụng WeTrakr cho lịch sử đã xem, danh sách, theo dõi phát lại và các tựa tương tự. Dữ liệu từ WeTrakr. Nuvio Arc không liên kết hoặc được xác nhận bởi WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Đã đăng xuất ở đây, nhưng không thể báo cho WeTrakr. Bạn có thể gỡ Nuvio Arc trong mục ứng dụng đã kết nối trên wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub sử dụng WeTrakr cho lịch sử đã xem, danh sách, theo dõi phát lại và các tựa tương tự. Dữ liệu từ WeTrakr. Dex Hub không liên kết hoặc được xác nhận bởi WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Đã đăng xuất ở đây, nhưng không thể báo cho WeTrakr. Bạn có thể gỡ Dex Hub trong mục ứng dụng đã kết nối trên wetrakr.com.</string>
 </resources>

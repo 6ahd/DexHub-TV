@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">WeTrakr bağlantısı için QR kodu</string>
     <string name="wetrakr_missing_client">WeTrakr bu sürümde ayarlanmamış.</string>
     <string name="wetrakr_status_syncing">WeTrakr ile eşitleniyor…</string>
-    <string name="wetrakr_status_enter_code">Nuvio Arc için WeTrakr üzerinde izin vermeniz bekleniyor</string>
+    <string name="wetrakr_status_enter_code">Dex Hub için WeTrakr üzerinde izin vermeniz bekleniyor</string>
     <string name="wetrakr_status_paused">Duraklatıldı</string>
     <string name="wetrakr_daily_limit_row">Bugünkü WeTrakr sınırı doldu. Eşitleme saat %1$s itibarıyla yeniden başlar.</string>
     <string name="wetrakr_limit_message">Bugünkü WeTrakr sınırı doldu. Oynatma etkilenmez, ancak izlemeler saat %1$s olana kadar WeTrakr hesabına gönderilmez.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Bitti: WeTrakr hesabına %1$s eklendi, %2$s zaten vardı veya bulunamadı.</string>
     <string name="wetrakr_upload_send">Gönder</string>
     <string name="wetrakr_upload_close">Kapat</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc; izleme geçmişi, listeler, oynatma takibi ve benzer başlıklar için WeTrakr kullanır. Veri kaynağı: WeTrakr. Nuvio Arc, WeTrakr ile bağlantılı veya onaylanmış değildir.</string>
-    <string name="wetrakr_revoke_failed">Burada oturum kapatıldı, ancak WeTrakr bilgilendirilemedi. Nuvio Arc uygulamasını wetrakr.com üzerinde bağlı uygulamalar bölümünden kaldırabilirsiniz.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub; izleme geçmişi, listeler, oynatma takibi ve benzer başlıklar için WeTrakr kullanır. Veri kaynağı: WeTrakr. Dex Hub, WeTrakr ile bağlantılı veya onaylanmış değildir.</string>
+    <string name="wetrakr_revoke_failed">Burada oturum kapatıldı, ancak WeTrakr bilgilendirilemedi. Dex Hub uygulamasını wetrakr.com üzerinde bağlı uygulamalar bölümünden kaldırabilirsiniz.</string>
 </resources>

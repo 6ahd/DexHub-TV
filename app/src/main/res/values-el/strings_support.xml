@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Υποστηρίξτε την ομάδα του Nuvio</string>
     <string name="support_nuvio_title">Υποστηρίξτε την ομάδα του Nuvio</string>
-    <string name="support_nuvio_subtitle">Το Nuvio Arc βασίζεται στην επίσημη εφαρμογή Nuvio. Η συνδρομή πηγαίνει στην ομάδα του Nuvio, βοηθά να καλυφθούν οι servers και η ανάπτυξη, και κρατά τη βασική εφαρμογή δωρεάν για όλους.</string>
+    <string name="support_nuvio_subtitle">Το Dex Hub βασίζεται στην επίσημη εφαρμογή Nuvio. Η συνδρομή πηγαίνει στην ομάδα του Nuvio, βοηθά να καλυφθούν οι servers και η ανάπτυξη, και κρατά τη βασική εφαρμογή δωρεάν για όλους.</string>
     <string name="support_nuvio_perk_themes">Θέματα διαβάθμισης</string>
     <string name="support_nuvio_perk_themes_desc">Επιπλέον θέματα διαβάθμισης, ή φτιάξτε το δικό σας.</string>
     <string name="support_nuvio_perk_backgrounds">Φόντα προφίλ</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Κλείσιμο</string>
     <string name="support_nuvio_checking">Έλεγχος της συνδρομής σας…</string>
     <string name="support_nuvio_thanks_title">Ευχαριστούμε που στηρίζετε την ομάδα του Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">Τα προνόμιά σας ακολουθούν τον λογαριασμό Nuvio, άρα λειτουργούν εδώ στο Nuvio Arc και στην επίσημη εφαρμογή.</string>
+    <string name="support_nuvio_thanks_subtitle">Τα προνόμιά σας ακολουθούν τον λογαριασμό Nuvio, άρα λειτουργούν εδώ στο Dex Hub και στην επίσημη εφαρμογή.</string>
     <string name="support_nuvio_gentle_eyebrow">Υποστηρικτής Nuvio</string>
-    <string name="support_nuvio_gentle_title">Όλα στο Nuvio Arc λειτουργούν χωρίς συνδρομή</string>
+    <string name="support_nuvio_gentle_title">Όλα στο Dex Hub λειτουργούν χωρίς συνδρομή</string>
     <string name="support_nuvio_gentle_body">Αυτός ο λογαριασμός δεν έχει συνδρομή Nuvio Supporter. Αν ποτέ θέλετε να βοηθήσετε την ομάδα του Nuvio, η συνδρομή προσθέτει μερικά έξτρα:</string>
-    <string name="support_nuvio_gentle_unavailable">Δεν ήταν δυνατός ο έλεγχος της συνδρομής σας αυτή τη στιγμή. Όλα στο Nuvio Arc λειτουργούν χωρίς αυτήν. Αν θέλετε να βοηθήσετε την ομάδα του Nuvio, η συνδρομή προσθέτει μερικά επιπλέον προνόμια:</string>
+    <string name="support_nuvio_gentle_unavailable">Δεν ήταν δυνατός ο έλεγχος της συνδρομής σας αυτή τη στιγμή. Όλα στο Dex Hub λειτουργούν χωρίς αυτήν. Αν θέλετε να βοηθήσετε την ομάδα του Nuvio, η συνδρομή προσθέτει μερικά επιπλέον προνόμια:</string>
     <string name="support_nuvio_gentle_scan">Δείτε τις επιλογές στο κινητό σας</string>
     <string name="support_nuvio_paid_check_again">Μόλις πληρώσατε; Νέος έλεγχος</string>
     <string name="support_nuvio_no_thanks">Όχι, ευχαριστώ</string>

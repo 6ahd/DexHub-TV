@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">קוד QR לחיבור WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr לא מוגדר בגרסה הזו.</string>
     <string name="wetrakr_status_syncing">מסתנכרן עם WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">ממתין לאישור של Nuvio Arc ב-WeTrakr</string>
+    <string name="wetrakr_status_enter_code">ממתין לאישור של Dex Hub ב-WeTrakr</string>
     <string name="wetrakr_status_paused">מושהה</string>
     <string name="wetrakr_daily_limit_row">המגבלה היומית של WeTrakr נוצלה. הסנכרון יתחדש ב-%1$s.</string>
     <string name="wetrakr_limit_message">המגבלה היומית של WeTrakr נוצלה. ההפעלה לא מושפעת, אבל צפיות לא יישלחו ל-WeTrakr עד %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">הסתיים: %1$s נוספו ל-WeTrakr, %2$s כבר היו שם או לא נמצאו.</string>
     <string name="wetrakr_upload_send">שליחה</string>
     <string name="wetrakr_upload_close">סגירה</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc משתמשת ב-WeTrakr עבור היסטוריית צפייה, רשימות, מעקב הפעלה וכותרים דומים. נתונים מ-WeTrakr. Nuvio Arc אינה קשורה או מאושרת על ידי WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">יצאת מהחשבון כאן, אבל לא ניתן היה לעדכן את WeTrakr. אפשר להסיר את Nuvio Arc תחת אפליקציות מחוברות ב-wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub משתמשת ב-WeTrakr עבור היסטוריית צפייה, רשימות, מעקב הפעלה וכותרים דומים. נתונים מ-WeTrakr. Dex Hub אינה קשורה או מאושרת על ידי WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">יצאת מהחשבון כאן, אבל לא ניתן היה לעדכן את WeTrakr. אפשר להסיר את Dex Hub תחת אפליקציות מחוברות ב-wetrakr.com.</string>
 </resources>

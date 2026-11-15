@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Soutenir l’équipe Nuvio</string>
     <string name="support_nuvio_title">Soutenir l’équipe Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc repose sur l’application officielle Nuvio. Une adhésion va à l’équipe Nuvio, aide à payer les serveurs et le développement, et garde l’application de base gratuite pour tous.</string>
+    <string name="support_nuvio_subtitle">Dex Hub repose sur l’application officielle Nuvio. Une adhésion va à l’équipe Nuvio, aide à payer les serveurs et le développement, et garde l’application de base gratuite pour tous.</string>
     <string name="support_nuvio_perk_themes">Thèmes en dégradé</string>
     <string name="support_nuvio_perk_themes_desc">Thèmes en dégradé supplémentaires, ou créez le vôtre.</string>
     <string name="support_nuvio_perk_backgrounds">Arrière-plans de profil</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Fermer</string>
     <string name="support_nuvio_checking">Vérification de votre adhésion…</string>
     <string name="support_nuvio_thanks_title">Merci de soutenir l’équipe Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">Vos avantages suivent votre compte Nuvio : ils fonctionnent ici dans Nuvio Arc et dans l’application officielle.</string>
+    <string name="support_nuvio_thanks_subtitle">Vos avantages suivent votre compte Nuvio : ils fonctionnent ici dans Dex Hub et dans l’application officielle.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio Supporter</string>
-    <string name="support_nuvio_gentle_title">Tout fonctionne dans Nuvio Arc sans adhésion</string>
+    <string name="support_nuvio_gentle_title">Tout fonctionne dans Dex Hub sans adhésion</string>
     <string name="support_nuvio_gentle_body">Ce compte n\'a pas d\'adhésion Nuvio Supporter. Si un jour vous souhaitez aider l\'équipe Nuvio, une adhésion ajoute quelques extras :</string>
-    <string name="support_nuvio_gentle_unavailable">Votre adhésion n’a pas pu être vérifiée pour le moment. Tout fonctionne dans Nuvio Arc sans adhésion. Si vous souhaitez aider l’équipe Nuvio, une adhésion ajoute quelques extras :</string>
+    <string name="support_nuvio_gentle_unavailable">Votre adhésion n’a pas pu être vérifiée pour le moment. Tout fonctionne dans Dex Hub sans adhésion. Si vous souhaitez aider l’équipe Nuvio, une adhésion ajoute quelques extras :</string>
     <string name="support_nuvio_gentle_scan">Voir les options sur votre téléphone</string>
     <string name="support_nuvio_paid_check_again">Vous venez de payer ? Vérifier à nouveau</string>
     <string name="support_nuvio_no_thanks">Non merci</string>

@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Steun het Nuvio-team</string>
     <string name="support_nuvio_title">Steun het Nuvio-team</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc is gebouwd op de officiële Nuvio-app. Een lidmaatschap gaat naar het Nuvio-team, helpt servers en ontwikkeling te betalen en houdt de kernapp gratis voor iedereen.</string>
+    <string name="support_nuvio_subtitle">Dex Hub is gebouwd op de officiële Nuvio-app. Een lidmaatschap gaat naar het Nuvio-team, helpt servers en ontwikkeling te betalen en houdt de kernapp gratis voor iedereen.</string>
     <string name="support_nuvio_perk_themes">Kleurverloopthema\'s</string>
     <string name="support_nuvio_perk_themes_desc">Extra kleurverloopthema\'s, of maak je eigen.</string>
     <string name="support_nuvio_perk_backgrounds">Profielachtergronden</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Sluiten</string>
     <string name="support_nuvio_checking">Je lidmaatschap wordt gecontroleerd…</string>
     <string name="support_nuvio_thanks_title">Bedankt dat je het Nuvio-team steunt</string>
-    <string name="support_nuvio_thanks_subtitle">Je voordelen horen bij je Nuvio-account, dus ze werken hier in Nuvio Arc en in de officiële app.</string>
+    <string name="support_nuvio_thanks_subtitle">Je voordelen horen bij je Nuvio-account, dus ze werken hier in Dex Hub en in de officiële app.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio-ondersteuner</string>
-    <string name="support_nuvio_gentle_title">Alles in Nuvio Arc werkt zonder lidmaatschap</string>
+    <string name="support_nuvio_gentle_title">Alles in Dex Hub werkt zonder lidmaatschap</string>
     <string name="support_nuvio_gentle_body">Dit account heeft geen Nuvio Supporter-lidmaatschap. Wil je het Nuvio-team ooit helpen, dan geeft een lidmaatschap een paar extra\'s:</string>
-    <string name="support_nuvio_gentle_unavailable">Je lidmaatschap kon nu niet worden gecontroleerd. Alles in Nuvio Arc werkt ook zonder. Wil je het Nuvio-team helpen, dan geeft een lidmaatschap een paar extra\'s:</string>
+    <string name="support_nuvio_gentle_unavailable">Je lidmaatschap kon nu niet worden gecontroleerd. Alles in Dex Hub werkt ook zonder. Wil je het Nuvio-team helpen, dan geeft een lidmaatschap een paar extra\'s:</string>
     <string name="support_nuvio_gentle_scan">Bekijk de opties op je telefoon</string>
     <string name="support_nuvio_paid_check_again">Net betaald? Opnieuw controleren</string>
     <string name="support_nuvio_no_thanks">Nee, bedankt</string>

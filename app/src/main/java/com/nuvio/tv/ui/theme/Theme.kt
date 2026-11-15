@@ -60,7 +60,7 @@ val LocalNuvioExtendedColors = staticCompositionLocalOf {
 
 val LocalNuvioTextStyles = staticCompositionLocalOf { NuvioTextStyles }
 
-val LocalAppTheme = staticCompositionLocalOf { AppTheme.GLASS }
+val LocalAppTheme = staticCompositionLocalOf { AppTheme.VIOLET }
 
 val LocalThemePalette = staticCompositionLocalOf { ThemeColors.White }
 
@@ -75,7 +75,7 @@ val LocalNuvioFocusRingStyle = staticCompositionLocalOf {
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun NuvioTheme(
-    appTheme: AppTheme = AppTheme.GLASS,
+    appTheme: AppTheme = AppTheme.VIOLET,
     appFont: AppFont = AppFont.INTER,
     amoledMode: Boolean = false,
     amoledSurfacesMode: Boolean = false,

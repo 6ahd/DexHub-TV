@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Dukung tim Nuvio</string>
     <string name="support_nuvio_title">Dukung tim Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc dibangun di atas aplikasi resmi Nuvio. Keanggotaan masuk ke tim Nuvio, membantu biaya server dan pengembangan, serta menjaga aplikasi inti tetap gratis untuk semua.</string>
+    <string name="support_nuvio_subtitle">Dex Hub dibangun di atas aplikasi resmi Nuvio. Keanggotaan masuk ke tim Nuvio, membantu biaya server dan pengembangan, serta menjaga aplikasi inti tetap gratis untuk semua.</string>
     <string name="support_nuvio_perk_themes">Tema gradien</string>
     <string name="support_nuvio_perk_themes_desc">Tema gradien tambahan, atau buat sendiri.</string>
     <string name="support_nuvio_perk_backgrounds">Latar profil</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Tutup</string>
     <string name="support_nuvio_checking">Memeriksa keanggotaan Anda…</string>
     <string name="support_nuvio_thanks_title">Terima kasih telah mendukung tim Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">Keuntungan Anda mengikuti akun Nuvio Anda, jadi berfungsi di sini di Nuvio Arc dan di aplikasi resmi.</string>
+    <string name="support_nuvio_thanks_subtitle">Keuntungan Anda mengikuti akun Nuvio Anda, jadi berfungsi di sini di Dex Hub dan di aplikasi resmi.</string>
     <string name="support_nuvio_gentle_eyebrow">Pendukung Nuvio</string>
-    <string name="support_nuvio_gentle_title">Semua di Nuvio Arc berfungsi tanpa keanggotaan</string>
+    <string name="support_nuvio_gentle_title">Semua di Dex Hub berfungsi tanpa keanggotaan</string>
     <string name="support_nuvio_gentle_body">Akun ini tidak memiliki keanggotaan Nuvio Supporter. Jika suatu saat Anda ingin membantu tim Nuvio, keanggotaan memberi beberapa tambahan:</string>
-    <string name="support_nuvio_gentle_unavailable">Keanggotaan Anda tidak dapat diperiksa saat ini. Semua di Nuvio Arc berfungsi tanpa keanggotaan. Jika Anda ingin membantu tim Nuvio, keanggotaan memberi beberapa tambahan:</string>
+    <string name="support_nuvio_gentle_unavailable">Keanggotaan Anda tidak dapat diperiksa saat ini. Semua di Dex Hub berfungsi tanpa keanggotaan. Jika Anda ingin membantu tim Nuvio, keanggotaan memberi beberapa tambahan:</string>
     <string name="support_nuvio_gentle_scan">Lihat pilihannya di ponsel Anda</string>
     <string name="support_nuvio_paid_check_again">Baru saja membayar? Periksa lagi</string>
     <string name="support_nuvio_no_thanks">Tidak, terima kasih</string>

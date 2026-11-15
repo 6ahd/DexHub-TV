@@ -28,7 +28,7 @@ fun resolveAppTheme(
     entitlements: CosmeticEntitlements
 ): AppTheme {
     if (selectedTheme == null) {
-        return AppTheme.GLASS
+        return AppTheme.VIOLET
     }
     return if (selectedTheme in availableAppThemes(entitlements)) {
         selectedTheme

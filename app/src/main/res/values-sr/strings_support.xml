@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Подржите Nuvio тим</string>
     <string name="support_nuvio_title">Подржите Nuvio тим</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc је направљен на основу званичне апликације Nuvio. Чланство иде Nuvio тиму, помаже у плаћању сервера и развоја и чува основну апликацију бесплатном за све.</string>
+    <string name="support_nuvio_subtitle">Dex Hub је направљен на основу званичне апликације Nuvio. Чланство иде Nuvio тиму, помаже у плаћању сервера и развоја и чува основну апликацију бесплатном за све.</string>
     <string name="support_nuvio_perk_themes">Градијентне теме</string>
     <string name="support_nuvio_perk_themes_desc">Додатне градијентне теме или направите своју.</string>
     <string name="support_nuvio_perk_backgrounds">Позадине профила</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Затвори</string>
     <string name="support_nuvio_checking">Провера чланства…</string>
     <string name="support_nuvio_thanks_title">Хвала што подржавате Nuvio тим</string>
-    <string name="support_nuvio_thanks_subtitle">Погодности прате ваш Nuvio налог, па раде овде у Nuvio Arc и у званичној апликацији.</string>
+    <string name="support_nuvio_thanks_subtitle">Погодности прате ваш Nuvio налог, па раде овде у Dex Hub и у званичној апликацији.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio Supporter</string>
-    <string name="support_nuvio_gentle_title">Све у Nuvio Arc ради без чланства</string>
+    <string name="support_nuvio_gentle_title">Све у Dex Hub ради без чланства</string>
     <string name="support_nuvio_gentle_body">Овај налог нема Nuvio Supporter чланство. Ако икада пожелите да помогнете Nuvio тиму, чланство доноси неколико додатака:</string>
-    <string name="support_nuvio_gentle_unavailable">Чланство тренутно није могуће проверити. Све у Nuvio Arc ради и без њега. Ако желите да помогнете Nuvio тиму, чланство доноси неколико погодности:</string>
+    <string name="support_nuvio_gentle_unavailable">Чланство тренутно није могуће проверити. Све у Dex Hub ради и без њега. Ако желите да помогнете Nuvio тиму, чланство доноси неколико погодности:</string>
     <string name="support_nuvio_gentle_scan">Погледајте опције на телефону</string>
     <string name="support_nuvio_paid_check_again">Управо плаћено? Провери поново</string>
     <string name="support_nuvio_no_thanks">Не, хвала</string>

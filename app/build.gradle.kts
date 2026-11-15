@@ -127,7 +127,7 @@ android {
     ndkVersion = "29.0.14206865"
 
     defaultConfig {
-        applicationId = "com.nuvio.tv.test"
+        applicationId = "com.dexhub.tv"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         minSdk = 24
         targetSdk = 36
@@ -194,9 +194,9 @@ android {
         buildConfigField("String", "SPONSOR_NAMES", buildConfigString(sponsorNames))
 
         // One beta stream for this fork, including GitHub prereleases.
-        buildConfigField("String", "GITHUB_OWNER", "\"ysosrs123\"")
-        buildConfigField("String", "GITHUB_REPO", "\"NuvioTV-Fork\"")
-        buildConfigField("String", "GITHUB_REPO_NEW_NAME", "\"Nuvio-Arc\"")
+        buildConfigField("String", "GITHUB_OWNER", "\"6ahd\"")
+        buildConfigField("String", "GITHUB_REPO", "\"DexHub-TV\"")
+        buildConfigField("String", "GITHUB_REPO_NEW_NAME", "\"DexHub-TV\"")
         buildConfigField("boolean", "UPDATE_CHECK_ENABLED", "true")
     }
 

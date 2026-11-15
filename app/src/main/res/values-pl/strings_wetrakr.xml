@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Kod QR do połączenia WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr nie jest skonfigurowany w tej wersji.</string>
     <string name="wetrakr_status_syncing">Synchronizacja z WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Oczekiwanie na zezwolenie dla Nuvio Arc w WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Oczekiwanie na zezwolenie dla Dex Hub w WeTrakr</string>
     <string name="wetrakr_status_paused">Wstrzymano</string>
     <string name="wetrakr_daily_limit_row">Dzisiejszy limit WeTrakr został wykorzystany. Synchronizacja zostanie wznowiona o %1$s.</string>
     <string name="wetrakr_limit_message">Dzisiejszy limit WeTrakr został wykorzystany. Odtwarzanie działa normalnie, ale odtworzenia nie są wysyłane do WeTrakr do %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Gotowe. Dodano w WeTrakr: %1$s, już było lub nie znaleziono: %2$s.</string>
     <string name="wetrakr_upload_send">Wyślij</string>
     <string name="wetrakr_upload_close">Zamknij</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc korzysta z WeTrakr do historii oglądania, list, śledzenia odtwarzania i podobnych tytułów. Dane z WeTrakr. Nuvio Arc nie jest powiązane z WeTrakr ani przez WeTrakr popierane.</string>
-    <string name="wetrakr_revoke_failed">Wylogowano tutaj, ale nie udało się powiadomić WeTrakr. Możesz usunąć Nuvio Arc w połączonych aplikacjach na wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub korzysta z WeTrakr do historii oglądania, list, śledzenia odtwarzania i podobnych tytułów. Dane z WeTrakr. Dex Hub nie jest powiązane z WeTrakr ani przez WeTrakr popierane.</string>
+    <string name="wetrakr_revoke_failed">Wylogowano tutaj, ale nie udało się powiadomić WeTrakr. Możesz usunąć Dex Hub w połączonych aplikacjach na wetrakr.com.</string>
 </resources>

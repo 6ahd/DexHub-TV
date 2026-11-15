@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Nuvioチームを支援</string>
     <string name="support_nuvio_title">Nuvioチームを支援</string>
-    <string name="support_nuvio_subtitle">Nuvio Arcは公式Nuvioアプリをベースにしています。メンバーシップはNuvioチームに届き、サーバーと開発の費用を支え、基本機能を誰でも無料で使えるようにしています。</string>
+    <string name="support_nuvio_subtitle">Dex Hubは公式Nuvioアプリをベースにしています。メンバーシップはNuvioチームに届き、サーバーと開発の費用を支え、基本機能を誰でも無料で使えるようにしています。</string>
     <string name="support_nuvio_perk_themes">グラデーションテーマ</string>
     <string name="support_nuvio_perk_themes_desc">追加のグラデーションテーマ、または自分で作成。</string>
     <string name="support_nuvio_perk_backgrounds">プロフィール背景</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">閉じる</string>
     <string name="support_nuvio_checking">メンバーシップを確認中…</string>
     <string name="support_nuvio_thanks_title">Nuvioチームへのご支援ありがとうございます</string>
-    <string name="support_nuvio_thanks_subtitle">特典はNuvioアカウントに紐づくため、このNuvio Arcでも公式アプリでも使えます。</string>
+    <string name="support_nuvio_thanks_subtitle">特典はNuvioアカウントに紐づくため、このDex Hubでも公式アプリでも使えます。</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvioサポーター</string>
-    <string name="support_nuvio_gentle_title">Nuvio Arcはメンバーシップなしですべて使えます</string>
+    <string name="support_nuvio_gentle_title">Dex Hubはメンバーシップなしですべて使えます</string>
     <string name="support_nuvio_gentle_body">このアカウントにはNuvio Supporterのメンバーシップがありません。Nuvioチームを支援したくなったときは、メンバーシップでいくつかの特典が加わります：</string>
-    <string name="support_nuvio_gentle_unavailable">現在メンバーシップを確認できませんでした。Nuvio Arcはメンバーシップなしでもすべて使えます。Nuvioチームを支援したい場合は、メンバーシップでいくつかの特典が加わります：</string>
+    <string name="support_nuvio_gentle_unavailable">現在メンバーシップを確認できませんでした。Dex Hubはメンバーシップなしでもすべて使えます。Nuvioチームを支援したい場合は、メンバーシップでいくつかの特典が加わります：</string>
     <string name="support_nuvio_gentle_scan">スマートフォンでプランを見る</string>
     <string name="support_nuvio_paid_check_again">お支払い済みですか？再確認</string>
     <string name="support_nuvio_no_thanks">いいえ、結構です</string>

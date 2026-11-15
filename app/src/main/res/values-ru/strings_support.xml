@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Поддержать команду Nuvio</string>
     <string name="support_nuvio_title">Поддержать команду Nuvio</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc создан на основе официального приложения Nuvio. Членство идёт команде Nuvio, помогает оплачивать серверы и разработку и сохраняет основное приложение бесплатным для всех.</string>
+    <string name="support_nuvio_subtitle">Dex Hub создан на основе официального приложения Nuvio. Членство идёт команде Nuvio, помогает оплачивать серверы и разработку и сохраняет основное приложение бесплатным для всех.</string>
     <string name="support_nuvio_perk_themes">Градиентные темы</string>
     <string name="support_nuvio_perk_themes_desc">Дополнительные градиентные темы или своя собственная.</string>
     <string name="support_nuvio_perk_backgrounds">Фоны профиля</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Закрыть</string>
     <string name="support_nuvio_checking">Проверка членства…</string>
     <string name="support_nuvio_thanks_title">Спасибо за поддержку команды Nuvio</string>
-    <string name="support_nuvio_thanks_subtitle">Привилегии привязаны к аккаунту Nuvio, поэтому работают и в Nuvio Arc, и в официальном приложении.</string>
+    <string name="support_nuvio_thanks_subtitle">Привилегии привязаны к аккаунту Nuvio, поэтому работают и в Dex Hub, и в официальном приложении.</string>
     <string name="support_nuvio_gentle_eyebrow">Спонсор Nuvio</string>
-    <string name="support_nuvio_gentle_title">В Nuvio Arc всё работает без членства</string>
+    <string name="support_nuvio_gentle_title">В Dex Hub всё работает без членства</string>
     <string name="support_nuvio_gentle_body">У этого аккаунта нет членства Nuvio Supporter. Если когда-нибудь захотите помочь команде Nuvio, членство даёт несколько бонусов:</string>
-    <string name="support_nuvio_gentle_unavailable">Сейчас не удалось проверить членство. В Nuvio Arc всё работает и без него. Если хотите помочь команде Nuvio, членство даёт несколько бонусов:</string>
+    <string name="support_nuvio_gentle_unavailable">Сейчас не удалось проверить членство. В Dex Hub всё работает и без него. Если хотите помочь команде Nuvio, членство даёт несколько бонусов:</string>
     <string name="support_nuvio_gentle_scan">Посмотреть варианты на телефоне</string>
     <string name="support_nuvio_paid_check_again">Только что оплатили? Проверить снова</string>
     <string name="support_nuvio_no_thanks">Нет, спасибо</string>

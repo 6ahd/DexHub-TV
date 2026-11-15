@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">Cod QR pentru conectarea WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr nu este configurat în această versiune.</string>
     <string name="wetrakr_status_syncing">Se sincronizează cu WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Se așteaptă să permiți Nuvio Arc pe WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Se așteaptă să permiți Dex Hub pe WeTrakr</string>
     <string name="wetrakr_status_paused">În pauză</string>
     <string name="wetrakr_daily_limit_row">Limita WeTrakr de azi s-a epuizat. Sincronizarea se reia la %1$s.</string>
     <string name="wetrakr_limit_message">Limita WeTrakr de azi s-a epuizat. Redarea nu este afectată, dar nimic nu este trimis către WeTrakr până la %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Gata: %1$s adăugate pe WeTrakr, %2$s existau deja sau nu au fost găsite.</string>
     <string name="wetrakr_upload_send">Trimite</string>
     <string name="wetrakr_upload_close">Închide</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc folosește WeTrakr pentru istoricul vizionărilor, liste, urmărirea redării și titluri similare. Date de la WeTrakr. Nuvio Arc nu este afiliat cu WeTrakr și nici aprobat de acesta.</string>
-    <string name="wetrakr_revoke_failed">Deconectat aici, dar WeTrakr nu a putut fi anunțat. Poți elimina Nuvio Arc din aplicațiile conectate pe wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub folosește WeTrakr pentru istoricul vizionărilor, liste, urmărirea redării și titluri similare. Date de la WeTrakr. Dex Hub nu este afiliat cu WeTrakr și nici aprobat de acesta.</string>
+    <string name="wetrakr_revoke_failed">Deconectat aici, dar WeTrakr nu a putut fi anunțat. Poți elimina Dex Hub din aplicațiile conectate pe wetrakr.com.</string>
 </resources>

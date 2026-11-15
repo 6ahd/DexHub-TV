@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="type_movie">Film</string>
     <string name="type_series">Serie</string>
     <string name="type_unknown">Ukjent</string>
@@ -205,7 +205,7 @@
     <!-- AboutScreen -->
     <string name="about_title">Om</string>
     <string name="about_subtitle">Appinformasjon, oppdateringer og juridiske lenker</string>
-    <string name="about_made_with_love">Bygget på det flotte arbeidet til Tapframe og venner ❤️ · Nuvio Arc av ysosrs123</string>
+    <string name="about_made_with_love">Bygget på det flotte arbeidet til Tapframe og venner ❤️ · Dex Hub av ysosrs123</string>
     <string name="about_version">Versjon %1$s</string>
     <string name="about_check_updates">Se etter oppdateringer</string>
     <string name="about_check_updates_subtitle">Last ned siste versjon</string>
@@ -630,7 +630,7 @@
     <string name="trakt_stat_watched_hours">Sette timer</string>
     <string name="trakt_disconnect">Koble fra</string>
     <string name="trakt_disconnect_title">Koble fra Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Dette vil koble fra Trakt-kontoen din fra Nuvio Arc.</string>
+    <string name="trakt_disconnect_subtitle">Dette vil koble fra Trakt-kontoen din fra Dex Hub.</string>
     <string name="trakt_login">Logge inn</string>
     <string name="trakt_retry">Prøv igjen</string>
     <string name="trakt_back">Tilbake</string>
@@ -1052,7 +1052,7 @@
     <string name="catalog_see_all_empty_subtitle">Prøv en annen katalog eller kom tilbake senere</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Velkommen til Nuvio Arc</string>
+    <string name="layout_selection_welcome">Velkommen til Dex Hub</string>
     <string name="layout_selection_subtitle">Velg oppsettet for hjemmeskjermen</string>
     <string name="layout_selection_continue">Fortsett</string>
 
@@ -1185,7 +1185,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Skrifter for undertekster</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed og Noto Sans (med Noto Sans Arabic, Hebrew, Devanagari, Bengali og Tamil) av The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors og The Noto Project Authors. Lisensiert under SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo og Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc kobler til din egen Jellyfin-, Emby, Silo- eller Plex-server. Navnene og logoene tilhører eierne sine. Nuvio Arc er ikke tilknyttet eller godkjent av Jellyfin, Emby eller Silo.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub kobler til din egen Jellyfin-, Emby, Silo- eller Plex-server. Navnene og logoene tilhører eierne sine. Dex Hub er ikke tilknyttet eller godkjent av Jellyfin, Emby eller Silo.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Lister over release-grupper. MIT-lisens.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -1233,7 +1233,7 @@
     <string name="playback_afr_closed">Lukket</string>
     <string name="audio_tunneled_sub_prefer_app">Ikke tilgjengelig når Dekoder prioritering er satt til Foretrekk appdekodere</string>
     <string name="audio_use_system_passthrough">Systemgjennomgang</string>
-    <string name="audio_use_system_passthrough_sub">Sender TrueHD og DTS-HD til mottakeren din gjennom Android (systemveien) i stedet for Nuvio Arc (IEC-veien). Avhengig av enheten og lydoppsettet ditt kan dette begrense DTS-HD og DTS:X til standard DTS eller la dem stå uten lyd. Bruk dette bare hvis tapsfrie formater gir støy, lydforskyvning eller ingen lyd.</string>
+    <string name="audio_use_system_passthrough_sub">Sender TrueHD og DTS-HD til mottakeren din gjennom Android (systemveien) i stedet for Dex Hub (IEC-veien). Avhengig av enheten og lydoppsettet ditt kan dette begrense DTS-HD og DTS:X til standard DTS eller la dem stå uten lyd. Bruk dette bare hvis tapsfrie formater gir støy, lydforskyvning eller ingen lyd.</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD- og DTS:X-gjennomgang</string>
     <string name="audio_dtshd_tv_passthrough_sub">Velg TV-gjennomgang hvis lydplanken viser vanlig DTS eller ikke spiller noe på filmer med DTS-HD eller DTS:X.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standard</string>
@@ -1355,7 +1355,7 @@
     <string name="floppy_tracking_description">Send det du ser på, til din egen Floppy-server</string>
     <string name="floppy_connected_to">Koblet til %1$s</string>
     <string name="floppy_connected_description">Det du ser på i denne profilen, går til Floppy: «Now Playing» mens du ser, ferdige titler i historikken din, stoppede med et gjenopptakelsespunkt. «Merk som sett» følger også med. Å fjerne markeringen av en film her nullstiller alle avspillingene av den i Floppy; for en episode trekkes bare den siste avspillingen tilbake. På en eldre Floppy-server slettes bare avspillingene Arc la til en film.</string>
-    <string name="floppy_qr_description">QR-kode for å godkjenne Nuvio Arc i Floppy</string>
+    <string name="floppy_qr_description">QR-kode for å godkjenne Dex Hub i Floppy</string>
     <string name="floppy_address_instruction">Skriv inn adressen du åpner Floppy på i nettleseren.</string>
     <string name="floppy_token_instruction">Åpne Settings, Integrations, App tokens i Floppy, og lag et token for denne TV-en.</string>
     <string name="floppy_address_placeholder">Serveradresse, for eksempel 192.168.1.20:8000</string>
@@ -1702,7 +1702,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV kan ikke endre størrelsen på bildeundertekster. Bruk ExoPlayer for å justere størrelsen på bildeundertekster uavhengig av tekst.</string>
     <string name="subtitle_style_image_size">Størrelse på bildeundertekster</string>
     <string name="v2_accent_fixed_hint">Bruker Fargetema med mindre aksent fra bilder er valgt.</string>
-    <string name="about_fork_updates_subtitle">Oppdateringer fra Nuvio Arc-utgivelsene på GitHub.</string>
+    <string name="about_fork_updates_subtitle">Oppdateringer fra Dex Hub-utgivelsene på GitHub.</string>
     <string name="playback_speculative_stream_search">Søk etter kilder før Spill av</string>
     <string name="playback_speculative_stream_search_sub">Søk i tillegg mens du blar, for å gjøre kildevalget raskere. Noen tillegg kan legge til eller hente innhold under søk. Av venter til Spill av. Medielenker og oppslag hos leverandøren venter til du velger å spille av, unntatt nær slutten av en episode når spoleminiatyrer klargjør den neste.</string>
     <string name="playback_source_line_badges">Kildemerker på detaljsiden</string>
@@ -1894,7 +1894,7 @@
     <string name="party_match_same">Samme fil som verten</string>
     <string name="party_match_likely">Sannsynligvis vertens kopi</string>
     <string name="party_match_different">Annen kopi enn vertens</string>
-    <string name="party_invite_text">Bli med på seerfesten min i Nuvio Arc. Åpne Innstillinger, deretter Seerfest, og skriv inn koden %1$s</string>
+    <string name="party_invite_text">Bli med på seerfesten min i Dex Hub. Åpne Innstillinger, deretter Seerfest, og skriv inn koden %1$s</string>
     <string name="party_invite_qr">Skann med mobilkameraet for å sende invitasjonen som SMS</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -2112,7 +2112,7 @@
     <string name="format_check_note_dv5">Innstillingene dine konverterer Profile 5 til 8.1.</string>
     <string name="format_check_note_hdr10_plus">Innstillingene dine fjerner HDR10+-data.</string>
     <string name="playback_release_decoder_on_background">Frigjør dekoder i bakgrunnen</string>
-    <string name="playback_release_decoder_on_background_sub">Frigjør videodekoderen når Nuvio Arc går i bakgrunnen. Slå på hvis avspillingen feiler med en dekoderfeil etter at du er tilbake i appen. Spilleren lastes på nytt ved retur, også etter skjermspareren</string>
+    <string name="playback_release_decoder_on_background_sub">Frigjør videodekoderen når Dex Hub går i bakgrunnen. Slå på hvis avspillingen feiler med en dekoderfeil etter at du er tilbake i appen. Spilleren lastes på nytt ved retur, også etter skjermspareren</string>
     <string name="autosync_toast_no_fit">Synkronisering mislyktes: disse undertekstene passer ikke til denne versjonen av videoen.</string>
     <string name="layout_hero_description_auto_scroll">Rull beskrivelser automatisk</string>
     <string name="layout_hero_description_auto_scroll_sub">Ruller lange beskrivelser sakte på startskjermen i stedet for å kutte dem.</string>
@@ -2123,7 +2123,7 @@
     <string name="web_subtitle_font_added">Lagt til på TV-en</string>
     <string name="web_subtitle_font_error">Kunne ikke importere skriften. Velg en gyldig .ttf- eller .otf-fil under 10 MB.</string>
     <string name="web_subtitle_font_connection_error">Tilkoblingsfeil</string>
-    <string name="player_dts_hd_decoding_notice">Tapsfri DTS-HD-utgang sluttet å virke, så Nuvio Arc dekoder lyden i denne tittelen selv.</string>
+    <string name="player_dts_hd_decoding_notice">Tapsfri DTS-HD-utgang sluttet å virke, så Dex Hub dekoder lyden i denne tittelen selv.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadata</string>
     <string name="addon_health_ok">OK</string>
@@ -2131,13 +2131,13 @@
     <string name="addon_health_down">Nede</string>
     <string name="addon_health_setup">Oppsett</string>
     <string name="appearance_launcher_artwork">Launcher-grafikk</string>
-    <string name="appearance_launcher_artwork_subtitle">Velg hvordan Nuvio Arc vises på TV-hjemmeskjermen</string>
+    <string name="appearance_launcher_artwork_subtitle">Velg hvordan Dex Hub vises på TV-hjemmeskjermen</string>
     <string name="appearance_app_icon_and_banner">Appikon &amp; banner</string>
     <string name="appearance_app_icon_and_banner_subtitle">Endre appikon og banner</string>
     <string name="appearance_app_icon_picker_title">Velg appikon &amp; banner</string>
     <string name="appearance_app_icon_picker_subtitle">Hver stil har et matchende kvadratisk ikon og TV-banner</string>
     <string name="appearance_app_icon_confirmation_title">Endre appikon?</string>
-    <string name="appearance_app_icon_confirmation_message">Å bytte til %1$s starter Nuvio Arc på nytt med det nye ikonet. Hjemmeskjermen kan bruke noen sekunder på å vise det, og TV-banneret kan kreve omstart av enheten. Velg OK for å fortsette.</string>
+    <string name="appearance_app_icon_confirmation_message">Å bytte til %1$s starter Dex Hub på nytt med det nye ikonet. Hjemmeskjermen kan bruke noen sekunder på å vise det, og TV-banneret kan kreve omstart av enheten. Velg OK for å fortsette.</string>
     <string name="appearance_app_icon_change_failed">Ikonet og banneret kunne ikke endres. Prøv igjen.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Arktisk blå</string>

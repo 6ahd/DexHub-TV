@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">Fortsæt med at se</string>
     <string name="type_movie">Film</string>
     <string name="type_movies">Film</string>
@@ -337,7 +337,7 @@
 
     <string name="about_title">Om</string>
     <string name="about_subtitle">App-information, opdateringer og juridiske links</string>
-    <string name="about_made_with_love">Bygget på det flotte arbejde fra Tapframe og venner ❤️ · Nuvio Arc af ysosrs123</string>
+    <string name="about_made_with_love">Bygget på det flotte arbejde fra Tapframe og venner ❤️ · Dex Hub af ysosrs123</string>
     <string name="about_version">Version %1$s</string>
     <string name="about_check_updates">Søg efter opdateringer</string>
     <string name="about_check_updates_subtitle">Download nyeste version</string>
@@ -348,26 +348,26 @@
     <string name="about_licenses_attributions">Licenser &amp; attributioner</string>
     <string name="about_licenses_attributions_subtitle">Datakilder, anerkendelser og Android-licenser</string>
     <string name="licenses_attributions_title">Licenser &amp; attributioner</string>
-    <string name="licenses_attributions_subtitle">Dataleverandører, servicekreditter og Android-afspilningslicenser brugt af Nuvio Arc.</string>
+    <string name="licenses_attributions_subtitle">Dataleverandører, servicekreditter og Android-afspilningslicenser brugt af Dex Hub.</string>
     <string name="licenses_attributions_section_app">APP-LICENS</string>
     <string name="licenses_attributions_section_data">DATA &amp; TJENESTER</string>
     <string name="licenses_attributions_section_playback">ANDROID-AFSPILNINGSLICENSER</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio Arc (fork af Nuvio TV)</string>
+    <string name="licenses_attributions_nuvio_title">Dex Hub (fork af Nuvio TV)</string>
     <string name="licenses_attributions_nuvio_body">En modificeret version af Nuvio TV. Kildekode og licensvilkår for dette build findes i forkens repository. Nuvio TV findes på github.com/NuvioMedia/NuvioTV. Licenseret under GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
-    <string name="licenses_attributions_tmdb_body">Nuvio Arc bruger TMDB API til film- og TV-metadata, artwork, trailere, cast, produktionsdetaljer, samlinger og anbefalinger. Dette produkt bruger TMDB API, men er ikke godkendt eller certificeret af TMDB.</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub bruger TMDB API til film- og TV-metadata, artwork, trailere, cast, produktionsdetaljer, samlinger og anbefalinger. Dette produkt bruger TMDB API, men er ikke godkendt eller certificeret af TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="licenses_attributions_trakt_body">Nuvio Arc forbinder til Trakt til kontoautentificering, se-historik, fremskridtssynkronisering, biblioteksdata, vurderinger, lister og kommentarer. Nuvio Arc er ikke tilknyttet eller godkendt af Trakt.</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub forbinder til Trakt til kontoautentificering, se-historik, fremskridtssynkronisering, biblioteksdata, vurderinger, lister og kommentarer. Dex Hub er ikke tilknyttet eller godkendt af Trakt.</string>
     <string name="licenses_attributions_premiumize_title">Premiumize</string>
-    <string name="licenses_attributions_premiumize_body">Nuvio Arc forbinder til Premiumize til kontoautentificering, adgang til cloudbibliotek, cache-tjek og cloud-afspilningsfunktioner. Nuvio Arc er ikke tilknyttet eller godkendt af Premiumize.</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub forbinder til Premiumize til kontoautentificering, adgang til cloudbibliotek, cache-tjek og cloud-afspilningsfunktioner. Dex Hub er ikke tilknyttet eller godkendt af Premiumize.</string>
     <string name="licenses_attributions_torbox_title">TorBox</string>
-    <string name="licenses_attributions_torbox_body">Nuvio Arc forbinder til TorBox til kontoautentificering, adgang til cloudbibliotek, cache-tjek og cloud-afspilningsfunktioner. Nuvio Arc er ikke tilknyttet eller godkendt af TorBox.</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub forbinder til TorBox til kontoautentificering, adgang til cloudbibliotek, cache-tjek og cloud-afspilningsfunktioner. Dex Hub er ikke tilknyttet eller godkendt af TorBox.</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
-    <string name="licenses_attributions_mdblist_body">Nuvio Arc bruger MDBList til vurderinger og data fra eksterne scoreudbydere. Nuvio Arc er ikke tilknyttet eller godkendt af MDBList.</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub bruger MDBList til vurderinger og data fra eksterne scoreudbydere. Dex Hub er ikke tilknyttet eller godkendt af MDBList.</string>
     <string name="licenses_attributions_introdb_title">IntroDB</string>
-    <string name="licenses_attributions_introdb_body">Nuvio Arc bruger IntroDB API til fællesskabsleverede intro-, recap-, credits- og preview-tidsstempler brugt af spring-over-kontrolelementer. Nuvio Arc er ikke tilknyttet eller godkendt af IntroDB.</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub bruger IntroDB API til fællesskabsleverede intro-, recap-, credits- og preview-tidsstempler brugt af spring-over-kontrolelementer. Dex Hub er ikke tilknyttet eller godkendt af IntroDB.</string>
     <string name="licenses_attributions_imdb_title">IMDb Non-Commercial Datasets</string>
-    <string name="licenses_attributions_imdb_body">Nuvio Arc bruger IMDb Non-Commercial Datasets, herunder title.ratings.tsv.gz, til IMDb-vurderinger og stemmeantal. Information venligst stillet til rådighed af IMDb (https://www.imdb.com). Brugt med tilladelse. IMDb-data er til personlig og ikke-kommerciel brug under IMDb\'s vilkår.</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub bruger IMDb Non-Commercial Datasets, herunder title.ratings.tsv.gz, til IMDb-vurderinger og stemmeantal. Information venligst stillet til rådighed af IMDb (https://www.imdb.com). Brugt med tilladelse. IMDb-data er til personlig og ikke-kommerciel brug under IMDb\'s vilkår.</string>
     <string name="licenses_attributions_exoplayer_title">AndroidX Media3 ExoPlayer 1.8.0</string>
     <string name="licenses_attributions_exoplayer_body">Brugt som Android-afspilningsmotor. Licenseret under Apache License, Version 2.0.</string>
     <string name="licenses_attributions_libmpv_title">libmpv / libmpv-android</string>
@@ -393,7 +393,7 @@
     <string name="settings_advanced_subtitle">Ydeevne, navigation, cache og diagnostik</string>
     <string name="experience_mode_essential">Grundlæggende</string>
     <string name="experience_mode_advanced">Avanceret</string>
-    <string name="experience_mode_choose_title">Vælg din Nuvio Arc-oplevelse</string>
+    <string name="experience_mode_choose_title">Vælg din Dex Hub-oplevelse</string>
     <string name="experience_mode_choose_subtitle">Start simpelt eller lås alle tilpasninger op. Du kan skifte når som helst.</string>
     <string name="experience_mode_essential_card_subtitle">Fokuseret opsætning, add-ons, afspilningsgrundlag, Trakt og kontoindstillinger.</string>
     <string name="experience_mode_advanced_card_subtitle">Fulde indstillinger, layoutkontrol, katalogrækkefølge, samlinger, plug-ins og diagnostik.</string>
@@ -594,8 +594,8 @@
     <string name="playback_player_ask_desc">Vælg afspiller hver gang</string>
     <string name="playback_player_auto">Auto (bedst til indhold)</string>
     <string name="playback_player_auto_desc">ExoPlayer til film &amp; TV-serier · MPV til anime</string>
-    <string name="playback_engine_exoplayer_desc">Bedst kompatibilitet med nuværende Nuvio Arc-funktioner.</string>
-    <string name="playback_engine_mvplayer_desc">Bruger libmpv med Nuvio Arc OSD-kontrol. Eksperimentel.</string>
+    <string name="playback_engine_exoplayer_desc">Bedst kompatibilitet med nuværende Dex Hub-funktioner.</string>
+    <string name="playback_engine_mvplayer_desc">Bruger libmpv med Dex Hub OSD-kontrol. Eksperimentel.</string>
 
     <string name="video_section">Video</string>
     <string name="audio_trailer_section">Trailer</string>
@@ -1188,7 +1188,7 @@
     <string name="trakt_stat_watched_hours">Seede timer</string>
     <string name="trakt_disconnect">Afbryd</string>
     <string name="trakt_disconnect_title">Afbryd Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Dette vil afbryde din Trakt-konto fra Nuvio Arc.</string>
+    <string name="trakt_disconnect_subtitle">Dette vil afbryde din Trakt-konto fra Dex Hub.</string>
     <string name="trakt_login">Login</string>
     <string name="trakt_retry">Prøv igen</string>
     <string name="trakt_back">Tilbage</string>
@@ -1374,7 +1374,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">P2P-streaming</string>
-    <string name="p2p_consent_body">Denne stream bruger peer-to-peer (P2P)-teknologi. Ved at aktivere P2P anerkender og accepterer du, at:\n\n\u2022 Din IP-adresse vil være synlig for andre peers i netværket\n\u2022 Du er eneansvarlig for det indhold, du tilgår\n\u2022 Du bekræfter, at du har den lovlige ret til at streame dette indhold i din jurisdiktion\n\u2022 Nuvio Arc hoster, distribuerer eller kontrollerer ikke noget P2P-indhold\n\u2022 Nuvio Arc er ikke ansvarlig for eventuelle juridiske konsekvenser som følge af din brug af P2P-streaming\n\nDu bruger denne funktion udelukkende på eget ansvar. P2P kan deaktiveres når som helst i Indstillinger.</string>
+    <string name="p2p_consent_body">Denne stream bruger peer-to-peer (P2P)-teknologi. Ved at aktivere P2P anerkender og accepterer du, at:\n\n\u2022 Din IP-adresse vil være synlig for andre peers i netværket\n\u2022 Du er eneansvarlig for det indhold, du tilgår\n\u2022 Du bekræfter, at du har den lovlige ret til at streame dette indhold i din jurisdiktion\n\u2022 Dex Hub hoster, distribuerer eller kontrollerer ikke noget P2P-indhold\n\u2022 Dex Hub er ikke ansvarlig for eventuelle juridiske konsekvenser som følge af din brug af P2P-streaming\n\nDu bruger denne funktion udelukkende på eget ansvar. P2P kan deaktiveres når som helst i Indstillinger.</string>
     <string name="p2p_consent_enable">Aktivér P2P</string>
     <string name="p2p_consent_cancel">Annullér</string>
     <string name="settings_p2p_title">P2P-streaming</string>
@@ -1825,7 +1825,7 @@
     <string name="catalog_see_all_empty_title">Ingen indhold tilgængeligt</string>
     <string name="catalog_see_all_empty_subtitle">Prøv et andet katalog, eller kom tilbage senere</string>
 
-    <string name="layout_selection_welcome">Velkommen til Nuvio Arc</string>
+    <string name="layout_selection_welcome">Velkommen til Dex Hub</string>
     <string name="layout_selection_subtitle">Vælg dit startskærm-layout</string>
     <string name="layout_selection_continue">Fortsæt</string>
 
@@ -2002,7 +2002,7 @@
     <string name="cd_preview">Forhåndsvisning</string>
     <string name="cd_test">Test</string>
     <string name="cd_unlink">Fjern tilknytning</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Trakt-logo</string>
     <string name="cd_trakt_qr">Trakt-aktiverings-QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2155,7 +2155,7 @@
     <string name="collections_editor_tmdb_list_helper">Eksempel: https://www.themoviedb.org/list/8504994 eller 8504994.</string>
     <string name="collections_editor_tmdb_person_id">Person-ID</string>
     <string name="collections_editor_tmdb_person_helper">Eksempel: https://www.themoviedb.org/person/31-tom-hanks eller 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Vises som række-/fanenavn. Hvis tomt, opretter Nuvio Arc et navn fra kilden.</string>
+    <string name="collections_editor_tmdb_title_helper">Vises som række-/fanenavn. Hvis tomt, opretter Dex Hub et navn fra kilden.</string>
     <string name="collections_editor_tmdb_quick_genres">Hurtige valg til genrer</string>
     <string name="collections_editor_tmdb_quick_languages">Hurtige valg til sprog</string>
     <string name="collections_editor_tmdb_quick_countries">Hurtige valg til lande</string>
@@ -2328,7 +2328,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">No REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Brug Nuvio Arc\'s indbyggede afspiller</string>
+    <string name="playback_player_internal_desc">Brug Dex Hub\'s indbyggede afspiller</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeders · %2$d peers</string>
@@ -2770,7 +2770,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Skrifttyper til undertekster</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed og Noto Sans (med Noto Sans Arabic, Hebrew, Devanagari, Bengali og Tamil) af The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors og The Noto Project Authors. Licenseret under SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo og Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc forbinder til din egen Jellyfin-, Emby, Silo- eller Plex-server. Navne og logoer tilhører deres ejere. Nuvio Arc er ikke tilknyttet eller godkendt af Jellyfin, Emby eller Silo.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub forbinder til din egen Jellyfin-, Emby, Silo- eller Plex-server. Navne og logoer tilhører deres ejere. Dex Hub er ikke tilknyttet eller godkendt af Jellyfin, Emby eller Silo.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Lister over release-grupper. MIT-licens.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -2818,7 +2818,7 @@
     <string name="playback_afr_closed">Lukket</string>
     <string name="audio_tunneled_sub_prefer_app">Ikke tilgængelig, når Decoder-prioritet er sat til Foretræk app-decodere</string>
     <string name="audio_use_system_passthrough">System-passthrough</string>
-    <string name="audio_use_system_passthrough_sub">Sender TrueHD og DTS-HD til din receiver gennem Android (systemvejen) i stedet for Nuvio Arc (IEC-vejen). Afhængigt af din enhed og lydopsætning kan det begrænse DTS-HD og DTS:X til standard-DTS eller efterlade dem uden lyd. Brug det kun, hvis tabsfri formater giver støj, lydforskydning eller ingen lyd.</string>
+    <string name="audio_use_system_passthrough_sub">Sender TrueHD og DTS-HD til din receiver gennem Android (systemvejen) i stedet for Dex Hub (IEC-vejen). Afhængigt af din enhed og lydopsætning kan det begrænse DTS-HD og DTS:X til standard-DTS eller efterlade dem uden lyd. Brug det kun, hvis tabsfri formater giver støj, lydforskydning eller ingen lyd.</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD- og DTS:X-passthrough</string>
     <string name="audio_dtshd_tv_passthrough_sub">Vælg TV-passthrough, hvis din soundbar viser almindelig DTS eller ikke afspiller noget på film med DTS-HD eller DTS:X.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standard</string>
@@ -2932,7 +2932,7 @@
     <string name="floppy_tracking_description">Send det, du ser, til din egen Floppy-server</string>
     <string name="floppy_connected_to">Forbundet til %1$s</string>
     <string name="floppy_connected_description">Det, du ser på denne profil, sendes til Floppy: ”Now Playing”, mens du ser, færdige titler i din historik, stoppede med et genoptagelsespunkt. ”Markér som set” følger også med. Hvis du fjerner markeringen af en film her, nulstilles alle dens visninger i Floppy; for et afsnit trækkes kun den seneste visning tilbage. På en ældre Floppy-server fjernes kun de visninger, Arc har tilføjet til en film.</string>
-    <string name="floppy_qr_description">QR-kode til at godkende Nuvio Arc i Floppy</string>
+    <string name="floppy_qr_description">QR-kode til at godkende Dex Hub i Floppy</string>
     <string name="floppy_address_instruction">Indtast adressen, du åbner Floppy på i din browser.</string>
     <string name="floppy_token_instruction">Åbn Settings, Integrations, App tokens i Floppy, og opret et token til dette tv.</string>
     <string name="floppy_address_placeholder">Serveradresse, for eksempel 192.168.1.20:8000</string>
@@ -3279,7 +3279,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV kan ikke ændre størrelsen på billedundertekster. Brug ExoPlayer til at justere billedunderteksternes størrelse uafhængigt af tekst.</string>
     <string name="subtitle_style_image_size">Størrelse på billedundertekster</string>
     <string name="v2_accent_fixed_hint">Bruger Farvetema, medmindre accent fra billeder er valgt.</string>
-    <string name="about_fork_updates_subtitle">Opdateringer fra Nuvio Arc-udgivelserne på GitHub.</string>
+    <string name="about_fork_updates_subtitle">Opdateringer fra Dex Hub-udgivelserne på GitHub.</string>
     <string name="playback_speculative_stream_search">Søg kilder før Afspil</string>
     <string name="playback_speculative_stream_search_sub">Søg i addons, mens du browser, for at gøre kildevalget hurtigere. Nogle addons kan tilføje eller hente indhold under søgninger. Fra venter til Afspil. Medielinks og opslag hos udbyderen venter, til du vælger at afspille, undtagen nær slutningen af en episode, når spoleminiaturer forbereder den næste.</string>
     <string name="playback_source_line_badges">Kildebadges på detaljesiden</string>
@@ -3471,7 +3471,7 @@
     <string name="party_match_same">Samme fil som værten</string>
     <string name="party_match_likely">Sandsynligvis værtens kopi</string>
     <string name="party_match_different">Anden kopi end værtens</string>
-    <string name="party_invite_text">Vær med til min seerfest i Nuvio Arc. Åbn Indstillinger, derefter Seerfest, og indtast koden %1$s</string>
+    <string name="party_invite_text">Vær med til min seerfest i Dex Hub. Åbn Indstillinger, derefter Seerfest, og indtast koden %1$s</string>
     <string name="party_invite_qr">Scan med telefonens kamera for at sende invitationen som sms</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -3689,7 +3689,7 @@
     <string name="format_check_note_dv5">Dine indstillinger konverterer Profile 5 til 8.1.</string>
     <string name="format_check_note_hdr10_plus">Dine indstillinger fjerner HDR10+-data.</string>
     <string name="playback_release_decoder_on_background">Frigiv dekoder i baggrunden</string>
-    <string name="playback_release_decoder_on_background_sub">Frigiver videodekoderen, når Nuvio Arc går i baggrunden. Slå til, hvis afspilningen fejler med en dekoderfejl, når du vender tilbage til appen. Afspilleren genindlæses ved tilbagevenden, også efter pauseskærmen</string>
+    <string name="playback_release_decoder_on_background_sub">Frigiver videodekoderen, når Dex Hub går i baggrunden. Slå til, hvis afspilningen fejler med en dekoderfejl, når du vender tilbage til appen. Afspilleren genindlæses ved tilbagevenden, også efter pauseskærmen</string>
     <string name="autosync_toast_no_fit">Synkronisering mislykkedes: disse undertekster passer ikke til denne version af videoen.</string>
     <string name="layout_hero_description_auto_scroll">Rul beskrivelser automatisk</string>
     <string name="layout_hero_description_auto_scroll_sub">Ruller lange beskrivelser langsomt på startskærmen i stedet for at afkorte dem.</string>
@@ -3700,7 +3700,7 @@
     <string name="web_subtitle_font_added">Tilføjet til dit tv</string>
     <string name="web_subtitle_font_error">Skrifttypen kunne ikke importeres. Vælg en gyldig .ttf- eller .otf-fil under 10 MB.</string>
     <string name="web_subtitle_font_connection_error">Forbindelsesfejl</string>
-    <string name="player_dts_hd_decoding_notice">Tabsfri DTS-HD-udgang holdt op med at virke, så Nuvio Arc afkoder selv lyden til denne titel.</string>
+    <string name="player_dts_hd_decoding_notice">Tabsfri DTS-HD-udgang holdt op med at virke, så Dex Hub afkoder selv lyden til denne titel.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metadata</string>
     <string name="addon_health_ok">OK</string>
@@ -3708,13 +3708,13 @@
     <string name="addon_health_down">Nede</string>
     <string name="addon_health_setup">Opsætning</string>
     <string name="appearance_launcher_artwork">Launcher-grafik</string>
-    <string name="appearance_launcher_artwork_subtitle">Vælg, hvordan Nuvio Arc vises på din TV-startskærm</string>
+    <string name="appearance_launcher_artwork_subtitle">Vælg, hvordan Dex Hub vises på din TV-startskærm</string>
     <string name="appearance_app_icon_and_banner">App-ikon &amp; banner</string>
     <string name="appearance_app_icon_and_banner_subtitle">Skift app-ikon og banner</string>
     <string name="appearance_app_icon_picker_title">Vælg app-ikon &amp; banner</string>
     <string name="appearance_app_icon_picker_subtitle">Hver stil har et matchende kvadratisk ikon og TV-banner</string>
     <string name="appearance_app_icon_confirmation_title">Skift app-ikon?</string>
-    <string name="appearance_app_icon_confirmation_message">Et skift til %1$s genstarter Nuvio Arc med det nye ikon. Startskærmen kan være et par sekunder om at vise det, og TV-banneret kan kræve en genstart af enheden. Vælg OK for at fortsætte.</string>
+    <string name="appearance_app_icon_confirmation_message">Et skift til %1$s genstarter Dex Hub med det nye ikon. Startskærmen kan være et par sekunder om at vise det, og TV-banneret kan kræve en genstart af enheden. Vælg OK for at fortsætte.</string>
     <string name="appearance_app_icon_change_failed">Ikonet og banneret kunne ikke ændres. Prøv igen.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Arktisk blå</string>

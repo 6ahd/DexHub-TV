@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">Bu kullanıcının erişebildiği film veya dizi kütüphanesi yok.</string>
     <string name="servers_refresh_libraries">Kütüphaneleri yenile</string>
     <string name="servers_display_name">Görünen ad</string>
-    <string name="servers_display_name_description">Nuvio Arc\'nun bu sunucu için Ana Sayfa\'da, Ayarlar\'da ve kaynaklarda gösterdiği ad.</string>
+    <string name="servers_display_name_description">Dex Hub\'nun bu sunucu için Ana Sayfa\'da, Ayarlar\'da ve kaynaklarda gösterdiği ad.</string>
     <string name="servers_display_name_server_name">Sunucunun kendi adı: %1$s</string>
-    <string name="servers_display_name_dialog_description">Nuvio Arc\'nun bu sunucu için göstereceği adı seçin. Sunucunun kendi adını kullanmak için boş bırakın.</string>
+    <string name="servers_display_name_dialog_description">Dex Hub\'nun bu sunucu için göstereceği adı seçin. Sunucunun kendi adını kullanmak için boş bırakın.</string>
     <string name="servers_display_name_reset">Sunucu adına sıfırla</string>
     <string name="servers_enabled">Etkin</string>
     <string name="servers_enabled_description">Bu sunucuyu Ana Sayfa, arama ve yayın sonuçlarında göster.</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">Bu kullanıcının erişimi yok.</string>
     <string name="servers_error_failed">Sunucuya bağlanılamadı.</string>
     <string name="servers_error_website">Bu adres bir medya sunucusunu değil, bir web sitesini açıyor. Sunucunun kendi adresini girin.</string>
-    <string name="servers_error_silo_website">Nuvio Arc bu Silo sunucusunun Jellyfin adresini bulamadı. Silo\'da \"Settings &gt; Connect Apps &gt; Jellyfin-compatible app\" bölümünü açın ve \"Server\" altında gösterilen adresi girin.</string>
+    <string name="servers_error_silo_website">Dex Hub bu Silo sunucusunun Jellyfin adresini bulamadı. Silo\'da \"Settings &gt; Connect Apps &gt; Jellyfin-compatible app\" bölümünü açın ve \"Server\" altında gösterilen adresi girin.</string>
     <string name="servers_error_silo_jellyfin_off">Bu Silo sunucusunda Jellyfin uygulamaları kapalı. Sunucu sahibinden bunları açmasını isteyin.</string>
     <string name="servers_error_profile_needed">Kullanıcı adının sonuna # ve Silo profil adınızı ekleyin; örneğin ad#Profil veya ad#1234#Profil.</string>
     <string name="servers_error_profile_not_found">Silo, son # işaretinden sonraki kısmı profil adı olarak okur ve bu adda bir profil yok. Kullanıcı adınızda # varsa sonuna # ve profil adınızı ekleyin; örneğin ad#1234#Profil.</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">Bu öğe artık sunucuda mevcut değil.</string>
     <string name="servers_failure_certificate">Bu sunucunun sertifikası tanınmıyor.</string>
     <string name="servers_certificate_title">Bu sunucunun sertifikası tanınmıyor</string>
-    <string name="servers_certificate_intro">Nuvio Arc şu sunucunun kimliğini doğrulayamadı: %1$s.</string>
+    <string name="servers_certificate_intro">Dex Hub şu sunucunun kimliğini doğrulayamadı: %1$s.</string>
     <string name="servers_certificate_untrusted">Sertifika kendinden imzalı veya özel bir sertifika yetkilisi tarafından verilmiş.</string>
     <string name="servers_certificate_name_mismatch">Sertifika farklı bir ad için verilmiş.</string>
     <string name="servers_certificate_expired">Sertifika geçerlilik tarihlerinin dışında.</string>
-    <string name="servers_certificate_advice">Bu kendi sunucunuzsa ve bunu bekliyorsanız bu sertifikaya güvenebilirsiniz. Nuvio Arc bundan sonra bu sunucu için yalnızca tam olarak bu sertifikayı kabul eder ve değişirse sizi uyarır. Ev ağınızda değilseniz önce parmak izini sunucu sahibiyle doğrulayın.</string>
+    <string name="servers_certificate_advice">Bu kendi sunucunuzsa ve bunu bekliyorsanız bu sertifikaya güvenebilirsiniz. Dex Hub bundan sonra bu sunucu için yalnızca tam olarak bu sertifikayı kabul eder ve değişirse sizi uyarır. Ev ağınızda değilseniz önce parmak izini sunucu sahibiyle doğrulayın.</string>
     <string name="servers_certificate_details">Kime verildi: %1$s\nVeren: %2$s\nGeçerlilik: %3$s - %4$s\nParmak izi (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Bu sertifikaya güven</string>
     <string name="servers_certificate_unavailable">Güvenli bağlantı kurulamadı ve sunucunun sertifikası okunamadı.</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo girişi (önerilen)</string>
     <string name="silo_method_native_description">Telefonunuzdaki bir kodla veya Silo şifrenizle giriş yapın. Sunucunuzun tüm giriş yöntemleriyle çalışır (şifre, OpenID Connect, LDAP, Tailscale). Silo profillerinizi ve Silo Ana Sayfa satırlarınızı getirir.</string>
     <string name="silo_method_jellyfin">Jellyfin uyumlu</string>
-    <string name="silo_method_jellyfin_description">Silo\'nun Jellyfin uygulamalarına yönelik adresini kullanıcı adı ve şifreyle kullanır (profil için ad#Profil). Nuvio Arc şimdiye kadar Silo\'ya bu yolla bağlanıyordu.</string>
+    <string name="silo_method_jellyfin_description">Silo\'nun Jellyfin uygulamalarına yönelik adresini kullanıcı adı ve şifreyle kullanır (profil için ad#Profil). Dex Hub şimdiye kadar Silo\'ya bu yolla bağlanıyordu.</string>
     <string name="silo_setup_next">İleri</string>
     <string name="silo_code_step_open">Telefonunuzda kodu tarayın veya %1$s adresini açın</string>
     <string name="silo_code_step_sign_in">Orada her zamanki gibi giriş yapın</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">Veya %2$s adresinde %1$s koduyla giriş yapın</string>
     <string name="silo_signing_in">Giriş yapılıyor…</string>
     <string name="silo_profiles_title">Kim izliyor?</string>
-    <string name="silo_profiles_subtitle">%1$s hesabında birden fazla profil var. Nuvio Arc ilerleme, izlendi işaretleri ve Ana Sayfa satırları için seçtiğiniz profili kullanır. Bunu daha sonra sunucunun sayfasından değiştirebilirsiniz.</string>
+    <string name="silo_profiles_subtitle">%1$s hesabında birden fazla profil var. Dex Hub ilerleme, izlendi işaretleri ve Ana Sayfa satırları için seçtiğiniz profili kullanır. Bunu daha sonra sunucunun sayfasından değiştirebilirsiniz.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Çocuk</string>
     <string name="silo_pin_title">%1$s için PIN</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">Profil</string>
     <string name="servers_silo_profile_description">İlerleme, izlendi işaretleri ve Ana Sayfa satırları bu profili izler.</string>
     <string name="servers_silo_home_rows">Silo Ana Sayfa satırları</string>
-    <string name="servers_silo_home_rows_description">Silo Ana Sayfanızdaki satırları (listeleriniz, Trend, Sıradaki…) Nuvio Arc\'nun Ana Sayfa\'sında göster.</string>
+    <string name="servers_silo_home_rows_description">Silo Ana Sayfanızdaki satırları (listeleriniz, Trend, Sıradaki…) Dex Hub\'nun Ana Sayfa\'sında göster.</string>
     <string name="servers_silo_switch">Silo girişine geç</string>
     <string name="servers_silo_switch_description">Silo\'nun kendi girişiyle oturum açar, sonra bu bağlantının yerini alır. Adı ve kütüphane seçimleri korunur.</string>
     <string name="servers_add_plex_description">plex.tv/link adresinde kodla giriş yapın. Sunucularınız otomatik bulunur.</string>
-    <string name="plex_sign_in_subtitle">Sunucu adresi gerekmez: giriş yaptıktan sonra Nuvio Arc, Plex sunucularınızı bulur.</string>
+    <string name="plex_sign_in_subtitle">Sunucu adresi gerekmez: giriş yaptıktan sonra Dex Hub, Plex sunucularınızı bulur.</string>
     <string name="plex_code_step_open">Telefonunuzda veya bilgisayarınızda %1$s adresini açın (veya kodu tarayın)</string>
     <string name="plex_code_step_sign_in">İstenirse Plex\'e giriş yapın</string>
     <string name="plex_code_step_link">Yukarıdaki kodu yazın ve Link\'e basın</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">internet üzerinden erişildi</string>
     <string name="plex_reach_relay_detail">yalnızca Plex Relay üzerinden erişilebilir (yavaş, yaklaşık 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">şu anda çevrimdışı</string>
-    <string name="plex_users_subtitle">Plex hesabınızda Plex Home kullanıcıları var. Nuvio Arc, %1$s üzerinde ilerleme, izlendi işaretleri ve İzlemeye Devam Et için seçtiğiniz kullanıcıyı kullanır. Bunu daha sonra sunucunun sayfasından değiştirebilirsiniz.</string>
+    <string name="plex_users_subtitle">Plex hesabınızda Plex Home kullanıcıları var. Dex Hub, %1$s üzerinde ilerleme, izlendi işaretleri ve İzlemeye Devam Et için seçtiğiniz kullanıcıyı kullanır. Bunu daha sonra sunucunun sayfasından değiştirebilirsiniz.</string>
     <string name="plex_user_owner">Sahip</string>
     <string name="plex_user_managed">Yönetilen</string>
     <string name="plex_other_user">Diğer kullanıcı</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home kullanıcısı</string>
     <string name="plex_home_user_description">İlerleme, izlendi işaretleri ve İzlemeye Devam Et bu kullanıcıyı izler.</string>
     <string name="plex_home_rows">Plex Ana Sayfa satırları</string>
-    <string name="plex_home_rows_description">Plex\'in bu sunucudaki kendi satırlarını (Son Eklenenler ve daha fazlası) Nuvio Arc\'nun Ana Sayfa\'sında göster.</string>
-    <string name="plex_remote_pass_needed">Plex bunu ev dışında oynatmaz. Nuvio Arc gibi uygulamalarda bunun için sunucuda Plex Pass veya sizde Remote Watch Pass gerekir. Evde ücretsiz oynatılır.</string>
+    <string name="plex_home_rows_description">Plex\'in bu sunucudaki kendi satırlarını (Son Eklenenler ve daha fazlası) Dex Hub\'nun Ana Sayfa\'sında göster.</string>
+    <string name="plex_remote_pass_needed">Plex bunu ev dışında oynatmaz. Dex Hub gibi uygulamalarda bunun için sunucuda Plex Pass veya sizde Remote Watch Pass gerekir. Evde ücretsiz oynatılır.</string>
     <string name="server_library_sort_title">A\'dan Z\'ye</string>
     <string name="server_library_sort_released">En yeni çıkanlar</string>
     <string name="server_library_sort_added">Son eklenenler</string>

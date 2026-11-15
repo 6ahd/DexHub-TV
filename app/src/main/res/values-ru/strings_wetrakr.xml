@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR-код для подключения WeTrakr</string>
     <string name="wetrakr_missing_client">WeTrakr не настроен в этой сборке.</string>
     <string name="wetrakr_status_syncing">Синхронизация с WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Ожидание, пока вы разрешите Nuvio Arc в WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Ожидание, пока вы разрешите Dex Hub в WeTrakr</string>
     <string name="wetrakr_status_paused">Приостановлено</string>
     <string name="wetrakr_daily_limit_row">Дневной лимит WeTrakr исчерпан. Синхронизация возобновится в %1$s.</string>
     <string name="wetrakr_limit_message">Дневной лимит WeTrakr исчерпан. Воспроизведение работает как обычно, но просмотры не отправляются в WeTrakr до %1$s.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Готово. Добавлено в WeTrakr: %1$s, уже были или не найдены: %2$s.</string>
     <string name="wetrakr_upload_send">Отправить</string>
     <string name="wetrakr_upload_close">Закрыть</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc использует WeTrakr для истории просмотров, списков, отслеживания воспроизведения и похожих тайтлов. Данные предоставлены WeTrakr. Nuvio Arc не аффилирован с WeTrakr и не одобрен им.</string>
-    <string name="wetrakr_revoke_failed">Вы вышли здесь, но WeTrakr не удалось уведомить. Удалить Nuvio Arc можно в подключённых приложениях на wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub использует WeTrakr для истории просмотров, списков, отслеживания воспроизведения и похожих тайтлов. Данные предоставлены WeTrakr. Dex Hub не аффилирован с WeTrakr и не одобрен им.</string>
+    <string name="wetrakr_revoke_failed">Вы вышли здесь, но WeTrakr не удалось уведомить. Удалить Dex Hub можно в подключённых приложениях на wetrakr.com.</string>
 </resources>

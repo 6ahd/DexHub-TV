@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">支持 Nuvio 团队</string>
     <string name="support_nuvio_title">支持 Nuvio 团队</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc 基于官方 Nuvio 应用打造。会员费用归 Nuvio 团队所有，用于支付服务器和开发费用，并让核心应用对所有人保持免费。</string>
+    <string name="support_nuvio_subtitle">Dex Hub 基于官方 Nuvio 应用打造。会员费用归 Nuvio 团队所有，用于支付服务器和开发费用，并让核心应用对所有人保持免费。</string>
     <string name="support_nuvio_perk_themes">渐变主题</string>
     <string name="support_nuvio_perk_themes_desc">更多渐变主题，或自行创建。</string>
     <string name="support_nuvio_perk_backgrounds">个人资料背景</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">关闭</string>
     <string name="support_nuvio_checking">正在检查您的会员资格…</string>
     <string name="support_nuvio_thanks_title">感谢您支持 Nuvio 团队</string>
-    <string name="support_nuvio_thanks_subtitle">您的权益跟随您的 Nuvio 账户，因此在 Nuvio Arc 和官方应用中均可使用。</string>
+    <string name="support_nuvio_thanks_subtitle">您的权益跟随您的 Nuvio 账户，因此在 Dex Hub 和官方应用中均可使用。</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio 支持者</string>
-    <string name="support_nuvio_gentle_title">Nuvio Arc 的所有功能无需会员即可使用</string>
+    <string name="support_nuvio_gentle_title">Dex Hub 的所有功能无需会员即可使用</string>
     <string name="support_nuvio_gentle_body">此账号没有 Nuvio Supporter 会员。如果您想帮助 Nuvio 团队，会员会带来一些额外功能：</string>
-    <string name="support_nuvio_gentle_unavailable">暂时无法检查您的会员资格。Nuvio Arc 的所有功能无需会员即可使用。如果您想帮助 Nuvio 团队，会员可以带来一些额外权益：</string>
+    <string name="support_nuvio_gentle_unavailable">暂时无法检查您的会员资格。Dex Hub 的所有功能无需会员即可使用。如果您想帮助 Nuvio 团队，会员可以带来一些额外权益：</string>
     <string name="support_nuvio_gentle_scan">在手机上查看选项</string>
     <string name="support_nuvio_paid_check_again">刚付款？再次检查</string>
     <string name="support_nuvio_no_thanks">不用了，谢谢</string>

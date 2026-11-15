@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="type_movie">Film</string>
     <string name="type_series">Serija</string>
     <string name="type_unknown">Nepoznato</string>
@@ -256,7 +256,7 @@
     <!-- AboutScreen -->
     <string name="about_title">O nama</string>
     <string name="about_subtitle">Informacije o aplikaciji, ažuriranja i pravni linkovi</string>
-    <string name="about_made_with_love">Izgrađeno na sjajnom radu Tapframea i prijatelja ❤️ · Nuvio Arc od ysosrs123</string>
+    <string name="about_made_with_love">Izgrađeno na sjajnom radu Tapframea i prijatelja ❤️ · Dex Hub od ysosrs123</string>
     <string name="about_version">Verzija %1$s</string>
     <string name="about_check_updates">Provjeri ažuriranja</string>
     <string name="about_check_updates_subtitle">Preuzmi najnoviju verziju</string>
@@ -370,8 +370,8 @@
     <string name="playback_resolution_matching_sub">Dozvoli promjene načina prikaza kako bi odgovaralo rezoluciji videa.</string>
     <string name="playback_player_external_desc">Uvijek otvaraj streamove u vanjskoj aplikaciji</string>
     <string name="playback_player_ask_desc">Odaberi player svaki put</string>
-    <string name="playback_engine_exoplayer_desc">Najbolja kompatibilnost sa trenutnim Nuvio Arc funkcijama.</string>
-    <string name="playback_engine_mvplayer_desc">Koristi libmpv sa Nuvio Arc OSD kontrolama. Eksperimentalno.</string>
+    <string name="playback_engine_exoplayer_desc">Najbolja kompatibilnost sa trenutnim Dex Hub funkcijama.</string>
+    <string name="playback_engine_mvplayer_desc">Koristi libmpv sa Dex Hub OSD kontrolama. Eksperimentalno.</string>
 
     <!-- PlaybackAudioSettings -->
     <string name="audio_trailer_section">Trailer</string>
@@ -865,7 +865,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">P2P Streaming</string>
-    <string name="p2p_consent_body">Ovaj stream koristi peer-to-peer (P2P) tehnologiju. Omogućavanjem P2P-a, slažete se sa sljedećim:\n\n• Vaša IP adresa će biti vidljiva drugim učesnicima u mreži\n• Vi ste isključivo odgovorni za sadržaj kojem pristupate\n• Potvrđujete da imate zakonsko pravo streamati ovaj sadržaj u vašoj državi\n• Nuvio Arc ne hosta, ne distribuira i ne kontroliše bilo kakav P2P sadržaj\n• Nuvio Arc ne snosi odgovornost za bilo kakve pravne posljedice koje proizilaze iz vašeg korištenja P2P streaminga\n\nOvu funkciju koristite u potpunosti na vlastiti rizik. P2P možete isključiti bilo kada u Postavkama.</string>
+    <string name="p2p_consent_body">Ovaj stream koristi peer-to-peer (P2P) tehnologiju. Omogućavanjem P2P-a, slažete se sa sljedećim:\n\n• Vaša IP adresa će biti vidljiva drugim učesnicima u mreži\n• Vi ste isključivo odgovorni za sadržaj kojem pristupate\n• Potvrđujete da imate zakonsko pravo streamati ovaj sadržaj u vašoj državi\n• Dex Hub ne hosta, ne distribuira i ne kontroliše bilo kakav P2P sadržaj\n• Dex Hub ne snosi odgovornost za bilo kakve pravne posljedice koje proizilaze iz vašeg korištenja P2P streaminga\n\nOvu funkciju koristite u potpunosti na vlastiti rizik. P2P možete isključiti bilo kada u Postavkama.</string>
     <string name="p2p_consent_enable">Omogući P2P</string>
     <string name="p2p_consent_cancel">Otkaži</string>
     <string name="settings_p2p_title">P2P Streaming</string>
@@ -1220,7 +1220,7 @@
     <string name="catalog_see_all_empty_subtitle">Pokušaj sa drugim katalogom ili provjeri kasnije</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Dobrodošli u Nuvio Arc</string>
+    <string name="layout_selection_welcome">Dobrodošli u Dex Hub</string>
     <string name="layout_selection_subtitle">Odaberi raspored početnog ekrana</string>
     <string name="layout_selection_continue">Nastavi</string>
 
@@ -1405,7 +1405,7 @@
     <string name="cd_preview">Pregled</string>
     <string name="cd_test">Testiraj</string>
     <string name="cd_unlink">Odspoji</string>
-    <string name="cd_nuvio_logo">Nuvio Arc</string>
+    <string name="cd_nuvio_logo">Dex Hub</string>
     <string name="cd_trakt_logo">Trakt Logo</string>
     <string name="cd_trakt_qr">Trakt QR za aktivaciju</string>
     <string name="cd_imdb">IMDb</string>
@@ -1556,7 +1556,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Fontovi titlova</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed i Noto Sans (sa Noto Sans Arabic, Hebrew, Devanagari, Bengali i Tamil), autori: The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors i The Noto Project Authors. Pod licencom SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo i Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc se povezuje s tvojim vlastitim Jellyfin, Emby, Silo ili Plex serverom. Njihovi nazivi i logotipi pripadaju njihovim vlasnicima. Nuvio Arc nije povezan s projektima Jellyfin, Emby i Silo niti ga oni podržavaju.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub se povezuje s tvojim vlastitim Jellyfin, Emby, Silo ili Plex serverom. Njihovi nazivi i logotipi pripadaju njihovim vlasnicima. Dex Hub nije povezan s projektima Jellyfin, Emby i Silo niti ga oni podržavaju.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Liste grupa izdanja. MIT licenca.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -1604,7 +1604,7 @@
     <string name="playback_afr_closed">Zatvoreno</string>
     <string name="audio_tunneled_sub_prefer_app">Nedostupno dok je Prioritet Dekodera postavljen na Preferiraj dekodere aplikacije</string>
     <string name="audio_use_system_passthrough">Sistemski passthrough</string>
-    <string name="audio_use_system_passthrough_sub">Šalje TrueHD i DTS-HD receiveru kroz Android (sistemski put) umjesto kroz Nuvio Arc (IEC put). Zavisno od uređaja i audio postavki, ovo može ograničiti DTS-HD i DTS:X na standardni DTS ili ih ostaviti bez zvuka. Koristi samo ako lossless formati daju šum, kašnjenje ili nema zvuka.</string>
+    <string name="audio_use_system_passthrough_sub">Šalje TrueHD i DTS-HD receiveru kroz Android (sistemski put) umjesto kroz Dex Hub (IEC put). Zavisno od uređaja i audio postavki, ovo može ograničiti DTS-HD i DTS:X na standardni DTS ili ih ostaviti bez zvuka. Koristi samo ako lossless formati daju šum, kašnjenje ili nema zvuka.</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD i DTS:X passthrough</string>
     <string name="audio_dtshd_tv_passthrough_sub">Odaberite TV passthrough ako zvučna traka prikazuje običan DTS ili ne reprodukuje ništa na DTS-HD ili DTS:X filmovima.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Standardno</string>
@@ -1726,7 +1726,7 @@
     <string name="floppy_tracking_description">Šalji ono što gledaš na vlastiti Floppy server</string>
     <string name="floppy_connected_to">Povezano s %1$s</string>
     <string name="floppy_connected_description">Ono što gledaš na ovom profilu ide u Floppy: „Now Playing” dok gledaš, završeni naslovi u historiju, zaustavljeni s tačkom nastavka. Prenosi se i „Označi kao odgledano”. Poništavanje oznake filma ovdje resetuje sva njegova gledanja u Floppyju; kod epizode se povlači samo posljednje gledanje. Na starijem Floppy serveru uklanjaju se samo gledanja koja je Arc dodao filmu.</string>
-    <string name="floppy_qr_description">QR kod za odobrenje Nuvio Arc u Floppyju</string>
+    <string name="floppy_qr_description">QR kod za odobrenje Dex Hub u Floppyju</string>
     <string name="floppy_address_instruction">Unesi adresu na kojoj otvaraš Floppy u pregledniku.</string>
     <string name="floppy_token_instruction">U Floppyju otvori Settings, Integrations, App tokens i napravi token za ovaj TV.</string>
     <string name="floppy_address_placeholder">Adresa servera, na primjer 192.168.1.20:8000</string>
@@ -2073,7 +2073,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV ne podržava promjenu veličine slikovnih titlova. Koristi ExoPlayer da podesiš njihovu veličinu nezavisno od teksta.</string>
     <string name="subtitle_style_image_size">Veličina slikovnih titlova</string>
     <string name="v2_accent_fixed_hint">Koristi temu boja osim ako je odabrano prilagođavanje slikama.</string>
-    <string name="about_fork_updates_subtitle">Ažuriranja iz Nuvio Arc izdanja na GitHubu.</string>
+    <string name="about_fork_updates_subtitle">Ažuriranja iz Dex Hub izdanja na GitHubu.</string>
     <string name="playback_speculative_stream_search">Traži izvore prije puštanja</string>
     <string name="playback_speculative_stream_search_sub">Pretražuj addone tokom pregledanja radi bržeg odabira izvora. Neki addoni pri pretrazi mogu dodati ili preuzeti sadržaj. Isključeno čeka do puštanja. Medijski linkovi i razrješavanje kod provajdera čekaju odabir za reprodukciju, osim pred kraj epizode kada thumbnailovi za premotavanje pripremaju sljedeću.</string>
     <string name="playback_source_line_badges">Značke izvora na stranici detalja</string>
@@ -2483,7 +2483,7 @@
     <string name="format_check_note_dv5">Vaše postavke pretvaraju Profile 5 u 8.1.</string>
     <string name="format_check_note_hdr10_plus">Vaše postavke uklanjaju HDR10+ podatke.</string>
     <string name="playback_release_decoder_on_background">Oslobodi dekoder u pozadini</string>
-    <string name="playback_release_decoder_on_background_sub">Oslobađa video dekoder kada Nuvio Arc pređe u pozadinu. Uključite ako reprodukcija javi grešku dekodera nakon povratka u aplikaciju. Plejer se ponovo učitava pri povratku, i nakon čuvara ekrana</string>
+    <string name="playback_release_decoder_on_background_sub">Oslobađa video dekoder kada Dex Hub pređe u pozadinu. Uključite ako reprodukcija javi grešku dekodera nakon povratka u aplikaciju. Plejer se ponovo učitava pri povratku, i nakon čuvara ekrana</string>
     <string name="autosync_toast_no_fit">Sinhronizacija nije uspjela: ovi titlovi ne odgovaraju ovoj verziji videa.</string>
     <string name="layout_hero_description_auto_scroll">Automatsko pomjeranje opisa</string>
     <string name="layout_hero_description_auto_scroll_sub">Polako pomjera duge opise na Početnoj umjesto da ih odsiječe.</string>
@@ -2494,7 +2494,7 @@
     <string name="web_subtitle_font_added">Dodano na TV</string>
     <string name="web_subtitle_font_error">Font nije moguće uvesti. Odaberi ispravnu .ttf ili .otf datoteku manju od 10 MB.</string>
     <string name="web_subtitle_font_connection_error">Greška veze</string>
-    <string name="player_dts_hd_decoding_notice">Lossless DTS-HD izlaz je prestao raditi, pa Nuvio Arc sam dekodira zvuk ovog naslova.</string>
+    <string name="player_dts_hd_decoding_notice">Lossless DTS-HD izlaz je prestao raditi, pa Dex Hub sam dekodira zvuk ovog naslova.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Metapodaci</string>
     <string name="addon_health_ok">OK</string>
@@ -2502,13 +2502,13 @@
     <string name="addon_health_down">Ne radi</string>
     <string name="addon_health_setup">Postavljanje</string>
     <string name="appearance_launcher_artwork">Izgled u pokretaču</string>
-    <string name="appearance_launcher_artwork_subtitle">Odaberi kako se Nuvio Arc prikazuje na početnom ekranu TV-a</string>
+    <string name="appearance_launcher_artwork_subtitle">Odaberi kako se Dex Hub prikazuje na početnom ekranu TV-a</string>
     <string name="appearance_app_icon_and_banner">Ikona aplikacije i baner</string>
     <string name="appearance_app_icon_and_banner_subtitle">Promijeni ikonu aplikacije i baner</string>
     <string name="appearance_app_icon_picker_title">Odaberi ikonu aplikacije i baner</string>
     <string name="appearance_app_icon_picker_subtitle">Svaki stil ima odgovarajuću kvadratnu ikonu i TV baner</string>
     <string name="appearance_app_icon_confirmation_title">Promijeniti ikonu aplikacije?</string>
-    <string name="appearance_app_icon_confirmation_message">Prelazak na %1$s ponovo pokreće Nuvio Arc s novom ikonom. Početnom ekranu može trebati nekoliko sekundi da je prikaže, a TV baner može zahtijevati ponovno pokretanje uređaja. Odaberi OK za nastavak.</string>
+    <string name="appearance_app_icon_confirmation_message">Prelazak na %1$s ponovo pokreće Dex Hub s novom ikonom. Početnom ekranu može trebati nekoliko sekundi da je prikaže, a TV baner može zahtijevati ponovno pokretanje uređaja. Odaberi OK za nastavak.</string>
     <string name="appearance_app_icon_change_failed">Ikona i baner nisu promijenjeni. Pokušaj ponovo.</string>
     <string name="appearance_app_icon_original">Originalna</string>
     <string name="appearance_app_icon_arctic_blue">Arktička plava</string>

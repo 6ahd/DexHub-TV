@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">WeTrakrに接続するためのQRコード</string>
     <string name="wetrakr_missing_client">このビルドではWeTrakrが設定されていません。</string>
     <string name="wetrakr_status_syncing">WeTrakrと同期中…</string>
-    <string name="wetrakr_status_enter_code">WeTrakrでNuvio Arcが許可されるのを待っています</string>
+    <string name="wetrakr_status_enter_code">WeTrakrでDex Hubが許可されるのを待っています</string>
     <string name="wetrakr_status_paused">一時停止中</string>
     <string name="wetrakr_daily_limit_row">本日のWeTrakrの上限に達しました。同期は%1$sに再開します。</string>
     <string name="wetrakr_limit_message">本日のWeTrakrの上限に達しました。再生には影響しませんが、%1$sまで視聴はWeTrakrに送信されません。</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">完了: WeTrakrに%1$s件追加、%2$s件は登録済みか見つかりませんでした。</string>
     <string name="wetrakr_upload_send">送信</string>
     <string name="wetrakr_upload_close">閉じる</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arcは視聴履歴、リスト、再生の記録、類似作品にWeTrakrを使用します。データ提供: WeTrakr。Nuvio ArcはWeTrakrと提携または承認されていません。</string>
-    <string name="wetrakr_revoke_failed">ここではサインアウトしましたが、WeTrakrに通知できませんでした。wetrakr.comの連携済みアプリからNuvio Arcを削除できます。</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hubは視聴履歴、リスト、再生の記録、類似作品にWeTrakrを使用します。データ提供: WeTrakr。Dex HubはWeTrakrと提携または承認されていません。</string>
+    <string name="wetrakr_revoke_failed">ここではサインアウトしましたが、WeTrakrに通知できませんでした。wetrakr.comの連携済みアプリからDex Hubを削除できます。</string>
 </resources>

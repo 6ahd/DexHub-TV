@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">Er zijn geen film- of seriebibliotheken beschikbaar voor deze gebruiker.</string>
     <string name="servers_refresh_libraries">Bibliotheken vernieuwen</string>
     <string name="servers_display_name">Weergavenaam</string>
-    <string name="servers_display_name_description">De naam die Nuvio Arc voor deze server toont op Home, in Instellingen en bij bronnen.</string>
+    <string name="servers_display_name_description">De naam die Dex Hub voor deze server toont op Home, in Instellingen en bij bronnen.</string>
     <string name="servers_display_name_server_name">Eigen naam van de server: %1$s</string>
-    <string name="servers_display_name_dialog_description">Kies de naam die Nuvio Arc voor deze server toont. Laat leeg om de eigen naam van de server te gebruiken.</string>
+    <string name="servers_display_name_dialog_description">Kies de naam die Dex Hub voor deze server toont. Laat leeg om de eigen naam van de server te gebruiken.</string>
     <string name="servers_display_name_reset">Terugzetten naar servernaam</string>
     <string name="servers_enabled">Ingeschakeld</string>
     <string name="servers_enabled_description">Toon deze server op Home, bij zoeken en in streamresultaten.</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">Deze gebruiker heeft geen toegang.</string>
     <string name="servers_error_failed">Kon geen verbinding maken met de server.</string>
     <string name="servers_error_website">Dit adres opent een website, geen mediaserver. Voer het eigen adres van de server in.</string>
-    <string name="servers_error_silo_website">Nuvio Arc kon het Jellyfin-adres van deze Silo-server niet vinden. Open in Silo Settings &gt; Connect Apps &gt; Jellyfin-compatible app en voer het adres in dat onder Server staat.</string>
+    <string name="servers_error_silo_website">Dex Hub kon het Jellyfin-adres van deze Silo-server niet vinden. Open in Silo Settings &gt; Connect Apps &gt; Jellyfin-compatible app en voer het adres in dat onder Server staat.</string>
     <string name="servers_error_silo_jellyfin_off">Jellyfin-apps staan uit op deze Silo-server. Vraag de eigenaar van de server om ze aan te zetten.</string>
     <string name="servers_error_profile_needed">Zet # en de naam van je Silo-profiel achter je gebruikersnaam, zoals naam#Profiel of naam#1234#Profiel.</string>
     <string name="servers_error_profile_not_found">Silo leest het deel na de laatste # als profielnaam en heeft geen profiel met die naam. Staat er een # in je gebruikersnaam, zet dan # en je profielnaam aan het eind, zoals naam#1234#Profiel.</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">Dit item is niet meer beschikbaar op de server.</string>
     <string name="servers_failure_certificate">Het certificaat van deze server wordt niet herkend.</string>
     <string name="servers_certificate_title">Het certificaat van deze server wordt niet herkend</string>
-    <string name="servers_certificate_intro">Nuvio Arc kon de identiteit van %1$s niet bevestigen.</string>
+    <string name="servers_certificate_intro">Dex Hub kon de identiteit van %1$s niet bevestigen.</string>
     <string name="servers_certificate_untrusted">Het certificaat is zelfondertekend of uitgegeven door een privé-instantie.</string>
     <string name="servers_certificate_name_mismatch">Het certificaat is uitgegeven voor een andere naam.</string>
     <string name="servers_certificate_expired">Het certificaat valt buiten zijn geldigheidsperiode.</string>
-    <string name="servers_certificate_advice">Als dit je eigen server is en je dit verwacht, kun je dit certificaat vertrouwen. Nuvio Arc accepteert dan alleen precies dit certificaat voor deze server en waarschuwt je als het ooit verandert. Ben je niet op je thuisnetwerk, controleer dan eerst de vingerafdruk bij de eigenaar van de server.</string>
+    <string name="servers_certificate_advice">Als dit je eigen server is en je dit verwacht, kun je dit certificaat vertrouwen. Dex Hub accepteert dan alleen precies dit certificaat voor deze server en waarschuwt je als het ooit verandert. Ben je niet op je thuisnetwerk, controleer dan eerst de vingerafdruk bij de eigenaar van de server.</string>
     <string name="servers_certificate_details">Uitgegeven aan: %1$s\nUitgegeven door: %2$s\nGeldig: %3$s tot %4$s\nVingerafdruk (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Dit certificaat vertrouwen</string>
     <string name="servers_certificate_unavailable">De beveiligde verbinding is mislukt en het certificaat van de server kon niet worden gelezen.</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo-aanmelding (aanbevolen)</string>
     <string name="silo_method_native_description">Meld je aan met een code op je telefoon of met je Silo-wachtwoord. Werkt met elke manier waarop je server mensen aanmeldt (wachtwoord, OpenID Connect, LDAP, Tailscale). Neemt je Silo-profielen en de rijen van je Silo Home mee.</string>
     <string name="silo_method_jellyfin">Jellyfin-compatibel</string>
-    <string name="silo_method_jellyfin_description">Gebruikt het Silo-adres voor Jellyfin-apps, met gebruikersnaam en wachtwoord (naam#Profiel voor een profiel). Zo maakte Nuvio Arc tot nu toe verbinding met Silo.</string>
+    <string name="silo_method_jellyfin_description">Gebruikt het Silo-adres voor Jellyfin-apps, met gebruikersnaam en wachtwoord (naam#Profiel voor een profiel). Zo maakte Dex Hub tot nu toe verbinding met Silo.</string>
     <string name="silo_setup_next">Volgende</string>
     <string name="silo_code_step_open">Scan op je telefoon de code of open %1$s</string>
     <string name="silo_code_step_sign_in">Meld je daar aan zoals je gewend bent</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">Of meld je aan met een code: %1$s op %2$s</string>
     <string name="silo_signing_in">Aanmelden…</string>
     <string name="silo_profiles_title">Wie kijkt er?</string>
-    <string name="silo_profiles_subtitle">%1$s heeft meer dan één profiel. Nuvio Arc gebruikt het profiel dat je kiest voor voortgang, bekeken-markeringen en rijen op Home. Je kunt het later wijzigen op de pagina van de server.</string>
+    <string name="silo_profiles_subtitle">%1$s heeft meer dan één profiel. Dex Hub gebruikt het profiel dat je kiest voor voortgang, bekeken-markeringen en rijen op Home. Je kunt het later wijzigen op de pagina van de server.</string>
     <string name="silo_profile_pin">Pincode</string>
     <string name="silo_profile_child">Kind</string>
     <string name="silo_pin_title">Pincode voor %1$s</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">Profiel</string>
     <string name="servers_silo_profile_description">Voortgang, bekeken-markeringen en rijen op Home volgen dit profiel.</string>
     <string name="servers_silo_home_rows">Rijen van Silo Home</string>
-    <string name="servers_silo_home_rows_description">Toon de rijen van je Silo Home (je lijsten, Trending, Volgende aflevering…) op Home in Nuvio Arc.</string>
+    <string name="servers_silo_home_rows_description">Toon de rijen van je Silo Home (je lijsten, Trending, Volgende aflevering…) op Home in Dex Hub.</string>
     <string name="servers_silo_switch">Overschakelen naar Silo-aanmelding</string>
     <string name="servers_silo_switch_description">Meldt je aan via Silo-aanmelding en vervangt daarna deze verbinding. De naam en bibliotheekkeuzes blijven.</string>
     <string name="servers_add_plex_description">Meld je aan met een code op plex.tv/link. Je servers worden voor je gevonden.</string>
-    <string name="plex_sign_in_subtitle">Geen serveradres nodig: Nuvio Arc vindt je Plex-servers nadat je je hebt aangemeld.</string>
+    <string name="plex_sign_in_subtitle">Geen serveradres nodig: Dex Hub vindt je Plex-servers nadat je je hebt aangemeld.</string>
     <string name="plex_code_step_open">Open op je telefoon of computer %1$s (of scan de code)</string>
     <string name="plex_code_step_sign_in">Meld je aan bij Plex als daarom wordt gevraagd</string>
     <string name="plex_code_step_link">Typ de code hierboven en druk op Link</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">bereikt via internet</string>
     <string name="plex_reach_relay_detail">alleen bereikbaar via Plex Relay (traag, ongeveer 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">nu offline</string>
-    <string name="plex_users_subtitle">Je Plex-account heeft Plex Home-gebruikers. Nuvio Arc gebruikt de gebruiker die je kiest voor voortgang, bekeken-markeringen en Verder kijken op %1$s. Je kunt dit later wijzigen op de pagina van de server.</string>
+    <string name="plex_users_subtitle">Je Plex-account heeft Plex Home-gebruikers. Dex Hub gebruikt de gebruiker die je kiest voor voortgang, bekeken-markeringen en Verder kijken op %1$s. Je kunt dit later wijzigen op de pagina van de server.</string>
     <string name="plex_user_owner">Eigenaar</string>
     <string name="plex_user_managed">Beheerd</string>
     <string name="plex_other_user">Andere gebruiker</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home-gebruiker</string>
     <string name="plex_home_user_description">Voortgang, bekeken-markeringen en Verder kijken volgen deze gebruiker.</string>
     <string name="plex_home_rows">Plex-rijen op Home</string>
-    <string name="plex_home_rows_description">Toon de eigen rijen van Plex van deze server (Recent toegevoegd en meer) op Home in Nuvio Arc.</string>
-    <string name="plex_remote_pass_needed">Plex speelt dit niet af buiten je thuisnetwerk. In apps zoals Nuvio Arc is daarvoor Plex Pass op de server nodig, of een Remote Watch Pass voor jou. Thuis speelt het gratis af.</string>
+    <string name="plex_home_rows_description">Toon de eigen rijen van Plex van deze server (Recent toegevoegd en meer) op Home in Dex Hub.</string>
+    <string name="plex_remote_pass_needed">Plex speelt dit niet af buiten je thuisnetwerk. In apps zoals Dex Hub is daarvoor Plex Pass op de server nodig, of een Remote Watch Pass voor jou. Thuis speelt het gratis af.</string>
     <string name="server_library_sort_title">A tot Z</string>
     <string name="server_library_sort_released">Nieuwste releases</string>
     <string name="server_library_sort_added">Recent toegevoegd</string>

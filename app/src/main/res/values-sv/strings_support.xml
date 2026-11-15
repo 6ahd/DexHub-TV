@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">Stöd Nuvio-teamet</string>
     <string name="support_nuvio_title">Stöd Nuvio-teamet</string>
-    <string name="support_nuvio_subtitle">Nuvio Arc bygger på den officiella Nuvio-appen. Ett medlemskap går till Nuvio-teamet, hjälper till att betala servrar och utveckling och håller kärnappen gratis för alla.</string>
+    <string name="support_nuvio_subtitle">Dex Hub bygger på den officiella Nuvio-appen. Ett medlemskap går till Nuvio-teamet, hjälper till att betala servrar och utveckling och håller kärnappen gratis för alla.</string>
     <string name="support_nuvio_perk_themes">Gradientteman</string>
     <string name="support_nuvio_perk_themes_desc">Extra gradientteman, eller skapa ditt eget.</string>
     <string name="support_nuvio_perk_backgrounds">Profilbakgrunder</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Stäng</string>
     <string name="support_nuvio_checking">Kontrollerar ditt medlemskap…</string>
     <string name="support_nuvio_thanks_title">Tack för att du stöder Nuvio-teamet</string>
-    <string name="support_nuvio_thanks_subtitle">Dina förmåner följer ditt Nuvio-konto, så de fungerar här i Nuvio Arc och i den officiella appen.</string>
+    <string name="support_nuvio_thanks_subtitle">Dina förmåner följer ditt Nuvio-konto, så de fungerar här i Dex Hub och i den officiella appen.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio Supporter</string>
-    <string name="support_nuvio_gentle_title">Allt i Nuvio Arc fungerar utan medlemskap</string>
+    <string name="support_nuvio_gentle_title">Allt i Dex Hub fungerar utan medlemskap</string>
     <string name="support_nuvio_gentle_body">Det här kontot har inget Nuvio Supporter-medlemskap. Om du någon gång vill hjälpa Nuvio-teamet ger ett medlemskap några extra förmåner:</string>
-    <string name="support_nuvio_gentle_unavailable">Ditt medlemskap kunde inte kontrolleras just nu. Allt i Nuvio Arc fungerar även utan. Om du vill hjälpa Nuvio-teamet ger ett medlemskap några extra förmåner:</string>
+    <string name="support_nuvio_gentle_unavailable">Ditt medlemskap kunde inte kontrolleras just nu. Allt i Dex Hub fungerar även utan. Om du vill hjälpa Nuvio-teamet ger ett medlemskap några extra förmåner:</string>
     <string name="support_nuvio_gentle_scan">Se alternativen på din telefon</string>
     <string name="support_nuvio_paid_check_again">Betalat nyss? Kontrollera igen</string>
     <string name="support_nuvio_no_thanks">Nej tack</string>

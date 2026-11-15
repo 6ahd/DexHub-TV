@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio Arc</string>
+    <string name="app_name">Dex Hub</string>
     <string name="type_movie">फ़िल्म</string>
     <string name="type_series">सीरीज़</string>
     <string name="type_unknown">अज्ञात</string>
@@ -179,7 +179,7 @@
     <!-- AboutScreen -->
     <string name="about_title">ऐप के बारे में</string>
     <string name="about_subtitle">ऐप जानकारी, अपडेट और कानूनी लिंक</string>
-    <string name="about_made_with_love">Tapframe और दोस्तों के शानदार काम पर आधारित ❤️ · Nuvio Arc, ysosrs123 द्वारा</string>
+    <string name="about_made_with_love">Tapframe और दोस्तों के शानदार काम पर आधारित ❤️ · Dex Hub, ysosrs123 द्वारा</string>
     <string name="about_version">वर्ज़न %1$s</string>
     <string name="about_check_updates">अपडेट जांचें</string>
     <string name="about_check_updates_subtitle">नवीनतम रिलीज़ डाउनलोड करें</string>
@@ -563,7 +563,7 @@
     <string name="trakt_stat_watched_hours">देखे गए घंटे</string>
     <string name="trakt_disconnect">डिस्कनेक्ट</string>
     <string name="trakt_disconnect_title">Trakt डिस्कनेक्ट करें?</string>
-    <string name="trakt_disconnect_subtitle">यह आपके Trakt अकाउंट को Nuvio Arc से डिस्कनेक्ट कर देगा।</string>
+    <string name="trakt_disconnect_subtitle">यह आपके Trakt अकाउंट को Dex Hub से डिस्कनेक्ट कर देगा।</string>
     <string name="trakt_login">लॉगिन</string>
     <string name="trakt_retry">फिर से कोशिश करें</string>
     <string name="trakt_back">वापस</string>
@@ -932,7 +932,7 @@
     <string name="catalog_see_all_empty_subtitle">कोई दूसरा कैटलॉग आज़माएँ या बाद में देखें</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Nuvio Arc में आपका स्वागत है</string>
+    <string name="layout_selection_welcome">Dex Hub में आपका स्वागत है</string>
     <string name="layout_selection_subtitle">अपना होम स्क्रीन लेआउट चुनें</string>
     <string name="layout_selection_continue">जारी रखें</string>
 
@@ -1060,7 +1060,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">सबटाइटल फ़ॉन्ट</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed और Noto Sans (Noto Sans Arabic, Hebrew, Devanagari, Bengali और Tamil के साथ), The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors और The Noto Project Authors द्वारा। SIL Open Font License, Version 1.1 के तहत लाइसेंस प्राप्त।</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo और Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc आपके अपने Jellyfin, Emby, Silo या Plex सर्वर से कनेक्ट होता है। उनके नाम और लोगो उनके मालिकों के हैं। Nuvio Arc का Jellyfin, Emby या Silo से कोई संबंध नहीं है और न ही यह उनके द्वारा समर्थित है।</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub आपके अपने Jellyfin, Emby, Silo या Plex सर्वर से कनेक्ट होता है। उनके नाम और लोगो उनके मालिकों के हैं। Dex Hub का Jellyfin, Emby या Silo से कोई संबंध नहीं है और न ही यह उनके द्वारा समर्थित है।</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">रिलीज़ ग्रुप सूचियाँ। MIT लाइसेंस।</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -1108,7 +1108,7 @@
     <string name="playback_afr_closed">बंद</string>
     <string name="audio_tunneled_sub_prefer_app">जब \"डिकोडर प्राथमिकता\" \"ऐप डिकोडर को प्राथमिकता दें\" पर सेट हो, तब उपलब्ध नहीं</string>
     <string name="audio_use_system_passthrough">सिस्टम पासथ्रू</string>
-    <string name="audio_use_system_passthrough_sub">TrueHD और DTS-HD को Nuvio Arc (IEC पाथ) की जगह Android (सिस्टम पाथ) से रिसीवर को भेजता है। आपके डिवाइस और ऑडियो सेटअप के अनुसार, इससे DTS-HD और DTS:X मानक DTS तक सीमित हो सकते हैं या उनकी आवाज़ बिल्कुल बंद हो सकती है। इसे केवल तभी इस्तेमाल करें जब लॉसलेस फ़ॉर्मेट में शोर, ड्रिफ़्ट या आवाज़ न आने की समस्या हो।</string>
+    <string name="audio_use_system_passthrough_sub">TrueHD और DTS-HD को Dex Hub (IEC पाथ) की जगह Android (सिस्टम पाथ) से रिसीवर को भेजता है। आपके डिवाइस और ऑडियो सेटअप के अनुसार, इससे DTS-HD और DTS:X मानक DTS तक सीमित हो सकते हैं या उनकी आवाज़ बिल्कुल बंद हो सकती है। इसे केवल तभी इस्तेमाल करें जब लॉसलेस फ़ॉर्मेट में शोर, ड्रिफ़्ट या आवाज़ न आने की समस्या हो।</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD और DTS:X पासथ्रू</string>
     <string name="audio_dtshd_tv_passthrough_sub">अगर आपका साउंडबार सादा DTS दिखाता है या DTS-HD या DTS:X फ़िल्मों पर कुछ नहीं चलाता, तो TV पासथ्रू चुनें।</string>
     <string name="audio_dtshd_tv_passthrough_standard">मानक</string>
@@ -1230,7 +1230,7 @@
     <string name="floppy_tracking_description">जो आप देखते हैं, उसे अपने Floppy सर्वर पर भेजें</string>
     <string name="floppy_connected_to">%1$s से कनेक्टेड</string>
     <string name="floppy_connected_description">इस प्रोफाइल पर आप जो देखते हैं वह Floppy में जाता है: देखते समय “Now Playing” में, पूरे देखे गए टाइटल हिस्ट्री में, रोके गए टाइटल रिज़्यूम पॉइंट के साथ। “देख लिया” भी साथ जाता है। यहाँ किसी फ़िल्म का निशान हटाने से Floppy में उसके सभी प्ले रीसेट हो जाते हैं; एपिसोड का निशान हटाने पर केवल उसका आखिरी प्ले वापस लिया जाता है। पुराने Floppy सर्वर पर केवल वे प्ले हटते हैं जो Arc ने किसी फ़िल्म में जोड़े थे।</string>
-    <string name="floppy_qr_description">Floppy में Nuvio Arc को स्वीकृत करने के लिए QR कोड</string>
+    <string name="floppy_qr_description">Floppy में Dex Hub को स्वीकृत करने के लिए QR कोड</string>
     <string name="floppy_address_instruction">वह पता दर्ज करें जिससे आप ब्राउज़र में Floppy खोलते हैं।</string>
     <string name="floppy_token_instruction">Floppy में Settings, Integrations, App tokens खोलें और इस TV के लिए एक टोकन बनाएँ।</string>
     <string name="floppy_address_placeholder">सर्वर पता, जैसे 192.168.1.20:8000</string>
@@ -1577,7 +1577,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV इमेज सबटाइटल का साइज़ बदलना सपोर्ट नहीं करता। इमेज सबटाइटल का साइज़ टेक्स्ट से अलग बदलने के लिए ExoPlayer इस्तेमाल करें।</string>
     <string name="subtitle_style_image_size">इमेज सबटाइटल साइज़</string>
     <string name="v2_accent_fixed_hint">रंग थीम इस्तेमाल करता है, जब तक आर्टवर्क एक्सेंट न चुना गया हो।</string>
-    <string name="about_fork_updates_subtitle">GitHub पर Nuvio Arc रिलीज़ से अपडेट।</string>
+    <string name="about_fork_updates_subtitle">GitHub पर Dex Hub रिलीज़ से अपडेट।</string>
     <string name="playback_speculative_stream_search">प्ले से पहले सोर्स खोजें</string>
     <string name="playback_speculative_stream_search_sub">सोर्स चयन तेज़ करने के लिए ब्राउज़ करते समय ऐडऑन खोजें। कुछ ऐडऑन खोज के दौरान कंटेंट जोड़ या ला सकते हैं। बंद होने पर प्ले तक इंतज़ार होता है। मीडिया लिंक और प्रोवाइडर रिज़ॉल्यूशन प्लेबैक चयन तक रुकते हैं, सिवाय एपिसोड के अंत के पास जब सीक थंबनेल अगला एपिसोड तैयार करते हैं।</string>
     <string name="playback_source_line_badges">डिटेल्स पेज पर सोर्स बैज</string>
@@ -1769,7 +1769,7 @@
     <string name="party_match_same">होस्ट वाली ही फ़ाइल</string>
     <string name="party_match_likely">शायद होस्ट वाली कॉपी</string>
     <string name="party_match_different">होस्ट से अलग कॉपी</string>
-    <string name="party_invite_text">Nuvio Arc में मेरी वॉच पार्टी से जुड़ें। सेटिंग्स खोलें, फिर वॉच पार्टी, और कोड %1$s डालें</string>
+    <string name="party_invite_text">Dex Hub में मेरी वॉच पार्टी से जुड़ें। सेटिंग्स खोलें, फिर वॉच पार्टी, और कोड %1$s डालें</string>
     <string name="party_invite_qr">इनवाइट मैसेज करने के लिए फ़ोन के कैमरे से स्कैन करें</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -1987,7 +1987,7 @@
     <string name="format_check_note_dv5">आपकी सेटिंग Profile 5 को 8.1 में बदलती हैं।</string>
     <string name="format_check_note_hdr10_plus">आपकी सेटिंग HDR10+ डेटा हटा देती हैं।</string>
     <string name="playback_release_decoder_on_background">बैकग्राउंड में डिकोडर छोड़ें</string>
-    <string name="playback_release_decoder_on_background_sub">जब Nuvio Arc बैकग्राउंड में जाता है तो वीडियो डिकोडर को खाली कर देता है। अगर ऐप पर लौटने के बाद प्लेबैक डिकोडर त्रुटि के साथ विफल हो तो इसे चालू करें। लौटने पर प्लेयर फिर से लोड होता है, स्क्रीनसेवर के बाद भी</string>
+    <string name="playback_release_decoder_on_background_sub">जब Dex Hub बैकग्राउंड में जाता है तो वीडियो डिकोडर को खाली कर देता है। अगर ऐप पर लौटने के बाद प्लेबैक डिकोडर त्रुटि के साथ विफल हो तो इसे चालू करें। लौटने पर प्लेयर फिर से लोड होता है, स्क्रीनसेवर के बाद भी</string>
     <string name="autosync_toast_no_fit">सिंक विफल: ये सबटाइटल वीडियो के इस संस्करण से मेल नहीं खाते।</string>
     <string name="layout_hero_description_auto_scroll">विवरण अपने आप स्क्रॉल करें</string>
     <string name="layout_hero_description_auto_scroll_sub">लंबे विवरणों को काटने के बजाय होम स्क्रीन पर धीरे-धीरे स्क्रॉल करता है।</string>
@@ -1998,7 +1998,7 @@
     <string name="web_subtitle_font_added">आपके टीवी में जोड़ दिया गया</string>
     <string name="web_subtitle_font_error">यह फ़ॉन्ट इंपोर्ट नहीं हो सका। 10 MB से छोटी सही .ttf या .otf फ़ाइल चुनें।</string>
     <string name="web_subtitle_font_connection_error">कनेक्शन में गड़बड़ी</string>
-    <string name="player_dts_hd_decoding_notice">लॉसलेस DTS-HD आउटपुट ने काम करना बंद कर दिया, इसलिए Nuvio Arc इस टाइटल की आवाज़ खुद डिकोड कर रहा है।</string>
+    <string name="player_dts_hd_decoding_notice">लॉसलेस DTS-HD आउटपुट ने काम करना बंद कर दिया, इसलिए Dex Hub इस टाइटल की आवाज़ खुद डिकोड कर रहा है।</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">मेटाडेटा</string>
     <string name="addon_health_ok">ठीक</string>
@@ -2006,13 +2006,13 @@
     <string name="addon_health_down">बंद</string>
     <string name="addon_health_setup">सेटअप</string>
     <string name="appearance_launcher_artwork">लॉन्चर आर्टवर्क</string>
-    <string name="appearance_launcher_artwork_subtitle">चुनें कि TV की होम स्क्रीन पर Nuvio Arc कैसा दिखे</string>
+    <string name="appearance_launcher_artwork_subtitle">चुनें कि TV की होम स्क्रीन पर Dex Hub कैसा दिखे</string>
     <string name="appearance_app_icon_and_banner">ऐप आइकन और बैनर</string>
     <string name="appearance_app_icon_and_banner_subtitle">ऐप आइकन और बैनर बदलें</string>
     <string name="appearance_app_icon_picker_title">ऐप आइकन और बैनर चुनें</string>
     <string name="appearance_app_icon_picker_subtitle">हर स्टाइल में मेल खाता चौकोर आइकन और TV बैनर शामिल है</string>
     <string name="appearance_app_icon_confirmation_title">ऐप आइकन बदलें?</string>
-    <string name="appearance_app_icon_confirmation_message">%1$s पर बदलने से Nuvio Arc नए आइकन के साथ रीस्टार्ट होगा। होम स्क्रीन पर इसे दिखने में कुछ सेकंड लग सकते हैं, और TV बैनर के लिए डिवाइस रीस्टार्ट करना पड़ सकता है। जारी रखने के लिए ठीक है चुनें।</string>
+    <string name="appearance_app_icon_confirmation_message">%1$s पर बदलने से Dex Hub नए आइकन के साथ रीस्टार्ट होगा। होम स्क्रीन पर इसे दिखने में कुछ सेकंड लग सकते हैं, और TV बैनर के लिए डिवाइस रीस्टार्ट करना पड़ सकता है। जारी रखने के लिए ठीक है चुनें।</string>
     <string name="appearance_app_icon_change_failed">आइकन और बैनर नहीं बदले जा सके। कृपया फिर से कोशिश करें।</string>
     <string name="appearance_app_icon_original">मूल</string>
     <string name="appearance_app_icon_arctic_blue">आर्कटिक ब्लू</string>

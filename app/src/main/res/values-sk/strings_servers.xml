@@ -87,9 +87,9 @@
     <string name="servers_quick_connect_expired">Platnosť tohto kódu vypršala.</string>
     <string name="servers_libraries_home_description">Vybrané knižnice dostanú riadok na domovskej obrazovke. Vyhľadávanie a výsledky streamov vždy používajú všetky knižnice.</string>
     <string name="servers_display_name">Zobrazovaný názov</string>
-    <string name="servers_display_name_description">Názov, ktorý Nuvio Arc pre tento server zobrazuje na domovskej obrazovke, v Nastaveniach a pri zdrojoch.</string>
+    <string name="servers_display_name_description">Názov, ktorý Dex Hub pre tento server zobrazuje na domovskej obrazovke, v Nastaveniach a pri zdrojoch.</string>
     <string name="servers_display_name_server_name">Vlastný názov servera: %1$s</string>
-    <string name="servers_display_name_dialog_description">Zvoľte názov, ktorý Nuvio Arc pre tento server zobrazuje. Nechajte prázdne, ak chcete použiť vlastný názov servera.</string>
+    <string name="servers_display_name_dialog_description">Zvoľte názov, ktorý Dex Hub pre tento server zobrazuje. Nechajte prázdne, ak chcete použiť vlastný názov servera.</string>
     <string name="servers_display_name_reset">Obnoviť názov servera</string>
     <string name="servers_import_continue_watching">Importovať Pokračovať v sledovaní</string>
     <string name="servers_import_continue_watching_description">Tituly rozpozerané na %1$s sa zobrazia v Pokračovať v sledovaní na domovskej obrazovke. Označenia videného sa zosúladia v oboch prípadoch.</string>
@@ -106,7 +106,7 @@
     <string name="servers_second_address_unreachable">Na tejto adrese sa nepodarilo nájsť server.</string>
     <string name="servers_error_unsupported_server">Táto verzia servera nie je podporovaná.</string>
     <string name="servers_error_website">Táto adresa otvára webovú stránku, nie mediálny server. Zadajte vlastnú adresu servera.</string>
-    <string name="servers_error_silo_website">Aplikácia Nuvio Arc nenašla adresu Jellyfin tohto servera Silo. V Silo otvorte „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ a zadajte adresu uvedenú pod „Server“.</string>
+    <string name="servers_error_silo_website">Aplikácia Dex Hub nenašla adresu Jellyfin tohto servera Silo. V Silo otvorte „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ a zadajte adresu uvedenú pod „Server“.</string>
     <string name="servers_error_silo_jellyfin_off">Aplikácie Jellyfin sú na tomto serveri Silo vypnuté. Požiadajte vlastníka servera, aby ich zapol.</string>
     <string name="servers_error_profile_needed">Na koniec používateľského mena pridajte # a názov profilu Silo, napríklad meno#Profil alebo meno#1234#Profil.</string>
     <string name="servers_error_profile_not_found">Silo číta časť za posledným # ako názov profilu a profil s takým názvom nemá. Ak vaše používateľské meno obsahuje #, pridajte na koniec # a názov profilu, napríklad meno#1234#Profil.</string>
@@ -119,11 +119,11 @@
     <string name="servers_silo_hint">Funguje tu adresa, cez ktorú otvárate Silo. Používateľské meno a profil nájdete v Silo v „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“.</string>
     <string name="servers_failure_certificate">Certifikát tohto servera nie je rozpoznaný.</string>
     <string name="servers_certificate_title">Certifikát tohto servera nie je rozpoznaný</string>
-    <string name="servers_certificate_intro">Nuvio Arc nemohlo overiť identitu %1$s.</string>
+    <string name="servers_certificate_intro">Dex Hub nemohlo overiť identitu %1$s.</string>
     <string name="servers_certificate_untrusted">Certifikát je podpísaný sám sebou alebo vydaný súkromnou autoritou.</string>
     <string name="servers_certificate_name_mismatch">Certifikát bol vydaný pre iný názov.</string>
     <string name="servers_certificate_expired">Certifikát je mimo doby platnosti.</string>
-    <string name="servers_certificate_advice">Ak je to váš vlastný server a čakáte to, môžete tomuto certifikátu dôverovať. Nuvio Arc potom pre tento server prijme len presne tento certifikát a upozorní vás, ak sa niekedy zmení. Ak nie ste v domácej sieti, najprv overte odtlačok u vlastníka servera.</string>
+    <string name="servers_certificate_advice">Ak je to váš vlastný server a čakáte to, môžete tomuto certifikátu dôverovať. Dex Hub potom pre tento server prijme len presne tento certifikát a upozorní vás, ak sa niekedy zmení. Ak nie ste v domácej sieti, najprv overte odtlačok u vlastníka servera.</string>
     <string name="servers_certificate_details">Vydané pre: %1$s\nVydal: %2$s\nPlatnosť: %3$s až %4$s\nOdtlačok (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Dôverovať tomuto certifikátu</string>
     <string name="servers_certificate_unavailable">Zabezpečené pripojenie zlyhalo a certifikát servera sa nepodarilo načítať.</string>
@@ -138,7 +138,7 @@
     <string name="silo_method_native_recommended">Prihlásenie Silo (odporúčané)</string>
     <string name="silo_method_native_description">Prihláste sa kódom na telefóne alebo heslom Silo. Funguje so všetkými spôsobmi prihlásenia na vašom serveri (heslo, OpenID Connect, LDAP, Tailscale). Prenesie vaše profily Silo a riadky domovskej obrazovky Silo.</string>
     <string name="silo_method_jellyfin">Kompatibilné s Jellyfin</string>
-    <string name="silo_method_jellyfin_description">Používa adresu Silo pre aplikácie Jellyfin s používateľským menom a heslom (pre profil meno#Profil). Takto sa Nuvio Arc k Silo doteraz pripájal.</string>
+    <string name="silo_method_jellyfin_description">Používa adresu Silo pre aplikácie Jellyfin s používateľským menom a heslom (pre profil meno#Profil). Takto sa Dex Hub k Silo doteraz pripájal.</string>
     <string name="silo_setup_next">Ďalej</string>
     <string name="silo_code_step_open">Na telefóne naskenujte kód alebo otvorte %1$s</string>
     <string name="silo_code_step_sign_in">Prihláste sa tam ako zvyčajne</string>
@@ -154,7 +154,7 @@
     <string name="silo_network_or_code">Alebo sa prihláste kódom: %1$s na %2$s</string>
     <string name="silo_signing_in">Prihlasovanie…</string>
     <string name="silo_profiles_title">Kto sleduje?</string>
-    <string name="silo_profiles_subtitle">%1$s má viac profilov. Nuvio Arc použije vybraný profil pre priebeh, označenia videného a riadky domovskej obrazovky. Neskôr ho môžete zmeniť na stránke servera.</string>
+    <string name="silo_profiles_subtitle">%1$s má viac profilov. Dex Hub použije vybraný profil pre priebeh, označenia videného a riadky domovskej obrazovky. Neskôr ho môžete zmeniť na stránke servera.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Detský</string>
     <string name="silo_pin_title">PIN pre %1$s</string>
@@ -166,11 +166,11 @@
     <string name="servers_silo_profile">Profil</string>
     <string name="servers_silo_profile_description">Priebeh, označenia videného a riadky domovskej obrazovky sa riadia týmto profilom.</string>
     <string name="servers_silo_home_rows">Riadky domovskej obrazovky Silo</string>
-    <string name="servers_silo_home_rows_description">Zobrazí riadky z domovskej obrazovky Silo (vaše zoznamy, Trendy, Ďalšia epizóda…) na domovskej obrazovke Nuvio Arc.</string>
+    <string name="servers_silo_home_rows_description">Zobrazí riadky z domovskej obrazovky Silo (vaše zoznamy, Trendy, Ďalšia epizóda…) na domovskej obrazovke Dex Hub.</string>
     <string name="servers_silo_switch">Prepnúť na prihlásenie Silo</string>
     <string name="servers_silo_switch_description">Prihlási sa cez prihlásenie Silo a potom nahradí toto pripojenie. Názov a výber knižníc zostanú.</string>
     <string name="servers_add_plex_description">Prihláste sa kódom na plex.tv/link. Vaše servery sa nájdu samy.</string>
-    <string name="plex_sign_in_subtitle">Adresa servera nie je potrebná: Nuvio Arc po prihlásení nájde vaše servery Plex.</string>
+    <string name="plex_sign_in_subtitle">Adresa servera nie je potrebná: Dex Hub po prihlásení nájde vaše servery Plex.</string>
     <string name="plex_code_step_open">Na telefóne alebo počítači otvorte %1$s (alebo naskenujte kód)</string>
     <string name="plex_code_step_sign_in">Prihláste sa do Plex, ak budete vyzvaní</string>
     <string name="plex_code_step_link">Zadajte kód vyššie a stlačte Link</string>
@@ -193,7 +193,7 @@
     <string name="plex_reach_remote_detail">dostupný cez internet</string>
     <string name="plex_reach_relay_detail">dostupný iba cez Plex Relay (pomalé, asi 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">práve offline</string>
-    <string name="plex_users_subtitle">Váš účet Plex má používateľov Plex Home. Nuvio Arc použije vybraného používateľa pre priebeh, označenia videného a Pokračovať v sledovaní na %1$s. Neskôr ho môžete zmeniť na stránke servera.</string>
+    <string name="plex_users_subtitle">Váš účet Plex má používateľov Plex Home. Dex Hub použije vybraného používateľa pre priebeh, označenia videného a Pokračovať v sledovaní na %1$s. Neskôr ho môžete zmeniť na stránke servera.</string>
     <string name="plex_user_owner">Vlastník</string>
     <string name="plex_user_managed">Spravovaný</string>
     <string name="plex_other_user">Iný používateľ</string>
@@ -201,8 +201,8 @@
     <string name="plex_home_user">Používateľ Plex Home</string>
     <string name="plex_home_user_description">Priebeh, označenia videného a Pokračovať v sledovaní sa riadia týmto používateľom.</string>
     <string name="plex_home_rows">Riadky domovskej obrazovky Plex</string>
-    <string name="plex_home_rows_description">Zobrazí vlastné riadky Plex z tohto servera (Nedávno pridané a ďalšie) na domovskej obrazovke Nuvio Arc.</string>
-    <string name="plex_remote_pass_needed">Plex toto mimo domova neprehrá. V aplikáciách ako Nuvio Arc je potrebný Plex Pass na serveri alebo Remote Watch Pass pre vás. Doma sa prehráva zadarmo.</string>
+    <string name="plex_home_rows_description">Zobrazí vlastné riadky Plex z tohto servera (Nedávno pridané a ďalšie) na domovskej obrazovke Dex Hub.</string>
+    <string name="plex_remote_pass_needed">Plex toto mimo domova neprehrá. V aplikáciách ako Dex Hub je potrebný Plex Pass na serveri alebo Remote Watch Pass pre vás. Doma sa prehráva zadarmo.</string>
     <string name="server_library_sort_title">Od A po Z</string>
     <string name="server_library_sort_released">Najnovšie vydania</string>
     <string name="server_library_sort_added">Nedávno pridané</string>

@@ -58,7 +58,7 @@
     <string name="licenses_attributions_subtitle_fonts_title">Фонтови титлова</string>
     <string name="licenses_attributions_subtitle_fonts_body">Roboto, Montserrat, Asap Condensed и Noto Sans (са Noto Sans Arabic, Hebrew, Devanagari, Bengali и Tamil), аутори: The Roboto Project Authors, The Montserrat Project Authors, The Asap Project Authors и The Noto Project Authors. Под лиценцом SIL Open Font License, Version 1.1.</string>
     <string name="licenses_attributions_media_servers_title">Jellyfin, Emby, Silo и Plex</string>
-    <string name="licenses_attributions_media_servers_body">Nuvio Arc се повезује са вашим сопственим Jellyfin, Emby, Silo или Plex сервером. Њихови називи и логотипи припадају њиховим власницима. Nuvio Arc није повезан са пројектима Jellyfin, Emby и Silo нити га они подржавају.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub се повезује са вашим сопственим Jellyfin, Emby, Silo или Plex сервером. Њихови називи и логотипи припадају њиховим власницима. Dex Hub није повезан са пројектима Jellyfin, Emby и Silo нити га они подржавају.</string>
     <string name="licenses_attributions_trash_title">TRaSH Guides</string>
     <string name="licenses_attributions_trash_body">Листе група издања. MIT лиценца.</string>
     <string name="licenses_attributions_libdovi_title">libdovi</string>
@@ -106,7 +106,7 @@
     <string name="playback_afr_closed">Затворено</string>
     <string name="audio_tunneled_sub_prefer_app">Није доступно док је Приоритет декодера подешен на Дај предност декодерима апликације</string>
     <string name="audio_use_system_passthrough">Системски passthrough</string>
-    <string name="audio_use_system_passthrough_sub">Шаље TrueHD и DTS-HD пријемнику преко Android-а (системска путања) уместо преко Nuvio Arc (IEC путања). У зависности од уређаја и аудио подешавања, ово може да ограничи DTS-HD и DTS:X на стандардни DTS или да их остави без звука. Користите само ако формати без губитака дају шум, губе синхронизацију или немају звук.</string>
+    <string name="audio_use_system_passthrough_sub">Шаље TrueHD и DTS-HD пријемнику преко Android-а (системска путања) уместо преко Dex Hub (IEC путања). У зависности од уређаја и аудио подешавања, ово може да ограничи DTS-HD и DTS:X на стандардни DTS или да их остави без звука. Користите само ако формати без губитака дају шум, губе синхронизацију или немају звук.</string>
     <string name="audio_dtshd_tv_passthrough">DTS-HD и DTS:X passthrough</string>
     <string name="audio_dtshd_tv_passthrough_sub">Изаберите TV passthrough ако звучна трака приказује обичан DTS или не пушта ништа на DTS-HD или DTS:X филмовима.</string>
     <string name="audio_dtshd_tv_passthrough_standard">Стандардно</string>
@@ -224,7 +224,7 @@
     <string name="floppy_tracking_description">Шаљите оно што гледате на сопствени Floppy сервер</string>
     <string name="floppy_connected_to">Повезано са %1$s</string>
     <string name="floppy_connected_description">Оно што гледате на овом профилу иде у Floppy: „Now Playing” док гледате, завршени наслови у историју, заустављени са тачком наставка. Преноси се и „Означи као одгледано”. Поништавање ознаке филма овде ресетује сва његова гледања у Floppy-ју; код епизоде се повлачи само последње гледање. На старијем Floppy серверу уклањају се само гледања која је Arc додао филму.</string>
-    <string name="floppy_qr_description">QR код за одобрење Nuvio Arc у Floppy-ју</string>
+    <string name="floppy_qr_description">QR код за одобрење Dex Hub у Floppy-ју</string>
     <string name="floppy_address_instruction">Унесите адресу на којој отварате Floppy у прегледачу.</string>
     <string name="floppy_token_instruction">У Floppy-ју отворите Settings, Integrations, App tokens и направите токен за овај ТВ.</string>
     <string name="floppy_address_placeholder">Адреса сервера, на пример 192.168.1.20:8000</string>
@@ -571,7 +571,7 @@
     <string name="subtitle_bitmap_mpv_note">MPV не подржава промену величине сликовних титлова. Користите ExoPlayer да подесите њихову величину независно од текста.</string>
     <string name="subtitle_style_image_size">Величина сликовних титлова</string>
     <string name="v2_accent_fixed_hint">Користи тему боја, осим када је изабрано Прилагоди сликама.</string>
-    <string name="about_fork_updates_subtitle">Ажурирања из Nuvio Arc издања на GitHub-у.</string>
+    <string name="about_fork_updates_subtitle">Ажурирања из Dex Hub издања на GitHub-у.</string>
     <string name="playback_speculative_stream_search">Тражи изворе пре пуштања</string>
     <string name="playback_speculative_stream_search_sub">Претражује додатке током прегледања ради бржег избора извора. Неки додаци могу додати или преузети садржај током претраге. Искључено чека до пуштања. Медијске везе и разрешавање код провајдера чекају избор за репродукцију, осим пред крај епизоде када сличице за премотавање припремају следећу.</string>
     <string name="playback_source_line_badges">Значке извора на страници детаља</string>
@@ -763,7 +763,7 @@
     <string name="party_match_same">Исти фајл као код домаћина</string>
     <string name="party_match_likely">Вероватно домаћинова копија</string>
     <string name="party_match_different">Другачија копија од домаћинове</string>
-    <string name="party_invite_text">Придружи се мом заједничком гледању у апликацији Nuvio Arc. Отвори Подешавања, затим Заједничко гледање, и унеси код %1$s</string>
+    <string name="party_invite_text">Придружи се мом заједничком гледању у апликацији Dex Hub. Отвори Подешавања, затим Заједничко гледање, и унеси код %1$s</string>
     <string name="party_invite_qr">Скенирајте камером телефона да пошаљете позивницу поруком</string>
     <string name="party_qr_iphone">iPhone</string>
     <string name="party_qr_android">Android</string>
@@ -981,11 +981,11 @@
     <string name="format_check_note_dv5">Ваша подешавања претварају Profile 5 у 8.1.</string>
     <string name="format_check_note_hdr10_plus">Ваша подешавања уклањају HDR10+ податке.</string>
     <string name="playback_release_decoder_on_background">Ослободи декодер у позадини</string>
-    <string name="playback_release_decoder_on_background_sub">Ослобађа видео декодер када Nuvio Arc пређе у позадину. Укључите ако репродукција пријави грешку декодера након повратка у апликацију. Плејер се поново учитава при повратку, и након чувара екрана</string>
+    <string name="playback_release_decoder_on_background_sub">Ослобађа видео декодер када Dex Hub пређе у позадину. Укључите ако репродукција пријави грешку декодера након повратка у апликацију. Плејер се поново учитава при повратку, и након чувара екрана</string>
     <string name="autosync_toast_no_fit">Синхронизација није успела: ови титлови не одговарају овој верзији видеа.</string>
     <string name="layout_hero_description_auto_scroll">Аутоматско померање описа</string>
     <string name="layout_hero_description_auto_scroll_sub">Полако помера дуге описе на Почетној уместо да их одсече.</string>
-    <string name="player_dts_hd_decoding_notice">Излаз DTS-HD без губитака је престао да ради, па Nuvio Arc сам декодира звук овог наслова.</string>
+    <string name="player_dts_hd_decoding_notice">Излаз DTS-HD без губитака је престао да ради, па Dex Hub сам декодира звук овог наслова.</string>
     <string name="addon_health_debrid">Debrid</string>
     <string name="addon_health_metadata">Метаподаци</string>
     <string name="addon_health_ok">OK</string>
@@ -993,13 +993,13 @@
     <string name="addon_health_down">Не ради</string>
     <string name="addon_health_setup">Подешавање</string>
     <string name="appearance_launcher_artwork">Изглед у покретачу</string>
-    <string name="appearance_launcher_artwork_subtitle">Изаберите како се Nuvio Arc приказује на почетном екрану ТВ-а</string>
+    <string name="appearance_launcher_artwork_subtitle">Изаберите како се Dex Hub приказује на почетном екрану ТВ-а</string>
     <string name="appearance_app_icon_and_banner">Иконица апликације и банер</string>
     <string name="appearance_app_icon_and_banner_subtitle">Промените иконицу апликације и банер</string>
     <string name="appearance_app_icon_picker_title">Изаберите иконицу и банер</string>
     <string name="appearance_app_icon_picker_subtitle">Сваки стил има одговарајућу квадратну иконицу и ТВ банер</string>
     <string name="appearance_app_icon_confirmation_title">Променити иконицу апликације?</string>
-    <string name="appearance_app_icon_confirmation_message">Прелазак на %1$s поново покреће Nuvio Arc са новом иконицом. Почетном екрану може требати неколико секунди да је прикаже, а за ТВ банер може бити потребно поновно покретање уређаја. Изаберите OK за наставак.</string>
+    <string name="appearance_app_icon_confirmation_message">Прелазак на %1$s поново покреће Dex Hub са новом иконицом. Почетном екрану може требати неколико секунди да је прикаже, а за ТВ банер може бити потребно поновно покретање уређаја. Изаберите OK за наставак.</string>
     <string name="appearance_app_icon_change_failed">Иконица и банер нису промењени. Покушајте поново.</string>
     <string name="appearance_app_icon_original">Оригинална</string>
     <string name="appearance_app_icon_arctic_blue">Арктичка плава</string>

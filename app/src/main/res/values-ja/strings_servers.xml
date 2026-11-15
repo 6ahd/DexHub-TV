@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">このユーザーが利用できる映画やシリーズのライブラリがありません。</string>
     <string name="servers_refresh_libraries">ライブラリを更新</string>
     <string name="servers_display_name">表示名</string>
-    <string name="servers_display_name_description">Nuvio Arcがこのサーバーをホーム、設定、ソースで表示するときの名前です。</string>
+    <string name="servers_display_name_description">Dex Hubがこのサーバーをホーム、設定、ソースで表示するときの名前です。</string>
     <string name="servers_display_name_server_name">サーバー側の名前: %1$s</string>
-    <string name="servers_display_name_dialog_description">Nuvio Arcでこのサーバーに表示する名前を選びます。空欄にするとサーバー側の名前を使います。</string>
+    <string name="servers_display_name_dialog_description">Dex Hubでこのサーバーに表示する名前を選びます。空欄にするとサーバー側の名前を使います。</string>
     <string name="servers_display_name_reset">サーバー名に戻す</string>
     <string name="servers_enabled">有効</string>
     <string name="servers_enabled_description">このサーバーをホーム、検索、ストリーム結果に表示します。</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">このユーザーにはアクセス権がありません。</string>
     <string name="servers_error_failed">サーバーに接続できませんでした。</string>
     <string name="servers_error_website">このアドレスはメディアサーバーではなくウェブサイトを開きます。サーバー自体のアドレスを入力してください。</string>
-    <string name="servers_error_silo_website">Nuvio ArcはこのSiloサーバーのJellyfinアドレスを見つけられませんでした。Siloで「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」を開き、「Server」の下に表示されているアドレスを入力してください。</string>
+    <string name="servers_error_silo_website">Dex HubはこのSiloサーバーのJellyfinアドレスを見つけられませんでした。Siloで「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」を開き、「Server」の下に表示されているアドレスを入力してください。</string>
     <string name="servers_error_silo_jellyfin_off">このSiloサーバーではJellyfinアプリがオフになっています。サーバーの管理者にオンにしてもらってください。</string>
     <string name="servers_error_profile_needed">ユーザー名の末尾に # とSiloのプロフィール名を追加してください（例: name#Profile、name#1234#Profile）。</string>
     <string name="servers_error_profile_not_found">Siloは最後の # より後ろをプロフィール名として読み取りますが、その名前のプロフィールはありません。ユーザー名に # が含まれる場合は、末尾に # とプロフィール名を追加してください（例: name#1234#Profile）。</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">このアイテムはサーバー上にもうありません。</string>
     <string name="servers_failure_certificate">このサーバーの証明書は認識されていません。</string>
     <string name="servers_certificate_title">このサーバーの証明書は認識されていません</string>
-    <string name="servers_certificate_intro">Nuvio Arcは%1$sの身元を確認できませんでした。</string>
+    <string name="servers_certificate_intro">Dex Hubは%1$sの身元を確認できませんでした。</string>
     <string name="servers_certificate_untrusted">証明書は自己署名か、プライベート認証局が発行したものです。</string>
     <string name="servers_certificate_name_mismatch">証明書は別の名前に対して発行されています。</string>
     <string name="servers_certificate_expired">証明書が有効期間外です。</string>
-    <string name="servers_certificate_advice">自分のサーバーで、これが想定どおりの場合は、この証明書を信頼できます。Nuvio Arcはこのサーバーに対してこの証明書だけを受け入れ、変更された場合は警告します。自宅のネットワーク以外にいる場合は、先にサーバーの管理者とフィンガープリントを確認してください。</string>
+    <string name="servers_certificate_advice">自分のサーバーで、これが想定どおりの場合は、この証明書を信頼できます。Dex Hubはこのサーバーに対してこの証明書だけを受け入れ、変更された場合は警告します。自宅のネットワーク以外にいる場合は、先にサーバーの管理者とフィンガープリントを確認してください。</string>
     <string name="servers_certificate_details">発行先: %1$s\n発行元: %2$s\n有効期間: %3$s から %4$s\nフィンガープリント（SHA-256）: %5$s</string>
     <string name="servers_certificate_trust">この証明書を信頼</string>
     <string name="servers_certificate_unavailable">安全な接続に失敗し、サーバーの証明書を読み取れませんでした。</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Siloサインイン（推奨）</string>
     <string name="silo_method_native_description">スマートフォンでコードを使うか、Siloのパスワードでサインインします。サーバーのすべてのサインイン方法（パスワード、OpenID Connect、LDAP、Tailscale）に対応。SiloのプロフィールとSiloホームの行も使えます。</string>
     <string name="silo_method_jellyfin">Jellyfin互換</string>
-    <string name="silo_method_jellyfin_description">Jellyfinアプリ用のSiloのアドレスに、ユーザー名とパスワードで接続します（プロフィールは name#Profile）。これまでNuvio ArcがSiloに接続していた方法です。</string>
+    <string name="silo_method_jellyfin_description">Jellyfinアプリ用のSiloのアドレスに、ユーザー名とパスワードで接続します（プロフィールは name#Profile）。これまでDex HubがSiloに接続していた方法です。</string>
     <string name="silo_setup_next">次へ</string>
     <string name="silo_code_step_open">スマートフォンでコードをスキャンするか、%1$s を開きます</string>
     <string name="silo_code_step_sign_in">そこでいつもの方法でサインインします</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">またはコードでサインイン: %2$s で %1$s を入力</string>
     <string name="silo_signing_in">サインイン中…</string>
     <string name="silo_profiles_title">誰が視聴しますか？</string>
-    <string name="silo_profiles_subtitle">%1$sには複数のプロフィールがあります。Nuvio Arcは、選んだプロフィールを進行状況、視聴済みマーク、ホームの行に使います。後でサーバーのページから変更できます。</string>
+    <string name="silo_profiles_subtitle">%1$sには複数のプロフィールがあります。Dex Hubは、選んだプロフィールを進行状況、視聴済みマーク、ホームの行に使います。後でサーバーのページから変更できます。</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">キッズ</string>
     <string name="silo_pin_title">%1$sのPIN</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">プロフィール</string>
     <string name="servers_silo_profile_description">進行状況、視聴済みマーク、ホームの行はこのプロフィールに従います。</string>
     <string name="servers_silo_home_rows">Siloホームの行</string>
-    <string name="servers_silo_home_rows_description">Siloホームの行（リスト、トレンド、次のエピソード…）をNuvio Arcのホームに表示します。</string>
+    <string name="servers_silo_home_rows_description">Siloホームの行（リスト、トレンド、次のエピソード…）をDex Hubのホームに表示します。</string>
     <string name="servers_silo_switch">Siloサインインに切り替え</string>
     <string name="servers_silo_switch_description">Silo独自のサインインでサインインし、この接続を置き換えます。名前とライブラリの選択はそのまま残ります。</string>
     <string name="servers_add_plex_description">plex.tv/link でコードを使ってサインインします。サーバーは自動で見つかります。</string>
-    <string name="plex_sign_in_subtitle">サーバーのアドレスは不要です。サインイン後、Nuvio ArcがPlexサーバーを見つけます。</string>
+    <string name="plex_sign_in_subtitle">サーバーのアドレスは不要です。サインイン後、Dex HubがPlexサーバーを見つけます。</string>
     <string name="plex_code_step_open">スマートフォンかパソコンで %1$s を開きます（またはコードをスキャン）</string>
     <string name="plex_code_step_sign_in">求められたらPlexにサインインします</string>
     <string name="plex_code_step_link">上のコードを入力して Link を押します</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">インターネット経由で接続</string>
     <string name="plex_reach_relay_detail">Plex Relay経由でのみ接続可能（低速、約2 Mbit/s）</string>
     <string name="plex_reach_offline_detail">現在オフライン</string>
-    <string name="plex_users_subtitle">PlexアカウントにPlex Homeのユーザーがいます。Nuvio Arcは、選んだユーザーを%1$sの進行状況、視聴済みマーク、「視聴を続ける」に使います。後でサーバーのページから変更できます。</string>
+    <string name="plex_users_subtitle">PlexアカウントにPlex Homeのユーザーがいます。Dex Hubは、選んだユーザーを%1$sの進行状況、視聴済みマーク、「視聴を続ける」に使います。後でサーバーのページから変更できます。</string>
     <string name="plex_user_owner">オーナー</string>
     <string name="plex_user_managed">管理ユーザー</string>
     <string name="plex_other_user">別のユーザー</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Homeユーザー</string>
     <string name="plex_home_user_description">進行状況、視聴済みマーク、「視聴を続ける」はこのユーザーに従います。</string>
     <string name="plex_home_rows">Plexのホーム行</string>
-    <string name="plex_home_rows_description">このサーバーのPlex独自の行（最近追加されたものなど）をNuvio Arcのホームに表示します。</string>
-    <string name="plex_remote_pass_needed">Plexでは自宅の外でこれを再生できません。Nuvio Arcのようなアプリでは、サーバー側のPlex Passか、あなたのRemote Watch Passが必要です。自宅では無料で再生できます。</string>
+    <string name="plex_home_rows_description">このサーバーのPlex独自の行（最近追加されたものなど）をDex Hubのホームに表示します。</string>
+    <string name="plex_remote_pass_needed">Plexでは自宅の外でこれを再生できません。Dex Hubのようなアプリでは、サーバー側のPlex Passか、あなたのRemote Watch Passが必要です。自宅では無料で再生できます。</string>
     <string name="server_library_sort_title">名前順</string>
     <string name="server_library_sort_released">公開日が新しい順</string>
     <string name="server_library_sort_added">最近追加</string>

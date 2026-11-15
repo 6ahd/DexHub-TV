@@ -8,7 +8,7 @@
     <string name="wetrakr_qr_description">QR-code om WeTrakr te verbinden</string>
     <string name="wetrakr_missing_client">WeTrakr is in deze build niet ingesteld.</string>
     <string name="wetrakr_status_syncing">Synchroniseren met WeTrakr…</string>
-    <string name="wetrakr_status_enter_code">Wachten tot je Nuvio Arc toestaat op WeTrakr</string>
+    <string name="wetrakr_status_enter_code">Wachten tot je Dex Hub toestaat op WeTrakr</string>
     <string name="wetrakr_status_paused">Gepauzeerd</string>
     <string name="wetrakr_daily_limit_row">De WeTrakr-limiet van vandaag is op. Synchroniseren wordt om %1$s hervat.</string>
     <string name="wetrakr_limit_message">De WeTrakr-limiet van vandaag is op. Afspelen werkt gewoon, maar er wordt tot %1$s niets naar WeTrakr gestuurd.</string>
@@ -47,6 +47,6 @@
     <string name="wetrakr_upload_done">Klaar: %1$s toegevoegd op WeTrakr, %2$s stonden er al of zijn niet gevonden.</string>
     <string name="wetrakr_upload_send">Versturen</string>
     <string name="wetrakr_upload_close">Sluiten</string>
-    <string name="licenses_attributions_wetrakr_body">Nuvio Arc gebruikt WeTrakr voor kijkgeschiedenis, lijsten, het bijhouden van afspelen en vergelijkbare titels. Gegevens van WeTrakr. Nuvio Arc is niet verbonden aan of onderschreven door WeTrakr.</string>
-    <string name="wetrakr_revoke_failed">Hier afgemeld, maar WeTrakr kon niet worden ingelicht. Je kunt Nuvio Arc verwijderen onder gekoppelde apps op wetrakr.com.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub gebruikt WeTrakr voor kijkgeschiedenis, lijsten, het bijhouden van afspelen en vergelijkbare titels. Gegevens van WeTrakr. Dex Hub is niet verbonden aan of onderschreven door WeTrakr.</string>
+    <string name="wetrakr_revoke_failed">Hier afgemeld, maar WeTrakr kon niet worden ingelicht. Je kunt Dex Hub verwijderen onder gekoppelde apps op wetrakr.com.</string>
 </resources>

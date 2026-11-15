@@ -46,9 +46,9 @@
     <string name="servers_no_libraries">Für diesen Benutzer sind keine Film- oder Serienbibliotheken verfügbar.</string>
     <string name="servers_refresh_libraries">Bibliotheken aktualisieren</string>
     <string name="servers_display_name">Anzeigename</string>
-    <string name="servers_display_name_description">Der Name, den Nuvio Arc für diesen Server auf der Startseite, in den Optionen und bei Quellen zeigt.</string>
+    <string name="servers_display_name_description">Der Name, den Dex Hub für diesen Server auf der Startseite, in den Optionen und bei Quellen zeigt.</string>
     <string name="servers_display_name_server_name">Eigener Name des Servers: %1$s</string>
-    <string name="servers_display_name_dialog_description">Wählen Sie den Namen, den Nuvio Arc für diesen Server zeigt. Leer lassen, um den eigenen Namen des Servers zu verwenden.</string>
+    <string name="servers_display_name_dialog_description">Wählen Sie den Namen, den Dex Hub für diesen Server zeigt. Leer lassen, um den eigenen Namen des Servers zu verwenden.</string>
     <string name="servers_display_name_reset">Auf Servernamen zurücksetzen</string>
     <string name="servers_enabled">Aktiviert</string>
     <string name="servers_enabled_description">Diesen Server auf der Startseite, in der Suche und in den Stream-Ergebnissen anzeigen.</string>
@@ -89,7 +89,7 @@
     <string name="servers_error_forbidden">Dieser Benutzer hat keinen Zugriff.</string>
     <string name="servers_error_failed">Verbindung zum Server fehlgeschlagen.</string>
     <string name="servers_error_website">Diese Adresse öffnet eine Website, keinen Medienserver. Geben Sie die eigene Adresse des Servers ein.</string>
-    <string name="servers_error_silo_website">Nuvio Arc konnte die Jellyfin-Adresse dieses Silo-Servers nicht finden. Öffnen Sie in Silo „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ und geben Sie die unter „Server“ angezeigte Adresse ein.</string>
+    <string name="servers_error_silo_website">Dex Hub konnte die Jellyfin-Adresse dieses Silo-Servers nicht finden. Öffnen Sie in Silo „Settings &gt; Connect Apps &gt; Jellyfin-compatible app“ und geben Sie die unter „Server“ angezeigte Adresse ein.</string>
     <string name="servers_error_silo_jellyfin_off">Jellyfin-Apps sind auf diesem Silo-Server ausgeschaltet. Bitten Sie den Besitzer des Servers, sie einzuschalten.</string>
     <string name="servers_error_profile_needed">Fügen Sie am Ende des Benutzernamens # und Ihren Silo-Profilnamen hinzu, etwa name#Profil oder name#1234#Profil.</string>
     <string name="servers_error_profile_not_found">Silo liest den Teil nach dem letzten # als Profilnamen und hat kein Profil mit diesem Namen. Enthält Ihr Benutzername ein #, fügen Sie am Ende # und Ihren Profilnamen hinzu, etwa name#1234#Profil.</string>
@@ -105,11 +105,11 @@
     <string name="servers_failure_not_found">Dieses Element ist auf dem Server nicht mehr verfügbar.</string>
     <string name="servers_failure_certificate">Das Zertifikat dieses Servers wird nicht erkannt.</string>
     <string name="servers_certificate_title">Das Zertifikat dieses Servers wird nicht erkannt</string>
-    <string name="servers_certificate_intro">Nuvio Arc konnte die Identität von %1$s nicht bestätigen.</string>
+    <string name="servers_certificate_intro">Dex Hub konnte die Identität von %1$s nicht bestätigen.</string>
     <string name="servers_certificate_untrusted">Das Zertifikat ist selbstsigniert oder von einer privaten Zertifizierungsstelle ausgestellt.</string>
     <string name="servers_certificate_name_mismatch">Das Zertifikat wurde für einen anderen Namen ausgestellt.</string>
     <string name="servers_certificate_expired">Das Zertifikat liegt außerhalb seines Gültigkeitszeitraums.</string>
-    <string name="servers_certificate_advice">Wenn dies Ihr eigener Server ist und Sie das erwarten, können Sie diesem Zertifikat vertrauen. Nuvio Arc akzeptiert dann für diesen Server nur genau dieses Zertifikat und warnt Sie, falls es sich je ändert. Wenn Sie nicht in Ihrem Heimnetz sind, prüfen Sie zuerst den Fingerabdruck mit dem Besitzer des Servers.</string>
+    <string name="servers_certificate_advice">Wenn dies Ihr eigener Server ist und Sie das erwarten, können Sie diesem Zertifikat vertrauen. Dex Hub akzeptiert dann für diesen Server nur genau dieses Zertifikat und warnt Sie, falls es sich je ändert. Wenn Sie nicht in Ihrem Heimnetz sind, prüfen Sie zuerst den Fingerabdruck mit dem Besitzer des Servers.</string>
     <string name="servers_certificate_details">Ausgestellt für: %1$s\nAusgestellt von: %2$s\nGültig: %3$s bis %4$s\nFingerabdruck (SHA-256): %5$s</string>
     <string name="servers_certificate_trust">Diesem Zertifikat vertrauen</string>
     <string name="servers_certificate_unavailable">Die sichere Verbindung ist fehlgeschlagen und das Zertifikat des Servers konnte nicht gelesen werden.</string>
@@ -140,7 +140,7 @@
     <string name="silo_method_native_recommended">Silo-Anmeldung (empfohlen)</string>
     <string name="silo_method_native_description">Melden Sie sich mit einem Code auf Ihrem Smartphone oder mit Ihrem Silo-Passwort an. Funktioniert mit jeder Anmeldeart Ihres Servers (Passwort, OpenID Connect, LDAP, Tailscale). Übernimmt Ihre Silo-Profile und die Reihen Ihrer Silo-Startseite.</string>
     <string name="silo_method_jellyfin">Jellyfin-kompatibel</string>
-    <string name="silo_method_jellyfin_description">Nutzt die Silo-Adresse für Jellyfin-Apps, mit Benutzername und Passwort (name#Profil für ein Profil). So hat sich Nuvio Arc bisher mit Silo verbunden.</string>
+    <string name="silo_method_jellyfin_description">Nutzt die Silo-Adresse für Jellyfin-Apps, mit Benutzername und Passwort (name#Profil für ein Profil). So hat sich Dex Hub bisher mit Silo verbunden.</string>
     <string name="silo_setup_next">Weiter</string>
     <string name="silo_code_step_open">Scannen Sie auf Ihrem Smartphone den Code oder öffnen Sie %1$s</string>
     <string name="silo_code_step_sign_in">Melden Sie sich dort wie gewohnt an</string>
@@ -156,7 +156,7 @@
     <string name="silo_network_or_code">Oder mit einem Code anmelden: %1$s unter %2$s</string>
     <string name="silo_signing_in">Anmeldung läuft…</string>
     <string name="silo_profiles_title">Wer schaut?</string>
-    <string name="silo_profiles_subtitle">%1$s hat mehr als ein Profil. Nuvio Arc nutzt das gewählte Profil für Fortschritt, Gesehen-Markierungen und Reihen der Startseite. Sie können es später auf der Seite des Servers ändern.</string>
+    <string name="silo_profiles_subtitle">%1$s hat mehr als ein Profil. Dex Hub nutzt das gewählte Profil für Fortschritt, Gesehen-Markierungen und Reihen der Startseite. Sie können es später auf der Seite des Servers ändern.</string>
     <string name="silo_profile_pin">PIN</string>
     <string name="silo_profile_child">Kind</string>
     <string name="silo_pin_title">PIN für %1$s</string>
@@ -168,11 +168,11 @@
     <string name="servers_silo_profile">Profil</string>
     <string name="servers_silo_profile_description">Fortschritt, Gesehen-Markierungen und Reihen der Startseite folgen diesem Profil.</string>
     <string name="servers_silo_home_rows">Reihen der Silo-Startseite</string>
-    <string name="servers_silo_home_rows_description">Zeigt die Reihen Ihrer Silo-Startseite (Ihre Listen, Im Trend, Als nächstes…) auf der Startseite von Nuvio Arc.</string>
+    <string name="servers_silo_home_rows_description">Zeigt die Reihen Ihrer Silo-Startseite (Ihre Listen, Im Trend, Als nächstes…) auf der Startseite von Dex Hub.</string>
     <string name="servers_silo_switch">Zur Silo-Anmeldung wechseln</string>
     <string name="servers_silo_switch_description">Meldet sich per Silo-Anmeldung an und ersetzt dann diese Verbindung. Name und Bibliotheksauswahl bleiben erhalten.</string>
     <string name="servers_add_plex_description">Mit einem Code auf plex.tv/link anmelden. Ihre Server werden automatisch gefunden.</string>
-    <string name="plex_sign_in_subtitle">Keine Serveradresse nötig: Nuvio Arc findet Ihre Plex-Server nach der Anmeldung.</string>
+    <string name="plex_sign_in_subtitle">Keine Serveradresse nötig: Dex Hub findet Ihre Plex-Server nach der Anmeldung.</string>
     <string name="plex_code_step_open">Öffnen Sie auf Smartphone oder Computer %1$s (oder scannen Sie den Code)</string>
     <string name="plex_code_step_sign_in">Melden Sie sich bei Plex an, falls gefragt</string>
     <string name="plex_code_step_link">Geben Sie den Code oben ein und drücken Sie Link</string>
@@ -195,7 +195,7 @@
     <string name="plex_reach_remote_detail">über das Internet erreicht</string>
     <string name="plex_reach_relay_detail">nur über Plex Relay erreichbar (langsam, etwa 2 Mbit/s)</string>
     <string name="plex_reach_offline_detail">gerade offline</string>
-    <string name="plex_users_subtitle">Ihr Plex-Konto hat Plex Home-Benutzer. Nuvio Arc verwendet den gewählten Benutzer für Fortschritt, Gesehen-Markierungen und Weiter ansehen auf %1$s. Sie können ihn später auf der Seite des Servers ändern.</string>
+    <string name="plex_users_subtitle">Ihr Plex-Konto hat Plex Home-Benutzer. Dex Hub verwendet den gewählten Benutzer für Fortschritt, Gesehen-Markierungen und Weiter ansehen auf %1$s. Sie können ihn später auf der Seite des Servers ändern.</string>
     <string name="plex_user_owner">Besitzer</string>
     <string name="plex_user_managed">Verwaltet</string>
     <string name="plex_other_user">Anderer Benutzer</string>
@@ -203,8 +203,8 @@
     <string name="plex_home_user">Plex Home-Benutzer</string>
     <string name="plex_home_user_description">Fortschritt, Gesehen-Markierungen und Weiter ansehen folgen diesem Benutzer.</string>
     <string name="plex_home_rows">Plex-Reihen auf der Startseite</string>
-    <string name="plex_home_rows_description">Zeigt die Plex-eigenen Reihen dieses Servers (Kürzlich hinzugefügt und mehr) auf der Startseite von Nuvio Arc.</string>
-    <string name="plex_remote_pass_needed">Plex spielt dies außerhalb Ihres Zuhauses nicht ab. In Apps wie Nuvio Arc braucht es dafür Plex Pass auf dem Server oder einen Remote Watch Pass für Sie. Zu Hause läuft es kostenlos.</string>
+    <string name="plex_home_rows_description">Zeigt die Plex-eigenen Reihen dieses Servers (Kürzlich hinzugefügt und mehr) auf der Startseite von Dex Hub.</string>
+    <string name="plex_remote_pass_needed">Plex spielt dies außerhalb Ihres Zuhauses nicht ab. In Apps wie Dex Hub braucht es dafür Plex Pass auf dem Server oder einen Remote Watch Pass für Sie. Zu Hause läuft es kostenlos.</string>
     <string name="server_library_sort_title">A bis Z</string>
     <string name="server_library_sort_released">Neueste Veröffentlichungen</string>
     <string name="server_library_sort_added">Kürzlich hinzugefügt</string>

@@ -4,7 +4,7 @@
     <!-- Nuvio-test additions -->
     <string name="support_nuvio_button">A Nuvio csapatának támogatása</string>
     <string name="support_nuvio_title">A Nuvio csapatának támogatása</string>
-    <string name="support_nuvio_subtitle">A Nuvio Arc a hivatalos Nuvio alkalmazásra épül. A tagság a Nuvio csapatához kerül, segít fedezni a szervereket és a fejlesztést, és mindenkinek ingyenesen tartja az alapalkalmazást.</string>
+    <string name="support_nuvio_subtitle">A Dex Hub a hivatalos Nuvio alkalmazásra épül. A tagság a Nuvio csapatához kerül, segít fedezni a szervereket és a fejlesztést, és mindenkinek ingyenesen tartja az alapalkalmazást.</string>
     <string name="support_nuvio_perk_themes">Színátmenetes témák</string>
     <string name="support_nuvio_perk_themes_desc">Extra színátmenetes témák, vagy készíts sajátot.</string>
     <string name="support_nuvio_perk_backgrounds">Profilhátterek</string>
@@ -30,11 +30,11 @@
     <string name="support_nuvio_close">Bezárás</string>
     <string name="support_nuvio_checking">Tagság ellenőrzése…</string>
     <string name="support_nuvio_thanks_title">Köszönjük, hogy támogatod a Nuvio csapatát</string>
-    <string name="support_nuvio_thanks_subtitle">Az előnyeid a Nuvio-fiókodhoz tartoznak, így itt a Nuvio Arcban és a hivatalos alkalmazásban is működnek.</string>
+    <string name="support_nuvio_thanks_subtitle">Az előnyeid a Nuvio-fiókodhoz tartoznak, így itt a Dex Hubban és a hivatalos alkalmazásban is működnek.</string>
     <string name="support_nuvio_gentle_eyebrow">Nuvio támogató</string>
-    <string name="support_nuvio_gentle_title">A Nuvio Arcban minden működik tagság nélkül</string>
+    <string name="support_nuvio_gentle_title">A Dex Hubban minden működik tagság nélkül</string>
     <string name="support_nuvio_gentle_body">Ennek a fióknak nincs Nuvio Supporter tagsága. Ha egyszer segíteni szeretnél a Nuvio csapatának, a tagság néhány extrát ad:</string>
-    <string name="support_nuvio_gentle_unavailable">A tagságodat most nem sikerült ellenőrizni. A Nuvio Arcban minden működik tagság nélkül. Ha szeretnéd segíteni a Nuvio csapatát, a tagság néhány extrát ad:</string>
+    <string name="support_nuvio_gentle_unavailable">A tagságodat most nem sikerült ellenőrizni. A Dex Hubban minden működik tagság nélkül. Ha szeretnéd segíteni a Nuvio csapatát, a tagság néhány extrát ad:</string>
     <string name="support_nuvio_gentle_scan">Nézd meg a lehetőségeket a telefonodon</string>
     <string name="support_nuvio_paid_check_again">Most fizettél? Ellenőrizd újra</string>
     <string name="support_nuvio_no_thanks">Köszönöm, nem</string>
