@@ -21,7 +21,7 @@ enum class VisualQualityMode { AUTOMATIC, PERFORMANCE, ENHANCED, MAXIMUM }
 /** Aesthetic choices have no hardware settings and can become profile-scoped independently. */
 data class V2AppearancePreferences(
     val visualStyle: VisualStyle = VisualStyle.CINEMATIC_GLASS,
-    val navigationStyle: NavigationStyle = NavigationStyle.FLOATING_SIDEBAR,
+    val navigationStyle: NavigationStyle = NavigationStyle.TOP_NAVIGATION,
     val focusStyle: FocusStyle = FocusStyle.CINEMATIC_FOCUS,
     val accentMode: AccentMode = AccentMode.FIXED_THEME,
     val glassTintMode: GlassTintMode = GlassTintMode.ACCENT,

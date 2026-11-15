@@ -80,7 +80,7 @@ class V2AppearancePreferenceStoreTest {
         assertEquals(SettingsPresentation.GLASS, defaults.settingsPresentation)
         assertEquals(PlayerChromeStyle.INVISIBLE, defaults.playerChromeStyle)
         assertEquals(FocusStyle.CINEMATIC_FOCUS, defaults.focusStyle)
-        assertEquals(NavigationStyle.FLOATING_SIDEBAR, defaults.navigationStyle)
+        assertEquals(NavigationStyle.TOP_NAVIGATION, defaults.navigationStyle)
         assertEquals(VisualStyle.CINEMATIC_GLASS, defaults.visualStyle)
         assertEquals(AccentMode.FIXED_THEME, defaults.accentMode)
         assertTrue(defaults.introAnimationEnabled)

@@ -50,7 +50,7 @@ object V2AppearancePreferenceStore {
         val preset = GlassPreset.entries.firstOrNull { it.name == p[glassPreset] } ?: GlassPreset.BALANCED
         return V2AppearancePreferences(
             visualStyle = VisualStyle.entries.firstOrNull { it.name == p[style] } ?: VisualStyle.CINEMATIC_GLASS,
-            navigationStyle = NavigationStyle.entries.firstOrNull { it.name == p[navigation] } ?: NavigationStyle.FLOATING_SIDEBAR,
+            navigationStyle = NavigationStyle.entries.firstOrNull { it.name == p[navigation] } ?: NavigationStyle.TOP_NAVIGATION,
             focusStyle = FocusStyle.entries.firstOrNull { it.name == p[focus] } ?: FocusStyle.CINEMATIC_FOCUS,
             accentMode = AccentMode.entries.firstOrNull { it.name == p[accent] } ?: AccentMode.FIXED_THEME,
             glassTintMode = GlassTintMode.entries.firstOrNull { it.name == p[tint] } ?: GlassTintMode.ACCENT,
