@@ -19,7 +19,7 @@ concurrency:
 jobs:
   kodi:
     name: Dex Hub in Kodi 21
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Install Kodi 21 and tools
         run: |

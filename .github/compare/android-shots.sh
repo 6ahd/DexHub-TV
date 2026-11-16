@@ -16,14 +16,17 @@ shot() { sleep "$2"; adb exec-out screencap -p > "$out/$1.png"; }
 key() { adb shell input keyevent "$1"; }
 
 shot 01-start 40
-# First-run screens (profile, layout, setup) take OK presses; record each.
-for i in 1 2 3 4; do key KEYCODE_DPAD_CENTER; shot "02-firstrun-$i" 8; done
-key KEYCODE_BACK; shot 03-after-back 6
-shot 04-home 20
-key KEYCODE_DPAD_UP; shot 05-bar 4
-key KEYCODE_DPAD_RIGHT; shot 06-bar-movies 6
-key KEYCODE_DPAD_RIGHT; shot 07-bar-series 6
-key KEYCODE_DPAD_DOWN; shot 08-content 6
-key KEYCODE_DPAD_DOWN; shot 09-row 6
+# Sign-in page: in Arabic (RTL) "Continue without an account" is left of the focused button.
+key KEYCODE_DPAD_LEFT; shot 02-signin-left 3
+key KEYCODE_DPAD_CENTER; shot 03-after-signin 12
+# Whatever first-run pages follow (profile, layout): accept each, recording it.
+for i in 1 2 3; do key KEYCODE_DPAD_CENTER; shot "04-firstrun-$i" 10; done
+shot 05-home 20
+key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; shot 06-bar 4
+key KEYCODE_DPAD_RIGHT; shot 07-bar-next 6
+key KEYCODE_DPAD_RIGHT; shot 08-bar-next2 6
+key KEYCODE_DPAD_DOWN; shot 09-content 6
+key KEYCODE_DPAD_DOWN; shot 10-row 6
+key KEYCODE_DPAD_DOWN; shot 11-row2 6
 adb logcat -d -t 400 > "$out/logcat.txt" 2>/dev/null || true
 exit 0
