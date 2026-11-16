@@ -1,0 +1,758 @@
+--------- beginning of main
+11-16 18:50:23.735  2784  4029 I Bugle   : CountryCodeDetector: updateMainDeviceCountry from default subscription network country. detected country: us
+11-16 18:50:29.033   523   855 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=128763 mSleepTimeMs=0 mIdleTimeMs=128746 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:50:29.065   325   346 I netd    : trafficSwapActiveStatsMap() <30.88ms>
+11-16 18:50:29.066   325   346 I netd    : tetherGetStats() -> {[]} <0.39ms>
+--------- beginning of kernel
+11-16 18:50:31.276     0     0 W healthd : battery none chg=a
+11-16 18:50:31.452  5319  6217 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-16 18:50:31.467  5212  5258 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:4 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.470  5212  5334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:4 result: 3 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.476  5319  6217 I GmsDebugLogger: [73] 1801
+11-16 18:50:31.478  5319  6217 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+11-16 18:50:31.478  5319  6217 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[MlkitOcrCommon.optional:225014100800],[TfliteDynamiteDynamite.integ:264010405100800]
+11-16 18:50:31.481  5319  6217 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-16 18:50:31.483  5319  6217 I GmsDebugLogger: [83] 1 [vision.ocr]
+11-16 18:50:31.485  5319  6215 W Vision  : Request for optional module download of ocr failed. Request again.
+11-16 18:50:31.485  5319  6215 I Vision  : Schedule retrying download ocr at 131216 with backoff 40 seconds
+11-16 18:50:31.492  5212  5251 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.501  5212  5334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.503  5212  5334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.511  5212  6221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.515  5212  6221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService started execution. cause:5 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.526  5212  5334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:5 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.527  5319  5362 I ChimeraConfigurator: Starting update, reason: 1 urgentFeatures: 
+11-16 18:50:31.540  5319  5362 I GmsDebugLogger: [77] [VisionOcrDynamite.integ:231602402100000]
+11-16 18:50:31.542  5319  5362 I GmsDebugLogger: [77] [MapsCoreDynamite.integ:224312102100800]
+11-16 18:50:31.542  5319  5362 I GmsDebugLogger: [77] [TfliteDynamiteDynamite.integ:264010405100800]
+11-16 18:50:31.543  5319  5362 I GmsDebugLogger: [73] 1801
+11-16 18:50:31.544  5319  5362 W ZappDownloader: No successful module downloads for requested features [].
+11-16 18:50:31.544  5319  5362 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[MlkitOcrCommon.optional:225014100800],[MapsCoreDynamite.integ:224312102100800],[TfliteDynamiteDynamite.integ:264010405100800]
+11-16 18:50:31.546  5319  5362 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1794855031546) [CONTEXT service_id=264 ]
+11-16 18:50:31.549  5319  5362 I ChimeraConfigService: Scheduling checkin every 43201 seconds, with flex of 21600 seconds [CONTEXT service_id=264 ]
+11-16 18:50:31.555  5212  5258 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService finished executing. cause:5 result: 2 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: Exception in upload method
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.q.d: Error code: 656394 | null
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.n.fZ(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.n.fZ(SourceFile:2)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.common.w.a.bv.run(SourceFile:6)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: Caused by: java.util.concurrent.TimeoutException
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.w.run(SourceFile:2)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.k.run(SourceFile:2)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.r.run(SourceFile:1)
+11-16 18:50:31.594  1595  1834 E cr_CronetUrlRequestContext: 	... 5 more
+11-16 18:50:31.598   325  6229 D resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10102 0}
+11-16 18:50:31.598   325  6229 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:50:31.598   325  6231 D resolv  : doQuery: (1, 1)
+11-16 18:50:31.598   325  6230 D resolv  : doQuery: (1, 28)
+11-16 18:50:31.598   325  6230 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:50:31.598   325  6230 D resolv  : res_nsend
+11-16 18:50:31.598   325  6230 I resolv  : resolv_cache_lookup: lookup
+11-16 18:50:31.598   325  6230 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:50:31.598   325  6230 I resolv  : resolv_populate_res_for_net: netid=101
+11-16 18:50:31.598   325  6230 I resolv  : res_stats_usable_server: NS stats: S 60 + E 0 + T 0 + I 0 = 60, rtt = 7, min_samples = 8
+11-16 18:50:31.598   325  6230 I resolv  : res_stats_usable_server: success rate 100
+11-16 18:50:31.598   325  6230 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:50:31.598   325  6230 D resolv  : send_dg: new DG socket
+11-16 18:50:31.598   325  6231 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-16 18:50:31.599   325  6231 D resolv  : res_nsend
+11-16 18:50:31.598   325  6230 I resolv  : get_timeout: using timeout of 5000 msec
+11-16 18:50:31.599   325  6230 I resolv  : retrying_poll: 55 retrying_poll
+11-16 18:50:31.599   325  6231 I resolv  : resolv_cache_lookup: lookup
+11-16 18:50:31.599   325  6231 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:50:31.599   325  6231 I resolv  : resolv_populate_res_for_net: netid=101
+11-16 18:50:31.600   325  6230 I resolv  : retrying_poll: 55 retrying_poll returning 1
+11-16 18:50:31.600   325  6230 I resolv  : res_nsend: used send_dg 261 terrno: 0
+11-16 18:50:31.600   325  6230 I resolv  : res_stats_set_sample: rcode = 0, sec = 1
+11-16 18:50:31.600   325  6230 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 60, count = 60
+11-16 18:50:31.600   325  6230 D resolv  : res_nsend: got answer:
+11-16 18:50:31.600   325  6230 I resolv  : answer_getTTL: TTL = 274
+11-16 18:50:31.600   325  6230 I resolv  : _cache_add_p: entry 61 added (count=59)
+11-16 18:50:31.600   325  6230 I resolv  : cache_dump_mru_locked: MRU LIST (59):  61 60 59 58 57 43 44 27 28 56 55 54 53 42 41 51 52 12 4 39 40 50 36 38 49 17 18 8 6 9 10 19 20 48 47 46 45 34 33 32 31 16 3 30 29 26 25 24 23 22 21 14 13 7 15 5 11 2 1
+11-16 18:50:31.600   325  6230 D resolv  : doQuery: rcode=0, ancount=8
+11-16 18:50:31.601   325  6231 I resolv  : res_stats_usable_server: NS stats: S 61 + E 0 + T 0 + I 0 = 61, rtt = 7, min_samples = 8
+11-16 18:50:31.601   325  6231 I resolv  : res_stats_usable_server: success rate 100
+11-16 18:50:31.601   325  6231 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:50:31.601   325  6231 D resolv  : send_dg: new DG socket
+11-16 18:50:31.601   325  6231 I resolv  : get_timeout: using timeout of 5000 msec
+11-16 18:50:31.601   325  6231 I resolv  : retrying_poll: 55 retrying_poll
+11-16 18:50:31.602   325  6231 I resolv  : retrying_poll: 55 retrying_poll returning 1
+11-16 18:50:31.602   325  6231 I resolv  : res_nsend: used send_dg 165 terrno: 0
+11-16 18:50:31.602   325  6231 I resolv  : res_stats_set_sample: rcode = 0, sec = 1
+11-16 18:50:31.602   325  6231 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 61, count = 61
+11-16 18:50:31.602   325  6231 D resolv  : res_nsend: got answer:
+11-16 18:50:31.602   325  6231 I resolv  : answer_getTTL: TTL = 237
+11-16 18:50:31.602   325  6231 I resolv  : _cache_add_p: entry 62 added (count=60)
+11-16 18:50:31.602   325  6231 I resolv  : cache_dump_mru_locked: MRU LIST (60):  62 61 60 59 58 57 43 44 27 28 56 55 54 53 42 41 51 52 12 4 39 40 50 36 38 49 17 18 8 6 9 10 19 20 48 47 46 45 34 33 32 31 16 3 30 29 26 25 24 23 22 21 14 13 7 15 5 11 2 1
+11-16 18:50:31.602   325  6231 D resolv  : doQuery: rcode=0, ancount=8
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: Exception in upload method
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.q.d: Error code: 656394 | null
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.n.fZ(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.n.fZ(SourceFile:2)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.common.w.a.bv.run(SourceFile:6)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: Caused by: java.util.concurrent.TimeoutException
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.w.run(SourceFile:2)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.k.run(SourceFile:2)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.r.run(SourceFile:1)
+11-16 18:50:31.681  1595  1834 E cr_CronetUrlRequestContext: 	... 5 more
+11-16 18:50:31.991   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=131721 mSleepTimeMs=0 mIdleTimeMs=131703 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:50:32.507  5212  5258 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService finished executing. cause:5 result: 1 elapsed_millis: 999 uptime_millis: 999 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-16 18:50:32.626  5319  5319 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-16 18:50:33.552  3696  3717 W com.dexhub.tv: Profile data size exceeds 500000 bytes. It has 629050 bytes.
+11-16 18:50:37.156   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f87e9000 0x3f8fd2000]
+11-16 18:50:37.162   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:50:37.162  6237  6238 I Gralloc4: mapper 4.x is not supported
+11-16 18:50:37.167  6237  6238 D HostConnection: createUnique: call
+11-16 18:50:37.168  6237  6238 D HostConnection: HostConnection::get() New Host Connection established 0x7cc713a17e10, tid 6238
+11-16 18:50:37.169  6237  6238 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:50:37.169  6237  6238 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:50:37.186  6237  6238 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+--------- beginning of system
+11-16 18:50:39.054   523   567 W ActivityManager: Stopping service due to app idle: u0a135 -1m19s960ms com.google.pixel.exo/.core.PersistentService
+11-16 18:50:39.054  4777  4777 I Exo     : PersistentService: Exo PersistentService destroyed
+11-16 18:50:39.055  4777  4777 E ActivityThread: Service com.google.pixel.exo.core.PersistentService has leaked ServiceConnection com.google.pixel.exo.core.PersistentService$1@e302f9d that was originally bound here
+11-16 18:50:39.055  4777  4777 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.google.pixel.exo.core.PersistentService has leaked ServiceConnection com.google.pixel.exo.core.PersistentService$1@e302f9d that was originally bound here
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1934)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcherCommon(LoadedApk.java:1806)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1785)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1966)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1897)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:812)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at com.google.pixel.exo.core.PersistentService.bindToWirecutter(PersistentService.java:131)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at com.google.pixel.exo.core.PersistentService.onStartCommand(PersistentService.java:121)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4639)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ActivityThread.access$2000(ActivityThread.java:247)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2091)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.os.Looper.loop(Looper.java:288)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at java.lang.reflect.Method.invoke(Native Method)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-16 18:50:39.055  4777  4777 E ActivityThread: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+11-16 18:50:39.056   523  1513 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@cd0157f
+11-16 18:50:41.881   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3faf76000 0x3fb75f000]
+11-16 18:50:41.887   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:50:41.887  6252  6253 I Gralloc4: mapper 4.x is not supported
+11-16 18:50:41.892  6252  6253 D HostConnection: createUnique: call
+11-16 18:50:41.893  6252  6253 D HostConnection: HostConnection::get() New Host Connection established 0x76dd20d961d0, tid 6253
+11-16 18:50:41.893  6252  6253 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:50:41.893  6252  6253 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:50:41.909  6252  6253 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:42.559  3696  3822 D EGL_emulation: app_time_stats: avg=16864.14ms min=26.35ms max=33701.92ms count=2
+11-16 18:50:42.893   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fb75f000 0x3fb797000]
+11-16 18:50:42.897  3696  6056 D HostConnection: createUnique: call
+11-16 18:50:42.903   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fb797000 0x3fbbb0000]
+11-16 18:50:42.906  3696  6056 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef4b50, tid 6056
+11-16 18:50:42.910  3696  6056 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:42.911  3696  6056 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-16 18:50:42.912  3696  6056 D EGL_emulation: eglCreateContext: 0x73c2b5ef5810: maj 3 min 0 rcv 3
+11-16 18:50:42.913  3696  6056 D EGL_emulation: eglMakeCurrent: 0x73c2b5ef5810: ver 3 0 (tinfo 0x73c4d072c100) (first time)
+11-16 18:50:42.914  3696  3730 D HostConnection: createUnique: call
+11-16 18:50:42.914  3696  3730 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef8690, tid 3730
+11-16 18:50:42.916  3696  3809 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt35538033
+11-16 18:50:42.932  3696  3730 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:43.040   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=142770 mSleepTimeMs=0 mIdleTimeMs=142751 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:50:43.547  3696  3747 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt35538033 url=https://v3-cinemeta.strem.io/meta/movie/tt35538033.json
+11-16 18:50:43.581  3696  3747 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt35538033 ttl=10800000ms
+11-16 18:50:43.748  3696  3730 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:43.749  3696  3730 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 20s: www.youtube.com/watch
+11-16 18:50:43.749  3696  3809 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:43.749  3696  3809 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 20s: www.youtube.com/watch
+11-16 18:50:43.750  3696  3786 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:43.750  3696  3786 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 20s: www.youtube.com/watch
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: Could not register for notifications with InnerTube: 
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: tcg: sgv: Precondition check failed.
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at tbw.apply(Unknown Source:4)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rnl.o(PG:5)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rnl.b(PG:2)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at tby.d(PG:4)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at xas.c(PG:51)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at xas.j(PG:38)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at xas.d(PG:3)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at xap.run(Unknown Source:2)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at nvu.run(PG:1)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at nvp.run(PG:2)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at nvh.run(PG:3)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: Caused by: sgv: Precondition check failed.
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at tau.e(PG:5)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rux.c(PG:18)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rty.run(PG:17)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rmq.run(PG:12)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	... 1 more
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: Caused by: byd
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	at rty.run(PG:12)
+11-16 18:50:46.218  5819  6024 W YouTubeMusic: 	... 4 more
+11-16 18:50:46.789   367   367 E android.hardware.power.stats@1.0-service-mock: Failed to getEnergyData
+11-16 18:50:48.581   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f87e9000 0x3f8fd2000]
+11-16 18:50:48.589   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:50:48.590  6261  6262 I Gralloc4: mapper 4.x is not supported
+11-16 18:50:48.594  6261  6262 D HostConnection: createUnique: call
+11-16 18:50:48.595  6261  6262 D HostConnection: HostConnection::get() New Host Connection established 0x7874e44ba450, tid 6262
+11-16 18:50:48.595  6261  6262 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:50:48.596  6261  6262 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:50:48.611  6261  6262 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:48.784   523   566 I ActivityManager: Killing 4665:com.android.settings/1000 (adj 925): empty #17
+11-16 18:50:48.795   523  2268 I ActivityManager: Killing 4621:com.google.android.youtube/u0a124 (adj 985): empty #17
+11-16 18:50:48.795   523  2268 I ActivityManager: Killing 5083:com.google.android.apps.docs/u0a111 (adj 985): empty #18
+11-16 18:50:48.795   523  2268 I ActivityManager: Killing 4995:com.google.android.googlequicksearchbox/u0a101 (adj 995): empty #19
+11-16 18:50:48.814   326   326 I Zygote  : Process 5083 exited due to signal 9 (Killed)
+11-16 18:50:48.815   326   326 I Zygote  : Process 4665 exited due to signal 9 (Killed)
+11-16 18:50:48.815   326   326 I Zygote  : Process 4995 exited due to signal 9 (Killed)
+11-16 18:50:48.829   523   569 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 4665 in 44ms
+11-16 18:50:48.830   523   569 I libprocessgroup: Successfully killed process cgroup uid 10124 pid 4621 in 0ms
+11-16 18:50:48.838   523  2398 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10124/4621, android.os.BinderProxy@69e5d7c)
+11-16 18:50:48.838   523   855 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10124/4621, android.os.BinderProxy@bd1c605)
+11-16 18:50:48.838   523  2398 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10124/4621, android.os.BinderProxy@f85065a)
+11-16 18:50:48.838   523  2398 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10124/4621, android.os.BinderProxy@72f508b)
+11-16 18:50:48.838   523  2398 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10124/4621, android.os.BinderProxy@31d568)
+11-16 18:50:48.838   523   703 D ConnectivityService: releasing NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.youtube] ] (release request)
+11-16 18:50:48.838   523   703 D ConnectivityService: releasing NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.youtube] ] (release request)
+11-16 18:50:48.839   523   703 D ConnectivityService: releasing NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.youtube] ] (release request)
+11-16 18:50:48.839   523   703 D ConnectivityService: releasing NetworkRequest [ REQUEST id=119, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.youtube] ] (release request)
+11-16 18:50:48.842   326   326 I Zygote  : Process 4621 exited due to signal 9 (Killed)
+11-16 18:50:48.875   523   569 I libprocessgroup: Successfully killed process cgroup uid 10111 pid 5083 in 0ms
+11-16 18:50:48.875   523   569 I libprocessgroup: Successfully killed process cgroup uid 10101 pid 4995 in 0ms
+11-16 18:50:49.198  5212  5258 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+11-16 18:50:49.270  3696  3822 D EGL_emulation: app_time_stats: avg=288.12ms min=21.16ms max=5794.29ms count=23
+11-16 18:50:49.588   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbbb0000 0x3fbbfa000]
+11-16 18:50:49.605  3696  6056 D HostConnection: createUnique: call
+11-16 18:50:49.605  3696  6056 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef5810, tid 6056
+11-16 18:50:49.614  3696  6056 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:49.617  3696  6056 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-16 18:50:49.618  3696  6056 D EGL_emulation: eglCreateContext: 0x73c2b5ef5210: maj 3 min 0 rcv 3
+11-16 18:50:49.619  3696  6056 D EGL_emulation: eglMakeCurrent: 0x73c2b5ef5210: ver 3 0 (tinfo 0x73c4d072c100) (first time)
+11-16 18:50:49.620  3696  3809 D HostConnection: createUnique: call
+11-16 18:50:49.621   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3faf76000 0x3fb38f000]
+11-16 18:50:49.621  3696  3809 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef4550, tid 3809
+11-16 18:50:49.626  3696  3809 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:49.626  3696  3747 D HostConnection: createUnique: call
+11-16 18:50:49.627  3696  3747 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5eec810, tid 3747
+11-16 18:50:49.628  3696  3730 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt34206385
+11-16 18:50:49.632  3696  3747 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:50.079   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=149809 mSleepTimeMs=0 mIdleTimeMs=149788 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:50:50.216  5319  5319 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-16 18:50:50.216  5319  5319 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-16 18:50:50.221  5212  5251 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.indexapi.OneoffRebuildIndexService started execution. cause:4 exec_start_elapsed_seconds: 149 [CONTEXT service_id=218 ]
+11-16 18:50:50.230  5212  5258 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.indexapi.OneoffRebuildIndexService finished executing. cause:4 result: 1 elapsed_millis: 28 uptime_millis: 28 exec_start_elapsed_seconds: 149 [CONTEXT service_id=218 ]
+11-16 18:50:50.257  3696  3747 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt34206385 url=https://v3-cinemeta.strem.io/meta/movie/tt34206385.json
+11-16 18:50:50.298  3696  3747 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt34206385 ttl=10800000ms
+11-16 18:50:50.459  3696  3814 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:50.460  3696  3814 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 14s: www.youtube.com/watch
+11-16 18:50:50.460  3696  3814 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:50.460  3696  3814 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 14s: www.youtube.com/watch
+11-16 18:50:50.710   325   346 I netd    : trafficSwapActiveStatsMap() <35.61ms>
+11-16 18:50:50.710   325   346 I netd    : tetherGetStats() -> {[]} <0.35ms>
+11-16 18:50:50.714   325   346 I netd    : bandwidthSetGlobalAlert(2097152) <0.10ms>
+11-16 18:50:50.716   325   346 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.52ms>
+11-16 18:50:50.716   325   346 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.53ms>
+11-16 18:50:55.300   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fd7bb000 0x3fdfa4000]
+11-16 18:50:55.306   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:50:55.306  6270  6271 I Gralloc4: mapper 4.x is not supported
+11-16 18:50:55.311  6270  6271 D HostConnection: createUnique: call
+11-16 18:50:55.313  6270  6271 D HostConnection: HostConnection::get() New Host Connection established 0x76139fa9acd0, tid 6271
+11-16 18:50:55.313  6270  6271 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:50:55.313  6270  6271 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:50:55.330  6270  6271 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:55.901  3696  3696 D HomeColumn: move from=com.linvo.cinemeta_-407561498_28_movie_top col=476px to=com.linvo.cinemeta_-407561498_28_series_top index=2 reason=same-spot
+11-16 18:50:55.977  3696  3822 D EGL_emulation: app_time_stats: avg=276.49ms min=18.62ms max=5751.19ms count=24
+11-16 18:50:56.150  3696  3854 W JankStats: JANK: 78ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:50:56.150  3696  3854 W JankStats: JANK: 78ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:50:56.231   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fbbfa000 0x3fbc28000]
+11-16 18:50:56.236   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbc28000 0x3fbc56000]
+11-16 18:50:56.237  3696  6056 D HostConnection: createUnique: call
+11-16 18:50:56.237  3696  6056 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef70d0, tid 6056
+11-16 18:50:56.258   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbc56000 0x3fbc84000]
+11-16 18:50:56.274  3696  3854 W JankStats: JANK: 75ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:50:56.275  3696  3854 W JankStats: JANK: 75ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:50:56.301  3696  6056 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:56.302  3696  6056 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-16 18:50:56.302  3696  6056 D EGL_emulation: eglCreateContext: 0x73c2b5efa550: maj 3 min 0 rcv 3
+11-16 18:50:56.303  3696  6056 D EGL_emulation: eglMakeCurrent: 0x73c2b5efa550: ver 3 0 (tinfo 0x73c4d072c100) (first time)
+11-16 18:50:56.327   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbc84000 0x3fbcb2000]
+11-16 18:50:56.338  3696  3776 D HostConnection: createUnique: call
+11-16 18:50:56.341  3696  3776 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef76d0, tid 3776
+11-16 18:50:56.375  3696  3776 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:56.391   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbcb2000 0x3fbce0000]
+11-16 18:50:56.423  3696  3814 D HostConnection: createUnique: call
+11-16 18:50:56.425  3696  3814 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef7910, tid 3814
+11-16 18:50:56.438   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbce0000 0x3fbd0e000]
+11-16 18:50:56.460  3696  3814 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:56.487   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbd0e000 0x3fbd3c000]
+11-16 18:50:56.512  3696  3780 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt31510819
+11-16 18:50:56.598   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbd3c000 0x3fbd6a000]
+11-16 18:50:56.632   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f87e9000 0x3f8c02000]
+11-16 18:50:56.633  3696  3814 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt23112594
+11-16 18:50:56.635  3696  3779 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt32880540
+11-16 18:50:56.635  3696  3748 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt8014982
+11-16 18:50:56.680   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbd6a000 0x3fbd98000]
+11-16 18:50:56.735   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbd98000 0x3fbdc6000]
+11-16 18:50:56.745   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbdc6000 0x3fbdf4000]
+11-16 18:50:56.751   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbdf4000 0x3fbe22000]
+11-16 18:50:56.758  3696  3707 I com.dexhub.tv: NativeAlloc concurrent copying GC freed 372097(17MB) AllocSpace objects, 24(2964KB) LOS objects, 49% free, 23MB/47MB, paused 135us,44us total 121.973ms
+11-16 18:50:56.778   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbe22000 0x3fbe50000]
+11-16 18:50:56.810   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbe50000 0x3fbe7e000]
+11-16 18:50:56.811  3696  3772 D HostConnection: createUnique: call
+11-16 18:50:56.811   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fbe7e000 0x3fbeac000]
+11-16 18:50:56.812  3696  3772 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef01d0, tid 3772
+11-16 18:50:56.816  3696  3772 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:50:56.849   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fbeac000 0x3fbeda000]
+11-16 18:50:56.852   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fbeda000 0x3fbf08000]
+11-16 18:50:56.908   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb38f000 0x3fb3d9000]
+11-16 18:50:56.980  3696  3822 D EGL_emulation: app_time_stats: avg=46.14ms min=18.37ms max=237.98ms count=21
+11-16 18:50:57.113   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156843 mSleepTimeMs=0 mIdleTimeMs=156818 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:50:57.263  3696  3814 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=series id=tt23112594 url=https://v3-cinemeta.strem.io/meta/series/tt23112594.json
+11-16 18:50:57.265  3696  3786 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=series id=tt31510819 url=https://v3-cinemeta.strem.io/meta/series/tt31510819.json
+11-16 18:50:57.265  3696  3784 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt32880540 url=https://v3-cinemeta.strem.io/meta/movie/tt32880540.json
+11-16 18:50:57.270   325  6277 D resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10145 0}
+11-16 18:50:57.270   325  6277 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:50:57.271   325  6278 D resolv  : doQuery: (1, 28)
+11-16 18:50:57.271   325  6278 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:50:57.271   325  6278 D resolv  : res_nsend
+11-16 18:50:57.272   325  6278 I resolv  : resolv_cache_lookup: lookup
+11-16 18:50:57.275   325  6278 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7fee0f30bc30
+11-16 18:50:57.275   325  6278 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:50:57.278   325  6279 D resolv  : doQuery: (1, 1)
+11-16 18:50:57.280   325  6279 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-16 18:50:57.280   325  6279 D resolv  : res_nsend
+11-16 18:50:57.280   325  6279 I resolv  : resolv_cache_lookup: lookup
+11-16 18:50:57.280   325  6279 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7fedff302a50
+11-16 18:50:57.280   325  6279 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:50:57.333  3696  3772 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=series id=tt23112594 ttl=10800000ms
+11-16 18:50:57.444  3696  3772 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=series id=tt31510819 ttl=10800000ms
+11-16 18:50:57.487  3696  3731 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:50:57.491  3696  3731 W InAppYouTubeExtractor: YouTube is rate limiting, skipping extraction for another 6s: www.youtube.com/watch
+11-16 18:50:57.505  3696  3706 I com.dexhub.tv: Compiler allocated 4351KB to compile java.lang.Object com.nuvio.tv.data.repository.MetaRepositoryImpl$getMetaFromAllAddons$1.invokeSuspend(java.lang.Object)
+11-16 18:50:57.582  3696  3814 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt32880540 ttl=10800000ms
+11-16 18:50:57.790  5212  5212 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.service.START pkg=com.google.android.gms }
+11-16 18:50:58.854  3696  3814 I MetaRepository: Meta requests in 60s (window 1): total=7 429=0 paused=0 callers={home-details=7} addons={Cinemeta=7} 429s={} pausedSkips={}
+11-16 18:51:00.021   762   849 D EGL_emulation: app_time_stats: avg=52486.17ms min=52486.17ms max=52486.17ms count=1
+11-16 18:51:01.957   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fdfa4000 0x3fe78d000]
+11-16 18:51:01.967   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:51:01.967  6282  6283 I Gralloc4: mapper 4.x is not supported
+11-16 18:51:01.971  6282  6283 D HostConnection: createUnique: call
+11-16 18:51:01.972  6282  6283 D HostConnection: HostConnection::get() New Host Connection established 0x75a0bddf6610, tid 6283
+11-16 18:51:01.972  6282  6283 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:51:01.973  6282  6283 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:51:01.990  6282  6283 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:02.601  3696  3696 D HomeColumn: move from=com.linvo.cinemeta_-407561498_28_series_top col=476px to=com.linvo.cinemeta_-407561498_28_movie_year index=2 reason=same-spot
+11-16 18:51:02.647  3696  3822 D EGL_emulation: app_time_stats: avg=468.83ms min=35.73ms max=5143.61ms count=12
+11-16 18:51:02.897   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fbf08000 0x3fbf36000]
+11-16 18:51:02.899  3696  6056 D HostConnection: createUnique: call
+11-16 18:51:02.899  3696  6056 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef0050, tid 6056
+11-16 18:51:02.911  3696  6056 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:02.915  3696  6056 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-16 18:51:02.916  3696  6056 D EGL_emulation: eglCreateContext: 0x73c2b5ef70d0: maj 3 min 0 rcv 3
+11-16 18:51:02.917  3696  6056 D EGL_emulation: eglMakeCurrent: 0x73c2b5ef70d0: ver 3 0 (tinfo 0x73c4d072c100) (first time)
+11-16 18:51:02.919   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb3d9000 0x3fb407000]
+11-16 18:51:02.965   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb407000 0x3fb435000]
+11-16 18:51:02.987  3696  3854 W JankStats: JANK: 117ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:51:02.990   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb435000 0x3fb463000]
+11-16 18:51:02.992  3696  3854 W JankStats: JANK: 117ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:51:03.012   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb463000 0x3fb491000]
+11-16 18:51:03.024   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb491000 0x3fb4bf000]
+11-16 18:51:03.029  3696  3731 D HostConnection: createUnique: call
+11-16 18:51:03.033   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb4bf000 0x3fb4ed000]
+11-16 18:51:03.057  3696  3801 D HostConnection: createUnique: call
+11-16 18:51:03.057  3696  3801 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5efa850, tid 3801
+11-16 18:51:03.074  3696  3731 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef4610, tid 3731
+11-16 18:51:03.077  3696  3801 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:03.121   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156843 mSleepTimeMs=0 mIdleTimeMs=156818 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:51:03.140  3696  3731 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:03.212   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb4ed000 0x3fb51b000]
+11-16 18:51:03.274   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb51b000 0x3fb55b000]
+11-16 18:51:03.289   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3ff92c000 0x3ffd45000]
+11-16 18:51:03.312  3696  3748 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt38773219
+11-16 18:51:03.322  3696  3801 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt11995650
+11-16 18:51:03.426   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb55b000 0x3fb589000]
+11-16 18:51:03.475   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb589000 0x3fb5b7000]
+11-16 18:51:03.507  3696  3854 W JankStats: JANK: 70ms | states: [HomeScrolling: false, HeroEnriching: false, Screen: home]
+11-16 18:51:03.507  3696  3854 W JankStats: JANK: 70ms | states: [HomeScrolling: false, HeroEnriching: false, Screen: home]
+11-16 18:51:03.531   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb5b7000 0x3fb5e5000]
+11-16 18:51:03.552   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb5e5000 0x3fb613000]
+11-16 18:51:03.609  3696  3748 D HostConnection: createUnique: call
+11-16 18:51:03.610  3696  3748 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5eed950, tid 3748
+11-16 18:51:03.637  3696  3748 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:03.655  3696  3822 D EGL_emulation: app_time_stats: avg=35.24ms min=19.19ms max=65.86ms count=26
+11-16 18:51:03.744   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb613000 0x3fb641000]
+11-16 18:51:03.746   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb641000 0x3fb66f000]
+11-16 18:51:03.854   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb66f000 0x3fb69d000]
+11-16 18:51:03.859   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb69d000 0x3fb6cb000]
+11-16 18:51:03.941  3696  3731 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt11995650 url=https://v3-cinemeta.strem.io/meta/movie/tt11995650.json
+11-16 18:51:03.941  3696  3730 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt38773219 url=https://v3-cinemeta.strem.io/meta/movie/tt38773219.json
+11-16 18:51:03.943  3696  3748 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt8014982 url=https://v3-cinemeta.strem.io/meta/movie/tt8014982.json
+11-16 18:51:03.966  3696  3748 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt38773219 ttl=10800000ms
+11-16 18:51:03.976  3696  3814 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt11995650 ttl=10800000ms
+11-16 18:51:03.977   325  6289 D resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10145 0}
+11-16 18:51:03.977   325  6289 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:03.978   325  6291 D resolv  : doQuery: (1, 1)
+11-16 18:51:03.978   325  6291 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-16 18:51:03.978   325  6290 D resolv  : doQuery: (1, 28)
+11-16 18:51:03.978   325  6290 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:51:03.978   325  6290 D resolv  : res_nsend
+11-16 18:51:03.978   325  6290 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:03.978   325  6290 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:03.978   325  6290 I resolv  : resolv_populate_res_for_net: netid=101
+11-16 18:51:03.978   325  6290 I resolv  : res_stats_usable_server: NS stats: S 62 + E 0 + T 0 + I 0 = 62, rtt = 7, min_samples = 8
+11-16 18:51:03.978   325  6290 I resolv  : res_stats_usable_server: success rate 100
+11-16 18:51:03.978   325  6290 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:03.978   325  6290 D resolv  : send_dg: new DG socket
+11-16 18:51:03.979   325  6290 I resolv  : get_timeout: using timeout of 5000 msec
+11-16 18:51:03.979   325  6290 I resolv  : retrying_poll: 55 retrying_poll
+11-16 18:51:03.979   325  6291 D resolv  : res_nsend
+11-16 18:51:03.979   325  6291 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:03.979   325  6291 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:03.979   325  6291 I resolv  : resolv_populate_res_for_net: netid=101
+11-16 18:51:03.981   325  6291 I resolv  : res_stats_usable_server: NS stats: S 62 + E 0 + T 0 + I 0 = 62, rtt = 7, min_samples = 8
+11-16 18:51:03.981   325  6291 I resolv  : res_stats_usable_server: success rate 100
+11-16 18:51:03.981   325  6291 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:03.981   325  6291 D resolv  : send_dg: new DG socket
+11-16 18:51:03.981   325  6291 I resolv  : get_timeout: using timeout of 5000 msec
+11-16 18:51:03.981   325  6291 I resolv  : retrying_poll: 57 retrying_poll
+11-16 18:51:03.988   325  6290 I resolv  : retrying_poll: 55 retrying_poll returning 1
+11-16 18:51:03.988   325  6290 I resolv  : res_nsend: used send_dg 96 terrno: 0
+11-16 18:51:03.988   325  6290 I resolv  : res_stats_set_sample: rcode = 0, sec = 9
+11-16 18:51:03.988   325  6290 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 62, count = 62
+11-16 18:51:03.988   325  6290 D resolv  : res_nsend: got answer:
+11-16 18:51:03.988   325  6290 I resolv  : answer_getTTL: TTL = 300
+11-16 18:51:03.988   325  6290 I resolv  : _cache_add_p: entry 63 added (count=61)
+11-16 18:51:03.988   325  6290 I resolv  : cache_dump_mru_locked: MRU LIST (61):  63 28 27 62 61 60 59 58 57 43 44 56 55 54 53 42 41 51 52 12 4 39 40 50 36 38 49 17 18 8 6 9 10 19 20 48 47 46 45 34 33 32 31 16 3 30 29 26 25 24 23 22 21 14 13 7 15 5 11 2 1
+11-16 18:51:03.988   325  6290 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:51:03.989   325  6291 I resolv  : retrying_poll: 57 retrying_poll returning 1
+11-16 18:51:03.989   325  6291 I resolv  : res_nsend: used send_dg 72 terrno: 0
+11-16 18:51:03.989   325  6291 I resolv  : res_stats_set_sample: rcode = 0, sec = 8
+11-16 18:51:03.989   325  6291 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 63, count = 63
+11-16 18:51:03.989   325  6291 D resolv  : res_nsend: got answer:
+11-16 18:51:03.989   325  6291 I resolv  : answer_getTTL: TTL = 300
+11-16 18:51:03.990   325  6291 I resolv  : _cache_add_p: entry 64 added (count=62)
+11-16 18:51:03.990   325  6291 I resolv  : cache_dump_mru_locked: MRU LIST (62):  64 63 28 27 62 61 60 59 58 57 43 44 56 55 54 53 42 41 51 52 12 4 39 40 50 36 38 49 17 18 8 6 9 10 19 20 48 47 46 45 34 33 32 31 16 3 30 29 26 25 24 23 22 21 14 13 7 15 5 11 2 1
+11-16 18:51:03.990   325  6291 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:51:04.035  3696  3812 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt8014982 ttl=1209600000ms
+11-16 18:51:04.532   325   346 I netd    : trafficSwapActiveStatsMap() <23.69ms>
+11-16 18:51:04.533   325   346 I netd    : tetherGetStats() -> {[]} <0.39ms>
+11-16 18:51:04.537   325   346 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+11-16 18:51:04.538   325   346 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.43ms>
+11-16 18:51:04.539   325   346 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.37ms>
+11-16 18:51:05.255  5319  5319 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-16 18:51:06.317   325  6295 D resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+11-16 18:51:06.317   325  6295 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.317   325  6295 D resolv  : res_nsend
+11-16 18:51:06.317   325  6295 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:06.317   325  6295 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:06.317   325  6295 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.317   325  6295 I resolv  : res_stats_usable_server: NS stats: S 0 + E 0 + T 0 + I 22 = 22, rtt = -1, min_samples = 8
+11-16 18:51:06.317   325  6295 I resolv  : res_stats_usable_server: success rate 0
+11-16 18:51:06.317   325  6295 I resolv  : res_stats_usable_server: too many resolution errors, ignoring server
+11-16 18:51:06.317   325  6295 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.317   325  6295 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.317   325  6295 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.317   325  6295 I resolv  : res_stats_set_sample: rcode = 254, sec = 0
+11-16 18:51:06.317   325  6295 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 22, count = 22
+11-16 18:51:06.317   325  6295 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.318   325  6295 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.318   325  6295 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.318   325  6296 D resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+11-16 18:51:06.318   325  6296 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.318   325  6296 D resolv  : res_nsend
+11-16 18:51:06.318   325  6296 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:06.318   325  6296 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:06.318   325  6296 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.318   325  6296 I resolv  : res_stats_usable_server: NS stats: S 0 + E 0 + T 0 + I 23 = 23, rtt = -1, min_samples = 8
+11-16 18:51:06.318   325  6296 I resolv  : res_stats_usable_server: success rate 0
+11-16 18:51:06.318   325  6296 I resolv  : res_stats_usable_server: too many resolution errors, ignoring server
+11-16 18:51:06.318   325  6296 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.318   325  6296 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.318   325  6296 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.318   325  6296 I resolv  : res_stats_set_sample: rcode = 254, sec = 0
+11-16 18:51:06.318   325  6296 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 23, count = 23
+11-16 18:51:06.318   325  6296 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.318   325  6296 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.318   325  6296 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.321   902   902 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ECONNREFUSED (Connection refused)
+11-16 18:51:06.322   902   902 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ECONNREFUSED (Connection refused)
+11-16 18:51:06.322   902  6294 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 6ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ECONNREFUSED (Connection refused)
+11-16 18:51:06.322   902  6293 D NetworkMonitor/100: PROBE_DNS www.google.com 6ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ECONNREFUSED (Connection refused)
+11-16 18:51:06.323   325  6297 D resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+11-16 18:51:06.323   325  6297 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:06.323   325  6298 D resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+11-16 18:51:06.323   325  6298 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:06.324   325  6300 D resolv  : doQuery: (1, 28)
+11-16 18:51:06.324   325  6299 D resolv  : doQuery: (1, 28)
+11-16 18:51:06.324   325  6299 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:51:06.324   325  6299 D resolv  : res_nsend
+11-16 18:51:06.324   325  6299 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:06.324   325  6299 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:06.324   325  6299 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.324   325  6300 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:51:06.324   325  6300 D resolv  : res_nsend
+11-16 18:51:06.324   325  6300 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:06.324   325  6300 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:06.324   325  6300 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.324   325  6300 I resolv  : res_stats_usable_server: NS stats: S 0 + E 0 + T 0 + I 24 = 24, rtt = -1, min_samples = 8
+11-16 18:51:06.325   325  6300 I resolv  : res_stats_usable_server: success rate 0
+11-16 18:51:06.325   325  6300 I resolv  : res_stats_usable_server: too many resolution errors, ignoring server
+11-16 18:51:06.325   325  6300 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.325   325  6300 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.324   325  6299 I resolv  : res_stats_usable_server: NS stats: S 0 + E 0 + T 0 + I 24 = 24, rtt = -1, min_samples = 8
+11-16 18:51:06.325   325  6299 I resolv  : res_stats_usable_server: success rate 0
+11-16 18:51:06.325   325  6299 I resolv  : res_stats_usable_server: too many resolution errors, ignoring server
+11-16 18:51:06.325   325  6299 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.325   325  6300 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.325   325  6299 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.325   325  6299 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.325   325  6300 I resolv  : res_stats_set_sample: rcode = 254, sec = 0
+11-16 18:51:06.325   325  6299 I resolv  : res_stats_set_sample: rcode = 254, sec = 0
+11-16 18:51:06.325   325  6299 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 24, count = 24
+11-16 18:51:06.325   325  6299 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.325   325  6300 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 25, count = 25
+11-16 18:51:06.325   325  6299 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.325   325  6300 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.325   325  6299 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.325   325  6299 D resolv  : doQuery: rcode=0, ancount=0
+11-16 18:51:06.325   325  6298 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.326   902  6294 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "connectivitycheck.gstatic.com": No address associated with hostname
+11-16 18:51:06.326   325  6300 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.326   325  6300 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.326   325  6300 D resolv  : doQuery: rcode=0, ancount=0
+11-16 18:51:06.326   325  6297 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.327   902  6293 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+11-16 18:51:06.327   325  6301 D resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+11-16 18:51:06.328   325  6301 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:06.328   325  6302 D resolv  : doQuery: (1, 28)
+11-16 18:51:06.328   325  6302 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:51:06.328   325  6302 D resolv  : res_nsend
+11-16 18:51:06.328   325  6302 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:06.329   325  6302 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-16 18:51:06.329   325  6302 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.329   325  6302 I resolv  : res_stats_usable_server: NS stats: S 0 + E 0 + T 0 + I 26 = 26, rtt = -1, min_samples = 8
+11-16 18:51:06.329   325  6302 I resolv  : res_stats_usable_server: success rate 0
+11-16 18:51:06.329   325  6302 I resolv  : res_stats_usable_server: too many resolution errors, ignoring server
+11-16 18:51:06.329   325  6302 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.329   325  6302 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.329   325  6302 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.329   325  6302 I resolv  : res_stats_set_sample: rcode = 254, sec = 0
+11-16 18:51:06.330   325  6302 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 26, count = 26
+11-16 18:51:06.330   325  6302 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-16 18:51:06.330   325  6302 D resolv  : dump_error: connect(dg) ([10.0.2.3].53): : Network is unreachable
+11-16 18:51:06.330   325  6302 I resolv  : res_nsend: used send_dg 0 terrno: 101
+11-16 18:51:06.330   325  6302 D resolv  : doQuery: rcode=0, ancount=0
+11-16 18:51:06.330   325  6301 I resolv  : resolv_populate_res_for_net: netid=100
+11-16 18:51:06.330   902  6292 D NetworkMonitor/100: PROBE_FALLBACK http://play.googleapis.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+11-16 18:51:06.331   902  6292 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=false isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=16ms
+11-16 18:51:06.331   523   703 D ConnectivityService: [100 WIFI] validation failed
+11-16 18:51:06.603  1518  3001 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+11-16 18:51:06.603  1518  1518 I Dialer  : RetryPolicy - discarding deferred status: configuration_state=4
+11-16 18:51:06.604  1518  1518 I Dialer  : VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
+11-16 18:51:06.605  1518  1518 I Dialer  : VvmTaskReceiver - task received
+11-16 18:51:06.605  1518  1518 I Dialer  : VvmTaskReceiver - TaskExecutor already running
+11-16 18:51:06.605  1518  1518 I Dialer  : Task.createTask - create task:com.android.voicemail.impl.ActivationTask
+11-16 18:51:06.605  1518  1518 I Dialer  : RetryPolicy - retry #2 for com.android.voicemail.impl.ActivationTask@95d089c queued, executing in 5000
+11-16 18:51:06.605  1518  1518 I Dialer  : VvmTaskExecutor - com.android.voicemail.impl.ActivationTask@95d089c added
+11-16 18:51:06.606  1518  1518 I Dialer  : VvmTaskExecutor - minimal wait time:4999
+11-16 18:51:06.606  1518  1518 I Dialer  : VvmTaskExecutor - sleep for 4999 millis
+11-16 18:51:07.046   523   627 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: Exception in upload method
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.q.d: Error code: 656394 | null
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.n.fZ(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.n.fZ(SourceFile:2)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.common.w.a.bv.run(SourceFile:6)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: Caused by: java.util.concurrent.TimeoutException
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.w.run(SourceFile:2)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.k.run(SourceFile:2)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.r.run(SourceFile:1)
+11-16 18:51:07.878  1595  1833 E cr_CronetUrlRequestContext: 	... 5 more
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: Exception in upload method
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.q.d: Error code: 656394 | null
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.n.fZ(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.n.fZ(SourceFile:2)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.common.w.a.bv.run(SourceFile:6)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: Caused by: java.util.concurrent.TimeoutException
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.w.run(SourceFile:2)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.k.a.k.run(SourceFile:2)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bt.b(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bw.run(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.g.r.run(SourceFile:1)
+11-16 18:51:07.878  1595  1834 E cr_CronetUrlRequestContext: 	... 5 more
+11-16 18:51:08.131   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=167862 mSleepTimeMs=0 mIdleTimeMs=161828 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:51:08.657   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fd7bb000 0x3fdfa4000]
+11-16 18:51:08.667   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:51:08.667  6305  6306 I Gralloc4: mapper 4.x is not supported
+11-16 18:51:08.672  6305  6306 D HostConnection: createUnique: call
+11-16 18:51:08.672  6305  6306 D HostConnection: HostConnection::get() New Host Connection established 0x7a89859ded50, tid 6306
+11-16 18:51:08.672  6305  6306 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:51:08.673  6305  6306 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:51:08.688  6305  6306 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:08.826  3696  3822 D EGL_emulation: app_time_stats: avg=1029.56ms min=29.84ms max=4997.97ms count=5
+11-16 18:51:09.338  3696  3696 D HomeColumn: move from=com.linvo.cinemeta_-407561498_28_movie_year col=476px to=com.linvo.cinemeta_-407561498_28_series_year index=2 reason=same-spot
+11-16 18:51:09.676   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb6cb000 0x3fb6f9000]
+11-16 18:51:09.694  3696  6056 D HostConnection: createUnique: call
+11-16 18:51:09.698  3696  6056 D HostConnection: HostConnection::get() New Host Connection established 0x73c2b5ef6710, tid 6056
+11-16 18:51:09.704  3696  3854 W JankStats: JANK: 98ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:51:09.705   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb6f9000 0x3fb727000]
+11-16 18:51:09.706  3696  3854 W JankStats: JANK: 98ms | states: [HomeScrolling: true, HeroEnriching: false, Screen: home]
+11-16 18:51:09.724   356   401 D goldfish-address-space: claimShared: Ask to claim region [0x3fb727000 0x3fb755000]
+11-16 18:51:09.725  3696  6056 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-16 18:51:09.727  3696  6056 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-16 18:51:09.727  3696  6056 D EGL_emulation: eglCreateContext: 0x73c2b5ef7850: maj 3 min 0 rcv 3
+11-16 18:51:09.728  3696  6056 D EGL_emulation: eglMakeCurrent: 0x73c2b5ef7850: ver 3 0 (tinfo 0x73c4d072c100) (first time)
+11-16 18:51:09.730   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9ca7000 0x3f9cd5000]
+11-16 18:51:09.742   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9cd5000 0x3f9d03000]
+11-16 18:51:09.759   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9d03000 0x3f9d31000]
+11-16 18:51:09.765   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9d31000 0x3f9d5f000]
+11-16 18:51:09.830  3696  3822 D EGL_emulation: app_time_stats: avg=73.28ms min=20.67ms max=546.10ms count=13
+11-16 18:51:09.836   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9d5f000 0x3f9d8d000]
+11-16 18:51:09.841  3696  3717 W com.dexhub.tv: Profile data size exceeds 500000 bytes. It has 640746 bytes.
+11-16 18:51:09.925  3696  3747 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt36458668
+11-16 18:51:09.980   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9d8d000 0x3f9dbb000]
+11-16 18:51:10.044  3696  3730 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt42767924
+11-16 18:51:10.050  3696  3779 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=movie id=tt6262770
+11-16 18:51:10.051  3696  3747 D MetaRepository: Source addon matched, catalog meta is sufficient addon=Cinemeta type=series id=tt39943756
+11-16 18:51:10.058   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fdfa4000 0x3fe3bd000]
+11-16 18:51:10.059   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9dbb000 0x3f9de9000]
+11-16 18:51:10.072  3696  3706 I com.dexhub.tv: Compiler allocated 4351KB to compile java.lang.Object com.nuvio.tv.data.repository.MetaRepositoryImpl$getMetaFromAllAddons$1.invokeSuspend(java.lang.Object)
+11-16 18:51:10.091   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9de9000 0x3f9e17000]
+11-16 18:51:10.121   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9e17000 0x3f9e45000]
+11-16 18:51:10.128   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9e45000 0x3f9e73000]
+11-16 18:51:10.158   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3f9e73000 0x3f9ea1000]
+11-16 18:51:10.371   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fbfd3000 0x3fbff5000]
+11-16 18:51:10.674  3696  3812 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=series id=tt42767924 url=https://v3-cinemeta.strem.io/meta/series/tt42767924.json
+11-16 18:51:10.675  3696  3772 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=series id=tt39943756 url=https://v3-cinemeta.strem.io/meta/series/tt39943756.json
+11-16 18:51:10.676  3696  3776 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=series id=tt36458668 url=https://v3-cinemeta.strem.io/meta/series/tt36458668.json
+11-16 18:51:10.680  3696  3779 D MetaRepository: Trying meta addonId=com.linvo.cinemeta addonName=Cinemeta type=movie id=tt6262770 url=https://v3-cinemeta.strem.io/meta/movie/tt6262770.json
+11-16 18:51:10.692   325  6315 D resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10145 0}
+11-16 18:51:10.692   325  6315 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:10.692   325  6316 D resolv  : doQuery: (1, 28)
+11-16 18:51:10.693   325  6316 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-16 18:51:10.693   325  6316 D resolv  : res_nsend
+11-16 18:51:10.693   325  6316 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:10.693   325  6316 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7fee0f30bc30
+11-16 18:51:10.693   325  6316 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:51:10.693   325  6317 D resolv  : doQuery: (1, 1)
+11-16 18:51:10.693   325  6317 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-16 18:51:10.693   325  6317 D resolv  : res_nsend
+11-16 18:51:10.693   325  6317 I resolv  : resolv_cache_lookup: lookup
+11-16 18:51:10.693   325  6317 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7fedff302a50
+11-16 18:51:10.693   325  6317 D resolv  : doQuery: rcode=0, ancount=2
+11-16 18:51:10.705  3696  3776 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=series id=tt42767924 ttl=10800000ms
+11-16 18:51:10.718  3696  3782 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=movie id=tt6262770 ttl=10800000ms
+11-16 18:51:10.723  3696  3776 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=series id=tt39943756 ttl=10800000ms
+11-16 18:51:10.857  3696  3822 D EGL_emulation: app_time_stats: avg=57.21ms min=19.55ms max=320.93ms count=17
+11-16 18:51:10.866  3696  3782 D MetaRepository: Meta fetch success addonId=com.linvo.cinemeta type=series id=tt36458668 ttl=10800000ms
+11-16 18:51:10.919  3696  3782 D TrailerService: Attempting in-app YouTube extraction for www.youtube.com/watch
+11-16 18:51:10.922  3696  3782 D InAppYouTubeExtractor: Starting Kotlin extraction for www.youtube.com/watch
+11-16 18:51:10.922  3696  3782 D InAppYouTubeExtractor: Using config: apiKey=AIzaSyAO_F... visitor=true
+11-16 18:51:10.991   325  6320 D resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10145 0}
+11-16 18:51:10.992   325  6320 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-16 18:51:10.992   325  6320 D resolv  : android_getaddrinfofornetcontext: explore_numeric: ai_family=10 ai_socktype=1 ai_protocol=6
+11-16 18:51:10.992   325  6320 D resolv  : explore_numeric_scope
+11-16 18:51:10.992   325  6320 D resolv  : android_getaddrinfofornetcontext: explore_numeric: ai_family=2 ai_socktype=1 ai_protocol=6
+11-16 18:51:10.992   325  6320 D resolv  : explore_numeric_scope
+11-16 18:51:10.992   325  6320 I ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: POST request to endpoint /rest/v1/rpc/get_avatar_catalog failed with exception Failed to connect to localhost/127.0.0.1:443
+11-16 18:51:10.995  3696  3696 E Supabase-Core: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:443
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.connection.ConnectPlan.connectSocket(ConnectPlan.kt:278)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.connection.ConnectPlan.connectTcp(ConnectPlan.kt:135)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.connection.FastFallbackExchangeFinder$launchTcpConnect$1.runOnce(FastFallbackExchangeFinder.kt:141)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.concurrent.TaskRunner$runnable$1.run(TaskRunner.kt:81)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.lang.Thread.run(Thread.java:920)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 43130) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at libcore.io.IoBridge.isConnected(IoBridge.java:349)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:238)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at libcore.io.IoBridge.connect(IoBridge.java:180)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at java.net.Socket.connect(Socket.java:621)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:148)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at okhttp3.internal.connection.ConnectPlan.connectSocket(ConnectPlan.kt:276)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	... 6 more
+11-16 18:51:10.995  3696  3696 E Supabase-Core: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	at libcore.io.IoBridge.isConnected(IoBridge.java:336)
+11-16 18:51:10.995  3696  3696 E Supabase-Core: 	... 16 more
+11-16 18:51:11.009  3696  3812 W InAppYouTubeExtractor: Client visionos: bot check (Sign in to confirm you’re not a bot)
+11-16 18:51:11.009  3696  3812 W InAppYouTubeExtractor: YouTube is rate limiting (1 of 1 clients hit the bot check), pausing extraction for 120s
+11-16 18:51:11.009  3696  3812 W InAppYouTubeExtractor: Kotlin extraction returned no playable source for www.youtube.com/watch
+11-16 18:51:11.645  1518  3001 I Dialer  : VvmTaskExecutor - executing task com.android.voicemail.impl.ActivationTask@95d089c
+11-16 18:51:11.645  1518  3001 I Dialer  : PreOMigrationHandler - ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} already migrated
+11-16 18:51:11.654  1598  6199 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-16 18:51:11.654  1518  3001 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
+11-16 18:51:11.655  1518  3001 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
+11-16 18:51:11.657  1598  6199 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-16 18:51:11.662   957  1883 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-16 18:51:11.663   957  1883 D SmsNumberUtils: destAddr is not formatted.
+11-16 18:51:11.663   957  1883 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-16 18:51:11.666   523   567 W BroadcastQueue: Permission Denial: broadcasting Intent { act=com.android.voicemailomtp.sms.REQUEST_SENT flg=0x10 pkg=com.android.dialer } from com.android.dialer (pid=-1, uid=10097) requires com.android.dialer.permission.DIALER_ORIGIN due to registered receiver BroadcastFilter{239056a 10097/u0 ReceiverList{a891755 1518 com.android.dialer/10097/u0 remote:f65e20c}}
+11-16 18:51:12.715  4885  5784 I BugleRcsEngine: [77] alog.run: delay time out, reset attempts 2 and process SIM event
+11-16 18:51:12.716  4885  5784 W BugleRcsEngine: [77] alod.a: (Sim): process intent: android.intent.action.SIM_STATE_CHANGED
+11-16 18:51:12.719  4885  5784 I BugleRcsEngine: [77] alod.j: (Sim): Processing an intent
+11-16 18:51:12.719  4885  5784 I BugleRcsEngine: [77] alod.w: (Sim): Ignoring duplicate SIM state: LOADED
+11-16 18:51:13.144   957   957 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=172874 mSleepTimeMs=0 mIdleTimeMs=166839 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+11-16 18:51:14.384  2784  4029 I BugleDataModel: ParticipantRefresh: Start participant refresh. refreshMode: SELF_ONLY
+11-16 18:51:14.396  2784  4029 W BugleDataModel: SelfParticipantsData: Failed to update self participants' subscription info. updateCount: 0
+11-16 18:51:14.405  2784  4029 W BugleDataModel: SelfParticipantsData: Failed to update self participants' subscription info. updateCount: 0
+11-16 18:51:14.439  2784  4029 I BugleDataModel: ParticipantRefresh: Number of participants refreshed: 0
+11-16 18:51:15.397   356   435 D goldfish-address-space: claimShared: Ask to claim region [0x3fe3bd000 0x3feba6000]
+11-16 18:51:15.410   175   175 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-16 18:51:15.410  6323  6324 I Gralloc4: mapper 4.x is not supported
+11-16 18:51:15.415  6323  6324 D HostConnection: createUnique: call
+11-16 18:51:15.415  6323  6324 D HostConnection: HostConnection::get() New Host Connection established 0x73ad7fb36390, tid 6324
+11-16 18:51:15.416  6323  6324 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-16 18:51:15.416  6323  6324 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f7ffe000 size 0x2000
+11-16 18:51:15.432  6323  6324 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 

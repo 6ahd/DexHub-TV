@@ -1,0 +1,487 @@
+﻿2026-11-16 18:39:46.137 T:7        info <general>: -----------------------------------------------------------------------
+2026-11-16 18:39:46.137 T:7        info <general>: Starting Kodi (22.0-RC2 (21.90.902) Git:20261109-d686683a-dirty). Platform: Linux x86 64-bit
+2026-11-16 18:39:46.137 T:7        info <general>: Using Release Kodi x64
+2026-11-16 18:39:46.137 T:7        info <general>: Kodi compiled 2011-11-11 by GCC 16.2.0 for Linux x86 64-bit version 6.18.41 (397865)
+2026-11-16 18:39:46.137 T:7        info <general>: Running on Freedesktop SDK 26.08 (Flatpak runtime), kernel: Linux x86 64-bit version 7.0.0-1014-aws
+2026-11-16 18:39:46.137 T:7        info <general>: FFmpeg version/source: 9.0.2
+2026-11-16 18:39:46.137 T:7        info <general>: Host CPU: Intel(R) Xeon(R) 6975P-C, 4 cores available
+2026-11-16 18:39:46.137 T:7        info <general>: special://xbmc/ is mapped to: /app/share/kodi
+2026-11-16 18:39:46.137 T:7        info <general>: special://xbmcbin/ is mapped to: /app/lib/kodi
+2026-11-16 18:39:46.137 T:7        info <general>: special://xbmcbinaddons/ is mapped to: /app/lib/kodi/addons
+2026-11-16 18:39:46.137 T:7        info <general>: special://masterprofile/ is mapped to: /home/runner/.var/app/tv.kodi.Kodi/data/userdata
+2026-11-16 18:39:46.137 T:7        info <general>: special://envhome/ is mapped to: /home/runner
+2026-11-16 18:39:46.137 T:7        info <general>: special://home/ is mapped to: /home/runner/.var/app/tv.kodi.Kodi/data
+2026-11-16 18:39:46.137 T:7        info <general>: special://temp/ is mapped to: /home/runner/.var/app/tv.kodi.Kodi/data/temp
+2026-11-16 18:39:46.137 T:7        info <general>: special://logpath/ is mapped to: /home/runner/.var/app/tv.kodi.Kodi/data/temp
+2026-11-16 18:39:46.137 T:7        info <general>: Webserver extra whitelist paths: 
+2026-11-16 18:39:46.137 T:7        info <general>: The executable running is: /app/lib/kodi/kodi.bin
+2026-11-16 18:39:46.137 T:7        info <general>: Local hostname: ip-10-0-133-82
+2026-11-16 18:39:46.137 T:7        info <general>: Log File is located: /home/runner/.var/app/tv.kodi.Kodi/data/temp/kodi.log
+2026-11-16 18:39:46.137 T:7        info <general>: -----------------------------------------------------------------------
+2026-11-16 18:39:46.137 T:7        info <general>: loading settings
+2026-11-16 18:39:46.137 T:7        info <general>: special://profile/ is mapped to: special://masterprofile/
+2026-11-16 18:39:46.140 T:7        info <general>: No settings file to load (special://xbmc/system/advancedsettings.xml)
+2026-11-16 18:39:46.140 T:7        info <general>: Loaded settings file from special://profile/advancedsettings.xml
+2026-11-16 18:39:46.140 T:7        info <general>: Contents of special://profile/advancedsettings.xml are...
+                                                   <advancedsettings>
+                                                     <loglevel>0</loglevel>
+                                                   </advancedsettings>
+                                                   
+2026-11-16 18:39:46.140 T:7        info <general>: Log level changed to "info"
+2026-11-16 18:39:46.140 T:7     warning <CSettingsManager>: missing version attribute
+2026-11-16 18:39:46.140 T:7        info <general>: Default Video Player: VideoPlayer
+2026-11-16 18:39:46.140 T:7        info <general>: Default Audio Player: paplayer
+2026-11-16 18:39:46.140 T:7        info <general>: Disabled debug logging due to GUI setting. Level 0.
+2026-11-16 18:39:46.140 T:7        info <general>: New Cache GUI Settings (replacement of cache in advancedsettings.xml) are:
+                                                     Buffer Mode: 4
+                                                     Memory Size: 64 MB
+                                                     Read Factor: 0.00 x (adaptive)
+                                                     Chunk Size : 131072 bytes
+2026-11-16 18:39:46.140 T:7        info <general>: creating subdirectories
+2026-11-16 18:39:46.140 T:7        info <general>: userdata folder: special://masterprofile/
+2026-11-16 18:39:46.140 T:7        info <general>: recording folder: 
+2026-11-16 18:39:46.140 T:7        info <general>: screenshots folder: 
+2026-11-16 18:39:46.141 T:7        info <general>: SqliteDatabase: library version 3.53.4
+2026-11-16 18:39:46.141 T:7        info <general>: Running database version Addons33
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.2sf v22.0.5'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.asap v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.dumb v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.fluidsynth v20.2.2'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.gme v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.gsf v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.hvl v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.modplug v22.0.2'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.ncsf v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.nosefart v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.openmpt v22.0.4'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.organya v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.qsf v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.sacd v22.0.6'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.sidplay v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.snesapu v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.ssf v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.stsound v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.timidity v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.upse v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.usf v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.vgmstream v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audiodecoder.wsr v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.flac v22.0.5'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.kodi.builtin.aac v1.0.2'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.kodi.builtin.wma v1.0.2'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.lame v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.vorbis v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'audioencoder.wav v22.0.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.controller.default v1.0.49'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.controller.keyboard v1.1.50'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.controller.mouse v1.0.32'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.controller.snes v1.0.49'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro v22.9.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.2048 v1.0.0.157'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.a5200 v2.0.2.28'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.atari800 v7.0.0.50'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-bsnes v0.9.26.41'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-gba v0.9.36.40'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-lynx v1.24.0.63'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-ngp v1.29.0.49'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-pce v1.29.0.39'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-pcfx v0.9.36.50'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-psx v0.9.44.96'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-saturn v1.32.1.64'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-supergrafx v1.29.0.54'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-vb v1.31.0.48'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.beetle-wswan v0.9.35.57'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.blastem v1.0.1.43'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.bluemsx v0.0.1.57'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.dolphin v2609.0.0.40'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.dosbox v0.74.0.36'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.dosbox-pure v1.0.0.47'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.fceumm v0.0.1.68'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.gambatte v0.5.0.73'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.gearsystem v3.9.16.36'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.gw v1.6.3.40'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.handy v0.97.0.51'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.hatari v2.6.1.50'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.lrps2 v2.0.0.15'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.melonds v0.9.3.51'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.mesen v0.9.9.47'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.mesen-s v0.4.0.28'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.mgba v0.11.0.58'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.mrboom v5.5.0.170'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.mupen64plus-nx v3.0.0.70'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.nestopia v2.0.0.69'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.nx v1.0.0.50'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.o2em v1.18.0.59'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.pcsx-rearmed v26.0.0.84'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.pokemini v0.60.0.51'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.prboom v2.5.0.64'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.prosystem v1.3.0.52'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.quicknes v1.0.0.55'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.sameboy v0.15.4.54'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.stella v8.0.0.91'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.supafaust v1.29.0.47'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.swanstation v1.0.0.43'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.tgbdual v0.8.3.48'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.tyrquake v0.62.0.62'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.uae v5.3.1.105'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.vbam v2.2.3.77'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.virtualjaguar v3.10.0.60'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.yabasanshiro v3.4.2.21'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.libretro.yabause v0.9.15.81'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'game.shader.presets v22.1.5'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'imagedecoder.heif v22.1.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'imagedecoder.mpo v22.1.1'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'imagedecoder.raw v22.1.1'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'imagedecoder.svg v22.0.2'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'inputstream.adaptive v22.3.24'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'inputstream.airplay v0.1.5'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'inputstream.ffmpegdirect v22.2.10'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'inputstream.rtmp v22.1.3'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.audioengine v1.1.1'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.filesystem v1.1.11'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.general v1.0.6'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.gui v5.15.1'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.main v2.0.4'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.network v1.0.4'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.global.tools v1.0.4'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.audiodecoder v4.0.0'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.audioencoder v3.0.0'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.game v8.5.0'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.imagedecoder v3.1.0'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.inputstream v3.4.1'
+2026-11-16 18:39:46.164 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.peripheral v3.0.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.pvr v9.2.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.screensaver v2.2.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.shaderpreset v1.1.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.vfs v3.0.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.videocodec v2.2.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.binary.instance.visualization v5.0.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'kodi.resource v1.0.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.album.universal v3.1.20'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.artists.universal v4.3.24'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.common.allmusic.com v3.2.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.common.fanart.tv v3.6.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.common.musicbrainz.org v2.2.4'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.common.theaudiodb.com v2.0.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.generic.albums v1.0.21'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.generic.artists v1.0.21'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.local v1.0.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.themoviedb.org.python v3.2.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'metadata.tvshows.themoviedb.org.python v2.0.9'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'peripheral.joystick v22.0.12'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'peripheral.xarcade v22.0.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'plugin.video.dexhub v5.10.580'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.argustv v22.3.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.demo v22.4.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.dvblink v22.3.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.dvbviewer v22.3.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.filmon v22.2.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.freebox v22.2.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.hdhomerun v22.2.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.hts v22.9.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.iptvsimple v22.6.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.mediaportal.tvserver v22.2.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.mythtv v22.3.19'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.nextpvr v22.6.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.njoy v22.2.4'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.octonet v22.2.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.pctv v22.2.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.plutotv v22.3.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.sledovanitv.cz v22.7.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.stalker v22.2.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.teleboy v22.2.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.vbox v22.2.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.vdr.vnsi v22.3.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.vuplus v22.3.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.waipu v22.10.4'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.wmc v22.2.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'pvr.zattoo v22.2.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'repository.xbmc.org v3.5.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'resource.images.weathericons.default v1.1.9'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'resource.language.en_gb v2.0.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'resource.uisounds.kodi v1.0.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.asteroids v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.asterwave v22.0.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.biogenesis v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.cpblobs v22.0.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.greynetic v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.matrixtrails v22.0.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.microcosm.biof v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.pingpong v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.pyro v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.busyspheres v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.colorfire v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.cyclone v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.drempels v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.euphoria v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.feedback v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.fieldlines v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.flocks v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.flux v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.helios v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.hufosmoke v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.hufotunnel v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.hyperspace v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.lattice v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.lorenz v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.matrixview v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.plasma v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.skyrocket v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.solarwinds v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.spirographx v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.rsxs.sundancer2 v22.0.7'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.shadertoy v22.0.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.stars v22.0.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.xbmc.builtin.black v1.0.34'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'screensaver.xbmc.builtin.dim v1.0.66'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'script.module.pil v5.1.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'script.module.pycryptodome v3.4.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'service.xbmc.versioncheck v0.5.30+matrix.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'skin.dexhub v3.28.228'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'skin.estuary v4.1.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'vfs.libarchive v22.0.3'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'vfs.pdf v22.0.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'vfs.rar v22.0.5'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'vfs.sftp v22.0.6'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.fishbmc v22.1.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.goom v22.1.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.matrix v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.pictureit v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.projectm v22.3.2'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.shadertoy v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.spectrum v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.starburst v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'visualization.waveform v22.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'webinterface.default v21.x-1.0.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.addon v21.90.902'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.core v0.1.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.gui v5.18.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.json v13.2000.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.metadata v2.1.0'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.python v3.1.1'
+2026-11-16 18:39:46.165 T:7        info <general>: Addon Manager: Found addon: 'xbmc.webinterface v1.0.0'
+2026-11-16 18:39:46.171 T:7        info <general>: CZeroconfBrowserAvahi::clientCallback: avahi server not available. But may become later...
+2026-11-16 18:39:46.172 T:7        info <general>: Selected Logind/UPower as PowerSyscall
+2026-11-16 18:39:46.172 T:7        info <general>: LogindUPowerSyscall - UPower not found, battery information will not be available
+2026-11-16 18:39:46.188 T:7        info <general>: CKeyboardLayoutManager: loading keyboard layouts from special://xbmc/system/keyboardlayouts...
+2026-11-16 18:39:46.218 T:7        info <general>: Available videomodes (xrandr):
+2026-11-16 18:39:46.218 T:7        info <general>: Output 'screen' has 1 modes
+2026-11-16 18:39:46.218 T:7        info <general>: ID:0x3a Name:1920x1080 Refresh:0.000000 Width:1920 Height:1080
+2026-11-16 18:39:46.218 T:7        info <general>: Pixel Ratio: 1.000000
+2026-11-16 18:39:46.218 T:7        info <general>: CApplication::CreateGUI - using the x11 windowing system
+2026-11-16 18:39:46.218 T:7        info <general>: Checking resolution 16
+2026-11-16 18:39:46.218 T:7        info <general>: CWinSystemX11GLESContext::CreateNewWindow
+2026-11-16 18:39:46.233 T:7        info <general>: DPMS: X11 extension not present, power-saving will not be available
+2026-11-16 18:39:46.233 T:7        info <general>: RetroPlayer[RENDER]: Registering renderer factory for OpenGLES
+2026-11-16 18:39:46.233 T:7        info <general>: Using visual 0x21
+2026-11-16 18:39:46.259 T:7     warning <general>: Failed to get an OpenGL context supporting core profile 3.2, using legacy mode with reduced feature set
+2026-11-16 18:39:46.261 T:7        info <general>: GLES: Maximum texture width: 2048
+2026-11-16 18:39:46.261 T:7        info <general>: GL_VENDOR = Mesa
+2026-11-16 18:39:46.261 T:7        info <general>: GL_RENDERER = llvmpipe (LLVM 22.1.8, 256 bits)
+2026-11-16 18:39:46.261 T:7        info <general>: GL_VERSION = OpenGL ES 3.2 Mesa 26.2.5
+2026-11-16 18:39:46.261 T:7        info <general>: GL_SHADING_LANGUAGE_VERSION = OpenGL ES GLSL ES 3.20
+2026-11-16 18:39:46.261 T:7        info <general>: GL_EXTENSIONS = GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_texture_storage GL_NV_pack_subimage GL_NV_texture_barrier GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_OES_viewport_array GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_robustness GL_EXT_sRGB GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_APPLE_sync GL_EXT_draw_buffers GL_EXT_instanced_arrays GL_EXT_map_buffer_range GL_EXT_shadow_samplers GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_NV_generate_mipmap_sRGB GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_debug_label GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_framebuffer_fetch GL_EXT_shader_group_vote GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_ANDROID_extension_pack_es31a GL_ARM_shader_framebuffer_fetch_depth_stencil GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_gpu_shader5 GL_EXT_multi_draw_indirect GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_render_snorm GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_norm16 GL_EXT_texture_view GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_NV_image_formats GL_NV_shader_noperspective_interpolation GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_gpu_shader5 GL_OES_primitive_bounding_box GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_blend_func_extended GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_texture_filter_minmax GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_NV_sample_locations GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_clip_cull_distance GL_EXT_conservative_depth GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_texture_compression_bptc GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_NV_alpha_to_coverage_dither_control GL_EXT_EGL_image_storage GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_texture_shadow_lod GL_MESA_framebuffer_flip_y GL_OVR_multiview GL_OVR_multiview2 GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_sampler_objects GL_EXT_EGL_image_storage_compression GL_EXT_texture_storage_compression GL_MESA_bgra GL_EXT_mesh_shader GL_EXT_shader_clock 
+2026-11-16 18:39:46.269 T:7        info <general>: GLES: Maximum texture width: 16384
+2026-11-16 18:39:46.296 T:7        info <general>: GLES: Enabling VSYNC
+2026-11-16 18:39:46.304 T:7        info <general>: load keymapping
+2026-11-16 18:39:46.304 T:7        info <general>: Loading special://xbmc/system/keymaps/appcommand.xml
+2026-11-16 18:39:46.304 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.Harmony.xml
+2026-11-16 18:39:46.305 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.SiriRemote.xml
+2026-11-16 18:39:46.305 T:7        info <general>: Loading special://xbmc/system/keymaps/gamepad.xml
+2026-11-16 18:39:46.305 T:7        info <general>: Loading special://xbmc/system/keymaps/joystick.xml
+2026-11-16 18:39:46.305 T:7        info <general>: Loading special://xbmc/system/keymaps/keyboard.xml
+2026-11-16 18:39:46.306 T:7        info <general>: Loading special://xbmc/system/keymaps/mouse.xml
+2026-11-16 18:39:46.306 T:7        info <general>: Loading special://xbmc/system/keymaps/remote.xml
+2026-11-16 18:39:46.306 T:7        info <general>: Loading special://xbmc/system/keymaps/touchscreen.xml
+2026-11-16 18:39:46.306 T:7        info <general>: GUI format 1920x1080, Display screen: 1920x1080
+2026-11-16 18:39:46.312 T:21       info <general>: CAESinkALSA - Unable to open device "default" for playback
+2026-11-16 18:39:46.314 T:21       info <general>: CAESinkALSA - Unable to open device "oss" for playback
+2026-11-16 18:39:46.317 T:21       info <general>: CAESinkALSA - Unable to open device "pipewire" for playback
+2026-11-16 18:39:46.321 T:21       info <general>: CAESinkALSA - Unable to open device "pulse" for playback
+2026-11-16 18:39:46.321 T:21       info <general>: CAESinkALSA - Unable to open device "upmix" for playback
+2026-11-16 18:39:46.322 T:21       info <general>: CAESinkALSA - Unable to open device "vdownmix" for playback
+2026-11-16 18:39:46.322 T:21       info <general>: No Devices found - retry: 4
+2026-11-16 18:39:47.126 T:9        info <general>: Loading special://xbmc/system/Lircmap.xml
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'mceusb'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'XboxDVDDongle'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'Microsoft_Xbox'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'PinnacleSysPCTVRemote'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'anysee'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'iMON-PAD'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'Antec_Veris_RM200'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'MCE_via_iMON'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'TwinHanRemote'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'linux-input-layer'
+2026-11-16 18:39:47.126 T:9        info <general>: * Linking remote mapping for 'linux-input-layer' to 'cx23885_remote'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'mediacenter'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'devinput'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'devinput-32'
+2026-11-16 18:39:47.126 T:9        info <general>: * Adding remote mapping for device 'devinput-64'
+2026-11-16 18:39:47.828 T:21       info <general>: CAESinkALSA - Unable to open device "default" for playback
+2026-11-16 18:39:47.830 T:21       info <general>: CAESinkALSA - Unable to open device "oss" for playback
+2026-11-16 18:39:47.833 T:21       info <general>: CAESinkALSA - Unable to open device "pipewire" for playback
+2026-11-16 18:39:47.837 T:21       info <general>: CAESinkALSA - Unable to open device "pulse" for playback
+2026-11-16 18:39:47.837 T:21       info <general>: CAESinkALSA - Unable to open device "upmix" for playback
+2026-11-16 18:39:47.838 T:21       info <general>: CAESinkALSA - Unable to open device "vdownmix" for playback
+2026-11-16 18:39:47.838 T:21       info <general>: No Devices found - retry: 3
+2026-11-16 18:39:49.344 T:21       info <general>: CAESinkALSA - Unable to open device "default" for playback
+2026-11-16 18:39:49.346 T:21       info <general>: CAESinkALSA - Unable to open device "oss" for playback
+2026-11-16 18:39:49.349 T:21       info <general>: CAESinkALSA - Unable to open device "pipewire" for playback
+2026-11-16 18:39:49.353 T:21       info <general>: CAESinkALSA - Unable to open device "pulse" for playback
+2026-11-16 18:39:49.353 T:21       info <general>: CAESinkALSA - Unable to open device "upmix" for playback
+2026-11-16 18:39:49.353 T:21       info <general>: CAESinkALSA - Unable to open device "vdownmix" for playback
+2026-11-16 18:39:49.353 T:21       info <general>: No Devices found - retry: 2
+2026-11-16 18:39:50.860 T:21       info <general>: CAESinkALSA - Unable to open device "default" for playback
+2026-11-16 18:39:50.862 T:21       info <general>: CAESinkALSA - Unable to open device "oss" for playback
+2026-11-16 18:39:50.865 T:21       info <general>: CAESinkALSA - Unable to open device "pipewire" for playback
+2026-11-16 18:39:50.869 T:21       info <general>: CAESinkALSA - Unable to open device "pulse" for playback
+2026-11-16 18:39:50.869 T:21       info <general>: CAESinkALSA - Unable to open device "upmix" for playback
+2026-11-16 18:39:50.869 T:21       info <general>: CAESinkALSA - Unable to open device "vdownmix" for playback
+2026-11-16 18:39:50.869 T:21       info <general>: No Devices found - retry: 1
+2026-11-16 18:39:52.376 T:21       info <general>: CAESinkALSA - Unable to open device "default" for playback
+2026-11-16 18:39:52.377 T:21       info <general>: CAESinkALSA - Unable to open device "oss" for playback
+2026-11-16 18:39:52.381 T:21       info <general>: CAESinkALSA - Unable to open device "pipewire" for playback
+2026-11-16 18:39:52.385 T:21       info <general>: CAESinkALSA - Unable to open device "pulse" for playback
+2026-11-16 18:39:52.385 T:21       info <general>: CAESinkALSA - Unable to open device "upmix" for playback
+2026-11-16 18:39:52.385 T:21       info <general>: CAESinkALSA - Unable to open device "vdownmix" for playback
+2026-11-16 18:39:52.385 T:21       info <general>: Found 0 Lists of Devices
+2026-11-16 18:39:52.385 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:39:52.385 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:39:52.385 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:39:52.385 T:7        info <general>: CLangInfo: loading resource.language.en_gb language information...
+2026-11-16 18:39:52.385 T:7        info <general>: IANA Language Subtag Registry: loading...
+2026-11-16 18:39:52.386 T:7        info <general>: IANA Language Subtag Registry: file /app/share/kodi/system/language-subtag-registry.txt
+2026-11-16 18:39:52.386 T:7        info <general>: IANA Language Subtag Registry: registry date 2026-08-08
+2026-11-16 18:39:52.396 T:7        info <general>: IANA Language Subtag Registry: 9296 records loaded
+2026-11-16 18:39:52.397 T:7        info <general>: global locale set to en_US.UTF-8
+2026-11-16 18:39:52.397 T:7        info <general>: CLangInfo: loading resource.language.en_gb language strings...
+2026-11-16 18:39:52.407 T:54       info <general>: Running database version Addons33
+2026-11-16 18:39:52.407 T:54       info <general>: Running database version ViewModes6
+2026-11-16 18:39:52.407 T:54       info <general>: Running database version Games1
+2026-11-16 18:39:52.407 T:54       info <general>: Running database version Textures14
+2026-11-16 18:39:52.407 T:54       info <general>: Running database version MyMusic84
+2026-11-16 18:39:52.408 T:54       info <general>: Running database version MyVideos150
+2026-11-16 18:39:52.408 T:54       info <general>: Running database version TV48
+2026-11-16 18:39:52.408 T:54       info <general>: Running database version Epg22
+2026-11-16 18:39:52.431 T:7        info <general>: Unloaded skin
+2026-11-16 18:39:52.432 T:7        info <general>:   load skin from: /app/share/kodi/addons/skin.estuary/ (version: 4.1.0)
+2026-11-16 18:39:52.432 T:7        info <general>:   load fonts for skin...
+2026-11-16 18:39:52.432 T:7        info <general>: Loading skin includes from /app/share/kodi/addons/skin.estuary/xml/Includes.xml
+2026-11-16 18:39:52.444 T:7        info <general>: bool GUIFontManager::LoadFontsFromFile(const std::string&, const std::string&, std::string&, bool): Loading <fontset> with name 'Default' from '/app/share/kodi/addons/skin.estuary/xml/Font.xml'
+2026-11-16 18:39:52.446 T:7        info <general>: void ADDON::CSkinInfo::LoadTimers(): Trying to load skin timers from /app/share/kodi/addons/skin.estuary/xml/Timers.xml
+2026-11-16 18:39:52.446 T:7        info <general>:   load new skin...
+2026-11-16 18:39:52.446 T:7        info <general>: Loading custom window XMLs from skin path /app/share/kodi/addons/skin.estuary/xml
+2026-11-16 18:39:52.447 T:7        info <general>:   initialize new skin...
+2026-11-16 18:39:52.447 T:7        info <general>: Loading skin file: Custom_1109_TopBarOverlay.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.450 T:7        info <general>: Loading skin file: DialogBusy.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.450 T:7        info <general>: Loading skin file: DialogNotification.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.450 T:7        info <general>: Loading skin file: DialogSeekBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.453 T:7        info <general>: Loading skin file: DialogExtendedProgressBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.453 T:7        info <general>: Loading skin file: Pointer.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.453 T:7        info <general>: Loading skin file: DialogBusy.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.453 T:7        info <general>: Loading skin file: DialogVolumeBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-16 18:39:52.453 T:7        info <general>: Loading resource://resource.uisounds.kodi/sounds.xml
+2026-11-16 18:39:52.455 T:7        info <general>:   skin loaded...
+2026-11-16 18:39:52.457 T:7     warning <general>: JSONRPC: Could not parse type "Setting.Details.SettingList"
+2026-11-16 18:39:52.457 T:7        info <general>: JSONRPC: Adding type "Setting.Details.SettingList" to list of incomplete definitions (waiting for "Setting.Details.Setting")
+2026-11-16 18:39:52.457 T:7        info <general>: JSONRPC: Resolving incomplete types/methods referencing Setting.Details.Setting
+2026-11-16 18:39:52.461 T:7        info <general>: JSONRPC v13.2000.0: Successfully initialized
+2026-11-16 18:39:52.461 T:7        info <general>: [Media Detection] starting service for optical media detection
+2026-11-16 18:39:52.463 T:7        info <peripheral.joystick>: Enabling joystick interface "udev"
+2026-11-16 18:39:52.464 T:7        info <general>: Loading controller layout: /app/share/kodi/addons/game.controller.keyboard/resources/layout.xml
+2026-11-16 18:39:52.464 T:7        info <general>: Register - new keyboard device registered on application->keyboard: Keyboard (0000:0000)
+2026-11-16 18:39:52.464 T:7        info <general>: Loading controller layout: /app/share/kodi/addons/game.controller.mouse/resources/layout.xml
+2026-11-16 18:39:52.464 T:7        info <general>: Register - new mouse device registered on application->mouse: Mouse (0000:0000)
+2026-11-16 18:39:52.465 T:7        info <general>: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+2026-11-16 18:39:52.465 T:7        info <general>: Loaded playercorefactory configuration
+2026-11-16 18:39:52.465 T:7        info <general>: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+2026-11-16 18:39:52.465 T:7        info <general>: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+2026-11-16 18:39:52.465 T:7        info <general>: Loading skin file: Startup.xml, load type: LOAD_EVERY_TIME
+2026-11-16 18:39:52.465 T:7        info <general>: Loading skin file: Home.xml, load type: KEEP_IN_MEMORY
+2026-11-16 18:39:52.485 T:7        info <general>: removing tempfiles
+2026-11-16 18:39:52.493 T:7        info <general>: initialize done
+2026-11-16 18:39:52.493 T:7        info <general>: Running the application...
+2026-11-16 18:39:52.496 T:7        info <general>: CZeroconfAvahi::clientCallback: avahi server not available. But may become later...
+2026-11-16 18:39:52.496 T:7        info <general>: starting zeroconf publishing
+2026-11-16 18:39:52.496 T:72       info <general>: ES: Starting UDP Event server on port 9777
+2026-11-16 18:39:52.497 T:7        info <general>: JSONRPC Server: Successfully initialized
+2026-11-16 18:39:52.497 T:72       info <general>: UDP: Listening on port 9777 (ipv6 : false)
+2026-11-16 18:39:52.500 T:7        info <general>: CWSDiscoveryListenerUDP::Start - Started
+2026-11-16 18:39:52.682 T:69       info <general>: [DexHub] IPv6 does not reach the internet here: IPv4 addresses are tried first
+2026-11-16 18:39:52.882 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:39:52.882 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:39:52.882 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:39:53.287 T:69       info <general>: [DexHub] companion service started: version=5.10.580 skin=skin.estuary
+2026-11-16 18:39:53.287 T:69       info <general>: [DexHub] platform: Kodi 22.0-RC2 (21.90.902) Git:20261109-d686683a-dirty, Python 3.14.9
+2026-11-16 18:39:53.309 T:69       info <general>: [DexHub] auto-detected UI language from Kodi locale=en
+2026-11-16 18:39:53.317 T:69       info <general>: [DexHub] skin_theme: skin=skin.estuary accent=FF9B6BFF source=preset:7
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/appcommand.xml
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.Harmony.xml
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.SiriRemote.xml
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/gamepad.xml
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/joystick.xml
+2026-11-16 18:39:53.371 T:7        info <general>: Loading special://xbmc/system/keymaps/keyboard.xml
+2026-11-16 18:39:53.372 T:7        info <general>: Loading special://xbmc/system/keymaps/mouse.xml
+2026-11-16 18:39:53.372 T:7        info <general>: Loading special://xbmc/system/keymaps/remote.xml
+2026-11-16 18:39:53.372 T:7        info <general>: Loading special://xbmc/system/keymaps/touchscreen.xml
+2026-11-16 18:39:53.372 T:7        info <general>: Loading special://masterprofile/keymaps/zzzz_dexhub_home_player.xml
+2026-11-16 18:39:53.372 T:7        info <general>: Loading special://profile/keymaps/zzzz_dexhub_home_player.xml
+2026-11-16 18:39:53.382 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:39:53.382 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:39:53.382 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:39:53.502 T:69       info <general>: [DexHub] Lightweight Mode — poster proxy skipped
+2026-11-16 18:39:53.511 T:69       info <general>: [DexHub] Lightweight Mode enabled — index scheduler skipped
+2026-11-16 18:39:53.667 T:91       info <general>: [DexHub] subtitle AutoSync: runs in Dex Hub
+2026-11-16 18:39:54.224 T:7        info <general>: Loading special://xbmc/system/keymaps/appcommand.xml
+2026-11-16 18:39:54.224 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.Harmony.xml
+2026-11-16 18:39:54.224 T:7        info <general>: Loading special://xbmc/system/keymaps/customcontroller.SiriRemote.xml
+2026-11-16 18:39:54.224 T:7        info <general>: Loading special://xbmc/system/keymaps/gamepad.xml
+2026-11-16 18:39:54.224 T:7        info <general>: Loading special://xbmc/system/keymaps/joystick.xml
+2026-11-16 18:39:54.225 T:7        info <general>: Loading special://xbmc/system/keymaps/keyboard.xml
+2026-11-16 18:39:54.225 T:7        info <general>: Loading special://xbmc/system/keymaps/mouse.xml
+2026-11-16 18:39:54.225 T:7        info <general>: Loading special://xbmc/system/keymaps/remote.xml
+2026-11-16 18:39:54.225 T:7        info <general>: Loading special://xbmc/system/keymaps/touchscreen.xml
+2026-11-16 18:39:54.226 T:7        info <general>: Loading special://masterprofile/keymaps/zzzz_dexhub_home_player.xml
+2026-11-16 18:39:54.226 T:7        info <general>: Loading special://profile/keymaps/zzzz_dexhub_home_player.xml
+2026-11-16 18:39:54.382 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:39:54.382 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:39:54.382 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:39:56.382 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:39:56.382 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:39:56.382 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:40:00.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:40:00.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:40:00.383 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:40:08.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:40:08.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:40:08.383 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:40:24.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:40:24.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:40:24.383 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:40:28.598 T:73       info <general>: JSONRPC Server: New connection added
+2026-11-16 18:40:28.599 T:73       info <general>: JSONRPC Server: Disconnection detected
+2026-11-16 18:40:28.618 T:73       info <general>: JSONRPC Server: New connection added
+2026-11-16 18:40:28.618 T:73       info <general>: JSONRPC Server: Disconnection detected
+2026-11-16 18:40:54.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:40:54.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:40:54.383 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:40:54.914 T:80       info <general>: [DexHub] compiled 396 of 502 files in 21.7 s
+2026-11-16 18:41:11.273 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:41:23.809 T:98       info <general>: [DexHub] skin: panel schedule: 0 rows in 1 ms
+2026-11-16 18:41:24.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:41:24.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:41:24.383 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:41:33.867 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:41:54.383 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:41:54.383 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:41:54.384 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:42:06.448 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:42:19.608 T:21    warning <general>: Skipped 1 duplicate messages..
+2026-11-16 18:42:19.608 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:42:24.382 T:22       info <general>: void ActiveAE::CActiveAESink::OpenSink(): initialize sink
+2026-11-16 18:42:24.382 T:22      error <general>: void ActiveAE::CActiveAESink::OpenSink(): no sink was returned
+2026-11-16 18:42:24.382 T:21      error <general>: ActiveAE::InitSink - returned error
+2026-11-16 18:42:26.215 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:42:41.486 T:21    warning <general>: Skipped 4 duplicate messages..
+2026-11-16 18:42:41.486 T:21    warning <general>: CActiveAE::StateMachine - signal: 1 from port: OutputDataPort not handled for state: 2
+2026-11-16 18:42:41.799 T:7        info <general>: Loading skin file: Settings.xml, load type: KEEP_IN_MEMORY
