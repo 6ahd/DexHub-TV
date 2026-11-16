@@ -59,9 +59,10 @@ class LayoutPreferenceDataStore @Inject constructor(
     companion object {
         private const val TAG = "LayoutPreferenceDS"
         private const val FEATURE = "layout_settings"
-        private const val DEFAULT_POSTER_CARD_WIDTH_DP = 126
-        private const val DEFAULT_POSTER_CARD_HEIGHT_DP = 189
-        private const val DEFAULT_POSTER_CARD_CORNER_RADIUS_DP = 12
+        // skin.dexhub poster: 176 x 264 px drawn (88 x 132 dp) after Home's 0.84 x 1.08 scale.
+        private const val DEFAULT_POSTER_CARD_WIDTH_DP = 97
+        private const val DEFAULT_POSTER_CARD_HEIGHT_DP = 146
+        private const val DEFAULT_POSTER_CARD_CORNER_RADIUS_DP = 9
         private const val DEFAULT_FOCUSED_POSTER_BACKDROP_EXPAND_DELAY_SECONDS = 3
         private const val MIN_FOCUSED_POSTER_BACKDROP_EXPAND_DELAY_SECONDS = 0
     }

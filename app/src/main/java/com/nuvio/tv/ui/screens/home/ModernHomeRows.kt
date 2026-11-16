@@ -857,7 +857,8 @@ internal fun ModernRowSection(
         )
     ) {
         val rowTitle = row.title
-        val rowLeadingInset = if (LocalV2Appearance.current != null) 24.dp else 52.dp
+        // skin.dexhub: row titles and the first card start at x 96 px (48 dp).
+        val rowLeadingInset = if (LocalV2Appearance.current != null) 48.dp else 52.dp
         val railHeaderModifier = remember(rowTitleBottom, rowLeadingInset) {
             Modifier
                 .padding(start = rowLeadingInset, end = 52.dp, bottom = rowTitleBottom)
@@ -865,8 +866,9 @@ internal fun ModernRowSection(
         }
         Text(
             text = rowTitle,
-            style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.SemiBold, textDirection = rowTitle.contentTextDirection()),
-            color = NuvioTheme.colors.TextPrimary,
+            // dh_row: Inter Bold 30 px (15 sp), white.
+            style = MaterialTheme.typography.titleMedium.copy(fontSize = 15.sp, fontWeight = FontWeight.Bold, textDirection = rowTitle.contentTextDirection()),
+            color = Color.White,
             modifier = railHeaderModifier
         )
 

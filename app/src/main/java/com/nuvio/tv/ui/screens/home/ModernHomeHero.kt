@@ -285,7 +285,13 @@ internal fun ModernHeroMediaLayer(
     }
 }
 
-private val FULL_SCREEN_HERO_SCRIM = listOf(0.0f to 1f, 0.22f to 0.90f, 0.46f to 0.80f, 0.76f to 0.42f, 1.0f to 0f)
+// skin.dexhub full_left.png (1260 of 1920 px, surface colour): its alpha, left to right.
+private val FULL_SCREEN_HERO_SCRIM = listOf(0.0f to .86f, 0.1f to .84f, 0.2f to .77f, 0.3f to .67f, 0.4f to .56f,
+    0.5f to .43f, 0.6f to .30f, 0.7f to .18f, 0.8f to .09f, 0.9f to .02f, 1.0f to 0f)
+
+// skin.dexhub full_bottom.png (from y 440 of 1080 to the bottom, surface colour): its alpha, top to bottom.
+private val FULL_SCREEN_BOTTOM_SCRIM = listOf(0.0f to 0f, 0.1f to .05f, 0.2f to .14f, 0.3f to .26f, 0.4f to .40f,
+    0.5f to .53f, 0.6f to .66f, 0.7f to .78f, 0.8f to .87f, 0.9f to .94f, 1.0f to .96f)
 
 @Composable
 internal fun ModernHeroGradientLayer(
@@ -308,7 +314,7 @@ internal fun ModernHeroGradientLayer(
             }
             .drawWithCache {
                 val fullScreen = isFullScreen()
-                val horizontalFadeEndX = size.width * if (fullScreen) 0.65f else 0.45f
+                val horizontalFadeEndX = size.width * if (fullScreen) 0.656f else 0.45f
                 val menuProgress = if (fullScreen) menuLayout?.let { it.expansion() } ?: 0f else 0f
                 val colorStops = if (fullScreen && menuProgress > 0f) {
                     com.nuvio.tv.ui.v2.components.openMenuScrimStops(
@@ -339,17 +345,10 @@ internal fun ModernHeroGradientLayer(
                     )
                 }
 
-                val bottomStripStartY = size.height * if (fullScreen) {
-                    if (cinematic) 0.32f else 0.64f
-                } else 0.82f
+                val bottomStripStartY = size.height * if (fullScreen) 0.407f else 0.82f
                 val verticalGradient = Brush.verticalGradient(
                     colorStops = if (fullScreen) {
-                        arrayOf(
-                            0.0f to Color.Transparent,
-                            0.30f to bgColor.copy(alpha = 0.35f),
-                            0.60f to bgColor.copy(alpha = 0.75f),
-                            1.0f to bgColor
-                        )
+                        FULL_SCREEN_BOTTOM_SCRIM.map { (f, a) -> f to bgColor.copy(alpha = a) }.toTypedArray()
                     } else {
                         arrayOf(
                             0.0f to Color.Transparent,

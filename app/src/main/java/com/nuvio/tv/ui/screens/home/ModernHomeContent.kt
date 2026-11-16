@@ -776,7 +776,8 @@ fun ModernHomeContent(
         ContinueWatchingCardStyle.POSTER -> portraitCatalogCardWidth
         // Wide still scales with the poster width setting so it matches the rest of the row.
         ContinueWatchingCardStyle.WIDE -> portraitBaseWidth * 2.1f
-        ContinueWatchingCardStyle.CARD -> portraitBaseWidth * 1.24f * continueWatchingScale
+        // skin.dexhub's wide Continue Watching card: 480 x 270 px (240 x 135 dp).
+        ContinueWatchingCardStyle.CARD -> portraitBaseWidth * 2.474f
     }
     val continueWatchingCardHeight = when (continueWatchingStyle) {
         ContinueWatchingCardStyle.POSTER -> portraitCatalogCardHeight
@@ -794,7 +795,7 @@ fun ModernHomeContent(
 
     Box(modifier = Modifier.fillMaxSize().background(NuvioTheme.colors.Background)) {
             val posterCardCornerRadius = remember(uiState.posterCardCornerRadiusDp) { uiState.posterCardCornerRadiusDp.dp }
-            val rowHorizontalPadding = if (isV2) 24.dp else 52.dp
+            val rowHorizontalPadding = if (isV2) 48.dp else 52.dp
 
             val settledCarouselItemState = remember(rowByKey) {
                 derivedStateOf { resolveModernHeroItem(rowByKey.map, settledHeroSelection.value) }
