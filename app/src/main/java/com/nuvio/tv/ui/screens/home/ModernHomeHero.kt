@@ -58,6 +58,7 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import androidx.compose.foundation.Image
@@ -566,96 +567,57 @@ private fun HeroTitleContent(
         }
 
         val secondaryHighlightText = secondaryMeta.highlightText
-        val ageRatingBadge = secondaryMeta.ageRating
-        val statusBadge = secondaryMeta.status
+        // skin.dexhub puts the status and certificate pills on the facts line (Dex Hub facts line),
+        // and every rating on the line under it.
+        val factsStatusBadge = secondaryMeta.status
+        val factsAgeRating = secondaryMeta.ageRating
+        val ageRatingBadge: String? = null
+        val statusBadge: String? = null
         val secondaryDetails = secondaryMeta.details
-        val hasSecondaryBadge = ageRatingBadge != null || statusBadge != null
+        val hasSecondaryBadge = false
         val hasImdbRatingForLayout = !preview.imdbText.isNullOrBlank()
         val hasMdbListRatings = mdbListShowOnHero && preview.mdbListRatings != null && !preview.mdbListRatings.isEmpty()
-        // When MDBList ratings are shown, don't reserve space for standalone IMDb badge.
-        val reserveImdbInPrimary = !hasMdbListRatings && !preview.isSeries && !hasSecondaryBadge && hasImdbRatingForLayout
-        val reserveImdbInPrimaryWithHighlight = reserveImdbInPrimary && secondaryHighlightText == null
-        val reserveImdbInSecondary = !hasMdbListRatings && hasImdbRatingForLayout &&
-            (preview.isSeries || hasSecondaryBadge || secondaryHighlightText != null)
+        val reserveImdbInPrimaryWithHighlight = false
+        val reserveImdbInSecondary = !hasMdbListRatings && hasImdbRatingForLayout
         val showImdbInPrimaryWithHighlight = showImdbRatings && reserveImdbInPrimaryWithHighlight
         val showImdbInSecondary = showImdbRatings && reserveImdbInSecondary
 
+        // Facts line (skin.dexhub hero, x 96, h 36, gap 12 px): type pill, status pill,
+        // "date   •   runtime   •   genres", then the outlined certificate pill.
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .graphicsLayer { alpha = metaAlpha },
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(metaSpacing)
+            horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
-            val leadingMetaText = remember(preview.contentTypeText, preview.genres, context) {
-                buildList {
-                    preview.contentTypeText?.takeIf { it.isNotBlank() }?.let(::add)
-                    preview.genres.firstOrNull()?.takeIf { it.isNotBlank() }?.let { genre ->
-                        add(com.nuvio.tv.ui.util.localizedGenreLabel(context, genre))
-                    }
-                }.joinToString(separator = " • ")
+            preview.contentTypeText?.takeIf { it.isNotBlank() }?.let { type ->
+                DexFactPill(type, fill = Color(0x33FFFFFF))
             }
-            val hasLeadingMeta = leadingMetaText.isNotBlank()
-
-            val runtimeText = preview.runtimeText
-            val yearText = preview.yearText
-            val hasTrailingMeta = !runtimeText.isNullOrBlank() ||
-                !yearText.isNullOrBlank() ||
-                reserveImdbInPrimaryWithHighlight
-
-            if (hasLeadingMeta) {
+            factsStatusBadge?.let { status ->
+                DexFactPill(status, fill = dexStatusFill(preview.statusText))
+            }
+            val factsText = remember(preview.yearText, preview.runtimeText, preview.genres, context) {
+                listOfNotNull(
+                    preview.yearText?.takeIf { it.isNotBlank() },
+                    preview.runtimeText?.takeIf { it.isNotBlank() },
+                    preview.genres.take(2).filter { it.isNotBlank() }
+                        .joinToString(" / ") { com.nuvio.tv.ui.util.localizedGenreLabel(context, it) }
+                        .takeIf { it.isNotBlank() }
+                ).joinToString("   \u2022   ")
+            }
+            if (factsText.isNotBlank()) {
                 Text(
-                    text = leadingMetaText,
-                    style = labelMedium,
-                    color = NuvioTheme.colors.TextSecondary,
+                    text = factsText,
+                    fontSize = 12.5.sp,
+                    color = Color(0xF2FFFFFF),
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
-                    modifier = if (hasTrailingMeta) {
-                        Modifier.weight(1f, fill = false)
-                    } else {
-                        Modifier
-                    }
+                    modifier = Modifier.weight(1f, fill = false)
                 )
             }
-
-            if (hasTrailingMeta) {
-                if (hasLeadingMeta) {
-                    HeroMetaDivider(metaScale)
-                }
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(metaSpacing)
-                ) {
-                    if (!runtimeText.isNullOrBlank()) {
-                        Text(
-                            text = runtimeText,
-                            style = labelMedium,
-                            color = NuvioTheme.colors.TextSecondary,
-                            maxLines = 1
-                        )
-                    }
-                    if (!runtimeText.isNullOrBlank() && !yearText.isNullOrBlank()) {
-                        HeroMetaDivider(metaScale)
-                    }
-                    if (!yearText.isNullOrBlank()) {
-                        Text(
-                            text = yearText,
-                            style = labelMedium,
-                            color = NuvioTheme.colors.TextSecondary,
-                            maxLines = 1
-                        )
-                    }
-                    if (reserveImdbInPrimaryWithHighlight) {
-                        HeroImdbMeta(
-                            imdbText = preview.imdbText.orEmpty(),
-                            textStyle = labelMedium,
-                            textColor = NuvioTheme.colors.TextSecondary,
-                            logoSize = NuvioTheme.spacing.xl * metaScale,
-                            spacing = imdbMetaSpacing,
-                            visible = showImdbInPrimaryWithHighlight
-                        )
-                    }
-                }
+            factsAgeRating?.let { rating ->
+                DexFactPill(rating, fill = Color.Transparent, ring = Color(0x99FFFFFF))
             }
         }
 
@@ -770,8 +732,8 @@ private fun HeroTitleContent(
             AutoScrollingText(
                 text = description,
                 style = scaledDescriptionStyle.copy(textDirection = description.contentTextDirection()),
-                color = NuvioTheme.colors.TextPrimary,
-                maxLines = descriptionMaxLines,
+                color = Color(0xD9FFFFFF),
+                maxLines = descriptionMaxLines.coerceAtMost(2),
                 autoScrollEnabled = descriptionAutoScrollEnabled,
                 paused = trailerPlaying,
                 modifier = Modifier.weight(1f, fill = false).graphicsLayer { alpha = metaAlpha }
@@ -937,4 +899,29 @@ private fun HeroBackdropImages(image: coil3.Image?, modifier: Modifier) {
                 contentScale = ContentScale.Crop, alignment = Alignment.TopEnd)
         }
     }
+}
+
+/** A facts-line pill from skin.dexhub: 32 px tall, 16 px padding, font10 bold white. */
+@Composable
+private fun DexFactPill(text: String, fill: Color, ring: Color? = null) {
+    Box(
+        modifier = Modifier
+            .height(16.dp)
+            .background(fill, RoundedCornerShape(8.dp))
+            .then(if (ring != null) Modifier.border(1.dp, ring, RoundedCornerShape(8.dp)) else Modifier)
+            .padding(horizontal = 8.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = text, fontSize = 11.5.sp, fontWeight = FontWeight.Bold, color = Color.White, maxLines = 1)
+    }
+}
+
+/** The status pill's colour in skin.dexhub, by the show's status. */
+private fun dexStatusFill(status: String?): Color = when (status?.trim()?.lowercase()) {
+    "continuing", "returning series", "current" -> Color(0x8C16A34A)
+    "ended" -> Color(0x594B5563)
+    "cancelled", "canceled" -> Color(0x8CDC2626)
+    "in production", "post production" -> Color(0x8CD97706)
+    "planned", "pilot", "rumored" -> Color(0x8C2563EB)
+    else -> Color(0x33FFFFFF)
 }
