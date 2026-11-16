@@ -35,6 +35,8 @@ jobs:
           mkdir -p ~/.kodi/addons ~/.kodi/userdata dl
           gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --pattern 'skin.dexhub-*.zip' --dir dl
           for z in dl/*.zip; do unzip -q -o "$z" -d ~/.kodi/addons; done
+          # The PPA gives Kodi 20 here; skin.dexhub asks for Kodi 21's GUI API, so relax it for the screenshots.
+          sed -i 's/import addon="xbmc.gui" version="5.17.0"/import addon="xbmc.gui" version="5.16.0"/' ~/.kodi/addons/skin.dexhub/addon.xml
           ls ~/.kodi/addons
           echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > ~/.kodi/userdata/advancedsettings.xml
 
@@ -45,6 +47,7 @@ jobs:
           (DISPLAY=:99 KODI_AE_SINK=NULL timeout 40 kodi --standalone || true)
           db=$(ls ~/.kodi/userdata/Database/Addons*.db)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
+          sqlite3 "$db" "update installed set enabled=0 where addonID='service.xbmc.versioncheck';"
           sed -i 's|<setting id="lookandfeel.skin"[^>]*>[^<]*</setting>|<setting id="lookandfeel.skin">skin.dexhub</setting>|' ~/.kodi/userdata/guisettings.xml
           grep lookandfeel.skin ~/.kodi/userdata/guisettings.xml
 
@@ -54,7 +57,8 @@ jobs:
           (DISPLAY=:99 KODI_AE_SINK=NULL kodi --standalone > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
-          shot 01-home 60
+          shot 00-start 50
+          key Escape; shot 01-home 15
           key Down; shot 02-home-down 4
           key Down; shot 03-home-row 4
           key Down; shot 04-home-row2 4
@@ -105,7 +109,8 @@ jobs:
           arch: x86_64
           profile: tv_1080p
           disable-animations: false
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          ram-size: 4096M
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -memory 4096
           script: bash .github/compare/android-shots.sh
 
       - uses: actions/upload-artifact@v4

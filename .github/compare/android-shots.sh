@@ -7,6 +7,8 @@ mkdir -p "$out"
 apk=$(ls app/build/outputs/apk/full/debug/*x86_64*.apk | head -1)
 echo "Installing $apk"
 timeout 180 adb install -r -g "$apk"
+adb logcat -c || true
+(adb logcat -v time > "$out/logcat-live.txt" 2>&1 &)
 pkg=$(adb shell pm list packages | tr -d '\r' | sed -n 's/^package://p' | grep -m1 '^com\.dexhub\.tv')
 echo "Package $pkg"
 adb shell monkey -p "$pkg" -c android.intent.category.LAUNCHER 1 >/dev/null 2>&1 || \
