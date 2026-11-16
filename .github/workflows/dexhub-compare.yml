@@ -36,7 +36,10 @@ jobs:
           gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --pattern 'skin.dexhub-*.zip' --dir dl
           for z in dl/*.zip; do unzip -q -o "$z" -d ~/.kodi/addons; done
           # The PPA gives Kodi 20 here; skin.dexhub asks for Kodi 21's GUI API, so relax it for the screenshots.
-          sed -i 's/import addon="xbmc.gui" version="5.17.0"/import addon="xbmc.gui" version="5.16.0"/' ~/.kodi/addons/skin.dexhub/addon.xml
+          ls dl; ls ~/.kodi/addons
+          for x in $(grep -l 'id="skin.dexhub"' ~/.kodi/addons/*/addon.xml); do
+            sed -i 's/import addon="xbmc.gui" version="5.17.0"/import addon="xbmc.gui" version="5.16.0"/' "$x"; echo "relaxed $x"
+          done
           ls ~/.kodi/addons
           echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > ~/.kodi/userdata/advancedsettings.xml
 
@@ -100,7 +103,7 @@ jobs:
           sudo udevadm trigger --name-match=kvm
 
       - name: Run on the emulator and take screenshots
-        timeout-minutes: 15
+        timeout-minutes: 25
         continue-on-error: true
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -109,8 +112,8 @@ jobs:
           arch: x86_64
           profile: tv_1080p
           disable-animations: false
-          ram-size: 4096M
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -memory 4096
+          ram-size: 3072M
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           script: bash .github/compare/android-shots.sh
 
       - uses: actions/upload-artifact@v4
@@ -130,7 +133,7 @@ jobs:
           path: shots
       - name: Push
         run: |
-          cd shots
+          mkdir -p shots && cd shots
           git init -q -b ci-screens
           git config user.name "dexhub-ci"
           git config user.email "dexhub-ci@users.noreply.github.com"
