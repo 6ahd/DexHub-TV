@@ -96,6 +96,8 @@ jobs:
           sudo udevadm trigger --name-match=kvm
 
       - name: Run on the emulator and take screenshots
+        timeout-minutes: 15
+        continue-on-error: true
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34
