@@ -19,11 +19,14 @@ val DMSansFamily = FontFamily(
     Font(R.font.dm_sans_variable, FontWeight.Bold)
 )
 
+// Dex Hub's font (skin.dexhub fonts/InterArabic-*): Inter with IBM Plex Sans
+// Arabic, so Arabic and Latin share one family. OFL, see docs/licenses.
 val InterFamily = FontFamily(
-    Font(R.font.inter_variable, FontWeight.Normal),
-    Font(R.font.inter_variable, FontWeight.Medium),
-    Font(R.font.inter_variable, FontWeight.SemiBold),
-    Font(R.font.inter_variable, FontWeight.Bold)
+    Font(R.font.interarabic_light, FontWeight.Light),
+    Font(R.font.interarabic_regular, FontWeight.Normal),
+    Font(R.font.interarabic_regular, FontWeight.Medium),
+    Font(R.font.interarabic_bold, FontWeight.SemiBold),
+    Font(R.font.interarabic_bold, FontWeight.Bold)
 )
 
 val OpenSansFamily = FontFamily(
