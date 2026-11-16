@@ -1776,7 +1776,14 @@ private fun LauncherOnlySemantics(hide: Boolean, content: @Composable () -> Unit
     Box(
         modifier = Modifier.fillMaxSize().then(if (hide) Modifier.clearAndSetSemantics {} else Modifier),
         propagateMinConstraints = true
-    ) { content() }
+    ) {
+        // skin.dexhub keeps Kodi's left-to-right layout in Arabic too (logo left, rows from the left);
+        // only the text itself runs right to left.
+        androidx.compose.runtime.CompositionLocalProvider(
+            androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr,
+            content = content
+        )
+    }
 }
 
 @Composable

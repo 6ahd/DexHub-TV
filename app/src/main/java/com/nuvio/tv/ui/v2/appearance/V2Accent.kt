@@ -18,6 +18,8 @@ internal fun v2AccentStops(
     if (override != null && override != palette.secondary) return listOf(override)
     if (override == null && adaptive && artwork != null) return listOf(artwork)
     val gradient = if (focus) palette.focusRingGradient else palette.accentGradient
+    // Dex Hub's theme focuses in white like skin.dexhub (dh.kodifocus unset), not in its violet.
+    if (focus && palette == com.nuvio.tv.ui.theme.ThemeColors.Violet) return listOf(palette.focusRing)
     return if (gradient.size > 1) gradient else listOf(palette.secondary)
 }
 
