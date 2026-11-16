@@ -55,7 +55,6 @@ jobs:
           (DISPLAY=:99 KODI_AE_SINK=NULL timeout 40 kodi --standalone || true)
           db=$(ls ~/.kodi/userdata/Database/Addons*.db)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
-          sqlite3 "$db" "update installed set enabled=0 where addonID='service.xbmc.versioncheck';"
           sed -i 's|<setting id="lookandfeel.skin"[^>]*>[^<]*</setting>|<setting id="lookandfeel.skin">skin.dexhub</setting>|' ~/.kodi/userdata/guisettings.xml
           grep lookandfeel.skin ~/.kodi/userdata/guisettings.xml
 
@@ -65,8 +64,16 @@ jobs:
           (DISPLAY=:99 KODI_AE_SINK=NULL kodi --standalone > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
-          shot 00-start 50
-          key Escape; shot 01-home 15
+          rpc() { python3 -c 'import json,socket,sys
+          s=socket.create_connection(("127.0.0.1",9090),10); s.sendall(sys.argv[1].encode()); s.settimeout(5)
+          try: print(s.recv(65536).decode()[:300])
+          except Exception as e: print(e)' "$1" || true; }
+          shot 00-start 40
+          key Escape; sleep 2; key Escape
+          rpc '{"jsonrpc":"2.0","id":1,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
+          sleep 8; key Return; sleep 2
+          rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
+          shot 01-home 45
           key Down; shot 02-home-down 4
           key Down; shot 03-home-row 4
           key Down; shot 04-home-row2 4
