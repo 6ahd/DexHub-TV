@@ -33,7 +33,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p ~/.kodi/addons ~/.kodi/userdata dl
-          gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --pattern 'skin.dexhub-*.zip' --dir dl
+          gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --dir dl
+          # A release that leaves the skin unchanged ships no skin zip: take the newest one that has it.
+          tag=$(gh api 'repos/6ahd/plugin.video.dexhub/releases?per_page=30' \
+            --jq '[.[] | select(any(.assets[]; .name | startswith("skin.dexhub-")))][0].tag_name')
+          echo "skin from $tag"
+          gh release download "$tag" --repo 6ahd/plugin.video.dexhub --pattern 'skin.dexhub-*.zip' --dir dl
           for z in dl/*.zip; do unzip -q -o "$z" -d ~/.kodi/addons; done
           # The PPA gives Kodi 20 here; skin.dexhub asks for Kodi 21's GUI API, so relax it for the screenshots.
           ls dl; ls ~/.kodi/addons
@@ -113,7 +118,7 @@ jobs:
           profile: tv_1080p
           disable-animations: false
           ram-size: 3072M
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          emulator-options: -no-window -gpu guest -no-snapshot -noaudio -no-boot-anim
           script: bash .github/compare/android-shots.sh
 
       - uses: actions/upload-artifact@v4
