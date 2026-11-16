@@ -72,6 +72,12 @@ jobs:
           shot 00-start 40
           key Escape; sleep 2; key Escape
           rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
+          rpc '{"jsonrpc":"2.0","id":3,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
+          shot 00b-keep-skin 6
+          # Kodi asks whether to keep the new skin; Yes is the left button.
+          key Left; shot 00c-keep-skin-left 1
+          key Return; shot 00d-kept 3
+          rpc '{"jsonrpc":"2.0","id":4,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
           shot 01-setup 40
           # Dex Hub's first run shows the phone setup page: Back continues on the TV.
           key BackSpace; shot 01b-after-setup 20
