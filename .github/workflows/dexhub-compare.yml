@@ -55,7 +55,7 @@ jobs:
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           sleep 2
-          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=null || true)
+          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=alsa || true)
           # Kodi 21 and 22 keep their data in different places inside the Flatpak: find it.
           db=$(find ~/.var/app/tv.kodi.Kodi -name 'Addons*.db' | head -1)
           echo "addons db: $db"
@@ -65,14 +65,14 @@ jobs:
           grep -m1 "Starting Kodi" "$kdata/temp/kodi.log" || true
           for z in dl/*.zip; do unzip -q -o "$z" -d "$kdata/addons"; done
           echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > "$kdata/userdata/advancedsettings.xml"
-          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=null || true)
+          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=alsa || true)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
           sqlite3 "$db" "select addonID,enabled from installed where addonID like '%dexhub%';"
 
       - name: Screenshots
         run: |
           mkdir -p shots/kodi
-          (DISPLAY=:99 flatpak run "$KODI_REF" --standalone --audio-backend=null > kodi.out 2>&1 &)
+          (DISPLAY=:99 flatpak run "$KODI_REF" --standalone --audio-backend=alsa > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
           rpc() { python3 -c 'import json,socket,sys
