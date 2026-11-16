@@ -128,7 +128,7 @@ jobs:
         continue-on-error: true
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
+          api-level: 31
           target: google_apis
           arch: x86_64
           profile: tv_1080p
