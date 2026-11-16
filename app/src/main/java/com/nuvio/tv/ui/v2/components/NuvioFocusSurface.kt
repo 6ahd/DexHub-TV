@@ -39,7 +39,10 @@ fun Modifier.nuvioV2Focus(focused: Boolean, shape: Shape, accentOverride: Color?
     val artwork = com.nuvio.tv.ui.v2.appearance.LocalArtworkAccent.current
     val adaptive = NuvioTheme.currentTheme != com.nuvio.tv.domain.model.AppTheme.GLASS &&
         appearance.accentMode == com.nuvio.tv.domain.model.AccentMode.ADAPTIVE_ARTWORK
-    val focusColors = com.nuvio.tv.ui.v2.appearance.v2AccentColors(focus = true, override = accentOverride)
+    // Dex Hub's theme focuses in white like skin.dexhub (F2FFFFFF), whatever the accent.
+    val focusColors = if (accentOverride == null && NuvioTheme.currentTheme == com.nuvio.tv.domain.model.AppTheme.VIOLET)
+        listOf(Color(0xF2FFFFFF))
+        else com.nuvio.tv.ui.v2.appearance.v2AccentColors(focus = true, override = accentOverride)
     val progress = animateFloatAsState(
         targetValue = if (focused) 1f else 0f,
         animationSpec = if (stationary) androidx.compose.animation.core.snap()

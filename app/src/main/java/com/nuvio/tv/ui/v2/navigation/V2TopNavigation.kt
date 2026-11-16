@@ -164,10 +164,10 @@ fun V2TopNavigation(
             .4f to SurfaceTint.copy(alpha = .40f), .6f to SurfaceTint.copy(alpha = .31f),
             .8f to SurfaceTint.copy(alpha = .12f), 1f to Color.Transparent)))
         // glass_bar.png: a frosted pill, 1824 x 76 at (48, 22).
-        Box(Modifier.align(Alignment.TopStart).offset(x = 24.dp, y = 11.dp).width(912.dp).height(38.dp)
+        Box(Modifier.align(Alignment.TopStart).padding(horizontal = 24.dp).offset(y = 11.dp).fillMaxWidth().height(38.dp)
             .background(Brush.verticalGradient(listOf(Color(0x527F8083), Color(0x4A6A6B6F), Color(0x3D45464B))), RoundedCornerShape(19.dp))
             .border(1.dp, Brush.verticalGradient(listOf(Color(0xCCF0F0F0), Color(0x69A8A9AB))), RoundedCornerShape(19.dp)))
-        Row(Modifier.align(Alignment.TopStart).offset(x = 35.dp, y = 17.dp).width(890.dp).height(26.dp)
+        Row(Modifier.align(Alignment.TopStart).padding(start = 35.dp, end = 35.dp).offset(y = 17.dp).fillMaxWidth().height(26.dp)
             .onFocusChanged { navFocused = it.hasFocus }.focusGroup(),
             verticalAlignment = Alignment.CenterVertically) {
             ProfileButton(profile, Modifier.focusRequester(profileFocus).focusProperties { down = contentFocus },

@@ -73,7 +73,9 @@ jobs:
           key Escape; sleep 2; key Escape
           rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
           rpc '{"jsonrpc":"2.0","id":3,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
-          shot 00b-keep-skin 6
+          shot 00b-keep-skin 4
+          # Dex Hub's phone-setup page opens over Kodi's keep-skin question: close it first.
+          key BackSpace; shot 00b2-setup-closed 2
           # Kodi asks whether to keep the new skin; Yes is the left button.
           key Left; shot 00c-keep-skin-left 1
           key Return; shot 00d-kept 3
