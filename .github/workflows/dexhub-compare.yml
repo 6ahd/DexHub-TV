@@ -19,50 +19,46 @@ concurrency:
 jobs:
   kodi:
     name: Dex Hub in Kodi 21
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
+    env:
+      KDATA: /home/runner/.var/app/tv.kodi.Kodi/data
     steps:
-      - name: Install Kodi 21 and tools
+      - name: Install Kodi 21 (Flathub) and tools
         run: |
-          sudo add-apt-repository -y ppa:team-xbmc/ppa
           sudo apt-get update -qq
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq kodi xvfb xdotool imagemagick sqlite3 unzip
-          kodi --version | head -1
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq flatpak xvfb xdotool imagemagick sqlite3 unzip
+          flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+          flatpak install --user -y --noninteractive flathub tv.kodi.Kodi
+          flatpak info --user tv.kodi.Kodi | head -8
 
-      - name: Install Dex Hub and skin.dexhub from the latest release
+      - name: Install Dex Hub and skin.dexhub from the latest releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p ~/.kodi/addons ~/.kodi/userdata dl
+          mkdir -p "$KDATA/addons" "$KDATA/userdata" dl
           gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --dir dl
           # A release that leaves the skin unchanged ships no skin zip: take the newest one that has it.
           tag=$(gh api 'repos/6ahd/plugin.video.dexhub/releases?per_page=30' \
             --jq '[.[] | select(any(.assets[]; .name | startswith("skin.dexhub-")))][0].tag_name')
           echo "skin from $tag"
           gh release download "$tag" --repo 6ahd/plugin.video.dexhub --pattern 'skin.dexhub-*.zip' --dir dl
-          for z in dl/*.zip; do unzip -q -o "$z" -d ~/.kodi/addons; done
-          # The PPA gives Kodi 20 here; skin.dexhub asks for Kodi 21's GUI API, so relax it for the screenshots.
-          ls dl; ls ~/.kodi/addons
-          for x in $(grep -l 'id="skin.dexhub"' ~/.kodi/addons/*/addon.xml); do
-            sed -i 's/import addon="xbmc.gui" version="5.17.0"/import addon="xbmc.gui" version="5.16.0"/' "$x"; echo "relaxed $x"
-          done
-          ls ~/.kodi/addons
-          echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > ~/.kodi/userdata/advancedsettings.xml
+          for z in dl/*.zip; do unzip -q -o "$z" -d "$KDATA/addons"; done
+          ls dl "$KDATA/addons"
+          echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > "$KDATA/userdata/advancedsettings.xml"
 
-      - name: First run, then enable the add-ons and choose the skin
+      - name: First run, then enable the add-ons
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           sleep 2
-          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 40 kodi --standalone || true)
-          db=$(ls ~/.kodi/userdata/Database/Addons*.db)
+          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 60 flatpak run tv.kodi.Kodi --standalone || true)
+          db=$(ls "$KDATA"/userdata/Database/Addons*.db)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
-          # A guisettings.xml naming the skin from the start: switching skins at runtime asks to keep it, then reverts.
-          printf '<settings version="2">\n    <setting id="lookandfeel.skin">skin.dexhub</setting>\n</settings>\n' > ~/.kodi/userdata/guisettings.xml
-          cat ~/.kodi/userdata/guisettings.xml
+          sqlite3 "$db" "select addonID,enabled from installed where addonID like '%dexhub%';"
 
       - name: Screenshots
         run: |
           mkdir -p shots/kodi
-          (DISPLAY=:99 KODI_AE_SINK=NULL kodi --standalone > kodi.out 2>&1 &)
+          (DISPLAY=:99 KODI_AE_SINK=NULL flatpak run tv.kodi.Kodi --standalone > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
           rpc() { python3 -c 'import json,socket,sys
@@ -90,7 +86,7 @@ jobs:
           key Up; key Up; key Up; key Up; shot 05-bar 4
           key Right; shot 06-bar-movies 6
           key Return; shot 07-select 6
-          cp ~/.kodi/temp/kodi.log shots/kodi/kodi.log || true
+          cp "$KDATA"/temp/kodi.log shots/kodi/kodi.log || cp ~/.var/app/tv.kodi.Kodi/data/temp/kodi.log shots/kodi/ || true
 
       - uses: actions/upload-artifact@v4
         with:
