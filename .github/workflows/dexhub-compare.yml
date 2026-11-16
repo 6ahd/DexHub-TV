@@ -20,8 +20,6 @@ jobs:
   kodi:
     name: Dex Hub in Kodi 22
     runs-on: ubuntu-24.04
-    env:
-      KDATA: /home/runner/.var/app/tv.kodi.Kodi/data
     steps:
       - name: Install Kodi 22 (Flathub beta) and tools
         run: |
@@ -40,34 +38,41 @@ jobs:
           fi
           flatpak list --user --app
 
-      - name: Install Dex Hub and skin.dexhub from the latest releases
+      - name: Download Dex Hub and skin.dexhub from the latest releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p "$KDATA/addons" "$KDATA/userdata" dl
+          mkdir -p dl
           gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --dir dl
           # A release that leaves the skin unchanged ships no skin zip: take the newest one that has it.
           tag=$(gh api 'repos/6ahd/plugin.video.dexhub/releases?per_page=30' \
             --jq '[.[] | select(any(.assets[]; .name | startswith("skin.dexhub-")))][0].tag_name')
           echo "skin from $tag"
           gh release download "$tag" --repo 6ahd/plugin.video.dexhub --pattern 'skin.dexhub-*.zip' --dir dl
-          for z in dl/*.zip; do unzip -q -o "$z" -d "$KDATA/addons"; done
-          ls dl "$KDATA/addons"
-          echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > "$KDATA/userdata/advancedsettings.xml"
+          ls dl
 
-      - name: First run, then enable the add-ons
+      - name: First runs, install the add-ons where this Kodi keeps them, enable them
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           sleep 2
-          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 60 flatpak run "$KODI_REF" --standalone || true)
-          db=$(ls "$KDATA"/userdata/Database/Addons*.db)
+          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=null || true)
+          # Kodi 21 and 22 keep their data in different places inside the Flatpak: find it.
+          db=$(find ~/.var/app/tv.kodi.Kodi -name 'Addons*.db' | head -1)
+          echo "addons db: $db"
+          kdata=$(dirname "$(dirname "$(dirname "$db")")")
+          echo "KDATA=$kdata" >> "$GITHUB_ENV"
+          echo "kodi data: $kdata"; ls "$kdata"
+          grep -m1 "Starting Kodi" "$kdata/temp/kodi.log" || true
+          for z in dl/*.zip; do unzip -q -o "$z" -d "$kdata/addons"; done
+          echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > "$kdata/userdata/advancedsettings.xml"
+          (DISPLAY=:99 timeout 60 flatpak run "$KODI_REF" --standalone --audio-backend=null || true)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
           sqlite3 "$db" "select addonID,enabled from installed where addonID like '%dexhub%';"
 
       - name: Screenshots
         run: |
           mkdir -p shots/kodi
-          (DISPLAY=:99 KODI_AE_SINK=NULL flatpak run "$KODI_REF" --standalone > kodi.out 2>&1 &)
+          (DISPLAY=:99 flatpak run "$KODI_REF" --standalone --audio-backend=null > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
           rpc() { python3 -c 'import json,socket,sys
