@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dex Hub's own tabs and labels -->
+    <string name="dex_nav_movies">Movies</string>
+    <string name="dex_nav_series">Series</string>
+</resources>

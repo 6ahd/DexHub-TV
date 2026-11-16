@@ -358,7 +358,7 @@ internal fun HomeViewModel.observeModernHomePresentationPipeline() {
             }
             .distinctUntilChanged()
 
-        combine(uiState, _currentLocaleTag, posterOverlay) { state, localeTag, overlay ->
+        combine(uiState, _currentLocaleTag, posterOverlay, DexHomeTypeFilter.type) { state, localeTag, overlay, typeFilter ->
                 ModernHomePresentationInput(
                     homeRows = state.homeRows,
                     catalogRows = state.catalogRows,
@@ -370,7 +370,8 @@ internal fun HomeViewModel.observeModernHomePresentationPipeline() {
                     showFullReleaseDate = state.showFullReleaseDate,
                     showImdbRatings = state.homeImdbRatingsVisibility.showRatings,
                     detailImdbRatingsVisibility = state.detailImdbRatingsVisibility,
-                    localeTag = localeTag
+                    localeTag = localeTag,
+                    typeFilter = typeFilter
                 )
             }
             // Compare by row structure only (keys + item counts), not by
@@ -387,6 +388,7 @@ internal fun HomeViewModel.observeModernHomePresentationPipeline() {
                     && old.showFullReleaseDate == new.showFullReleaseDate
                     && old.showImdbRatings == new.showImdbRatings
                     && old.localeTag == new.localeTag
+                    && old.typeFilter == new.typeFilter
                     && old.catalogRows.size == new.catalogRows.size
             }
             .debounce {

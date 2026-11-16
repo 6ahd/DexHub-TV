@@ -28,7 +28,9 @@ internal data class ModernHomePresentationInput(
     val showImdbRatings: Boolean,
     val detailImdbRatingsVisibility: com.nuvio.tv.domain.model.DetailImdbRatingsVisibility =
         com.nuvio.tv.domain.model.DetailImdbRatingsVisibility.SHOW_ALL,
-    val localeTag: String
+    val localeTag: String,
+    /** Dex Hub's Movies / Series tab (DexHomeTypeFilter); null is the full Home. */
+    val typeFilter: String? = null
 )
 
 internal fun buildModernHomePresentation(
@@ -37,6 +39,8 @@ internal fun buildModernHomePresentation(
     context: Context,
     maxCatalogRows: Int? = null
 ): ModernHomePresentationState {
+    @Suppress("NAME_SHADOWING")
+    val input = input.filteredForDexType()
     val visibleHomeRows = resolveVisibleHomeRows(input)
     val localizedContext = context.withAppLocale()
     val strContinueWatching = localizedContext.getString(R.string.continue_watching)
