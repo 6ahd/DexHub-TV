@@ -1,0 +1,132 @@
+name: Dex Hub side-by-side screenshots
+
+# Renders Dex Hub in Kodi (plugin + skin.dexhub from the latest add-on release) and this
+# app on an Android TV emulator, then commits the screenshots to the ci-screens branch.
+# Runs when .github/compare/run changes on a claude/* branch, or by hand.
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['.github/compare/run']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dexhub-compare-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  kodi:
+    name: Dex Hub in Kodi 21
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Install Kodi 21 and tools
+        run: |
+          sudo add-apt-repository -y ppa:team-xbmc/ppa
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq kodi xvfb xdotool imagemagick sqlite3 unzip
+          kodi --version | head -1
+
+      - name: Install Dex Hub and skin.dexhub from the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p ~/.kodi/addons ~/.kodi/userdata dl
+          gh release download --repo 6ahd/plugin.video.dexhub --pattern 'plugin.video.dexhub-*.zip' --pattern 'skin.dexhub-*.zip' --dir dl
+          for z in dl/*.zip; do unzip -q -o "$z" -d ~/.kodi/addons; done
+          ls ~/.kodi/addons
+          echo '<advancedsettings><loglevel>0</loglevel></advancedsettings>' > ~/.kodi/userdata/advancedsettings.xml
+
+      - name: First run, then enable the add-ons and choose the skin
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          sleep 2
+          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 40 kodi --standalone || true)
+          db=$(ls ~/.kodi/userdata/Database/Addons*.db)
+          sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
+          sed -i 's|<setting id="lookandfeel.skin"[^>]*>[^<]*</setting>|<setting id="lookandfeel.skin">skin.dexhub</setting>|' ~/.kodi/userdata/guisettings.xml
+          grep lookandfeel.skin ~/.kodi/userdata/guisettings.xml
+
+      - name: Screenshots
+        run: |
+          mkdir -p shots/kodi
+          (DISPLAY=:99 KODI_AE_SINK=NULL kodi --standalone > kodi.out 2>&1 &)
+          shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
+          key() { DISPLAY=:99 xdotool key "$1"; }
+          shot 01-home 60
+          key Down; shot 02-home-down 4
+          key Down; shot 03-home-row 4
+          key Down; shot 04-home-row2 4
+          key Up; key Up; key Up; key Up; shot 05-bar 4
+          key Right; shot 06-bar-movies 6
+          key Return; shot 07-select 6
+          cp ~/.kodi/temp/kodi.log shots/kodi/kodi.log || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kodi-shots
+          path: shots/kodi
+
+  android:
+    name: Dex Hub TV on an Android TV emulator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Build the debug APK with an x86_64 split
+        run: |
+          touch local.properties local.dev.properties
+          keytool -genkeypair -keystore "$RUNNER_TEMP/ci.jks" -storepass android -alias androiddebugkey \
+            -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+          export NUVIO_RELEASE_STORE_FILE="$RUNNER_TEMP/ci.jks" NUVIO_RELEASE_KEY_ALIAS=androiddebugkey \
+            NUVIO_RELEASE_KEY_PASSWORD=android NUVIO_RELEASE_STORE_PASSWORD=android
+          ./gradlew :app:assembleFullDebug -PdexEmulatorAbi=true
+          ls app/build/outputs/apk/full/debug/
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run on the emulator and take screenshots
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: tv_1080p
+          disable-animations: false
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: bash .github/compare/android-shots.sh
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-shots
+          path: shots/android
+
+  publish:
+    name: Commit the screenshots to ci-screens
+    needs: [kodi, android]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: shots
+      - name: Push
+        run: |
+          cd shots
+          git init -q -b ci-screens
+          git config user.name "dexhub-ci"
+          git config user.email "dexhub-ci@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Screenshots for ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-screens

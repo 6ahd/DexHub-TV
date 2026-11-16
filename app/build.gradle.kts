@@ -313,6 +313,8 @@ android {
             isEnable = !buildingAppBundle
             reset()
             include("armeabi-v7a", "arm64-v8a")
+            // -PdexEmulatorAbi adds an x86_64 APK for the screenshot workflow's emulator.
+            if (providers.gradleProperty("dexEmulatorAbi").isPresent) include("x86_64")
             isUniversalApk = false
         }
     }
