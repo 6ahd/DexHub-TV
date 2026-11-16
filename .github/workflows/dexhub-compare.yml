@@ -55,8 +55,9 @@ jobs:
           (DISPLAY=:99 KODI_AE_SINK=NULL timeout 40 kodi --standalone || true)
           db=$(ls ~/.kodi/userdata/Database/Addons*.db)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
-          sed -i 's|<setting id="lookandfeel.skin"[^>]*>[^<]*</setting>|<setting id="lookandfeel.skin">skin.dexhub</setting>|' ~/.kodi/userdata/guisettings.xml
-          grep lookandfeel.skin ~/.kodi/userdata/guisettings.xml
+          # A guisettings.xml naming the skin from the start: switching skins at runtime asks to keep it, then reverts.
+          printf '<settings version="2">\n    <setting id="lookandfeel.skin">skin.dexhub</setting>\n</settings>\n' > ~/.kodi/userdata/guisettings.xml
+          cat ~/.kodi/userdata/guisettings.xml
 
       - name: Screenshots
         run: |
@@ -70,8 +71,6 @@ jobs:
           except Exception as e: print(e)' "$1" || true; }
           shot 00-start 40
           key Escape; sleep 2; key Escape
-          rpc '{"jsonrpc":"2.0","id":1,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
-          sleep 8; key Return; sleep 2
           rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
           shot 01-setup 40
           # Dex Hub's first run shows the phone setup page: Back continues on the TV.
@@ -110,6 +109,7 @@ jobs:
             NUVIO_RELEASE_KEY_PASSWORD=android NUVIO_RELEASE_STORE_PASSWORD=android
           ./gradlew :app:assembleFullDebug -PdexEmulatorAbi=true
           ls app/build/outputs/apk/full/debug/
+          ./gradlew --stop  # free the runner's memory for the emulator
 
       - name: Enable KVM
         run: |
