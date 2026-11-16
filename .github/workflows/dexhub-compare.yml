@@ -69,11 +69,16 @@ jobs:
           key Escape; sleep 2; key Escape
           rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
           rpc '{"jsonrpc":"2.0","id":3,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
-          shot 00b-keep-skin 4
-          # Dex Hub's phone-setup page opens over Kodi's keep-skin question: close it first.
-          key BackSpace; shot 00b2-setup-closed 2
-          # Kodi asks whether to keep the new skin; Yes is the left button.
-          key Left; shot 00c-keep-skin-left 1
+          # Kodi loads the skin (seconds on a software GPU), then asks whether to keep it: wait for
+          # that question (window 10100, the yes/no dialog), then choose Yes.
+          for i in $(seq 1 40); do
+            w=$(rpc '{"jsonrpc":"2.0","id":9,"method":"GUI.GetProperties","params":{"properties":["currentwindow"]}}')
+            echo "$i $w"
+            case "$w" in *10100*) break;; esac
+            sleep 0.5
+          done
+          shot 00b-keep-skin 0
+          key Left; shot 00c-keep-skin-left 0.5
           key Return; shot 00d-kept 3
           rpc '{"jsonrpc":"2.0","id":4,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
           shot 01-setup 40
