@@ -3,4 +3,9 @@
     <!-- Dex Hub's own tabs and labels -->
     <string name="dex_nav_movies">Movies</string>
     <string name="dex_nav_series">Series</string>
+    <string name="dex_nav_home">Home</string>
+    <string name="dex_nav_addons">Add-ons</string>
+    <string name="dex_nav_library">My Library</string>
+    <string name="dex_bar_edit_home">Edit Home</string>
+    <string name="dex_bar_exit">Exit</string>
 </resources>

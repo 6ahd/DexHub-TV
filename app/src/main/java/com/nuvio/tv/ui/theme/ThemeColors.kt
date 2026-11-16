@@ -51,8 +51,9 @@ object ThemeColors {
         secondary = Color(0xFF9B6BFF),
         secondaryVariant = Color(0xFF7A4FE0),
         accentGradient = listOf(Color(0xFF9B6BFF), Color(0xFF4F8BFF)),
-        focusRing = Color(0xFFB99BFF),
-        focusRingGradient = listOf(Color(0xFFB99BFF), Color(0xFF4F8BFF)),
+        // skin.dexhub focuses in white (F2FFFFFF), keeping the violet for progress and accents.
+        focusRing = Color(0xF2FFFFFF),
+        focusRingGradient = listOf(Color(0xF2FFFFFF)),
         focusBackground = Color(0xFF2A2350),
         background = Color(0xFF0B0E1C),
         backgroundElevated = Color(0xFF111528),

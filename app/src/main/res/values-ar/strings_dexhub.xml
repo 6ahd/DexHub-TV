@@ -2,4 +2,9 @@
 <resources>
     <string name="dex_nav_movies">أفلام</string>
     <string name="dex_nav_series">مسلسلات</string>
+    <string name="dex_nav_home">الرئيسية</string>
+    <string name="dex_nav_addons">الإضافات</string>
+    <string name="dex_nav_library">مكتبتي</string>
+    <string name="dex_bar_edit_home">تعديل الرئيسية</string>
+    <string name="dex_bar_exit">خروج</string>
 </resources>
