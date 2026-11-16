@@ -18,18 +18,27 @@ concurrency:
 
 jobs:
   kodi:
-    name: Dex Hub in Kodi 21
+    name: Dex Hub in Kodi 22
     runs-on: ubuntu-24.04
     env:
       KDATA: /home/runner/.var/app/tv.kodi.Kodi/data
     steps:
-      - name: Install Kodi 21 (Flathub) and tools
+      - name: Install Kodi 22 (Flathub beta) and tools
         run: |
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq flatpak xvfb xdotool imagemagick sqlite3 unzip
           flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-          flatpak install --user -y --noninteractive flathub tv.kodi.Kodi
-          flatpak info --user tv.kodi.Kodi | head -8
+          flatpak remote-add --user --if-not-exists flathub-beta https://dl.flathub.org/beta-repo/flathub-beta.flatpakrepo
+          # Kodi 22 (Piers) is on Flathub's beta channel; fall back to 21 if it is not there.
+          flatpak remote-ls --user flathub-beta --app | grep -i kodi || true
+          if flatpak install --user -y --noninteractive flathub-beta tv.kodi.Kodi//beta; then
+            echo "KODI_REF=tv.kodi.Kodi//beta" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Kodi 22 not on flathub-beta, using Kodi 21"
+            flatpak install --user -y --noninteractive flathub tv.kodi.Kodi
+            echo "KODI_REF=tv.kodi.Kodi" >> "$GITHUB_ENV"
+          fi
+          flatpak list --user --app
 
       - name: Install Dex Hub and skin.dexhub from the latest releases
         env:
@@ -50,7 +59,7 @@ jobs:
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           sleep 2
-          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 60 flatpak run tv.kodi.Kodi --standalone || true)
+          (DISPLAY=:99 KODI_AE_SINK=NULL timeout 60 flatpak run "$KODI_REF" --standalone || true)
           db=$(ls "$KDATA"/userdata/Database/Addons*.db)
           sqlite3 "$db" "update installed set enabled=1 where addonID in ('skin.dexhub','plugin.video.dexhub');"
           sqlite3 "$db" "select addonID,enabled from installed where addonID like '%dexhub%';"
@@ -58,7 +67,7 @@ jobs:
       - name: Screenshots
         run: |
           mkdir -p shots/kodi
-          (DISPLAY=:99 KODI_AE_SINK=NULL flatpak run tv.kodi.Kodi --standalone > kodi.out 2>&1 &)
+          (DISPLAY=:99 KODI_AE_SINK=NULL flatpak run "$KODI_REF" --standalone > kodi.out 2>&1 &)
           shot() { sleep "$2"; DISPLAY=:99 import -window root "shots/kodi/$1.png" || true; }
           key() { DISPLAY=:99 xdotool key "$1"; }
           rpc() { python3 -c 'import json,socket,sys
