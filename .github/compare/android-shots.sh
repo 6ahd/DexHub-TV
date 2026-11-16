@@ -18,11 +18,11 @@ shot() { sleep "$2"; timeout 30 adb exec-out screencap -p > "$out/$1.png" || ech
 key() { timeout 20 adb shell input keyevent "$1" || echo "key $1 failed"; }
 
 shot 01-start 40
-# Sign-in page: in Arabic (RTL) "Continue without an account" is left of the focused button.
-key KEYCODE_DPAD_LEFT; shot 02-signin-left 3
+# Sign-in page: "Continue without an account" is right of the focused "Refresh code".
+key KEYCODE_DPAD_RIGHT; shot 02-signin-right 3
 key KEYCODE_DPAD_CENTER; shot 03-after-signin 12
 # Whatever first-run pages follow (profile, layout): accept each, recording it.
-for i in 1 2 3; do key KEYCODE_DPAD_CENTER; shot "04-firstrun-$i" 10; done
+shot 04-firstrun 10
 shot 05-home 20
 key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; shot 06-bar 4
 key KEYCODE_DPAD_RIGHT; shot 07-bar-next 6

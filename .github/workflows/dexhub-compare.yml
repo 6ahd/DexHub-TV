@@ -73,7 +73,10 @@ jobs:
           rpc '{"jsonrpc":"2.0","id":1,"method":"Settings.SetSettingValue","params":{"setting":"lookandfeel.skin","value":"skin.dexhub"}}'
           sleep 8; key Return; sleep 2
           rpc '{"jsonrpc":"2.0","id":2,"method":"Settings.GetSettingValue","params":{"setting":"lookandfeel.skin"}}'
-          shot 01-home 45
+          shot 01-setup 40
+          # Dex Hub's first run shows the phone setup page: Back continues on the TV.
+          key BackSpace; shot 01b-after-setup 20
+          key BackSpace; shot 01-home 30
           key Down; shot 02-home-down 4
           key Down; shot 03-home-row 4
           key Down; shot 04-home-row2 4

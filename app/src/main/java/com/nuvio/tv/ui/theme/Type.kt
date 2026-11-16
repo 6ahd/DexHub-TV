@@ -5,6 +5,7 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.tv.material3.ExperimentalTvMaterial3Api
@@ -83,9 +84,12 @@ data class NuvioTextStyleTokens(
 )
 
 @OptIn(ExperimentalTvMaterial3Api::class)
+// The layout stays left to right like skin.dexhub; each paragraph still takes its own
+// direction from its text, so Arabic reads right to left with its punctuation in place.
 fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     displayLarge = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Bold,
         fontSize = 48.sp,
         lineHeight = 56.sp,
@@ -93,6 +97,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     displayMedium = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Bold,
         fontSize = 36.sp,
         lineHeight = 44.sp,
@@ -100,6 +105,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     displaySmall = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp,
         lineHeight = 44.sp,
@@ -107,6 +113,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     headlineLarge = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.SemiBold,
         fontSize = 28.sp,
         lineHeight = 36.sp,
@@ -114,6 +121,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     headlineMedium = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.SemiBold,
         fontSize = 24.sp,
         lineHeight = 32.sp,
@@ -121,6 +129,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     headlineSmall = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Normal,
         fontSize = 24.sp,
         lineHeight = 32.sp,
@@ -128,6 +137,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     titleLarge = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 20.sp,
         lineHeight = 28.sp,
@@ -135,6 +145,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     titleMedium = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 16.sp,
         lineHeight = 24.sp,
@@ -142,6 +153,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     titleSmall = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -149,6 +161,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     bodyLarge = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
@@ -156,6 +169,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     bodyMedium = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -163,6 +177,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     bodySmall = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         lineHeight = 16.sp,
@@ -170,6 +185,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     labelLarge = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -177,6 +193,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     labelMedium = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 12.sp,
         lineHeight = 16.sp,
@@ -184,6 +201,7 @@ fun buildNuvioTypography(fontFamily: FontFamily): Typography = Typography(
     ),
     labelSmall = TextStyle(
         fontFamily = fontFamily,
+        textDirection = TextDirection.Content,
         fontWeight = FontWeight.Medium,
         fontSize = 10.sp,
         lineHeight = 14.sp,
