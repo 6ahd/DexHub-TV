@@ -535,28 +535,9 @@ fun StreamScreen(
                         .fillMaxHeight()
                 )
 
-                // Right side - Streams container
-                RightStreamSection(
-                    runtimeMinutes = uiState.runtime,
-                    pluginFooter = pluginSearchSummary?.takeIf { it.total > 0 }?.let { summary ->
-                        { PluginSearchSummaryRow(summary = summary, onClick = { showPluginBreakdown = true }) }
-                    },
-                    isLoading = uiState.isLoading,
-                    resumeText = resumeText,
-                    error = uiState.error,
-                    streams = uiState.filteredStreams,
-                    partyFingerprint = viewModel.partyFingerprint,
-                    availableAddons = uiState.availableAddons,
-                    sourceChips = uiState.sourceChips,
-                    selectedAddonFilter = uiState.selectedAddonFilter,
-                    showFileSizeBadges = streamBadgeSettings.showFileSizeBadges,
-                    showAddonLogo = streamBadgeSettings.showAddonLogo,
-                    badgePlacement = streamBadgeSettings.badgePlacement,
-                    hasBadgeRules = streamBadgeSettings.rules.hasImport,
-                    onAddonFilterSelected = { viewModel.onEvent(StreamScreenEvent.OnAddonFilterSelected(it)) },
-                    onRefresh = { viewModel.onEvent(StreamScreenEvent.OnRefresh) },
-                    onStreamSelected = { stream ->
-                        if (streamSelectJob?.isActive == true) return@RightStreamSection
+                // Dex Hub TV (DEXHUB.md): one way to play a pick, for Arc's list and Flix's cards alike
+                val playPicked: (com.nuvio.tv.domain.model.Stream) -> Unit = pick@{ stream ->
+                        if (streamSelectJob?.isActive == true) return@pick
                         TtffTrace.begin("press_manual")
                         val currentIndex = uiState.filteredStreams.indexOfFirst {
                             it.url == stream.url &&
@@ -579,7 +560,39 @@ fun StreamScreen(
                                 viewModel.onEvent(StreamScreenEvent.OnAutoPlayConsumed)
                             }
                         }
+                    }
+                // Right side - Streams container
+                if (com.nuvio.tv.dexhub.sources.rememberFlixSources()) {
+                    com.nuvio.tv.dexhub.sources.FlixSourcesSection(
+                        streams = uiState.filteredStreams,
+                        isLoading = uiState.isLoading,
+                        error = uiState.error,
+                        onPlay = playPicked,
+                        onRetry = { viewModel.onEvent(StreamScreenEvent.OnRetry) },
+                        modifier = Modifier
+                            .weight(0.6f)
+                            .fillMaxHeight()
+                    )
+                } else RightStreamSection(
+                    runtimeMinutes = uiState.runtime,
+                    pluginFooter = pluginSearchSummary?.takeIf { it.total > 0 }?.let { summary ->
+                        { PluginSearchSummaryRow(summary = summary, onClick = { showPluginBreakdown = true }) }
                     },
+                    isLoading = uiState.isLoading,
+                    resumeText = resumeText,
+                    error = uiState.error,
+                    streams = uiState.filteredStreams,
+                    partyFingerprint = viewModel.partyFingerprint,
+                    availableAddons = uiState.availableAddons,
+                    sourceChips = uiState.sourceChips,
+                    selectedAddonFilter = uiState.selectedAddonFilter,
+                    showFileSizeBadges = streamBadgeSettings.showFileSizeBadges,
+                    showAddonLogo = streamBadgeSettings.showAddonLogo,
+                    badgePlacement = streamBadgeSettings.badgePlacement,
+                    hasBadgeRules = streamBadgeSettings.rules.hasImport,
+                    onAddonFilterSelected = { viewModel.onEvent(StreamScreenEvent.OnAddonFilterSelected(it)) },
+                    onRefresh = { viewModel.onEvent(StreamScreenEvent.OnRefresh) },
+                    onStreamSelected = playPicked,
                     // Focus is not playback consent. Even direct URLs may trigger a grab.
                     onStreamFocused = {},
                     focusedStreamIndex = focusedStreamIndex,

@@ -491,6 +491,8 @@ fun MetaDetailsScreen(
     val parentalGuidePendingState = remember(viewModel) { viewModel.uiState.map { it.parentalGuidePending }.distinctUntilChanged() }
         .collectAsStateWithLifecycle(initialValue = viewModel.uiState.value.parentalGuidePending)
     val secondaryReady by viewModel.secondaryReady.collectAsStateWithLifecycle()
+    // Dex Hub TV (DEXHUB.md): the title's theme music, as Flix plays it; quiet while a trailer plays
+    com.nuvio.tv.dexhub.thememusic.DexHubThemeMusic(uiState.meta, paused = uiState.isTrailerPlaying || uiState.isBackgroundTrailerPlaying)
     var scrolledPastHero by remember(viewModel) { mutableStateOf(false) }
     var isBackgroundTrailerRendered by remember(
         viewModel, uiState.isTrailerPlaying || uiState.isBackgroundTrailerPlaying, uiState.trailerUrl

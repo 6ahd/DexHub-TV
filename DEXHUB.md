@@ -24,6 +24,8 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/ui/components/DexHubPosterShape.kt` | The posters' shape (2:3, 3:4, square), kept on the device |
 | `app/src/main/java/com/nuvio/tv/dexhub/dexworld/` | DexWorld's ready sections (blocks.dexworld.cc), from Flix: shelves of sections with the site's covers, a section's titles, a title's page |
 | `app/src/main/java/com/nuvio/tv/dexhub/livetv/` | Live TV, from Flix: M3U playlists (Flix's parser, from Plozz, GPL-3.0) and Xtream accounts, with their channels (XMLTV now and next, favourites, a preview of the focused channel), films and series (a panel's episodes asked for when a series opens) |
+| `app/src/main/java/com/nuvio/tv/dexhub/thememusic/` | Theme music on title pages, as Flix plays it: ThemerrDB's theme songs through the trailers' YouTube reader (Layout > Title page) |
+| `app/src/main/java/com/nuvio/tv/dexhub/sources/` | The sources page in Flix's design: quality tabs, a sort, a card per add-on (Layout > Sources) |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -38,6 +40,9 @@ at the hook points below.
 | `data/local/ThemeDataStore.kt` | until a font is chosen, an Arabic interface uses IBM Plex Sans Arabic |
 | `ui/components/PosterCardDefaults.kt`, `ui/screens/home/ModernHomeContent.kt` | posters take their height from the chosen shape |
 | `ui/screens/settings/LayoutCardSettings.kt` | Huge and Cinema widths, Soft and Round corners, the Poster shape row |
+| `ui/screens/detail/MetaDetailsScreen.kt` | the theme music (one call) |
+| `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
+| `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches |
 | `MainActivity.kt` (menu entries, `appRootRoutes`), `ui/navigation/NuvioNavHost.kt` | the Live TV and DexWorld pages and their menu entries |
 | `domain/model/AppTheme.kt`, `ThemeAccess.kt`, `ui/theme/ThemeColors.kt`, `ui/theme/Theme.kt`, `ui/brand/ArcPalette.kt`, `ui/screens/settings/ThemeSettings*.kt`, `MainActivity.kt` | the Dex Hub theme (lavender on navy), first in the list and the default (`DefaultAppTheme`) |
 

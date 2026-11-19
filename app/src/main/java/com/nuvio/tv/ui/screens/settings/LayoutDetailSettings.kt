@@ -1,6 +1,7 @@
 package com.nuvio.tv.ui.screens.settings
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -31,6 +32,17 @@ internal fun LayoutDetailPageSection(
         subtitle = stringResource(R.string.layout_episode_options_overlay_sub),
         value = episodeOptionsOverlayStyleLabel(uiState.episodeOptionsOverlayStyle),
         onClick = { showOverlayStyleDialog = true }
+    )
+    // Dex Hub TV (DEXHUB.md): theme music on title pages, kept on this device
+    val themeMusicContext = androidx.compose.ui.platform.LocalContext.current
+    val themeMusic by androidx.compose.runtime.remember(themeMusicContext) {
+        com.nuvio.tv.dexhub.thememusic.DexHubThemeMusicPrefs.enabled(themeMusicContext)
+    }.collectAsState()
+    SettingsToggleRow(
+        title = stringResource(R.string.dexhub_theme_music),
+        subtitle = stringResource(R.string.dexhub_theme_music_sub),
+        checked = themeMusic,
+        onToggle = { com.nuvio.tv.dexhub.thememusic.DexHubThemeMusicPrefs.set(themeMusicContext, !themeMusic) }
     )
     SettingsToggleRow(
         title = stringResource(R.string.layout_episode_synopsis_under_row),
@@ -163,6 +175,15 @@ internal fun LayoutStreamsSection(
     onPlayerBadgeSourceSelected: (String) -> Unit,
     configureBadgesFocusRequester: FocusRequester
 ) {
+    // Dex Hub TV (DEXHUB.md): the sources in Flix's design, kept on this device
+    val flixContext = androidx.compose.ui.platform.LocalContext.current
+    val flixSources = com.nuvio.tv.dexhub.sources.rememberFlixSources()
+    SettingsToggleRow(
+        title = stringResource(R.string.dexhub_sources_flix),
+        subtitle = stringResource(R.string.dexhub_sources_flix_sub),
+        checked = flixSources,
+        onToggle = { com.nuvio.tv.dexhub.sources.DexHubSourcesStyle.set(flixContext, !flixSources) }
+    )
     var showPositionDialog by rememberSaveable { mutableStateOf(false) }
     var showPlayerBadgesDialog by rememberSaveable { mutableStateOf(false) }
 

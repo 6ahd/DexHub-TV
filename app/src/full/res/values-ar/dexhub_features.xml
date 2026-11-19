@@ -39,4 +39,15 @@
     <string name="dexhub_live_now">الحين</string>
     <string name="dexhub_live_hold_hint">اضغط OK مطوّل على القناة عشان تضيفها للمفضلة</string>
     <string name="dexhub_live_no_episodes">ما فيه حلقات</string>
+    <string name="dexhub_theme_music">موسيقى الخلفية</string>
+    <string name="dexhub_theme_music_sub">تشغيل أغنية العمل بهدوء في صفحته مثل Flix (من ThemerrDB)، وتسكت لما يشتغل التريلر</string>
+    <string name="dexhub_sources_title">المصادر</string>
+    <string name="dexhub_sources_looking">يدوّر على المصادر…</string>
+    <string name="dexhub_sources_none">ما فيه مصدر لهذا العمل في إضافاتك.</string>
+    <string name="dexhub_sources_retry">حاول مرة ثانية</string>
+    <string name="dexhub_sources_sort_best">الأفضل</string>
+    <string name="dexhub_sources_sort_size">الحجم</string>
+    <string name="dexhub_sources_sort_addon">الإضافة</string>
+    <string name="dexhub_sources_flix">المصادر بتصميم Flix</string>
+    <string name="dexhub_sources_flix_sub">تبويبات الجودة وبطاقة لكل إضافة؛ لو طفيته تطلع القائمة</string>
 </resources>

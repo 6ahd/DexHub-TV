@@ -39,4 +39,15 @@
     <string name="dexhub_live_now">Now</string>
     <string name="dexhub_live_hold_hint">Hold OK on a channel to add it to your favourites</string>
     <string name="dexhub_live_no_episodes">No episodes</string>
+    <string name="dexhub_theme_music">Theme music</string>
+    <string name="dexhub_theme_music_sub">Play a title\'s theme song softly on its page, as Flix does (ThemerrDB); quiet while a trailer plays</string>
+    <string name="dexhub_sources_title">Sources</string>
+    <string name="dexhub_sources_looking">Looking for sources…</string>
+    <string name="dexhub_sources_none">None of your add-ons has a stream for this title.</string>
+    <string name="dexhub_sources_retry">Try again</string>
+    <string name="dexhub_sources_sort_best">Best</string>
+    <string name="dexhub_sources_sort_size">Size</string>
+    <string name="dexhub_sources_sort_addon">Add-on</string>
+    <string name="dexhub_sources_flix">Sources in Flix\'s design</string>
+    <string name="dexhub_sources_flix_sub">Quality tabs and a card per add-on; off shows the list</string>
 </resources>
