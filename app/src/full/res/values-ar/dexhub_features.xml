@@ -11,4 +11,22 @@
     <string name="dexhub_poster_shape_wide">أعرض 3:4</string>
     <string name="dexhub_poster_shape_square">مربع</string>
     <string name="dexhub_theme_name">Dex Hub</string>
+    <string name="dexhub_nav_live_tv">البث المباشر</string>
+    <string name="dexhub_live_add">إضافة قائمة</string>
+    <string name="dexhub_live_refresh">تحديث</string>
+    <string name="dexhub_live_remove">حذف</string>
+    <string name="dexhub_live_empty">أضف قائمة M3U أو حساب Xtream عشان تشوف القنوات المباشرة.</string>
+    <string name="dexhub_live_loading">يحمّل القنوات…</string>
+    <string name="dexhub_live_m3u">قائمة M3U</string>
+    <string name="dexhub_live_xtream">حساب Xtream</string>
+    <string name="dexhub_live_name">الاسم</string>
+    <string name="dexhub_live_url">رابط القائمة</string>
+    <string name="dexhub_live_guide">رابط الدليل (XMLTV)، اختياري</string>
+    <string name="dexhub_live_server">السيرفر</string>
+    <string name="dexhub_live_username">اسم المستخدم</string>
+    <string name="dexhub_live_password">كلمة المرور</string>
+    <string name="dexhub_live_save">إضافة</string>
+    <string name="dexhub_live_cancel">إلغاء</string>
+    <string name="dexhub_live_next">التالي: %1$s</string>
+    <string name="dexhub_live_no_channels">ما فيه قنوات في هذي المجموعة</string>
 </resources>

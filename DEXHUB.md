@@ -22,6 +22,7 @@ at the hook points below.
 | `app/src/full/res/font/ui_*`, `assets/licenses/fonts/` | IBM Plex Sans Arabic, Cairo and Tajawal (SIL OFL 1.1, with their licences): fonts with Arabic letters for the interface and subtitles |
 | `app/src/full/res/values*/dexhub_features.xml` | Dex Hub TV's own texts (poster sizes and shapes, the fonts' credit) |
 | `app/src/main/java/com/nuvio/tv/ui/components/DexHubPosterShape.kt` | The posters' shape (2:3, 3:4, square), kept on the device |
+| `app/src/main/java/com/nuvio/tv/dexhub/livetv/` | Live TV, from Flix: M3U playlists (Flix's parser, from Plozz, GPL-3.0), Xtream accounts, XMLTV now and next, the Live TV page |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -36,6 +37,7 @@ at the hook points below.
 | `data/local/ThemeDataStore.kt` | until a font is chosen, an Arabic interface uses IBM Plex Sans Arabic |
 | `ui/components/PosterCardDefaults.kt`, `ui/screens/home/ModernHomeContent.kt` | posters take their height from the chosen shape |
 | `ui/screens/settings/LayoutCardSettings.kt` | Huge and Cinema widths, Soft and Round corners, the Poster shape row |
+| `MainActivity.kt` (menu entries, `appRootRoutes`), `ui/navigation/NuvioNavHost.kt` | the Live TV page and its menu entry |
 | `domain/model/AppTheme.kt`, `ThemeAccess.kt`, `ui/theme/ThemeColors.kt`, `ui/theme/Theme.kt`, `ui/brand/ArcPalette.kt`, `ui/screens/settings/ThemeSettings*.kt`, `MainActivity.kt` | the Dex Hub theme (lavender on navy), first in the list and the default (`DefaultAppTheme`) |
 
 ## After merging an Arc release

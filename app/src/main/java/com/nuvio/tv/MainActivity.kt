@@ -60,6 +60,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CalendarMonth
+import androidx.compose.material.icons.filled.LiveTv
 import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
@@ -1293,6 +1294,7 @@ open class MainActivity : ComponentActivity() {
                     val strNavSettings = stringResource(R.string.nav_settings)
                     val strNavCalendar = stringResource(R.string.nav_calendar)
                     val strNavScout = stringResource(R.string.scout_title)
+                    val strNavLiveTv = stringResource(R.string.dexhub_nav_live_tv)
                     val drawerItems = remember(
                         strNavHome,
                         strNavDiscover,
@@ -1302,7 +1304,8 @@ open class MainActivity : ComponentActivity() {
                         strNavCalendar,
                         discoverLocation,
                         calendarInMenu,
-                        scoutInMenu
+                        scoutInMenu,
+                        strNavLiveTv
                     ) {
                         buildList {
                             add(
@@ -1336,6 +1339,14 @@ open class MainActivity : ComponentActivity() {
                                     route = Screen.Library.route,
                                     label = strNavLibrary,
                                     iconRes = R.raw.sidebar_library
+                                )
+                            )
+                            // Dex Hub TV (DEXHUB.md): Live TV, from Flix
+                            add(
+                                DrawerItem(
+                                    route = com.nuvio.tv.dexhub.livetv.LiveTvRoute,
+                                    label = strNavLiveTv,
+                                    icon = Icons.Default.LiveTv
                                 )
                             )
                             if (calendarInMenu) {
@@ -2930,6 +2941,7 @@ internal fun appRootRoutes(discoverInSidebar: Boolean, calendarInMenu: Boolean, 
     add(Screen.Search.route)
     if (scoutInMenu) add(Screen.Scout.route)
     add(Screen.Library.route)
+    add(com.nuvio.tv.dexhub.livetv.LiveTvRoute)   // Dex Hub TV (DEXHUB.md)
     if (calendarInMenu) add(Screen.Calendar.route)
     add(Screen.Settings.route)
     if (discoverInSidebar) add(Screen.Discover.route)

@@ -1426,6 +1426,22 @@ private fun PlaybackNavHost(
             )
         }
 
+        // Dex Hub TV (DEXHUB.md): Live TV, from Flix
+        rootComposable(com.nuvio.tv.dexhub.livetv.LiveTvRoute) {
+            com.nuvio.tv.dexhub.livetv.LiveTvScreen(onPlay = { channel, source ->
+                navController.navigate(
+                    Screen.Player.createRoute(
+                        streamUrl = channel.url,
+                        title = channel.name,
+                        streamName = source.name,
+                        headers = channel.headers.takeIf { it.isNotEmpty() },
+                        poster = channel.logo,
+                        logo = channel.logo
+                    )
+                )
+            })
+        }
+
         rootComposable(Screen.Settings.route) {
             SettingsScreen(
                 showBuiltInHeader = !hideBuiltInHeaders,

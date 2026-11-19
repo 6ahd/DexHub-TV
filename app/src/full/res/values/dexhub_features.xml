@@ -11,4 +11,22 @@
     <string name="dexhub_poster_shape_wide">Wide 3:4</string>
     <string name="dexhub_poster_shape_square">Square</string>
     <string name="dexhub_theme_name">Dex Hub</string>
+    <string name="dexhub_nav_live_tv">Live TV</string>
+    <string name="dexhub_live_add">Add a playlist</string>
+    <string name="dexhub_live_refresh">Refresh</string>
+    <string name="dexhub_live_remove">Remove</string>
+    <string name="dexhub_live_empty">Add an M3U playlist or an Xtream account to watch live channels.</string>
+    <string name="dexhub_live_loading">Loading channels…</string>
+    <string name="dexhub_live_m3u">M3U playlist</string>
+    <string name="dexhub_live_xtream">Xtream account</string>
+    <string name="dexhub_live_name">Name</string>
+    <string name="dexhub_live_url">Playlist address</string>
+    <string name="dexhub_live_guide">Guide (XMLTV) address, optional</string>
+    <string name="dexhub_live_server">Server</string>
+    <string name="dexhub_live_username">Username</string>
+    <string name="dexhub_live_password">Password</string>
+    <string name="dexhub_live_save">Add</string>
+    <string name="dexhub_live_cancel">Cancel</string>
+    <string name="dexhub_live_next">Next: %1$s</string>
+    <string name="dexhub_live_no_channels">No channels in this group</string>
 </resources>
