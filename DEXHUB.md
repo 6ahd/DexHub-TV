@@ -52,3 +52,17 @@ at the hook points below.
 GitHub release, which the app's update check offers. Its secrets (all optional) are listed at
 the top of the workflow: without a keystore the APKs are signed with a throwaway key, and
 without `local.properties` the app has no TMDb, Trakt or other keys of its own.
+
+## Usenet
+
+Dex Hub TV plays Usenet the way Arc does, with no engine of its own in the app:
+
+- through an AIOStreams add-on that has its own Usenet engine (and Prowlarr or Newznab
+  indexers behind it): Settings > Add-ons, its manifest link. Arc already waits for a Usenet
+  link that answers late (`ui/screens/player/SlowStartServer.kt`) and labels its sources;
+- through TorBox: a TorBox account's Usenet downloads are in its cloud library
+  (`core/cloud/TorboxCloudLibraryProviderApi.kt`).
+
+Playing straight from an NNTP provider on the device, as Dex Hub for Kodi does, needs the
+NuvioTV Usenet engine (NuvioMedia/NuvioTV pull request 4426, GPL-3.0) built into the app. It
+is not in Arc yet; if Arc takes it, it arrives here with Arc's next merge.
