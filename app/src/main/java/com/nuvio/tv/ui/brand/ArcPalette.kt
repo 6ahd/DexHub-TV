@@ -111,6 +111,7 @@ class ArcPalette private constructor(val key: String, private val stops: IntArra
                 AppTheme.ROSE -> Rose
                 AppTheme.WHITE -> White
                 AppTheme.GLASS -> Glass
+                AppTheme.DEX_HUB -> Original   // Dex Hub's own art is drawn in its lavender
             }
     }
 }

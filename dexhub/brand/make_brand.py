@@ -18,6 +18,9 @@ manifest and the icon picker need nothing else:
 * drawable-nodpi/arc_launcher_foreground[_colour].webp
                                            the adaptive icon's mark, in its safe zone
 * drawable-nodpi/dexhub_monochrome.webp    the themed icon's silhouette
+* drawable-nodpi/app_logo_wordmark[_glass[_small]].png
+                                           the logo inside the app (ArcBrandArt): the mark in the
+                                           lockup's left 318/1209, DEX HUB beside it; glass in silver
 * drawable-nodpi/dexhub_intro_mark.png, dexhub_intro_lettering.png
                                            the entrance's art (DexHubIntroScene), sized for a 4K stage
 * mipmap-*/banner[_colour].webp            mark over DEX HUB
@@ -155,13 +158,41 @@ def banner(kind, size, colour, background, font):
     return canvas
 
 
+def lockup(size, colour, font):
+    """Arc's lockup layout (ArcBrandArt): the mark alone in the left 318/1209, the lettering after it."""
+    w, h = size
+    canvas = Image.new('RGBA', size, (0, 0, 0, 0))
+    region = w * 318 / 1209
+    m = fit(mark(colour), int(region * 0.94))
+    if m.height > h * 0.66:
+        m = m.resize((int(m.width * h * 0.66 / m.height), int(h * 0.66)), Image.LANCZOS)
+    paste_centre(canvas, m, region / 2, h / 2)
+    room = int(w - region - h * 0.16)
+    text = lettering(font, int(h * 0.6))
+    text = fit(text, room) if text.height * room / text.width <= h * 0.5 else \
+        text.resize((int(text.width * h * 0.5 / text.height), int(h * 0.5)), Image.LANCZOS)
+    paste_centre(canvas, text, region + h * 0.12 + text.width / 2, h / 2)
+    return canvas
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('font')
+    ap.add_argument('--lockups-only', action='store_true')
     args = ap.parse_args()
     args.res = os.path.join(HERE, '..', '..', 'app', 'src', 'main', 'res')
     out = os.path.join(HERE, '..', '..', 'app', 'src', 'full', 'res')
     done = 0
+    for name, colour in (('app_logo_wordmark', None), ('app_logo_wordmark_glass', COLOURS['glass']),
+                         ('app_logo_wordmark_glass_small', COLOURS['glass'])):
+        old = Image.open(os.path.join(args.res, 'drawable-nodpi', name + '.png'))
+        target = os.path.join(out, 'drawable-nodpi', name + '.png')
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        lockup(old.size, colour, args.font).save(target, optimize=True)
+        done += 1
+    if args.lockups_only:
+        print('%d lockups drawn' % done)
+        return
     for path in sorted(glob.glob(os.path.join(args.res, 'mipmap-*', '*')) +
                        glob.glob(os.path.join(args.res, 'drawable-nodpi', 'arc_launcher_foreground*'))):
         found = NAME.match(os.path.basename(path))

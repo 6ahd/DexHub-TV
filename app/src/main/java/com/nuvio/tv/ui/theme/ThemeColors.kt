@@ -108,6 +108,25 @@ object ThemeColors {
         background = Color(0xFF080A0C), surface = Color(0xFF14181C)
     )
 
+    /** Dex Hub TV (DEXHUB.md): Dex Hub's lavender on the navy of its icon, as skin.dexhub draws it. */
+    val DexHub = ThemeColorPalette(
+        secondary = Color(0xFF8B7CF6),
+        secondaryVariant = Color(0xFF6D5DE0),
+        accentGradient = listOf(Color(0xFF8B7CF6), Color(0xFFB4A9FF)),
+        focusRing = Color(0xFFC4B5FD),
+        focusRingGradient = listOf(Color(0xFFC4B5FD), Color(0xFF8B7CF6)),
+        focusBackground = Color(0xFF262246),
+        background = Color(0xFF0B0D16),
+        backgroundElevated = Color(0xFF141829),
+        backgroundCard = Color(0xFF1A1F35),
+        surface = Color(0xFF151A2C),
+        surfaceVariant = Color(0xFF1F2440),
+        panel = Color(0xFF12162A),
+        field = Color(0xFF1A1F35),
+        menu = Color(0xFF151A2C),
+        modal = Color(0xFF12162A)
+    )
+
     fun getColorPalette(
         theme: AppTheme,
         customColors: CustomThemeColors = CustomThemeColors.Default
@@ -128,6 +147,7 @@ object ThemeColors {
             AppTheme.ROSE -> Rose
             AppTheme.WHITE -> White
             AppTheme.GLASS -> Glass
+            AppTheme.DEX_HUB -> DexHub
         }
     }
 }

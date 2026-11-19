@@ -15,6 +15,7 @@ at the hook points below.
 | --- | --- |
 | `app/src/full/res/` | Every Dex Hub image, string and sound. Android takes these over the same names in `app/src/main/res`, so Arc's files are not touched. |
 | `app/src/full/res/mipmap-*`, `drawable-nodpi/arc_launcher_foreground*` | Launcher icons and TV banners, all of Arc's 16 colours (`dexhub/brand/make_brand.py`) |
+| `app/src/full/res/drawable-nodpi/app_logo_wordmark*` | The logo inside the app (top bar, profiles, About) |
 | `app/src/full/res/values*/dexhub_strings.xml` | Arc's texts with "Dex Hub TV" for "Nuvio Arc", every language (`dexhub/brand/make_strings.py`); the credits keep Arc's and Nuvio's names |
 | `app/src/full/res/raw/arc_intro_sound.m4a` | The entrance's sound (`dexhub/brand/make_sound.sh`) |
 | `app/src/main/java/com/nuvio/tv/ui/brand/DexHubIntroScene.kt` | The entrance: the infinity mark drawn in behind a light, DEX HUB under it, a sheen, then a soft glow while Home loads |
@@ -35,6 +36,7 @@ at the hook points below.
 | `data/local/ThemeDataStore.kt` | until a font is chosen, an Arabic interface uses IBM Plex Sans Arabic |
 | `ui/components/PosterCardDefaults.kt`, `ui/screens/home/ModernHomeContent.kt` | posters take their height from the chosen shape |
 | `ui/screens/settings/LayoutCardSettings.kt` | Huge and Cinema widths, Soft and Round corners, the Poster shape row |
+| `domain/model/AppTheme.kt`, `ThemeAccess.kt`, `ui/theme/ThemeColors.kt`, `ui/theme/Theme.kt`, `ui/brand/ArcPalette.kt`, `ui/screens/settings/ThemeSettings*.kt`, `MainActivity.kt` | the Dex Hub theme (lavender on navy), first in the list and the default (`DefaultAppTheme`) |
 
 ## After merging an Arc release
 

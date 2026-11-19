@@ -185,7 +185,7 @@ fun ThemeSettingsContent(
     val themeScrollState = rememberScrollState()
     val themeRowState = rememberLazyListState()
     val displayedThemes = remember(uiState.availableThemes) {
-        uiState.availableThemes.sortedBy { if (it == AppTheme.GLASS) 0 else 1 }
+        uiState.availableThemes.sortedBy { when (it) { AppTheme.DEX_HUB -> 0; AppTheme.GLASS -> 1; else -> 2 } }
     }
     var initialTheme by remember { mutableStateOf<AppTheme?>(null) }
     val settingsJump = LocalSettingsJump.current
@@ -788,4 +788,5 @@ internal fun AppTheme.localizedName(): String = when (this) {
     AppTheme.ROSE -> stringResource(R.string.theme_color_rose)
     AppTheme.WHITE -> stringResource(R.string.theme_color_white)
     AppTheme.GLASS -> stringResource(R.string.theme_color_glass)
+    AppTheme.DEX_HUB -> stringResource(R.string.dexhub_theme_name)
 }
