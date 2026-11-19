@@ -1446,6 +1446,13 @@ private fun PlaybackNavHost(
             })
         }
 
+        // Dex Hub TV (DEXHUB.md): DexWorld's sections, from Flix
+        rootComposable(com.nuvio.tv.dexhub.dexworld.DexWorldRoute) {
+            com.nuvio.tv.dexhub.dexworld.DexWorldScreen(onOpenTitle = { id, type ->
+                navController.navigate(Screen.Detail.createRoute(id, type))
+            })
+        }
+
         rootComposable(Screen.Settings.route) {
             SettingsScreen(
                 showBuiltInHeader = !hideBuiltInHeaders,

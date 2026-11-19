@@ -29,4 +29,7 @@
     <string name="dexhub_live_cancel">إلغاء</string>
     <string name="dexhub_live_next">التالي: %1$s</string>
     <string name="dexhub_live_no_channels">ما فيه قنوات في هذي المجموعة</string>
+    <string name="dexhub_nav_dexworld">DexWorld</string>
+    <string name="dexhub_dexworld_loading">يحمّل DexWorld…</string>
+    <string name="dexhub_dexworld_failed">DexWorld ما يرد الحين</string>
 </resources>

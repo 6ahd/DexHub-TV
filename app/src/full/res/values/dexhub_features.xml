@@ -29,4 +29,7 @@
     <string name="dexhub_live_cancel">Cancel</string>
     <string name="dexhub_live_next">Next: %1$s</string>
     <string name="dexhub_live_no_channels">No channels in this group</string>
+    <string name="dexhub_nav_dexworld">DexWorld</string>
+    <string name="dexhub_dexworld_loading">Loading DexWorld…</string>
+    <string name="dexhub_dexworld_failed">DexWorld can\'t be reached right now</string>
 </resources>

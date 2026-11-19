@@ -61,6 +61,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.LiveTv
+import androidx.compose.material.icons.filled.Public
 import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
@@ -1295,6 +1296,7 @@ open class MainActivity : ComponentActivity() {
                     val strNavCalendar = stringResource(R.string.nav_calendar)
                     val strNavScout = stringResource(R.string.scout_title)
                     val strNavLiveTv = stringResource(R.string.dexhub_nav_live_tv)
+                    val strNavDexWorld = stringResource(R.string.dexhub_nav_dexworld)
                     val drawerItems = remember(
                         strNavHome,
                         strNavDiscover,
@@ -1305,7 +1307,8 @@ open class MainActivity : ComponentActivity() {
                         discoverLocation,
                         calendarInMenu,
                         scoutInMenu,
-                        strNavLiveTv
+                        strNavLiveTv,
+                        strNavDexWorld
                     ) {
                         buildList {
                             add(
@@ -1347,6 +1350,13 @@ open class MainActivity : ComponentActivity() {
                                     route = com.nuvio.tv.dexhub.livetv.LiveTvRoute,
                                     label = strNavLiveTv,
                                     icon = Icons.Default.LiveTv
+                                )
+                            )
+                            add(
+                                DrawerItem(
+                                    route = com.nuvio.tv.dexhub.dexworld.DexWorldRoute,
+                                    label = strNavDexWorld,
+                                    icon = Icons.Default.Public
                                 )
                             )
                             if (calendarInMenu) {
@@ -2942,6 +2952,7 @@ internal fun appRootRoutes(discoverInSidebar: Boolean, calendarInMenu: Boolean, 
     if (scoutInMenu) add(Screen.Scout.route)
     add(Screen.Library.route)
     add(com.nuvio.tv.dexhub.livetv.LiveTvRoute)   // Dex Hub TV (DEXHUB.md)
+    add(com.nuvio.tv.dexhub.dexworld.DexWorldRoute)
     if (calendarInMenu) add(Screen.Calendar.route)
     add(Screen.Settings.route)
     if (discoverInSidebar) add(Screen.Discover.route)
