@@ -83,7 +83,7 @@ object ArcIntroPrep {
     private const val UnusedMs = 30_000L
     private val main = Handler(Looper.getMainLooper())
     private val worker = ThreadPoolExecutor(0, 1, 5, TimeUnit.SECONDS, LinkedBlockingQueue()) { r -> Thread(r, "ArcIntroPrep") }
-    private val ahead = AheadOfTime<String, ArcIgnitionScene>(worker::execute, { ms, r -> main.postDelayed(r, ms) }, UnusedMs)
+    private val ahead = AheadOfTime<String, DexHubIntroScene>(worker::execute, { ms, r -> main.postDelayed(r, ms) }, UnusedMs)
 
     private fun key(palette: ArcPalette, pixelScale: Float) = "${palette.key}@$pixelScale"
 
@@ -97,7 +97,7 @@ object ArcIntroPrep {
         ahead.warm(key(palette, pixelScale)) { stale ->
             val begin = SystemClock.elapsedRealtime()
             StartupLatencyTrace.cold("intro_ahead_start", palette.key)
-            runCatching { ArcIgnitionScene.prepare(app.resources, palette, pixelScale, keepGoing = { !stale() }) }
+            runCatching { DexHubIntroScene.prepare(app.resources, palette, pixelScale, keepGoing = { !stale() }) }
                 .onFailure { if (!stale()) Log.w(Tag, "prepare ahead failed", it) }
                 .getOrNull()
                 .also {
@@ -107,6 +107,6 @@ object ArcIntroPrep {
         }
     }
 
-    internal fun take(palette: ArcPalette, pixelScale: Float): AheadOfTime.Take<ArcIgnitionScene> =
+    internal fun take(palette: ArcPalette, pixelScale: Float): AheadOfTime.Take<DexHubIntroScene> =
         ahead.take(key(palette, pixelScale))
 }

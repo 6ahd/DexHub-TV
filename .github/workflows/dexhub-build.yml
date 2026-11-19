@@ -1,0 +1,118 @@
+name: Build Dex Hub TV
+
+# Dex Hub TV's own build (DEXHUB.md). A push builds; or run it from the Actions tab: it builds the two APKs
+# (arm64-v8a for Shield and Ugoos, armeabi-v7a for Fire TV and most Google TV boxes) and
+# keeps them on the run's page; with "publish" it also puts them on a GitHub release of
+# this repository, where the app's update check finds them.
+#
+# Secrets (Settings > Secrets and variables > Actions), all optional:
+#   DEXHUB_KEYSTORE_BASE64        your release keystore, base64; without it the APKs are
+#   DEXHUB_KEY_ALIAS              signed with a throwaway debug key, and each build then
+#   DEXHUB_KEY_PASSWORD           installs only over a removed app, not as an update
+#   DEXHUB_STORE_PASSWORD
+#   DEXHUB_LOCAL_PROPERTIES_BASE64  local.properties (local.example.properties lists the
+#                                   keys: TMDB_API_KEY, TRAKT_CLIENT_ID, ...), base64
+
+on:
+  # every push to these builds the APKs (no release); a release is only ever asked for by hand
+  push:
+    branches: [main, 'claude/**']
+    paths-ignore: ['**.md', 'docs/**']
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Put the APKs on a GitHub release (the app offers it as an update)
+        type: boolean
+        default: false
+      notes:
+        description: What changed (the release's text)
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dexhub-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      KEYSTORE_BASE64: ${{ secrets.DEXHUB_KEYSTORE_BASE64 }}
+      LOCAL_PROPERTIES_BASE64: ${{ secrets.DEXHUB_LOCAL_PROPERTIES_BASE64 }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Version
+        id: version
+        run: |
+          # 20000 and up: above every Nuvio Arc build, so Dex Hub TV's own count leads
+          code=$((20000 + GITHUB_RUN_NUMBER))
+          name="1.0.${GITHUB_RUN_NUMBER}"
+          echo "code=${code}" >> "$GITHUB_OUTPUT"
+          echo "name=${name}" >> "$GITHUB_OUTPUT"
+          echo "Dex Hub TV ${name} (${code})" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Properties and signing
+        run: |
+          if [[ -n "${LOCAL_PROPERTIES_BASE64}" ]]; then
+            printf '%s' "${LOCAL_PROPERTIES_BASE64}" | base64 --decode > local.properties
+          else
+            : > local.properties
+          fi
+          sed -i -E '/^[[:space:]]*(sdk\.dir|NUVIO_RELEASE_STORE_FILE)[[:space:]]*=/d' local.properties
+          touch local.dev.properties
+          if [[ -n "${KEYSTORE_BASE64}" ]]; then
+            printf '%s' "${KEYSTORE_BASE64}" | base64 --decode > "${RUNNER_TEMP}/dexhub-release.jks"
+            {
+              echo "NUVIO_RELEASE_STORE_FILE=${RUNNER_TEMP}/dexhub-release.jks"
+              echo "NUVIO_RELEASE_KEY_ALIAS=${{ secrets.DEXHUB_KEY_ALIAS }}"
+              echo "NUVIO_RELEASE_KEY_PASSWORD=${{ secrets.DEXHUB_KEY_PASSWORD }}"
+              echo "NUVIO_RELEASE_STORE_PASSWORD=${{ secrets.DEXHUB_STORE_PASSWORD }}"
+            } >> "$GITHUB_ENV"
+          else
+            echo "CI_USE_DEBUG_SIGNING=true" >> "$GITHUB_ENV"
+            echo "::warning::No DEXHUB_KEYSTORE_BASE64: the APKs are signed with a debug key and cannot update an installed Dex Hub TV."
+          fi
+
+      - name: Test the update check and build the APKs
+        run: |
+          ./gradlew :app:testFullReleaseUnitTest --tests 'com.nuvio.tv.updater.*' :app:assembleFullRelease \
+            -ParcVersionCode=${{ steps.version.outputs.code }} \
+            -ParcVersionName=${{ steps.version.outputs.name }} \
+            --stacktrace
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dexhub-tv-${{ steps.version.outputs.name }}
+          path: app/build/outputs/apk/full/release/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Release
+        if: github.event_name == 'workflow_dispatch' && inputs.publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTES: ${{ inputs.notes }}
+        run: |
+          tag="v${{ steps.version.outputs.name }}"
+          {
+            printf '%s\n' "${NOTES:-Dex Hub TV ${{ steps.version.outputs.name }}}"
+            # the app's update check reads the build number from this line (ReleaseSelector)
+            printf '\n<!-- nuvio-fork-version-code: %s -->\n' "${{ steps.version.outputs.code }}"
+          } > notes.md
+          gh release create "${tag}" app/build/outputs/apk/full/release/*.apk \
+            --target "${GITHUB_SHA}" --title "Dex Hub TV ${{ steps.version.outputs.name }}" \
+            --notes-file notes.md --prerelease

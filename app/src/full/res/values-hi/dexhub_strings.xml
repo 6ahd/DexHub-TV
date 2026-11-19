@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">GitHub पर Dex Hub TV रिलीज़ से अपडेट।</string>
+    <string name="about_made_with_love">Dex Hub TV · Tapframe और दोस्तों के शानदार काम पर आधारित ❤️ · Nuvio Arc, ysosrs123 द्वारा</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">%1$s पर बदलने से Dex Hub TV नए आइकन के साथ रीस्टार्ट होगा। होम स्क्रीन पर इसे दिखने में कुछ सेकंड लग सकते हैं, और TV बैनर के लिए डिवाइस रीस्टार्ट करना पड़ सकता है। जारी रखने के लिए ठीक है चुनें।</string>
+    <string name="appearance_launcher_artwork_subtitle">चुनें कि TV की होम स्क्रीन पर Dex Hub TV कैसा दिखे</string>
+    <string name="audio_use_system_passthrough_sub">TrueHD और DTS-HD को Dex Hub TV (IEC पाथ) की जगह Android (सिस्टम पाथ) से रिसीवर को भेजता है। आपके डिवाइस और ऑडियो सेटअप के अनुसार, इससे DTS-HD और DTS:X मानक DTS तक सीमित हो सकते हैं या उनकी आवाज़ बिल्कुल बंद हो सकती है। इसे केवल तभी इस्तेमाल करें जब लॉसलेस फ़ॉर्मेट में शोर, ड्रिफ़्ट या आवाज़ न आने की समस्या हो।</string>
+    <string name="floppy_qr_description">Floppy में Dex Hub TV को स्वीकृत करने के लिए QR कोड</string>
+    <string name="layout_selection_welcome">Dex Hub TV में आपका स्वागत है</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV आपके अपने Jellyfin, Emby, Silo या Plex सर्वर से कनेक्ट होता है। उनके नाम और लोगो उनके मालिकों के हैं। Dex Hub TV का Jellyfin, Emby या Silo से कोई संबंध नहीं है और न ही यह उनके द्वारा समर्थित है।</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV वॉच हिस्ट्री, लिस्ट्स, प्लेबैक ट्रैकिंग और मिलते-जुलते टाइटल के लिए WeTrakr का उपयोग करता है। डेटा WeTrakr से। Dex Hub TV का WeTrakr से कोई संबंध नहीं है और न ही यह WeTrakr द्वारा समर्थित है।</string>
+    <string name="party_invite_text">Dex Hub TV में मेरी वॉच पार्टी से जुड़ें। सेटिंग्स खोलें, फिर वॉच पार्टी, और कोड %1$s डालें</string>
+    <string name="playback_release_decoder_on_background_sub">जब Dex Hub TV बैकग्राउंड में जाता है तो वीडियो डिकोडर को खाली कर देता है। अगर ऐप पर लौटने के बाद प्लेबैक डिकोडर त्रुटि के साथ विफल हो तो इसे चालू करें। लौटने पर प्लेयर फिर से लोड होता है, स्क्रीनसेवर के बाद भी</string>
+    <string name="player_dts_hd_decoding_notice">लॉसलेस DTS-HD आउटपुट ने काम करना बंद कर दिया, इसलिए Dex Hub TV इस टाइटल की आवाज़ खुद डिकोड कर रहा है।</string>
+    <string name="plex_home_rows_description">इस सर्वर से Plex की अपनी रो (हाल ही में जोड़े गए वगैरह) Dex Hub TV के होम पर दिखाएँ।</string>
+    <string name="plex_remote_pass_needed">Plex इसे घर से बाहर नहीं चलाता। Dex Hub TV जैसे ऐप्स में इसके लिए सर्वर पर Plex Pass, या आपके लिए Remote Watch Pass चाहिए। घर पर यह मुफ़्त चलता है।</string>
+    <string name="plex_sign_in_subtitle">सर्वर एड्रेस की ज़रूरत नहीं: साइन इन के बाद Dex Hub TV आपके Plex सर्वर ढूँढ लेता है।</string>
+    <string name="plex_users_subtitle">आपके Plex खाते में Plex Home यूज़र हैं। Dex Hub TV आपके चुने यूज़र को %1$s पर प्रगति, देखे गए के निशान और देखना जारी रखें के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
+    <string name="servers_certificate_advice">अगर यह आपका अपना सर्वर है और आपको इसकी उम्मीद थी, तो आप इस सर्टिफ़िकेट पर भरोसा कर सकते हैं। फिर Dex Hub TV इस सर्वर के लिए सिर्फ़ यही सर्टिफ़िकेट मानेगा और इसके बदलने पर आपको चेतावनी देगा। अगर आप अपने घर के नेटवर्क पर नहीं हैं, तो पहले सर्वर के मालिक से फ़िंगरप्रिंट मिला लें।</string>
+    <string name="servers_certificate_intro">Dex Hub TV %1$s की पहचान की पुष्टि नहीं कर सका।</string>
+    <string name="servers_display_name_description">वह नाम जो Dex Hub TV इस सर्वर के लिए होम, सेटिंग्स और सोर्स पर दिखाता है।</string>
+    <string name="servers_display_name_dialog_description">वह नाम चुनें जो Dex Hub TV इस सर्वर के लिए दिखाए। सर्वर का अपना नाम इस्तेमाल करने के लिए इसे खाली छोड़ें।</string>
+    <string name="servers_error_silo_website">Dex Hub TV को इस Silo सर्वर का Jellyfin एड्रेस नहीं मिला। Silo में “Settings &gt; Connect Apps &gt; Jellyfin-compatible app” खोलें और “Server” के नीचे दिखा एड्रेस डालें।</string>
+    <string name="servers_silo_home_rows_description">अपने Silo होम की रो (आपकी लिस्ट, ट्रेंडिंग, अगला…) Dex Hub TV के होम पर दिखाएँ।</string>
+    <string name="silo_method_jellyfin_description">Jellyfin ऐप्स के लिए Silo का एड्रेस, यूज़रनेम और पासवर्ड के साथ इस्तेमाल करता है (प्रोफ़ाइल के लिए name#Profile)। अब तक Dex Hub TV इसी तरीके से Silo से जुड़ता था।</string>
+    <string name="silo_profiles_subtitle">%1$s की एक से ज़्यादा प्रोफ़ाइलें हैं। Dex Hub TV आपकी चुनी हुई प्रोफ़ाइल को प्रगति, देखे गए के निशान और होम रो के लिए इस्तेमाल करता है। आप इसे बाद में सर्वर के पेज पर बदल सकते हैं।</string>
+    <string name="support_nuvio_gentle_title">Dex Hub TV में सब कुछ मेंबरशिप के बिना काम करता है</string>
+    <string name="support_nuvio_gentle_unavailable">अभी आपकी मेंबरशिप जाँची नहीं जा सकी। Dex Hub TV में सब कुछ इसके बिना काम करता है। अगर आप Nuvio टीम की मदद करना चाहें, तो मेंबरशिप कुछ अतिरिक्त सुविधाएँ जोड़ती है:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV आधिकारिक Nuvio ऐप पर बना है। मेंबरशिप Nuvio टीम को जाती है, सर्वर और डेवलपमेंट का खर्च उठाने में मदद करती है, और मुख्य ऐप को सबके लिए मुफ़्त रखती है।</string>
+    <string name="support_nuvio_thanks_subtitle">आपके फ़ायदे आपके Nuvio अकाउंट से जुड़े हैं, इसलिए वे यहाँ Dex Hub TV में और आधिकारिक ऐप में भी काम करते हैं।</string>
+    <string name="trakt_disconnect_subtitle">यह आपके Trakt अकाउंट को Dex Hub TV से डिस्कनेक्ट कर देगा।</string>
+    <string name="wetrakr_revoke_failed">यहाँ साइन आउट हो गया, लेकिन WeTrakr को सूचित नहीं किया जा सका। आप wetrakr.com पर कनेक्टेड ऐप्स में से Dex Hub TV को हटा सकते हैं।</string>
+    <string name="wetrakr_status_enter_code">WeTrakr पर Dex Hub TV को आपकी अनुमति की प्रतीक्षा है</string>
+</resources>

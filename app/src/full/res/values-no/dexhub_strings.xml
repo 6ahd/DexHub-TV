@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Oppdateringer fra Dex Hub TV-utgivelsene på GitHub.</string>
+    <string name="about_made_with_love">Dex Hub TV · Bygget på det flotte arbeidet til Tapframe og venner ❤️ · Nuvio Arc av ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">Å bytte til %1$s starter Dex Hub TV på nytt med det nye ikonet. Hjemmeskjermen kan bruke noen sekunder på å vise det, og TV-banneret kan kreve omstart av enheten. Velg OK for å fortsette.</string>
+    <string name="appearance_launcher_artwork_subtitle">Velg hvordan Dex Hub TV vises på TV-hjemmeskjermen</string>
+    <string name="audio_use_system_passthrough_sub">Sender TrueHD og DTS-HD til mottakeren din gjennom Android (systemveien) i stedet for Dex Hub TV (IEC-veien). Avhengig av enheten og lydoppsettet ditt kan dette begrense DTS-HD og DTS:X til standard DTS eller la dem stå uten lyd. Bruk dette bare hvis tapsfrie formater gir støy, lydforskyvning eller ingen lyd.</string>
+    <string name="floppy_qr_description">QR-kode for å godkjenne Dex Hub TV i Floppy</string>
+    <string name="layout_selection_welcome">Velkommen til Dex Hub TV</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV kobler til din egen Jellyfin-, Emby, Silo- eller Plex-server. Navnene og logoene tilhører eierne sine. Dex Hub TV er ikke tilknyttet eller godkjent av Jellyfin, Emby eller Silo.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV bruker WeTrakr til seerhistorikk, lister, sporing av avspilling og lignende titler. Data fra WeTrakr. Dex Hub TV er ikke tilknyttet eller godkjent av WeTrakr.</string>
+    <string name="party_invite_text">Bli med på seerfesten min i Dex Hub TV. Åpne Innstillinger, deretter Seerfest, og skriv inn koden %1$s</string>
+    <string name="playback_release_decoder_on_background_sub">Frigjør videodekoderen når Dex Hub TV går i bakgrunnen. Slå på hvis avspillingen feiler med en dekoderfeil etter at du er tilbake i appen. Spilleren lastes på nytt ved retur, også etter skjermspareren</string>
+    <string name="player_dts_hd_decoding_notice">Tapsfri DTS-HD-utgang sluttet å virke, så Dex Hub TV dekoder lyden i denne tittelen selv.</string>
+    <string name="plex_home_rows_description">Vis Plex sine egne rader fra denne serveren (Nylig lagt til med mer) på Dex Hub TVs Hjem.</string>
+    <string name="plex_remote_pass_needed">Plex spiller ikke av dette borte fra hjemmet. I apper som Dex Hub TV krever det Plex Pass på serveren eller et Remote Watch Pass for deg. Hjemme spilles det av gratis.</string>
+    <string name="plex_sign_in_subtitle">Ingen serveradresse trengs: Dex Hub TV finner Plex-serverne dine etter at du har logget inn.</string>
+    <string name="plex_users_subtitle">Plex-kontoen din har Plex Home-brukere. Dex Hub TV bruker den du velger for fremdrift, sett-merker og Fortsett å se på %1$s. Du kan endre den senere på serverens side.</string>
+    <string name="servers_certificate_advice">Hvis dette er din egen server og du forventer dette, kan du stole på sertifikatet. Dex Hub TV godtar da bare akkurat dette sertifikatet for serveren og varsler deg hvis det noen gang endres. Hvis du ikke er på hjemmenettverket ditt, sjekk først fingeravtrykket med serverens eier.</string>
+    <string name="servers_certificate_intro">Dex Hub TV kunne ikke bekrefte identiteten til %1$s.</string>
+    <string name="servers_display_name_description">Navnet Dex Hub TV viser for denne serveren på Hjem, i Innstillinger og ved kilder.</string>
+    <string name="servers_display_name_dialog_description">Velg navnet Dex Hub TV viser for denne serveren. La feltet stå tomt for å bruke serverens eget navn.</string>
+    <string name="servers_error_silo_website">Dex Hub TV fant ikke Jellyfin-adressen til denne Silo-serveren. Åpne «Settings &gt; Connect Apps &gt; Jellyfin-compatible app» i Silo og skriv inn adressen som vises under «Server».</string>
+    <string name="servers_silo_home_rows_description">Vis radene fra Silo-Hjem (listene dine, Populært nå, Neste…) på Dex Hub TVs Hjem.</string>
+    <string name="silo_method_jellyfin_description">Bruker Silos adresse for Jellyfin-apper, med brukernavn og passord (navn#Profil for en profil). Slik har Dex Hub TV koblet til Silo hittil.</string>
+    <string name="silo_profiles_subtitle">%1$s har mer enn én profil. Dex Hub TV bruker den du velger til fremdrift, sett-merker og hjemrader. Du kan endre den senere på serverens side.</string>
+    <string name="support_nuvio_gentle_title">Alt i Dex Hub TV fungerer uten medlemskap</string>
+    <string name="support_nuvio_gentle_unavailable">Medlemskapet ditt kunne ikke sjekkes akkurat nå. Alt i Dex Hub TV fungerer også uten. Hvis du vil hjelpe Nuvio-teamet, gir et medlemskap noen ekstra fordeler:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV bygger på den offisielle Nuvio-appen. Et medlemskap går til Nuvio-teamet, hjelper med å betale for servere og utvikling og holder kjerneappen gratis for alle.</string>
+    <string name="support_nuvio_thanks_subtitle">Fordelene følger Nuvio-kontoen din, så de virker her i Dex Hub TV og i den offisielle appen.</string>
+    <string name="trakt_disconnect_subtitle">Dette vil koble fra Trakt-kontoen din fra Dex Hub TV.</string>
+    <string name="wetrakr_revoke_failed">Logget ut her, men WeTrakr kunne ikke varsles. Du kan fjerne Dex Hub TV under tilkoblede apper på wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">Venter på at du tillater Dex Hub TV på WeTrakr</string>
+</resources>

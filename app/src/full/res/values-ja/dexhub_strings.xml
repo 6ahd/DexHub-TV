@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">GitHub の Dex Hub TV リリースからのアップデート。</string>
+    <string name="about_made_with_love">Dex Hub TV · Tapframe と仲間たちの素晴らしい成果をもとに ❤️ · Nuvio Arc 制作: ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">%1$sに変更すると、Dex Hub TVが新しいアイコンで再起動します。ホーム画面に反映されるまで数秒かかることがあり、TVバナーはデバイスの再起動が必要な場合があります。OKを選択して続行してください。</string>
+    <string name="appearance_launcher_artwork_subtitle">TVのホーム画面にDex Hub TVを表示する方法を選択</string>
+    <string name="audio_use_system_passthrough_sub">TrueHDとDTS-HDをDex Hub TV（IEC経路）ではなくAndroid（システム経路）経由でレシーバーに送ります。デバイスやオーディオ環境によっては、DTS-HDとDTS:Xが標準DTSに制限されたり、音が出なくなったりすることがあります。ロスレス形式でノイズ、ずれ、無音が起きる場合にのみ使用してください。</string>
+    <string name="cd_nuvio_logo">Dex Hub TV</string>
+    <string name="collections_editor_tmdb_title_helper">行/タブ名として表示されます。空の場合はDex Hub TVがソースから生成します。</string>
+    <string name="experience_mode_choose_title">Dex Hub TVのエクスペリエンスを選択</string>
+    <string name="floppy_qr_description">Floppy で Dex Hub TV を承認するための QR コード</string>
+    <string name="layout_selection_welcome">Dex Hub TVへようこそ</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub TVはIMDb非商用データセット(title.ratings.tsv.gzを含む)を使用し、IMDb評価と投票数を取得します。情報提供: IMDb (https://www.imdb.com)。許可を得て使用。IMDbデータは個人・非商用利用に限ります。</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub TVはコミュニティ提供のイントロ、リキャップ、クレジット、プレビューのタイムスタンプにIntroDB APIを使用します(スキップコントロール用)。Dex Hub TVはIntroDBと提携または承認されていません。</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub TVは評価、視聴履歴、再生トラッキングにMDBListを使用します。Dex Hub TVはMDBListと提携または承認されていません。</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TVはお使いのJellyfin、Emby、Silo、Plexサーバーに接続します。各名称とロゴはそれぞれの所有者に帰属します。Dex Hub TVはJellyfin、Emby、Siloと提携または承認されていません。</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub TVはPremiumizeと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Dex Hub TVはPremiumizeと提携または承認されていません。</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub TVはアカウント認証、ウォッチリスト、視聴履歴、再生進行状況、スクロブルのためにSimklと接続します。映画、TV、アニメのトラッキングデータはSimklから提供されます。Dex Hub TVはSimklと提携または承認されていません。</string>
+    <string name="licenses_attributions_subtitle">Dex Hub TVが使用するデータプロバイダー、サービス、Android再生ライセンス</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub TVは映画・TVのメタデータ、アートワーク、予告編、キャスト、制作詳細、コレクション、レコメンドにTMDB APIを使用しています。この製品はTMDB APIを使用していますが、TMDBによって承認または認定されていません。</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub TVはTorBoxと接続し、アカウント認証、クラウドライブラリアクセス、キャッシュチェック、クラウド再生機能を利用します。Dex Hub TVはTorBoxと提携または承認されていません。</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub TVはTraktと接続し、アカウント認証、視聴履歴、進行状況同期、ライブラリデータ、評価、リスト、コメントを利用します。Dex Hub TVはTraktと提携または承認されていません。</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TVは視聴履歴、リスト、再生の記録、類似作品にWeTrakrを使用します。データ提供: WeTrakr。Dex Hub TVはWeTrakrと提携または承認されていません。</string>
+    <string name="p2p_consent_body">このストリームはピアツーピア(P2P)技術を使用します。P2Pを有効にすると、以下を了承したものとみなされます:\n\n\u2022 あなたのIPアドレスはネットワーク上の他のピアに公開されます\n\u2022 アクセスするコンテンツに対する責任はすべてあなた自身にあります\n\u2022 あなたの管轄区域でこのコンテンツをストリーミングする法的権利を有することを確認します\n\u2022 Dex Hub TVはP2Pコンテンツをホスト、配布、または制御しません\n\u2022 Dex Hub TVはP2Pストリーミングの使用に起因する法的結果に対して一切の責任を負いません\n\nこの機能は完全に自己責任で使用してください。P2Pはいつでも設定で無効にできます。</string>
+    <string name="party_invite_text">Dex Hub TVのウォッチパーティーに参加しませんか。設定からウォッチパーティーを開き、コード %1$s を入力してください</string>
+    <string name="playback_engine_exoplayer_desc">現在のDex Hub TV機能との互換性が最も高い。</string>
+    <string name="playback_engine_mvplayer_desc">Dex Hub TV OSDコントロール付きのlibmpvを使用。実験的。</string>
+    <string name="playback_player_internal_desc">Dex Hub TVの内蔵プレーヤーを使用</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hub TVがバックグラウンドに行ったときにビデオデコーダーを解放します。アプリに戻った後にデコーダーエラーで再生が失敗する場合にオンにしてください。プレーヤーは戻ったとき、スクリーンセーバー後にもリロードされます</string>
+    <string name="player_dts_hd_decoding_notice">ロスレスDTS-HD出力が機能しなくなったため、このタイトルの音声はDex Hub TV自身がデコードしています。</string>
+    <string name="plex_home_rows_description">このサーバーのPlex独自の行（最近追加されたものなど）をDex Hub TVのホームに表示します。</string>
+    <string name="plex_remote_pass_needed">Plexでは自宅の外でこれを再生できません。Dex Hub TVのようなアプリでは、サーバー側のPlex Passか、あなたのRemote Watch Passが必要です。自宅では無料で再生できます。</string>
+    <string name="plex_sign_in_subtitle">サーバーのアドレスは不要です。サインイン後、Dex Hub TVがPlexサーバーを見つけます。</string>
+    <string name="plex_users_subtitle">PlexアカウントにPlex Homeのユーザーがいます。Dex Hub TVは、選んだユーザーを%1$sの進行状況、視聴済みマーク、「視聴を続ける」に使います。後でサーバーのページから変更できます。</string>
+    <string name="servers_certificate_advice">自分のサーバーで、これが想定どおりの場合は、この証明書を信頼できます。Dex Hub TVはこのサーバーに対してこの証明書だけを受け入れ、変更された場合は警告します。自宅のネットワーク以外にいる場合は、先にサーバーの管理者とフィンガープリントを確認してください。</string>
+    <string name="servers_certificate_intro">Dex Hub TVは%1$sの身元を確認できませんでした。</string>
+    <string name="servers_display_name_description">Dex Hub TVがこのサーバーをホーム、設定、ソースで表示するときの名前です。</string>
+    <string name="servers_display_name_dialog_description">Dex Hub TVでこのサーバーに表示する名前を選びます。空欄にするとサーバー側の名前を使います。</string>
+    <string name="servers_error_silo_website">Dex Hub TVはこのSiloサーバーのJellyfinアドレスを見つけられませんでした。Siloで「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」を開き、「Server」の下に表示されているアドレスを入力してください。</string>
+    <string name="servers_silo_home_rows_description">Siloホームの行（リスト、トレンド、次のエピソード…）をDex Hub TVのホームに表示します。</string>
+    <string name="silo_method_jellyfin_description">Jellyfinアプリ用のSiloのアドレスに、ユーザー名とパスワードで接続します（プロフィールは name#Profile）。これまでDex Hub TVがSiloに接続していた方法です。</string>
+    <string name="silo_profiles_subtitle">%1$sには複数のプロフィールがあります。Dex Hub TVは、選んだプロフィールを進行状況、視聴済みマーク、ホームの行に使います。後でサーバーのページから変更できます。</string>
+    <string name="simkl_sync_info_description">Dex Hub TVは最大でも%1$d分に1回、Simklを確認します。他のアプリやSimklウェブサイト経由の変更は反映にその時間がかかる場合があります。</string>
+    <string name="simkl_sync_info_manual">Dex Hub TVでの変更はすぐにSimklに送信されます。リモートの変更をより早く確認したい場合は「今すぐ同期」を使用してください。</string>
+    <string name="support_nuvio_gentle_title">Dex Hub TVはメンバーシップなしですべて使えます</string>
+    <string name="support_nuvio_gentle_unavailable">現在メンバーシップを確認できませんでした。Dex Hub TVはメンバーシップなしでもすべて使えます。Nuvioチームを支援したい場合は、メンバーシップでいくつかの特典が加わります：</string>
+    <string name="support_nuvio_subtitle">Dex Hub TVは公式Nuvioアプリをベースにしています。メンバーシップはNuvioチームに届き、サーバーと開発の費用を支え、基本機能を誰でも無料で使えるようにしています。</string>
+    <string name="support_nuvio_thanks_subtitle">特典はNuvioアカウントに紐づくため、このDex Hub TVでも公式アプリでも使えます。</string>
+    <string name="tracking_library_source_dialog_subtitle">Dex Hub TVがライブラリに読み取るサービスを選択。再生スクロブルはすべての接続サービスに送信されます。</string>
+    <string name="tracking_sources_subtitle">Dex Hub TVがライブラリと視聴進行状況を読み取る場所を選択。再生スクロブルはすべての接続サービスに送信されます。</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Dex Hub TVが再開と視聴を続けるに読み取るサービスを選択。スクロブルは接続されているすべてのサービスでアクティブなままです。</string>
+    <string name="trakt_disconnect_subtitle">Dex Hub TVからTraktアカウントが切断されます</string>
+    <string name="wetrakr_revoke_failed">ここではサインアウトしましたが、WeTrakrに通知できませんでした。wetrakr.comの連携済みアプリからDex Hub TVを削除できます。</string>
+    <string name="wetrakr_status_enter_code">WeTrakrでDex Hub TVが許可されるのを待っています</string>
+</resources>

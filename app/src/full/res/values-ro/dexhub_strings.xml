@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Actualizări din versiunile Dex Hub TV de pe GitHub.</string>
+    <string name="about_made_with_love">Dex Hub TV · Construit pe munca extraordinară a Tapframe și a prietenilor ❤️ · Nuvio Arc de ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">Trecerea la %1$s repornește Dex Hub TV cu noua pictogramă. Ecranul de pornire o poate afișa după câteva secunde, iar bannerul TV poate necesita repornirea dispozitivului. Selectează OK pentru a continua.</string>
+    <string name="appearance_launcher_artwork_subtitle">Alege cum apare Dex Hub TV pe ecranul de pornire al televizorului</string>
+    <string name="audio_use_system_passthrough_sub">Trimite TrueHD și DTS-HD către receptor prin Android (calea de sistem) în loc de Dex Hub TV (calea IEC). În funcție de dispozitiv și de configurația audio, aceasta poate limita DTS-HD și DTS:X la DTS standard sau le poate lăsa fără sunet. Folosește opțiunea doar dacă formatele lossless produc zgomot, desincronizare sau nu au sunet.</string>
+    <string name="floppy_qr_description">Cod QR pentru aprobarea Dex Hub TV în Floppy</string>
+    <string name="layout_selection_welcome">Bine ai venit la Dex Hub TV</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV se conectează la propriul tău server Jellyfin, Emby, Silo sau Plex. Numele și siglele aparțin proprietarilor lor. Dex Hub TV nu este afiliat cu Jellyfin, Emby sau Silo și nu este susținut de acestea.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV folosește WeTrakr pentru istoricul vizionărilor, liste, urmărirea redării și titluri similare. Date de la WeTrakr. Dex Hub TV nu este afiliat cu WeTrakr și nici aprobat de acesta.</string>
+    <string name="party_invite_text">Vino la petrecerea mea de vizionare în Dex Hub TV. Deschide Setări, apoi Petrecere de vizionare, și introdu codul %1$s</string>
+    <string name="playback_release_decoder_on_background_sub">Eliberează decodorul video când Dex Hub TV trece în fundal. Activează dacă redarea eșuează cu o eroare de decodor după revenirea în aplicație. Playerul se reîncarcă la revenire, inclusiv după screensaver</string>
+    <string name="player_dts_hd_decoding_notice">Ieșirea DTS-HD lossless a încetat să funcționeze, așa că Dex Hub TV decodează singur sunetul acestui titlu.</string>
+    <string name="plex_home_rows_description">Afișează rândurile proprii Plex de pe acest server (Adăugate recent și altele) în Acasă din Dex Hub TV.</string>
+    <string name="plex_remote_pass_needed">Plex nu redă asta departe de casă. În aplicații ca Dex Hub TV e nevoie de Plex Pass pe server sau de un Remote Watch Pass pentru tine. Acasă se redă gratuit.</string>
+    <string name="plex_sign_in_subtitle">Nu ai nevoie de adresa serverului: Dex Hub TV îți găsește serverele Plex după ce te conectezi.</string>
+    <string name="plex_users_subtitle">Contul tău Plex are utilizatori Plex Home. Dex Hub TV folosește utilizatorul ales pentru progres, marcajele de vizionat și Continuă vizionarea pe %1$s. Îl poți schimba mai târziu pe pagina serverului.</string>
+    <string name="servers_certificate_advice">Dacă este serverul tău și te aștepți la asta, poți avea încredere în acest certificat. Dex Hub TV va accepta apoi doar exact acest certificat pentru acest server și te va avertiza dacă se schimbă vreodată. Dacă nu ești în rețeaua de acasă, verifică mai întâi amprenta cu proprietarul serverului.</string>
+    <string name="servers_certificate_intro">Dex Hub TV nu a putut confirma identitatea serverului %1$s.</string>
+    <string name="servers_display_name_description">Numele pe care Dex Hub TV îl afișează pentru acest server în Acasă, în Setări și la surse.</string>
+    <string name="servers_display_name_dialog_description">Alege numele pe care Dex Hub TV îl afișează pentru acest server. Lasă gol pentru a folosi numele original al serverului.</string>
+    <string name="servers_error_silo_website">Dex Hub TV nu a găsit adresa Jellyfin a acestui server Silo. În Silo, deschide \"Settings &gt; Connect Apps &gt; Jellyfin-compatible app\" și introdu adresa afișată sub \"Server\".</string>
+    <string name="servers_silo_home_rows_description">Afișează rândurile din pagina Acasă din Silo (listele tale, În tendințe, Următorul…) în Acasă din Dex Hub TV.</string>
+    <string name="silo_method_jellyfin_description">Folosește adresa Silo pentru aplicațiile Jellyfin, cu nume de utilizator și parolă (nume#Profil pentru un profil). Modul în care Dex Hub TV s-a conectat la Silo până acum.</string>
+    <string name="silo_profiles_subtitle">%1$s are mai multe profiluri. Dex Hub TV folosește profilul ales pentru progres, marcajele de vizionat și rândurile din Acasă. Îl poți schimba mai târziu pe pagina serverului.</string>
+    <string name="support_nuvio_gentle_title">Totul în Dex Hub TV funcționează fără abonament</string>
+    <string name="support_nuvio_gentle_unavailable">Abonamentul tău nu a putut fi verificat acum. Totul în Dex Hub TV funcționează și fără. Dacă vrei să ajuți echipa Nuvio, un abonament adaugă câteva avantaje în plus:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV are la bază aplicația oficială Nuvio. Un abonament merge la echipa Nuvio, ajută la plata serverelor și a dezvoltării și păstrează aplicația de bază gratuită pentru toți.</string>
+    <string name="support_nuvio_thanks_subtitle">Avantajele țin de contul tău Nuvio, așa că funcționează aici în Dex Hub TV și în aplicația oficială.</string>
+    <string name="trakt_disconnect_subtitle">Aceasta va deconecta contul tău Trakt de Dex Hub TV.</string>
+    <string name="wetrakr_revoke_failed">Deconectat aici, dar WeTrakr nu a putut fi anunțat. Poți elimina Dex Hub TV din aplicațiile conectate pe wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">Se așteaptă să permiți Dex Hub TV pe WeTrakr</string>
+</resources>

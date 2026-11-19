@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Pembaruan dari rilis Dex Hub TV di GitHub.</string>
+    <string name="about_made_with_love">Dex Hub TV · Dibangun di atas karya hebat Tapframe dan teman-teman ❤️ · Nuvio Arc oleh ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">Mengubah ke %1$s akan memulai ulang Dex Hub TV dengan ikon baru. Layar utama mungkin perlu beberapa detik untuk menampilkannya, dan banner TV mungkin memerlukan mulai ulang perangkat. Pilih OK untuk melanjutkan.</string>
+    <string name="appearance_launcher_artwork_subtitle">Pilih tampilan Dex Hub TV di layar utama TV Anda</string>
+    <string name="audio_use_system_passthrough_sub">Mengirim TrueHD dan DTS-HD ke penerima AV Anda melalui Android (jalur Sistem), bukan Dex Hub TV (jalur IEC). Tergantung perangkat dan pengaturan audio Anda, ini dapat membatasi DTS-HD dan DTS:X ke DTS standar atau membuatnya tanpa suara. Gunakan hanya jika format lossless menghasilkan derau, pergeseran, atau tanpa suara.</string>
+    <string name="cd_nuvio_logo">Dex Hub TV</string>
+    <string name="collections_editor_tmdb_title_helper">Ditampilkan sebagai nama baris/tab. Jika kosong, Dex Hub TV akan membuatnya dari sumber.</string>
+    <string name="experience_mode_choose_title">Pilih pengalaman Dex Hub TV Anda</string>
+    <string name="floppy_qr_description">Kode QR untuk menyetujui Dex Hub TV di Floppy</string>
+    <string name="layout_selection_welcome">Selamat datang di Dex Hub TV</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub TV menggunakan Dataset Non-Komersial IMDb, termasuk title.ratings.tsv.gz, untuk rating dan jumlah suara IMDb. Informasi atas izin IMDb (https://www.imdb.com). Digunakan dengan izin. Data IMDb untuk penggunaan pribadi dan non-komersial sesuai ketentuan IMDb.</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub TV menggunakan API IntroDB untuk cap waktu intro, rekap, kredit, dan pratinjau dari komunitas yang digunakan oleh kontrol lewati. Dex Hub TV tidak berafiliasi dengan atau didukung oleh IntroDB.</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub TV menggunakan MDBList untuk rating dan data penyedia skor eksternal. Dex Hub TV tidak berafiliasi dengan atau didukung oleh MDBList.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV terhubung ke server Jellyfin, Emby, Silo, atau Plex milik Anda sendiri. Nama dan logonya adalah milik pemiliknya masing-masing. Dex Hub TV tidak berafiliasi dengan atau didukung oleh Jellyfin, Emby, atau Silo.</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub TV terhubung ke Premiumize untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Dex Hub TV tidak berafiliasi dengan atau didukung oleh Premiumize.</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub TV terhubung ke Simkl untuk autentikasi akun, daftar tontonan, riwayat tontonan, progres pemutaran, dan scrobbling. Data pelacakan film, TV, dan anime disediakan oleh Simkl. Dex Hub TV tidak berafiliasi dengan atau didukung oleh Simkl.</string>
+    <string name="licenses_attributions_subtitle">Penyedia data, kredit layanan, dan lisensi pemutaran Android yang digunakan oleh Dex Hub TV.</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub TV menggunakan API TMDB untuk metadata film dan TV, poster dan latar belakang, trailer, pemeran, detail produksi, koleksi, dan rekomendasi. Produk ini menggunakan API TMDB namun tidak didukung atau disertifikasi oleh TMDB.</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub TV terhubung ke TorBox untuk autentikasi akun, akses pustaka cloud, pemeriksaan cache, dan fitur pemutaran cloud. Dex Hub TV tidak berafiliasi dengan atau didukung oleh TorBox.</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub TV terhubung ke Trakt untuk autentikasi akun, riwayat tonton, sinkronisasi progres, data pustaka, rating, daftar, dan komentar. Dex Hub TV tidak berafiliasi dengan atau didukung oleh Trakt.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV menggunakan WeTrakr untuk riwayat tontonan, daftar, pelacakan pemutaran, dan judul serupa. Data dari WeTrakr. Dex Hub TV tidak berafiliasi dengan atau didukung oleh WeTrakr.</string>
+    <string name="p2p_consent_body">Stream ini menggunakan teknologi peer-to-peer (P2P). Dengan mengaktifkan P2P, Anda mengakui dan menyetujui bahwa:\n\n\u2022 Alamat IP Anda akan terlihat oleh peer lain di jaringan\n\u2022 Anda sepenuhnya bertanggung jawab atas konten yang Anda akses\n\u2022 Anda mengonfirmasi bahwa Anda memiliki hak hukum untuk streaming konten ini di yurisdiksi Anda\n\u2022 Dex Hub TV tidak menyelenggarakan, mendistribusikan, atau mengontrol konten P2P apa pun\n\u2022 Dex Hub TV tidak bertanggung jawab atas konsekuensi hukum apa pun yang timbul dari penggunaan streaming P2P Anda\n\nAnda menggunakan fitur ini sepenuhnya atas risiko Anda sendiri. P2P dapat dinonaktifkan kapan saja di Pengaturan.</string>
+    <string name="party_invite_text">Gabung nonton bareng saya di Dex Hub TV. Buka Pengaturan, lalu Nonton bareng, dan masukkan kode %1$s</string>
+    <string name="playback_engine_exoplayer_desc">Kompatibilitas terbaik dengan fitur Dex Hub TV saat ini.</string>
+    <string name="playback_engine_mvplayer_desc">Menggunakan libmpv dengan kontrol OSD Dex Hub TV. Eksperimental.</string>
+    <string name="playback_player_internal_desc">Gunakan pemutar bawaan Dex Hub TV</string>
+    <string name="playback_release_decoder_on_background_sub">Melepaskan dekoder video saat Dex Hub TV masuk ke latar belakang. Aktifkan jika pemutaran gagal dengan kesalahan dekoder setelah kembali ke aplikasi. Pemutar dimuat ulang saat kembali, juga setelah screensaver</string>
+    <string name="player_dts_hd_decoding_notice">Output DTS-HD lossless berhenti berfungsi, jadi Dex Hub TV mendekode sendiri suara judul ini.</string>
+    <string name="plex_home_rows_description">Tampilkan baris milik Plex dari server ini (Baru Ditambahkan dan lainnya) di Beranda Dex Hub TV.</string>
+    <string name="plex_remote_pass_needed">Plex tidak memutar ini di luar rumah. Di aplikasi seperti Dex Hub TV, perlu Plex Pass di server atau Remote Watch Pass untuk Anda. Di rumah, pemutaran gratis.</string>
+    <string name="plex_sign_in_subtitle">Tidak perlu alamat server: Dex Hub TV menemukan server Plex Anda setelah Anda masuk.</string>
+    <string name="plex_users_subtitle">Akun Plex Anda memiliki pengguna Plex Home. Dex Hub TV memakai pengguna yang Anda pilih untuk progres, tanda sudah ditonton, dan Lanjutkan Menonton di %1$s. Anda dapat mengubahnya nanti di halaman server.</string>
+    <string name="servers_certificate_advice">Jika ini server Anda sendiri dan hal ini memang wajar, Anda dapat memercayai sertifikat ini. Dex Hub TV kemudian hanya menerima sertifikat yang persis ini untuk server ini dan memperingatkan Anda jika berubah. Jika Anda tidak berada di jaringan rumah, periksa dulu sidik jarinya dengan pemilik server.</string>
+    <string name="servers_certificate_intro">Dex Hub TV tidak dapat memastikan identitas %1$s.</string>
+    <string name="servers_display_name_description">Nama yang ditampilkan Dex Hub TV untuk server ini di Beranda, Pengaturan, dan sumber.</string>
+    <string name="servers_display_name_dialog_description">Pilih nama yang ditampilkan Dex Hub TV untuk server ini. Biarkan kosong untuk memakai nama asli server.</string>
+    <string name="servers_error_silo_website">Dex Hub TV tidak dapat menemukan alamat Jellyfin server Silo ini. Di Silo, buka Settings &gt; Connect Apps &gt; Jellyfin-compatible app dan masukkan alamat yang tertera di bawah Server.</string>
+    <string name="servers_silo_home_rows_description">Tampilkan baris dari Beranda Silo Anda (daftar Anda, Trending, Selanjutnya…) di Beranda Dex Hub TV.</string>
+    <string name="silo_method_jellyfin_description">Memakai alamat Silo untuk aplikasi Jellyfin, dengan nama pengguna dan kata sandi (nama#Profil untuk profil). Cara Dex Hub TV terhubung ke Silo selama ini.</string>
+    <string name="silo_profiles_subtitle">%1$s memiliki lebih dari satu profil. Dex Hub TV memakai profil yang Anda pilih untuk progres, tanda sudah ditonton, dan baris Beranda. Anda dapat mengubahnya nanti di halaman server.</string>
+    <string name="simkl_sync_info_description">Dex Hub TV otomatis memeriksa Simkl paling banyak sekali setiap %1$d menit. Perubahan yang dibuat melalui aplikasi lain atau situs Simkl mungkin memerlukan waktu selama itu untuk muncul.</string>
+    <string name="simkl_sync_info_manual">Perubahan yang dibuat di Dex Hub TV langsung dikirim ke Simkl. Gunakan Sinkronkan sekarang kapan pun Anda ingin Dex Hub TV memeriksa perubahan jarak jauh lebih cepat.</string>
+    <string name="support_nuvio_gentle_title">Semua di Dex Hub TV berfungsi tanpa keanggotaan</string>
+    <string name="support_nuvio_gentle_unavailable">Keanggotaan Anda tidak dapat diperiksa saat ini. Semua di Dex Hub TV berfungsi tanpa keanggotaan. Jika Anda ingin membantu tim Nuvio, keanggotaan memberi beberapa tambahan:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV dibangun di atas aplikasi resmi Nuvio. Keanggotaan masuk ke tim Nuvio, membantu biaya server dan pengembangan, serta menjaga aplikasi inti tetap gratis untuk semua.</string>
+    <string name="support_nuvio_thanks_subtitle">Keuntungan Anda mengikuti akun Nuvio Anda, jadi berfungsi di sini di Dex Hub TV dan di aplikasi resmi.</string>
+    <string name="tracking_library_source_dialog_subtitle">Pilih layanan yang dibaca Dex Hub TV untuk Pustaka Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
+    <string name="tracking_sources_subtitle">Pilih tempat Dex Hub TV membaca pustaka dan progres tontonan Anda. Pemutaran melakukan scrobble ke setiap layanan yang terhubung.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Pilih layanan yang dibaca Dex Hub TV untuk melanjutkan dan Lanjutkan Menonton. Scrobbling tetap aktif untuk setiap layanan yang terhubung.</string>
+    <string name="trakt_disconnect_subtitle">Ini akan memutuskan akun Trakt Anda dari Dex Hub TV.</string>
+    <string name="wetrakr_revoke_failed">Sudah keluar di sini, tetapi WeTrakr tidak dapat diberi tahu. Anda dapat menghapus Dex Hub TV di bagian aplikasi terhubung di wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">Menunggu Anda mengizinkan Dex Hub TV di WeTrakr</string>
+</resources>

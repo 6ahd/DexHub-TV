@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_made_with_love">Dex Hub TV · Tapframe এবং বন্ধুদের দারুণ কাজের উপর ভিত্তি করে তৈরি ❤️ · Nuvio Arc, ysosrs123-এর তৈরি</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">%1$s-এ পরিবর্তন করলে Dex Hub TV নতুন আইকন নিয়ে আবার চালু হবে। হোম স্ক্রিনে এটি দেখাতে কয়েক সেকেন্ড লাগতে পারে, এবং টিভি ব্যানার আপডেট হতে ডিভাইস রিস্টার্টের প্রয়োজন হতে পারে। চালিয়ে যেতে OK সিলেক্ট করুন।</string>
+    <string name="appearance_launcher_artwork_subtitle">টিভির হোম স্ক্রিনে Dex Hub TV কীভাবে দেখাবে তা বেছে নিন</string>
+    <string name="cd_nuvio_logo">Dex Hub TV</string>
+    <string name="collections_editor_tmdb_title_helper">সারি/ট্যাবের নাম হিসেবে দেখানো হয়। ফাঁকা থাকলে, Dex Hub TV সোর্স থেকে একটি তৈরি করে।</string>
+    <string name="experience_mode_choose_title">আপনার Dex Hub TV এক্সপেরিয়েন্স বেছে নিন</string>
+    <string name="layout_selection_welcome">Dex Hub TV-এ স্বাগতম</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub TV IMDb রেটিং এবং ভোট কাউন্টের জন্য title.ratings.tsv.gz-সহ IMDb নন-কমার্শিয়াল ডেটাসেট ব্যবহার করে। তথ্যগুলো IMDb (https://www.imdb.com)-এর সৌজন্যে প্রাপ্ত। অনুমতিক্রমে ব্যবহৃত। IMDb-র শর্ত অনুযায়ী IMDb-র ডেটা ব্যক্তিগত এবং নন-কমার্শিয়াল ব্যবহারের জন্য।</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub TV স্কিপ কন্ট্রোলের মাধ্যমে ইন্ট্রো, রিক্যাপ, ক্রেডিট এবং প্রিভিউ টাইমস্ট্যাম্পের জন্য IntroDB API ব্যবহার করে। Dex Hub TV IntroDB দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub TV রেটিং, দেখার হিস্ট্রি এবং প্লেব্যাক ট্র্যাকিংয়ের জন্য MDBList ব্যবহার করে। Dex Hub TV MDBList দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub TV অ্যাকাউন্ট প্রমাণীকরণ, ক্লাউড লাইব্রেরি অ্যাক্সেস, ক্যাশে চেক এবং ক্লাউড প্লেব্যাক ফিচারের জন্য Premiumize-এর সাথে সংযোগ করে। Dex Hub TV Premiumize দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub TV অ্যাকাউন্ট প্রমাণীকরণ, ওয়াচলিস্ট, দেখার হিস্ট্রি, প্লেব্যাক অগ্রগতি এবং স্ক্রবব্লিংয়ের জন্য Simkl-এর সাথে সংযোগ করে। সিনেমা, টিভি এবং অ্যানিমে ট্র্যাকিং ডেটা Simkl সরবরাহ করে। Dex Hub TV Simkl দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_subtitle">Dex Hub TV TV-র ব্যবহৃত ডেটা প্রোভাইডার, সার্ভিস ক্রেডিট এবং Android প্লেব্যাক লাইসেন্স।</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub TV মিডিয়া মেটাডেটা, আর্টওয়ার্ক, রেকমেন্ডেশন এবং পোস্টারের জন্য TMDB ব্যবহার করে। এই পণ্যটি TMDB API ব্যবহার করে কিন্তু TMDB দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub TV অ্যাকাউন্ট প্রমাণীকরণ, ক্লাউড লাইব্রেরি অ্যাক্সেস, ক্যাশে চেক এবং ক্লাউড প্লেব্যাক ফিচারের জন্য TorBox-এর সাথে সংযোগ করে। Dex Hub TV TorBox দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub TV অ্যাকাউন্ট প্রমাণীকরণ, দেখার হিস্ট্রি, অগ্রগতি সিঙ্ক, লাইব্রেরি ডেটা, রেটিং, তালিকা এবং মন্তব্যের জন্য Trakt-এর সাথে সংযোগ করে। Dex Hub TV Trakt দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
+    <string name="p2p_consent_body">এই স্ট্রিম পিয়ার-টু-পিয়ার (P2P) প্রযুক্তি ব্যবহার করে। P2P চালু করার মাধ্যমে আপনি স্বীকার করছেন ও সম্মত হচ্ছেন যে:
+
+• আপনার IP অ্যাড্রেস নেটওয়ার্কের অন্যান্য পিয়ারদের কাছে দৃশ্যমান হবে
+• আপনি যে কন্টেন্ট অ্যাক্সেস করছেন তার জন্য আপনি সম্পূর্ণভাবে দায়ী
+• আপনার অঞ্চলে এই কন্টেন্ট স্ট্রিম করার আইনগত অধিকার আপনার রয়েছে
+• Dex Hub TV কোনো P2P কন্টেন্ট হোস্ট, বিতরণ বা নিয়ন্ত্রণ করে না
+• P2P স্ট্রিমিং ব্যবহারের ফলে সৃষ্ট কোনো আইনি পরিণতির দায় Dex Hub TV বহন করে না
+
+আপনি সম্পূর্ণ নিজ ঝুঁকিতে এই ফিচারটি ব্যবহার করছেন। সেটিংস থেকে যেকোনো সময় P2P বন্ধ করা যাবে।</string>
+    <string name="playback_engine_exoplayer_desc">বর্তমান Dex Hub TV ফিচারের সাথে সেরা কম্প্যাটিবিলিটি।</string>
+    <string name="playback_engine_mvplayer_desc">Dex Hub TV OSD কন্ট্রোলের সাথে libmpv ব্যবহার করে। পরীক্ষামূলক।</string>
+    <string name="playback_player_internal_desc">Dex Hub TV-এর বিল্ট-ইন প্লেয়ার ব্যবহার করুন</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hub TV ব্যাকগ্রাউন্ডে গেলে ভিডিও ডিকোডার মুক্ত করুন। অ্যাপে ফিরে আসার পর ডিকোডার এরর দিয়ে প্লেব্যাক ব্যর্থ হলে এটি চালু করুন। ফিরে আসার পর প্লেয়ারটি পুনরায় লোড হবে, স্ক্রিনসেভারের পরেও</string>
+    <string name="simkl_sync_info_description">Dex Hub TV স্বয়ংক্রিয়ভাবে প্রতি %1$d মিনিটে একবার Simkl চেক করে। অন্য অ্যাপ বা Simkl ওয়েবসাইটের মাধ্যমে করা পরিবর্তনগুলো প্রদর্শিত হতে অনেক সময় নিতে পারে।</string>
+    <string name="simkl_sync_info_manual">Dex Hub TV-এ করা পরিবর্তনগুলো অবিলম্বে Simkl-এ পাঠানো হয়। যখনই আপনি চান Dex Hub TV রিমোট চেঞ্জগুলো দ্রুত চেক করুক, তখনই \'এখন সিঙ্ক করুন\' ব্যবহার করুন।</string>
+    <string name="tracking_library_source_dialog_subtitle">লাইব্রেরির জন্য Dex Hub TV কোনো সার্ভিস ব্যবহার করবে তা বাছুন। প্রতিটি সংযুক্ত সার্ভিসে প্লেব্যাক স্ক্রবল হবে।</string>
+    <string name="tracking_sources_subtitle">Dex Hub TV কোথা থেকে আপনার লাইব্রেরি এবং দেখার প্রোগ্রেস পড়বে তা বেছে নিন। কানেক্ট করা প্রতিটি সার্ভিসে প্লেব্যাক স্ক্রোবল করা হয়।</string>
+    <string name="trakt_disconnect_subtitle">এটি Dex Hub TV থেকে আপনার Trakt অ্যাকাউন্ট সংযোগ বিচ্ছিন্ন করবে।</string>
+    <string name="trakt_library_source_subtitle">Dex Hub TV আপনার লাইব্রেরির জন্য কোনো সোর্সটি পড়বে তা বাছুন</string>
+</resources>

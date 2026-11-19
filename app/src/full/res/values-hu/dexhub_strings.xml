@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Frissítések a Dex Hub TV GitHubon közzétett kiadásaiból.</string>
+    <string name="about_made_with_love">Dex Hub TV · A Tapframe és barátai nagyszerű munkájára építve ❤️ · Nuvio Arc: ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="audio_use_system_passthrough_sub">A TrueHD és DTS-HD hangot az Androidon keresztül (rendszerútvonal) küldi az erősítőnek a Dex Hub TV (IEC-útvonal) helyett. Az eszköztől és a hangbeállításoktól függően ez a DTS-HD-t és a DTS:X-et normál DTS-re korlátozhatja, vagy hang nélkül hagyhatja. Csak akkor használd, ha a veszteségmentes formátumok zajosak, elcsúsznak vagy nincs hangjuk.</string>
+    <string name="cd_nuvio_logo">Dex Hub TV</string>
+    <string name="floppy_qr_description">QR-kód a Dex Hub TV jóváhagyásához a Floppyban</string>
+    <string name="layout_selection_welcome">Üdvözöl a Dex Hub TV</string>
+    <string name="licenses_attributions_imdb_body">A Dex Hub TV az IMDb nem kereskedelmi adatkészleteit, beleértve a title.ratings.tsv.gz fájlt, az IMDb értékelésekhez és szavazatszámokhoz használja. Az információk az IMDb (https://www.imdb.com) jóvoltából származnak. Engedéllyel felhasználva. Az IMDb adatai személyes és nem kereskedelmi célokra használhatók az IMDb feltételei alapján.</string>
+    <string name="licenses_attributions_introdb_body">A Dex Hub TV az IntroDB API-t használja a közösség által biztosított intro, összefoglaló, stáblista és előzetes időbélyegekhez, amelyeket az átugrási vezérlők használnak. A Dex Hub TV nem áll kapcsolatban az IntroDB-vel, és az nem hagyta jóvá.</string>
+    <string name="licenses_attributions_media_servers_body">A Dex Hub TV a saját Jellyfin, Emby, Silo vagy Plex szerveredhez csatlakozik. A nevek és logók a tulajdonosaikat illetik. A Dex Hub TV nem áll kapcsolatban a Jellyfin, az Emby vagy a Silo projekttel, és azok nem hagyták jóvá.</string>
+    <string name="licenses_attributions_premiumize_body">A Dex Hub TV a Premiumize-hoz kapcsolódik fiókhitelesítéshez, felhőkönyvtár-eléréshez, gyorsítótár-ellenőrzésekhez és felhős lejátszási funkciókhoz. A Dex Hub TV nem áll kapcsolatban a Premiumize-zal, és a Premiumize nem támogatja.</string>
+    <string name="licenses_attributions_simkl_body">A Dex Hub TV a Simklhez kapcsolódik fiókhitelesítéshez, várólistákhoz, megtekintési előzményekhez, lejátszási folyamathoz és scrobblinghoz. A film-, sorozat- és animekövetési adatokat a Simkl szolgáltatja. A Dex Hub TV nem áll kapcsolatban a Simkllel, és a Simkl nem támogatja.</string>
+    <string name="licenses_attributions_tmdb_body">A Dex Hub TV a TMDB API-t használja a filmek és tévéműsorok metaadataihoz, borítóképekhez, előzetesekhez, stáblistákhoz, gyártási adatokhoz, gyűjteményekhez és ajánlásokhoz. Ez a termék a TMDB API-t használja, de a TMDB nem támogatja és nem hagyta jóvá.</string>
+    <string name="licenses_attributions_torbox_body">A Dex Hub TV a TorBox-hoz kapcsolódik fiókhitelesítéshez, felhőkönyvtár-eléréshez, gyorsítótár-ellenőrzésekhez és felhős lejátszási funkciókhoz. A Dex Hub TV nem áll kapcsolatban a TorBox-szal, és a TorBox nem támogatja.</string>
+    <string name="licenses_attributions_wetrakr_body">A Dex Hub TV a WeTrakrt használja a megtekintési előzményekhez, listákhoz, lejátszáskövetéshez és a hasonló címekhez. Adatok: WeTrakr. A Dex Hub TV nem áll kapcsolatban a WeTrakrrel, és a WeTrakr nem támogatja.</string>
+    <string name="p2p_consent_body">Ez a stream peer-to-peer (P2P) technológiát használ. A P2P engedélyezésével tudomásul veszed és elfogadod, hogy:\n\n\u2022 Az IP címed látható lesz a hálózat más résztvevői számára\n\u2022 Kizárólag te vagy a felelős a megtekintett tartalomért\n\u2022 Megerősíted, hogy jogod van streamelni ezt a tartalmat a te joghatóságodban\n\u2022 A Dex Hub TV nem tárol, terjeszt és nem is felügyel semmilyen P2P tartalmat\n\u2022 A Dex Hub TV nem vállal felelősséget a P2P streamelésből eredő jogi következményekért\n\nEzt a funkciót kizárólag a saját felelősségedre használod. A P2P bármikor kikapcsolható a Beállításokban.</string>
+    <string name="playback_engine_exoplayer_desc">Legjobb kompatibilitás a jelenlegi Dex Hub TV funkciókkal.</string>
+    <string name="playback_engine_mvplayer_desc">Libmpv-t használ a Dex Hub TV OSD vezérlőivel. Kísérleti funkció.</string>
+    <string name="playback_release_decoder_on_background_sub">Felszabadítja a videódekódert, amikor a Dex Hub TV a háttérbe kerül. Kapcsold be, ha az alkalmazásba visszatérve dekóderhiba miatt nem működik a lejátszás. Visszatéréskor a lejátszó újratöltődik, a képernyőkímélő után is.</string>
+    <string name="player_dts_hd_decoding_notice">A veszteségmentes DTS-HD kimenet leállt, ezért a Dex Hub TV maga dekódolja ennek a tartalomnak a hangját.</string>
+    <string name="plex_home_rows_description">Megjeleníti a Plex saját sorait erről a szerverről (Nemrég hozzáadva és mások) a Dex Hub TV Kezdőlapján.</string>
+    <string name="plex_remote_pass_needed">A Plex ezt otthonon kívül nem játssza le. Az olyan appokban, mint a Dex Hub TV, ehhez Plex Pass kell a szerveren, vagy neked Remote Watch Pass. Otthon ingyenes.</string>
+    <string name="plex_sign_in_subtitle">Nem kell szervercím: a Dex Hub TV bejelentkezés után megkeresi a Plex-szervereidet.</string>
+    <string name="plex_users_subtitle">A Plex-fiókodban Plex Home-felhasználók vannak. A Dex Hub TV a kiválasztottat használja a haladáshoz, a megnézett jelölésekhez és a Megtekintés folytatása sorhoz itt: %1$s. Később a szerver oldalán módosíthatod.</string>
+    <string name="servers_certificate_advice">Ha ez a saját szervered, és erre számítottál, megbízhatsz ebben a tanúsítványban. A Dex Hub TV ezután csak pontosan ezt a tanúsítványt fogadja el ennél a szervernél, és figyelmeztet, ha valaha megváltozik. Ha nem az otthoni hálózatodon vagy, előbb egyeztesd az ujjlenyomatot a szerver tulajdonosával.</string>
+    <string name="servers_certificate_intro">A Dex Hub TV nem tudta ellenőrizni a szerver azonosságát: %1$s.</string>
+    <string name="servers_display_name_description">A név, amelyet a Dex Hub TV ehhez a szerverhez mutat a Kezdőlapon, a Beállításokban és a forrásoknál.</string>
+    <string name="servers_display_name_dialog_description">Válaszd ki, milyen néven mutassa a Dex Hub TV ezt a szervert. Hagyd üresen a szerver saját nevének használatához.</string>
+    <string name="servers_error_silo_website">A Dex Hub TV nem találja ennek a Silo-szervernek a Jellyfin-címét. A Silo felületén nyisd meg a „Settings &gt; Connect Apps &gt; Jellyfin-compatible app” menüt, és add meg a „Server” alatt látható címet.</string>
+    <string name="servers_silo_home_rows_description">Megjeleníti a Silo Kezdőlapod sorait (listáid, Felkapott, Következő…) a Dex Hub TV Kezdőlapján.</string>
+    <string name="silo_method_jellyfin_description">A Silo Jellyfin-alkalmazásoknak szóló címét használja felhasználónévvel és jelszóval (profilhoz név#Profil). A Dex Hub TV eddig így csatlakozott a Silo szerverhez.</string>
+    <string name="silo_profiles_subtitle">%1$s fiókjában több profil van. A Dex Hub TV a kiválasztottat használja a haladáshoz, a megnézett jelölésekhez és a Kezdőlap soraihoz. Később a szerver oldalán módosíthatod.</string>
+    <string name="simkl_sync_info_description">A Dex Hub TV legfeljebb %1$d percenként egyszer ellenőrzi a Simklt. A másik alkalmazásban vagy a Simkl weboldalán végzett módosítások megjelenése ennyi ideig tarthat.</string>
+    <string name="simkl_sync_info_manual">A Nuvióban végzett módosítások azonnal átkerülnek a Simklre. Használd a Szinkronizálás most funkciót, ha hamarabb szeretnéd, hogy a Dex Hub TV ellenőrizze a távoli változásokat.</string>
+    <string name="support_nuvio_gentle_title">A Dex Hub TVban minden működik tagság nélkül</string>
+    <string name="support_nuvio_gentle_unavailable">A tagságodat most nem sikerült ellenőrizni. A Dex Hub TVban minden működik tagság nélkül. Ha szeretnéd segíteni a Nuvio csapatát, a tagság néhány extrát ad:</string>
+    <string name="support_nuvio_subtitle">A Dex Hub TV a hivatalos Nuvio alkalmazásra épül. A tagság a Nuvio csapatához kerül, segít fedezni a szervereket és a fejlesztést, és mindenkinek ingyenesen tartja az alapalkalmazást.</string>
+    <string name="support_nuvio_thanks_subtitle">Az előnyeid a Nuvio-fiókodhoz tartoznak, így itt a Dex Hub TVban és a hivatalos alkalmazásban is működnek.</string>
+    <string name="tracking_library_source_dialog_subtitle">Válaszd ki, honnan olvassa a Dex Hub TV a Könyvtáradat. A lejátszás scrobblingja minden csatlakoztatott szolgáltatásnál működik.</string>
+    <string name="tracking_sources_subtitle">Válaszd ki, honnan olvassa a Dex Hub TV a könyvtáradat és a megtekintési folyamatot. A lejátszás scrobblingja minden csatlakoztatott szolgáltatásnál működik.</string>
+    <string name="trakt_disconnect_subtitle">Ez megszünteti a kapcsolatot a Trakt fiókod és a Dex Hub TV között.</string>
+    <string name="wetrakr_revoke_failed">Itt kijelentkeztél, de a WeTrakrt nem sikerült értesíteni. A Dex Hub TVot a wetrakr.com csatlakoztatott alkalmazásai között távolíthatod el.</string>
+    <string name="wetrakr_status_enter_code">Várakozás, hogy engedélyezd a Dex Hub TVot a WeTrakren</string>
+</resources>

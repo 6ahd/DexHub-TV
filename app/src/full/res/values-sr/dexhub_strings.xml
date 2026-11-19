@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Ажурирања из Dex Hub TV издања на GitHub-у.</string>
+    <string name="appearance_app_icon_confirmation_message">Прелазак на %1$s поново покреће Dex Hub TV са новом иконицом. Почетном екрану може требати неколико секунди да је прикаже, а за ТВ банер може бити потребно поновно покретање уређаја. Изаберите OK за наставак.</string>
+    <string name="appearance_launcher_artwork_subtitle">Изаберите како се Dex Hub TV приказује на почетном екрану ТВ-а</string>
+    <string name="audio_use_system_passthrough_sub">Шаље TrueHD и DTS-HD пријемнику преко Android-а (системска путања) уместо преко Dex Hub TV (IEC путања). У зависности од уређаја и аудио подешавања, ово може да ограничи DTS-HD и DTS:X на стандардни DTS или да их остави без звука. Користите само ако формати без губитака дају шум, губе синхронизацију или немају звук.</string>
+    <string name="floppy_qr_description">QR код за одобрење Dex Hub TV у Floppy-ју</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV се повезује са вашим сопственим Jellyfin, Emby, Silo или Plex сервером. Њихови називи и логотипи припадају њиховим власницима. Dex Hub TV није повезан са пројектима Jellyfin, Emby и Silo нити га они подржавају.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV користи WeTrakr за историју гледања, листе, праћење репродукције и сличне наслове. Подаци са WeTrakr-а. Dex Hub TV није повезан са WeTrakr-ом нити га WeTrakr подржава.</string>
+    <string name="party_invite_text">Придружи се мом заједничком гледању у апликацији Dex Hub TV. Отвори Подешавања, затим Заједничко гледање, и унеси код %1$s</string>
+    <string name="playback_release_decoder_on_background_sub">Ослобађа видео декодер када Dex Hub TV пређе у позадину. Укључите ако репродукција пријави грешку декодера након повратка у апликацију. Плејер се поново учитава при повратку, и након чувара екрана</string>
+    <string name="player_dts_hd_decoding_notice">Излаз DTS-HD без губитака је престао да ради, па Dex Hub TV сам декодира звук овог наслова.</string>
+    <string name="plex_home_rows_description">Прикажи редове Plex Почетне са овог сервера (Недавно додато и друго) на Почетној апликације Dex Hub TV.</string>
+    <string name="plex_remote_pass_needed">Plex ово не пушта ван куће. У апликацијама као што је Dex Hub TV за то је потребан Plex Pass на серверу или Remote Watch Pass за вас. Код куће се пушта бесплатно.</string>
+    <string name="plex_sign_in_subtitle">Адреса сервера није потребна: Dex Hub TV проналази ваше Plex сервере након пријаве.</string>
+    <string name="plex_users_subtitle">Ваш Plex налог има Plex Home кориснике. Dex Hub TV користи онога кога изаберете за напредак, ознаке одгледаног и Наставак гледања на %1$s. Можете га касније променити на страници сервера.</string>
+    <string name="servers_certificate_advice">Ако је ово ваш сервер и ово очекујете, можете веровати овом сертификату. Dex Hub TV ће тада за овај сервер прихватати само баш овај сертификат и упозориће вас ако се икада промени. Ако нисте на кућној мрежи, прво проверите отисак са власником сервера.</string>
+    <string name="servers_certificate_intro">Dex Hub TV није могао да потврди идентитет сервера %1$s.</string>
+    <string name="servers_display_name_description">Назив који Dex Hub TV приказује за овај сервер на Почетној, у Подешавањима и на изворима.</string>
+    <string name="servers_display_name_dialog_description">Изаберите назив који Dex Hub TV приказује за овај сервер. Оставите празно да бисте користили сопствени назив сервера.</string>
+    <string name="servers_error_silo_website">Dex Hub TV није пронашао Jellyfin адресу овог Silo сервера. У Silo-у отворите \"Settings &gt; Connect Apps &gt; Jellyfin-compatible app\" и унесите адресу приказану испод \"Server\".</string>
+    <string name="servers_silo_home_rows_description">Прикажи редове са ваше Silo Почетне (ваше листе, У тренду, Следеће на реду…) на Почетној апликације Dex Hub TV.</string>
+    <string name="silo_method_jellyfin_description">Користи Silo адресу за Jellyfin апликације, са корисничким именом и лозинком (име#Профил за профил). Начин на који се Dex Hub TV досад повезивао са Silo сервером.</string>
+    <string name="silo_profiles_subtitle">%1$s има више профила. Dex Hub TV користи онај који изаберете за напредак, ознаке одгледаног и редове Почетне. Можете га касније променити на страници сервера.</string>
+    <string name="support_nuvio_gentle_title">Све у Dex Hub TV ради без чланства</string>
+    <string name="support_nuvio_gentle_unavailable">Чланство тренутно није могуће проверити. Све у Dex Hub TV ради и без њега. Ако желите да помогнете Nuvio тиму, чланство доноси неколико погодности:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV је направљен на основу званичне апликације Nuvio. Чланство иде Nuvio тиму, помаже у плаћању сервера и развоја и чува основну апликацију бесплатном за све.</string>
+    <string name="support_nuvio_thanks_subtitle">Погодности прате ваш Nuvio налог, па раде овде у Dex Hub TV и у званичној апликацији.</string>
+    <string name="wetrakr_revoke_failed">Одјављени сте овде, али WeTrakr није могао да буде обавештен. Dex Hub TV можете уклонити у повезаним апликацијама на wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">Чека се да дозволите Dex Hub TV на WeTrakr-у</string>
+</resources>

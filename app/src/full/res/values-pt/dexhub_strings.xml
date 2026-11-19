@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Atualizações das versões do Dex Hub TV no GitHub.</string>
+    <string name="appearance_app_icon_confirmation_message">Mudar para %1$s reinicia o Dex Hub TV com o novo ícone. O ecrã inicial pode demorar alguns segundos a mostrá-lo e o banner da TV pode exigir um reinício do dispositivo. Seleciona OK para continuar.</string>
+    <string name="appearance_launcher_artwork_subtitle">Escolhe como o Dex Hub TV aparece no ecrã inicial da TV</string>
+    <string name="audio_use_system_passthrough_sub">Envia TrueHD e DTS-HD para o recetor através do Android (via do sistema) em vez do Dex Hub TV (via IEC). Dependendo do dispositivo e da configuração de áudio, isto pode limitar DTS-HD e DTS:X a DTS padrão ou deixá-los sem som. Utiliza apenas se os formatos sem perdas produzirem ruído, desvio ou nenhum áudio.</string>
+    <string name="floppy_qr_description">Código QR para autorizar o Dex Hub TV no Floppy</string>
+    <string name="licenses_attributions_media_servers_body">O Dex Hub TV liga-se ao teu próprio servidor Jellyfin, Emby, Silo ou Plex. Os nomes e logótipos pertencem aos respetivos proprietários. O Dex Hub TV não é afiliado nem endossado pelo Jellyfin, Emby ou Silo.</string>
+    <string name="licenses_attributions_wetrakr_body">O Dex Hub TV utiliza o WeTrakr para histórico de visualizações, listas, acompanhamento da reprodução e títulos semelhantes. Dados do WeTrakr. O Dex Hub TV não é afiliado nem endossado pelo WeTrakr.</string>
+    <string name="party_invite_text">Junta-te à minha sessão em grupo no Dex Hub TV. Abre Definições, depois Sessão em grupo, e introduz o código %1$s</string>
+    <string name="playback_release_decoder_on_background_sub">Liberta o descodificador de vídeo quando o Dex Hub TV passa para segundo plano. Ative se a reprodução falhar com um erro do descodificador ao voltar à aplicação. O leitor volta a carregar ao regressar, também após a proteção de ecrã</string>
+    <string name="player_dts_hd_decoding_notice">A saída DTS-HD sem perdas deixou de funcionar, por isso o Dex Hub TV está a descodificar ele próprio o áudio deste título.</string>
+    <string name="plex_home_rows_description">Mostra as linhas do próprio Plex deste servidor (Adicionados recentemente e mais) no Início do Dex Hub TV.</string>
+    <string name="plex_remote_pass_needed">O Plex não reproduz isto fora de casa. Em apps como o Dex Hub TV, é preciso Plex Pass no servidor ou um Remote Watch Pass para ti. Em casa reproduz grátis.</string>
+    <string name="plex_sign_in_subtitle">Não precisas do endereço do servidor: o Dex Hub TV encontra os teus servidores Plex depois de iniciares sessão.</string>
+    <string name="plex_users_subtitle">A tua conta Plex tem utilizadores do Plex Home. O Dex Hub TV usa o que escolheres para o progresso, as marcas de visto e Continuar a ver no %1$s. Podes mudá-lo mais tarde na página do servidor.</string>
+    <string name="servers_certificate_advice">Se este é o teu próprio servidor e já contavas com isto, podes confiar neste certificado. O Dex Hub TV passa a aceitar apenas este certificado exato para este servidor e avisa-te se alguma vez mudar. Se não estiveres na tua rede doméstica, confirma primeiro a impressão digital com o dono do servidor.</string>
+    <string name="servers_certificate_intro">O Dex Hub TV não conseguiu confirmar a identidade de %1$s.</string>
+    <string name="servers_display_name_description">O nome que o Dex Hub TV mostra para este servidor no Início, nas Definições e nas fontes.</string>
+    <string name="servers_display_name_dialog_description">Escolhe o nome que o Dex Hub TV mostra para este servidor. Deixa vazio para usar o nome original do servidor.</string>
+    <string name="servers_error_silo_website">O Dex Hub TV não encontrou o endereço Jellyfin deste servidor Silo. No Silo, abre Settings &gt; Connect Apps &gt; Jellyfin-compatible app e introduz o endereço indicado em Server.</string>
+    <string name="servers_silo_home_rows_description">Mostra as linhas do teu Início do Silo (as tuas listas, Tendências, A seguir…) no Início do Dex Hub TV.</string>
+    <string name="silo_method_jellyfin_description">Usa o endereço do Silo para apps Jellyfin, com nome de utilizador e palavra-passe (nome#Perfil para um perfil). A forma como o Dex Hub TV se ligava ao Silo até agora.</string>
+    <string name="silo_profiles_subtitle">%1$s tem mais do que um perfil. O Dex Hub TV usa o que escolheres para o progresso, as marcas de visto e as linhas do Início. Podes mudá-lo mais tarde na página do servidor.</string>
+    <string name="support_nuvio_gentle_title">Tudo no Dex Hub TV funciona sem subscrição</string>
+    <string name="support_nuvio_gentle_unavailable">Não foi possível verificar a tua subscrição agora. Tudo no Dex Hub TV funciona sem ela. Se quiseres ajudar a equipa do Nuvio, a subscrição acrescenta alguns extras:</string>
+    <string name="support_nuvio_subtitle">O Dex Hub TV baseia-se na app oficial do Nuvio. A subscrição vai para a equipa do Nuvio, ajuda a pagar servidores e desenvolvimento, e mantém a app principal gratuita para todos.</string>
+    <string name="support_nuvio_thanks_subtitle">As tuas vantagens acompanham a tua conta Nuvio, por isso funcionam aqui no Dex Hub TV e na app oficial.</string>
+    <string name="wetrakr_revoke_failed">Sessão terminada aqui, mas não foi possível avisar o WeTrakr. Podes remover o Dex Hub TV nas apps ligadas em wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">À espera que autorizes o Dex Hub TV no WeTrakr</string>
+</resources>

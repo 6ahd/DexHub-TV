@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">来自 GitHub 上 Dex Hub TV 发布版本的更新。</string>
+    <string name="appearance_app_icon_confirmation_message">切换到%1$s后，Dex Hub TV 将以新图标重新启动。主屏幕可能需要几秒钟才会显示，电视横幅可能需要重启设备后才会更新。选择“确定”继续。</string>
+    <string name="appearance_launcher_artwork_subtitle">选择 Dex Hub TV 在电视主屏幕上的外观</string>
+    <string name="audio_use_system_passthrough_sub">通过 Android (系统路径) 而非 Dex Hub TV (IEC 路径) 将 TrueHD 和 DTS-HD 发送至接收器。根据设备和音频设置，这可能会将 DTS-HD 和 DTS:X 限制为标准 DTS，或导致其无声。仅在无损格式出现噪音、漂移或无声时使用此选项。</string>
+    <string name="floppy_qr_description">用于在 Floppy 中批准 Dex Hub TV 的 QR 码</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV 连接至您自己的 Jellyfin、Emby、Silo 或 Plex 服务器。其名称和标志归各自所有者所有。Dex Hub TV 与 Jellyfin、Emby 或 Silo 无关联或未经其认可。</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV 使用 WeTrakr 获取观看历史、列表、播放追踪和相似内容。数据来自 WeTrakr。Dex Hub TV 与 WeTrakr 无关联或未经其认可。</string>
+    <string name="party_invite_text">来 Dex Hub TV 加入我的观影派对。打开设置，进入观影派对，然后输入代码 %1$s</string>
+    <string name="playback_release_decoder_on_background_sub">Dex Hub TV 转入后台时释放视频解码器。如果返回应用后播放因解码器错误而失败，请开启。返回时播放器会重新加载，屏保之后也一样</string>
+    <string name="player_dts_hd_decoding_notice">无损 DTS-HD 输出已停止工作，因此 Dex Hub TV 正在自行解码此内容的音频。</string>
+    <string name="plex_home_rows_description">在 Dex Hub TV 首页显示此服务器上 Plex 自己的行（最近添加等）。</string>
+    <string name="plex_remote_pass_needed">Plex 不允许在家以外播放此内容。在 Dex Hub TV 这类应用中，需要服务器有 Plex Pass，或您有 Remote Watch Pass。在家播放免费。</string>
+    <string name="plex_sign_in_subtitle">无需服务器地址：登录后 Dex Hub TV 会找到您的 Plex 服务器。</string>
+    <string name="plex_users_subtitle">您的 Plex 账户有 Plex Home 用户。Dex Hub TV 会将您选择的用户用于 %1$s 上的观看进度、已观看标记和继续观看。之后可在服务器页面中更改。</string>
+    <string name="servers_certificate_advice">如果这是您自己的服务器，且此情况在预期之内，您可以信任此证书。此后 Dex Hub TV 对此服务器只接受这一张证书，如有变更会向您发出警告。如果您不在家庭网络中，请先与服务器所有者核对指纹。</string>
+    <string name="servers_certificate_intro">Dex Hub TV 无法确认 %1$s 的身份。</string>
+    <string name="servers_display_name_description">Dex Hub TV 在首页、设置和来源中为此服务器显示的名称。</string>
+    <string name="servers_display_name_dialog_description">选择 Dex Hub TV 为此服务器显示的名称。留空则使用服务器自身名称。</string>
+    <string name="servers_error_silo_website">Dex Hub TV 找不到此 Silo 服务器的 Jellyfin 地址。请在 Silo 中打开「Settings &gt; Connect Apps &gt; Jellyfin-compatible app」，然后输入「Server」下显示的地址。</string>
+    <string name="servers_silo_home_rows_description">在 Dex Hub TV 的首页显示 Silo 首页中的行（您的列表、热门、下一集…）。</string>
+    <string name="silo_method_jellyfin_description">使用 Silo 供 Jellyfin 应用使用的地址，以及用户名和密码（个人资料用 name#Profile）。这是 Dex Hub TV 以往连接 Silo 的方式。</string>
+    <string name="silo_profiles_subtitle">%1$s 有多个个人资料。Dex Hub TV 会将您选择的个人资料用于观看进度、已观看标记和首页行。之后可在服务器页面中更改。</string>
+    <string name="support_nuvio_gentle_title">Dex Hub TV 的所有功能无需会员即可使用</string>
+    <string name="support_nuvio_gentle_unavailable">暂时无法检查您的会员资格。Dex Hub TV 的所有功能无需会员即可使用。如果您想帮助 Nuvio 团队，会员可以带来一些额外权益：</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV 基于官方 Nuvio 应用打造。会员费用归 Nuvio 团队所有，用于支付服务器和开发费用，并让核心应用对所有人保持免费。</string>
+    <string name="support_nuvio_thanks_subtitle">您的权益跟随您的 Nuvio 账户，因此在 Dex Hub TV 和官方应用中均可使用。</string>
+    <string name="wetrakr_revoke_failed">已在此设备退出登录，但无法通知 WeTrakr。您可以在 wetrakr.com 的已连接应用中移除 Dex Hub TV。</string>
+    <string name="wetrakr_status_enter_code">等待您在 WeTrakr 上授权 Dex Hub TV</string>
+</resources>

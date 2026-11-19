@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dexhub/brand/make_strings.py: Arc's texts with Dex Hub TV's name -->
+<resources>
+    <string name="about_fork_updates_subtitle">Aggiornamenti dalle release di Dex Hub TV su GitHub.</string>
+    <string name="about_made_with_love">Dex Hub TV · Basato sul grande lavoro di Tapframe e amici ❤️ · Nuvio Arc di ysosrs123</string>
+    <string name="app_name">Dex Hub TV</string>
+    <string name="appearance_app_icon_confirmation_message">Passando a %1$s Dex Hub TV si riavvierà con la nuova icona. La schermata Home potrebbe impiegare qualche secondo per mostrarla e il banner TV potrebbe richiedere un riavvio del dispositivo. Seleziona OK per continuare.</string>
+    <string name="appearance_launcher_artwork_subtitle">Scegli come appare Dex Hub TV nella home della tua TV</string>
+    <string name="audio_use_system_passthrough_sub">Invia TrueHD e DTS-HD al ricevitore tramite Android (percorso di sistema) invece che tramite Dex Hub TV (percorso IEC). A seconda del dispositivo e della configurazione audio, può limitare DTS-HD e DTS:X al DTS standard o lasciarli senza audio. Usalo solo se i formati lossless producono rumore, ritardi o nessun audio.</string>
+    <string name="cd_nuvio_logo">Dex Hub TV</string>
+    <string name="collections_editor_tmdb_title_helper">Viene mostrato come nome riga/scheda. Se vuoto, Dex Hub TV ne creerà uno dalla sorgente.</string>
+    <string name="experience_mode_choose_title">Scegli la tua esperienza Dex Hub TV</string>
+    <string name="floppy_qr_description">Codice QR per approvare Dex Hub TV in Floppy</string>
+    <string name="layout_selection_welcome">Benvenuto su Dex Hub TV</string>
+    <string name="licenses_attributions_imdb_body">Dex Hub TV utilizza i dataset non commerciali di IMDb per valutazioni e conteggio voti. Informazioni per gentile concessione di IMDb (https://www.imdb.com). Utilizzato con autorizzazione. I dati IMDb sono per uso personale e non commerciale secondo i termini di IMDb.</string>
+    <string name="licenses_attributions_introdb_body">Dex Hub TV utilizza l\'API di IntroDB per i timestamp di intro, riassunti, crediti e anteprime forniti dalla community, utilizzati per i controlli di salto. Dex Hub TV non è affiliato né approvato da IntroDB.</string>
+    <string name="licenses_attributions_mdblist_body">Dex Hub TV utilizza MDBList per le valutazioni e i dati di fornitori esterni. Dex Hub TV non è affiliato né approvato da MDBList.</string>
+    <string name="licenses_attributions_media_servers_body">Dex Hub TV si connette al tuo server Jellyfin, Emby, o Silo o Plex. I loro nomi e loghi appartengono ai rispettivi proprietari. Dex Hub TV non è affiliato né approvato da Jellyfin, Emby o Silo.</string>
+    <string name="licenses_attributions_premiumize_body">Dex Hub TV si connette a Premiumize per l\'autenticazione dell\'account, l\'accesso alla libreria cloud, i controlli della cache e le funzioni di riproduzione cloud. Dex Hub TV non è affiliato né approvato da Premiumize.</string>
+    <string name="licenses_attributions_simkl_body">Dex Hub TV si collega a Simkl per l\'autenticazione dell\'account, le watchlist, la cronologia visti, i progressi di riproduzione e lo scrobbling. I dati di tracciamento di film, serie TV e anime sono forniti da Simkl. Dex Hub TV non è affiliata né approvata da Simkl.</string>
+    <string name="licenses_attributions_subtitle">Fornitori di dati, crediti dei servizi e licenze di riproduzione Android utilizzate da Dex Hub TV.</string>
+    <string name="licenses_attributions_tmdb_body">Dex Hub TV utilizza l\'API di TMDB per metadati di film e serie TV, locandine, trailer, cast, dettagli di produzione, collezioni e raccomandazioni. Questo prodotto utilizza l\'API di TMDB ma non è approvato o certificato da TMDB.</string>
+    <string name="licenses_attributions_torbox_body">Dex Hub TV si connette a TorBox per l\'autenticazione dell\'account, l\'accesso alla libreria cloud, i controlli della cache e le funzioni di riproduzione cloud. Dex Hub TV non è affiliato né approvato da TorBox.</string>
+    <string name="licenses_attributions_trakt_body">Dex Hub TV si connette a Trakt per l\'autenticazione dell\'account, la cronologia di visione, la sincronizzazione dei progressi, i dati della libreria, le valutazioni, le liste e i commenti. Dex Hub TV non è affiliato né approvato da Trakt.</string>
+    <string name="licenses_attributions_wetrakr_body">Dex Hub TV utilizza WeTrakr per la cronologia di visione, le liste, il monitoraggio della riproduzione e i titoli simili. Dati da WeTrakr. Dex Hub TV non è affiliato né approvato da WeTrakr.</string>
+    <string name="p2p_consent_body">Questo flusso utilizza la tecnologia peer-to-peer (P2P). Abilitando il P2P, riconosci e accetti che:\n\n\u2022 Il tuo indirizzo IP sarà visibile agli altri peer nella rete\n\u2022 Sei l\'unico responsabile per i contenuti a cui accedi\n\u2022 Confermi di avere il diritto legale di trasmettere questo contenuto nella tua giurisdizione\n\u2022 Dex Hub TV non ospita, distribuisce o controlla alcun contenuto P2P\n\u2022 Dex Hub TV non si assume alcuna responsabilità per eventuali conseguenze legali derivanti dall\'uso dello streaming P2P\n\nL\'utilizzo di questa funzione è interamente a tuo rischio. Il P2P può essere disabilitato in qualsiasi momento nelle Impostazioni.</string>
+    <string name="party_invite_text">Partecipa al mio watch party su Dex Hub TV. Apri Impostazioni, poi Watch party, e inserisci il codice %1$s</string>
+    <string name="playback_engine_exoplayer_desc">Migliore compatibilità con le attuali funzioni di Dex Hub TV.</string>
+    <string name="playback_engine_mvplayer_desc">Usa libmpv con i controlli OSD di Dex Hub TV. Sperimentale.</string>
+    <string name="playback_player_internal_desc">Usa il lettore integrato di Dex Hub TV</string>
+    <string name="playback_release_decoder_on_background_sub">Libera il decoder video quando Dex Hub TV passa in background. Attivalo se la riproduzione si interrompe con un errore del decoder al ritorno nell\'app. Il player si ricarica al ritorno, anche dopo il salvaschermo</string>
+    <string name="player_dts_hd_decoding_notice">L\'uscita DTS-HD lossless ha smesso di funzionare, quindi Dex Hub TV sta decodificando da solo l\'audio di questo titolo.</string>
+    <string name="plex_home_rows_description">Mostra le righe proprie di Plex da questo server (Aggiunti di recente e altro) nella Home di Dex Hub TV.</string>
+    <string name="plex_remote_pass_needed">Plex non riproduce questo contenuto fuori casa. In app come Dex Hub TV serve Plex Pass sul server, oppure un Remote Watch Pass per te. A casa la riproduzione è gratuita.</string>
+    <string name="plex_sign_in_subtitle">Nessun indirizzo del server necessario: Dex Hub TV trova i tuoi server Plex dopo l\'accesso.</string>
+    <string name="plex_users_subtitle">Il tuo account Plex ha utenti Plex Home. Dex Hub TV usa quello che scegli per progressi, stato di visione e Continua a guardare su %1$s. Puoi cambiarlo più tardi nella pagina del server.</string>
+    <string name="servers_certificate_advice">Se è il tuo server e te lo aspetti, puoi considerare attendibile questo certificato. Dex Hub TV accetterà allora solo questo preciso certificato per questo server e ti avviserà se dovesse cambiare. Se non sei sulla tua rete di casa, verifica prima l\'impronta con il proprietario del server.</string>
+    <string name="servers_certificate_intro">Dex Hub TV non ha potuto confermare l\'identità di %1$s.</string>
+    <string name="servers_display_name_description">Il nome che Dex Hub TV mostra per questo server nella Home, nelle Impostazioni e sulle sorgenti.</string>
+    <string name="servers_display_name_dialog_description">Scegli il nome che Dex Hub TV mostra per questo server. Lascialo vuoto per usare il nome originale del server.</string>
+    <string name="servers_error_silo_website">Dex Hub TV non trova l\'indirizzo Jellyfin di questo server Silo. In Silo apri Settings &gt; Connect Apps &gt; Jellyfin-compatible app e inserisci l\'indirizzo indicato sotto Server.</string>
+    <string name="servers_silo_home_rows_description">Mostra le righe della tua Home di Silo (le tue liste, Di tendenza, Prossimo episodio…) nella Home di Dex Hub TV.</string>
+    <string name="silo_method_jellyfin_description">Usa l\'indirizzo di Silo per le app Jellyfin, con nome utente e password (nome#Profilo per un profilo). Il modo in cui Dex Hub TV si è collegato a Silo finora.</string>
+    <string name="silo_profiles_subtitle">%1$s ha più di un profilo. Dex Hub TV usa quello che scegli per progressi, stato di visione e righe della Home. Puoi cambiarlo in seguito nella pagina del server.</string>
+    <string name="simkl_sync_info_description">Dex Hub TV controlla automaticamente Simkl al massimo una volta ogni %1$d minuti. Le modifiche effettuate tramite un\'altra app o il sito web di Simkl possono impiegare fino a questo tempo per comparire.</string>
+    <string name="simkl_sync_info_manual">Le modifiche effettuate in Dex Hub TV vengono inviate a Simkl immediatamente. Usa Sincronizza ora ogni volta che vuoi che Dex Hub TV controlli prima le modifiche remote.</string>
+    <string name="support_nuvio_gentle_title">Tutto in Dex Hub TV funziona senza iscrizione</string>
+    <string name="support_nuvio_gentle_unavailable">Non è stato possibile verificare la tua iscrizione ora. Tutto in Dex Hub TV funziona anche senza. Se vuoi aiutare il team di Nuvio, l\'iscrizione aggiunge qualche extra:</string>
+    <string name="support_nuvio_subtitle">Dex Hub TV si basa sull\'app ufficiale Nuvio. L\'iscrizione va al team di Nuvio, aiuta a pagare server e sviluppo e mantiene l\'app di base gratuita per tutti.</string>
+    <string name="support_nuvio_thanks_subtitle">I tuoi vantaggi seguono il tuo account Nuvio, quindi funzionano qui in Dex Hub TV e nell\'app ufficiale.</string>
+    <string name="tracking_library_source_dialog_subtitle">Scegli il servizio da cui Dex Hub TV legge la tua Libreria. La riproduzione viene sincronizzata (scrobbling) su ogni servizio collegato.</string>
+    <string name="tracking_sources_subtitle">Scegli da dove Dex Hub TV legge la tua libreria e i progressi di visione. La riproduzione viene sincronizzata (scrobbling) su ogni servizio collegato.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Scegli il servizio da cui Dex Hub TV legge la ripresa e Continua a guardare. Lo scrobbling resta attivo per ogni servizio collegato.</string>
+    <string name="trakt_disconnect_subtitle">Questo disconnetterà il tuo account Trakt da Dex Hub TV.</string>
+    <string name="wetrakr_revoke_failed">Disconnesso qui, ma non è stato possibile avvisare WeTrakr. Puoi rimuovere Dex Hub TV dalle app collegate su wetrakr.com.</string>
+    <string name="wetrakr_status_enter_code">In attesa che tu autorizzi Dex Hub TV su WeTrakr</string>
+</resources>

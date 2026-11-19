@@ -102,7 +102,7 @@ class ArcIgnitionView(
         private val thread = HandlerThread("ArcIntro").apply { start() }
         private val handler = Handler(thread.looper)
         private lateinit var choreographer: Choreographer
-        private var scene: ArcIgnitionScene? = null
+        private var scene: DexHubIntroScene? = null   // Dex Hub TV's entrance (DEXHUB.md)
         @Volatile private var surfaceWidth = 0
         @Volatile private var surfaceHeight = 0
         private var startNanos = 0L
@@ -133,7 +133,7 @@ class ArcIgnitionView(
                 val prepareStart = System.nanoTime()
                 val ahead = ArcIntroPrep.take(palette, pixelScale)
                 scene = (ahead as? AheadOfTime.Take.Hit)?.value
-                    ?: runCatching { ArcIgnitionScene.prepare(context.resources, palette, pixelScale) }
+                    ?: runCatching { DexHubIntroScene.prepare(context.resources, palette, pixelScale) }
                         .onFailure { Log.w(Tag, "prepare failed", it) }
                         .getOrNull()
                 val aheadName = when (ahead) {
@@ -214,7 +214,7 @@ class ArcIgnitionView(
             choreographer.postFrameCallback(this)
         }
 
-        private fun render(s: ArcIgnitionScene, clock: Float, alpha: Float, content: Float): Boolean {
+        private fun render(s: DexHubIntroScene, clock: Float, alpha: Float, content: Float): Boolean {
             if (surfaceWidth <= 0 || surfaceHeight <= 0) return true
             val begin = System.nanoTime()
             drawLock.lock()
@@ -246,7 +246,7 @@ class ArcIgnitionView(
             }
         }
 
-        private fun track(intervalMs: Float, frameTimeNanos: Long, s: ArcIgnitionScene) {
+        private fun track(intervalMs: Float, frameTimeNanos: Long, s: DexHubIntroScene) {
             frames++
             if (intervalMs > 25f) drops++
             worstMs = max(worstMs, intervalMs)
