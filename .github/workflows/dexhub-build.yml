@@ -44,9 +44,8 @@ jobs:
       KEYSTORE_BASE64: ${{ secrets.DEXHUB_KEYSTORE_BASE64 }}
       LOCAL_PROPERTIES_BASE64: ${{ secrets.DEXHUB_LOCAL_PROPERTIES_BASE64 }}
     steps:
+      # no submodules: libmpv-android is a gitlink without a .gitmodules entry, and the build does not use it
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - uses: actions/setup-java@v4
         with:
