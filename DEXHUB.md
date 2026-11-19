@@ -23,7 +23,7 @@ at the hook points below.
 | `app/src/full/res/values*/dexhub_features.xml` | Dex Hub TV's own texts (poster sizes and shapes, the fonts' credit) |
 | `app/src/main/java/com/nuvio/tv/ui/components/DexHubPosterShape.kt` | The posters' shape (2:3, 3:4, square), kept on the device |
 | `app/src/main/java/com/nuvio/tv/dexhub/dexworld/` | DexWorld's ready sections (blocks.dexworld.cc), from Flix: shelves of sections with the site's covers, a section's titles, a title's page |
-| `app/src/main/java/com/nuvio/tv/dexhub/livetv/` | Live TV, from Flix: M3U playlists (Flix's parser, from Plozz, GPL-3.0), Xtream accounts, XMLTV now and next, the Live TV page |
+| `app/src/main/java/com/nuvio/tv/dexhub/livetv/` | Live TV, from Flix: M3U playlists (Flix's parser, from Plozz, GPL-3.0) and Xtream accounts, with their channels (XMLTV now and next, favourites, a preview of the focused channel), films and series (a panel's episodes asked for when a series opens) |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 

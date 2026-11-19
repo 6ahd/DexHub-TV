@@ -4,6 +4,8 @@ package com.nuvio.tv.dexhub.dexworld
 
 import android.content.Context
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.Crossfade
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -27,7 +29,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
@@ -115,19 +121,34 @@ class DexWorldViewModel @Inject constructor(@ApplicationContext context: Context
 fun DexWorldScreen(onOpenTitle: (id: String, type: String) -> Unit, viewModel: DexWorldViewModel = hiltViewModel()) {
     val state by viewModel.state.collectAsState()
     val section = state.section
+    // the picture of what has the focus, behind the page, fading from one to the next
+    var backdrop by remember { mutableStateOf<String?>(null) }
     BackHandler(enabled = section != null) { viewModel.close() }
-    Box(Modifier.fillMaxSize().background(NuvioTheme.colors.Background)) {
+    val background = NuvioTheme.colors.Background
+    Box(Modifier.fillMaxSize().background(background)) {
+        Crossfade(targetState = backdrop, animationSpec = tween(700), label = "dexworldBackdrop") { picture ->
+            if (picture != null) {
+                AsyncImage(picture, contentDescription = null, contentScale = ContentScale.Crop,
+                    modifier = Modifier.fillMaxSize().alpha(0.42f))
+            }
+        }
+        Box(Modifier.fillMaxSize().background(Brush.horizontalGradient(listOf(background, background.copy(alpha = 0.55f), Color.Transparent))))
+        Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Transparent, background.copy(alpha = 0.85f), background))))
         when {
-            section != null -> Section(section, state.items, onOpenTitle)
+            section != null -> Section(section, state.items, onOpenTitle) { backdrop = it }
             state.loading -> Message(stringResource(R.string.dexhub_dexworld_loading))
             state.shelves.isEmpty() -> Message(stringResource(R.string.dexhub_dexworld_failed))
-            else -> Shelves(state.shelves, viewModel::open)
+            else -> Shelves(state.shelves, viewModel::open) { backdrop = it }
         }
     }
 }
 
 @Composable
-private fun Shelves(shelves: List<DexWorldClient.Shelf>, onOpen: (DexWorldClient.Member) -> Unit) {
+private fun Shelves(
+    shelves: List<DexWorldClient.Shelf>,
+    onOpen: (DexWorldClient.Member) -> Unit,
+    onPicture: (String?) -> Unit
+) {
     val first = remember { FocusRequester() }
     LaunchedEffect(shelves) { runCatching { first.requestFocus() } }
     LazyColumn(
@@ -142,7 +163,7 @@ private fun Shelves(shelves: List<DexWorldClient.Shelf>, onOpen: (DexWorldClient
             )
         }
         items(shelves, key = { it.id }) { shelf ->
-            Column {
+            Column(Modifier.animateItem()) {
                 Text(
                     shelf.title, color = NuvioTheme.colors.TextPrimary, fontSize = 20.sp,
                     modifier = Modifier.padding(start = 48.dp, end = 48.dp, bottom = 10.dp)
@@ -153,7 +174,11 @@ private fun Shelves(shelves: List<DexWorldClient.Shelf>, onOpen: (DexWorldClient
                 ) {
                     items(shelf.sections, key = { it.id }) { member ->
                         val isFirst = shelf == shelves.first() && member == shelf.sections.first()
-                        SectionCard(member, if (isFirst) Modifier.focusRequester(first) else Modifier) { onOpen(member) }
+                        SectionCard(
+                            member,
+                            (if (isFirst) Modifier.focusRequester(first) else Modifier)
+                                .onFocusChanged { if (it.isFocused) onPicture(member.cover) }
+                        ) { onOpen(member) }
                     }
                 }
             }
@@ -193,7 +218,8 @@ private fun SectionCard(member: DexWorldClient.Member, modifier: Modifier, onCli
 private fun Section(
     section: DexWorldClient.Member,
     items: List<DexWorldClient.Item>?,
-    onOpenTitle: (String, String) -> Unit
+    onOpenTitle: (String, String) -> Unit,
+    onPicture: (String?) -> Unit
 ) {
     Column(Modifier.fillMaxSize().padding(start = 48.dp, end = 48.dp, top = 28.dp)) {
         Text(section.title, style = MaterialTheme.typography.headlineMedium, color = NuvioTheme.colors.TextPrimary)
@@ -211,7 +237,12 @@ private fun Section(
                     contentPadding = PaddingValues(bottom = 36.dp, top = 6.dp)
                 ) {
                     items(items, key = { it.contentId!! }) { item ->
-                        Poster(item, if (item == items.first()) Modifier.focusRequester(first) else Modifier) {
+                        Poster(
+                            item,
+                            Modifier.animateItem()
+                                .then(if (item == items.first()) Modifier.focusRequester(first) else Modifier)
+                                .onFocusChanged { if (it.hasFocus) onPicture(item.backdrop ?: item.poster) }
+                        ) {
                             item.contentId?.let { onOpenTitle(it, item.contentType) }
                         }
                     }

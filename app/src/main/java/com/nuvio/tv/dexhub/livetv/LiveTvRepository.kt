@@ -59,7 +59,9 @@ class LiveTvRepository @Inject constructor(@ApplicationContext private val conte
         if (kept != null && !refresh && System.currentTimeMillis() - file.lastModified() < LineupFor) return@withContext kept
         try {
             val fresh = fetch(source)
-            if (fresh.channels.isEmpty()) throw LiveTvException("This playlist has no live channels")
+            if (fresh.channels.isEmpty() && fresh.movies.isEmpty() && fresh.series.isEmpty()) {
+                throw LiveTvException("This playlist has no channels, films or series")
+            }
             file.writeText(encode(fresh))
             fresh
         } catch (error: Exception) {
@@ -87,8 +89,31 @@ class LiveTvRepository @Inject constructor(@ApplicationContext private val conte
         LiveSource.Kind.XTREAM -> {
             val panel = XtreamPanel(source.url, source.username, source.password)
             val extension = panel.liveExtension(get(panel.accountUrl()))
-            panel.lineup(get(panel.categoriesUrl()), get(panel.streamsUrl()), extension)
+            val live = panel.lineup(get(panel.categoriesUrl()), get(panel.streamsUrl()), extension)
+            // a panel without films or series still serves its channels
+            val (movies, movieGroups) = panel.movies(optional(panel.vodCategoriesUrl()), optional(panel.vodStreamsUrl()))
+            val (series, seriesGroups) = panel.series(optional(panel.seriesCategoriesUrl()), optional(panel.seriesUrl()))
+            live.copy(movies = movies, movieGroups = movieGroups, series = series, seriesGroups = seriesGroups)
         }
+    }
+
+    private fun optional(url: String): String? = runCatching { get(url) }.getOrNull()
+
+    /** A series' episodes: a playlist's are in it already, a panel's are asked for now. */
+    suspend fun episodes(source: LiveSource, series: LiveSeries): List<LiveEpisode> = withContext(Dispatchers.IO) {
+        if (series.episodes.isNotEmpty() || source.kind != LiveSource.Kind.XTREAM) return@withContext series.episodes
+        val panel = XtreamPanel(source.url, source.username, source.password)
+        panel.episodes(get(panel.seriesInfoUrl(series.id)))
+    }
+
+    /** The source's favourite channels, kept on this device. */
+    fun favourites(source: LiveSource): Set<String> =
+        prefs.getStringSet("fav:${source.id}", emptySet()).orEmpty().toSet()
+
+    fun toggleFavourite(source: LiveSource, channelId: String): Set<String> {
+        val now = favourites(source).toMutableSet().apply { if (!add(channelId)) remove(channelId) }
+        prefs.edit().putStringSet("fav:${source.id}", now).apply()
+        return now
     }
 
     private fun get(url: String): String =
@@ -125,6 +150,19 @@ class LiveTvRepository @Inject constructor(@ApplicationContext private val conte
     private fun encode(lineup: LiveLineup): String = JSONObject()
         .put("guideUrl", lineup.guideUrl ?: "")
         .put("groups", JSONArray(lineup.groups))
+        .put("movieGroups", JSONArray(lineup.movieGroups))
+        .put("seriesGroups", JSONArray(lineup.seriesGroups))
+        .put("movies", JSONArray(lineup.movies.map { m ->
+            JSONObject().put("id", m.id).put("name", m.name).put("poster", m.poster ?: "").put("group", m.group)
+                .put("url", m.url).put("headers", JSONObject(m.headers)).put("year", m.year ?: "").put("rating", m.rating ?: 0.0)
+        }))
+        .put("series", JSONArray(lineup.series.map { show ->
+            JSONObject().put("id", show.id).put("name", show.name).put("poster", show.poster ?: "").put("group", show.group)
+                .put("episodes", JSONArray(show.episodes.map { e ->
+                    JSONObject().put("id", e.id).put("season", e.season).put("episode", e.episode).put("title", e.title)
+                        .put("url", e.url).put("still", e.still ?: "").put("headers", JSONObject(e.headers))
+                }))
+        }))
         .put("channels", JSONArray(lineup.channels.map { c ->
             JSONObject().put("id", c.id).put("name", c.name).put("number", c.number ?: 0).put("logo", c.logo ?: "")
                 .put("group", c.group).put("epgId", c.epgId ?: "").put("url", c.url).put("headers", JSONObject(c.headers))
@@ -148,7 +186,32 @@ class LiveTvRepository @Inject constructor(@ApplicationContext private val conte
                 )
             }
         }
-        return LiveLineup(channels, groups, o.optString("guideUrl").ifEmpty { null })
+        fun strings(key: String) = o.optJSONArray(key)?.let { a -> (0 until a.length()).map { a.getString(it) } }.orEmpty()
+        fun headersOf(h: JSONObject?) = h?.keys()?.asSequence()?.associateWith { h.getString(it) }.orEmpty()
+        val movies = o.optJSONArray("movies")?.let { a ->
+            (0 until a.length()).map { i ->
+                val m = a.getJSONObject(i)
+                LiveMovie(m.getString("id"), m.getString("name"), m.optString("poster").ifEmpty { null }, m.getString("group"),
+                    m.getString("url"), headersOf(m.optJSONObject("headers")), m.optString("year").ifEmpty { null },
+                    m.optDouble("rating").takeIf { it > 0 })
+            }
+        }.orEmpty()
+        val series = o.optJSONArray("series")?.let { a ->
+            (0 until a.length()).map { i ->
+                val show = a.getJSONObject(i)
+                val episodes = show.optJSONArray("episodes")?.let { list ->
+                    (0 until list.length()).map { j ->
+                        val e = list.getJSONObject(j)
+                        LiveEpisode(e.getString("id"), e.getInt("season"), e.getInt("episode"), e.getString("title"),
+                            e.getString("url"), e.optString("still").ifEmpty { null }, headersOf(e.optJSONObject("headers")))
+                    }
+                }.orEmpty()
+                LiveSeries(show.getString("id"), show.getString("name"), show.optString("poster").ifEmpty { null },
+                    show.getString("group"), episodes)
+            }
+        }.orEmpty()
+        return LiveLineup(channels, groups, o.optString("guideUrl").ifEmpty { null },
+            movies, strings("movieGroups"), series, strings("seriesGroups"))
     }
 
     companion object {

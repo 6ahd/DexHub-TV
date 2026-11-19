@@ -32,4 +32,11 @@
     <string name="dexhub_nav_dexworld">DexWorld</string>
     <string name="dexhub_dexworld_loading">Loading DexWorld…</string>
     <string name="dexhub_dexworld_failed">DexWorld can\'t be reached right now</string>
+    <string name="dexhub_live_tab_live">Channels</string>
+    <string name="dexhub_live_tab_movies">Films</string>
+    <string name="dexhub_live_tab_series">Series</string>
+    <string name="dexhub_live_favourites">Favourites</string>
+    <string name="dexhub_live_now">Now</string>
+    <string name="dexhub_live_hold_hint">Hold OK on a channel to add it to your favourites</string>
+    <string name="dexhub_live_no_episodes">No episodes</string>
 </resources>

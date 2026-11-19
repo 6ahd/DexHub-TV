@@ -8,7 +8,8 @@ import java.net.URLDecoder
  * M3UPlaylist.swift, itself adapted from Plozz, (c) Brandon Moore, GPL-3.0-only).
  *
  * Entries an explicit `tvg-type` marks as VOD, `/movie/` and `/series/` addresses, `S01E02` names and
- * entries with a positive duration are films or episodes, not channels, and are left out.
+ * entries with a positive duration are films or episodes, not channels: films go to [LiveLineup.movies], and
+ * episodes to [LiveLineup.series] under their show's name.
  */
 object M3uPlaylist {
     private val episodePattern = Regex("""(?i)^(.+?)[ ._-]+S(\d{1,3})[ ._-]*E(\d{1,4})(?:\b|[ ._-])""")
@@ -17,6 +18,11 @@ object M3uPlaylist {
         val guideUrls = mutableListOf<String>()
         val channels = mutableListOf<LiveChannel>()
         val groups = LinkedHashSet<String>()
+        val movies = mutableListOf<LiveMovie>()
+        val movieGroups = LinkedHashSet<String>()
+        val shows = LinkedHashMap<String, LiveSeries>()
+        val episodes = HashMap<String, MutableList<LiveEpisode>>()
+        val seriesGroups = LinkedHashSet<String>()
         val seen = HashSet<String>()
         var pending: Pending? = null
         var awaitingUrl = false
@@ -69,15 +75,42 @@ object M3uPlaylist {
                     val url = httpUrl(line.substringBefore('|'), baseUrl) ?: continue
                     if ('|' in line) entry.headers.putAll(pipeHeaders(line.substringAfter('|')))
                     position++
-                    val channel = channelOf(entry, url, defaultGroup, position) ?: continue
-                    if (!seen.add(channel.id)) continue
-                    groups += channel.group
-                    channels += channel
+                    when (val found = classify(entry, url, defaultGroup, position)) {
+                        is Found.Channel -> if (seen.add(found.channel.id)) {
+                            groups += found.channel.group
+                            channels += found.channel
+                        }
+                        is Found.Movie -> if (seen.add(found.movie.id)) {
+                            movieGroups += found.movie.group
+                            movies += found.movie
+                        }
+                        is Found.Episode -> if (seen.add(found.episode.id)) {
+                            val show = shows.getOrPut(found.showId) {
+                                seriesGroups += found.group
+                                LiveSeries(found.showId, found.show, found.episode.still, found.group)
+                            }
+                            episodes.getOrPut(show.id) { mutableListOf() } += found.episode
+                        }
+                    }
                 }
             }
         }
-        if (!sawHeader && channels.isEmpty()) throw LiveTvException("This address is not an M3U playlist")
-        return LiveLineup(channels, groups.toList(), guideUrls.firstOrNull())
+        if (!sawHeader && channels.isEmpty() && movies.isEmpty() && shows.isEmpty()) {
+            throw LiveTvException("This address is not an M3U playlist")
+        }
+        val series = shows.values.map { show ->
+            show.copy(episodes = episodes[show.id].orEmpty().sortedWith(compareBy({ it.season }, { it.episode })))
+        }
+        return LiveLineup(
+            channels, groups.toList(), guideUrls.firstOrNull(),
+            movies, movieGroups.toList(), series, seriesGroups.toList()
+        )
+    }
+
+    private sealed class Found {
+        class Channel(val channel: LiveChannel) : Found()
+        class Movie(val movie: LiveMovie) : Found()
+        class Episode(val showId: String, val show: String, val group: String, val episode: LiveEpisode) : Found()
     }
 
     private class Pending(
@@ -89,24 +122,36 @@ object M3uPlaylist {
         fun copy(headers: MutableMap<String, String>) = Pending(name, attributes, duration, headers)
     }
 
-    private fun channelOf(entry: Pending, url: String, defaultGroup: String?, position: Int): LiveChannel? {
+    private fun hash(key: String) = (key.hashCode().toLong() and 0xFFFFFFFFL).toString(36)
+
+    /** A channel, a film or an episode, as Flix sorts a playlist's entries. */
+    private fun classify(entry: Pending, url: String, defaultGroup: String?, position: Int): Found {
         val attributes = entry.attributes
         val type = (attributes["tvg-type"] ?: attributes["type"] ?: "").lowercase()
         val path = runCatching { URI(url).path.orEmpty() }.getOrDefault("").lowercase()
         val name = entry.name.ifEmpty { "Channel $position" }
-        if (type != "live") {
-            val episode = attributes["series-name"] != null || episodePattern.containsMatchIn(name)
-            val vod = type in setOf("series", "episode", "movie", "vod") || "/series/" in path || "/movie/" in path ||
-                (entry.duration ?: 0.0) > 0.0
-            if (episode || vod) return null
-        }
         val group = clean(attributes["group-title"])?.split(";")?.firstOrNull()?.let(::clean)
             ?: defaultGroup ?: "Other"
         val tvgId = clean(attributes["tvg-id"])
         val logo = (clean(attributes["tvg-logo"]) ?: clean(attributes["logo"]))?.let { httpUrl(it, null) }
         val key = listOf(tvgId.orEmpty(), name, group, url.substringAfterLast('/')).joinToString("\u001F")
-        return LiveChannel(
-            id = (key.hashCode().toLong() and 0xFFFFFFFFL).toString(36),
+        if (type != "live") {
+            val numbering = episodeNumbering(name, attributes)
+            val isSeries = type == "series" || type == "episode" || "/series/" in path || numbering != null
+            val isMovie = type == "movie" || type == "vod" || "/movie/" in path || (entry.duration ?: 0.0) > 0.0
+            if (isSeries && numbering != null) {
+                val (show, season, episode) = numbering
+                return Found.Episode(
+                    hash(show + "\u001F" + group), show, group,
+                    LiveEpisode(hash(key), season, episode, name, url, logo, entry.headers.toMap())
+                )
+            }
+            if (isSeries || isMovie) {
+                return Found.Movie(LiveMovie(hash(key), name, logo, group, url, entry.headers.toMap()))
+            }
+        }
+        return Found.Channel(LiveChannel(
+            id = hash(key),
             name = name,
             number = attributes["tvg-chno"]?.toIntOrNull()?.takeIf { it > 0 },
             logo = logo,
@@ -114,7 +159,17 @@ object M3uPlaylist {
             epgId = tvgId,
             url = url,
             headers = entry.headers.toMap()
-        )
+        ))
+    }
+
+    /** Show, season and episode from `series-name`/`season-number`/`episode-number`, or a name such as `Show S01E02`. */
+    private fun episodeNumbering(name: String, attributes: Map<String, String>): Triple<String, Int, Int>? {
+        val show = attributes["series-name"]
+        val season = attributes["season-number"]?.toIntOrNull()
+        val episode = attributes["episode-number"]?.toIntOrNull()
+        if (show != null && season != null && episode != null) return Triple(show, season, episode)
+        val match = episodePattern.find(name) ?: return null
+        return Triple(match.groupValues[1].trim(), match.groupValues[2].toInt(), match.groupValues[3].toInt())
     }
 
     /** `#EXTINF`, `#EXTM3U`, ... uppercased with its colon, or "" for a line that is not one. */

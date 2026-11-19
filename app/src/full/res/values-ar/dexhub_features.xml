@@ -32,4 +32,11 @@
     <string name="dexhub_nav_dexworld">DexWorld</string>
     <string name="dexhub_dexworld_loading">يحمّل DexWorld…</string>
     <string name="dexhub_dexworld_failed">DexWorld ما يرد الحين</string>
+    <string name="dexhub_live_tab_live">القنوات</string>
+    <string name="dexhub_live_tab_movies">الأفلام</string>
+    <string name="dexhub_live_tab_series">المسلسلات</string>
+    <string name="dexhub_live_favourites">المفضلة</string>
+    <string name="dexhub_live_now">الحين</string>
+    <string name="dexhub_live_hold_hint">اضغط OK مطوّل على القناة عشان تضيفها للمفضلة</string>
+    <string name="dexhub_live_no_episodes">ما فيه حلقات</string>
 </resources>

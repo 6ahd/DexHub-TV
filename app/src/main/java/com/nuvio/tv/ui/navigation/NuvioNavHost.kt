@@ -1428,19 +1428,19 @@ private fun PlaybackNavHost(
 
         // Dex Hub TV (DEXHUB.md): Live TV, from Flix
         rootComposable(com.nuvio.tv.dexhub.livetv.LiveTvRoute) {
-            com.nuvio.tv.dexhub.livetv.LiveTvScreen(onPlay = { channel, source ->
+            com.nuvio.tv.dexhub.livetv.LiveTvScreen(onPlay = { pick ->
                 navController.navigate(
                     Screen.Player.createRoute(
-                        streamUrl = channel.url,
-                        title = channel.name,
-                        streamName = source.name,
-                        headers = channel.headers.takeIf { it.isNotEmpty() },
+                        streamUrl = pick.url,
+                        title = pick.title,
+                        streamName = pick.sourceName,
+                        headers = pick.headers.takeIf { it.isNotEmpty() },
                         // "channel" is what makes the player treat it as live from the start
                         // (LivePlaybackUiPolicy): no resume point, no seek bar, never "watched"
-                        contentType = "channel",
-                        contentName = channel.name,
-                        poster = channel.logo,
-                        logo = channel.logo
+                        contentType = pick.contentType,
+                        contentName = pick.title,
+                        poster = pick.poster,
+                        logo = pick.poster.takeIf { pick.contentType == "channel" }
                     )
                 )
             })
