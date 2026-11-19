@@ -1435,6 +1435,10 @@ private fun PlaybackNavHost(
                         title = channel.name,
                         streamName = source.name,
                         headers = channel.headers.takeIf { it.isNotEmpty() },
+                        // "channel" is what makes the player treat it as live from the start
+                        // (LivePlaybackUiPolicy): no resume point, no seek bar, never "watched"
+                        contentType = "channel",
+                        contentName = channel.name,
                         poster = channel.logo,
                         logo = channel.logo
                     )
