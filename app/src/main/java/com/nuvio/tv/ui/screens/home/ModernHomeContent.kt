@@ -755,7 +755,13 @@ fun ModernHomeContent(
 
     val uiScale = LocalUiScaleDecision.current
     val portraitBaseWidth = uiScale.posterSizeDp(uiState.posterCardWidthDp).dp
-    val portraitBaseHeight = uiScale.posterSizeDp(uiState.posterCardHeightDp).dp
+    // Dex Hub TV (DEXHUB.md): a poster shape other than 2:3 takes its height from the width
+    val posterShape = com.nuvio.tv.ui.components.rememberPosterHeightPercent()
+    val portraitBaseHeight = if (posterShape == com.nuvio.tv.ui.components.DexHubPosterShape.CLASSIC) {
+        uiScale.posterSizeDp(uiState.posterCardHeightDp).dp
+    } else {
+        portraitBaseWidth * (posterShape / 100f)
+    }
     val portraitModernPosterScale = 1.08f
     val landscapeModernPosterScale = 1.34f
     val portraitCatalogCardWidth = portraitBaseWidth * 0.84f * portraitModernPosterScale

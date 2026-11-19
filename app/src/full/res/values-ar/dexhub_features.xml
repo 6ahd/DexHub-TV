@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dex Hub TV's own texts (DEXHUB.md); a name Arc also has takes Arc's place -->
+<resources>
+    <string name="licenses_attributions_subtitle_fonts_body">Roboto وMontserrat وAsap Condensed وNoto Sans (مع Noto Sans Arabic وHebrew وDevanagari وBengali وTamil) من The Roboto Project Authors وThe Montserrat Project Authors وThe Asap Project Authors وThe Noto Project Authors. ويضيف Dex Hub TV خطوط IBM Plex Sans Arabic من IBM Corp. وCairo من The Cairo Project Authors وTajawal من Boutros International. مرخّصة بموجب SIL Open Font License, Version 1.1.</string>
+    <string name="dexhub_preset_huge">ضخم</string>
+    <string name="dexhub_preset_cinema">سينمائي</string>
+    <string name="dexhub_preset_soft">ناعم</string>
+    <string name="dexhub_preset_round">دائري</string>
+    <string name="dexhub_poster_shape">شكل البوستر</string>
+    <string name="dexhub_poster_shape_classic">كلاسيكي 2:3</string>
+    <string name="dexhub_poster_shape_wide">أعرض 3:4</string>
+    <string name="dexhub_poster_shape_square">مربع</string>
+</resources>

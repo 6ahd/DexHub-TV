@@ -52,11 +52,11 @@ class ThemeDataStore @Inject constructor(
 
     val selectedFont: Flow<AppFont> = profileManager.activeProfileId.flatMapLatest { pid ->
         factory.get(pid, FEATURE).data.map { prefs ->
-            val fontName = prefs[fontKey] ?: AppFont.INTER.name
+            val fontName = prefs[fontKey] ?: defaultFont().name
             try {
                 AppFont.valueOf(fontName)
             } catch (e: IllegalArgumentException) {
-                AppFont.INTER
+                defaultFont()
             }
         }
     }
@@ -166,3 +166,7 @@ class ThemeDataStore @Inject constructor(
             prefs[themeKey]?.let { name -> AppTheme.entries.firstOrNull { it.name == name } }
         }
 }
+
+/** Dex Hub TV (DEXHUB.md): until a font is chosen, an Arabic interface is drawn in an Arabic font, others in Inter. */
+private fun defaultFont(): AppFont =
+    if (java.util.Locale.getDefault().language == "ar") AppFont.IBM_PLEX_SANS_ARABIC else AppFont.INTER

@@ -36,9 +36,10 @@ object PosterCardDefaults {
 @Composable
 fun rememberPosterCardStyle(widthDp: Int, cornerRadiusDp: Int): PosterCardStyle {
     val uiScale = LocalUiScaleDecision.current
-    return remember(widthDp, cornerRadiusDp, uiScale) {
+    val heightPercent = rememberPosterHeightPercent()   // Dex Hub TV's poster shape (DexHubPosterShape)
+    return remember(widthDp, cornerRadiusDp, uiScale, heightPercent) {
         val width = uiScale.posterSizeDp(widthDp).dp
-        PosterCardStyle(width = width, height = width * 1.5f, cornerRadius = cornerRadiusDp.dp)
+        PosterCardStyle(width = width, height = width * (heightPercent / 100f), cornerRadius = cornerRadiusDp.dp)
     }
 }
 

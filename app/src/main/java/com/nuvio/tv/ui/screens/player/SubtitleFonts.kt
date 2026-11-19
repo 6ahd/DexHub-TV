@@ -26,6 +26,9 @@ internal fun AppFont.fontResource(): Int = when (this) {
     AppFont.OPEN_SANS -> R.font.opensans_variable
     AppFont.ATKINSON_HYPERLEGIBLE_NEXT -> R.font.atkinson_hyperlegible_next_variable
     AppFont.SOURCE_SANS_3 -> R.font.source_sans3_variable
+    AppFont.IBM_PLEX_SANS_ARABIC -> R.font.ui_ibm_plex_sans_arabic_regular
+    AppFont.CAIRO -> R.font.ui_cairo_variable
+    AppFont.TAJAWAL -> R.font.ui_tajawal_regular
 }
 
 /** Regular (or, for Noto, semi-bold) file of the subtitle font; may be a variable font. */
@@ -44,6 +47,8 @@ internal fun SubtitleFont.boldFontResource(): Int? = when (this) {
     SubtitleFont.MONTSERRAT -> R.font.subtitle_montserrat_bold
     SubtitleFont.NOTO_SANS_SEMIBOLD -> R.font.subtitle_noto_sans_bold
     SubtitleFont.ASAP_CONDENSED -> R.font.subtitle_asap_condensed_bold
+    SubtitleFont.IBM_PLEX_SANS_ARABIC -> R.font.ui_ibm_plex_sans_arabic_bold
+    SubtitleFont.TAJAWAL -> R.font.ui_tajawal_bold
     else -> null
 }
 
@@ -76,6 +81,9 @@ internal fun SubtitleFont?.mpvLineHeightEm(): Double = when (this) {
     SubtitleFont.MONTSERRAT -> 1.379
     SubtitleFont.NOTO_SANS_SEMIBOLD -> 1.519
     SubtitleFont.ASAP_CONDENSED -> 1.319
+    SubtitleFont.IBM_PLEX_SANS_ARABIC -> 1.729
+    SubtitleFont.CAIRO -> 1.883
+    SubtitleFont.TAJAWAL -> 1.391
     SubtitleFont.ROBOTO, null -> 1.200
 }
 

@@ -55,12 +55,38 @@ val SourceSans3Family = FontFamily(
     Font(R.font.source_sans3_italic, FontWeight.Bold, FontStyle.Italic)
 )
 
+// Dex Hub TV (DEXHUB.md): fonts with Arabic as well as Latin letters (SIL OFL 1.1)
+val IbmPlexSansArabicFamily = FontFamily(
+    Font(R.font.ui_ibm_plex_sans_arabic_regular, FontWeight.Normal),
+    Font(R.font.ui_ibm_plex_sans_arabic_medium, FontWeight.Medium),
+    Font(R.font.ui_ibm_plex_sans_arabic_semibold, FontWeight.SemiBold),
+    Font(R.font.ui_ibm_plex_sans_arabic_bold, FontWeight.Bold)
+)
+
+val CairoFamily = FontFamily(
+    Font(R.font.ui_cairo_variable, FontWeight.Normal),
+    Font(R.font.ui_cairo_variable, FontWeight.Medium),
+    Font(R.font.ui_cairo_variable, FontWeight.SemiBold),
+    Font(R.font.ui_cairo_variable, FontWeight.Bold)
+)
+
+/** Tajawal has no semi-bold file: semi-bold takes the bold one. */
+val TajawalFamily = FontFamily(
+    Font(R.font.ui_tajawal_regular, FontWeight.Normal),
+    Font(R.font.ui_tajawal_medium, FontWeight.Medium),
+    Font(R.font.ui_tajawal_bold, FontWeight.SemiBold),
+    Font(R.font.ui_tajawal_bold, FontWeight.Bold)
+)
+
 fun getFontFamily(appFont: AppFont): FontFamily = when (appFont) {
     AppFont.INTER -> InterFamily
     AppFont.DM_SANS -> DMSansFamily
     AppFont.OPEN_SANS -> OpenSansFamily
     AppFont.ATKINSON_HYPERLEGIBLE_NEXT -> AtkinsonHyperlegibleNextFamily
     AppFont.SOURCE_SANS_3 -> SourceSans3Family
+    AppFont.IBM_PLEX_SANS_ARABIC -> IbmPlexSansArabicFamily
+    AppFont.CAIRO -> CairoFamily
+    AppFont.TAJAWAL -> TajawalFamily
 }
 
 @Immutable

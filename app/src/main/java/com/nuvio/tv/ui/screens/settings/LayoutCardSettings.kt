@@ -334,14 +334,25 @@ internal fun LayoutPosterCardSection(
         PresetOption(stringResource(R.string.layout_preset_balanced), 126),
         PresetOption(stringResource(R.string.layout_preset_comfort), 134),
         PresetOption(stringResource(R.string.layout_preset_large), 140),
-        PresetOption(stringResource(R.string.layout_preset_extra_large), 176)
+        PresetOption(stringResource(R.string.layout_preset_extra_large), 176),
+        // Dex Hub TV (DEXHUB.md): bigger posters
+        PresetOption(stringResource(R.string.dexhub_preset_huge), 204),
+        PresetOption(stringResource(R.string.dexhub_preset_cinema), 236)
     )
     val radiusOptions = listOf(
         PresetOption(stringResource(R.string.layout_preset_sharp), 0),
         PresetOption(stringResource(R.string.layout_preset_subtle), 4),
         PresetOption(stringResource(R.string.layout_preset_classic), 8),
         PresetOption(stringResource(R.string.layout_preset_rounded), 12),
-        PresetOption(stringResource(R.string.layout_preset_pill), 16)
+        PresetOption(stringResource(R.string.layout_preset_pill), 16),
+        PresetOption(stringResource(R.string.dexhub_preset_soft), 22),
+        PresetOption(stringResource(R.string.dexhub_preset_round), 30)
+    )
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val shapeOptions = listOf(
+        PresetOption(stringResource(R.string.dexhub_poster_shape_classic), com.nuvio.tv.ui.components.DexHubPosterShape.CLASSIC),
+        PresetOption(stringResource(R.string.dexhub_poster_shape_wide), com.nuvio.tv.ui.components.DexHubPosterShape.WIDE),
+        PresetOption(stringResource(R.string.dexhub_poster_shape_square), com.nuvio.tv.ui.components.DexHubPosterShape.SQUARE)
     )
 
     OptionRow(
@@ -355,6 +366,12 @@ internal fun LayoutPosterCardSection(
         selectedValue = uiState.posterCardCornerRadiusDp,
         options = radiusOptions,
         onSelected = { radius -> onEvent(LayoutSettingsEvent.SetPosterCardCornerRadius(radius)) }
+    )
+    OptionRow(
+        title = stringResource(R.string.dexhub_poster_shape),
+        selectedValue = com.nuvio.tv.ui.components.rememberPosterHeightPercent(),
+        options = shapeOptions,
+        onSelected = { shape -> com.nuvio.tv.ui.components.DexHubPosterShape.set(context, shape) }
     )
     LandscapePosterScopeRow(
         selectedScope = uiState.landscapePosterScope,
@@ -374,7 +391,10 @@ internal fun LayoutPosterCardSection(
     )
     SettingsResetButton(
         text = stringResource(R.string.layout_reset_default),
-        onClick = { onEvent(LayoutSettingsEvent.ResetPosterCardStyle) }
+        onClick = {
+            onEvent(LayoutSettingsEvent.ResetPosterCardStyle)
+            com.nuvio.tv.ui.components.DexHubPosterShape.set(context, com.nuvio.tv.ui.components.DexHubPosterShape.CLASSIC)
+        }
     )
 }
 

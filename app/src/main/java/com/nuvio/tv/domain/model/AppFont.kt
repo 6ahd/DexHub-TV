@@ -5,5 +5,9 @@ enum class AppFont(val displayName: String) {
     DM_SANS("DM Sans"),
     OPEN_SANS("Open Sans"),
     ATKINSON_HYPERLEGIBLE_NEXT("Atkinson Hyperlegible Next"),
-    SOURCE_SANS_3("Source Sans 3")
+    SOURCE_SANS_3("Source Sans 3"),
+    // Dex Hub TV (DEXHUB.md): Arabic and Latin in one face, so Arabic text is drawn in the chosen font too
+    IBM_PLEX_SANS_ARABIC("IBM Plex Sans Arabic"),
+    CAIRO("Cairo"),
+    TAJAWAL("Tajawal")
 }

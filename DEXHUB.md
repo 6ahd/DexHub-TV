@@ -18,6 +18,9 @@ at the hook points below.
 | `app/src/full/res/values*/dexhub_strings.xml` | Arc's texts with "Dex Hub TV" for "Nuvio Arc", every language (`dexhub/brand/make_strings.py`); the credits keep Arc's and Nuvio's names |
 | `app/src/full/res/raw/arc_intro_sound.m4a` | The entrance's sound (`dexhub/brand/make_sound.sh`) |
 | `app/src/main/java/com/nuvio/tv/ui/brand/DexHubIntroScene.kt` | The entrance: the infinity mark drawn in behind a light, DEX HUB under it, a sheen, then a soft glow while Home loads |
+| `app/src/full/res/font/ui_*`, `assets/licenses/fonts/` | IBM Plex Sans Arabic, Cairo and Tajawal (SIL OFL 1.1, with their licences): fonts with Arabic letters for the interface and subtitles |
+| `app/src/full/res/values*/dexhub_features.xml` | Dex Hub TV's own texts (poster sizes and shapes, the fonts' credit) |
+| `app/src/main/java/com/nuvio/tv/ui/components/DexHubPosterShape.kt` | The posters' shape (2:3, 3:4, square), kept on the device |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -28,6 +31,10 @@ at the hook points below.
 | `app/build.gradle.kts` | `applicationId = "com.dexhub.tv"`; `GITHUB_OWNER` / `GITHUB_REPO` = `6ahd` / `DexHub-TV` (the app's update check) |
 | `app/src/testFull/.../ForkUpdateRepositoryTest.kt` | reads the owner and repository from `BuildConfig` instead of Arc's names |
 | `ui/brand/ArcIgnitionView.kt`, `ui/brand/ArcIntroPrep.kt` | `DexHubIntroScene` where they had `ArcIgnitionScene` |
+| `domain/model/AppFont.kt`, `SubtitleFont.kt`, `ui/theme/Type.kt`, `ui/screens/player/SubtitleFonts.kt` | the three Arabic fonts as choices for the interface and subtitles |
+| `data/local/ThemeDataStore.kt` | until a font is chosen, an Arabic interface uses IBM Plex Sans Arabic |
+| `ui/components/PosterCardDefaults.kt`, `ui/screens/home/ModernHomeContent.kt` | posters take their height from the chosen shape |
+| `ui/screens/settings/LayoutCardSettings.kt` | Huge and Cinema widths, Soft and Round corners, the Poster shape row |
 
 ## After merging an Arc release
 
