@@ -347,6 +347,18 @@ internal fun SubtitleSelectionOverlay(
                                 modifier = Modifier.panelRadioSemantics(currentSelectedOptionId == null)
                             )
                         }
+                        // Dex Hub TV (DEXHUB.md): the chosen subtitle (or an English one) in the preferred language
+                        if (sessionAddonSubtitles.isNotEmpty()) item(key = "dexhub_translate") {
+                            PlayerPanelRow(
+                                title = "\uD83C\uDF10  " + stringResource(R.string.dexhub_translate_subtitle),
+                                subtitle = stringResource(R.string.dexhub_translate_subtitle_sub),
+                                selected = false,
+                                onClick = {
+                                    onEvent(PlayerEvent.DexHubTranslateSubtitle)
+                                    onDismiss()
+                                }
+                            )
+                        }
                         items(items = languageItems, key = { "language:${it.key}" }) { language ->
                             val options = optionsByLanguage[language.key].orEmpty()
                             PlayerPanelRow(

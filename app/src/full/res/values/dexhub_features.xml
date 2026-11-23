@@ -68,4 +68,11 @@
     <string name="dexhub_like_sports">Sports</string>
     <string name="dexhub_interests_again">What I like to watch</string>
     <string name="dexhub_interests_again_sub">Ask again on Home; the answers order the menu and DexWorld</string>
+    <string name="dexhub_translate_subtitle">Translate the subtitle into my language</string>
+    <string name="dexhub_translate_subtitle_sub">The chosen subtitle, or an English one; Google, no account</string>
+    <string name="dexhub_translate_none">There is no subtitle to translate from</string>
+    <string name="dexhub_translate_working">Translating the subtitle…</string>
+    <string name="dexhub_translate_done">The translated subtitle is on</string>
+    <string name="dexhub_translate_busy">Google is busy; try again in a few minutes</string>
+    <string name="dexhub_translate_failed">The subtitle couldn\'t be translated</string>
 </resources>

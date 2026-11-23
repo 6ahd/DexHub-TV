@@ -29,6 +29,7 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/welcome/` | The first-run question (what the viewer likes), which orders the side menu and DexWorld |
 | `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
+| `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -48,6 +49,8 @@ at the hook points below.
 | `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches |
 | `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |
 | `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection |
+| `ui/screens/player/PlayerUiState.kt`, `PlayerRuntimeControllerPlaybackEvents.kt`, `SubtitleSelectionOverlay.kt` | the Translate event, its handling and its row in the subtitles panel |
+| `ui/screens/player/PlayerRuntimeControllerSubtitleTiming.kt` | a subtitle on this device (`file://`, a translation) is read from its file |
 | `MainActivity.kt` (menu entries, `appRootRoutes`), `ui/navigation/NuvioNavHost.kt` | the Live TV and DexWorld pages and their menu entries |
 | `domain/model/AppTheme.kt`, `ThemeAccess.kt`, `ui/theme/ThemeColors.kt`, `ui/theme/Theme.kt`, `ui/brand/ArcPalette.kt`, `ui/screens/settings/ThemeSettings*.kt`, `MainActivity.kt` | the Dex Hub theme (lavender on navy), first in the list and the default (`DefaultAppTheme`) |
 

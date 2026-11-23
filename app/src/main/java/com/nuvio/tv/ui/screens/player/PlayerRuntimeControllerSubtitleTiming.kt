@@ -415,6 +415,8 @@ private fun PlayerRuntimeController.executeSubtitleDownload(
     languageHint: String? = null,
     customHeaders: Map<String, String>? = null
 ): String {
+    // Dex Hub TV (DEXHUB.md): a subtitle Dex Hub made on this device (a translation) is a local file
+    if (url.startsWith("file://")) return java.io.File(url.removePrefix("file://")).readText()
     val explicitHeaders = customHeaders
         ?: streamSubtitles.firstOrNull { it.url == url }?.headers
         ?: _uiState.value.addonSubtitles.firstOrNull { it.url == url }?.headers

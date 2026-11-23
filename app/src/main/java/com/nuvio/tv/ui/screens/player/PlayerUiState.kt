@@ -368,6 +368,8 @@ data class SubtitleSyncCue(
 )
 
 sealed class PlayerEvent {
+    /** Dex Hub TV (DEXHUB.md): translate the chosen subtitle into the preferred language. */
+    data object DexHubTranslateSubtitle : PlayerEvent()
     data object OnPlayPause : PlayerEvent()
     data object OnSeekForward : PlayerEvent()
     data object OnSeekBackward : PlayerEvent()

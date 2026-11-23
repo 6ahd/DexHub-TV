@@ -68,4 +68,11 @@
     <string name="dexhub_like_sports">رياضة</string>
     <string name="dexhub_interests_again">وش أحب أشوف</string>
     <string name="dexhub_interests_again_sub">يسألك مرة ثانية في الرئيسية؛ اختياراتك ترتب القائمة وDexWorld</string>
+    <string name="dexhub_translate_subtitle">ترجم الترجمة للغتي</string>
+    <string name="dexhub_translate_subtitle_sub">الترجمة المختارة أو الإنجليزية؛ من Google بدون حساب</string>
+    <string name="dexhub_translate_none">ما فيه ترجمة أترجم منها</string>
+    <string name="dexhub_translate_working">يترجم الترجمة…</string>
+    <string name="dexhub_translate_done">الترجمة المترجمة اشتغلت</string>
+    <string name="dexhub_translate_busy">Google مشغول، جرب بعد كم دقيقة</string>
+    <string name="dexhub_translate_failed">ما قدرت أترجم الترجمة</string>
 </resources>

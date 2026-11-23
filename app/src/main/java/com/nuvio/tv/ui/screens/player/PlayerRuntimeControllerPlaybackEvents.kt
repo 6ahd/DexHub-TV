@@ -1943,6 +1943,7 @@ fun PlayerRuntimeController.onEvent(
         onUserInteraction()
     }
     when (event) {
+        PlayerEvent.DexHubTranslateSubtitle -> com.nuvio.tv.dexhub.subtitles.translateSubtitle(this)
         PlayerEvent.OnPlayPause -> {
             if (finishSeekSettle(seek = true, reason = "ok")) return
             // A play/pause press during a held scrub is the user's own choice from here on.
