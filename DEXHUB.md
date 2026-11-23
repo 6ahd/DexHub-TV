@@ -33,6 +33,7 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/ai/` | The viewer's own AI service (ai_search.py's list: Groq, Gemini, OpenAI, Claude, Grok, OpenRouter, DeepSeek, Mistral), its key and model on this device (Playback > Subtitles > Translate subtitles with) |
 | `app/src/main/java/com/nuvio/tv/dexhub/sync/` | Dex Hub's clocks for AutoSync when the video has no subtitle to time by, from Dex Hub for Kodi (engref.py, whisperref.py, dexpick.py): DexWorld's shared sync (syncshare.py: a trusted fix or the release's timeline; the video's own timing shared back), an English subtitle of the same release (OpenSubtitles' public add-on), else the film's speech by Whisper with the viewer's Groq or OpenAI key |
 | `app/src/main/java/com/nuvio/tv/dexhub/settings/` | Settings > Dex Hub, first in the rail: every Dex Hub feature in one place (AI translation, subtitle and app fonts, Whisper, DexWorld sync, theme music, interests, Flix sources, Usenet) |
+| `app/src/main/java/com/nuvio/tv/dexhub/player/` | The player in Dex Hub's look (skin.dexhub's player: the logo large, IMDb and "Ends at" under the facts), Dex Hub's badge packs (Elite, Gold, Minimalist white) put on the player with Arc's own badge rules, and Dex Hub's subtitle colours and shades |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubFields.kt` | The text field and buttons of Dex Hub's setup dialogs |
 | `app/src/main/java/com/nuvio/tv/dexhub/usenet/` | Usenet through the built-in engine, from Dex Hub for Kodi (usenet_source.py, usenet_engine.py): the viewer's providers and indexers (Layout > Sources > Usenet), the search, a Stremio add-on on 127.0.0.1:17465 and the engine |
 | `app/src/main/cpp/dexhub_usenet_jni.c` | The bridge to the engine library's three C calls |
@@ -57,6 +58,8 @@ at the hook points below.
 | `data/local/LayoutPreferenceDataStore.kt` | the Home trailer plays in the hero's window by default (`FEATHERED_WINDOW`), and `dexHubTrailerInHeroOnce` |
 | `ui/screens/settings/PlaybackSubtitleSettings.kt` | the "Translate subtitles with", "Sync by the film's speech" and "Shared sync with DexWorld" rows |
 | `ui/screens/settings/SettingsCatalog.kt`, `SettingsScreen.kt`, `SettingsSearch.kt` | the Dex Hub category (`SettingsCategory.DEXHUB`) |
+| `ui/screens/player/PlayerCustomControls.kt` | the Dex Hub look: the larger logo and the info row (one block) |
+| `ui/screens/player/PlayerRuntimeControllerMetadata.kt` | keeps the title's IMDb rating for the info row (one line) |
 | `ui/screens/player/SubtitleSelectionOverlay.kt` | also "Translate subtitles with", the AI service chosen from the player |
 | `ui/screens/player/autosync/AutomaticSubtitleSync.kt` | with no reference of the video's own, Dex Hub's references are asked; with one, its timing is shared (one block) |
 | `ui/screens/player/PlayerRuntimeControllerAutomaticSubtitleSync.kt` | tells Dex Hub's references what is playing (one call) |

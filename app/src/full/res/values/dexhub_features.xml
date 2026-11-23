@@ -165,4 +165,22 @@
 
     <string name="dexhub_settings_collections">Collections in Dex Hub\'s look</string>
     <string name="dexhub_settings_collections_sub">A collection opens like the Home: the focused title\'s backdrop, logo and story above its rows, the collection\'s mark in the corner (collections set to rows keep rows)</string>
+
+    <string name="dexhub_settings_player">Player</string>
+    <string name="dexhub_player_look">Dex Hub\'s player look</string>
+    <string name="dexhub_player_look_sub">The title\'s logo large, and under its facts the IMDb rating and when it ends, as Dex Hub\'s player shows them</string>
+    <string name="dexhub_player_ends_at">Ends at %1$s</string>
+    <string name="dexhub_badges">Player badges</string>
+    <string name="dexhub_badges_sub">Quality, HDR, codec and sound badges above the progress bar</string>
+    <string name="dexhub_badges_builtin">Built in</string>
+    <string name="dexhub_badges_elite">Official · Elite</string>
+    <string name="dexhub_badges_gold">Gold</string>
+    <string name="dexhub_badges_white">Minimalist white</string>
+    <string name="dexhub_badges_off">Off</string>
+    <string name="dexhub_badges_failed">The badge pack couldn\'t be downloaded; check the connection</string>
+    <string name="dexhub_subtitle_colour">Subtitle colour</string>
+    <string name="dexhub_subtitle_colour_sub">Dex Hub\'s colours, then a shade of the one you pick</string>
+    <string name="dexhub_subtitle_colour_ready">Colour</string>
+    <string name="dexhub_subtitle_colour_shade">Shade</string>
+    <string name="dexhub_subtitle_outline">Subtitle outline colour</string>
 </resources>

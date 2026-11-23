@@ -50,6 +50,7 @@ internal interface DexHubSettingsDeps {
     fun themeDataStore(): ThemeDataStore
     fun playerSettingsDataStore(): PlayerSettingsDataStore
     fun layoutPreferenceDataStore(): com.nuvio.tv.data.local.LayoutPreferenceDataStore
+    fun streamBadgeSettingsDataStore(): com.nuvio.tv.data.local.StreamBadgeSettingsDataStore
 }
 
 /**
@@ -69,6 +70,11 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
     val trailerTarget by deps.layoutPreferenceDataStore().focusedPosterBackdropTrailerPlaybackTarget
         .collectAsState(initial = com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW)
     var trailerDialog by remember { mutableStateOf(false) }
+    val badgeSettings by deps.streamBadgeSettingsDataStore().settings.collectAsState(initial = null)
+    val playerLook by com.nuvio.tv.dexhub.player.DexHubPlayerLook.flow(context).collectAsStateWithLifecycle()
+    var badgesDialog by remember { mutableStateOf(false) }
+    var colourDialog by remember { mutableStateOf(false) }
+    var outlineDialog by remember { mutableStateOf(false) }
     var appFontDialog by remember { mutableStateOf(false) }
     var subtitleFontDialog by remember { mutableStateOf(false) }
     val listState = rememberLazyListState()
@@ -102,6 +108,44 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
                 }
                 item(key = "whisper") { com.nuvio.tv.dexhub.ai.WhisperSyncRow() }
                 item(key = "share") { com.nuvio.tv.dexhub.sync.SyncShareRow() }
+
+                item(key = "player") { SettingsSectionLabel(text = stringResource(R.string.dexhub_settings_player)) }
+                item(key = "playerlook") {
+                    SettingsToggleRow(
+                        title = stringResource(R.string.dexhub_player_look),
+                        subtitle = stringResource(R.string.dexhub_player_look_sub),
+                        checked = playerLook,
+                        onToggle = { com.nuvio.tv.dexhub.player.DexHubPlayerLook.set(context, !playerLook) }
+                    )
+                }
+                item(key = "badges") {
+                    SettingsActionRow(
+                        title = stringResource(R.string.dexhub_badges),
+                        subtitle = stringResource(R.string.dexhub_badges_sub),
+                        value = stringResource(com.nuvio.tv.dexhub.player.DexHubBadges.current(badgeSettings).label),
+                        onClick = { badgesDialog = true }
+                    )
+                }
+                item(key = "subcolour") {
+                    SettingsActionRow(
+                        title = stringResource(R.string.dexhub_subtitle_colour),
+                        subtitle = stringResource(R.string.dexhub_subtitle_colour_sub),
+                        value = player?.subtitleStyle?.let {
+                            com.nuvio.tv.dexhub.player.SubtitleColours.nameOf(it.textColor, com.nuvio.tv.dexhub.player.SubtitleColours.text)
+                        },
+                        onClick = { colourDialog = true }
+                    )
+                }
+                item(key = "suboutline") {
+                    SettingsActionRow(
+                        title = stringResource(R.string.dexhub_subtitle_outline),
+                        subtitle = null,
+                        value = player?.subtitleStyle?.let {
+                            com.nuvio.tv.dexhub.player.SubtitleColours.nameOf(it.outlineColor, com.nuvio.tv.dexhub.player.SubtitleColours.outline)
+                        },
+                        onClick = { outlineDialog = true }
+                    )
+                }
 
                 item(key = "look") { SettingsSectionLabel(text = stringResource(R.string.dexhub_settings_look)) }
                 item(key = "appfont") {
@@ -158,6 +202,50 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
         }
     }
 
+    if (badgesDialog) {
+        val failed = stringResource(R.string.dexhub_badges_failed)
+        SettingsSingleChoiceDialog(
+            title = stringResource(R.string.dexhub_badges),
+            options = com.nuvio.tv.dexhub.player.DexHubBadges.Style.entries.map { SettingsPickerOption(it, stringResource(it.label)) },
+            selectedValue = com.nuvio.tv.dexhub.player.DexHubBadges.current(badgeSettings),
+            onOptionSelected = { style ->
+                badgesDialog = false
+                scope.launch {
+                    if (!com.nuvio.tv.dexhub.player.DexHubBadges.apply(deps.streamBadgeSettingsDataStore(), style)) {
+                        android.widget.Toast.makeText(context, failed, android.widget.Toast.LENGTH_LONG).show()
+                    }
+                }
+            },
+            onDismiss = { badgesDialog = false }
+        )
+    }
+    val subStyle = player?.subtitleStyle
+    if (colourDialog && subStyle != null) {
+        val ready = com.nuvio.tv.dexhub.player.SubtitleColours.text
+        var base by remember { mutableStateOf(ready.firstOrNull { it.argb == subStyle.textColor }?.argb ?: ready.first().argb) }
+        com.nuvio.tv.dexhub.player.SwatchDialog(
+            title = stringResource(R.string.dexhub_subtitle_colour),
+            rows = listOf(
+                stringResource(R.string.dexhub_subtitle_colour_ready) to ready,
+                stringResource(R.string.dexhub_subtitle_colour_shade) to com.nuvio.tv.dexhub.player.SubtitleColours.shades(base)
+            ),
+            selected = subStyle.textColor,
+            onPick = { argb ->
+                if (ready.any { it.argb == argb }) base = argb
+                scope.launch { deps.playerSettingsDataStore().setSubtitleTextColor(argb) }
+            },
+            onDismiss = { colourDialog = false }
+        )
+    }
+    if (outlineDialog && subStyle != null) {
+        com.nuvio.tv.dexhub.player.SwatchDialog(
+            title = stringResource(R.string.dexhub_subtitle_outline),
+            rows = listOf(stringResource(R.string.dexhub_subtitle_outline) to com.nuvio.tv.dexhub.player.SubtitleColours.outline),
+            selected = subStyle.outlineColor,
+            onPick = { argb -> scope.launch { deps.playerSettingsDataStore().setSubtitleOutlineColor(argb) } },
+            onDismiss = { outlineDialog = false }
+        )
+    }
     if (trailerDialog) {
         SettingsSingleChoiceDialog(
             title = stringResource(R.string.dexhub_settings_trailer),

@@ -211,12 +211,16 @@ internal fun PlayerCustomControls(
             if (state.activeSkipInterval == null) Column(Modifier.hideUnderSeekThumbnails(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 val title = state.contentName ?: state.title
                 var failed by remember(state.logo) { mutableStateOf(false) }
+                // Dex Hub TV (DEXHUB.md): the logo as large as Dex Hub's player draws it, and its info row
+                val dexLook = com.nuvio.tv.dexhub.player.dexHubPlayerLook()
                 if (!state.logo.isNullOrBlank() && !failed) AsyncImage(state.logo, title,
-                    Modifier.sizeIn(maxWidth = 300.dp, maxHeight = 64.dp), contentScale = ContentScale.Fit,
+                    if (dexLook) Modifier.sizeIn(maxWidth = 440.dp, maxHeight = 96.dp) else Modifier.sizeIn(maxWidth = 300.dp, maxHeight = 64.dp),
+                    contentScale = ContentScale.Fit,
                     alignment = Alignment.CenterStart, onError = { failed = true })
                 else Text(title, color = Color.White, maxLines = 1, overflow = TextOverflow.Ellipsis,
                     style = MaterialTheme.typography.titleLarge)
                 PlayerSecondaryMetadata(state, chapter = rememberCurrentChapter(viewModel, state.chapters))
+                if (dexLook) com.nuvio.tv.dexhub.player.DexHubPlayerInfoRow(viewModel, state, viewModel.controller.contentId)
                 if (playerBadges.isNotEmpty()) PlayerBadges(playerBadges)
             }
             }, timeline = {

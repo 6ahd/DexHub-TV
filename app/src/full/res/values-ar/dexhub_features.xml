@@ -165,4 +165,22 @@
 
     <string name="dexhub_settings_collections">الكوليكشن بشكل Dex Hub</string>
     <string name="dexhub_settings_collections_sub">الكوليكشن ينفتح مثل الرئيسية: خلفية العمل وشعاره ونبذته فوق صفوفه، وشعار الكوليكشن في الزاوية (اللي على الصفوف تبقى صفوف)</string>
+
+    <string name="dexhub_settings_player">المشغّل</string>
+    <string name="dexhub_player_look">شكل مشغّل Dex Hub</string>
+    <string name="dexhub_player_look_sub">شعار العمل كبير، وتحت معلوماته تقييم IMDb ومتى ينتهي، مثل مشغّل Dex Hub</string>
+    <string name="dexhub_player_ends_at">ينتهي %1$s</string>
+    <string name="dexhub_badges">شارات المشغّل</string>
+    <string name="dexhub_badges_sub">شارات الجودة والـ HDR والترميز والصوت فوق شريط التقدم</string>
+    <string name="dexhub_badges_builtin">المدمجة</string>
+    <string name="dexhub_badges_elite">رسمية · Elite</string>
+    <string name="dexhub_badges_gold">ذهبية · Gold</string>
+    <string name="dexhub_badges_white">بيضاء بسيطة</string>
+    <string name="dexhub_badges_off">بدون</string>
+    <string name="dexhub_badges_failed">ما قدرت أنزّل حزمة الشارات؛ تأكد من الاتصال</string>
+    <string name="dexhub_subtitle_colour">لون الترجمة</string>
+    <string name="dexhub_subtitle_colour_sub">ألوان Dex Hub، وبعدها درجة من اللون اللي تختاره</string>
+    <string name="dexhub_subtitle_colour_ready">اللون</string>
+    <string name="dexhub_subtitle_colour_shade">الدرجة</string>
+    <string name="dexhub_subtitle_outline">لون حدود الترجمة</string>
 </resources>

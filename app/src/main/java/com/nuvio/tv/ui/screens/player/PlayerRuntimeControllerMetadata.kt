@@ -65,6 +65,7 @@ internal fun PlayerRuntimeController.initializeCloudPlaybackSequence() {
 }
 
 internal fun PlayerRuntimeController.applyMetaDetails(meta: Meta) {
+    com.nuvio.tv.dexhub.player.DexHubPlayerMeta.set(contentId, meta.imdbRating) // Dex Hub TV: the player's info row
     metaVideos = meta.videos
     metaGenres = meta.genres
     metaCountry = meta.country
