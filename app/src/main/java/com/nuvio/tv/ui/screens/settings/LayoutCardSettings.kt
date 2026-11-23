@@ -367,6 +367,12 @@ internal fun LayoutPosterCardSection(
         options = radiusOptions,
         onSelected = { radius -> onEvent(LayoutSettingsEvent.SetPosterCardCornerRadius(radius)) }
     )
+    SettingsActionRow(
+        title = stringResource(R.string.dexhub_interests_again),
+        subtitle = stringResource(R.string.dexhub_interests_again_sub),
+        value = null,
+        onClick = { com.nuvio.tv.dexhub.welcome.DexHubInterests.askAgain(context) }
+    )
     OptionRow(
         title = stringResource(R.string.dexhub_poster_shape),
         selectedValue = com.nuvio.tv.ui.components.rememberPosterHeightPercent(),

@@ -1297,6 +1297,10 @@ open class MainActivity : ComponentActivity() {
                     val strNavScout = stringResource(R.string.scout_title)
                     val strNavLiveTv = stringResource(R.string.dexhub_nav_live_tv)
                     val strNavDexWorld = stringResource(R.string.dexhub_nav_dexworld)
+                    val dexHubContext = androidx.compose.ui.platform.LocalContext.current
+                    val dexHubInterests by remember(dexHubContext) {
+                        com.nuvio.tv.dexhub.welcome.DexHubInterests.chosen(dexHubContext)
+                    }.collectAsState()
                     val drawerItems = remember(
                         strNavHome,
                         strNavDiscover,
@@ -1308,7 +1312,8 @@ open class MainActivity : ComponentActivity() {
                         calendarInMenu,
                         scoutInMenu,
                         strNavLiveTv,
-                        strNavDexWorld
+                        strNavDexWorld,
+                        dexHubInterests
                     ) {
                         buildList {
                             add(
@@ -1374,6 +1379,12 @@ open class MainActivity : ComponentActivity() {
                                     label = strNavSettings,
                                     iconRes = R.raw.sidebar_settings
                                 )
+                            )
+                        }.let { items ->
+                            // Dex Hub TV (DEXHUB.md): the viewer's first-run answers put Live TV or DexWorld after Home
+                            com.nuvio.tv.dexhub.welcome.DexHubInterests.arrangeMenu(
+                                items, dexHubInterests, { it.route }, Screen.Home.route,
+                                com.nuvio.tv.dexhub.livetv.LiveTvRoute, com.nuvio.tv.dexhub.dexworld.DexWorldRoute
                             )
                         }
                     }

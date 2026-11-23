@@ -333,6 +333,8 @@ private fun PlaybackNavHost(
                     }
                 }
             )
+            // Dex Hub TV (DEXHUB.md): what the viewer likes, asked once over Home
+            com.nuvio.tv.dexhub.welcome.DexHubWelcome()
         }
 
         composable(

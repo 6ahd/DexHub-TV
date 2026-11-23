@@ -50,4 +50,22 @@
     <string name="dexhub_sources_sort_addon">Add-on</string>
     <string name="dexhub_sources_flix">Sources in Flix\'s design</string>
     <string name="dexhub_sources_flix_sub">Quality tabs and a card per add-on; off shows the list</string>
+    <string name="dexhub_welcome_title">What do you like to watch?</string>
+    <string name="dexhub_welcome_sub">Pick a few: Dex Hub TV puts them first in the menu and in DexWorld. You can change them later in Layout.</string>
+    <string name="dexhub_welcome_go">Start</string>
+    <string name="dexhub_welcome_skip">Skip</string>
+    <string name="dexhub_like_gulf">Gulf series</string>
+    <string name="dexhub_like_egypt">Egyptian series</string>
+    <string name="dexhub_like_turkish">Turkish series</string>
+    <string name="dexhub_like_levant">Levantine series</string>
+    <string name="dexhub_like_arabic_films">Arabic films</string>
+    <string name="dexhub_like_hollywood">Hollywood</string>
+    <string name="dexhub_like_korean">Korean and Asian</string>
+    <string name="dexhub_like_anime">Anime</string>
+    <string name="dexhub_like_kids">Kids and family</string>
+    <string name="dexhub_like_docs">Documentaries</string>
+    <string name="dexhub_like_live">Live TV</string>
+    <string name="dexhub_like_sports">Sports</string>
+    <string name="dexhub_interests_again">What I like to watch</string>
+    <string name="dexhub_interests_again_sub">Ask again on Home; the answers order the menu and DexWorld</string>
 </resources>

@@ -50,4 +50,22 @@
     <string name="dexhub_sources_sort_addon">الإضافة</string>
     <string name="dexhub_sources_flix">المصادر بتصميم Flix</string>
     <string name="dexhub_sources_flix_sub">تبويبات الجودة وبطاقة لكل إضافة؛ لو طفيته تطلع القائمة</string>
+    <string name="dexhub_welcome_title">وش تحب تشوف؟</string>
+    <string name="dexhub_welcome_sub">اختر اللي يعجبك، ويطلع لك أول في القائمة وفي DexWorld. تقدر تغيره بعدين من الشكل.</string>
+    <string name="dexhub_welcome_go">ابدأ</string>
+    <string name="dexhub_welcome_skip">تخطي</string>
+    <string name="dexhub_like_gulf">مسلسلات خليجية</string>
+    <string name="dexhub_like_egypt">مسلسلات مصرية</string>
+    <string name="dexhub_like_turkish">مسلسلات تركية</string>
+    <string name="dexhub_like_levant">مسلسلات شامية</string>
+    <string name="dexhub_like_arabic_films">أفلام عربية</string>
+    <string name="dexhub_like_hollywood">هوليوود</string>
+    <string name="dexhub_like_korean">كوري وآسيوي</string>
+    <string name="dexhub_like_anime">أنمي</string>
+    <string name="dexhub_like_kids">أطفال وعائلة</string>
+    <string name="dexhub_like_docs">وثائقي</string>
+    <string name="dexhub_like_live">البث المباشر</string>
+    <string name="dexhub_like_sports">رياضة</string>
+    <string name="dexhub_interests_again">وش أحب أشوف</string>
+    <string name="dexhub_interests_again_sub">يسألك مرة ثانية في الرئيسية؛ اختياراتك ترتب القائمة وDexWorld</string>
 </resources>

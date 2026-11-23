@@ -82,7 +82,7 @@ data class DexWorldUiState(
 )
 
 @HiltViewModel
-class DexWorldViewModel @Inject constructor(@ApplicationContext context: Context) : ViewModel() {
+class DexWorldViewModel @Inject constructor(@ApplicationContext private val context: Context) : ViewModel() {
     private val client = DexWorldClient(File(context.filesDir, "dexhub_dexworld"))
     private val language get() = Locale.getDefault().language
     private val _state = MutableStateFlow(DexWorldUiState())
@@ -93,9 +93,20 @@ class DexWorldViewModel @Inject constructor(@ApplicationContext context: Context
         viewModelScope.launch {
             val rows = withContext(Dispatchers.IO) { client.page(language) }
             _state.update {
-                it.copy(shelves = rows?.let(DexWorldClient::shelves).orEmpty(), loading = false, failed = rows == null)
+                it.copy(shelves = rows?.let(DexWorldClient::shelves).orEmpty().let(::ranked), loading = false, failed = rows == null)
             }
         }
+    }
+
+    /** The viewer's first-run answers first: matching sections lead their shelf, and those shelves lead the page. */
+    private fun ranked(shelves: List<DexWorldClient.Shelf>): List<DexWorldClient.Shelf> {
+        val interests = com.nuvio.tv.dexhub.welcome.DexHubInterests.chosen(context).value
+        if (interests.isEmpty()) return shelves
+        fun score(m: DexWorldClient.Member) = com.nuvio.tv.dexhub.welcome.DexHubInterests.rank(m.title, interests)
+        return shelves
+            .map { shelf -> shelf.copy(sections = shelf.sections.sortedByDescending(::score)) }
+            .sortedByDescending { shelf -> maxOf(shelf.sections.maxOfOrNull(::score) ?: 0,
+                com.nuvio.tv.dexhub.welcome.DexHubInterests.rank(shelf.title, interests)) }
     }
 
     fun open(section: DexWorldClient.Member) {
