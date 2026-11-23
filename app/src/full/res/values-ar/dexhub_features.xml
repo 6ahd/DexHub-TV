@@ -156,4 +156,10 @@
     <string name="dexhub_settings_app_font">خط التطبيق</string>
     <string name="dexhub_settings_app_font_sub">خط التطبيق كامل</string>
     <string name="dexhub_settings_sources">المصادر</string>
+
+    <string name="dexhub_settings_trailer">إعلان الرئيسية</string>
+    <string name="dexhub_settings_trailer_sub">وين يشتغل إعلان العمل اللي واقف عليه في الرئيسية</string>
+    <string name="dexhub_trailer_window">فوق، مكان الواجهة (الرئيسية وصفوفها تبقى)</string>
+    <string name="dexhub_trailer_card">داخل البوستر</string>
+    <string name="dexhub_trailer_full">ملء الشاشة (الرئيسية تختفي)</string>
 </resources>

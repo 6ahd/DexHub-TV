@@ -156,4 +156,10 @@
     <string name="dexhub_settings_app_font">App font</string>
     <string name="dexhub_settings_app_font_sub">The font of the whole app</string>
     <string name="dexhub_settings_sources">Sources</string>
+
+    <string name="dexhub_settings_trailer">Home trailer</string>
+    <string name="dexhub_settings_trailer_sub">Where the focused title\'s trailer plays on the Home</string>
+    <string name="dexhub_trailer_window">In the hero (the Home and its rows stay)</string>
+    <string name="dexhub_trailer_card">In the poster</string>
+    <string name="dexhub_trailer_full">Full screen (the Home fades)</string>
 </resources>

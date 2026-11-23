@@ -53,7 +53,8 @@ at the hook points below.
 | `ui/screens/detail/MetaDetailsScreen.kt` | the theme music (one call) |
 | `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
 | `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches; the Usenet row |
-| `NuvioApplication.kt` | starts the Usenet add-on (one call) |
+| `NuvioApplication.kt` | starts the Usenet add-on; moves a full-screen Home trailer into the hero's window once |
+| `data/local/LayoutPreferenceDataStore.kt` | the Home trailer plays in the hero's window by default (`FEATHERED_WINDOW`), and `dexHubTrailerInHeroOnce` |
 | `ui/screens/settings/PlaybackSubtitleSettings.kt` | the "Translate subtitles with", "Sync by the film's speech" and "Shared sync with DexWorld" rows |
 | `ui/screens/settings/SettingsCatalog.kt`, `SettingsScreen.kt`, `SettingsSearch.kt` | the Dex Hub category (`SettingsCategory.DEXHUB`) |
 | `ui/screens/player/SubtitleSelectionOverlay.kt` | also "Translate subtitles with", the AI service chosen from the player |

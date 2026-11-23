@@ -323,10 +323,11 @@ class LayoutPreferenceDataStore @Inject constructor(
 
     val focusedPosterBackdropTrailerPlaybackTarget: Flow<FocusedPosterTrailerPlaybackTarget> =
         profileFlow { prefs ->
+            // Dex Hub TV (DEXHUB.md): the trailer plays in a window in the hero; the Home and its rows stay
             val stored = prefs[focusedPosterBackdropTrailerPlaybackTargetKey]
-                ?: FocusedPosterTrailerPlaybackTarget.HERO_MEDIA.name
+                ?: FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW.name
             runCatching { FocusedPosterTrailerPlaybackTarget.valueOf(stored) }
-                .getOrDefault(FocusedPosterTrailerPlaybackTarget.HERO_MEDIA)
+                .getOrDefault(FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW)
         }
 
     val posterCardWidthDp: Flow<Int> = profileFlow { prefs ->
@@ -571,7 +572,7 @@ class LayoutPreferenceDataStore @Inject constructor(
                 prefs[focusedPosterBackdropTrailerPlaybackTargetKey] == null
             ) {
                 prefs[focusedPosterBackdropTrailerPlaybackTargetKey] =
-                    FocusedPosterTrailerPlaybackTarget.HERO_MEDIA.name
+                    FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW.name
             }
             prefs[hasChosenKey] = true
         }
@@ -735,6 +736,22 @@ class LayoutPreferenceDataStore @Inject constructor(
     suspend fun setFocusedPosterBackdropTrailerLogoEnabled(enabled: Boolean) {
         store().edit { prefs ->
             prefs[focusedPosterBackdropTrailerLogoKey] = enabled
+        }
+    }
+
+    /**
+     * Dex Hub TV (DEXHUB.md), once a profile: a trailer set to take the whole screen (Arc's default, which fades the
+     * Home away) plays in the hero's window instead. Chosen again in Settings, it stays.
+     */
+    suspend fun dexHubTrailerInHeroOnce() {
+        val moved = androidx.datastore.preferences.core.booleanPreferencesKey("dexhub_trailer_in_hero")
+        store().edit { prefs ->
+            if (prefs[moved] == true) return@edit
+            val now = prefs[focusedPosterBackdropTrailerPlaybackTargetKey]
+            if (now == null || now == FocusedPosterTrailerPlaybackTarget.HERO_MEDIA.name) {
+                prefs[focusedPosterBackdropTrailerPlaybackTargetKey] = FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW.name
+            }
+            prefs[moved] = true
         }
     }
 

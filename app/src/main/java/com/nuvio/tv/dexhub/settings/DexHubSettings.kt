@@ -49,6 +49,7 @@ import kotlinx.coroutines.launch
 internal interface DexHubSettingsDeps {
     fun themeDataStore(): ThemeDataStore
     fun playerSettingsDataStore(): PlayerSettingsDataStore
+    fun layoutPreferenceDataStore(): com.nuvio.tv.data.local.LayoutPreferenceDataStore
 }
 
 /**
@@ -64,6 +65,9 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
     val player by deps.playerSettingsDataStore().playerSettings.collectAsState(initial = null)
     val themeMusic by com.nuvio.tv.dexhub.thememusic.DexHubThemeMusicPrefs.enabled(context).collectAsStateWithLifecycle()
     val flixSources = com.nuvio.tv.dexhub.sources.rememberFlixSources()
+    val trailerTarget by deps.layoutPreferenceDataStore().focusedPosterBackdropTrailerPlaybackTarget
+        .collectAsState(initial = com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW)
+    var trailerDialog by remember { mutableStateOf(false) }
     var appFontDialog by remember { mutableStateOf(false) }
     var subtitleFontDialog by remember { mutableStateOf(false) }
     val listState = rememberLazyListState()
@@ -107,6 +111,14 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
                         onClick = { appFontDialog = true }
                     )
                 }
+                item(key = "trailer") {
+                    SettingsActionRow(
+                        title = stringResource(R.string.dexhub_settings_trailer),
+                        subtitle = stringResource(R.string.dexhub_settings_trailer_sub),
+                        value = stringResource(trailerLabel(trailerTarget)),
+                        onClick = { trailerDialog = true }
+                    )
+                }
                 item(key = "music") {
                     SettingsToggleRow(
                         title = stringResource(R.string.dexhub_theme_music),
@@ -137,6 +149,18 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
         }
     }
 
+    if (trailerDialog) {
+        SettingsSingleChoiceDialog(
+            title = stringResource(R.string.dexhub_settings_trailer),
+            options = com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.entries.map { SettingsPickerOption(it, stringResource(trailerLabel(it))) },
+            selectedValue = trailerTarget,
+            onOptionSelected = { target ->
+                scope.launch { deps.layoutPreferenceDataStore().setFocusedPosterBackdropTrailerPlaybackTarget(target) }
+                trailerDialog = false
+            },
+            onDismiss = { trailerDialog = false }
+        )
+    }
     if (appFontDialog) {
         SettingsSingleChoiceDialog(
             title = stringResource(R.string.dexhub_settings_app_font),
@@ -161,4 +185,10 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
             onDismiss = { subtitleFontDialog = false }
         )
     }
+}
+
+private fun trailerLabel(target: com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget): Int = when (target) {
+    com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW -> R.string.dexhub_trailer_window
+    com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.EXPANDED_CARD -> R.string.dexhub_trailer_card
+    com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.HERO_MEDIA -> R.string.dexhub_trailer_full
 }

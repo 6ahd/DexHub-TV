@@ -150,6 +150,13 @@ class NuvioApplication : Application(), SingletonImageLoader.Factory {
         PluginRuntimeHooks.onApplicationCreate(this)
         // Dex Hub TV (DEXHUB.md): the Usenet add-on on 127.0.0.1 (the engine starts only when it is needed)
         com.nuvio.tv.dexhub.usenet.UsenetAddon.start(this)
+        // Dex Hub TV (DEXHUB.md): a full-screen Home trailer moves into the hero's window, once
+        kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.Dispatchers.IO).launch {
+            runCatching {
+                dagger.hilt.android.EntryPointAccessors.fromApplication(this@NuvioApplication, com.nuvio.tv.dexhub.settings.DexHubSettingsDeps::class.java)
+                    .layoutPreferenceDataStore().dexHubTrailerInHeroOnce()
+            }
+        }
         androidTvChannelSyncService.start()
         // Hydrate the AFR fps cache from disk (background load) so cold
         // rewatches take the preflight hit path (switch before prepare).
