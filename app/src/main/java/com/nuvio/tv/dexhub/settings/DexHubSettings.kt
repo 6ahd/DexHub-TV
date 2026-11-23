@@ -65,6 +65,7 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
     val player by deps.playerSettingsDataStore().playerSettings.collectAsState(initial = null)
     val themeMusic by com.nuvio.tv.dexhub.thememusic.DexHubThemeMusicPrefs.enabled(context).collectAsStateWithLifecycle()
     val flixSources = com.nuvio.tv.dexhub.sources.rememberFlixSources()
+    val collectionLook by com.nuvio.tv.dexhub.collections.DexHubCollectionLook.flow(context).collectAsStateWithLifecycle()
     val trailerTarget by deps.layoutPreferenceDataStore().focusedPosterBackdropTrailerPlaybackTarget
         .collectAsState(initial = com.nuvio.tv.domain.model.FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW)
     var trailerDialog by remember { mutableStateOf(false) }
@@ -117,6 +118,14 @@ internal fun DexHubSettingsContent(initialFocusRequester: FocusRequester? = null
                         subtitle = stringResource(R.string.dexhub_settings_trailer_sub),
                         value = stringResource(trailerLabel(trailerTarget)),
                         onClick = { trailerDialog = true }
+                    )
+                }
+                item(key = "collections") {
+                    SettingsToggleRow(
+                        title = stringResource(R.string.dexhub_settings_collections),
+                        subtitle = stringResource(R.string.dexhub_settings_collections_sub),
+                        checked = collectionLook,
+                        onToggle = { com.nuvio.tv.dexhub.collections.DexHubCollectionLook.set(context, !collectionLook) }
                     )
                 }
                 item(key = "music") {

@@ -144,6 +144,7 @@ fun FolderDetailScreen(
     val scrollToTopTrigger by viewModel.scrollToTopTrigger.collectAsStateWithLifecycle()
 
     if (uiState.viewMode == FolderViewMode.FOLLOW_LAYOUT) {
+      Box(modifier = Modifier.fillMaxSize()) {
         FollowLayoutContent(
             uiState = uiState,
             focusState = followLayoutFocusState,
@@ -168,6 +169,12 @@ fun FolderDetailScreen(
             onFocusedRowKeyChanged = viewModel::onFocusedRowChanged,
             scrollToTopTrigger = scrollToTopTrigger
         )
+        // Dex Hub TV (DEXHUB.md): the collection's mark in the corner, as skin.dexhub shows it
+        if (uiState.homeLayout == HomeLayout.MODERN) com.nuvio.tv.dexhub.collections.DexHubCollectionMark(
+            folder = folder,
+            modifier = Modifier.align(Alignment.TopStart).padding(start = NuvioTheme.spacing.xxxl, top = NuvioTheme.spacing.lg)
+        )
+      }
     } else {
         Column(
             modifier = Modifier

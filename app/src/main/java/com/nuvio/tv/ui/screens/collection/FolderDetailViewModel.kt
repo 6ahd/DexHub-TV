@@ -270,7 +270,9 @@ class FolderDetailViewModel @Inject constructor(
                     it.copy(
                         folder = folder,
                         collectionTitle = collection?.title ?: "",
-                        viewMode = collection?.viewMode ?: FolderViewMode.TABBED_GRID,
+                        viewMode = com.nuvio.tv.dexhub.collections.DexHubCollectionLook.viewMode(
+                            appContext, collection?.viewMode ?: FolderViewMode.TABBED_GRID
+                        ),
                         isLoading = false
                     )
                 }
@@ -301,7 +303,10 @@ class FolderDetailViewModel @Inject constructor(
             val posterCardCornerRadiusDp = layoutPreferenceDataStore.posterCardCornerRadiusDp.first()
             val showAll = (collection?.showAllTab ?: true) && folder.sources.size >= 2
 
-            val viewMode = collection?.viewMode ?: FolderViewMode.TABBED_GRID
+            // Dex Hub TV (DEXHUB.md): the tab grid opens in Dex Hub's look (the Home's hero and rows)
+            val viewMode = com.nuvio.tv.dexhub.collections.DexHubCollectionLook.viewMode(
+                appContext, collection?.viewMode ?: FolderViewMode.TABBED_GRID
+            )
             val useShimmerPlaceholders = viewMode == FolderViewMode.FOLLOW_LAYOUT &&
                 (homeLayout == HomeLayout.MODERN || homeLayout == HomeLayout.CLASSIC)
 

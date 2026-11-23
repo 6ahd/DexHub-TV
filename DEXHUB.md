@@ -27,7 +27,7 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/thememusic/` | Theme music on title pages, as Flix plays it: ThemerrDB's theme songs through the trailers' YouTube reader (Layout > Title page) |
 | `app/src/main/java/com/nuvio/tv/dexhub/sources/` | The sources page in Flix's design: quality tabs, a sort, a card per add-on (Layout > Sources) |
 | `app/src/main/java/com/nuvio/tv/dexhub/welcome/` | The first-run question (what the viewer likes), which orders the side menu and DexWorld |
-| `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
+| `app/src/main/java/com/nuvio/tv/dexhub/collections/` | Collections in Dex Hub's look (a collection on the tab grid opens like the Home: hero and rows, its mark in the corner); in other views its posters fanned behind its heading, as Flix draws it |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
 | `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate, by Google Translate or the viewer's AI service |
 | `app/src/main/java/com/nuvio/tv/dexhub/ai/` | The viewer's own AI service (ai_search.py's list: Groq, Gemini, OpenAI, Claude, Grok, OpenRouter, DeepSeek, Mistral), its key and model on this device (Playback > Subtitles > Translate subtitles with) |
@@ -62,7 +62,8 @@ at the hook points below.
 | `ui/screens/player/PlayerRuntimeControllerAutomaticSubtitleSync.kt` | tells Dex Hub's references what is playing (one call) |
 | `app/src/main/cpp/CMakeLists.txt` | the `dexhub_usenet` bridge library |
 | `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |
-| `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection |
+| `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection; the collection's mark over the Home-like view |
+| `ui/screens/collection/FolderDetailViewModel.kt` | the view a collection opens in goes through `DexHubCollectionLook.viewMode` |
 | `ui/screens/player/PlayerUiState.kt`, `PlayerRuntimeControllerPlaybackEvents.kt`, `SubtitleSelectionOverlay.kt` | the Translate event, its handling and its row in the subtitles panel |
 | `ui/screens/player/PlayerRuntimeControllerSubtitleTiming.kt` | a subtitle on this device (`file://`, a translation) is read from its file |
 | `MainActivity.kt` (menu entries, `appRootRoutes`), `ui/navigation/NuvioNavHost.kt` | the Live TV and DexWorld pages and their menu entries |
