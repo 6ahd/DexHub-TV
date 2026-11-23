@@ -49,7 +49,7 @@ internal fun translateSubtitle(controller: PlayerRuntimeController) = with(contr
                 val body = downloadSubtitleBody(source.url, source.lang, source.headers)
                 val lines = withContext(Dispatchers.Default) { SubtitleTranslator.parse(body) }
                 if (lines.isEmpty()) throw SubtitleTranslator.TranslateException("empty")
-                val now = _uiState.value.currentPosition
+                val now = _playbackTimeline.value.currentPosition
                 val first = lines.indexOfFirst { it.endMs >= now }.coerceAtLeast(0)
                 val ai = choice?.let { c -> SubtitleTranslator.Ask { system, user -> com.nuvio.tv.dexhub.ai.AiService.chat(c, system, user) } }
                 val language = Locale(target).getDisplayLanguage(Locale.ENGLISH).ifEmpty { target }
