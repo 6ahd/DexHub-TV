@@ -473,6 +473,11 @@ internal object AutomaticSubtitleSync {
             }
 
             if (referenceTracks.isEmpty()) {
+                // Dex Hub TV (DEXHUB.md): an English subtitle of this release, or the film's speech by Whisper
+                referenceTracks = com.nuvio.tv.dexhub.sync.DexHubSyncReferences.find(sourceKey)
+            }
+
+            if (referenceTracks.isEmpty()) {
                 val noSubtitleTracks = indexedTimeline?.noSubtitleTracks == true
                 if (noSubtitleTracks) {
                     onNoSubtitleTracks()

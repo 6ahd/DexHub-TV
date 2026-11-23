@@ -63,7 +63,34 @@ object AiService {
     fun save(context: Context, choice: Choice) {
         state.value = choice
         context.applicationContext.getSharedPreferences(Prefs, Context.MODE_PRIVATE).edit()
-            .putString("service", choice.service).putString("key", choice.key).putString("model", choice.model).apply()
+            .putString("service", choice.service).putString("key", choice.key).putString("model", choice.model)
+            .apply { if (choice.provider != null && choice.key.isNotBlank()) putString("key_${choice.service}", choice.key) }
+            .apply()
+    }
+
+    /** The key saved for a service, kept when another service (or Google) translates: Whisper reads Groq's or OpenAI's. */
+    fun keyFor(context: Context, service: String): String {
+        val p = context.applicationContext.getSharedPreferences(Prefs, Context.MODE_PRIVATE)
+        return p.getString("key_$service", null)?.takeIf { it.isNotBlank() }
+            ?: current(context).takeIf { it.service == service }?.key.orEmpty()
+    }
+
+    private val whisperState = MutableStateFlow<Boolean?>(null)
+
+    /** Whether AutoSync may ask Whisper (with the viewer's Groq or OpenAI key) when nothing else gives it a clock. */
+    fun whisperFlow(context: Context): StateFlow<Boolean> {
+        if (whisperState.value == null) {
+            whisperState.value = context.applicationContext.getSharedPreferences(Prefs, Context.MODE_PRIVATE).getBoolean("whisper", true)
+        }
+        @Suppress("UNCHECKED_CAST")
+        return whisperState.asStateFlow() as StateFlow<Boolean>
+    }
+
+    fun whisper(context: Context): Boolean = whisperFlow(context).value
+
+    fun setWhisper(context: Context, on: Boolean) {
+        whisperState.value = on
+        context.applicationContext.getSharedPreferences(Prefs, Context.MODE_PRIVATE).edit().putBoolean("whisper", on).apply()
     }
 
     /** The service's answer to [system] and [user] (blocking). Throws [AiException] with the HTTP status. */

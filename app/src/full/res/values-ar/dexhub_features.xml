@@ -131,4 +131,14 @@
     <string name="dexhub_ai_refused">%1$s رفض المفتاح</string>
     <string name="dexhub_ai_busy">%1$s مشغول أو وصل المفتاح حده؛ جرّب بعدين</string>
     <string name="dexhub_ai_failed">الخدمة ما ردّت: %1$s</string>
+
+    <!-- مراجع المزامنة من Dex Hub (dexhub/sync) -->
+    <string name="dexhub_sync_english">المزامنة التلقائية: التوقيت على الترجمة الإنجليزية لنفس النسخة</string>
+    <string name="dexhub_sync_whisper">المزامنة التلقائية: جاري سماع الفيلم بـ Whisper…</string>
+    <string name="dexhub_sync_whisper_key">المزامنة التلقائية: Whisper رفض المفتاح</string>
+    <string name="dexhub_sync_whisper_limit">المزامنة التلقائية: خلص حد Whisper لليوم</string>
+    <string name="dexhub_sync_whisper_no_sound">المزامنة التلقائية: صوت هذا الفيلم ما ينقرأ على هذا الجهاز</string>
+    <string name="dexhub_whisper_sync">المزامنة بكلام الفيلم (Whisper)</string>
+    <string name="dexhub_whisper_sync_sub">لما الفيديو ما فيه ترجمة يتوقّت عليها، تروح دقائق من صوته لـ Whisper بمفتاح Groq أو OpenAI حقك</string>
+    <string name="dexhub_whisper_sync_no_key">يحتاج مفتاح Groq (مجاني) أو OpenAI في «ترجمة الترجمات بـ»</string>
 </resources>

@@ -131,4 +131,14 @@
     <string name="dexhub_ai_refused">%1$s refused the key</string>
     <string name="dexhub_ai_busy">%1$s is busy or the key\'s limit is reached; try again later</string>
     <string name="dexhub_ai_failed">The service didn\'t answer: %1$s</string>
+
+    <!-- Dex Hub's sync references (dexhub/sync) -->
+    <string name="dexhub_sync_english">AutoSync: timing by the English subtitle of this release</string>
+    <string name="dexhub_sync_whisper">AutoSync: listening to the film with Whisper…</string>
+    <string name="dexhub_sync_whisper_key">AutoSync: Whisper refused the key</string>
+    <string name="dexhub_sync_whisper_limit">AutoSync: Whisper\'s limit for today is reached</string>
+    <string name="dexhub_sync_whisper_no_sound">AutoSync: this film\'s sound can\'t be read on this device</string>
+    <string name="dexhub_whisper_sync">Sync by the film\'s speech (Whisper)</string>
+    <string name="dexhub_whisper_sync_sub">When the video has no subtitle to time by, a few minutes of its sound go to Whisper with your Groq or OpenAI key</string>
+    <string name="dexhub_whisper_sync_no_key">Needs a Groq (free) or OpenAI key in \"Translate subtitles with\"</string>
 </resources>

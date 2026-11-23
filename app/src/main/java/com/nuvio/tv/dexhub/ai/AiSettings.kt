@@ -49,6 +49,25 @@ fun AiTranslationRow() {
     if (open) ServicesDialog(onDismiss = { open = false })
 }
 
+/**
+ * Playback > Subtitles > "Sync by the film's speech" (DEXHUB.md): AutoSync may send a few minutes of the film's
+ * sound to Whisper, with the viewer's Groq or OpenAI key, when the video has no subtitle to time by.
+ */
+@Composable
+fun WhisperSyncRow() {
+    val context = LocalContext.current
+    val on by AiService.whisperFlow(context).collectAsStateWithLifecycle()
+    val choice by AiService.choice(context).collectAsStateWithLifecycle()
+    val hasKey = remember(choice) { AiService.keyFor(context, "groq").isNotBlank() || AiService.keyFor(context, "openai").isNotBlank() }
+    com.nuvio.tv.ui.screens.settings.SettingsToggleRow(
+        title = stringResource(R.string.dexhub_whisper_sync),
+        subtitle = stringResource(if (hasKey) R.string.dexhub_whisper_sync_sub else R.string.dexhub_whisper_sync_no_key),
+        checked = on && hasKey,
+        enabled = hasKey,
+        onToggle = { AiService.setWhisper(context, !on) }
+    )
+}
+
 @Composable
 private fun ServicesDialog(onDismiss: () -> Unit) {
     val context = LocalContext.current
@@ -95,7 +114,7 @@ private fun KeyDialog(provider: AiService.Provider, onDone: () -> Unit, onDismis
     val scope = rememberCoroutineScope()
     val now = AiService.current(context)
     val same = now.service == provider.id
-    var key by remember { mutableStateOf(if (same) now.key else "") }
+    var key by remember { mutableStateOf(AiService.keyFor(context, provider.id)) }
     var model by remember { mutableStateOf(if (same && now.model.isNotEmpty()) now.model else provider.models.first()) }
     var testing by remember { mutableStateOf(false) }
     val works = stringResource(R.string.dexhub_ai_works)

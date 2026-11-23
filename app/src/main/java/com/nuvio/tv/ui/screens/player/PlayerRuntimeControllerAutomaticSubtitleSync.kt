@@ -102,6 +102,17 @@ internal fun PlayerRuntimeController.maybeRunAutomaticSubtitleSync(
     ) {
         return
     }
+    // Dex Hub TV (DEXHUB.md): what is playing, for Dex Hub's own sync references
+    com.nuvio.tv.dexhub.sync.DexHubSyncReferences.playing(
+        context = context,
+        streamUrl = currentStreamUrl,
+        headers = currentHeaders.toMap(),
+        id = currentVideoId ?: contentId,
+        season = _uiState.value.currentSeason,
+        episode = _uiState.value.currentEpisode,
+        names = listOf(currentFilename, _uiState.value.currentStreamName, currentStreamDescription),
+        durationMs = _exoPlayer?.duration?.takeIf { it > 0 } ?: 0L,
+    )
     if (isUsingMpvEngine()) {
         runMpvAutomaticSubtitleSync(selectedSubtitle, candidateScope)
         return
