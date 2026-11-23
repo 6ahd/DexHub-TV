@@ -174,6 +174,11 @@ fun FolderDetailScreen(
                 .fillMaxSize()
                 .padding(top = NuvioTheme.spacing.xl)
         ) {
+            // Dex Hub TV (DEXHUB.md): the collection's own posters fanned behind its heading, as Flix draws it
+            val stripPosters = remember(uiState.tabs) {
+                uiState.tabs.flatMap { it.catalogRow?.items.orEmpty() }.mapNotNull { it.poster }.distinct().take(14)
+            }
+            com.nuvio.tv.dexhub.collections.DexHubCollectionStrip(stripPosters)
             when (uiState.viewMode) {
                 FolderViewMode.TABBED_GRID -> TabbedGridContent(
                     scoutAction = viewModel.scoutSliceSaved?.let { saved ->

@@ -26,6 +26,8 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/livetv/` | Live TV, from Flix: M3U playlists (Flix's parser, from Plozz, GPL-3.0) and Xtream accounts, with their channels (XMLTV now and next, favourites, a preview of the focused channel), films and series (a panel's episodes asked for when a series opens) |
 | `app/src/main/java/com/nuvio/tv/dexhub/thememusic/` | Theme music on title pages, as Flix plays it: ThemerrDB's theme songs through the trailers' YouTube reader (Layout > Title page) |
 | `app/src/main/java/com/nuvio/tv/dexhub/sources/` | The sources page in Flix's design: quality tabs, a sort, a card per add-on (Layout > Sources) |
+| `app/src/main/java/com/nuvio/tv/dexhub/welcome/` | The first-run question (what the viewer likes), which orders the side menu and DexWorld |
+| `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -43,6 +45,8 @@ at the hook points below.
 | `ui/screens/detail/MetaDetailsScreen.kt` | the theme music (one call) |
 | `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
 | `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches |
+| `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |
+| `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection |
 | `MainActivity.kt` (menu entries, `appRootRoutes`), `ui/navigation/NuvioNavHost.kt` | the Live TV and DexWorld pages and their menu entries |
 | `domain/model/AppTheme.kt`, `ThemeAccess.kt`, `ui/theme/ThemeColors.kt`, `ui/theme/Theme.kt`, `ui/brand/ArcPalette.kt`, `ui/screens/settings/ThemeSettings*.kt`, `MainActivity.kt` | the Dex Hub theme (lavender on navy), first in the list and the default (`DefaultAppTheme`) |
 
