@@ -162,7 +162,7 @@ private fun UsenetDialog(onDismiss: () -> Unit) {
             }
         }
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-            DialogButton(stringResource(R.string.action_close), onDismiss)
+            com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_close), onDismiss)
         }
     }
 
@@ -215,15 +215,15 @@ private fun ProviderDialog(
         width = 760.dp
     ) {
         LazyColumn(modifier = Modifier.fillMaxWidth().heightIn(max = 470.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { Field(stringResource(R.string.dexhub_usenet_host), host, { host = it.trim() }, placeholder = "news.example.com") }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_host), host, { host = it.trim() }, placeholder = "news.example.com") }
             item {
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                    Box(Modifier.weight(1f)) { Field(stringResource(R.string.dexhub_usenet_port), port, { port = it.filter(Char::isDigit) }, number = true) }
-                    Box(Modifier.weight(1f)) { Field(stringResource(R.string.dexhub_usenet_connections), connections, { connections = it.filter(Char::isDigit) }, number = true) }
+                    Box(Modifier.weight(1f)) { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_port), port, { port = it.filter(Char::isDigit) }, number = true) }
+                    Box(Modifier.weight(1f)) { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_connections), connections, { connections = it.filter(Char::isDigit) }, number = true) }
                 }
             }
-            item { Field(stringResource(R.string.dexhub_usenet_user), user, { user = it.trim() }) }
-            item { Field(stringResource(R.string.dexhub_usenet_password_field), password, { password = it }, secret = true) }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_user), user, { user = it.trim() }) }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_password_field), password, { password = it }, secret = true) }
             item {
                 SettingsToggleRow(title = "SSL", subtitle = null, checked = ssl, onToggle = {
                     ssl = !ssl
@@ -237,10 +237,10 @@ private fun ProviderDialog(
             item { SettingsToggleRow(title = stringResource(R.string.dexhub_usenet_off), subtitle = null, checked = off, onToggle = { off = !off }) }
         }
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-            if (!isNew) { DialogButton(stringResource(R.string.action_delete), onDelete); Spacer(Modifier.width(NuvioTheme.spacing.sm)) }
-            DialogButton(stringResource(R.string.action_cancel), onDismiss)
+            if (!isNew) { com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_delete), onDelete); Spacer(Modifier.width(NuvioTheme.spacing.sm)) }
+            com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_cancel), onDismiss)
             Spacer(Modifier.width(NuvioTheme.spacing.sm))
-            DialogButton(stringResource(R.string.action_save), primary = true, onClick = {
+            com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_save), primary = true, onClick = {
                 if (host.isNotBlank()) onSave(UsenetConfig.Provider(
                     host = host.removePrefix("nntps://").removePrefix("nntp://").substringBefore('/'),
                     port = port.toIntOrNull() ?: if (ssl) 563 else 119,
@@ -273,9 +273,9 @@ private fun IndexerDialog(
         width = 760.dp
     ) {
         LazyColumn(modifier = Modifier.fillMaxWidth().heightIn(max = 470.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { Field(stringResource(R.string.dexhub_usenet_indexer_url), url, { url = it.trim() }, placeholder = "https://api.nzbgeek.info") }
-            item { Field(stringResource(R.string.dexhub_usenet_api_key), key, { key = it.trim() }, secret = true) }
-            item { Field(stringResource(R.string.dexhub_usenet_indexer_name), name, { name = it }) }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_indexer_url), url, { url = it.trim() }, placeholder = "https://api.nzbgeek.info") }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_api_key), key, { key = it.trim() }, secret = true) }
+            item { com.nuvio.tv.dexhub.ui.DexHubField(stringResource(R.string.dexhub_usenet_indexer_name), name, { name = it }) }
             item {
                 SettingsToggleRow(title = "Prowlarr", subtitle = stringResource(R.string.dexhub_usenet_prowlarr_sub),
                     checked = prowlarr, onToggle = { prowlarr = !prowlarr })
@@ -283,86 +283,16 @@ private fun IndexerDialog(
             item { SettingsToggleRow(title = stringResource(R.string.dexhub_usenet_off), subtitle = null, checked = off, onToggle = { off = !off }) }
         }
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-            if (!isNew) { DialogButton(stringResource(R.string.action_delete), onDelete); Spacer(Modifier.width(NuvioTheme.spacing.sm)) }
-            DialogButton(stringResource(R.string.action_cancel), onDismiss)
+            if (!isNew) { com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_delete), onDelete); Spacer(Modifier.width(NuvioTheme.spacing.sm)) }
+            com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_cancel), onDismiss)
             Spacer(Modifier.width(NuvioTheme.spacing.sm))
-            DialogButton(stringResource(R.string.action_save), primary = true, onClick = {
+            com.nuvio.tv.dexhub.ui.DexHubDialogButton(stringResource(R.string.action_save), primary = true, onClick = {
                 val address = url.let { if (it.startsWith("http")) it else "https://$it" }.trimEnd('/')
                 if (url.isNotBlank()) onSave(UsenetConfig.Indexer(
                     name = name.trim().ifEmpty { address.removePrefix("https://").removePrefix("http://").removePrefix("api.").substringBefore('/').substringBefore('.') },
                     url = address, key = key, prowlarr = prowlarr, off = off
                 ))
             })
-        }
-    }
-}
-
-@Composable
-private fun DialogButton(text: String, onClick: () -> Unit, primary: Boolean = false) {
-    Button(
-        onClick = onClick,
-        colors = ButtonDefaults.colors(
-            containerColor = if (primary) NuvioTheme.colors.BackgroundCard else NuvioTheme.colors.BackgroundElevated,
-            contentColor = NuvioTheme.colors.TextPrimary
-        )
-    ) { Text(text) }
-}
-
-/** A labelled text field the remote can reach, as Arc's own key dialogs draw it. */
-@Composable
-private fun Field(
-    label: String,
-    value: String,
-    onChange: (String) -> Unit,
-    placeholder: String = "",
-    secret: Boolean = false,
-    number: Boolean = false
-) {
-    var focused by remember { mutableStateOf(false) }
-    val input = remember { FocusRequester() }
-    val keyboard = LocalSoftwareKeyboardController.current
-    val shape = RoundedCornerShape(10.dp)
-    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        Text(label, style = MaterialTheme.typography.labelMedium, color = NuvioTheme.colors.TextSecondary)
-        Card(
-            onClick = { input.requestFocus() },
-            modifier = Modifier.fillMaxWidth().onFocusChanged { focused = it.isFocused || it.hasFocus },
-            colors = CardDefaults.colors(
-                containerColor = NuvioTheme.colors.BackgroundElevated,
-                focusedContainerColor = NuvioTheme.colors.BackgroundElevated
-            ),
-            border = CardDefaults.border(
-                border = Border(border = BorderStroke(NuvioTheme.spacing.hairline, NuvioTheme.colors.Border), shape = shape),
-                focusedBorder = Border(border = NuvioTheme.focusRing.border(NuvioTheme.spacing.xxs), shape = shape)
-            ),
-            shape = CardDefaults.shape(shape),
-            scale = CardDefaults.scale(focusedScale = 1f)
-        ) {
-            Box(Modifier.padding(horizontal = 14.dp, vertical = NuvioTheme.spacing.md)) {
-                BasicTextField(
-                    value = value,
-                    onValueChange = onChange,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .focusRequester(input)
-                        .onKeyEvent { e -> e.nativeKeyEvent.keyCode == KeyEvent.KEYCODE_DPAD_CENTER && e.nativeKeyEvent.action == KeyEvent.ACTION_DOWN },
-                    singleLine = true,
-                    visualTransformation = if (secret && !focused) PasswordVisualTransformation() else VisualTransformation.None,
-                    keyboardOptions = KeyboardOptions(
-                        imeAction = ImeAction.Done,
-                        keyboardType = when { number -> KeyboardType.Number; secret -> KeyboardType.Password; else -> KeyboardType.Uri }
-                    ),
-                    keyboardActions = KeyboardActions(onDone = { keyboard?.hide() }),
-                    textStyle = MaterialTheme.typography.bodyMedium.copy(color = NuvioTheme.colors.TextPrimary, textDirection = TextDirection.Ltr),
-                    cursorBrush = SolidColor(if (focused) NuvioTheme.colors.Primary else Color.Transparent),
-                    decorationBox = { inner ->
-                        if (value.isEmpty() && placeholder.isNotEmpty()) {
-                            Text(placeholder, style = MaterialTheme.typography.bodyMedium, color = NuvioTheme.colors.TextTertiary)
-                        }
-                        inner()
-                    }
-                )
-            }
         }
     }
 }

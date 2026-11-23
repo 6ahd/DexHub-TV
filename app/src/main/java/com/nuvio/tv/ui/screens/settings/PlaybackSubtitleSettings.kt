@@ -126,6 +126,9 @@ internal fun PlaybackSubtitlesSection(
         enabled = enabled
     )
 
+    // Dex Hub TV (DEXHUB.md): what the player's Translate uses, Google or the viewer's own AI service
+    com.nuvio.tv.dexhub.ai.AiTranslationRow()
+
     SettingsSectionLabel(text = stringResource(R.string.sub_style_label))
     SubtitleStylePreview(style = style)
     var showFontPicker by remember { mutableStateOf(false) }

@@ -113,4 +113,22 @@
     <string name="dexhub_usenet_refused">Usenet: %1$s refused (%2$s)</string>
     <string name="dexhub_usenet_provider_refused">Usenet: the provider refused the sign-in or its quota is used up</string>
     <string name="dexhub_usenet_not_opened">Usenet: this release didn\'t open (incomplete or protected)</string>
+
+    <!-- the viewer's AI service (dexhub/ai) -->
+    <string name="dexhub_translate_working_with">Translating the subtitle with %1$s…</string>
+    <string name="dexhub_ai_translate">Translate subtitles with</string>
+    <string name="dexhub_ai_translate_sub">What the player\'s Translate uses: Google Translate for free, or your own AI service for more natural lines</string>
+    <string name="dexhub_ai_services_sub">An AI service needs your own key from its site; it stays on this device</string>
+    <string name="dexhub_ai_google_sub">Free, no key</string>
+    <string name="dexhub_ai_your_key">With your own key</string>
+    <string name="dexhub_ai_in_use">In use</string>
+    <string name="dexhub_ai_chosen">Chosen</string>
+    <string name="dexhub_ai_key_hint">Make a key at %1$s and enter it here</string>
+    <string name="dexhub_ai_model">Model</string>
+    <string name="dexhub_ai_other_model">Model (or another one by its name)</string>
+    <string name="dexhub_ai_testing">Checking…</string>
+    <string name="dexhub_ai_works">The key works: subtitles are now translated with it</string>
+    <string name="dexhub_ai_refused">%1$s refused the key</string>
+    <string name="dexhub_ai_busy">%1$s is busy or the key\'s limit is reached; try again later</string>
+    <string name="dexhub_ai_failed">The service didn\'t answer: %1$s</string>
 </resources>

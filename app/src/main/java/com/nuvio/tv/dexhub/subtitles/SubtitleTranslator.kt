@@ -11,13 +11,15 @@ import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.json.JSONArray
+import org.json.JSONObject
 import java.util.concurrent.TimeUnit
 
 /**
  * A subtitle translated line by line, its timing kept, ported from Dex Hub for Kodi (resources/lib/subsync/
  * subtrans.py, 5.10.588+): SRT, WebVTT and ASS are read; each line goes out as one line (its breaks joined, its
  * tags dropped) and is laid out again for the screen; Google Translate's free address takes a few thousand
- * characters a request, two at a time, and its second address (the browser extension's) after a 429.
+ * characters a request, two at a time, and its second address (the browser extension's) after a 429. With the
+ * viewer's own AI service, sixty lines go as one JSON array and come back as one, line for line.
  */
 object SubtitleTranslator {
     data class Line(val startMs: Long, val endMs: Long, val text: String)
@@ -27,6 +29,7 @@ object SubtitleTranslator {
     private const val GoogleUrl = "https://translate.googleapis.com/translate_a/single"
     private const val GoogleAltUrl = "https://clients5.google.com/translate_a/t"
     private const val GoogleChars = 4200
+    private const val AiLines = 60
     private const val Workers = 2
     private const val LineWidth = 42
     private const val AltForMs = 600_000L
@@ -175,19 +178,51 @@ object SubtitleTranslator {
         return joined.split('\n').map { it.trim() }.takeIf { it.size == texts.size }
     }
 
+    // ---------------------------------------------------------------- the viewer's AI service
+
+    /** A chat with the viewer's AI service: (system, user) to its answer. */
+    fun interface Ask {
+        fun ask(system: String, user: String): String
+    }
+
+    private fun aiSystem(language: String) =
+        "You translate film and TV subtitles into $language. The user sends a JSON array of subtitle lines in order. " +
+            "Answer with only a JSON array of exactly the same length, each item the translation of the item at the " +
+            "same place: natural, short spoken $language as subtitles use it, names kept, no notes, no numbering, and no " +
+            "lines merged or split. Keep a leading \"- \" where a line has one."
+
+    /** The AI's lines for [texts], or null when its answer is not an array of as many lines. */
+    fun aiBatch(texts: List<String>, language: String, ai: Ask): List<String>? {
+        val answer = ai.ask(aiSystem(language), JSONArray(texts).toString())
+        val a = answer.indexOf('[')
+        val b = answer.lastIndexOf(']')
+        if (a < 0 || b <= a) return null
+        val got = runCatching { JSONArray(answer.substring(a, b + 1)) }.getOrNull() ?: return null
+        if (got.length() != texts.size) return null
+        return (0 until got.length()).map { got.opt(it)?.takeUnless { v -> v == JSONObject.NULL }?.toString().orEmpty().trim() }
+    }
+
     /** One batch, cut in two (and again) when the answer's lines do not match the question's. */
-    private fun batch(texts: List<String>, target: String): List<String> {
-        googleBatch(texts, target)?.let { return it }
+    private fun batch(texts: List<String>, target: String, language: String, ai: Ask?): List<String> {
+        (if (ai != null) aiBatch(texts, language, ai) else googleBatch(texts, target))?.let { return it }
         if (texts.size == 1) return texts
         val half = texts.size / 2
-        return batch(texts.subList(0, half), target) + batch(texts.subList(half, texts.size), target)
+        return batch(texts.subList(0, half), target, language, ai) + batch(texts.subList(half, texts.size), target, language, ai)
     }
 
     /**
      * [lines] in [target] (a language code such as "ar"), their timing kept. Lines from [first] (where the viewer
-     * is) go out first; [progress] hears how much is done, 0 to 1.
+     * is) go out first; [progress] hears how much is done, 0 to 1. With [ai] the viewer's AI service translates, told
+     * the language by its name, [language] ("Arabic"); without it Google Translate does.
      */
-    suspend fun translate(lines: List<Line>, target: String, first: Int = 0, progress: (Float) -> Unit = {}): List<Line> {
+    suspend fun translate(
+        lines: List<Line>,
+        target: String,
+        first: Int = 0,
+        progress: (Float) -> Unit = {},
+        ai: Ask? = null,
+        language: String = target
+    ): List<Line> {
         val flat = lines.map { flatten(it.text) }
         val order = (first.coerceIn(0, lines.size) until lines.size) + (0 until first.coerceIn(0, lines.size))
         val todo = order.filter { flat[it].first.isNotBlank() }
@@ -196,7 +231,8 @@ object SubtitleTranslator {
         var size = 0
         for (i in todo) {
             val n = flat[i].first.length + 1
-            if (current.isNotEmpty() && size + n > GoogleChars) { chunks += current; current = ArrayList(); size = 0 }
+            val full = if (ai != null) current.size >= AiLines else size + n > GoogleChars
+            if (current.isNotEmpty() && full) { chunks += current; current = ArrayList(); size = 0 }
             current += i
             size += n
         }
@@ -209,7 +245,7 @@ object SubtitleTranslator {
                 async(kotlinx.coroutines.Dispatchers.IO) {
                     gate.withPermit {
                         coroutineContext.ensureActive()
-                        val translated = batch(chunk.map { flat[it].first }, target)
+                        val translated = batch(chunk.map { flat[it].first }, target, language, ai)
                         chunk.forEachIndexed { k, i -> out[i] = layout(translated[k], flat[i].second) }
                         synchronized(out) { done += chunk.size }
                         progress(done.toFloat() / todo.size.coerceAtLeast(1))

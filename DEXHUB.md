@@ -29,7 +29,9 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/welcome/` | The first-run question (what the viewer likes), which orders the side menu and DexWorld |
 | `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
-| `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate |
+| `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate, by Google Translate or the viewer's AI service |
+| `app/src/main/java/com/nuvio/tv/dexhub/ai/` | The viewer's own AI service (ai_search.py's list: Groq, Gemini, OpenAI, Claude, Grok, OpenRouter, DeepSeek, Mistral), its key and model on this device (Playback > Subtitles > Translate subtitles with) |
+| `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubFields.kt` | The text field and buttons of Dex Hub's setup dialogs |
 | `app/src/main/java/com/nuvio/tv/dexhub/usenet/` | Usenet through the built-in engine, from Dex Hub for Kodi (usenet_source.py, usenet_engine.py): the viewer's providers and indexers (Layout > Sources > Usenet), the search, a Stremio add-on on 127.0.0.1:17465 and the engine |
 | `app/src/main/cpp/dexhub_usenet_jni.c` | The bridge to the engine library's three C calls |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
@@ -50,6 +52,7 @@ at the hook points below.
 | `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
 | `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches; the Usenet row |
 | `NuvioApplication.kt` | starts the Usenet add-on (one call) |
+| `ui/screens/settings/PlaybackSubtitleSettings.kt` | the "Translate subtitles with" row |
 | `app/src/main/cpp/CMakeLists.txt` | the `dexhub_usenet` bridge library |
 | `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |
 | `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection |

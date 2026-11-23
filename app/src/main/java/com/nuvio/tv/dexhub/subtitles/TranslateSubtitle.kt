@@ -23,7 +23,7 @@ private val main = Handler(Looper.getMainLooper())
  * The player's "Translate subtitle" (DEXHUB.md), after Dex Hub for Kodi's (subsync/transflow.py): the chosen add-on
  * subtitle, or an English one when the chosen one is already in the viewer's language or none is chosen, is read,
  * translated into the preferred subtitle language with [SubtitleTranslator] (from the line being shown onwards
- * first), kept on this device, and put on as a subtitle of its own named "Dex Hub". A subtitle translated once
+ * first; by Google Translate, or the viewer's own AI service when one is set in Playback > Subtitles), kept on this device, and put on as a subtitle of its own named "Dex Hub". A subtitle translated once
  * opens at once the next time.
  */
 internal fun translateSubtitle(controller: PlayerRuntimeController) = with(controller) {
@@ -38,18 +38,22 @@ internal fun translateSubtitle(controller: PlayerRuntimeController) = with(contr
         say(controller, context.getString(R.string.dexhub_translate_none))
         return@with
     }
-    say(controller, context.getString(R.string.dexhub_translate_working))
+    val choice = com.nuvio.tv.dexhub.ai.AiService.current(context).takeIf { it.usable }
+    say(controller, context.getString(R.string.dexhub_translate_working_with, choice?.label ?: "Google Translate"))
     scope.launch {
         try {
             val folder = File(context.cacheDir, "subtitles/dexhub_translated").apply { mkdirs() }
-            val file = File(folder, "${(source.url + "|" + target).hashCode().toUInt()}_$target.srt")
+            val with = choice?.let { "|${it.service}|${it.model}" }.orEmpty()
+            val file = File(folder, "${(source.url + "|" + target + with).hashCode().toUInt()}_$target.srt")
             if (!file.exists() || file.length() == 0L) {
                 val body = downloadSubtitleBody(source.url, source.lang, source.headers)
                 val lines = withContext(Dispatchers.Default) { SubtitleTranslator.parse(body) }
                 if (lines.isEmpty()) throw SubtitleTranslator.TranslateException("empty")
                 val now = _uiState.value.currentPosition
                 val first = lines.indexOfFirst { it.endMs >= now }.coerceAtLeast(0)
-                val translated = SubtitleTranslator.translate(lines, target, first)
+                val ai = choice?.let { c -> SubtitleTranslator.Ask { system, user -> com.nuvio.tv.dexhub.ai.AiService.chat(c, system, user) } }
+                val language = Locale(target).getDisplayLanguage(Locale.ENGLISH).ifEmpty { target }
+                val translated = SubtitleTranslator.translate(lines, target, first, ai = ai, language = language)
                 withContext(Dispatchers.IO) { file.writeText(SubtitleTranslator.renderSrt(translated)) }
             }
             val made = Subtitle(
@@ -66,8 +70,14 @@ internal fun translateSubtitle(controller: PlayerRuntimeController) = with(contr
             throw error
         } catch (error: Exception) {
             Log.w(Tag, "translation failed", error)
+            val status = (error as? com.nuvio.tv.dexhub.ai.AiService.AiException)?.status ?: 0
             val busy = (error as? SubtitleTranslator.TranslateException)?.reason == "busy"
-            say(controller, context.getString(if (busy) R.string.dexhub_translate_busy else R.string.dexhub_translate_failed))
+            say(controller, when {
+                status == 401 || status == 403 -> context.getString(R.string.dexhub_ai_refused, choice?.label.orEmpty())
+                status == 429 -> context.getString(R.string.dexhub_ai_busy, choice?.label.orEmpty())
+                busy -> context.getString(R.string.dexhub_translate_busy)
+                else -> context.getString(R.string.dexhub_translate_failed)
+            })
         }
     }
     Unit

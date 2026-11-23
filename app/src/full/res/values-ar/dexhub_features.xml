@@ -113,4 +113,22 @@
     <string name="dexhub_usenet_refused">يوزنت: %1$s رفض (%2$s)</string>
     <string name="dexhub_usenet_provider_refused">يوزنت: المزوّد رفض الدخول أو خلصت الحصة</string>
     <string name="dexhub_usenet_not_opened">يوزنت: هذي النسخة ما انفتحت (ناقصة أو محمية)</string>
+
+    <!-- خدمة الذكاء الاصطناعي الخاصة بالمشاهد (dexhub/ai) -->
+    <string name="dexhub_translate_working_with">جاري ترجمة الترجمة بـ %1$s…</string>
+    <string name="dexhub_ai_translate">ترجمة الترجمات بـ</string>
+    <string name="dexhub_ai_translate_sub">اللي يستخدمه زر «ترجمة» في المشغّل: ترجمة Google مجانًا، أو خدمة ذكاء اصطناعي بمفتاحك لجمل أطبع</string>
+    <string name="dexhub_ai_services_sub">خدمة الذكاء الاصطناعي تحتاج مفتاحك من موقعها؛ ويبقى على هذا الجهاز</string>
+    <string name="dexhub_ai_google_sub">مجانية، بدون مفتاح</string>
+    <string name="dexhub_ai_your_key">بمفتاحك</string>
+    <string name="dexhub_ai_in_use">مستخدمة</string>
+    <string name="dexhub_ai_chosen">مختار</string>
+    <string name="dexhub_ai_key_hint">سوّ مفتاح من %1$s واكتبه هنا</string>
+    <string name="dexhub_ai_model">النموذج</string>
+    <string name="dexhub_ai_other_model">النموذج (أو غيره باسمه)</string>
+    <string name="dexhub_ai_testing">جاري التحقق…</string>
+    <string name="dexhub_ai_works">المفتاح شغّال: الترجمات صارت تترجم فيه</string>
+    <string name="dexhub_ai_refused">%1$s رفض المفتاح</string>
+    <string name="dexhub_ai_busy">%1$s مشغول أو وصل المفتاح حده؛ جرّب بعدين</string>
+    <string name="dexhub_ai_failed">الخدمة ما ردّت: %1$s</string>
 </resources>
