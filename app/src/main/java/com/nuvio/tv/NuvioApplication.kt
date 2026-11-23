@@ -148,6 +148,8 @@ class NuvioApplication : Application(), SingletonImageLoader.Factory {
         com.nuvio.tv.data.repository.ArcMainWatchdog.start(this)
         com.nuvio.tv.data.repository.ArcHeartbeat.start(this) { screensaverController.playbackActive.value }
         PluginRuntimeHooks.onApplicationCreate(this)
+        // Dex Hub TV (DEXHUB.md): the Usenet add-on on 127.0.0.1 (the engine starts only when it is needed)
+        com.nuvio.tv.dexhub.usenet.UsenetAddon.start(this)
         androidTvChannelSyncService.start()
         // Hydrate the AFR fps cache from disk (background load) so cold
         // rewatches take the preflight hit path (switch before prepare).

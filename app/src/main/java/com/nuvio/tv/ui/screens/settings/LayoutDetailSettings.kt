@@ -184,6 +184,8 @@ internal fun LayoutStreamsSection(
         checked = flixSources,
         onToggle = { com.nuvio.tv.dexhub.sources.DexHubSourcesStyle.set(flixContext, !flixSources) }
     )
+    // Dex Hub TV (DEXHUB.md): Usenet through the built-in engine
+    com.nuvio.tv.dexhub.usenet.UsenetSettingsRow()
     var showPositionDialog by rememberSaveable { mutableStateOf(false) }
     var showPlayerBadgesDialog by rememberSaveable { mutableStateOf(false) }
 

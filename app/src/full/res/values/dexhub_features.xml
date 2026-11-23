@@ -75,4 +75,42 @@
     <string name="dexhub_translate_done">The translated subtitle is on</string>
     <string name="dexhub_translate_busy">Google is busy; try again in a few minutes</string>
     <string name="dexhub_translate_failed">The subtitle couldn\'t be translated</string>
+
+    <!-- Usenet through the built-in engine (dexhub/usenet) -->
+    <string name="dexhub_usenet">Usenet</string>
+    <string name="dexhub_usenet_sub">Dex Hub\'s built-in engine plays releases from your own Usenet providers and indexers</string>
+    <string name="dexhub_usenet_dialog_sub">Add a provider (where the files are) and an indexer (where they are found). Usenet then shows up in every title\'s sources.</string>
+    <string name="dexhub_usenet_no_engine">The Usenet engine isn\'t in this build</string>
+    <string name="dexhub_usenet_no_engine_short">No engine</string>
+    <string name="dexhub_usenet_not_set">Not set up</string>
+    <string name="dexhub_usenet_counts">%1$d providers · %2$d indexers</string>
+    <string name="dexhub_usenet_installed">Usenet is on: its releases now appear in the sources</string>
+    <string name="dexhub_usenet_providers">Providers</string>
+    <string name="dexhub_usenet_provider">Provider</string>
+    <string name="dexhub_usenet_add_provider">Add a provider</string>
+    <string name="dexhub_usenet_add_provider_sub">Newshosting, Eweka, Frugal and the like: address, login and connections</string>
+    <string name="dexhub_usenet_provider_hint">Your provider\'s news server, as its account page gives it</string>
+    <string name="dexhub_usenet_indexers">Indexers</string>
+    <string name="dexhub_usenet_indexer">Indexer</string>
+    <string name="dexhub_usenet_add_indexer">Add an indexer</string>
+    <string name="dexhub_usenet_add_indexer_sub">NZBgeek, DrunkenSlug, NZBFinder… or your Prowlarr</string>
+    <string name="dexhub_usenet_indexer_hint">The indexer\'s address and the API key from its profile page</string>
+    <string name="dexhub_usenet_host">Server</string>
+    <string name="dexhub_usenet_port">Port</string>
+    <string name="dexhub_usenet_connections">Connections</string>
+    <string name="dexhub_usenet_user">Username</string>
+    <string name="dexhub_usenet_password_field">Password</string>
+    <string name="dexhub_usenet_backup">Backup</string>
+    <string name="dexhub_usenet_backup_sub">Read only for what the main providers don\'t have</string>
+    <string name="dexhub_usenet_off">Switched off</string>
+    <string name="dexhub_usenet_indexer_url">Address</string>
+    <string name="dexhub_usenet_api_key">API key</string>
+    <string name="dexhub_usenet_indexer_name">Name (optional)</string>
+    <string name="dexhub_usenet_prowlarr_sub">One search covers all of its Usenet indexers</string>
+    <string name="dexhub_usenet_private">Home-network servers</string>
+    <string name="dexhub_usenet_private_sub">Let the engine reach an indexer or provider on your own network</string>
+    <string name="dexhub_usenet_password">password</string>
+    <string name="dexhub_usenet_refused">Usenet: %1$s refused (%2$s)</string>
+    <string name="dexhub_usenet_provider_refused">Usenet: the provider refused the sign-in or its quota is used up</string>
+    <string name="dexhub_usenet_not_opened">Usenet: this release didn\'t open (incomplete or protected)</string>
 </resources>

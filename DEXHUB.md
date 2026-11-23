@@ -30,6 +30,8 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
 | `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate |
+| `app/src/main/java/com/nuvio/tv/dexhub/usenet/` | Usenet through the built-in engine, from Dex Hub for Kodi (usenet_source.py, usenet_engine.py): the viewer's providers and indexers (Layout > Sources > Usenet), the search, a Stremio add-on on 127.0.0.1:17465 and the engine |
+| `app/src/main/cpp/dexhub_usenet_jni.c` | The bridge to the engine library's three C calls |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 
@@ -46,7 +48,9 @@ at the hook points below.
 | `ui/screens/settings/LayoutCardSettings.kt` | Huge and Cinema widths, Soft and Round corners, the Poster shape row |
 | `ui/screens/detail/MetaDetailsScreen.kt` | the theme music (one call) |
 | `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
-| `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches |
+| `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches; the Usenet row |
+| `NuvioApplication.kt` | starts the Usenet add-on (one call) |
+| `app/src/main/cpp/CMakeLists.txt` | the `dexhub_usenet` bridge library |
 | `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |
 | `ui/screens/collection/FolderDetailScreen.kt` | the posters' strip at the top of a collection |
 | `ui/screens/player/PlayerUiState.kt`, `PlayerRuntimeControllerPlaybackEvents.kt`, `SubtitleSelectionOverlay.kt` | the Translate event, its handling and its row in the subtitles panel |
@@ -71,14 +75,24 @@ without `local.properties` the app has no TMDb, Trakt or other keys of its own.
 
 ## Usenet
 
-Dex Hub TV plays Usenet the way Arc does, with no engine of its own in the app:
+Dex Hub TV has the same Usenet engine as Dex Hub for Kodi: NuvioTV's engine (NuvioMedia/NuvioTV
+pull request 4426, GPL-3.0) built as an Android library, `libnuviousenet.so`. The build takes it
+from Dex Hub's own release of script.dexhub.usenet (`dexhub-build.yml`, "The Usenet engine"),
+with its licence, source note and the licences of the libraries in it (assets
+`usenet-engine/`); nothing of it is kept in this repository. A build without it has no engine
+and shows no Usenet.
 
-- through an AIOStreams add-on that has its own Usenet engine (and Prowlarr or Newznab
-  indexers behind it): Settings > Add-ons, its manifest link. Arc already waits for a Usenet
-  link that answers late (`ui/screens/player/SlowStartServer.kt`) and labels its sources;
-- through TorBox: a TorBox account's Usenet downloads are in its cloud library
-  (`core/cloud/TorboxCloudLibraryProviderApi.kt`).
+How it works (`app/src/main/java/com/nuvio/tv/dexhub/usenet/`):
 
-Playing straight from an NNTP provider on the device, as Dex Hub for Kodi does, needs the
-NuvioTV Usenet engine (NuvioMedia/NuvioTV pull request 4426, GPL-3.0) built into the app. It
-is not in Arc yet; if Arc takes it, it arrives here with Arc's next merge.
+1. Layout > Sources > Usenet: the viewer's providers (news server, login, connections, a
+   backup) and indexers (Newznab, or a Prowlarr for all of its Usenet indexers), kept on this
+   device only. Once one of each is there, the app installs its own add-on,
+   `http://127.0.0.1:17465/manifest.json`.
+2. A title's sources ask that add-on, which searches every indexer at once (by IMDb or TVDB id,
+   then by name; 25 seconds; the same search kept for half an hour) and lists the releases.
+3. Picking one asks `/play/<token>`: the release opens in the engine (`POST /sessions`) and the
+   player is sent on to the engine's stream. Arc's longer wait for a local server
+   (`SlowStartServer`) covers the opening. Nothing in a stream's link names an indexer's key.
+
+Usenet also still arrives the ways Arc has it: an AIOStreams add-on with its own engine, and
+TorBox's Usenet downloads in its cloud library.

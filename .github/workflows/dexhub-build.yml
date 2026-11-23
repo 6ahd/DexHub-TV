@@ -86,6 +86,26 @@ jobs:
             echo "::warning::No DEXHUB_KEYSTORE_BASE64: the APKs are signed with a debug key and cannot update an installed Dex Hub TV."
           fi
 
+      - name: The Usenet engine
+        # NuvioTV's Usenet engine as an Android library (GPL-3.0), from Dex Hub's own release of
+        # script.dexhub.usenet: lib/libnuviousenet-android-{arm64,arm}.so, packed into the APK beside
+        # the JNI bridge (app/src/main/cpp/dexhub_usenet_jni.c). A build without it still works: the
+        # app then has no Usenet engine.
+        env:
+          ENGINE_ZIP: https://github.com/6ahd/plugin.video.dexhub/releases/download/V5.10.607/script.dexhub.usenet-1.3.3.zip
+        run: |
+          set -e
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/engine.zip" "$ENGINE_ZIP" || { echo "::warning::Usenet engine not downloaded"; exit 0; }
+          mkdir -p "$RUNNER_TEMP/engine" app/src/full/jniLibs/arm64-v8a app/src/full/jniLibs/armeabi-v7a
+          unzip -q -o "$RUNNER_TEMP/engine.zip" 'script.dexhub.usenet/lib/*' -d "$RUNNER_TEMP/engine"
+          cp "$RUNNER_TEMP/engine/script.dexhub.usenet/lib/libnuviousenet-android-arm64.so" app/src/full/jniLibs/arm64-v8a/libnuviousenet.so
+          cp "$RUNNER_TEMP/engine/script.dexhub.usenet/lib/libnuviousenet-android-arm.so" app/src/full/jniLibs/armeabi-v7a/libnuviousenet.so
+          # its licence, source note and the licences of the libraries built into it, packed in the app
+          mkdir -p app/src/full/assets/usenet-engine
+          unzip -q -o "$RUNNER_TEMP/engine.zip" 'script.dexhub.usenet/LICENSE.txt' 'script.dexhub.usenet/SOURCE.txt' 'script.dexhub.usenet/licenses/*' -d "$RUNNER_TEMP/engine"
+          cp -r "$RUNNER_TEMP/engine/script.dexhub.usenet/LICENSE.txt" "$RUNNER_TEMP/engine/script.dexhub.usenet/SOURCE.txt" "$RUNNER_TEMP/engine/script.dexhub.usenet/licenses" app/src/full/assets/usenet-engine/
+          ls -la app/src/full/jniLibs/*/
+
       - name: Test the update check and build the APKs
         run: |
           ./gradlew :app:testFullReleaseUnitTest --tests 'com.nuvio.tv.updater.*' :app:assembleFullRelease \

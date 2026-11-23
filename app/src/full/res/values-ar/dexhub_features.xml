@@ -75,4 +75,42 @@
     <string name="dexhub_translate_done">الترجمة المترجمة اشتغلت</string>
     <string name="dexhub_translate_busy">Google مشغول، جرب بعد كم دقيقة</string>
     <string name="dexhub_translate_failed">ما قدرت أترجم الترجمة</string>
+
+    <!-- يوزنت عبر المحرك المدمج (dexhub/usenet) -->
+    <string name="dexhub_usenet">يوزنت</string>
+    <string name="dexhub_usenet_sub">محرك Dex Hub المدمج يشغّل النسخ من مزوّدات ومفهرسات يوزنت الخاصة بك</string>
+    <string name="dexhub_usenet_dialog_sub">أضف مزوّد (مكان الملفات) ومفهرس (مكان البحث عنها). بعدها يظهر يوزنت في مصادر كل عمل.</string>
+    <string name="dexhub_usenet_no_engine">محرك يوزنت مو موجود في هذي النسخة</string>
+    <string name="dexhub_usenet_no_engine_short">بدون محرك</string>
+    <string name="dexhub_usenet_not_set">غير مُعد</string>
+    <string name="dexhub_usenet_counts">%1$d مزوّد · %2$d مفهرس</string>
+    <string name="dexhub_usenet_installed">يوزنت شغّال: نسخه صارت تظهر في المصادر</string>
+    <string name="dexhub_usenet_providers">المزوّدات</string>
+    <string name="dexhub_usenet_provider">مزوّد</string>
+    <string name="dexhub_usenet_add_provider">إضافة مزوّد</string>
+    <string name="dexhub_usenet_add_provider_sub">Newshosting وEweka وFrugal وغيرها: العنوان والدخول وعدد الاتصالات</string>
+    <string name="dexhub_usenet_provider_hint">خادم الأخبار لمزوّدك كما يظهر في صفحة حسابك</string>
+    <string name="dexhub_usenet_indexers">المفهرسات</string>
+    <string name="dexhub_usenet_indexer">مفهرس</string>
+    <string name="dexhub_usenet_add_indexer">إضافة مفهرس</string>
+    <string name="dexhub_usenet_add_indexer_sub">NZBgeek وDrunkenSlug وNZBFinder… أو Prowlarr الخاص بك</string>
+    <string name="dexhub_usenet_indexer_hint">عنوان المفهرس ومفتاح API من صفحة ملفك فيه</string>
+    <string name="dexhub_usenet_host">الخادم</string>
+    <string name="dexhub_usenet_port">المنفذ</string>
+    <string name="dexhub_usenet_connections">الاتصالات</string>
+    <string name="dexhub_usenet_user">اسم المستخدم</string>
+    <string name="dexhub_usenet_password_field">كلمة المرور</string>
+    <string name="dexhub_usenet_backup">احتياطي</string>
+    <string name="dexhub_usenet_backup_sub">يُقرأ منه فقط اللي ما عند المزوّدات الأساسية</string>
+    <string name="dexhub_usenet_off">متوقف</string>
+    <string name="dexhub_usenet_indexer_url">العنوان</string>
+    <string name="dexhub_usenet_api_key">مفتاح API</string>
+    <string name="dexhub_usenet_indexer_name">الاسم (اختياري)</string>
+    <string name="dexhub_usenet_prowlarr_sub">بحث واحد يغطي كل مفهرسات يوزنت فيه</string>
+    <string name="dexhub_usenet_private">خوادم الشبكة المنزلية</string>
+    <string name="dexhub_usenet_private_sub">يسمح للمحرك يوصل لمفهرس أو مزوّد على شبكتك</string>
+    <string name="dexhub_usenet_password">بكلمة سر</string>
+    <string name="dexhub_usenet_refused">يوزنت: %1$s رفض (%2$s)</string>
+    <string name="dexhub_usenet_provider_refused">يوزنت: المزوّد رفض الدخول أو خلصت الحصة</string>
+    <string name="dexhub_usenet_not_opened">يوزنت: هذي النسخة ما انفتحت (ناقصة أو محمية)</string>
 </resources>
