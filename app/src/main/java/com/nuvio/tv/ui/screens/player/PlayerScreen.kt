@@ -2126,7 +2126,13 @@ fun PlayerScreen(
                     uiState.showSourcesPanel || uiState.showEpisodesPanel || uiState.showChaptersPanel || uiState.showSpeedDialog ||
                     uiState.showStreamInfoOverlay || uiState.showSubtitleDelayOverlay || uiState.showSubtitleTimingDialog
                 )
-            PlaybackStatsOverlay(
+            // Dex Hub TV (DEXHUB.md): the stats in Lucent's and Dex Hub's Player info panel
+            if (com.nuvio.tv.dexhub.player.dexHubPlayerLook()) com.nuvio.tv.dexhub.player.DexHubPlayerInfoPanel(
+                visible = uiState.showPlaybackStatsOverlay && uiState.error == null && !v2UtilityVisible,
+                sample = playbackStatsSample,
+                title = uiState.contentName ?: uiState.title,
+                modifier = Modifier.align(Alignment.Center).zIndex(2.7f)
+            ) else PlaybackStatsOverlay(
                 visible = uiState.showPlaybackStatsOverlay && uiState.error == null && !v2UtilityVisible,
                 sample = playbackStatsSample,
                 compact = false,
