@@ -473,8 +473,16 @@ internal object AutomaticSubtitleSync {
             }
 
             if (referenceTracks.isEmpty()) {
-                // Dex Hub TV (DEXHUB.md): an English subtitle of this release, or the film's speech by Whisper
-                referenceTracks = com.nuvio.tv.dexhub.sync.DexHubSyncReferences.find(sourceKey)
+                // Dex Hub TV (DEXHUB.md): DexWorld's shared sync, an English subtitle of this release, or Whisper;
+                // with a subtitle of the video's own, its timing is shared with DexWorld
+                referenceTracks = com.nuvio.tv.dexhub.sync.DexHubSyncReferences.find(
+                    sourceKey, selected?.rawBody, selected?.cues ?: seedTarget.orEmpty(),
+                )
+            } else if (
+                indexedTimeline != null &&
+                referenceTracks.all { t -> !t.sampled && indexedTimeline.tracks.any { it.key == t.key } }
+            ) {
+                com.nuvio.tv.dexhub.sync.DexHubSyncReferences.embedded(sourceKey, referenceTracks)
             }
 
             if (referenceTracks.isEmpty()) {

@@ -12,8 +12,10 @@ import com.nuvio.tv.ui.screens.player.autosync.ReferenceTrack
 /**
  * Dex Hub's own clocks for AutoSync (DEXHUB.md), from Dex Hub for Kodi: when the video carries no subtitle to time
  * by, Arc's AutoSync gave up; now it asks here first, in Dex Hub's order:
- *  1. an English subtitle of this very release ([EnglishReference]), a whole-film reference;
- *  2. the film's speech heard by Whisper with the viewer's key ([WhisperReference]), a sampled reference.
+ *  1. DexWorld's shared sync ([DexWorldSync]): a fix it trusts for this Arabic subtitle, or the release's timeline;
+ *  2. an English subtitle of this very release ([EnglishReference]), a whole-film reference;
+ *  3. the film's speech heard by Whisper with the viewer's key ([WhisperReference]), a sampled reference.
+ * When the video has a subtitle of its own, its start times are shared with DexWorld ([embedded]).
  * Arc's own matcher then times the subtitle by it, as by an embedded track.
  */
 internal object DexHubSyncReferences {
@@ -62,8 +64,13 @@ internal object DexHubSyncReferences {
     }
 
     /** References for [sourceKey] when the video has none of its own; empty when none was found. */
-    suspend fun find(sourceKey: String): List<ReferenceTrack> {
+    suspend fun find(sourceKey: String, selectedRaw: String?, selectedCues: List<SubtitleSyncCue>): List<ReferenceTrack> {
         val now = playing?.takeIf { it.streamUrl == sourceKey } ?: return emptyList()
+        runCatching { DexWorldSync.reference(app, now, selectedRaw, selectedCues) }.onFailure { Log.w(Tag, "sync share failed", it) }
+            .getOrNull()?.let { (cues, kind) ->
+                say(app.getString(R.string.dexhub_sync_shared))
+                return listOf(track("dexhub-shared-$kind", null, cues, "DexWorld", sampled = false))
+            }
         runCatching { EnglishReference.find(now) }.onFailure { Log.w(Tag, "English reference failed", it) }.getOrNull()?.let { found ->
             say(app.getString(R.string.dexhub_sync_english))
             return listOf(track("dexhub-english", "en", found.cues, "English · ${found.name}", sampled = false))
@@ -91,6 +98,13 @@ internal object DexHubSyncReferences {
             }
         }
         return emptyList()
+    }
+
+    /** The video's own subtitle timed AutoSync: its starts go to DexWorld for devices that cannot read the file. */
+    fun embedded(sourceKey: String, tracks: List<ReferenceTrack>) {
+        val now = playing?.takeIf { it.streamUrl == sourceKey } ?: return
+        val best = tracks.maxByOrNull { it.cues.size }?.takeIf { it.cues.size >= 30 } ?: return
+        runCatching { DexWorldSync.sendTimeline(app, now, best.cues.map { it.startTimeMs }) }
     }
 
     private fun track(key: String, language: String?, cues: List<SubtitleSyncCue>, label: String, sampled: Boolean) =

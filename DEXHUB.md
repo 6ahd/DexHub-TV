@@ -31,7 +31,7 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
 | `app/src/main/java/com/nuvio/tv/dexhub/subtitles/` | Subtitle translation, from Dex Hub for Kodi (subsync/subtrans.py, transflow.py): the player's subtitles > Translate, by Google Translate or the viewer's AI service |
 | `app/src/main/java/com/nuvio/tv/dexhub/ai/` | The viewer's own AI service (ai_search.py's list: Groq, Gemini, OpenAI, Claude, Grok, OpenRouter, DeepSeek, Mistral), its key and model on this device (Playback > Subtitles > Translate subtitles with) |
-| `app/src/main/java/com/nuvio/tv/dexhub/sync/` | Dex Hub's clocks for AutoSync when the video has no subtitle to time by, from Dex Hub for Kodi (engref.py, whisperref.py, dexpick.py): an English subtitle of the same release (OpenSubtitles' public add-on), else the film's speech by Whisper with the viewer's Groq or OpenAI key |
+| `app/src/main/java/com/nuvio/tv/dexhub/sync/` | Dex Hub's clocks for AutoSync when the video has no subtitle to time by, from Dex Hub for Kodi (engref.py, whisperref.py, dexpick.py): DexWorld's shared sync (syncshare.py: a trusted fix or the release's timeline; the video's own timing shared back), an English subtitle of the same release (OpenSubtitles' public add-on), else the film's speech by Whisper with the viewer's Groq or OpenAI key |
 | `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubFields.kt` | The text field and buttons of Dex Hub's setup dialogs |
 | `app/src/main/java/com/nuvio/tv/dexhub/usenet/` | Usenet through the built-in engine, from Dex Hub for Kodi (usenet_source.py, usenet_engine.py): the viewer's providers and indexers (Layout > Sources > Usenet), the search, a Stremio add-on on 127.0.0.1:17465 and the engine |
 | `app/src/main/cpp/dexhub_usenet_jni.c` | The bridge to the engine library's three C calls |
@@ -53,8 +53,8 @@ at the hook points below.
 | `ui/screens/stream/StreamScreen.kt` | the pick's playing as one `playPicked`, and Flix's sources or Arc's list |
 | `ui/screens/settings/LayoutDetailSettings.kt` | the Theme music and Flix sources switches; the Usenet row |
 | `NuvioApplication.kt` | starts the Usenet add-on (one call) |
-| `ui/screens/settings/PlaybackSubtitleSettings.kt` | the "Translate subtitles with" and "Sync by the film's speech" rows |
-| `ui/screens/player/autosync/AutomaticSubtitleSync.kt` | with no reference of the video's own, Dex Hub's references are asked (one call) |
+| `ui/screens/settings/PlaybackSubtitleSettings.kt` | the "Translate subtitles with", "Sync by the film's speech" and "Shared sync with DexWorld" rows |
+| `ui/screens/player/autosync/AutomaticSubtitleSync.kt` | with no reference of the video's own, Dex Hub's references are asked; with one, its timing is shared (one block) |
 | `ui/screens/player/PlayerRuntimeControllerAutomaticSubtitleSync.kt` | tells Dex Hub's references what is playing (one call) |
 | `app/src/main/cpp/CMakeLists.txt` | the `dexhub_usenet` bridge library |
 | `ui/navigation/NuvioNavHost.kt` (Home), `MainActivity.kt` (menu entries) | the first-run question over Home; the menu in the viewer's order |

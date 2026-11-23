@@ -141,4 +141,8 @@
     <string name="dexhub_whisper_sync">المزامنة بكلام الفيلم (Whisper)</string>
     <string name="dexhub_whisper_sync_sub">لما الفيديو ما فيه ترجمة يتوقّت عليها، تروح دقائق من صوته لـ Whisper بمفتاح Groq أو OpenAI حقك</string>
     <string name="dexhub_whisper_sync_no_key">يحتاج مفتاح Groq (مجاني) أو OpenAI في «ترجمة الترجمات بـ»</string>
+
+    <string name="dexhub_sync_shared">المزامنة التلقائية: توقيت مشترك في DexWorld لهذي النسخة</string>
+    <string name="dexhub_sync_share">المزامنة المشتركة مع DexWorld</string>
+    <string name="dexhub_sync_share_sub">النسخة اللي تتوقّت مرة تتوقّت للكل: تروح مفاتيح توقيتها لـ DexWorld، أبدًا ما يروح رابط ولا نص ترجمة</string>
 </resources>

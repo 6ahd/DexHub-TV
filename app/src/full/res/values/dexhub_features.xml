@@ -141,4 +141,8 @@
     <string name="dexhub_whisper_sync">Sync by the film\'s speech (Whisper)</string>
     <string name="dexhub_whisper_sync_sub">When the video has no subtitle to time by, a few minutes of its sound go to Whisper with your Groq or OpenAI key</string>
     <string name="dexhub_whisper_sync_no_key">Needs a Groq (free) or OpenAI key in \"Translate subtitles with\"</string>
+
+    <string name="dexhub_sync_shared">AutoSync: timing shared on DexWorld for this release</string>
+    <string name="dexhub_sync_share">Shared sync with DexWorld</string>
+    <string name="dexhub_sync_share_sub">A release timed once is timed for everyone: its timing keys go to DexWorld, never a link or a subtitle\'s text</string>
 </resources>
