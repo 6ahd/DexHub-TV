@@ -51,6 +51,7 @@ import androidx.tv.material3.CardDefaults
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.Text
 import com.nuvio.tv.R
+import com.nuvio.tv.dexhub.ui.DexHubCard
 import com.nuvio.tv.ui.theme.NuvioTheme
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -223,18 +224,15 @@ private fun InterestCard(interest: Interest, selected: Boolean, delayMs: Int, mo
     val appear by animateFloatAsState(if (shown) 1f else 0f, tween(380), label = "interestAppear")
     val shape = RoundedCornerShape(18.dp)
     val accent = NuvioTheme.colors.Secondary
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = modifier.size(width = 210.dp, height = 96.dp).alpha(appear),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = if (selected) accent.copy(alpha = 0.38f) else Color.White.copy(alpha = 0.07f),
             focusedContainerColor = if (selected) accent.copy(alpha = 0.6f) else Color.White.copy(alpha = 0.16f)
         ),
-        border = CardDefaults.border(
-            border = if (selected) Border(androidx.compose.foundation.BorderStroke(2.dp, accent), shape = shape) else Border.None,
-            focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)
-        ),
+        selectedBorder = if (selected) Border(androidx.compose.foundation.BorderStroke(2.dp, accent), shape = shape) else null,
         scale = CardDefaults.scale(focusedScale = 1.06f)
     ) {
         Row(Modifier.fillMaxSize().padding(horizontal = 18.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -252,15 +250,14 @@ private fun InterestCard(interest: Interest, selected: Boolean, delayMs: Int, mo
 @Composable
 private fun Action(label: String, strong: Boolean, modifier: Modifier, onClick: () -> Unit) {
     val shape = RoundedCornerShape(50)
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = modifier.size(width = 220.dp, height = 54.dp),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = if (strong) NuvioTheme.colors.Secondary else Color.White.copy(alpha = 0.08f),
             focusedContainerColor = if (strong) NuvioTheme.colors.Secondary else Color.White.copy(alpha = 0.2f)
         ),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.06f)
     ) {
         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {

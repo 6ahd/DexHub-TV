@@ -28,6 +28,7 @@ at the hook points below.
 | `app/src/main/java/com/nuvio/tv/dexhub/sources/` | The sources page in Flix's design: quality tabs, a sort, a card per add-on (Layout > Sources) |
 | `app/src/main/java/com/nuvio/tv/dexhub/welcome/` | The first-run question (what the viewer likes), which orders the side menu and DexWorld |
 | `app/src/main/java/com/nuvio/tv/dexhub/collections/` | A collection's posters fanned and drifting behind its page's heading, as Flix draws it |
+| `app/src/main/java/com/nuvio/tv/dexhub/ui/DexHubCard.kt` | Every Dex Hub page's card, with Arc's own focus, glow and glass (its v2 design system) |
 | `dexhub/` | The tools that make the above, and Dex Hub's mark |
 | `.github/workflows/dexhub-build.yml` | The APK build and release |
 

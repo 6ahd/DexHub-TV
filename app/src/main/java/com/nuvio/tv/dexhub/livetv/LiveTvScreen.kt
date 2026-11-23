@@ -74,6 +74,7 @@ import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
 import com.nuvio.tv.R
+import com.nuvio.tv.dexhub.ui.DexHubCard
 import com.nuvio.tv.ui.theme.NuvioTheme
 import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
@@ -336,16 +337,15 @@ private fun ChannelRow(
     onClick: () -> Unit
 ) {
     val shape = RoundedCornerShape(14.dp)
-    Card(
+    DexHubCard(
         onClick = onClick,
         onLongClick = onLongClick,
         modifier = modifier.fillMaxWidth().height(84.dp).onFocusChanged { if (it.isFocused) onFocused() },
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = NuvioTheme.colors.BackgroundCard.copy(alpha = 0.85f),
             focusedContainerColor = NuvioTheme.colors.FocusBackground
         ),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.03f)
     ) {
         Row(Modifier.fillMaxSize().padding(horizontal = 14.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -405,12 +405,11 @@ private fun Posters(state: LiveTvUiState, onGroup: (String) -> Unit, tiles: List
             items(tiles, key = { it.id }) { tile ->
                 Column(Modifier.animateItem()) {
                     val shape = RoundedCornerShape(12.dp)
-                    Card(
+                    DexHubCard(
                         onClick = { onOpen(tile.id) },
                         modifier = Modifier.fillMaxWidth().aspectRatio(2f / 3f),
-                        shape = CardDefaults.shape(shape),
+                        shape = shape,
                         colors = CardDefaults.colors(containerColor = NuvioTheme.colors.BackgroundCard),
-                        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
                         scale = CardDefaults.scale(focusedScale = 1.07f)
                     ) {
                         Box(Modifier.fillMaxSize()) {
@@ -460,16 +459,15 @@ private fun Episodes(series: LiveSeries, episodes: List<LiveEpisode>?, onPlay: (
                 ) {
                     items(episodes, key = { it.id }) { e ->
                         val shape = RoundedCornerShape(12.dp)
-                        Card(
+                        DexHubCard(
                             onClick = { onPlay(e) },
                             modifier = Modifier.animateItem().fillMaxWidth().height(64.dp)
                                 .then(if (e == episodes.first()) Modifier.focusRequester(first) else Modifier),
-                            shape = CardDefaults.shape(shape),
+                            shape = shape,
                             colors = CardDefaults.colors(
                                 containerColor = NuvioTheme.colors.BackgroundCard,
                                 focusedContainerColor = NuvioTheme.colors.FocusBackground
                             ),
-                            border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
                             scale = CardDefaults.scale(focusedScale = 1.02f)
                         ) {
                             Row(Modifier.fillMaxSize().padding(horizontal = 18.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -541,15 +539,14 @@ private fun Field(
             keys?.show()
         }
     }
-    Card(
+    DexHubCard(
         onClick = { editing = true },
         modifier = Modifier.fillMaxWidth().height(64.dp),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = NuvioTheme.colors.Field,
             focusedContainerColor = NuvioTheme.colors.FocusBackground
         ),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.01f)
     ) {
         Column(Modifier.fillMaxSize().padding(horizontal = 16.dp), verticalArrangement = Arrangement.Center) {
@@ -584,15 +581,14 @@ private fun Pill(
     onClick: () -> Unit
 ) {
     val shape = RoundedCornerShape(50)
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = modifier.then(if (wide) Modifier.fillMaxWidth().height(48.dp) else Modifier.height(44.dp)),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = if (selected) NuvioTheme.colors.Secondary.copy(alpha = 0.28f) else NuvioTheme.colors.BackgroundCard,
             focusedContainerColor = NuvioTheme.colors.Secondary
         ),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.04f)
     ) {
         Box(

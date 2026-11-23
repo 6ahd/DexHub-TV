@@ -56,9 +56,15 @@ import androidx.tv.material3.Border
 import androidx.tv.material3.Card
 import androidx.tv.material3.CardDefaults
 import androidx.tv.material3.ExperimentalTvMaterial3Api
+import androidx.tv.material3.Icon
 import androidx.tv.material3.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Bolt
+import androidx.compose.material.icons.filled.Movie
+import androidx.compose.material.icons.filled.WorkspacePremium
 import coil3.compose.AsyncImage
 import com.nuvio.tv.R
+import com.nuvio.tv.dexhub.ui.DexHubCard
 import com.nuvio.tv.domain.model.Stream
 import com.nuvio.tv.domain.model.StreamDebridCacheState
 import com.nuvio.tv.ui.theme.NuvioTheme
@@ -277,12 +283,11 @@ private fun SourceSort.label(): Int = when (this) {
 private fun GroupCard(group: SourceGroup, modifier: Modifier, onClick: () -> Unit) {
     val (lead, facts) = group.lead
     val shape = RoundedCornerShape(18.dp)
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = modifier.fillMaxWidth().height(168.dp),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(containerColor = Color.Transparent, focusedContainerColor = Color.Transparent),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.04f)
     ) {
         Column(
@@ -307,7 +312,8 @@ private fun GroupCard(group: SourceGroup, modifier: Modifier, onClick: () -> Uni
                             .padding(horizontal = 10.dp, vertical = 3.dp))
                 }
                 Spacer(Modifier.weight(1f))
-                if (group.best) Text("👑", fontSize = 16.sp)
+                if (group.best) Icon(Icons.Filled.WorkspacePremium, contentDescription = null, tint = Color(0xFFFACC15),
+                    modifier = Modifier.size(20.dp))
             }
             Text(lead.addonName, color = NuvioTheme.colors.TextPrimary, fontSize = 19.sp, fontWeight = FontWeight.Bold,
                 maxLines = 1, overflow = TextOverflow.Ellipsis)
@@ -317,11 +323,23 @@ private fun GroupCard(group: SourceGroup, modifier: Modifier, onClick: () -> Uni
                 facts.audio?.let { Pill(it) }
             }
             Row(horizontalArrangement = Arrangement.spacedBy(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                facts.size?.let { Text("🎞  $it", color = NuvioTheme.colors.TextSecondary, fontSize = 13.sp) }
-                if (facts.cached) Text("⚡", color = Color(0xFF4ADE80), fontSize = 14.sp)
+                facts.size?.let {
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Icon(Icons.Filled.Movie, contentDescription = null, tint = NuvioTheme.colors.TextSecondary,
+                            modifier = Modifier.size(16.dp))
+                        Text(it, color = NuvioTheme.colors.TextSecondary, fontSize = 13.sp)
+                    }
+                }
+                if (facts.cached) CachedMark()
             }
         }
     }
+}
+
+/** Ready at once in the account: Flix's green bolt. */
+@Composable
+private fun CachedMark() {
+    Icon(Icons.Filled.Bolt, contentDescription = null, tint = Color(0xFF4ADE80), modifier = Modifier.size(18.dp))
 }
 
 @Composable
@@ -339,16 +357,15 @@ private fun GroupList(group: SourceGroup, onPlay: (Stream) -> Unit) {
     LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(bottom = 30.dp)) {
         items(group.streams, key = { System.identityHashCode(it.first) }) { (stream, facts) ->
             val shape = RoundedCornerShape(14.dp)
-            Card(
+            DexHubCard(
                 onClick = { onPlay(stream) },
                 modifier = Modifier.animateItem().fillMaxWidth()
                     .then(if (stream === group.streams.first().first) Modifier.focusRequester(first) else Modifier),
-                shape = CardDefaults.shape(shape),
+                shape = shape,
                 colors = CardDefaults.colors(
                     containerColor = Color.White.copy(alpha = 0.07f),
                     focusedContainerColor = NuvioTheme.colors.FocusBackground
                 ),
-                border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
                 scale = CardDefaults.scale(focusedScale = 1.02f)
             ) {
                 Column(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 12.dp)) {
@@ -358,7 +375,7 @@ private fun GroupList(group: SourceGroup, onPlay: (Stream) -> Unit) {
                         facts.audio?.let { Pill(it) }
                         Spacer(Modifier.weight(1f))
                         facts.size?.let { Text(it, color = NuvioTheme.colors.TextSecondary, fontSize = 13.sp) }
-                        if (facts.cached) Text("⚡", color = Color(0xFF4ADE80), fontSize = 14.sp)
+                        if (facts.cached) CachedMark()
                     }
                     Text(
                         listOfNotNull(stream.title, stream.description).joinToString("\n").ifEmpty { stream.name.orEmpty() },
@@ -374,15 +391,14 @@ private fun GroupList(group: SourceGroup, onPlay: (Stream) -> Unit) {
 @Composable
 private fun Chip(label: String, selected: Boolean, onClick: () -> Unit) {
     val shape = RoundedCornerShape(50)
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = Modifier.height(40.dp),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(
             containerColor = if (selected) NuvioTheme.colors.Secondary.copy(alpha = 0.32f) else Color.White.copy(alpha = 0.08f),
             focusedContainerColor = NuvioTheme.colors.Secondary
         ),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.05f)
     ) {
         Box(Modifier.fillMaxSize().padding(horizontal = 18.dp), contentAlignment = Alignment.Center) {

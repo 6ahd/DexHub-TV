@@ -56,6 +56,7 @@ import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
 import com.nuvio.tv.R
+import com.nuvio.tv.dexhub.ui.DexHubCard
 import com.nuvio.tv.ui.theme.NuvioTheme
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -201,12 +202,11 @@ private fun Shelves(
 @Composable
 private fun SectionCard(member: DexWorldClient.Member, modifier: Modifier, onClick: () -> Unit) {
     val shape = RoundedCornerShape(16.dp)
-    Card(
+    DexHubCard(
         onClick = onClick,
         modifier = modifier.width(300.dp).aspectRatio(16f / 9f),
-        shape = CardDefaults.shape(shape),
+        shape = shape,
         colors = CardDefaults.colors(containerColor = NuvioTheme.colors.BackgroundCard),
-        border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
         scale = CardDefaults.scale(focusedScale = 1.06f)
     ) {
         Box(Modifier.fillMaxSize()) {
@@ -267,12 +267,11 @@ private fun Section(
 private fun Poster(item: DexWorldClient.Item, modifier: Modifier, onClick: () -> Unit) {
     val shape = RoundedCornerShape(12.dp)
     Column(modifier.fillMaxWidth()) {
-        Card(
+        DexHubCard(
             onClick = onClick,
             modifier = Modifier.fillMaxWidth().aspectRatio(2f / 3f),
-            shape = CardDefaults.shape(shape),
+            shape = shape,
             colors = CardDefaults.colors(containerColor = NuvioTheme.colors.BackgroundCard),
-            border = CardDefaults.border(focusedBorder = Border(NuvioTheme.focusRing.border(2.dp), shape = shape)),
             scale = CardDefaults.scale(focusedScale = 1.06f)
         ) {
             Box(Modifier.fillMaxSize()) {
@@ -282,6 +281,14 @@ private fun Poster(item: DexWorldClient.Item, modifier: Modifier, onClick: () ->
                 } else {
                     Text(item.title, color = NuvioTheme.colors.TextSecondary, fontSize = 15.sp,
                         modifier = Modifier.align(Alignment.Center).padding(10.dp))
+                }
+                item.rating?.takeIf { it > 0 }?.let { rating ->
+                    Text(
+                        "★ " + String.format(java.util.Locale.US, "%.1f", rating), color = Color.White, fontSize = 12.sp,
+                        modifier = Modifier.align(Alignment.TopEnd).padding(6.dp)
+                            .background(Color.Black.copy(alpha = 0.62f), RoundedCornerShape(8.dp))
+                            .padding(horizontal = 7.dp, vertical = 2.dp)
+                    )
                 }
             }
         }
