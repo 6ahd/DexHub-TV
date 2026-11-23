@@ -145,4 +145,15 @@
     <string name="dexhub_sync_shared">AutoSync: timing shared on DexWorld for this release</string>
     <string name="dexhub_sync_share">Shared sync with DexWorld</string>
     <string name="dexhub_sync_share_sub">A release timed once is timed for everyone: its timing keys go to DexWorld, never a link or a subtitle\'s text</string>
+
+    <!-- Settings > Dex Hub (dexhub/settings) -->
+    <string name="dexhub_settings_title">Dex Hub</string>
+    <string name="dexhub_settings_sub">All of Dex Hub\'s features in one place: AI translation, sync, fonts, Usenet and the look</string>
+    <string name="dexhub_settings_subtitles">Subtitles</string>
+    <string name="dexhub_settings_subtitle_font">Subtitle font</string>
+    <string name="dexhub_settings_subtitle_font_sub">Arabic fonts included; your own font can be imported from your phone</string>
+    <string name="dexhub_settings_look">Look</string>
+    <string name="dexhub_settings_app_font">App font</string>
+    <string name="dexhub_settings_app_font_sub">The font of the whole app</string>
+    <string name="dexhub_settings_sources">Sources</string>
 </resources>

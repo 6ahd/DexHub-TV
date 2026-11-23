@@ -118,5 +118,6 @@ internal fun SettingsCategory.searchTitle(): Int = when (this) {
     SettingsCategory.REPORT -> R.string.report_panel_title
     SettingsCategory.ABOUT -> R.string.about_title
     SettingsCategory.DEBUG -> R.string.settings_debug
+    SettingsCategory.DEXHUB -> R.string.dexhub_settings_title
     SettingsCategory.EXPERIENCE -> R.string.settings_experience
 }

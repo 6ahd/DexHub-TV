@@ -11,6 +11,8 @@ internal enum class SettingsRailGroup {
 
 internal enum class SettingsCategory(val group: SettingsRailGroup) {
     SEARCH(SettingsRailGroup.FIND),
+    /** Dex Hub TV (DEXHUB.md): every Dex Hub feature in one place. */
+    DEXHUB(SettingsRailGroup.FIND),
     ACCOUNT(SettingsRailGroup.YOU),
     PROFILES(SettingsRailGroup.YOU),
     APPEARANCE(SettingsRailGroup.LOOK),

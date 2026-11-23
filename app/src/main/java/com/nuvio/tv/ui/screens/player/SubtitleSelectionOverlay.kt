@@ -47,6 +47,7 @@ import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Remove
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -358,6 +359,19 @@ internal fun SubtitleSelectionOverlay(
                                     onDismiss()
                                 }
                             )
+                        }
+                        // Dex Hub TV: what Translate uses (Google or the viewer's AI service), chosen here too
+                        if (sessionAddonSubtitles.isNotEmpty()) item(key = "dexhub_translate_with") {
+                            val aiContext = androidx.compose.ui.platform.LocalContext.current
+                            val aiChoice by com.nuvio.tv.dexhub.ai.AiService.choice(aiContext).collectAsState()
+                            var aiChooser by remember { mutableStateOf(false) }
+                            PlayerPanelRow(
+                                title = stringResource(R.string.dexhub_ai_translate),
+                                titleEnd = if (aiChoice.usable) aiChoice.label else "Google",
+                                selected = false,
+                                onClick = { aiChooser = true }
+                            )
+                            if (aiChooser) com.nuvio.tv.dexhub.ai.AiServicesDialog(onDismiss = { aiChooser = false })
                         }
                         items(items = languageItems, key = { "language:${it.key}" }) { language ->
                             val options = optionsByLanguage[language.key].orEmpty()

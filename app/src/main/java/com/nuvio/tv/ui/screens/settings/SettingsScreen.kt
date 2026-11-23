@@ -41,6 +41,7 @@ import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.PlayArrow
+import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.BugReport
 import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.CloudDownload
@@ -198,6 +199,7 @@ private fun settingsSectionSpec(category: SettingsCategory): SettingsSectionSpec
     SettingsCategory.REPORT -> SettingsSectionSpec(category, stringResource(R.string.report_panel_title), Icons.Default.BugReport, destination = SettingsSectionDestination.Inline)
     SettingsCategory.ABOUT -> SettingsSectionSpec(category, stringResource(R.string.about_title), Icons.Default.Info, destination = SettingsSectionDestination.Inline)
     SettingsCategory.DEBUG -> SettingsSectionSpec(category, stringResource(R.string.settings_debug), Icons.Default.BugReport, destination = SettingsSectionDestination.Inline)
+    SettingsCategory.DEXHUB -> SettingsSectionSpec(category, stringResource(R.string.dexhub_settings_title), Icons.Default.AutoAwesome, destination = SettingsSectionDestination.Inline)
     SettingsCategory.EXPERIENCE -> SettingsSectionSpec(category, stringResource(R.string.settings_experience), Icons.Default.Tune, destination = SettingsSectionDestination.Inline)
 }
 
@@ -264,6 +266,7 @@ fun SettingsScreen(
     val contentFocusRequesters = remember {
         mapOf(
             SettingsCategory.SEARCH to FocusRequester(),
+            SettingsCategory.DEXHUB to FocusRequester(),
             SettingsCategory.APPEARANCE to FocusRequester(),
             SettingsCategory.EXPERIENCE to FocusRequester(),
             SettingsCategory.PROFILES to FocusRequester(),
@@ -1197,6 +1200,9 @@ private fun SettingsDetailPane(
             }
         )
         SettingsCategory.DEBUG -> DebugSettingsContent()
+        SettingsCategory.DEXHUB -> com.nuvio.tv.dexhub.settings.DexHubSettingsContent(
+            initialFocusRequester = if (allowDetailAutofocus) contentFocusRequesters[SettingsCategory.DEXHUB] else null
+        )
         SettingsCategory.TRACKING -> TrackingSettingsContent(
             initialFocusRequester = if (allowDetailAutofocus) {
                 contentFocusRequesters[SettingsCategory.TRACKING]

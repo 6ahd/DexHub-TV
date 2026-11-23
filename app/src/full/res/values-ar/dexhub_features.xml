@@ -145,4 +145,15 @@
     <string name="dexhub_sync_shared">المزامنة التلقائية: توقيت مشترك في DexWorld لهذي النسخة</string>
     <string name="dexhub_sync_share">المزامنة المشتركة مع DexWorld</string>
     <string name="dexhub_sync_share_sub">النسخة اللي تتوقّت مرة تتوقّت للكل: تروح مفاتيح توقيتها لـ DexWorld، أبدًا ما يروح رابط ولا نص ترجمة</string>
+
+    <!-- الإعدادات > Dex Hub (dexhub/settings) -->
+    <string name="dexhub_settings_title">Dex Hub</string>
+    <string name="dexhub_settings_sub">كل مزايا Dex Hub في مكان واحد: ترجمة الذكاء الاصطناعي، المزامنة، الخطوط، اليوزنت والشكل</string>
+    <string name="dexhub_settings_subtitles">الترجمة</string>
+    <string name="dexhub_settings_subtitle_font">خط الترجمة</string>
+    <string name="dexhub_settings_subtitle_font_sub">فيه خطوط عربية، وتقدر تستورد خطك من جوالك</string>
+    <string name="dexhub_settings_look">الشكل</string>
+    <string name="dexhub_settings_app_font">خط التطبيق</string>
+    <string name="dexhub_settings_app_font_sub">خط التطبيق كامل</string>
+    <string name="dexhub_settings_sources">المصادر</string>
 </resources>

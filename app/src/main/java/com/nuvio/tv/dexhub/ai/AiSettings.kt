@@ -36,7 +36,7 @@ import kotlinx.coroutines.withContext
 
 /** Playback > Subtitles > "Translate with" (DEXHUB.md): Google Translate, or the viewer's own AI service. */
 @Composable
-fun AiTranslationRow() {
+fun AiTranslationRow(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val choice by AiService.choice(context).collectAsStateWithLifecycle()
     var open by remember { mutableStateOf(false) }
@@ -44,7 +44,8 @@ fun AiTranslationRow() {
         title = stringResource(R.string.dexhub_ai_translate),
         subtitle = stringResource(R.string.dexhub_ai_translate_sub),
         value = if (choice.usable) choice.label else "Google Translate",
-        onClick = { open = true }
+        onClick = { open = true },
+        modifier = modifier
     )
     if (open) ServicesDialog(onDismiss = { open = false })
 }
@@ -67,6 +68,10 @@ fun WhisperSyncRow() {
         onToggle = { AiService.setWhisper(context, !on) }
     )
 }
+
+/** The services and their keys, from anywhere (the player's subtitles panel opens it too). */
+@Composable
+fun AiServicesDialog(onDismiss: () -> Unit) = ServicesDialog(onDismiss)
 
 @Composable
 private fun ServicesDialog(onDismiss: () -> Unit) {
