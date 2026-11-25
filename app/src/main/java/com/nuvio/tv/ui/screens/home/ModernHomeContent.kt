@@ -294,6 +294,11 @@ fun ModernHomeContent(
     val spotlightMode = remember { mutableStateOf(DexSpotlightMemory.active) }
     val spotlightIndex = remember { mutableIntStateOf(DexSpotlightMemory.index) }
     val spotlightTrailerItemId = remember { mutableStateOf<String?>(null) }
+    // Flix's Home promo: the spotlight's own trailer, started by resting on a title rather than by the
+    // Trailer button. It plays without sound inside the backdrop, keeps the text and rows, plays once,
+    // and the carousel waits for it before turning to the next title.
+    val spotlightAutoTrailer = remember { mutableStateOf(false) }
+    val spotlightAdvanceSoon = remember { mutableStateOf(false) }
     val spotlightPlayFocus = remember { FocusRequester() }
     val spotlightStart = remember { DexSpotlightMemory.active }
     val spotlightRow = remember(carouselRows) { dexSpotlightRow(carouselRows.list) }
@@ -739,12 +744,50 @@ fun ModernHomeContent(
         }.collectLatest { (running, _, trailer) ->
             if (!running || trailer != null) return@collectLatest
             while (true) {
-                delay(DEX_SPOTLIGHT_ADVANCE_MS)
+                delay(if (spotlightAdvanceSoon.value) DEX_PROMO_NEXT_MS else DEX_SPOTLIGHT_ADVANCE_MS)
+                spotlightAdvanceSoon.value = false
                 val count = latestSpotlightItems.value.size
                 if (count >= 2 && lifecycleOwner.lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)) {
                     spotlightIndex.intValue = (spotlightIndex.intValue + 1).mod(count)
                     break
                 }
+            }
+        }
+    }
+
+    val latestTrailerPreviewUrls = rememberUpdatedState(trailerPreviewUrls)
+    val promoAllowed = uiState.focusedPosterBackdropTrailerEnabled
+    LaunchedEffect(promoAllowed) {
+        if (!promoAllowed) return@LaunchedEffect
+        snapshotFlow {
+            val active = spotlightMode.value && spotlightHasFocus.value && !latestSidebarExpanded.value
+            if (active) (spotlightItemState.value?.payload as? ModernPayload.Catalog) else null
+        }.distinctUntilChanged { a, b -> a?.itemId == b?.itemId }.collectLatest { payload ->
+            if (payload == null) {
+                if (spotlightAutoTrailer.value) {
+                    spotlightAutoTrailer.value = false
+                    spotlightTrailerItemId.value = null
+                }
+                return@collectLatest
+            }
+            if (spotlightAutoTrailer.value && spotlightTrailerItemId.value != payload.itemId) {
+                spotlightAutoTrailer.value = false
+                spotlightTrailerItemId.value = null
+            }
+            delay(DEX_PROMO_DWELL_MS)
+            if (spotlightTrailerItemId.value != null ||
+                !lifecycleOwner.lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)
+            ) return@collectLatest
+            spotlightAutoTrailer.value = true
+            spotlightTrailerItemId.value = payload.itemId
+            latestOnRequestTrailerPreview(payload.itemId, payload.trailerTitle, payload.trailerReleaseInfo, payload.trailerApiType)
+            // No trailer for this title: let the carousel carry on.
+            delay(DEX_PROMO_LOOKUP_MS)
+            if (spotlightAutoTrailer.value && spotlightTrailerItemId.value == payload.itemId &&
+                latestTrailerPreviewUrls.value[payload.itemId].isNullOrBlank()
+            ) {
+                spotlightAutoTrailer.value = false
+                spotlightTrailerItemId.value = null
             }
         }
     }
@@ -1052,7 +1095,7 @@ fun ModernHomeContent(
                 derivedStateOf { shouldPlayCatalogHeroTrailerState.value || shouldPlayCollectionHeroVideoState.value }
             }
             val heroMediaMutedState = remember(uiState.focusedPosterBackdropTrailerMuted) {
-                derivedStateOf { uiState.focusedPosterBackdropTrailerMuted }
+                derivedStateOf { spotlightAutoTrailer.value || uiState.focusedPosterBackdropTrailerMuted }
             }
             var heroTrailerFirstFrameRendered by remember { mutableStateOf(false) }
             LaunchedEffect(heroMediaDataState.value.third) {
@@ -1189,6 +1232,8 @@ fun ModernHomeContent(
                         endedCollectionHeroVideoPlaybackKey = collectionHeroVideoPlaybackKey
                     } else {
                         expandedCatalogFocusKey.value = null
+                        if (spotlightAutoTrailer.value) spotlightAdvanceSoon.value = true
+                        spotlightAutoTrailer.value = false
                         spotlightTrailerItemId.value = null
                     }
                 }
@@ -1198,7 +1243,7 @@ fun ModernHomeContent(
             // Fade content rows when ANY hero media (catalog trailer or collection
             // hero video) is playing in fullscreen — not just catalog trailers.
             val trailerContentAlphaState = animateFloatAsState(
-                targetValue = if (trailerPlaybackTarget != FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW && fullScreenBackdropUpdated && (shouldPlayCatalogHeroTrailerUpdated || shouldPlayCollectionHeroVideoUpdated) && heroTrailerFirstFrameRenderedUpdated) 0f else 1f,
+                targetValue = if (!spotlightAutoTrailer.value && trailerPlaybackTarget != FocusedPosterTrailerPlaybackTarget.FEATHERED_WINDOW && fullScreenBackdropUpdated && (shouldPlayCatalogHeroTrailerUpdated || shouldPlayCollectionHeroVideoUpdated) && heroTrailerFirstFrameRenderedUpdated) 0f else 1f,
                 animationSpec = tween(durationMillis = 480),
                 label = "trailerContentFade"
             )
@@ -1228,7 +1273,7 @@ fun ModernHomeContent(
                 else -> 2
             }
             val heroTrailerShowing = remember {
-                { !isRapidHorizontalNav.value && shouldPlayTrailerLambda() && heroTrailerRenderedLambda() }
+                { !spotlightAutoTrailer.value && !isRapidHorizontalNav.value && shouldPlayTrailerLambda() && heroTrailerRenderedLambda() }
             }
             // State A geometry (skin §2.1, y in px of a 1080 screen): plot ends at 766, buttons at 836,
             // dots at 900 and the first row title peeks at 940. Mapped onto the real window, then into
@@ -1290,6 +1335,7 @@ fun ModernHomeContent(
                     onMoreInfo = { openSpotlightItem(false) },
                     onTrailer = {
                         (spotlightItemState.value?.payload as? ModernPayload.Catalog)?.let { payload ->
+                            spotlightAutoTrailer.value = false
                             spotlightTrailerItemId.value = payload.itemId
                             latestOnRequestTrailerPreview(
                                 payload.itemId, payload.trailerTitle, payload.trailerReleaseInfo, payload.trailerApiType

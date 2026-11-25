@@ -244,7 +244,8 @@ fun AuthQrSignInScreen(
                     }
                 },
                 initialFocusRequester = loginFocusRequester,
-                showSupportButton = supportState.showSupportButton && !(isSignedIn && isOnboardingMode),
+                // Dex Hub's sign-in page has no "Support Nuvio" button (Nuvio's donation page is for its own apps).
+                showSupportButton = false,
                 supporterTier = supportState.tier.takeIf { supportState.status == SupportStatus.SUPPORTER },
                 onSupport = { showSupportDialog = true }
             )

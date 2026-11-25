@@ -48,6 +48,15 @@ internal const val DEX_SPOTLIGHT_COUNT = 8
 /** Carousel step while the spotlight holds focus (skin §2.6). */
 internal const val DEX_SPOTLIGHT_ADVANCE_MS = 10_000L
 
+/** Flix's Home promo: rest this long on a spotlight title before its trailer starts (FlixHeroTrailer.dwell). */
+internal const val DEX_PROMO_DWELL_MS = 2_500L
+
+/** How long a promo waits for its trailer to be found before the carousel moves on without it. */
+internal const val DEX_PROMO_LOOKUP_MS = 8_000L
+
+/** After a promo plays out and fades back to the art, the next title comes this soon. */
+internal const val DEX_PROMO_NEXT_MS = 1_500L
+
 /** Whether Home was last left on the spotlight, and on which title, so a return lands there again. */
 internal object DexSpotlightMemory {
     var active: Boolean = true

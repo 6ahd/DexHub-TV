@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="backup_title">النسخ الاحتياطي والاستعادة</string>
-    <string name="backup_subtitle">احتفظ بنسخة من ملفاتك الشخصية وإعدادات Arc</string>
+    <string name="backup_subtitle">احتفظ بنسخة من ملفاتك الشخصية وإعدادات Dex Hub</string>
     <string name="backup_group_back_up">النسخ الاحتياطي</string>
     <string name="backup_now">إنشاء نسخة احتياطية الآن</string>
     <string name="backup_now_sub">يحفظ ملفاً في مجلد التنزيلات على هذا الجهاز</string>
@@ -21,7 +21,7 @@
     <string name="backup_saved_where">%1$s في التنزيلات</string>
     <string name="backup_part_profiles">الملفات الشخصية</string>
     <string name="backup_part_profiles_sub">الأسماء والصور</string>
-    <string name="backup_part_settings">إعدادات Arc</string>
+    <string name="backup_part_settings">إعدادات Dex Hub</string>
     <string name="backup_part_settings_sub">Scout والصور المصغرة وDNS وأزرار جهاز التحكم والمزيد</string>
     <string name="backup_part_history">المكتبة وسجل المشاهدة</string>
     <string name="backup_part_history_sub">العناوين المحفوظة ومتابعة المشاهدة وعلامات المشاهدة</string>
@@ -39,16 +39,16 @@
     <string name="backup_also_phone">الحفظ على هاتفك أيضاً</string>
     <string name="backup_done">تم</string>
     <string name="backup_phone_save_instruction">امسح الرمز بهاتف متصل بشبكة Wi-Fi نفسها، أو افتح العنوان على حاسوب. ثم اضغط تنزيل واحفظ الملف في مكان آمن.</string>
-    <string name="backup_phone_restore_instruction">امسح الرمز بهاتف متصل بشبكة Wi-Fi نفسها، أو افتح العنوان على حاسوب. ثم اختر ملف النسخة الاحتياطية. يتابع Arc هنا عند وصوله.</string>
+    <string name="backup_phone_restore_instruction">امسح الرمز بهاتف متصل بشبكة Wi-Fi نفسها، أو افتح العنوان على حاسوب. ثم اختر ملف النسخة الاحتياطية. يتابع Dex Hub هنا عند وصوله.</string>
     <string name="backup_choose_title">اختر نسخة احتياطية</string>
-    <string name="backup_choose_none">لا يجد Arc أي نسخ احتياطية على هذا الجهاز. بعد إعادة التثبيت، أرسل نسخة من هاتفك بدلاً من ذلك.</string>
+    <string name="backup_choose_none">لا يجد Dex Hub أي نسخ احتياطية على هذا الجهاز. بعد إعادة التثبيت، أرسل نسخة من هاتفك بدلاً من ذلك.</string>
     <string name="backup_restore_title">ما الذي تريد استعادته</string>
     <string name="backup_restore_from">نسخة احتياطية بتاريخ %1$s. أُنشئت على: %2$s</string>
-    <string name="backup_restore_note">تستبدل الاستعادة هذه الإعدادات على هذا الجهاز، ثم يُعاد تشغيل Arc. عند تسجيل الدخول، يرسل حسابك في Nuvio بعد ذلك إعداداته المتزامنة إلى أجهزتك الأخرى.</string>
+    <string name="backup_restore_note">تستبدل الاستعادة هذه الإعدادات على هذا الجهاز، ثم يُعاد تشغيل Dex Hub. عند تسجيل الدخول، يرسل حسابك في Nuvio بعد ذلك إعداداته المتزامنة إلى أجهزتك الأخرى.</string>
     <string name="backup_restore_signin_note">إذا سجّلت الدخول إلى Nuvio بعد ذلك، فقد تحل إعداداتك المتزامنة محل الإعدادات المستعادة.</string>
     <string name="backup_restore_button">استعادة</string>
     <string name="backup_pin_create_heading">اختر رمز PIN لكلمات المرور والمفاتيح</string>
-    <string name="backup_pin_create_support">من 6 إلى 16 رقماً. رمز PIN الأطول يحمي بيانات تسجيل دخولك بشكل أفضل إذا نسخ أحدهم الملف. لا يستطيع Arc استرجاع رمز PIN، لكن باقي محتوى النسخة الاحتياطية يُستعاد بدونه.</string>
+    <string name="backup_pin_create_support">من 6 إلى 16 رقماً. رمز PIN الأطول يحمي بيانات تسجيل دخولك بشكل أفضل إذا نسخ أحدهم الملف. لا يستطيع Dex Hub استرجاع رمز PIN، لكن باقي محتوى النسخة الاحتياطية يُستعاد بدونه.</string>
     <string name="backup_pin_create_back">اضغط رجوع للنسخ الاحتياطي بدون كلمات المرور</string>
     <string name="backup_pin_confirm_heading">أدخل رمز PIN مرة أخرى</string>
     <string name="backup_pin_confirm_support">الأرقام نفسها، للتأكد.</string>
@@ -59,15 +59,15 @@
     <string name="backup_pin_wrong">رمز PIN هذا لا يطابق هذه النسخة الاحتياطية.</string>
     <string name="backup_pin_checking">جاري التحقق…</string>
     <string name="backup_error_save">تعذر حفظ النسخة الاحتياطية. تأكد من وجود مساحة فارغة على الجهاز.</string>
-    <string name="backup_error_read">هذا الملف ليس نسخة احتياطية من Arc، أو أنه من إصدار أحدث من Arc.</string>
+    <string name="backup_error_read">هذا الملف ليس نسخة احتياطية من Dex Hub، أو أنه من إصدار أحدث من Dex Hub.</string>
     <string name="backup_error_restore">تعذرت استعادة النسخة الاحتياطية.</string>
     <string name="backup_restore_partial">تعذّرت استعادة بعض العناصر. تحقق من الإعدادات وعمليات تسجيل الدخول قبل إعادة ضبط جهازك القديم.</string>
-    <string name="backup_restored_reopen">تمت استعادة النسخة الاحتياطية. أغلق Arc ثم افتحه مرة أخرى لإكمال العملية.</string>
-    <string name="backup_permission_needed">يحتاج Arc إلى إذن للحفظ في التنزيلات على هذا الجهاز.</string>
-    <string name="backup_signin_hint">تنتقل من جهاز آخر أو تعيد تثبيت Arc؟ استرجع ملفاتك الشخصية وإعداداتك.</string>
+    <string name="backup_restored_reopen">تمت استعادة النسخة الاحتياطية. أغلق Dex Hub ثم افتحه مرة أخرى لإكمال العملية.</string>
+    <string name="backup_permission_needed">يحتاج Dex Hub إلى إذن للحفظ في التنزيلات على هذا الجهاز.</string>
+    <string name="backup_signin_hint">تنتقل من جهاز آخر أو تعيد تثبيت Dex Hub؟ استرجع ملفاتك الشخصية وإعداداتك.</string>
     <string name="backup_signin_button">الاستعادة من نسخة احتياطية</string>
     <string name="backup_signin_prompt_body">تمت استعادة النسخة الاحتياطية. سجّل الدخول إلى Nuvio لاستعادة ما يحفظه حسابك، مثل حالة الداعم وصفوف الصفحة الرئيسية والمجموعات وتقدّم المشاهدة.</string>
-    <string name="backup_where_sub">استرجع ملفاتك الشخصية وإعدادات Arc.</string>
+    <string name="backup_where_sub">استرجع ملفاتك الشخصية وإعدادات Dex Hub.</string>
     <string name="backup_where_box">على هذا الجهاز</string>
     <string name="backup_where_phone">على هاتف أو حاسوب</string>
     <string name="backup_where_phone_sub">أرسل الملف من هاتف متصل بشبكة Wi-Fi نفسها</string>
@@ -76,9 +76,9 @@
     <string name="backup_web_none">لا توجد نسخ احتياطية على التلفاز بعد. اضغط أولاً على إنشاء نسخة احتياطية الآن في التلفاز.</string>
     <string name="backup_web_download">تنزيل</string>
     <string name="backup_web_restore_heading">استعادة نسخة احتياطية</string>
-    <string name="backup_web_restore_body">اختر ملف نسخة احتياطية من Arc. سيسألك التلفاز بعدها عمّا تريد استعادته.</string>
+    <string name="backup_web_restore_body">اختر ملف نسخة احتياطية من Dex Hub. سيسألك التلفاز بعدها عمّا تريد استعادته.</string>
     <string name="backup_web_choose">اختيار ملف النسخة الاحتياطية</string>
     <string name="backup_web_sent">تم الإرسال. تابع على التلفاز.</string>
-    <string name="backup_web_not_backup">هذا الملف ليس نسخة احتياطية من Arc.</string>
+    <string name="backup_web_not_backup">هذا الملف ليس نسخة احتياطية من Dex Hub.</string>
     <string name="backup_web_failed">تعذر إرسال الملف. حاول مرة أخرى.</string>
 </resources>

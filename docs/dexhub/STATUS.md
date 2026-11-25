@@ -26,6 +26,10 @@ everything except the skin's animations. The skin's measured layout is in `skin-
   titles, the add-on's PICKS prompt; kept a day or until the history changes).
 - Scout / Ask (AI keys, Ask, Mixes) on by default; its tab is named Discover like the add-on's.
 
+- Spotlight promo like Flix (FlixHeroTrailer): after 2.5 s on a title its trailer plays muted inside the backdrop,
+  once, with the text and rows kept; the carousel waits for it. Trailer button turns it into the full trailer.
+- Branding: intro lettering DEX HUB, "Arc" is "Dex Hub" in every string, no Support Nuvio on sign-in.
+
 ## Missing, by what shows most (from the add-on's code, `homeui/` and `skinui/rows.py`)
 1. Collection tile focus: hero turns into a poster mosaic with the brand logo and "Live from TMDB · N titles".
 2. Continue Watching like the add-on: wide cards with clearlogo and "N min left"; optional split into
@@ -43,7 +47,7 @@ everything except the skin's animations. The skin's measured layout is in `skin-
 7. Discover page: Trending, Picked for you, Most watched this week (ranked), Most anticipated (tall),
    Top rated, Short on time, Feel good, Edge of your seat, Mind benders, Out lately, Coming soon.
 8. Library page: Continue, New episodes this week, Watching, Plan to watch, Favorites, Trakt/Simkl/MDBList lists.
-9. Sign-in page rebranded (no Arc / "Support Nuvio", Arabic error text).
+9. Sign-in page: Arabic error text.
 10. Servers page like the add-on's "My Servers" (`routes/servers_tab.py`): counts (servers, libraries,
     to continue), chips All + each server, Continue watching per server, recently added, libraries.
 11. Collection / kit page (`homeui/collection_page.py`): kit name or network logo, "N catalogs", chips

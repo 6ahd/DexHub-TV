@@ -89,17 +89,22 @@ class DexPicksCatalogProvider @Inject constructor(
 
     override val rowChanges: Flow<Unit> = changes
 
+    /** The newest film and the newest series watched or started, like the add-on's playback store. */
     private val seeds: Flow<Pair<Seed?, Seed?>> = flow {
         emit(Pair<Seed?, Seed?>(null, null))
-        watchProgress.get().allProgress.map { progress ->
-            val sorted = progress.sortedByDescending { it.lastWatched }
-            fun newest(series: Boolean) = sorted.firstOrNull { item ->
-                val type = item.contentType.lowercase()
-                (if (series) type in SERIES_TYPES else type == "movie") && item.name.isNotBlank() && !item.name.startsWith("tt")
-            }?.let { Seed(it.contentId, it.name.trim()) }
-            newest(false) to newest(true)
-        }.collect { emit(it) }
+        val repo = watchProgress.get()
+        emitAll(combine(repo.allProgress, repo.tasteHistory) { progress, watched ->
+            val entries = progress.map { Triple(it.lastWatched, it.contentType, Seed(it.contentId, it.name.trim())) } +
+                watched.map { Triple(it.watchedAt, it.contentType, Seed(it.contentId, it.title.trim())) }
+            newestSeed(entries, series = false) to newestSeed(entries, series = true)
+        })
     }.distinctUntilChanged()
+
+    private fun newestSeed(entries: List<Triple<Long, String, Seed>>, series: Boolean): Seed? =
+        entries.sortedByDescending { it.first }.firstOrNull { (_, type, seed) ->
+            val kind = type.lowercase()
+            (if (series) kind in SERIES_TYPES else kind == "movie") && seed.title.isNotBlank() && !seed.title.startsWith("tt")
+        }?.third
 
     private val aiOffered: Flow<Boolean> =
         if (!ScoutAskFeature.available) flowOf(false)
@@ -196,10 +201,10 @@ class DexPicksCatalogProvider @Inject constructor(
     }
 
     private suspend fun currentSeed(series: Boolean): Seed? = withContext(Dispatchers.IO) {
-        watchProgress.get().allProgress.first().sortedByDescending { it.lastWatched }.firstOrNull { item ->
-            val type = item.contentType.lowercase()
-            (if (series) type in SERIES_TYPES else type == "movie") && item.name.isNotBlank()
-        }?.let { Seed(it.contentId, it.name.trim()) }
+        val repo = watchProgress.get()
+        val entries = repo.allProgress.first().map { Triple(it.lastWatched, it.contentType, Seed(it.contentId, it.name.trim())) } +
+            repo.tasteHistory.first().map { Triple(it.watchedAt, it.contentType, Seed(it.contentId, it.title.trim())) }
+        newestSeed(entries, series)
     }
 
     private fun TmdbRecommendationResult.toMeta(series: Boolean): MetaPreview? {
