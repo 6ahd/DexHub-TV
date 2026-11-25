@@ -2052,43 +2052,67 @@ private fun ModernCarouselCard(
                     ScoutMixCardWords(name = item.title, shows = mix.shows, rtl = mixRtl)
                 }
 
-                if (hasLandscapeLogo) {
-                    val logoModel = remember(context, effectiveLogoUrl, maxLogoWidthPx, logoHeightPx) {
-                        effectiveLogoUrl?.let {
-                            ImageRequest.Builder(context)
-                                .data(it)
-                                .crossfade(false)
-                                .memoryCacheKey("${it}_${maxLogoWidthPx}x${logoHeightPx}")
-                                .size(width = maxLogoWidthPx, height = logoHeightPx)
-                                .build()
+                // skin.dexhub wide card: clearlogo bottom-left, and under it "genre • year".
+                val expandedMeta = if (isBackdropExpanded && !isCollectionFolder && showTitleOverlay) {
+                    remember(item.heroPreview.genres, item.heroPreview.yearText, context) {
+                        listOfNotNull(
+                            item.heroPreview.genres.firstOrNull()?.takeIf { it.isNotBlank() }
+                                ?.let { com.nuvio.tv.ui.util.localizedGenreLabel(context, it) },
+                            item.heroPreview.yearText?.takeIf { it.isNotBlank() }
+                        ).joinToString("  \u2022  ").takeIf { it.isNotBlank() }
+                    }
+                } else null
+                if (hasLandscapeLogo || showTitleOverlay) {
+                    Column(
+                        modifier = Modifier
+                            .align(Alignment.BottomStart)
+                            .fillMaxWidth(0.62f)
+                            .padding(start = 10.dp, end = 10.dp,
+                                bottom = if (expandedMeta != null) 8.dp else NuvioTheme.spacing.sm)
+                    ) {
+                        if (hasLandscapeLogo) {
+                            val logoModel = remember(context, effectiveLogoUrl, maxLogoWidthPx, logoHeightPx) {
+                                effectiveLogoUrl?.let {
+                                    ImageRequest.Builder(context)
+                                        .data(it)
+                                        .crossfade(false)
+                                        .memoryCacheKey("${it}_${maxLogoWidthPx}x${logoHeightPx}")
+                                        .size(width = maxLogoWidthPx, height = logoHeightPx)
+                                        .build()
+                                }
+                            }
+                            AsyncImage(
+                                model = logoModel,
+                                contentDescription = item.title,
+                                onError = { landscapeLogoLoadFailed = true },
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(cardHeight * if (expandedMeta != null) 0.30f else 0.34f),
+                                contentScale = ContentScale.Fit,
+                                alignment = Alignment.BottomStart
+                            )
+                        } else {
+                            Text(
+                                text = item.title,
+                                style = titleStyle.copy(
+                                    textDirection = item.title.contentTextDirection()
+                                ),
+                                color = Color.White,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                        }
+                        expandedMeta?.let { meta ->
+                            Text(
+                                text = meta,
+                                fontSize = 11.sp,
+                                color = Color(0xD9FFFFFF),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis,
+                                modifier = Modifier.padding(top = 4.dp)
+                            )
                         }
                     }
-                    AsyncImage(
-                        model = logoModel,
-                        contentDescription = item.title,
-                        onError = { landscapeLogoLoadFailed = true },
-                        modifier = Modifier
-                            .align(Alignment.BottomStart)
-                            .fillMaxWidth(0.62f)
-                            .height(cardHeight * 0.34f)
-                            .padding(start = 10.dp, end = 10.dp, bottom = NuvioTheme.spacing.sm),
-                        contentScale = ContentScale.Fit,
-                        alignment = Alignment.CenterStart
-                    )
-                } else if (showTitleOverlay) {
-                    Text(
-                        text = item.title,
-                        style = titleStyle.copy(
-                            textDirection = item.title.contentTextDirection()
-                        ),
-                        color = Color.White,
-                        maxLines = 2,
-                        overflow = TextOverflow.Ellipsis,
-                        modifier = Modifier
-                            .align(Alignment.BottomStart)
-                            .fillMaxWidth(0.62f)
-                            .padding(start = 10.dp, end = 10.dp, bottom = NuvioTheme.spacing.md)
-                    )
                 }
 
                 item.cornerLabel?.takeIf { it.isNotBlank() }?.let { label ->

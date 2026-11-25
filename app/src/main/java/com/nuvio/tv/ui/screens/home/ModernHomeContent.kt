@@ -39,6 +39,7 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableLongStateOf
+import androidx.compose.runtime.withFrameNanos
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -68,6 +69,7 @@ import kotlin.math.abs
 import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.input.key.type
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.draw.drawWithContent
@@ -167,6 +169,7 @@ fun ModernHomeContent(
     trailerPreviewUrls: Map<String, String> = emptyMap(),
     trailerPreviewAudioUrls: Map<String, String> = emptyMap(),
     onNavigateToDetail: (String, String, String) -> Unit,
+    onPlayTitle: (String, String, String) -> Unit = onNavigateToDetail,
     onContinueWatchingClick: (ContinueWatchingItem) -> Unit,
     onContinueWatchingStartFromBeginning: (ContinueWatchingItem) -> Unit = {},
     onContinueWatchingPlayManually: (ContinueWatchingItem) -> Unit = {},
@@ -285,6 +288,35 @@ fun ModernHomeContent(
     val loadMoreRequestedTotals = remember { mutableStateMapOf<String, Int>() }
 
     val initialFocus = remember { resolveModernHomeInitialFocus(carouselRows.list, focusState) }
+
+    // skin.dexhub hero state A: the spotlight holds focus (Play / More info / Trailer), its titles
+    // rotate every 10 s and only the row titles peek under it. State B: a row holds focus.
+    val spotlightMode = remember { mutableStateOf(DexSpotlightMemory.active) }
+    val spotlightIndex = remember { mutableIntStateOf(DexSpotlightMemory.index) }
+    val spotlightTrailerItemId = remember { mutableStateOf<String?>(null) }
+    val spotlightPlayFocus = remember { FocusRequester() }
+    val spotlightStart = remember { DexSpotlightMemory.active }
+    val spotlightRow = remember(carouselRows) { dexSpotlightRow(carouselRows.list) }
+    val spotlightItems = remember(spotlightRow) { spotlightRow?.dexSpotlightItems().orEmpty() }
+    val latestSpotlightItems = rememberUpdatedState(spotlightItems)
+    val spotlightItemState = remember {
+        derivedStateOf {
+            val items = latestSpotlightItems.value
+            if (items.isEmpty()) null else items[spotlightIndex.intValue.mod(items.size)]
+        }
+    }
+    val spotlightSelectionState = remember(spotlightRow) {
+        derivedStateOf {
+            val item = spotlightItemState.value
+            if (spotlightRow != null && item != null) ModernHeroSelection(spotlightRow.key, item.key) else null
+        }
+    }
+    LaunchedEffect(Unit) {
+        snapshotFlow { spotlightMode.value to spotlightIndex.intValue }.collect { (active, index) ->
+            DexSpotlightMemory.active = active
+            DexSpotlightMemory.index = index
+        }
+    }
     val focusedItemByRow = remember {
         mutableStateMapOf<String, Int>().apply {
             initialFocus?.let { (row, index) -> put(row.key, index) }
@@ -315,7 +347,7 @@ fun ModernHomeContent(
     val activeItemIndex = remember { mutableIntStateOf(initialFocus?.second ?: 0) }
     val pendingRowFocusKey = remember { mutableStateOf(initialFocus?.first?.key) }
     val pendingRowFocusIndex = remember { mutableStateOf(initialFocus?.second) }
-    val pendingRowFocusNonce = remember { mutableIntStateOf(if (initialFocus != null) 1 else 0) }
+    val pendingRowFocusNonce = remember { mutableIntStateOf(if (initialFocus != null && !spotlightStart) 1 else 0) }
     val restoredFromSavedState = remember { mutableStateOf(initialFocus != null) }
     val settledHeroSelection = remember {
         mutableStateOf(initialFocus?.let { (row, index) -> row.heroSelectionAt(index) })
@@ -339,12 +371,14 @@ fun ModernHomeContent(
     // Disabled when the sidebar owns focus (expanded) so Back can exit the app.
     val backScrollScope = rememberCoroutineScope()
     val contentHasFocus = remember { mutableStateOf(false) }
+    val spotlightHasFocus = remember { mutableStateOf(false) }
     val fullscreenTrailerPlaying = remember { mutableStateOf(false) }
     val fullscreenTrailerDismiss = remember { mutableStateOf<(() -> Unit)?>(null) }
     val shouldInterceptBack = remember {
         derivedStateOf {
-            if (!contentHasFocus.value) return@derivedStateOf false
+            if (!contentHasFocus.value && !spotlightHasFocus.value) return@derivedStateOf false
             if (fullscreenTrailerPlaying.value) return@derivedStateOf true
+            if (spotlightHasFocus.value) return@derivedStateOf false
             val rowKey = activeRowKey.value ?: return@derivedStateOf false
             val itemIndex = focusedItemByRow[rowKey] ?: 0
             itemIndex > 0
@@ -547,7 +581,7 @@ fun ModernHomeContent(
                 settledHeroSelection.value = resolvedRow.heroSelectionAt(resolvedIndex)
                 pendingRowFocusKey.value = resolvedRow.key
                 pendingRowFocusIndex.value = resolvedIndex
-                pendingRowFocusNonce.intValue++
+                if (!spotlightMode.value) pendingRowFocusNonce.intValue++
                 restoredFromSavedState.value = true
                 return@LaunchedEffect
             }
@@ -577,7 +611,7 @@ fun ModernHomeContent(
                 settledHeroSelection.value = resolvedActive.heroSelectionAt(resolvedIndex)
             }
 
-            if (!focusState.hasSavedFocus && !hadActiveRow) {
+            if (!focusState.hasSavedFocus && !hadActiveRow && !spotlightMode.value) {
                 pendingRowFocusKey.value = resolvedActive.key
                 pendingRowFocusIndex.value = resolvedIndex
                 pendingRowFocusNonce.intValue++
@@ -659,6 +693,17 @@ fun ModernHomeContent(
         }
     }
 
+    val spotlightDownAtMs = remember { mutableLongStateOf(0L) }
+    LaunchedEffect(spotlightItems.isNotEmpty()) {
+        if (spotlightItems.isEmpty() || !spotlightMode.value) return@LaunchedEffect
+        // Wait for the controls to be placed, then take the first focus like the skin does.
+        repeat(10) {
+            withFrameNanos { }
+            if (latestSidebarExpanded.value) return@LaunchedEffect
+            if (runCatching { spotlightPlayFocus.requestFocus() }.getOrDefault(false)) return@LaunchedEffect
+        }
+    }
+
     val latestOnHeroItemFocus by rememberUpdatedState(onItemFocus)
     val latestOnSeriesHeroSettled by rememberUpdatedState(onSeriesHeroSettled)
     LaunchedEffect(verticalRowListState) {
@@ -676,6 +721,32 @@ fun ModernHomeContent(
                 settledItem?.metaPreview?.let { latestOnHeroItemFocus(it) }
                 settledItem?.heroSeriesRef()?.let { latestOnSeriesHeroSettled(it) }
             }
+    }
+
+    // The spotlight's title settles like a focused card: enrich it, then rotate every 10 s.
+    LaunchedEffect(Unit) {
+        snapshotFlow { if (spotlightMode.value) spotlightItemState.value else null }
+            .collectLatest { item ->
+                if (item == null) return@collectLatest
+                delay(MODERN_HERO_FOCUS_DEBOUNCE_MS)
+                item.metaPreview?.let { latestOnHeroItemFocus(it) }
+                item.heroSeriesRef()?.let { latestOnSeriesHeroSettled(it) }
+            }
+    }
+    LaunchedEffect(Unit) {
+        snapshotFlow {
+            Triple(spotlightMode.value, spotlightIndex.intValue, spotlightTrailerItemId.value)
+        }.collectLatest { (running, _, trailer) ->
+            if (!running || trailer != null) return@collectLatest
+            while (true) {
+                delay(DEX_SPOTLIGHT_ADVANCE_MS)
+                val count = latestSpotlightItems.value.size
+                if (count >= 2 && lifecycleOwner.lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)) {
+                    spotlightIndex.intValue = (spotlightIndex.intValue + 1).mod(count)
+                    break
+                }
+            }
+        }
     }
 
     val latestRowsForPreload by rememberUpdatedState(carouselRows.list)
@@ -793,12 +864,23 @@ fun ModernHomeContent(
         LocalContext.current.resources.displayMetrics.heightPixels.toDp()
     }
 
-    Box(modifier = Modifier.fillMaxSize().background(NuvioTheme.colors.Background)) {
+    // Home's own height: it sits under the top bar, so it is shorter than the window. The spotlight
+    // places its parts by the skin's screen coordinates, which need both.
+    val homeBoxHeightPx = remember { mutableIntStateOf(0) }
+
+    Box(
+        modifier = Modifier.fillMaxSize().background(NuvioTheme.colors.Background)
+            .onSizeChanged { homeBoxHeightPx.intValue = it.height }
+    ) {
             val posterCardCornerRadius = remember(uiState.posterCardCornerRadiusDp) { uiState.posterCardCornerRadiusDp.dp }
             val rowHorizontalPadding = if (isV2) 48.dp else 52.dp
 
             val settledCarouselItemState = remember(rowByKey) {
-                derivedStateOf { resolveModernHeroItem(rowByKey.map, settledHeroSelection.value) }
+                derivedStateOf {
+                    val selection = if (spotlightMode.value) spotlightSelectionState.value ?: settledHeroSelection.value
+                        else settledHeroSelection.value
+                    resolveModernHeroItem(rowByKey.map, selection)
+                }
             }
 
             val resolvedHeroState = remember(settledCarouselItemState, enrichedPreviews, enrichingItemId, settledHeroSelection, uiState.heroEnrichmentEnabled, uiState.homeImdbRatingsVisibility, failedEnrichmentIds, heroSeriesFacts) {
@@ -887,6 +969,7 @@ fun ModernHomeContent(
                 derivedStateOf {
                     val expandedFocusedSelection = expandedFocusedSelectionState.value
                     val itemId = (expandedFocusedSelection?.payload as? ModernPayload.Catalog)?.itemId
+                        ?: spotlightTrailerItemId.value?.takeIf { spotlightMode.value }
                     val url = itemId?.let { trailerPreviewUrls[it] }
                     val audioUrl = itemId?.let { trailerPreviewAudioUrls[it] }
                     url to audioUrl
@@ -916,6 +999,14 @@ fun ModernHomeContent(
                 settledCarouselItemState
             ) {
                 derivedStateOf {
+                    val spotlightTrailer = spotlightMode.value && spotlightTrailerItemId.value != null &&
+                        spotlightTrailerItemId.value ==
+                            (settledCarouselItemState.value?.payload as? ModernPayload.Catalog)?.itemId
+                    if (spotlightTrailer) {
+                        return@derivedStateOf profileEntry?.pending != true &&
+                            trailerPlaybackTarget != FocusedPosterTrailerPlaybackTarget.EXPANDED_CARD &&
+                            !heroTrailerUrlsState.value.first.isNullOrBlank()
+                    }
                     profileEntry?.pending != true &&
                         isScrollStoppedState.value &&
                         effectiveAutoplayEnabled &&
@@ -990,6 +1081,7 @@ fun ModernHomeContent(
                 {
                     focusedCatalogSelection.value = null
                     expandedCatalogFocusKey.value = null
+                    spotlightTrailerItemId.value = null
                 }
             }
             val liveHeroSceneState = remember(
@@ -1097,6 +1189,7 @@ fun ModernHomeContent(
                         endedCollectionHeroVideoPlaybackKey = collectionHeroVideoPlaybackKey
                     } else {
                         expandedCatalogFocusKey.value = null
+                        spotlightTrailerItemId.value = null
                     }
                 }
             }
@@ -1137,6 +1230,26 @@ fun ModernHomeContent(
             val heroTrailerShowing = remember {
                 { !isRapidHorizontalNav.value && shouldPlayTrailerLambda() && heroTrailerRenderedLambda() }
             }
+            // State A geometry (skin §2.1, y in px of a 1080 screen): plot ends at 766, buttons at 836,
+            // dots at 900 and the first row title peeks at 940. Mapped onto the real window, then into
+            // Home's box (which starts under the top bar), so the UI scale and the bar don't move them.
+            val spotlightAvailable = spotlightItems.isNotEmpty()
+            val inSpotlight = spotlightMode.value && spotlightAvailable
+            val windowHeightPx = LocalContext.current.resources.displayMetrics.heightPixels.toFloat()
+            val boxHeightPx = homeBoxHeightPx.intValue.toFloat().takeIf { it > 0f } ?: windowHeightPx
+            val boxTopPx = (windowHeightPx - boxHeightPx).coerceAtLeast(0f)
+            val skinY = { skinPx: Float -> skinPx / 1080f * windowHeightPx - boxTopPx }
+            val rowsViewportHeightPx = with(localDensity) { rowsViewportHeight.toPx() }
+            val heroTextBottomPx = boxHeightPx - rowsViewportHeightPx - with(localDensity) { NuvioTheme.spacing.lg.toPx() }
+            val spotlightTextShiftPx = (skinY(766f) - heroTextBottomPx).coerceAtLeast(0f)
+            val spotlightRowsShiftPx = (skinY(940f) - (boxHeightPx - rowsViewportHeightPx)).coerceAtLeast(0f)
+            val spotlightControlsTop = with(localDensity) { skinY(836f).coerceAtLeast(0f).toDp() }
+            val spotlightProgress by animateFloatAsState(
+                targetValue = if (inSpotlight) 1f else 0f,
+                animationSpec = tween(durationMillis = 280, easing = androidx.compose.animation.core.CubicBezierEasing(0.33f, 1f, 0.68f, 1f)),
+                label = "dexSpotlightProgress"
+            )
+            val spotlightProgressLambda = remember { { spotlightProgress } }
             ModernHomeHero(
                 liveScene = liveHeroSceneState,
                 heroMediaWidthPx = heroMediaWidthPx,
@@ -1154,8 +1267,51 @@ fun ModernHomeContent(
                 trailerShowing = heroTrailerShowing,
                 descriptionMaxLines = heroDescriptionMaxLines,
                 descriptionAutoScrollEnabled = uiState.heroDescriptionAutoScrollEnabled,
-                titleModifier = heroMetadataModifier
+                titleModifier = heroMetadataModifier.graphicsLayer {
+                    translationY = spotlightTextShiftPx * spotlightProgressLambda()
+                }
             )
+
+            if (spotlightAvailable) {
+                val spotlightRowNow = spotlightRow
+                val openSpotlightItem = { play: Boolean ->
+                    (spotlightItemState.value?.payload as? ModernPayload.Catalog)?.let { payload ->
+                        if (play) onPlayTitle(payload.itemId, payload.itemType, payload.addonBaseUrl)
+                        else onNavigateToDetail(payload.itemId, payload.itemType, payload.addonBaseUrl)
+                    }
+                    Unit
+                }
+                DexSpotlightControls(
+                    count = spotlightItems.size,
+                    activeIndex = { spotlightIndex.intValue.mod(spotlightItems.size) },
+                    sourceLabel = spotlightRowNow?.title,
+                    playFocusRequester = spotlightPlayFocus,
+                    onPlay = { openSpotlightItem(true) },
+                    onMoreInfo = { openSpotlightItem(false) },
+                    onTrailer = {
+                        (spotlightItemState.value?.payload as? ModernPayload.Catalog)?.let { payload ->
+                            spotlightTrailerItemId.value = payload.itemId
+                            latestOnRequestTrailerPreview(
+                                payload.itemId, payload.trailerTitle, payload.trailerReleaseInfo, payload.trailerApiType
+                            )
+                        }
+                    },
+                    modifier = foregroundModifier
+                        .align(Alignment.TopStart)
+                        .padding(start = 42.dp, top = spotlightControlsTop)
+                        .graphicsLayer { alpha = spotlightProgressLambda() }
+                        .onPreviewKeyEvent { event ->
+                            if (event.type == KeyEventType.KeyDown && event.key == Key.DirectionDown) {
+                                spotlightDownAtMs.longValue = android.os.SystemClock.uptimeMillis()
+                            }
+                            false
+                        }
+                        .onFocusChanged { state ->
+                            spotlightHasFocus.value = state.hasFocus
+                            if (state.hasFocus) spotlightMode.value = true
+                        }
+                )
+            }
 
             val latestOnFocusedRowKeyChanged by rememberUpdatedState(onFocusedRowKeyChanged)
             val onActiveRowKeyChangeLambda = remember {
@@ -1289,7 +1445,32 @@ fun ModernHomeContent(
                 modifier = Modifier.sidebarPageContent()
                     .menuOpenRowEdge(rowHorizontalPadding)
                     .align(Alignment.BottomStart)
-                    .onFocusChanged { contentHasFocus.value = it.hasFocus }
+                    .graphicsLayer { translationY = spotlightRowsShiftPx * spotlightProgressLambda() }
+                    .onPreviewKeyEvent { event ->
+                        if (spotlightAvailable && event.type == KeyEventType.KeyDown &&
+                            event.key == Key.DirectionUp &&
+                            activeRowKey.value == carouselRows.list.firstOrNull()?.key
+                        ) {
+                            runCatching { spotlightPlayFocus.requestFocus() }.getOrDefault(false)
+                        } else false
+                    }
+                    .onFocusChanged {
+                        contentHasFocus.value = it.hasFocus
+                        if (it.hasFocus) {
+                            // In state A only Down from the spotlight hands focus to the rows; the top bar,
+                            // start-up focus and row restores land on Play instead.
+                            if (!spotlightAvailable) {
+                                // Rows can load before the spotlight has titles; stay in state A so
+                                // the spotlight takes focus once they arrive, as the skin opens.
+                            } else if (spotlightMode.value &&
+                                android.os.SystemClock.uptimeMillis() - spotlightDownAtMs.longValue > 600L
+                            ) {
+                                runCatching { spotlightPlayFocus.requestFocus() }
+                            } else {
+                                spotlightMode.value = false
+                            }
+                        }
+                    }
             )
     }
 

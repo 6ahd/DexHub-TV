@@ -4325,4 +4325,7 @@
     <string name="about_update_optimize_install_subtitle">تشغيل أول أسرع بعد التحديث، لكن التطبيق يُغلق لمدة دقيقة تقريبًا أثناء التثبيت. أوقفه لاستخدام شاشة مثبّت Android بدلًا من ذلك</string>
     <string name="update_ready_closes">اكتمل التحميل. يُغلق التطبيق أثناء تثبيت التحديث، وقد يستغرق ذلك دقيقة. افتحه مجددًا بعد ذلك.</string>
     <string name="update_ready_closes_and_reopens">اكتمل التحميل. يُغلق التطبيق أثناء تثبيت التحديث ثم يُفتح من تلقاء نفسه، وقد يستغرق ذلك دقيقة.</string>
+    <string name="dex_spotlight_play">تشغيل</string>
+    <string name="dex_spotlight_more_info">المزيد</string>
+    <string name="dex_spotlight_trailer">الإعلان</string>
 </resources>

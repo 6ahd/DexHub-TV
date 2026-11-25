@@ -285,6 +285,19 @@ private fun PlaybackNavHost(
                         )
                     )
                 },
+                onPlayTitle = { itemId, itemType, addonBaseUrl ->
+                    val heroArtwork = HeroBackdropState.consumeArtworkForTitle(itemId, itemType)
+                    navController.navigate(
+                        Screen.Detail.createRoute(
+                            itemId = itemId,
+                            itemType = itemType,
+                            addonBaseUrl = addonBaseUrl,
+                            heroBackdropUrl = heroArtwork?.backdropUrl,
+                            heroLogoUrl = heroArtwork?.logoUrl,
+                            playOnLoad = true
+                        )
+                    )
+                },
                 onContinueWatchingClick = onContinueWatchingClick@{ item ->
                     if (!playbackAvailability.canStream(item)) {
                         Toast.makeText(context, R.string.playback_unavailable_message, Toast.LENGTH_SHORT).show()

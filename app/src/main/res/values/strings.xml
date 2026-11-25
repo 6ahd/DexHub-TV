@@ -4645,4 +4645,7 @@
     <string name="plugin_summary_stopped">%1$d stopped at the time limit</string>
     <string name="plugin_summary_running">%1$d still searching</string>
     <string name="plugin_breakdown_title">Plugin search</string>
+    <string name="dex_spotlight_play">Play</string>
+    <string name="dex_spotlight_more_info">More info</string>
+    <string name="dex_spotlight_trailer">Trailer</string>
 </resources>
