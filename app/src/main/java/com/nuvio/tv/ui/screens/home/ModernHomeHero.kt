@@ -619,6 +619,17 @@ private fun HeroTitleContent(
             factsAgeRating?.let { rating ->
                 DexFactPill(rating, fill = Color.Transparent, ring = Color(0x99FFFFFF))
             }
+            // Dex Hub's "Ends at HH:MM" pill: when a film started now would finish.
+            val endsAt = remember(preview.runtimeText, preview.isSeries, context) {
+                if (preview.isSeries) null
+                else com.nuvio.tv.core.util.parseRuntimeMinutes(preview.runtimeText)?.takeIf { it in 1..600 }?.let { minutes ->
+                    android.text.format.DateFormat.getTimeFormat(context)
+                        .format(java.util.Date(System.currentTimeMillis() + minutes * 60_000L))
+                }
+            }
+            endsAt?.let { time ->
+                DexFactPill(stringResource(R.string.dex_hero_ends_at, time), fill = Color(0x1FFFFFFF), ring = Color(0x40FFFFFF))
+            }
         }
 
         if (secondaryHighlightText != null || ageRatingBadge != null || reserveImdbInSecondary || statusBadge != null || secondaryDetails.isNotEmpty() || hasMdbListRatings) {

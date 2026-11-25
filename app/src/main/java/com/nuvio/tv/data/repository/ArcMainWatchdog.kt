@@ -20,6 +20,7 @@ object ArcMainWatchdog {
     private const val STALL_MS = 2_000L
     private const val LOG_AFTER_MS = 4_000L
     private const val MAX_FRAMES = 40
+    private const val MAX_SAMPLE_MS = 4_000L
     private const val KEPT = 3
     private const val LOG_LINES = 60
     private const val LOG_WAIT_MS = 1_000L
@@ -138,6 +139,11 @@ object ArcMainWatchdog {
             main.postAtFrontOfQueue(answer)
             var startedWallMs = 0L
             var log: List<String> = emptyList()
+            // Reading the screen thread's stack suspends it. Doing that every second through a long freeze on a
+            // loaded device can hit ART's suspend timeout ("Thread suspension timed out"), which aborts the whole app; so
+            // read it at 2 and 4 s only; the saved freeze keeps the last stack and its length still grows every second.
+            var nextSampleMs = STALL_MS
+            var frames: List<String> = emptyList()
             while (true) {
                 runCatching { Thread.sleep(CHECK_MS) }
                 if (answeredAt >= askedAt) break
@@ -147,7 +153,11 @@ object ArcMainWatchdog {
                 if (log.isEmpty() && stuckMs >= LOG_AFTER_MS) {
                     log = runCatching { ArcLogTail.read(LOG_LINES, LOG_WAIT_MS) }.getOrDefault(emptyList())
                 }
-                val frames = Looper.getMainLooper().thread.stackTrace.take(MAX_FRAMES).map { "at $it" }
+                if (stuckMs >= nextSampleMs && nextSampleMs <= MAX_SAMPLE_MS) {
+                    nextSampleMs *= 2
+                    frames = Looper.getMainLooper().thread.stackTrace.take(MAX_FRAMES).map { "at $it" }
+                }
+                if (frames.isEmpty()) continue
                 runCatching {
                     synchronized(kept) {
                         keep(kept, Stall(startedWallMs, stuckMs, frames, log, ArcBreadcrumbs.recent()))

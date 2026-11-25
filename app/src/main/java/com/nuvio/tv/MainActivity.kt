@@ -1292,7 +1292,8 @@ open class MainActivity : ComponentActivity() {
                     val strNavLibrary = stringResource(R.string.nav_library)
                     val strNavSettings = stringResource(R.string.nav_settings)
                     val strNavCalendar = stringResource(R.string.nav_calendar)
-                    val strNavScout = stringResource(R.string.scout_title)
+                    // Dex Hub names this tab Discover (the add-on's "Discover" page sits here).
+                    val strNavScout = stringResource(R.string.nav_discover)
                     val drawerItems = remember(
                         strNavHome,
                         strNavDiscover,

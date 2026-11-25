@@ -20,6 +20,12 @@ everything except the skin's animations. The skin's measured layout is in `skin-
 - DexWorld kits on Home (`core/dexworld/DexWorldCatalogProvider.kt`): Arabic, TV networks, streamers,
   Top 10 on streamers, studios, read from `blocks.dexworld.cc` like the add-on; tiles use its covers.
 
+- Hero "Ends at HH:MM" pill on films; row titles start at x 96 in Arabic too.
+- Rows from what was watched (`core/dexpicks/DexPicksCatalogProvider.kt`): Because you watched X • Films / Series
+  (TMDB recommendations, no key) and Recommended for you by AI • Films / Series (the profile's AI key, last 25
+  titles, the add-on's PICKS prompt; kept a day or until the history changes).
+- Scout / Ask (AI keys, Ask, Mixes) on by default; its tab is named Discover like the add-on's.
+
 ## Missing, by what shows most (from the add-on's code, `homeui/` and `skinui/rows.py`)
 1. Collection tile focus: hero turns into a poster mosaic with the brand logo and "Live from TMDB · N titles".
 2. Continue Watching like the add-on: wide cards with clearlogo and "N min left"; optional split into

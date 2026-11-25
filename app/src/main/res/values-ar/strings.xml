@@ -4328,4 +4328,5 @@
     <string name="dex_spotlight_play">تشغيل</string>
     <string name="dex_spotlight_more_info">المزيد</string>
     <string name="dex_spotlight_trailer">الإعلان</string>
+    <string name="dex_hero_ends_at">ينتهي %1$s</string>
 </resources>

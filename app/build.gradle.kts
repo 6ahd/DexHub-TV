@@ -159,7 +159,7 @@ android {
         buildConfigField("String", "TVDB_API_KEY", "\"${localProperties.getProperty("TVDB_API_KEY", "")}\"")
         buildConfigField("String", "TV_LOGIN_WEB_BASE_URL", "\"${localProperties.getProperty("TV_LOGIN_WEB_BASE_URL", "https://nuvio.tv/tv-login")}\"")
         buildConfigField("String", "DEVICE_LOGIN_WEB_BASE_URL", "\"${localProperties.getProperty("DEVICE_LOGIN_WEB_BASE_URL", "https://nuvio.tv/link")}\"")
-        buildConfigField("boolean", "SCOUT_ENABLED", localProperties.getProperty("SCOUT_ENABLED", "false").toBoolean().toString())
+        buildConfigField("boolean", "SCOUT_ENABLED", localProperties.getProperty("SCOUT_ENABLED", "true").toBoolean().toString())
         buildConfigField("boolean", "DOVI_NATIVE_ENABLED", enableDoviNative.toString())
         buildConfigField("boolean", "DOVI_EXTRACTOR_HOOK_READY", doviExtractorHookReady.toString())
         buildConfigField("boolean", "AML_FEL_NATIVE_ENABLED", enableAmlFelNative.toString())

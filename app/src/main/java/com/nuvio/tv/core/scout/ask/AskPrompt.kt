@@ -72,3 +72,27 @@ internal val askAnswerSchema: JsonObject = buildJsonObject {
         }
     }
 }
+
+internal const val HISTORY_PICKS_MAX_LINES = 25
+
+/**
+ * plugin.video.dexhub's "Recommended for you by AI" (ai_search.PICKS_SYSTEM), in the shape every service here
+ * is held to. Only the titles watched lately leave the box, newest first.
+ */
+internal fun buildHistoryPicksPrompt(history: List<String>, series: Boolean, answerLanguage: String): AskPrompt {
+    val kind = if (series) "TV series" else "films"
+    val type = if (series) "series" else "movie"
+    val system = """
+        You recommend what a person should watch next, from the titles they watched lately (newest first).
+        Answer with JSON only, in this shape:
+        {"rowName":"...","includeSeen":false,"titles":[{"title":"...","year":1999,"type":"$type","reason":"..."}]}
+        - Up to $ASK_MAX_TITLES $kind they have not watched, matching their taste; vary them, and avoid the titles listed.
+        - Only real, released titles. Never invent a title. type is always $type.
+        - title: the original or English release title exactly as TMDb lists it. year: release or first air year.
+        - reason: one short sentence, at most 12 words, written in $answerLanguage, naming what it shares with their taste.
+        - rowName: at most 5 words about their taste, written in $answerLanguage.
+        - includeSeen: always false.
+    """.trimIndent()
+    val user = "Watched lately:\n" + history.take(HISTORY_PICKS_MAX_LINES).joinToString("\n").take(1500)
+    return AskPrompt(system, user)
+}

@@ -869,6 +869,8 @@ internal fun ModernRowSection(
             // dh_row: Inter Bold 30 px (15 sp), white.
             style = MaterialTheme.typography.titleMedium.copy(fontSize = 15.sp, fontWeight = FontWeight.Bold, textDirection = rowTitle.contentTextDirection()),
             color = Color.White,
+            // Arabic titles keep their own direction but start at x 96 like every other title, as in the skin.
+            textAlign = androidx.compose.ui.text.style.TextAlign.Left,
             modifier = railHeaderModifier
         )
 

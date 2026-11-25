@@ -4648,4 +4648,5 @@
     <string name="dex_spotlight_play">Play</string>
     <string name="dex_spotlight_more_info">More info</string>
     <string name="dex_spotlight_trailer">Trailer</string>
+    <string name="dex_hero_ends_at">Ends at %1$s</string>
 </resources>

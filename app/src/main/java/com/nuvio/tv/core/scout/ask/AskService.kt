@@ -211,6 +211,20 @@ internal class AskEngine(
         return AskOutcome.Answer(parsed.rowName, items, held)
     }
 
+    /** Picks from what was watched lately; anything already seen or started is dropped, never shown. */
+    suspend fun picksFromHistory(config: AskConfig, history: List<String>, series: Boolean, answerLanguage: String, seen: AskSeen): AskOutcome {
+        val text = when (val reply = reply(config, buildHistoryPicksPrompt(history, series, answerLanguage))) {
+            is AskReply.Failed -> return AskOutcome.Failed(reply.failure)
+            is AskReply.Text -> reply
+        }
+        val parsed = AskConnectors.parseAnswer(text.text, text.cutOff)
+            ?: return AskOutcome.Failed(if (text.cutOff) AskFailure.CUT_OFF else AskFailure.BAD_ANSWER)
+        val wanted = if (series) ContentType.SERIES else ContentType.MOVIE
+        val found = lookUpAll(parsed.picks.map { it.copy(isSeries = series) })
+            .filter { it.meta.type == wanted && !seen.blocks(it.meta) }
+        return if (found.isEmpty()) AskOutcome.Failed(AskFailure.NOTHING_FOUND) else AskOutcome.Answer(parsed.rowName, found)
+    }
+
     suspend fun sortPicks(config: AskConfig, candidates: List<AskCandidate>, taste: AskTaste, answerLanguage: String): List<AskRanked>? {
         val text = reply(config, buildSortPrompt(candidates, taste, answerLanguage)) as? AskReply.Text ?: return null
         val parsed = AskConnectors.parseAnswer(text.text, text.cutOff) ?: return null
@@ -246,6 +260,7 @@ internal class AskEngine(
 
 /** The only way a question leaves the box: this is everything the AI is told. */
 private const val ART_RETRY_MS = 2_000L
+private val SERIES_TYPES = setOf("series", "tv", "show", "episode")
 
 @Singleton
 class AskService @Inject constructor(
@@ -301,6 +316,52 @@ class AskService @Inject constructor(
                 watchedNames = watchedNames
             )
         }
+    }
+
+    /** Whether a key is set for this profile, so AI rows can be offered. */
+    suspend fun hasKey(): Boolean = vault.current().activeConfig != null
+
+    val keyChanges get() = vault.keys
+
+    /**
+     * "Recommended for you by AI": films or series picked from the last [HISTORY_PICKS_MAX_LINES] titles of that
+     * kind watched or started, newest first. Fewer than two gives [AskFailure.NOTHING_FOUND].
+     */
+    suspend fun historyPicks(series: Boolean): AskOutcome {
+        val config = vault.current().activeConfig ?: return AskOutcome.Failed(AskFailure.NO_KEY)
+        val lines = historyLines(series)
+        if (lines.size < 2) return AskOutcome.Failed(AskFailure.NOTHING_FOUND)
+        return when (val outcome = engine.picksFromHistory(config, lines, series, answerLanguage(), seen())) {
+            is AskOutcome.Failed -> outcome
+            is AskOutcome.Answer -> {
+                val shown = artwork.follow(outcome.items.map(AskItem::meta), CustomPosterScreen.SEARCH)
+                outcome.copy(items = outcome.items.zip(shown) { item, meta -> item.copy(meta = meta) })
+            }
+        }
+    }
+
+    /** "Title 2010 (movie)" lines, newest first, one per title. */
+    suspend fun historyLines(series: Boolean): List<String> {
+        val kind = if (series) "series" else "movie"
+        fun matches(type: String) = if (series) type.lowercase() in SERIES_TYPES else type.lowercase() == "movie"
+        val years = HashMap<String, String>()
+        val entries = ArrayList<Pair<Long, Pair<String, String>>>()
+        watchProgress.get().tasteHistory.first().filter { matches(it.contentType) }.forEach { item ->
+            item.releaseInfo?.let { Regex("\\d{4}").find(it)?.value }?.let { years[item.contentId] = it }
+            entries += item.watchedAt to (item.contentId to item.title)
+        }
+        watchProgress.get().allProgress.first().filter { matches(it.contentType) }.forEach { item ->
+            entries += item.lastWatched to (item.contentId to item.name)
+        }
+        val seenIds = HashSet<String>()
+        val seenNames = HashSet<String>()
+        return entries.sortedByDescending { it.first }.mapNotNull { (_, idName) ->
+            val (id, name) = idName
+            val title = name.trim()
+            if (title.isBlank() || title.startsWith("tt")) return@mapNotNull null
+            if (!seenIds.add(id) || !seenNames.add(title.lowercase())) return@mapNotNull null
+            listOfNotNull(title, years[id]).joinToString(" ") + " ($kind)"
+        }.take(HISTORY_PICKS_MAX_LINES)
     }
 
     suspend fun testKey(config: AskConfig): AskKeyTest = engine.testKey(config)
