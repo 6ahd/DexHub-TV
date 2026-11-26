@@ -130,8 +130,8 @@ internal fun HomeViewModel.observeTmdbSettingsPipeline() {
 @OptIn(FlowPreview::class)
 internal fun HomeViewModel.observeInstalledAddonsPipeline() {
     viewModelScope.launch {
-        combine(addonRepository.getInstalledAddons(), serverCatalog.addons) { installed, servers ->
-            installed.enabledAddons() + servers
+        combine(addonRepository.getInstalledAddons(), serverCatalog.addons, builtInCatalogs.addons) { installed, servers, builtIn ->
+            builtIn + installed.enabledAddons() + servers
         }
             .distinctUntilChanged()
             .collectLatest { addons ->

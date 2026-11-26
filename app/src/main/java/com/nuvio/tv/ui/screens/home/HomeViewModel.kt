@@ -93,6 +93,7 @@ class HomeViewModel @Inject constructor(
     internal val simklSyncRepository: com.nuvio.tv.data.simkl.SimklSyncRepository,
     internal val simklRewatchWriter: com.nuvio.tv.data.simkl.SimklRewatchWriter,
     internal val serverCatalog: ServerCatalog,
+    internal val builtInCatalogs: com.nuvio.tv.core.catalog.BuiltInCatalogs = com.nuvio.tv.core.catalog.BuiltInCatalogs(emptySet()),
     internal val trailerPlayerPool: com.nuvio.tv.core.player.TrailerPlayerPool,
     internal val backgroundTrailerController: com.nuvio.tv.core.player.BackgroundTrailerController,
     internal val metaPreviewEnricher: MetaPreviewEnricher = MetaPreviewEnricher(

@@ -587,6 +587,23 @@ private fun HeroTitleContent(
                             maxLines = 1
                         )
                     }
+                    // Dex Hub's "Ends at HH:MM": when a film started now would finish.
+                    val endsAt = remember(runtimeText, preview.isSeries, context) {
+                        if (preview.isSeries) null
+                        else com.nuvio.tv.core.util.parseRuntimeMinutes(runtimeText)?.takeIf { it in 1..600 }?.let { minutes ->
+                            android.text.format.DateFormat.getTimeFormat(context)
+                                .format(java.util.Date(System.currentTimeMillis() + minutes * 60_000L))
+                        }
+                    }
+                    if (endsAt != null) {
+                        HeroMetaDivider(metaScale)
+                        Text(
+                            text = stringResource(R.string.dex_hero_ends_at, endsAt),
+                            style = labelMedium,
+                            color = NuvioTheme.colors.TextPrimary,
+                            maxLines = 1
+                        )
+                    }
                     if (reserveImdbInPrimaryWithHighlight) {
                         HeroImdbMeta(
                             imdbText = preview.imdbText.orEmpty(),
