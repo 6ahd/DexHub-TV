@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">Continuar a ver</string>
     <string name="type_movie">Filme</string>
     <string name="type_movies">Filmes</string>
@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Nenhuma extensão instalada. Adiciona uma para começar.</string>
     <string name="home_no_catalog_addons">Nenhuma extensão de catálogo instalada. Instala uma para veres conteúdos.</string>
-    <string name="auth_notice_nuvio_logged_out">A tua sessão no Nuvio terminou. Inicia sessão novamente.</string>
+    <string name="auth_notice_nuvio_logged_out">A tua sessão no Dex Hub terminou. Inicia sessão novamente.</string>
     <string name="auth_notice_trakt_logged_out">A tua sessão no Trakt terminou. Volta a associar a conta.</string>
     <string name="error_generic">Ocorreu um erro</string>
 
@@ -369,7 +369,7 @@
     <string name="appearance_settings_style">Estilo das definições</string>
     <string name="appearance_settings_style_subtitle">Escolhe como os ecrãs de definições são apresentados</string>
     <string name="appearance_launcher_artwork">Grafismo no ecrã principal</string>
-    <string name="appearance_launcher_artwork_subtitle">Escolhe como o Nuvio aparece no ecrã principal da tua TV</string>
+    <string name="appearance_launcher_artwork_subtitle">Escolhe como o Dex Hub aparece no ecrã principal da tua TV</string>
     <string name="ambient_mode_title">Modo ambiente</string>
     <string name="ambient_mode_subtitle">Mostrar imagens dos teus catálogos enquanto a TV está inativa</string>
     <string name="ambient_mode_enabled_subtitle">Preencher o ecrã com imagens de fundo após um período sem interação com o comando</string>
@@ -389,7 +389,7 @@
     <string name="appearance_app_icon_picker_title">Escolher ícone e faixa da aplicação</string>
     <string name="appearance_app_icon_picker_subtitle">Cada estilo inclui um ícone quadrado e uma faixa para TV a combinar</string>
     <string name="appearance_app_icon_confirmation_title">Alterar ícone da aplicação?</string>
-    <string name="appearance_app_icon_confirmation_message">Mudar para %1$s irá fechar o Nuvio. A faixa da TV poderá exigir o reinício do dispositivo antes de atualizar. Seleciona OK para continuar.</string>
+    <string name="appearance_app_icon_confirmation_message">Mudar para %1$s irá fechar o Dex Hub. A faixa da TV poderá exigir o reinício do dispositivo antes de atualizar. Seleciona OK para continuar.</string>
     <string name="appearance_app_icon_change_failed">Não foi possível alterar o ícone e a faixa. Tenta novamente.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Azul ártico</string>
@@ -485,7 +485,7 @@
     <string name="tracking_accounts_title">Contas</string>
     <string name="tracking_accounts_subtitle">Liga e gere serviços de acompanhamento</string>
     <string name="tracking_sources_title">Fontes</string>
-    <string name="tracking_sources_subtitle">Escolhe onde o Nuvio lê a tua biblioteca e o progresso de visualização. A reprodução faz scrobble para todos os serviços ligados.</string>
+    <string name="tracking_sources_subtitle">Escolhe onde o Dex Hub lê a tua biblioteca e o progresso de visualização. A reprodução faz scrobble para todos os serviços ligados.</string>
     <string name="tracking_trakt_features_title">Funcionalidades do Trakt</string>
     <string name="tracking_trakt_features_subtitle">Histórico, críticas e recomendações específicas do Trakt</string>
     <string name="tracking_simkl_features_title">Funcionalidades do Simkl</string>
@@ -502,8 +502,8 @@
     <string name="tracking_status_connecting">A ligar</string>
     <string name="tracking_finish_connection">Concluir aprovação da ligação</string>
     <string name="tracking_connecting_provider">A iniciar ligação ao %1$s…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Escolhe o serviço que o Nuvio lê para retomar e Continuar a ver. O scrobbling mantém-se ativo para todos os serviços ligados.</string>
-    <string name="tracking_library_source_dialog_subtitle">Escolhe o serviço que o Nuvio lê para a tua Biblioteca. A reprodução faz scrobble para todos os serviços ligados.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Escolhe o serviço que o Dex Hub lê para retomar e Continuar a ver. O scrobbling mantém-se ativo para todos os serviços ligados.</string>
+    <string name="tracking_library_source_dialog_subtitle">Escolhe o serviço que o Dex Hub lê para a tua Biblioteca. A reprodução faz scrobble para todos os serviços ligados.</string>
     <string name="tracking_trakt_progress_required">Disponível quando o Trakt é a fonte de progresso de visualização</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -513,7 +513,7 @@
     <string name="settings_advanced_subtitle">Desempenho, navegação, cache e diagnóstico</string>
     <string name="experience_mode_essential">Essencial</string>
     <string name="experience_mode_advanced">Avançado</string>
-    <string name="experience_mode_choose_title">Escolhe a tua experiência Nuvio</string>
+    <string name="experience_mode_choose_title">Escolhe a tua experiência Dex Hub</string>
     <string name="experience_mode_choose_subtitle">Começa de forma simples ou desbloqueia toda a personalização. Podes mudar a qualquer momento.</string>
     <string name="experience_mode_essential_card_subtitle">Configuração focada, extensões, definições básicas de reprodução, Trakt e conta.</string>
     <string name="experience_mode_advanced_card_subtitle">Definições completas, controlos de disposição, ordem dos catálogos, coleções, plugins e diagnóstico.</string>
@@ -623,8 +623,8 @@
     <string name="buffer_safe_status">Seguro: dentro do limite recomendado para o teu dispositivo.</string>
     <string name="buffer_unsafe_warning">Aviso: excede o limite seguro recomendado (%1$d MB) para o teu dispositivo %2$s. Pode provocar falhas na aplicação.</string>
     <string name="buffer_auto_limit_active">Limite seguro ajustado automaticamente: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">Deslocamento de foco Nuvio</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Usar a animação e o posicionamento personalizados de deslocamento global de foco do Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll">Deslocamento de foco Dex Hub</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Usar a animação e o posicionamento personalizados de deslocamento global de foco do Dex Hub.</string>
     <string name="advanced_rgb565">Descodificação de imagens RGB565</string>
     <string name="advanced_rgb565_subtitle">Usar cor de 16 bits com menor consumo de memória para imagens opacas elegíveis. Alterar esta opção reinicia a aplicação.</string>
     <string name="advanced_hardware_bitmaps">Descodificação de imagens por hardware</string>
@@ -791,7 +791,7 @@
     <string name="autoplay_fallback_next_source_blocked_by_engine_switch">Desativa a mudança automática de motor em caso de erro de arranque para usar esta opção.</string>
     <string name="player_error_source_startup_timeout">A fonte não iniciou dentro de %1$d segundos.</string>
     <string name="playback_release_decoder_on_background">Libertar descodificador em segundo plano</string>
-    <string name="playback_release_decoder_on_background_sub">Libertar o descodificador de vídeo quando o Nuvio passa para segundo plano. Ativa esta opção se a reprodução falhar com erro de descodificador ao regressar à aplicação. O leitor recarrega ao voltar, também após a proteção de ecrã</string>
+    <string name="playback_release_decoder_on_background_sub">Libertar o descodificador de vídeo quando o Dex Hub passa para segundo plano. Ativa esta opção se a reprodução falhar com erro de descodificador ao regressar à aplicação. O leitor recarrega ao voltar, também após a proteção de ecrã</string>
     <string name="playback_external_forward_subtitles">Reencaminhar legendas para leitor externo</string>
     <string name="playback_external_forward_subtitles_sub">Obter legendas no teu idioma preferido a partir das extensões e enviá-las para o leitor externo.</string>
     <string name="playback_external_send_skip_segments">Enviar marcas temporais de introdução e encerramento</string>
@@ -818,8 +818,8 @@
     <string name="playback_player_ask_desc">Escolher o leitor de cada vez</string>
     <string name="playback_player_auto">Automático (Melhor para o conteúdo)</string>
     <string name="playback_player_auto_desc">ExoPlayer para Filmes e Séries · MPV para Anime</string>
-    <string name="playback_engine_exoplayer_desc">Melhor compatibilidade com as funcionalidades atuais do Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Usa o libmpv com os controlos OSD do Nuvio. Experimental.</string>
+    <string name="playback_engine_exoplayer_desc">Melhor compatibilidade com as funcionalidades atuais do Dex Hub.</string>
+    <string name="playback_engine_mvplayer_desc">Usa o libmpv com os controlos OSD do Dex Hub. Experimental.</string>
 
     <string name="video_section">Vídeo</string>
     <string name="playback_true_black_letterbox">Barras em preto puro</string>
@@ -1392,7 +1392,7 @@
     <string name="debrid_disconnect">Desligar</string>
     <string name="debrid_device_auth_connected">%1$s está ligado neste dispositivo.</string>
     <string name="debrid_device_auth_starting">A iniciar sessão segura...</string>
-    <string name="debrid_device_auth_instructions">Lê o código QR e introduz este código para aprovar o Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Lê o código QR e introduz este código para aprovar o Dex Hub.</string>
     <string name="debrid_device_auth_code_copied">Código copiado.</string>
     <string name="debrid_device_auth_waiting">A aguardar aprovação...</string>
     <string name="debrid_device_auth_failed">Não foi possível iniciar sessão.</string>
@@ -1589,21 +1589,21 @@
     <string name="trakt_watch_progress_title">Progresso de visualização</string>
     <string name="trakt_watch_progress_subtitle">Escolhe qual a fonte de progresso que alimenta a retoma e o continuar a ver</string>
     <string name="trakt_watch_progress_dialog_title">Progresso de visualização</string>
-    <string name="trakt_watch_progress_dialog_subtitle">Escolhe se a retoma e o continuar a ver devem usar o Trakt ou a Sincronização Nuvio, enquanto o scrobbling do Trakt se mantém ativo.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">Escolhe se a retoma e o continuar a ver devem usar o Trakt ou a Sincronização Dex Hub, enquanto o scrobbling do Trakt se mantém ativo.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">Sincronização Nuvio</string>
+    <string name="trakt_watch_progress_source_nuvio">Sincronização Dex Hub</string>
     <string name="trakt_library_source_title">Fonte da biblioteca</string>
-    <string name="trakt_library_source_subtitle">Escolhe qual a fonte que o Nuvio lê para a tua Biblioteca</string>
+    <string name="trakt_library_source_subtitle">Escolhe qual a fonte que o Dex Hub lê para a tua Biblioteca</string>
     <string name="trakt_library_source_dialog_title">Fonte da biblioteca</string>
     <string name="trakt_library_source_dialog_subtitle">Escolhe onde guardar e gerir os itens da tua biblioteca</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">Biblioteca Nuvio</string>
+    <string name="trakt_library_source_nuvio">Biblioteca Dex Hub</string>
     <string name="trakt_library_source_trakt_selected">Biblioteca Trakt selecionada</string>
-    <string name="trakt_library_source_nuvio_selected">Biblioteca Nuvio selecionada</string>
+    <string name="trakt_library_source_nuvio_selected">Biblioteca Dex Hub selecionada</string>
     <string name="trakt_setting_on">Ativado</string>
     <string name="trakt_setting_off">Desativado</string>
     <string name="trakt_watch_progress_trakt_selected">Fonte de progresso de visualização definida para Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Fonte de progresso de visualização definida para Sincronização Nuvio</string>
+    <string name="trakt_watch_progress_nuvio_selected">Fonte de progresso de visualização definida para Sincronização Dex Hub</string>
     <string name="trakt_continue_watching_window">Janela de Continuar a ver</string>
     <string name="trakt_continue_watching_subtitle">Histórico do Trakt considerado para continuar a ver</string>
     <string name="trakt_unaired_next_up">Episódios seguintes por estrear</string>
@@ -1632,7 +1632,7 @@
     <string name="trakt_stat_watched_hours">Horas vistas</string>
     <string name="trakt_disconnect">Desligar</string>
     <string name="trakt_disconnect_title">Desligar Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Isto irá desligar a tua conta Trakt do Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Isto irá desligar a tua conta Trakt do Dex Hub.</string>
     <string name="trakt_login">Iniciar sessão</string>
     <string name="trakt_retry">Tentar novamente</string>
     <string name="trakt_back">Voltar</string>
@@ -1709,11 +1709,11 @@
     <string name="profile_addons">extensões</string>
     <string name="profile_plugins">plugins</string>
     <string name="profile_choose_avatar">Escolher avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">Os URLs de avatares personalizados podem ser configurados a partir do painel web do Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Os URLs de avatares personalizados podem ser configurados a partir do painel web do Dex Hub.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Fundo</string>
     <string name="profile_choose_background">Escolher fundo do perfil</string>
-    <string name="profile_background_member_note">Os URLs de fundo personalizados podem ser configurados a partir do painel web do Nuvio.</string>
+    <string name="profile_background_member_note">Os URLs de fundo personalizados podem ser configurados a partir do painel web do Dex Hub.</string>
     <string name="profile_background_normal">Normal</string>
     <string name="profile_background_custom">Personalizado</string>
     <string name="profile_avatar_none_selected">Nenhum avatar selecionado</string>
@@ -1781,7 +1781,7 @@
     <string name="profile_pin_overlay_set_support">Este PIN será necessário antes de abrir este perfil.</string>
     <string name="profile_pin_overlay_confirm_support">Volta a introduzir os mesmos 4 dígitos para concluir a configuração.</string>
     <string name="profile_pin_overlay_mismatch">Os PINs não coincidem. Introduz um novo PIN novamente.</string>
-    <string name="profile_pin_overlay_forgot_hint">Esqueceste-te do PIN? Repõe-o a partir da tua conta Nuvio no website do Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Esqueceste-te do PIN? Repõe-o a partir da tua conta Dex Hub no website do Dex Hub.</string>
     <string name="profile_pin_overlay_back_hint">Prime voltar para cancelar</string>
 
 
@@ -1802,7 +1802,7 @@
     <string name="addon_install_btn">Instalar</string>
     <string name="addon_install_success">"%1$s" instalada</string>
     <string name="addon_tracking_consent_title">Extensão de acompanhamento</string>
-    <string name="addon_tracking_consent_body">O %1$s é uma extensão de acompanhamento. O Nuvio irá enviar-lhe a tua atividade: o que reproduzes, pausas e paras com a posição de reprodução, o que adicionas ou removes da tua biblioteca, e o que marcaste como visto ou por ver. Estes dados saem do Nuvio e são geridos pelo programador da extensão e pelo serviço a que se liga.</string>
+    <string name="addon_tracking_consent_body">O %1$s é uma extensão de acompanhamento. O Dex Hub irá enviar-lhe a tua atividade: o que reproduzes, pausas e paras com a posição de reprodução, o que adicionas ou removes da tua biblioteca, e o que marcaste como visto ou por ver. Estes dados saem do Dex Hub e são geridos pelo programador da extensão e pelo serviço a que se liga.</string>
     <string name="addon_tracking_consent_checkbox">Concordo em partilhar a minha atividade de visualização e biblioteca com esta extensão</string>
     <string name="addon_tracking_consent_checked">Marcado</string>
     <string name="addon_tracking_consent_unchecked">Não marcado</string>
@@ -1874,7 +1874,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">Streaming P2P</string>
-    <string name="p2p_consent_body">Esta transmissão utiliza tecnologia ponto a ponto (P2P). Ao ativar o P2P, reconheces e concordas que:\n\n\u2022 O teu endereço IP ficará visível para outros pares na rede\n\u2022 És o único responsável pelo conteúdo a que acedes\n\u2022 Confirmas que tens o direito legal de transmitir este conteúdo na tua jurisdição\n\u2022 O Nuvio não aloja, distribui nem controla qualquer conteúdo P2P\n\u2022 O Nuvio não assume qualquer responsabilidade por quaisquer consequências legais decorrentes da tua utilização do streaming P2P\n\nUtilizas esta funcionalidade inteiramente por tua conta e risco. O P2P pode ser desativado a qualquer momento nas Definições.</string>
+    <string name="p2p_consent_body">Esta transmissão utiliza tecnologia ponto a ponto (P2P). Ao ativar o P2P, reconheces e concordas que:\n\n\u2022 O teu endereço IP ficará visível para outros pares na rede\n\u2022 És o único responsável pelo conteúdo a que acedes\n\u2022 Confirmas que tens o direito legal de transmitir este conteúdo na tua jurisdição\n\u2022 O Dex Hub não aloja, distribui nem controla qualquer conteúdo P2P\n\u2022 O Dex Hub não assume qualquer responsabilidade por quaisquer consequências legais decorrentes da tua utilização do streaming P2P\n\nUtilizas esta funcionalidade inteiramente por tua conta e risco. O P2P pode ser desativado a qualquer momento nas Definições.</string>
     <string name="p2p_consent_enable">Ativar P2P</string>
     <string name="p2p_consent_cancel">Cancelar</string>
     <string name="settings_p2p_title">Streaming P2P</string>
@@ -2469,7 +2469,7 @@
     <string name="catalog_see_all_empty_title">Nenhum item disponível</string>
     <string name="catalog_see_all_empty_subtitle">Experimenta um catálogo diferente ou volta mais tarde</string>
 
-    <string name="layout_selection_welcome">Bem-vindo ao Nuvio</string>
+    <string name="layout_selection_welcome">Bem-vindo ao Dex Hub</string>
     <string name="layout_selection_subtitle">Escolhe o layout do teu ecrã inicial</string>
     <string name="layout_selection_continue">Continuar</string>
 
@@ -2486,7 +2486,7 @@
     <string name="update_unknown_sources">Permite instalações de fontes desconhecidas para continuar.</string>
     <!-- AccountScreen -->
     <string name="account_title">Conta</string>
-    <string name="account_sign_in_description">Inicia sessão para sincronizar a tua biblioteca, progresso de visualização, extensões e plugins entre dispositivos. A sincronização da biblioteca usa a Sincronização Nuvio quando o Trakt não está ligado, e o progresso de visualização pode usar o Trakt ou a Sincronização Nuvio.</string>
+    <string name="account_sign_in_description">Inicia sessão para sincronizar a tua biblioteca, progresso de visualização, extensões e plugins entre dispositivos. A sincronização da biblioteca usa a Sincronização Dex Hub quando o Trakt não está ligado, e o progresso de visualização pode usar o Trakt ou a Sincronização Dex Hub.</string>
     <string name="account_sync_code_title">Código de sincronização</string>
     <string name="account_sync_code_description">Sincroniza entre dispositivos sem criar uma conta.</string>
     <string name="account_linked_devices">Dispositivos ligados (%1$d)</string>
@@ -2683,7 +2683,7 @@
     <string name="cd_expand">Expandir %1$s</string>
     <string name="cd_collapse">Recolher %1$s</string>
     <string name="cd_qr_login">Código de início de sessão por QR</string>
-    <string name="cd_nuvio">Nuvio</string>
+    <string name="cd_nuvio">Dex Hub</string>
 
     <string name="debug_signin_success">Sessão iniciada com sucesso</string>
     <string name="debug_generate_description">Item %1$s #%2$d gerado por depuração</string>
@@ -2837,7 +2837,7 @@
     <string name="collections_editor_tmdb_list_helper">Exemplo: https://www.themoviedb.org/list/8504994 ou 8504994.</string>
     <string name="collections_editor_tmdb_person_id">ID de pessoa</string>
     <string name="collections_editor_tmdb_person_helper">Exemplo: https://www.themoviedb.org/person/31-tom-hanks ou 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Apresentado como o nome da fila/separador. Se estiver em branco, o Nuvio cria um a partir da fonte.</string>
+    <string name="collections_editor_tmdb_title_helper">Apresentado como o nome da fila/separador. Se estiver em branco, o Dex Hub cria um a partir da fonte.</string>
     <string name="collections_editor_tmdb_quick_genres">Géneros rápidos</string>
     <string name="collections_editor_tmdb_quick_languages">Idiomas rápidos</string>
     <string name="collections_editor_tmdb_quick_countries">Países rápidos</string>
@@ -3124,9 +3124,9 @@
     <string name="simkl_visit">Visitar Simkl</string>
     <string name="simkl_sync_info_action">Como funciona a sincronização</string>
     <string name="simkl_sync_info_title">Como funciona a sincronização do Simkl</string>
-    <string name="simkl_sync_info_description">O Nuvio verifica automaticamente o Simkl no máximo uma vez a cada %1$d minutos. As alterações feitas através de outra aplicação ou do site do Simkl podem demorar esse tempo a aparecer.</string>
+    <string name="simkl_sync_info_description">O Dex Hub verifica automaticamente o Simkl no máximo uma vez a cada %1$d minutos. As alterações feitas através de outra aplicação ou do site do Simkl podem demorar esse tempo a aparecer.</string>
     <string name="simkl_sync_info_activity">Cada atualização verifica primeiro se o Simkl reporta alguma alteração e transfere apenas as atualizações. Isto cumpre as regras da API do Simkl, reduz o uso desnecessário de dados e ajuda a manter o serviço estável.</string>
-    <string name="simkl_sync_info_manual">As alterações feitas no Nuvio são enviadas para o Simkl imediatamente. Usa Sincronizar agora sempre que quiseres que o Nuvio verifique alterações remotas mais cedo.</string>
+    <string name="simkl_sync_info_manual">As alterações feitas no Dex Hub são enviadas para o Simkl imediatamente. Usa Sincronizar agora sempre que quiseres que o Dex Hub verifique alterações remotas mais cedo.</string>
     <string name="simkl_sync_info_library_statuses">As séries colocadas nas listas Em pausa ou Abandonado do Simkl são ocultadas de Continuar a ver. Permanecem ocultadas durante o tempo que permanecerem em qualquer uma das listas.</string>
     <string name="simkl_sync_info_docs">Ler o guia de sincronização do Simkl</string>
     <string name="error_open_browser_failed">Falha ao abrir o navegador</string>

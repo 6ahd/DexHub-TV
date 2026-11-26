@@ -103,8 +103,14 @@ class NuvioApplication : Application(), SingletonImageLoader.Factory {
         serverUserStateProjection.start()
         // Load locale synchronously so it's available before Activity.attachBaseContext.
         // SharedPreferences reads are fast (cached in memory after first access).
-        val tag = getSharedPreferences("app_locale", Context.MODE_PRIVATE)
-            .getString("locale_tag", null)
+        val localePrefs = getSharedPreferences("app_locale", Context.MODE_PRIVATE)
+        // Dex Hub is Arabic-first: a fresh install opens in Arabic once; the language picker can change it afterwards.
+        if (!localePrefs.getBoolean("dexhub_arabic_seeded", false)) {
+            val editor = localePrefs.edit()
+            if (!localePrefs.contains("locale_tag")) editor.putString("locale_tag", "ar")
+            editor.putBoolean("dexhub_arabic_seeded", true).apply()
+        }
+        val tag = localePrefs.getString("locale_tag", null)
         LocaleCache.localeTag = tag ?: ""
     }
 

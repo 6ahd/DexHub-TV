@@ -4,7 +4,7 @@
     <string name="party_start_title">Gledajte zajedno</string>
     <string name="party_start_description">Pozovi prijatelje. Svatko reproducira iz vlastitih izvora i ostaje sinkroniziran.</string>
     <string name="party_start_action">Pokreni zajedničko gledanje</string>
-    <string name="party_sign_in_required">Prijavi se u svoj Nuvio račun za korištenje zajedničkog gledanja.</string>
+    <string name="party_sign_in_required">Prijavi se u svoj Dex Hub račun za korištenje zajedničkog gledanja.</string>
     <string name="party_unavailable">Zajedničko gledanje trenutno nije dostupno.</string>
     <string name="party_experimental">Zajedničko gledanje je eksperimentalno i možda neće raditi prema očekivanjima.</string>
     <string name="party_code_label">Kod zajedničkog gledanja</string>
@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Ovaj stream nije moguće podijeliti.</string>
     <string name="party_shared_by">Podijelio %1$s</string>
     <string name="party_invite_scan">Skeniraj mobitelom za pridruživanje</string>
-    <string name="party_invite_share">Ili podijeli kod. Prijatelji ga mogu unijeti u Zajedničko gledanje u bilo kojoj Nuvio aplikaciji.</string>
+    <string name="party_invite_share">Ili podijeli kod. Prijatelji ga mogu unijeti u Zajedničko gledanje u bilo kojoj Dex Hub aplikaciji.</string>
     <string name="party_invite_qr">QR kôd pozivnice za zajedničko gledanje</string>
     <string name="party_phone_chat_note">Otvori Zajedničko gledanje na mobitelu s ovim profilom za razgovor.</string>
 </resources>

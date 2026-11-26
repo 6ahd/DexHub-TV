@@ -4,7 +4,7 @@
     <string name="party_start_title">Ver em conjunto</string>
     <string name="party_start_description">Convida os teus amigos. Cada um reproduz a partir das suas próprias fontes e mantém-se sincronizado.</string>
     <string name="party_start_action">Iniciar sessão de grupo</string>
-    <string name="party_sign_in_required">Inicia sessão na tua conta Nuvio para usar as sessões de grupo.</string>
+    <string name="party_sign_in_required">Inicia sessão na tua conta Dex Hub para usar as sessões de grupo.</string>
     <string name="party_unavailable">As sessões de grupo não estão disponíveis neste momento.</string>
     <string name="party_experimental">As sessões de grupo são experimentais e podem não funcionar conforme esperado.</string>
     <string name="party_code_label">Código da sessão</string>
@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Esta transmissão não pode ser partilhada.</string>
     <string name="party_shared_by">Partilhado por %1$s</string>
     <string name="party_invite_scan">Lê com um telemóvel para entrar</string>
-    <string name="party_invite_share">Ou partilha o código. Os amigos podem introduzi-lo em Sessão de grupo em qualquer aplicação Nuvio.</string>
+    <string name="party_invite_share">Ou partilha o código. Os amigos podem introduzi-lo em Sessão de grupo em qualquer aplicação Dex Hub.</string>
     <string name="party_invite_qr">Código QR de convite para sessão de grupo</string>
     <string name="party_phone_chat_note">Abre a Sessão de grupo no teu telemóvel com este perfil para conversar.</string>
 </resources>

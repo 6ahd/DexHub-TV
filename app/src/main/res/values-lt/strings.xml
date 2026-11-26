@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio</string>
+    <string name="app_name">Dex Hub</string>
     <string name="type_movie">Filmas</string>
     <string name="type_series">Serialas</string>
     <string name="type_unknown">Nežinoma</string>
@@ -530,11 +530,11 @@
     <string name="trakt_watch_progress_title">Žiūrėjimo pažanga</string>
     <string name="trakt_watch_progress_subtitle">Pasirinkite, kuris pažangos šaltinis valdys atkūrimo tęsimą ir „Tęsti žiūrėjimą“</string>
     <string name="trakt_watch_progress_dialog_title">Žiūrėjimo pažanga</string>
-    <string name="trakt_watch_progress_dialog_subtitle">Pasirinkite, ar tęsimui ir „Tęsti žiūrėjimą“ naudoti „Trakt“, ar „Nuvio Sync“. „Trakt“ peržiūrų registravimas (scrobbling) vis tiek išliks aktyvus.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">Pasirinkite, ar tęsimui ir „Tęsti žiūrėjimą“ naudoti „Trakt“, ar „Dex Hub Sync“. „Trakt“ peržiūrų registravimas (scrobbling) vis tiek išliks aktyvus.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">Nuvio Sync</string>
+    <string name="trakt_watch_progress_source_nuvio">Dex Hub Sync</string>
     <string name="trakt_watch_progress_trakt_selected">Žiūrėjimo pažangos šaltinis nustatytas į „Trakt“</string>
-    <string name="trakt_watch_progress_nuvio_selected">Žiūrėjimo pažangos šaltinis nustatytas į „Nuvio Sync“</string>
+    <string name="trakt_watch_progress_nuvio_selected">Žiūrėjimo pažangos šaltinis nustatytas į „Dex Hub Sync“</string>
     <string name="trakt_continue_watching_window">„Tęsti žiūrėjimą“ langas</string>
     <string name="trakt_continue_watching_subtitle">„Trakt“ istorija, naudojama „Tęsti žiūrėjimą“ skilčiai</string>
     <string name="trakt_unaired_next_up">Neišleistos „Kitas“ serijos</string>
@@ -550,7 +550,7 @@
     <string name="trakt_stat_watched_hours">Žiūrėta valandų</string>
     <string name="trakt_disconnect">Atsijungti</string>
     <string name="trakt_disconnect_title">Atsijungti nuo „Trakt“?</string>
-    <string name="trakt_disconnect_subtitle">Tai atsies jūsų „Trakt“ paskyrą nuo „Nuvio“.</string>
+    <string name="trakt_disconnect_subtitle">Tai atsies jūsų „Trakt“ paskyrą nuo „Dex Hub“.</string>
     <string name="trakt_login">Prisijungti</string>
     <string name="trakt_retry">Bandyti dar kartą</string>
     <string name="trakt_back">Atgal</string>
@@ -915,7 +915,7 @@
     <string name="catalog_see_all_empty_subtitle">Išbandykite kitą katalogą arba patikrinkite vėliau</string>
 
     <!-- LayoutSelectionScreen -->
-    <string name="layout_selection_welcome">Sveiki atvykę į Nuvio</string>
+    <string name="layout_selection_welcome">Sveiki atvykę į Dex Hub</string>
     <string name="layout_selection_subtitle">Pasirinkite, kaip norite matyti pradinį ekraną</string>
     <string name="layout_selection_continue">Tęsti</string>
 
@@ -927,7 +927,7 @@
     <string name="update_unknown_sources">Leisti diegti iš nežinomų šaltinių</string>
     <!-- AccountScreen -->
     <string name="account_title">Paskyra</string>
-    <string name="account_sign_in_description">Prisijunkite, kad sinchronizuotumėte biblioteką, žiūrėjimo pažangą, priedus ir įskiepius tarp įrenginių. Kai „Trakt“ neprijungta, biblioteka sinchronizuojama per „Nuvio Sync“. Žiūrėjimo pažangą galima sinchronizuoti per „Trakt“ arba „Nuvio Sync“.</string>
+    <string name="account_sign_in_description">Prisijunkite, kad sinchronizuotumėte biblioteką, žiūrėjimo pažangą, priedus ir įskiepius tarp įrenginių. Kai „Trakt“ neprijungta, biblioteka sinchronizuojama per „Dex Hub Sync“. Žiūrėjimo pažangą galima sinchronizuoti per „Trakt“ arba „Dex Hub Sync“.</string>
     <string name="account_sync_code_title">Sinchronizavimo kodas</string>
     <string name="account_sync_code_description">Sinchronizuokite įrenginius nesukurdami paskyros.</string>
     <string name="account_linked_devices">Susieti įrenginiai (%1$d)</string>
@@ -1064,7 +1064,7 @@
     <string name="web_import_expected_array">Tikėtasi JSON kolekcijų masyvo</string>
     <string name="web_import_empty_array">Tuščias masyvas: kolekcijų nerasta</string>
     <string name="web_import_invalid_json">Netinkamas JSON</string>
-    <string name="auth_notice_nuvio_logged_out">Atsijungėte nuo „Nuvio“. Prisijunkite dar kartą.</string>
+    <string name="auth_notice_nuvio_logged_out">Atsijungėte nuo „Dex Hub“. Prisijunkite dar kartą.</string>
     <string name="auth_notice_trakt_logged_out">Atsijungėte nuo „Trakt“. Prisijunkite dar kartą.</string>
     <string name="cw_next_up_short">Kitas</string>
     <string name="cw_new_episode">Nauja serija</string>
@@ -1201,7 +1201,7 @@
     <string name="appearance_settings_style">Nustatymų stilius</string>
     <string name="appearance_settings_style_subtitle">Pasirinkite nustatymų ekranų išvaizdą</string>
     <string name="appearance_launcher_artwork">Paleidyklės iliustracija</string>
-    <string name="appearance_launcher_artwork_subtitle">Pasirinkite, kaip „Nuvio“ atrodys televizoriaus pradžios ekrane</string>
+    <string name="appearance_launcher_artwork_subtitle">Pasirinkite, kaip „Dex Hub“ atrodys televizoriaus pradžios ekrane</string>
     <string name="ambient_mode_title">Aplinkos režimas</string>
     <string name="ambient_mode_subtitle">Nenaudojant televizoriaus rodyti katalogų iliustracijas</string>
     <string name="ambient_mode_enabled_subtitle">Kurį laiką nenaudojant pulto užpildyti ekraną fono vaizdais</string>
@@ -1217,7 +1217,7 @@
     <string name="appearance_app_icon_picker_title">Pasirinkite programos piktogramą ir reklamjuostę</string>
     <string name="appearance_app_icon_picker_subtitle">Kiekvienas stilius turi derančią kvadratinę piktogramą ir televizoriaus reklamjuostę</string>
     <string name="appearance_app_icon_confirmation_title">Keisti programos piktogramą?</string>
-    <string name="appearance_app_icon_confirmation_message">Pritaikius stilių „%1$s“, „Nuvio“ bus uždaryta. Kad televizoriaus reklamjuostė atsinaujintų, gali reikėti iš naujo paleisti įrenginį. Pasirinkite OK, kad tęstumėte.</string>
+    <string name="appearance_app_icon_confirmation_message">Pritaikius stilių „%1$s“, „Dex Hub“ bus uždaryta. Kad televizoriaus reklamjuostė atsinaujintų, gali reikėti iš naujo paleisti įrenginį. Pasirinkite OK, kad tęstumėte.</string>
     <string name="appearance_app_icon_change_failed">Nepavyko pakeisti piktogramos ir reklamjuostės. Bandykite dar kartą.</string>
     <string name="appearance_app_icon_original">Originali</string>
     <string name="appearance_app_icon_arctic_blue">Arkties mėlyna</string>
@@ -1289,7 +1289,7 @@
     <string name="tracking_accounts_title">Paskyros</string>
     <string name="tracking_accounts_subtitle">Prijungti ir tvarkyti stebėjimo paslaugas</string>
     <string name="tracking_sources_title">Šaltiniai</string>
-    <string name="tracking_sources_subtitle">Pasirinkite, iš kur „Nuvio“ gauna biblioteką ir žiūrėjimo progresą. Atkūrimas registruojamas visose prijungtose paslaugose.</string>
+    <string name="tracking_sources_subtitle">Pasirinkite, iš kur „Dex Hub“ gauna biblioteką ir žiūrėjimo progresą. Atkūrimas registruojamas visose prijungtose paslaugose.</string>
     <string name="tracking_trakt_features_title">„Trakt“ funkcijos</string>
     <string name="tracking_trakt_features_subtitle">„Trakt“ istorija, apžvalgos ir rekomendacijos</string>
     <string name="tracking_simkl_features_title">„Simkl“ funkcijos</string>
@@ -1306,8 +1306,8 @@
     <string name="tracking_status_connecting">Jungiamasi</string>
     <string name="tracking_finish_connection">Užbaikite ryšio patvirtinimą</string>
     <string name="tracking_connecting_provider">Pradedamas ryšys su %1$s…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Pasirinkite paslaugą, iš kurios „Nuvio“ gauna duomenis atkūrimui tęsti ir „Tęsti žiūrėjimą“. Peržiūros registruojamos visose prijungtose paslaugose.</string>
-    <string name="tracking_library_source_dialog_subtitle">Pasirinkite paslaugą, iš kurios „Nuvio“ gauna biblioteką. Atkūrimas registruojamas visose prijungtose paslaugose.</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Pasirinkite paslaugą, iš kurios „Dex Hub“ gauna duomenis atkūrimui tęsti ir „Tęsti žiūrėjimą“. Peržiūros registruojamos visose prijungtose paslaugose.</string>
+    <string name="tracking_library_source_dialog_subtitle">Pasirinkite paslaugą, iš kurios „Dex Hub“ gauna biblioteką. Atkūrimas registruojamas visose prijungtose paslaugose.</string>
     <string name="tracking_trakt_progress_required">Prieinama, kai žiūrėjimo progreso šaltinis yra „Trakt“</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -1317,7 +1317,7 @@
     <string name="settings_advanced_subtitle">Našumas, naršymas, podėlis ir diagnostika</string>
     <string name="experience_mode_essential">Pagrindinis</string>
     <string name="experience_mode_advanced">Išplėstinis</string>
-    <string name="experience_mode_choose_title">Pasirinkite „Nuvio“ naudojimo režimą</string>
+    <string name="experience_mode_choose_title">Pasirinkite „Dex Hub“ naudojimo režimą</string>
     <string name="experience_mode_choose_subtitle">Pradėkite nuo paprastų nustatymų arba įjunkite visas tinkinimo galimybes. Režimą galėsite pakeisti bet kada.</string>
     <string name="experience_mode_essential_card_subtitle">Pagrindiniai nustatymai, priedai, atkūrimas, „Trakt“ ir paskyra.</string>
     <string name="experience_mode_advanced_card_subtitle">Visi nustatymai, išdėstymas, katalogų tvarka, kolekcijos, įskiepiai ir diagnostika.</string>
@@ -1435,8 +1435,8 @@
     <string name="buffer_safe_status">Saugu: neviršija įrenginiui rekomenduojamos ribos.</string>
     <string name="buffer_unsafe_warning">Įspėjimas: viršija jūsų %2$s įrenginiui rekomenduojamą saugią ribą (%1$d MB). Programa gali užstrigti.</string>
     <string name="buffer_auto_limit_active">Automatiškai parinkta saugi riba: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">„Nuvio“ fokusavimo slinkimas</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Naudoti pasirinktinę „Nuvio“ bendro fokusavimo slinkimo animaciją ir padėtį.</string>
+    <string name="advanced_nuvio_focus_scroll">„Dex Hub“ fokusavimo slinkimas</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Naudoti pasirinktinę „Dex Hub“ bendro fokusavimo slinkimo animaciją ir padėtį.</string>
     <string name="advanced_rgb565">RGB565 vaizdų dekodavimas</string>
     <string name="advanced_rgb565_subtitle">Tinkamiems nepermatomiems vaizdams naudoti mažiau atminties užimančias 16 bitų spalvas. Pakeitus programa paleidžiama iš naujo.</string>
     <string name="advanced_memory_only_vertical_scroll">Vertikalus slinkimas tik iš atminties</string>
@@ -1532,7 +1532,7 @@
     <string name="playback_auto_switch_internal_player_on_error">Automatiškai perjungti variklį įvykus paleidimo klaidai</string>
     <string name="playback_auto_switch_internal_player_on_error_sub">Jei nepavyksta paleisti srauto, automatiškai perjungti tarp ExoPlayer ir libmpv.</string>
     <string name="playback_release_decoder_on_background">Atlaisvinti dekoderį programai veikiant fone</string>
-    <string name="playback_release_decoder_on_background_sub">Atlaisvinti vaizdo dekoderį, kai „Nuvio“ veikia fone. Įjunkite, jei grįžus į programą atkūrimas nepavyksta dėl dekoderio klaidos. Grįžus grotuvas įkeliamas iš naujo, taip pat ir po ekrano užsklandos.</string>
+    <string name="playback_release_decoder_on_background_sub">Atlaisvinti vaizdo dekoderį, kai „Dex Hub“ veikia fone. Įjunkite, jei grįžus į programą atkūrimas nepavyksta dėl dekoderio klaidos. Grįžus grotuvas įkeliamas iš naujo, taip pat ir po ekrano užsklandos.</string>
     <string name="playback_external_forward_subtitles">Persiųsti subtitrus išoriniam grotuvui</string>
     <string name="playback_external_forward_subtitles_sub">Gauti pageidaujamos kalbos subtitrus iš priedų ir perduoti juos išoriniam grotuvui.</string>
     <string name="playback_external_send_skip_segments">Siųsti įžangos ir pabaigos laiko žymas</string>
@@ -1545,8 +1545,8 @@
     <string name="playback_afr_capability_disable_button">Išjungti AFR</string>
     <string name="playback_afr_capability_disable_resolution_button">Išjungti skiriamosios gebos derinimą</string>
     <string name="playback_afr_capability_disable_both_button">Išjungti abu</string>
-    <string name="playback_engine_exoplayer_desc">Geriausias suderinamumas su dabartinėmis „Nuvio“ funkcijomis.</string>
-    <string name="playback_engine_mvplayer_desc">Naudoja libmpv su „Nuvio“ ekraniniais valdikliais. Eksperimentinis.</string>
+    <string name="playback_engine_exoplayer_desc">Geriausias suderinamumas su dabartinėmis „Dex Hub“ funkcijomis.</string>
+    <string name="playback_engine_mvplayer_desc">Naudoja libmpv su „Dex Hub“ ekraniniais valdikliais. Eksperimentinis.</string>
     <string name="video_section">Vaizdas</string>
     <string name="playback_true_black_letterbox">Visiškai juodos juostos</string>
     <string name="playback_true_black_letterbox_sub">Palikti juostas aplink vaizdą neužpildytas, kad HDR juoda spalva išliktų tikrai juoda. Jei juostose matoma šviesi linija, šią funkciją išjunkite.</string>
@@ -1842,7 +1842,7 @@
     <string name="debrid_disconnect">Atjungti</string>
     <string name="debrid_device_auth_connected">%1$s prijungta šiame įrenginyje.</string>
     <string name="debrid_device_auth_starting">Pradedamas saugus prisijungimas...</string>
-    <string name="debrid_device_auth_instructions">Nuskaitykite QR kodą ir įveskite šį kodą, kad patvirtintumėte „Nuvio“.</string>
+    <string name="debrid_device_auth_instructions">Nuskaitykite QR kodą ir įveskite šį kodą, kad patvirtintumėte „Dex Hub“.</string>
     <string name="debrid_device_auth_code_copied">Kodas nukopijuotas.</string>
     <string name="debrid_device_auth_waiting">Laukiama patvirtinimo...</string>
     <string name="debrid_device_auth_failed">Nepavyko pradėti prisijungimo.</string>
@@ -1980,13 +1980,13 @@
     <string name="qr_login_success">Prisijungta</string>
     <string name="qr_login_exchange_failed">Nepavyko užbaigti prisijungimo QR kodu</string>
     <string name="trakt_library_source_title">Bibliotekos šaltinis</string>
-    <string name="trakt_library_source_subtitle">Pasirinkite bibliotekos šaltinį, iš kurio Nuvio skaitys duomenis</string>
+    <string name="trakt_library_source_subtitle">Pasirinkite bibliotekos šaltinį, iš kurio Dex Hub skaitys duomenis</string>
     <string name="trakt_library_source_dialog_title">Bibliotekos šaltinis</string>
     <string name="trakt_library_source_dialog_subtitle">Pasirinkite, kur išsaugoti ir tvarkyti bibliotekos elementus</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">Nuvio biblioteka</string>
+    <string name="trakt_library_source_nuvio">Dex Hub biblioteka</string>
     <string name="trakt_library_source_trakt_selected">Pasirinkta Trakt biblioteka</string>
-    <string name="trakt_library_source_nuvio_selected">Pasirinkta Nuvio biblioteka</string>
+    <string name="trakt_library_source_nuvio_selected">Pasirinkta Dex Hub biblioteka</string>
     <string name="trakt_setting_on">Įjungta</string>
     <string name="trakt_setting_off">Išjungta</string>
     <string name="trakt_comments_title">Komentarai</string>
@@ -2024,11 +2024,11 @@
     <string name="debug_generate_library_button">Generuoti</string>
     <string name="debug_generating_library">Generuojama\u2026</string>
     <string name="profile_edit_header">Redaguoti profilį</string>
-    <string name="profile_custom_avatar_web_panel_note">Savo avataro URL galite nustatyti Nuvio žiniatinklio skydelyje.</string>
+    <string name="profile_custom_avatar_web_panel_note">Savo avataro URL galite nustatyti Dex Hub žiniatinklio skydelyje.</string>
     <string name="profile_editor_tab_avatar">Avataras</string>
     <string name="profile_editor_tab_background">Fonas</string>
     <string name="profile_choose_background">Pasirinkite profilio foną</string>
-    <string name="profile_background_member_note">Savo fono URL galite nustatyti Nuvio žiniatinklio skydelyje.</string>
+    <string name="profile_background_member_note">Savo fono URL galite nustatyti Dex Hub žiniatinklio skydelyje.</string>
     <string name="profile_background_normal">Įprastas</string>
     <string name="profile_background_custom">Pasirinktinis</string>
     <string name="profile_avatar_category_supporter">Rėmėjas</string>
@@ -2085,7 +2085,7 @@
     <string name="profile_pin_overlay_set_support">Šio PIN kodo reikės atidarant profilį.</string>
     <string name="profile_pin_overlay_confirm_support">Dar kartą įveskite tuos pačius 4 skaitmenis.</string>
     <string name="profile_pin_overlay_mismatch">PIN kodai nesutapo. Dar kartą įveskite naują PIN kodą.</string>
-    <string name="profile_pin_overlay_forgot_hint">Pamiršote PIN kodą? Atkurkite jį savo Nuvio paskyroje Nuvio svetainėje.</string>
+    <string name="profile_pin_overlay_forgot_hint">Pamiršote PIN kodą? Atkurkite jį savo Dex Hub paskyroje Dex Hub svetainėje.</string>
     <string name="profile_pin_overlay_back_hint">Paspauskite „Atgal“, kad atšauktumėte</string>
     <string name="essential_addon_setup_title">Nustatykite priedus</string>
     <string name="essential_addon_setup_subtitle">Įdiekite vieną priedą, kad galėtumėte žiūrėti. Daugiau priedų vėliau galėsite pridėti skiltyje „Priedai“.</string>
@@ -2121,7 +2121,7 @@
     <string name="youtube_resolution_failed">Nepavyko įkelti šio YouTube vaizdo įrašo.</string>
 
     <string name="p2p_consent_title">P2P srautai</string>
-    <string name="p2p_consent_body">Šis srautas naudoja lygiaverčių įrenginių (P2P) technologiją. Įjungdami P2P, patvirtinate ir sutinkate, kad:\n\n\u2022 Jūsų IP adresą matys kiti tinklo dalyviai\n\u2022 Už turinį, kurį pasiekiate, atsakote tik jūs\n\u2022 Patvirtinate, kad turite teisę žiūrėti šį turinį pagal jums taikomus įstatymus\n\u2022 Nuvio nesaugo, neplatina ir nekontroliuoja P2P turinio\n\u2022 Nuvio neatsako už teisines pasekmes, kylančias naudojant P2P srautus\n\nŠią funkciją naudojate savo rizika. P2P bet kada galite išjungti nustatymuose.</string>
+    <string name="p2p_consent_body">Šis srautas naudoja lygiaverčių įrenginių (P2P) technologiją. Įjungdami P2P, patvirtinate ir sutinkate, kad:\n\n\u2022 Jūsų IP adresą matys kiti tinklo dalyviai\n\u2022 Už turinį, kurį pasiekiate, atsakote tik jūs\n\u2022 Patvirtinate, kad turite teisę žiūrėti šį turinį pagal jums taikomus įstatymus\n\u2022 Dex Hub nesaugo, neplatina ir nekontroliuoja P2P turinio\n\u2022 Dex Hub neatsako už teisines pasekmes, kylančias naudojant P2P srautus\n\nŠią funkciją naudojate savo rizika. P2P bet kada galite išjungti nustatymuose.</string>
     <string name="p2p_consent_enable">Įjungti P2P</string>
     <string name="p2p_consent_cancel">Atšaukti</string>
     <string name="settings_p2p_title">P2P srautai</string>
@@ -2584,7 +2584,7 @@
     <string name="cd_expand">Išskleisti %1$s</string>
     <string name="cd_collapse">Suskleisti %1$s</string>
     <string name="cd_qr_login">Prisijungimo QR kodas</string>
-    <string name="cd_nuvio">Nuvio</string>
+    <string name="cd_nuvio">Dex Hub</string>
     <string name="debug_signin_success">Sėkmingai prisijungta</string>
     <string name="debug_generate_description">Derinimo metu sukurtas %1$s elementas Nr. %2$d</string>
     <string name="debug_generate_result_failed">Nepavyko: %1$s</string>
@@ -2722,7 +2722,7 @@
     <string name="collections_editor_tmdb_list_helper">Pavyzdys: https://www.themoviedb.org/list/8504994 arba 8504994.</string>
     <string name="collections_editor_tmdb_person_id">Asmens ID</string>
     <string name="collections_editor_tmdb_person_helper">Pavyzdys: https://www.themoviedb.org/person/31-tom-hanks arba 31.</string>
-    <string name="collections_editor_tmdb_title_helper">Rodomas kaip eilutės arba skirtuko pavadinimas. Jei neįvesite, „Nuvio“ sukurs jį pagal šaltinį.</string>
+    <string name="collections_editor_tmdb_title_helper">Rodomas kaip eilutės arba skirtuko pavadinimas. Jei neįvesite, „Dex Hub“ sukurs jį pagal šaltinį.</string>
     <string name="collections_editor_tmdb_quick_genres">Spartieji žanrai</string>
     <string name="collections_editor_tmdb_quick_languages">Sparčiosios kalbos</string>
     <string name="collections_editor_tmdb_quick_countries">Sparčiosios šalys</string>
@@ -2989,9 +2989,9 @@
     <string name="simkl_visit">Atidaryti SIMKL</string>
     <string name="simkl_sync_info_action">Kaip veikia sinchronizavimas</string>
     <string name="simkl_sync_info_title">Kaip veikia SIMKL sinchronizavimas</string>
-    <string name="simkl_sync_info_description">Nuvio automatiškai tikrina SIMKL ne dažniau kaip kas %1$d min. Kitoje programėlėje ar SIMKL svetainėje atlikti pakeitimai gali pasirodyti tik praėjus šiam laikui.</string>
+    <string name="simkl_sync_info_description">Dex Hub automatiškai tikrina SIMKL ne dažniau kaip kas %1$d min. Kitoje programėlėje ar SIMKL svetainėje atlikti pakeitimai gali pasirodyti tik praėjus šiam laikui.</string>
     <string name="simkl_sync_info_activity">Kiekvieną kartą atnaujinant pirmiausia patikrinama, ar SIMKL praneša apie pakeitimus, ir atsisiunčiami tik jie. Taip laikomasi SIMKL API taisyklių, mažiau naudojama duomenų ir padedama palaikyti paslaugos stabilumą.</string>
-    <string name="simkl_sync_info_manual">Nuvio atlikti pakeitimai iškart siunčiami į SIMKL. Pasirinkite „Sinchronizuoti dabar“, jei norite anksčiau patikrinti nuotolinius pakeitimus.</string>
+    <string name="simkl_sync_info_manual">Dex Hub atlikti pakeitimai iškart siunčiami į SIMKL. Pasirinkite „Sinchronizuoti dabar“, jei norite anksčiau patikrinti nuotolinius pakeitimus.</string>
     <string name="simkl_sync_info_library_statuses">Serialai, įtraukti į SIMKL sąrašus „On Hold“ arba „Dropped“, paslepiami iš skilties „Tęsti žiūrėjimą“. Jie lieka paslėpti, kol yra bent viename iš šių sąrašų.</string>
     <string name="simkl_sync_info_docs">Skaityti SIMKL sinchronizavimo vadovą</string>
     <string name="error_open_browser_failed">Nepavyko atidaryti naršyklės</string>

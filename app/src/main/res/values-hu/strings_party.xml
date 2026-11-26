@@ -4,7 +4,7 @@
     <string name="party_start_title">Közös mozizás</string>
     <string name="party_start_description">Hívd meg a barátaidat. Mindenki a saját forrásából nézi, és a lejátszás szinkronban marad.</string>
     <string name="party_start_action">Nézőparti indítása</string>
-    <string name="party_sign_in_required">Lépj be a Nuvio-fiókodba a nézőparti használatához.</string>
+    <string name="party_sign_in_required">Lépj be a Dex Hub-fiókodba a nézőparti használatához.</string>
     <string name="party_unavailable">A nézőparti jelenleg nem érhető el.</string>
     <string name="party_experimental">A nézőparti még kísérleti fázisban van, így előfordulhatnak hibák.</string>
     <string name="party_code_label">Partikód</string>
@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Ez a stream nem osztható meg.</string>
     <string name="party_shared_by">Megosztotta: %1$s</string>
     <string name="party_invite_scan">A csatlakozáshoz olvasd be telefonnal</string>
-    <string name="party_invite_share">Vagy oszd meg a kódot. A barátaid bármelyik Nuvio-alkalmazásban megadhatják a Nézőpartinál.</string>
+    <string name="party_invite_share">Vagy oszd meg a kódot. A barátaid bármelyik Dex Hub-alkalmazásban megadhatják a Nézőpartinál.</string>
     <string name="party_invite_qr">Nézőparti-meghívó QR-kódja</string>
     <string name="party_phone_chat_note">A csevegéshez nyisd meg a Nézőpartit a telefonodon ezzel a profillal.</string>
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nuvio</string>
+    <string name="app_name">Dex Hub</string>
     <string name="tv_channel_continue_watching">Nézés folytatása</string>
     <string name="type_movie">Film</string>
     <string name="type_movies">Filmek</string>
@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Nincsenek telepített kiegészítők. A kezdéshez adj hozzá egyet.</string>
     <string name="home_no_catalog_addons">Nincsenek katalóguskiegészítők. Telepíts egyet a tartalom megtekintéséhez.</string>
-    <string name="auth_notice_nuvio_logged_out">A Nuvio kijelentkeztetett. Kérjük, jelentkezz be újra.</string>
+    <string name="auth_notice_nuvio_logged_out">A Dex Hub kijelentkeztetett. Kérjük, jelentkezz be újra.</string>
     <string name="auth_notice_trakt_logged_out">Kijelentkeztél a Traktból. Csatlakozz újra.</string>
     <string name="error_generic">Hiba történt</string>
 
@@ -368,7 +368,7 @@
     <string name="appearance_settings_style">Beállítások stílusa</string>
     <string name="appearance_settings_style_subtitle">Válaszd ki, hogyan jelenjenek meg a beállítási képernyők</string>
     <string name="appearance_launcher_artwork">Megjelenés a TV kezdőképernyőjén</string>
-    <string name="appearance_launcher_artwork_subtitle">Válaszd ki, hogyan jelenjen meg a Nuvio a TV kezdőképernyőjén</string>
+    <string name="appearance_launcher_artwork_subtitle">Válaszd ki, hogyan jelenjen meg a Dex Hub a TV kezdőképernyőjén</string>
     <string name="ambient_mode_title">Ambient mód</string>
     <string name="ambient_mode_subtitle">Borítóképek megjelenítése a katalógusaidból, amíg a TV tétlen</string>
     <string name="ambient_mode_enabled_subtitle">Háttérképek töltik ki a képernyőt, ha egy ideig nem használod a távirányítót</string>
@@ -388,7 +388,7 @@
     <string name="appearance_app_icon_picker_title">Alkalmazásikon és banner kiválasztása</string>
     <string name="appearance_app_icon_picker_subtitle">Minden stílushoz illő négyzetes ikon és TV-banner tartozik</string>
     <string name="appearance_app_icon_confirmation_title">Módosítod az alkalmazásikont?</string>
-    <string name="appearance_app_icon_confirmation_message">Az új ikon (%1$s) kiválasztásakor a Nuvio bezárul. A TV-banner frissítéséhez szükség lehet az eszköz újraindítására. A folytatáshoz válaszd az OK gombot.</string>
+    <string name="appearance_app_icon_confirmation_message">Az új ikon (%1$s) kiválasztásakor a Dex Hub bezárul. A TV-banner frissítéséhez szükség lehet az eszköz újraindítására. A folytatáshoz válaszd az OK gombot.</string>
     <string name="appearance_app_icon_change_failed">Nem sikerült módosítani az ikont és a bannert. Próbáld újra.</string>
     <string name="appearance_app_icon_original">Eredeti</string>
     <string name="appearance_app_icon_arctic_blue">Jégkék</string>
@@ -484,7 +484,7 @@
     <string name="tracking_accounts_title">Fiókok</string>
     <string name="tracking_accounts_subtitle">Követési szolgáltatások csatlakoztatása és kezelése</string>
     <string name="tracking_sources_title">Források</string>
-    <string name="tracking_sources_subtitle">Válaszd ki, honnan töltse be a Nuvio a könyvtáradat és a megtekintési állapotot. A lejátszási adatokat minden csatlakoztatott szolgáltatásnak elküldi.</string>
+    <string name="tracking_sources_subtitle">Válaszd ki, honnan töltse be a Dex Hub a könyvtáradat és a megtekintési állapotot. A lejátszási adatokat minden csatlakoztatott szolgáltatásnak elküldi.</string>
     <string name="tracking_trakt_features_title">Trakt-funkciók</string>
     <string name="tracking_trakt_features_subtitle">Trakt-előzmények, kritikák és ajánlások</string>
     <string name="tracking_simkl_features_title">Simkl-funkciók</string>
@@ -501,8 +501,8 @@
     <string name="tracking_status_connecting">Csatlakozás</string>
     <string name="tracking_finish_connection">Kapcsolat jóváhagyásának befejezése</string>
     <string name="tracking_connecting_provider">%1$s csatlakoztatása folyamatban…</string>
-    <string name="tracking_watch_progress_dialog_subtitle">Válaszd ki, melyik szolgáltatás alapján tudja a Nuvio, hol hagytad abba a lejátszást, és mi kerüljön a Nézés folytatása sorba. A lejátszási adatokat minden csatlakoztatott szolgáltatás megkapja (scrobbling).</string>
-    <string name="tracking_library_source_dialog_subtitle">Válaszd ki, melyik szolgáltatásból olvassa a Nuvio a Könyvtáradat. A lejátszási adatokat minden csatlakoztatott szolgáltatás megkapja (scrobbling).</string>
+    <string name="tracking_watch_progress_dialog_subtitle">Válaszd ki, melyik szolgáltatás alapján tudja a Dex Hub, hol hagytad abba a lejátszást, és mi kerüljön a Nézés folytatása sorba. A lejátszási adatokat minden csatlakoztatott szolgáltatás megkapja (scrobbling).</string>
+    <string name="tracking_library_source_dialog_subtitle">Válaszd ki, melyik szolgáltatásból olvassa a Dex Hub a Könyvtáradat. A lejátszási adatokat minden csatlakoztatott szolgáltatás megkapja (scrobbling).</string>
     <string name="tracking_trakt_progress_required">Akkor érhető el, ha a Trakt a megtekintési előrehaladás forrása</string>
     <string name="trakt_name">Trakt</string>
     <string name="simkl_name">Simkl</string>
@@ -512,7 +512,7 @@
     <string name="settings_advanced_subtitle">Teljesítmény, navigáció, gyorsítótár és diagnosztika</string>
     <string name="experience_mode_essential">Alapvető</string>
     <string name="experience_mode_advanced">Haladó</string>
-    <string name="experience_mode_choose_title">Válaszd ki a Nuvio élményt</string>
+    <string name="experience_mode_choose_title">Válaszd ki a Dex Hub élményt</string>
     <string name="experience_mode_choose_subtitle">Kezdd egyszerűen, vagy oldj fel minden testreszabást. Bármikor válthatsz.</string>
     <string name="experience_mode_essential_card_subtitle">Fókuszált beállítás, kiegészítők, lejátszási alapok, Trakt és fiókbeállítások.</string>
     <string name="experience_mode_advanced_card_subtitle">Teljes beállítások, elrendezés vezérlők, katalógus sorrend, gyűjtemények, bővítmények és diagnosztika.</string>
@@ -622,8 +622,8 @@
     <string name="buffer_safe_status">Biztonságos: az eszközödhöz ajánlott határon belül.</string>
     <string name="buffer_unsafe_warning">Figyelem: a puffer túllépi az eszközhöz (%2$s) ajánlott biztonságos határt (%1$d MB). Az alkalmazás összeomolhat.</string>
     <string name="buffer_auto_limit_active">Automatikusan skálázott biztonságos határ: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">Nuvio fókusz görgetés</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">A Nuvio saját, globális fókusz görgetési animációjának és pozicionálásának használata.</string>
+    <string name="advanced_nuvio_focus_scroll">Dex Hub fókusz görgetés</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">A Dex Hub saját, globális fókusz görgetési animációjának és pozicionálásának használata.</string>
     <string name="advanced_rgb565">Képek dekódolása RGB565 formátumban</string>
     <string name="advanced_rgb565_subtitle">Az arra alkalmas, átlátszatlan képeket 16 bites színmélységgel tölti be, így kevesebb memóriát használ. A beállítás módosítása újraindítja az alkalmazást.</string>
     <string name="advanced_hardware_bitmaps">Hardveres képdekódolás</string>
@@ -791,7 +791,7 @@
     <string name="autoplay_fallback_next_source_blocked_by_engine_switch">Ehhez kapcsold ki az „Automatikus motorváltás indítási hiba esetén” beállítást.</string>
     <string name="player_error_source_startup_timeout">A forrás nem indult el %1$d másodpercen belül.</string>
     <string name="playback_release_decoder_on_background">Dekóder felszabadítása a háttérben</string>
-    <string name="playback_release_decoder_on_background_sub">Felszabadítja a videódekódert, amikor a Nuvio a háttérbe kerül. Kapcsold be, ha az alkalmazásba visszatérve dekóderhiba miatt nem működik a lejátszás. Visszatéréskor a lejátszó újratöltődik, a képernyőkímélő után is.</string>
+    <string name="playback_release_decoder_on_background_sub">Felszabadítja a videódekódert, amikor a Dex Hub a háttérbe kerül. Kapcsold be, ha az alkalmazásba visszatérve dekóderhiba miatt nem működik a lejátszás. Visszatéréskor a lejátszó újratöltődik, a képernyőkímélő után is.</string>
     <string name="playback_external_forward_subtitles">Feliratok továbbítása a külső lejátszónak</string>
     <string name="playback_external_forward_subtitles_sub">A feliratok letöltése a preferált nyelven a kiegészítőkből, és átadásuk a külső lejátszónak.</string>
     <string name="playback_external_send_skip_segments">Intró- és outró-időbélyegek küldése</string>
@@ -818,8 +818,8 @@
     <string name="playback_player_ask_desc">Lejátszó kiválasztása minden alkalommal</string>
     <string name="playback_player_auto">Automatikus (A tartalomhoz legjobb)</string>
     <string name="playback_player_auto_desc">ExoPlayer filmekhez és sorozatokhoz · MPV animékhez</string>
-    <string name="playback_engine_exoplayer_desc">Legjobb kompatibilitás a jelenlegi Nuvio funkciókkal.</string>
-    <string name="playback_engine_mvplayer_desc">Libmpv-t használ a Nuvio OSD vezérlőivel. Kísérleti funkció.</string>
+    <string name="playback_engine_exoplayer_desc">Legjobb kompatibilitás a jelenlegi Dex Hub funkciókkal.</string>
+    <string name="playback_engine_mvplayer_desc">Libmpv-t használ a Dex Hub OSD vezérlőivel. Kísérleti funkció.</string>
 
     <string name="video_section">Videó</string>
     <string name="playback_true_black_letterbox">Valódi fekete sávok</string>
@@ -1243,7 +1243,7 @@
     <string name="layout_reset_default">Visszaállítás alapértelmezettre</string>
     <string name="layout_custom">Egyéni</string>
     <string name="layout_custom_poster_title">Egyéni poszterforrás</string>
-    <string name="layout_custom_poster_description">Adj meg egy külső szolgáltatásból származó poszter-URL-mintát. Ha egy helyőrzőnek nincs értéke egy adott címhez, a Nuvio az eredeti posztert használja.</string>
+    <string name="layout_custom_poster_description">Adj meg egy külső szolgáltatásból származó poszter-URL-mintát. Ha egy helyőrzőnek nincs értéke egy adott címhez, a Dex Hub az eredeti posztert használja.</string>
     <string name="layout_custom_poster_clear">Törlés</string>
     <string name="layout_custom_poster_active">✓ Egyéni poszterforrás használatban</string>
     <string name="layout_custom_poster_qr">Beállítás telefonon</string>
@@ -1385,7 +1385,7 @@
     <string name="debrid_disconnect">Leválasztás</string>
     <string name="debrid_device_auth_connected">A(z) %1$s csatlakoztatva van ezen az eszközön.</string>
     <string name="debrid_device_auth_starting">Biztonságos bejelentkezés indítása...</string>
-    <string name="debrid_device_auth_instructions">Olvasd be a QR-kódot, és írd be ezt a kódot a Nuvio jóváhagyásához.</string>
+    <string name="debrid_device_auth_instructions">Olvasd be a QR-kódot, és írd be ezt a kódot a Dex Hub jóváhagyásához.</string>
     <string name="debrid_device_auth_code_copied">Kód másolva.</string>
     <string name="debrid_device_auth_waiting">Várakozás a jóváhagyásra...</string>
     <string name="debrid_device_auth_failed">Nem sikerült elindítani a bejelentkezést.</string>
@@ -1397,7 +1397,7 @@
     <string name="debrid_prepare_instant_playback">Linkek előkészítése</string>
     <string name="debrid_prepare_instant_playback_description">Lejátszható linkek feloldása a lejátszás indítása előtt.</string>
     <string name="debrid_prepare_stream_count">Előkészítendő linkek száma</string>
-    <string name="debrid_prepare_stream_count_warning">Lehetőleg alacsony értéket használj. A csatlakoztatott szolgáltatások korlátozhatják (rate-limit), hogy egy adott időszakon belül hány link oldható fel. Egy film vagy epizód adatlapjának megnyitása is beleszámíthat ezekbe a korlátokba – még akkor is, ha nem nyomsz a Lejátszás gombra –, mert a Nuvio előre előkészíti a linkeket.</string>
+    <string name="debrid_prepare_stream_count_warning">Lehetőleg alacsony értéket használj. A csatlakoztatott szolgáltatások korlátozhatják (rate-limit), hogy egy adott időszakon belül hány link oldható fel. Egy film vagy epizód adatlapjának megnyitása is beleszámíthat ezekbe a korlátokba – még akkor is, ha nem nyomsz a Lejátszás gombra –, mert a Dex Hub előre előkészíti a linkeket.</string>
     <string name="debrid_prepare_count_one">1 link</string>
     <string name="debrid_prepare_count_many">%1$d link</string>
     <string name="debrid_stream_max_results_title">Maximális találatszám</string>
@@ -1582,21 +1582,21 @@
     <string name="trakt_watch_progress_title">Megtekintési előrehaladás</string>
     <string name="trakt_watch_progress_subtitle">Válaszd ki, melyik forrás vezérelje a lejátszás folytatását és a Nézés folytatása sort</string>
     <string name="trakt_watch_progress_dialog_title">Megtekintési előrehaladás</string>
-    <string name="trakt_watch_progress_dialog_subtitle">Válaszd ki, hogy a lejátszás folytatásához és a Nézés folytatása sorhoz a Trakt vagy a Nuvio Sync adatait használja-e az alkalmazás. A Trakt-scrobbling (lejátszáskövetés) eközben aktív marad.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">Válaszd ki, hogy a lejátszás folytatásához és a Nézés folytatása sorhoz a Trakt vagy a Dex Hub Sync adatait használja-e az alkalmazás. A Trakt-scrobbling (lejátszáskövetés) eközben aktív marad.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">Nuvio Sync</string>
+    <string name="trakt_watch_progress_source_nuvio">Dex Hub Sync</string>
     <string name="trakt_library_source_title">Könyvtár forrása</string>
-    <string name="trakt_library_source_subtitle">Válaszd ki, melyik forrásból olvassa a Nuvio a Könyvtáradat</string>
+    <string name="trakt_library_source_subtitle">Válaszd ki, melyik forrásból olvassa a Dex Hub a Könyvtáradat</string>
     <string name="trakt_library_source_dialog_title">Könyvtár forrása</string>
     <string name="trakt_library_source_dialog_subtitle">Válaszd ki, hol szeretnéd menteni és kezelni a könyvtárelemeidet</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">Nuvio-könyvtár</string>
+    <string name="trakt_library_source_nuvio">Dex Hub-könyvtár</string>
     <string name="trakt_library_source_trakt_selected">Trakt-könyvtár kiválasztva</string>
-    <string name="trakt_library_source_nuvio_selected">Nuvio-könyvtár kiválasztva</string>
+    <string name="trakt_library_source_nuvio_selected">Dex Hub-könyvtár kiválasztva</string>
     <string name="trakt_setting_on">Be</string>
     <string name="trakt_setting_off">Ki</string>
     <string name="trakt_watch_progress_trakt_selected">Megtekintési előrehaladás forrása: Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Megtekintési előrehaladás forrása: Nuvio Sync</string>
+    <string name="trakt_watch_progress_nuvio_selected">Megtekintési előrehaladás forrása: Dex Hub Sync</string>
     <string name="trakt_continue_watching_window">Nézés folytatása időablak</string>
     <string name="trakt_continue_watching_subtitle">A Nézés folytatása sorhoz figyelembe vett Trakt-előzmények</string>
     <string name="trakt_unaired_next_up">Még adásba nem került epizódok</string>
@@ -1702,11 +1702,11 @@
     <string name="profile_addons">kiegészítők</string>
     <string name="profile_plugins">bővítmények</string>
     <string name="profile_choose_avatar">Avatar választása</string>
-    <string name="profile_custom_avatar_web_panel_note">Az egyedi avatar URL-ek a Nuvio webes felületén konfigurálhatók.</string>
+    <string name="profile_custom_avatar_web_panel_note">Az egyedi avatar URL-ek a Dex Hub webes felületén konfigurálhatók.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Háttér</string>
     <string name="profile_choose_background">Profilháttér kiválasztása</string>
-    <string name="profile_background_member_note">Az egyéni háttér-URL-ek a Nuvio webes felületén konfigurálhatók.</string>
+    <string name="profile_background_member_note">Az egyéni háttér-URL-ek a Dex Hub webes felületén konfigurálhatók.</string>
     <string name="profile_background_normal">Normál</string>
     <string name="profile_background_custom">Egyéni</string>
     <string name="profile_avatar_none_selected">Nincs avatar kiválasztva</string>
@@ -1774,7 +1774,7 @@
     <string name="profile_pin_overlay_set_support">Ez a PIN szükséges lesz a profil megnyitása előtt.</string>
     <string name="profile_pin_overlay_confirm_support">Írd be újra ugyanazt a 4 számjegyet a beállítás befejezéséhez.</string>
     <string name="profile_pin_overlay_mismatch">A PIN-kódok nem egyeznek. Add meg újra az új PIN-t.</string>
-    <string name="profile_pin_overlay_forgot_hint">Elfelejtetted a PIN-t? Állítsd alaphelyzetbe a Nuvio fiókodból a weboldalon.</string>
+    <string name="profile_pin_overlay_forgot_hint">Elfelejtetted a PIN-t? Állítsd alaphelyzetbe a Dex Hub fiókodból a weboldalon.</string>
     <string name="profile_pin_overlay_back_hint">Nyomd meg a vissza gombot a kilépéshez</string>
 
 
@@ -1795,7 +1795,7 @@
     <string name="addon_install_btn">Telepítés</string>
     <string name="addon_install_success">Telepítve: %1$s</string>
     <string name="addon_tracking_consent_title">Aktivitáskövető kiegészítő</string>
-    <string name="addon_tracking_consent_body">A(z) %1$s egy aktivitáskövető kiegészítő. A Nuvio elküldi neki a tevékenységedet: mit indítasz el, szüneteltetsz és állítasz le (a lejátszási pozícióval együtt), mit adsz hozzá a könyvtáradhoz vagy távolítasz el onnan, és mit jelölsz megtekintettként vagy nem megtekintettként. Ezek az adatok elhagyják a Nuviót, és a kiegészítő fejlesztője, valamint az általa használt szolgáltatás kezeli őket.</string>
+    <string name="addon_tracking_consent_body">A(z) %1$s egy aktivitáskövető kiegészítő. A Dex Hub elküldi neki a tevékenységedet: mit indítasz el, szüneteltetsz és állítasz le (a lejátszási pozícióval együtt), mit adsz hozzá a könyvtáradhoz vagy távolítasz el onnan, és mit jelölsz megtekintettként vagy nem megtekintettként. Ezek az adatok elhagyják a Nuviót, és a kiegészítő fejlesztője, valamint az általa használt szolgáltatás kezeli őket.</string>
     <string name="addon_tracking_consent_checkbox">Hozzájárulok, hogy a megtekintési aktivitásomat és a könyvtáramat megosszam ezzel a kiegészítővel</string>
     <string name="addon_tracking_consent_checked">Bejelölve</string>
     <string name="addon_tracking_consent_unchecked">Nincs bejelölve</string>
@@ -1867,7 +1867,7 @@
     <string name="stream_type_torrent">Torrent</string>
     <string name="stream_type_youtube">YouTube</string>
     <string name="p2p_consent_title">P2P-streamelés</string>
-    <string name="p2p_consent_body">Ez a stream peer-to-peer (P2P) technológiát használ. A P2P engedélyezésével tudomásul veszed és elfogadod, hogy:\n\n\u2022 Az IP címed látható lesz a hálózat más résztvevői számára\n\u2022 Kizárólag te vagy a felelős a megtekintett tartalomért\n\u2022 Megerősíted, hogy jogod van streamelni ezt a tartalmat a te joghatóságodban\n\u2022 A Nuvio nem tárol, terjeszt és nem is felügyel semmilyen P2P tartalmat\n\u2022 A Nuvio nem vállal felelősséget a P2P streamelésből eredő jogi következményekért\n\nEzt a funkciót kizárólag a saját felelősségedre használod. A P2P bármikor kikapcsolható a Beállításokban.</string>
+    <string name="p2p_consent_body">Ez a stream peer-to-peer (P2P) technológiát használ. A P2P engedélyezésével tudomásul veszed és elfogadod, hogy:\n\n\u2022 Az IP címed látható lesz a hálózat más résztvevői számára\n\u2022 Kizárólag te vagy a felelős a megtekintett tartalomért\n\u2022 Megerősíted, hogy jogod van streamelni ezt a tartalmat a te joghatóságodban\n\u2022 A Dex Hub nem tárol, terjeszt és nem is felügyel semmilyen P2P tartalmat\n\u2022 A Dex Hub nem vállal felelősséget a P2P streamelésből eredő jogi következményekért\n\nEzt a funkciót kizárólag a saját felelősségedre használod. A P2P bármikor kikapcsolható a Beállításokban.</string>
     <string name="p2p_consent_enable">P2P engedélyezése</string>
     <string name="p2p_consent_cancel">Mégse</string>
     <string name="settings_p2p_title">P2P-streamelés</string>
@@ -2463,7 +2463,7 @@
     <string name="catalog_see_all_empty_title">Nincsenek elérhető elemek</string>
     <string name="catalog_see_all_empty_subtitle">Próbálkozz másik katalógussal, vagy térj vissza később</string>
 
-    <string name="layout_selection_welcome">Üdvözöl a Nuvio</string>
+    <string name="layout_selection_welcome">Üdvözöl a Dex Hub</string>
     <string name="layout_selection_subtitle">Válaszd ki a kezdőképernyő elrendezését</string>
     <string name="layout_selection_continue">Folytatás</string>
 
@@ -2480,7 +2480,7 @@
     <string name="update_unknown_sources">A folytatáshoz engedélyezd a telepítést ismeretlen forrásokból.</string>
     <!-- AccountScreen -->
     <string name="account_title">Fiók</string>
-    <string name="account_sign_in_description">Jelentkezz be a könyvtár, a megtekintési előrehaladás, a kiegészítők és a bővítmények eszközök közötti szinkronizálásához. Ha a Trakt nincs csatlakoztatva, a könyvtár a Nuvio Synccel szinkronizálódik, a megtekintési előrehaladáshoz pedig a Trakt és a Nuvio Sync is használható.</string>
+    <string name="account_sign_in_description">Jelentkezz be a könyvtár, a megtekintési előrehaladás, a kiegészítők és a bővítmények eszközök közötti szinkronizálásához. Ha a Trakt nincs csatlakoztatva, a könyvtár a Dex Hub Synccel szinkronizálódik, a megtekintési előrehaladáshoz pedig a Trakt és a Dex Hub Sync is használható.</string>
     <string name="account_sync_code_title">Szinkronizációs kód</string>
     <string name="account_sync_code_description">Szinkronizálás az eszközök között fiók létrehozása nélkül.</string>
     <string name="account_linked_devices">Összekapcsolt eszközök (%1$d)</string>
@@ -2677,7 +2677,7 @@
     <string name="cd_expand">Kibontás: %1$s</string>
     <string name="cd_collapse">Összecsukás: %1$s</string>
     <string name="cd_qr_login">QR-kódos bejelentkezés</string>
-    <string name="cd_nuvio">Nuvio</string>
+    <string name="cd_nuvio">Dex Hub</string>
 
     <string name="debug_signin_success">Sikeres bejelentkezés</string>
     <string name="debug_generate_description">Debug-generált %1$s elem #%2$d</string>
@@ -2831,7 +2831,7 @@
     <string name="collections_editor_tmdb_list_helper">Példa: https://www.themoviedb.org/list/8504994 vagy 8504994.</string>
     <string name="collections_editor_tmdb_person_id">Személyazonosító (ID)</string>
     <string name="collections_editor_tmdb_person_helper">Példa: https://www.themoviedb.org/person/31-tom-hanks vagy 31.</string>
-    <string name="collections_editor_tmdb_title_helper">A sor vagy fül neveként jelenik meg. Ha üres, a Nuvio automatikusan létrehoz egyet a forrásból.</string>
+    <string name="collections_editor_tmdb_title_helper">A sor vagy fül neveként jelenik meg. Ha üres, a Dex Hub automatikusan létrehoz egyet a forrásból.</string>
     <string name="collections_editor_tmdb_quick_genres">Gyakori műfajok</string>
     <string name="collections_editor_tmdb_quick_languages">Gyakori nyelvek</string>
     <string name="collections_editor_tmdb_quick_countries">Gyakori országok</string>
@@ -3118,9 +3118,9 @@
     <string name="simkl_visit">Simkl megnyitása</string>
     <string name="simkl_sync_info_action">Hogyan működik a szinkronizálás</string>
     <string name="simkl_sync_info_title">A Simkl-szinkronizálás működése</string>
-    <string name="simkl_sync_info_description">A Nuvio legfeljebb %1$d percenként egyszer automatikusan ellenőrzi a Simklt. Egy másik alkalmazásban vagy a Simkl weboldalán végzett módosítások megjelenése ennyi ideig tarthat.</string>
+    <string name="simkl_sync_info_description">A Dex Hub legfeljebb %1$d percenként egyszer automatikusan ellenőrzi a Simklt. Egy másik alkalmazásban vagy a Simkl weboldalán végzett módosítások megjelenése ennyi ideig tarthat.</string>
     <string name="simkl_sync_info_activity">Minden frissítés először ellenőrzi, hogy a Simkl jelez-e változást, és csak a módosításokat tölti le. Ez követi a Simkl API-szabályait, csökkenti a felesleges adatforgalmat, és segít stabilan tartani a szolgáltatást.</string>
-    <string name="simkl_sync_info_manual">A Nuvióban végzett módosításokat a Nuvio azonnal elküldi a Simklnek. Használd a Szinkronizálás most lehetőséget, ha azt szeretnéd, hogy a Nuvio hamarabb ellenőrizze a távoli változásokat.</string>
+    <string name="simkl_sync_info_manual">A Nuvióban végzett módosításokat a Dex Hub azonnal elküldi a Simklnek. Használd a Szinkronizálás most lehetőséget, ha azt szeretnéd, hogy a Dex Hub hamarabb ellenőrizze a távoli változásokat.</string>
     <string name="simkl_sync_info_library_statuses">A Simkl Félretéve (On Hold) vagy Félbehagyva (Dropped) listájára helyezett műsorok rejtve maradnak a Nézés folytatása sorban, mindaddig, amíg e két lista valamelyikében vannak.</string>
     <string name="simkl_sync_info_docs">Olvasd el a Simkl-szinkronizálási útmutatót</string>
     <string name="error_open_browser_failed">Nem sikerült megnyitni a böngészőt</string>
