@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scout_ai_other">أخرى</string>
+    <string name="scout_web_title">Dex Hub: مفتاح الذكاء الاصطناعي</string>
+    <string name="scout_web_question_title">اسأل</string>
+    <string name="scout_web_question_placeholder">ماذا تحب أن تشاهد؟</string>
+    <string name="scout_web_question_send">اسأل على التلفزيون</string>
+    <string name="scout_web_question_sent">تم الإرسال. انظر إلى التلفزيون.</string>
+    <string name="scout_web_key_title">مفتاح الذكاء الاصطناعي</string>
+    <string name="scout_web_service">الخدمة</string>
+    <string name="scout_web_key_label">المفتاح</string>
+    <string name="scout_web_key_placeholder">الصق مفتاحك هنا</string>
+    <string name="scout_web_key_saved_placeholder">المفتاح محفوظ. الصق مفتاحًا جديدًا لاستبداله.</string>
+    <string name="scout_web_key_note">يذهب المفتاح مباشرة إلى جهازك ويبقى مشفراً هناك. لا تستطيع هذه الصفحة عرضه مرة أخرى.</string>
+    <string name="scout_web_advanced">متقدم</string>
+    <string name="scout_web_model">النموذج</string>
+    <string name="scout_web_address">عنوان الخدمة</string>
+    <string name="scout_web_address_hint">مثال: https://openrouter.ai/api/v1. يجب أن يبدأ بـ https، أو http لجهاز على شبكتك.</string>
+    <string name="scout_web_save">حفظ واختبار</string>
+    <string name="scout_web_testing">تم الحفظ. جارٍ اختبار المفتاح…</string>
+    <string name="scout_web_error_invalid">تحقق من المفتاح والنموذج والعنوان.</string>
+    <string name="scout_web_error_connection">فُقد الاتصال بالجهاز. امسح الرمز مجددًا.</string>
+    <string name="scout_web_steps_gemini">1. افتح aistudio.google.com/apikey وسجّل الدخول بحساب Google.\n2. اختر Create API key وانسخه.\n3. الصقه هنا.\nالطبقة المجانية: قد تكون مشغولة أحيانًا، وقد تستخدم Google أسئلتك لتحسين منتجاتها، وهي غير متاحة في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، حيث يلزم مفتاح مدفوع.</string>
+    <string name="scout_web_steps_groq">1. افتح console.groq.com/keys وسجّل الدخول.\n2. اختر Create API Key وانسخه.\n3. الصقه هنا.\nطبقة مجانية بحد يومي.</string>
+    <string name="scout_web_steps_chatgpt">1. افتح platform.openai.com/api-keys وسجّل الدخول.\n2. أضف رصيدًا ضمن Billing.\n3. اختر Create new secret key وانسخه والصقه هنا.\nاشتراك ChatGPT لا يشمل استخدام API، لكن خطتي Pro وBusiness يمكنهما المطالبة باعتمادات API شهرية. حوالي %1$s لمئة سؤال.</string>
+    <string name="scout_web_steps_claude">1. افتح platform.claude.com/settings/keys وسجّل الدخول.\n2. أضف رصيدًا ضمن Billing.\n3. اختر Create Key وانسخه والصقه هنا.\nتحقق من Billing في تلك الصفحة، فقد لا يغطي اشتراك Claude ذلك. حوالي %1$s لمئة سؤال.</string>
+    <string name="scout_web_steps_other">تعمل أي خدمة بصيغة OpenAI: OpenRouter أو DeepSeek أو Mistral أو نموذج على حاسوبك. أدخل عنوانها واسم نموذجها ومفتاحك.</string>
+    <string name="dexhub_ai_title">اقتراحات الذكاء الاصطناعي</string>
+    <string name="dexhub_ai_subtitle">أضف مفتاح الذكاء الاصطناعي الخاص بك لتظهر صفوف "مقترح لك بالذكاء الاصطناعي" في الرئيسية.</string>
+    <string name="dexhub_ai_scan">امسح الرمز بجوالك لإضافة مفتاح الذكاء الاصطناعي أو تغييره</string>
+    <string name="dexhub_ai_active">المفعّل: %1$s</string>
+    <string name="dexhub_ai_none">لا يوجد مفتاح بعد</string>
+    <string name="dexhub_ai_testing">جارٍ التحقق من المفتاح…</string>
+    <string name="dexhub_ai_key_good">المفتاح يعمل. ستظهر صفوف الذكاء الاصطناعي في الرئيسية.</string>
+    <string name="dexhub_ai_key_bad">المفتاح لم يعمل. تحقق منه وحاول مرة أخرى.</string>
+    <string name="dexhub_ai_remove">اضغط لحذف هذا المفتاح</string>
+    <string name="dexhub_ai_privacy">تُرسل فقط أسماء ما شاهدته مؤخراً، وإلى خدمة الذكاء الاصطناعي التي تختارها فقط.</string>
+</resources>

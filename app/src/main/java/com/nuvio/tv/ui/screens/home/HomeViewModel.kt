@@ -415,6 +415,7 @@ class HomeViewModel @Inject constructor(
             observeProgressSourceChanges()
             observeCollections()
             observeInstalledAddons()
+            observeBuiltInRowChangesPipeline()
             observeManualAddonRefresh()
 
             // Clear CW state when profile changes so items don't leak between profiles.

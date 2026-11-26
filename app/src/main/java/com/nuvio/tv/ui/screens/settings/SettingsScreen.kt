@@ -44,6 +44,7 @@ import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.CloudDownload
 import androidx.compose.material.icons.filled.Dns
 import androidx.compose.material.icons.filled.Explore
+import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.FastForward
 import androidx.compose.material.icons.filled.GridView
 import androidx.compose.material.icons.filled.Info
@@ -110,7 +111,8 @@ private enum class IntegrationSettingsSection {
     Usenet,
     Tmdb,
     MdbList,
-    AnimeSkip
+    AnimeSkip,
+    Ai
 }
 
 internal enum class SettingsSectionDestination {
@@ -1077,6 +1079,7 @@ private fun IntegrationSettingsContent(
     BackHandler(enabled = selectedSection != IntegrationSettingsSection.Hub) {
         onSelectSection(IntegrationSettingsSection.Hub)
     }
+    val aiFocusRequester = remember { FocusRequester() }
     val hubEntryFocusRequester = when (hubReturnSection) {
         IntegrationSettingsSection.Hub ->
             initialFocusRequester ?: hubFocusRequester
@@ -1085,10 +1088,11 @@ private fun IntegrationSettingsContent(
         IntegrationSettingsSection.Tmdb -> tmdbFocusRequester
         IntegrationSettingsSection.MdbList -> mdbListFocusRequester
         IntegrationSettingsSection.AnimeSkip -> animeSkipFocusRequester
+        IntegrationSettingsSection.Ai -> aiFocusRequester
     }
     val hubEntryTargetSection = hubReturnSection.takeIf {
         it != IntegrationSettingsSection.Hub
-    } ?: IntegrationSettingsSection.Debrid
+    } ?: IntegrationSettingsSection.Ai
 
     LaunchedEffect(selectedSection, autoFocusEnabled) {
         if (!autoFocusEnabled) return@LaunchedEffect
@@ -1099,6 +1103,7 @@ private fun IntegrationSettingsContent(
             IntegrationSettingsSection.Tmdb -> tmdbFocusRequester
             IntegrationSettingsSection.MdbList -> mdbListFocusRequester
             IntegrationSettingsSection.AnimeSkip -> animeSkipFocusRequester
+            IntegrationSettingsSection.Ai -> aiFocusRequester
         }
         runCatching { requester.requestFocus() }
     }
@@ -1125,6 +1130,19 @@ private fun IntegrationSettingsContent(
                             state = integrationHubState,
                             verticalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
+                            item(key = "integration_hub_ai") {
+                                SettingsActionRow(
+                                    title = stringResource(R.string.dexhub_ai_title),
+                                    subtitle = stringResource(R.string.dexhub_ai_subtitle),
+                                    leadingIcon = Icons.Default.AutoAwesome,
+                                    onClick = { onSelectSection(IntegrationSettingsSection.Ai) },
+                                    modifier = if (hubEntryTargetSection == IntegrationSettingsSection.Ai) {
+                                        Modifier.focusRequester(hubEntryFocusRequester)
+                                    } else {
+                                        Modifier
+                                    }
+                                )
+                            }
                             item(key = "integration_hub_debrid") {
                                 SettingsActionRow(
                                     title = stringResource(R.string.debrid_title),
@@ -1223,6 +1241,10 @@ private fun IntegrationSettingsContent(
             AnimeSkipSettingsContent(
                 initialFocusRequester = animeSkipFocusRequester
             )
+        }
+
+        IntegrationSettingsSection.Ai -> {
+            DexAiSettingsContent(initialFocusRequester = aiFocusRequester)
         }
     }
 }

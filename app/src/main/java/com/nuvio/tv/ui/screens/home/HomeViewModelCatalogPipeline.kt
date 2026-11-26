@@ -1206,3 +1206,20 @@ internal fun HomeViewModel.refreshVisibleCatalogsPipeline(requestedByUser: Boole
         loadCatalogPipeline(addon, catalog, generation, isRefresh = true, requestedByUser = requestedByUser, forceReplace = forceReplace)
     }
 }
+
+/** Dex Hub's own rows (AI picks) say when a fresh answer is ready; only those rows are read again. */
+internal fun HomeViewModel.observeBuiltInRowChangesPipeline() {
+    viewModelScope.launch {
+        builtInCatalogs.rowChanges.collect {
+            val toRefresh = addonsCache
+                .filter { builtInCatalogs.isBuiltIn(it.baseUrl) }
+                .flatMap { addon -> addon.catalogs.map { addon to it } }
+            if (toRefresh.isEmpty()) return@collect
+            val generation = catalogLoadGeneration
+            pendingCatalogLoads += toRefresh.size
+            toRefresh.forEach { (addon, catalog) ->
+                loadCatalogPipeline(addon, catalog, generation, isRefresh = true, forceReplace = true)
+            }
+        }
+    }
+}

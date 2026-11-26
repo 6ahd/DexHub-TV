@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scout_ai_other">Other</string>
+    <string name="scout_web_title">Dex Hub: AI key</string>
+    <string name="scout_web_question_title">Ask</string>
+    <string name="scout_web_question_placeholder">What do you feel like watching?</string>
+    <string name="scout_web_question_send">Ask on the TV</string>
+    <string name="scout_web_question_sent">Sent. Look at the TV.</string>
+    <string name="scout_web_key_title">Your AI key</string>
+    <string name="scout_web_service">Service</string>
+    <string name="scout_web_key_label">Key</string>
+    <string name="scout_web_key_placeholder">Paste your key here</string>
+    <string name="scout_web_key_saved_placeholder">A key is saved. Paste a new one to replace it.</string>
+    <string name="scout_web_key_note">The key goes straight to your box and stays encrypted there. This page can\'t show it again.</string>
+    <string name="scout_web_advanced">Advanced</string>
+    <string name="scout_web_model">Model</string>
+        <string name="scout_web_address">Service address</string>
+    <string name="scout_web_address_hint">For example https://openrouter.ai/api/v1. Must start with https, or http for a machine on your own network.</string>
+    <string name="scout_web_save">Save and test</string>
+    <string name="scout_web_testing">Saved. Testing the key…</string>
+    <string name="scout_web_error_invalid">Check the key, the model and the address.</string>
+    <string name="scout_web_error_connection">Connection to the box was lost. Scan the code again.</string>
+    <string name="scout_web_steps_gemini">1. Open aistudio.google.com/apikey and sign in with Google.\n2. Choose Create API key and copy it.\n3. Paste it here.\nFree tier: it can be busy at times, Google may use your questions to improve its products, and it is not offered in the EEA, UK or Switzerland, where a paid key is needed.</string>
+    <string name="scout_web_steps_groq">1. Open console.groq.com/keys and sign in.\n2. Choose Create API Key and copy it.\n3. Paste it here.\nFree tier with a daily limit.</string>
+    <string name="scout_web_steps_chatgpt">1. Open platform.openai.com/api-keys and sign in.\n2. Add some credit under Billing.\n3. Choose Create new secret key, copy it and paste it here.\nA ChatGPT subscription does not include API use, but Pro and Business plans can claim monthly API credits. About %1$s for a hundred questions.</string>
+    <string name="scout_web_steps_claude">1. Open platform.claude.com/settings/keys and sign in.\n2. Add some credit under Billing.\n3. Choose Create Key, copy it and paste it here.\nCheck Billing on that page, as a Claude subscription may not cover it. About %1$s for a hundred questions.</string>
+    <string name="scout_web_steps_other">Any service with the OpenAI format works: OpenRouter, DeepSeek, Mistral, or a model on your own PC. Enter its address, its model name and your key.</string>
+    <string name="dexhub_ai_title">AI picks</string>
+    <string name="dexhub_ai_subtitle">Add your own AI key to get "Recommended for you by AI" rows on Home.</string>
+    <string name="dexhub_ai_scan">Scan with your phone to add or change your AI key</string>
+    <string name="dexhub_ai_active">Active: %1$s</string>
+    <string name="dexhub_ai_none">No AI key yet</string>
+    <string name="dexhub_ai_testing">Checking the key…</string>
+    <string name="dexhub_ai_key_good">The key works. AI rows will appear on Home.</string>
+    <string name="dexhub_ai_key_bad">That key did not work. Check it and try again.</string>
+    <string name="dexhub_ai_remove">Press to remove this key</string>
+    <string name="dexhub_ai_privacy">Only the titles you watched lately are sent, and only to the AI service you choose.</string>
+</resources>
